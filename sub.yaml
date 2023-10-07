@@ -5,261 +5,312 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 日本 - 东京 - Amazon.com, Inc.
-    server: jp06-vm0.entry.jpojpoh.art
-    type: vmess
-    country: 🇯🇵 JP
-    port: 28783
-    uuid: 4e45c583-0280-3944-ad1d-151543700401
-    alterId: 1
-    cipher: auto
-    servername: jp06-vm0.entry.jpojpoh.art
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    delay: 609
-  - name: 日本 - 东京 - Amazon.com, Inc.
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21585
-    type: vmess
-    uuid: d381afc3-4fe1-368c-b70b-6192762f6c10
-    alterId: 1
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jp01-alt-vm0.entry.srthdw.art
-    delay: 685
-  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
-    server: 45.199.138.191
-    port: 30000
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.42077230.xyz
-    network: ws
-    ws-opts:
-      path: /path/1696251522438
-    delay: 2381
-  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
-    server: 45.199.138.222
-    type: vmess
-    country: 🇺🇸US
-    port: 30000
-    uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-    alterId: 64
-    cipher: auto
-    network: ws
-    servername: www.19229362.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /path/1696251693048
-      headers:
-        HOST: www.19229362.xyz
-    delay: 2091
-  - name: 美国 - 亚特兰大 - Leaseweb Asia Pacific pte. ltd.
-    server: 23.108.100.103
-    type: vmess
-    country: 🇺🇸US
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.221.203
     port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1828
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.159
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 1277
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 141.95.126.100
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 1133
+  - name: 日本 - 东京 - Oracle Corporation
+    server: zz.chaosu999.com
+    type: trojan
+    country: 🇨🇳CN
+    port: 40350
+    password: ff0675b0-c665-3d69-800b-f7fc29e1ead8
+    skip-cert-verify: true
+    udp: true
+    delay: 1226
+  - name: 法国 - 巴黎 - Amazon Technologies Inc.
+    server: fr-am1-5.eqsunshine.com
+    type: ssr
+    country: 🇫🇷FR
+    port: 8181
+    password: RcfVcDzzB
+    cipher: aes-256-cfb
+    protocol: origin
+    protocol-param: Non%%�
+    obfs: tls1.2_ticket_auth
+    delay: 1794
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
+    server: hk5.vfun.icu
+    type: ssr
+    country: 🇯🇵JP
+    port: 443
+    password: vyunme
+    cipher: aes-256-cfb
+    protocol: auth_aes128_sha1
+    protocol-param: 16952:9bik8I
+    obfs: plain
+    group: https://v2rayse.com
+    delay: 1234
+  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
+    server: 45.199.138.152
+    type: vmess
+    country: 🇺🇸US
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
     alterId: 64
     cipher: auto
     network: ws
-    servername: www.40587333.xyz
+    servername: www.32522178.xyz
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /footers
+      path: /path/1696598013851
       headers:
-        HOST: www.40587333.xyz
-    delay: 2964
+        HOST: www.32522178.xyz
+    delay: 2618
   - name: 德国 - 兰河畔林堡 - OVH SAS
     server: 141.95.98.94
-    type: ss
-    country: 🇩🇪DE
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 843
+    password: asdKkaskJKfnsa
+    delay: 1158
+  - name: 德国 - 法兰克福 - diva-e Datacenters GmbH
+    server: 31.172.83.109
+    type: trojan
+    country: 🇩🇪DE
+    port: 23181
+    password: 9Kb21KZ4pV
+    skip-cert-verify: true
+    udp: true
+    delay: 1321
   - name: 法国 - 斯特拉斯堡 - OVH SAS
     server: 162.19.18.235
-    type: ss
-    country: 🇺🇸US
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 804
+    password: asdKkaskJKfnsa
+    delay: 2050
   - name: 法国 - 斯特拉斯堡 - OVH SAS
     server: 162.19.19.210
-    type: ss
-    country: 🇫🇷FR
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 783
+    password: asdKkaskJKfnsa
+    delay: 1244
   - name: 德国 - 兰河畔林堡 - OVH SAS
     server: 162.19.204.75
-    type: ss
-    country: 🇺🇸US
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 846
+    password: asdKkaskJKfnsa
+    delay: 1170
   - name: 德国 - 兰河畔林堡 - OVH SAS
     server: 162.19.204.77
-    type: ss
-    country: 🇫🇷FR
     port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 771
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 162.19.204.81
     type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 817
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.61.122
-    type: ss
-    country: 🇫🇷FR
-    port: 443
     password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 828
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.167
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 764
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.231
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 764
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.223
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1067
+    delay: 906
   - name: 德国 - 法兰克福 - OVH SAS
     server: 57.129.1.19
-    type: ss
-    country: 🇧🇪BE
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 881
+    password: asdKkaskJKfnsa
+    delay: 1184
   - name: 波兰 - 华沙 - OVH SAS
     server: 146.59.110.239
-    type: ss
-    country: 🇫🇷FR
     port: 443
+    type: ss
+    cipher: aes-256-cfb
     password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 893
-  - name: 英国 - 伦敦 - OVH SAS
-    server: 198.244.231.25
-    type: ss
-    country: 🇫🇷FR
+    delay: 1019
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: 57.128.32.78
     port: 443
+    type: ss
+    cipher: aes-256-cfb
     password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 629
-  - name: 英国 - 加的夫 - Microsoft Corporation
-    server: 51.142.175.151
-    type: ss
-    country: 🇬🇧GB
-    port: 57760
-    password: 3R7H08YucqZTXDGnwDoVzd
-    cipher: chacha20-ietf-poly1305
-    delay: 839
-  - name: 英国 - 加的夫 - Microsoft Corporation
-    server: 51.142.185.220
-    type: ss
-    country: 🇬🇧GB
-    port: 31005
-    password: z7paC97IiLXCohJIS91IHT
-    cipher: chacha20-ietf-poly1305
-    delay: 2382
-  - name: 日本 - 东京 - Amazon.com, Inc.
-    server: 35.72.2.46
+    delay: 1069
+  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
+    server: 54.36.173.159
     port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 368
-  - name: 新加坡 - 新加坡 - Oracle Corporation
-    server: sg3.gophers.gay
-    type: ss
-    country: 🇬🇧GB
-    port: 22749
-    password: f5d95005-be14-40fc-bedc-e4a1133a5701
-    cipher: chacha20-ietf-poly1305
-    delay: 446
+    type: trojan
+    password: e4f288433b
+    sni: pol1.connecton.surf
+    skip-cert-verify: true
+    udp: true
+    delay: 1613
   - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.202.65.218
+    server: 3.38.253.70
     type: ss
     country: 🇺🇸US
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 488
-  - name: 美国 - 洛杉矶 - Sharktech
-    server: 67.21.90.5
+    delay: 668
+  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
+    server: 195.181.166.170
     port: 443
-    type: vmess
-    uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
-    alterId: 64
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /path/1694429908748
-      headers:
-        Host: www.75409854.xyz
-    delay: 1771
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1286
   - name: 中国 - 香港 - PCCW IMS Limited
     server: hkt.123ddns.xyz
-    type: vmess
-    country: 🇭🇰HK
     port: 55455
+    type: vmess
     uuid: d2ce45e6-9f22-492d-d81d-d639067a7583
     alterId: 0
     cipher: auto
-    network: ws
+    tls: true
+    skip-cert-verify: true
     servername: hkt.123ddns.xyz
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hkt.123ddns.xyz
+    delay: 1196
+  - name: 美国 - 洛杉矶 - Melbikomas UAB
+    server: 46caadb.f2.gladns.com
+    type: vmess
+    country: 🇳🇱NL
+    port: 3331
+    uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 46caadb.f2.gladns.com
     http-opts: {}
     h2-opts: {}
     tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /s/46caadb.fm.apple.com:60980
+      headers:
+        HOST: 46caadb.f2.gladns.com
+    delay: 507
+  - name: 波多黎各 - 圣胡安 - BrainStorm Network, Inc
+    server: 185.47.255.219
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 1268
+  - name: 塞浦路斯 - 尼科西亚 - Logosnet Services Limited
+    server: 213.169.137.221
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1240
+  - name: 南非 - 開普敦 - Xneelo (Pty) Ltd
+    server: 41.203.4.34
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 2269
+  - name: 法国 - 鲁贝 - OVH SAS
+    server: 162.19.59.160
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1018
+  - name: 日本 - 东京 - Tempest Hosting, LLC
+    server: pqawsjp1.aiopen.cfd
+    type: trojan
+    country: 🇯🇵JP
+    port: 443
+    password: 36606545-bc8b-4152-a751-3f0957318bd9
+    sni: 18-140-66-207.nhost.00cdn.com
+    skip-cert-verify: true
+    udp: true
+    delay: 549
+  - name: 中国 - 香港 - Layerstack Limited
+    server: 103.15.217.182
+    type: trojan
+    country: 🇭🇰HK
+    port: 33058
+    password: QHhbhwe6lj
+    skip-cert-verify: true
+    udp: true
+    delay: 251
+  - name: 日本 - 东京 - Amazon Technologies Inc.
+    server: 52.193.30.4
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 976
+  - name: 日本 - 东京 - Amazon Technologies Inc
+    server: 13.112.114.31
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 347
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
+    server: 13.215.193.80
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 816
+  - name: 阿拉伯联合酋长国 - 迪拜 - Oracle Corporation
+    server: fd.shabijichang.com
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 0c1644bd-e69a-45b0-8066-6f0f850ac5fd
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: db.shabijichang.com
+    http-opts: {}
+    h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: hkt.123ddns.xyz
-    delay: 1145
+        HOST: db.shabijichang.com
+    delay: 2197
   - name: 越南 - Thu GJuc - MINHHIEN
-    server: hcm03.4ghatde.com
+    server: hcm01.4ghatde.com
+    type: vmess
+    country: 🇻🇳VN
+    port: 80
+    uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: hcm01.4ghatde.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /svip1.4ghatde.com
+      headers:
+        HOST: hcm01.4ghatde.com
+    delay: 1372
+  - name: 越南 - Thu GJuc - MINHHIEN
+    server: 103.161.173.61
     type: vmess
     country: 🇻🇳VN
     port: 80
@@ -271,81 +322,203 @@ proxies:
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /svip2.4ghatde.com
-    delay: 1224
-  - name: 波多黎各 - 圣胡安 - BrainStorm Network, Inc
-    server: 185.47.255.219
+      path: /svip1.4ghatde.com
+    delay: 849
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 141.95.126.108
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 976
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 51.89.8.47
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1599
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.222.39
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1069
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: 162.19.83.28
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 798
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: 57.128.20.106
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 828
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: 57.128.32.76
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 672
+  - name: 德国 - 法兰克福 - OVH SAS
+    server: 57.129.1.22
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 917
+  - name: 英国 - Rainham - OVH SAS
+    server: 57.128.141.15
+    type: ss
+    country: 🇧🇪BE
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 623
+  - name: 英国 - Rainham - OVH SAS
+    server: 57.128.141.14
+    type: ss
+    country: 🇧🇪BE
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 627
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 141.95.125.48
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 910
+  - name: 波兰 - 华沙 - OVH SAS
+    server: 146.59.111.195
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1216
+  - name: 波兰 - 华沙 - OVH SAS
+    server: 146.59.71.221
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1261
+  - name: 波兰 - 华沙 - OVH SAS
+    server: 146.59.111.183
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 2184
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.76
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 2268
+  - name: 法国 - 鲁贝 - OVH SAS
+    server: 162.19.59.166
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1160
+  - name: 法国 - 格拉沃利讷 - OVH SAS
+    server: 37.59.21.129
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1149
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.210.173
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 849
+  - name: 法国 - 鲁贝 - OVH SAS
+    server: 162.19.59.169
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1095
+  - name: 瑞士 - 苏黎世 - DataCamp Limited
+    server: 84.17.53.163
+    port: 110
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1168
+  - name: 波兰 - 华沙 - OVH SAS
+    server: 146.59.110.240
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1199
+  - name: 波兰 - 华沙 - OVH SAS
+    server: 146.59.111.186
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1111
+  - name: 德国 - 法兰克福 - OVH SAS
+    server: 162.19.171.67
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 1114
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.221.222
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 819
+  - name: 爱尔兰 - 都柏林 - Microsoft Corporation
+    server: 40.87.137.201
+    type: ss
+    country: 🇮🇪IE
+    port: 17137
+    password: nNsx0otJfBWd6L6l4CxASg
+    cipher: chacha20-ietf-poly1305
+    delay: 937
+  - name: 挪威 - 奥斯陆 - Packet Exchange Limited
+    server: 165.231.120.102
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    udp: true
-    delay: 1559
-  - name: 塞浦路斯 - 尼科西亚 - Logosnet Services Limited
-    server: 213.169.137.221
+    delay: 885
+  - name: 美国 - 紐約 - Dedicated.com
+    server: 216.52.183.243
+    port: 1001
     type: ss
-    country: 🇨🇾CY
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1225
-  - name: 南非 - 開普敦 - Xneelo (Pty) Ltd
-    server: 41.203.4.34
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 2194
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.161
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 831
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.165
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 800
-  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
-    server: 121.127.46.147
-    type: ss
-    country: 🇦🇫AF
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1219
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.162
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 794
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.163
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 752
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.160
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 787
+    cipher: aes-128-gcm
+    password: 83XvX4Vo%*3a
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ''
+      path: /
+      tls: false
+      mux: true
+    delay: 2543
   - name: 中国 - 惠州市 - PEG TECH INC
-    server: 198.2.202.84
+    server: 198.2.202.85
     type: vmess
     country: 🇺🇸US
     port: 443
@@ -359,761 +532,10 @@ proxies:
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /path/1694859605321
+      path: /path/1695032909164
       headers:
         HOST: www.65825524.xyz
-    delay: 1713
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.226
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1092
-  - name: 日本 - 东京 - Amazon Technologies Inc
-    server: 13.112.114.31
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 652
-  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
-    server: 195.181.166.170
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: asdKkaskJKfnsa
-    delay: 926
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.203.5
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1778
-  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
-    server: 195.181.166.174
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: asdKkaskJKfnsa
-    delay: 921
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.145
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 764
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.197
-    type: ss
-    country: 🇳🇴NO
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 914
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.0.7
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 895
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.185
-    type: ss
-    country: 🇳🇴NO
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 899
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.80
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 761
-  - name: 英国 - 伦敦 - Global Internet Solutions LLC
-    server: 89.185.84.178
-    port: 46135
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: iGZdlsmpNxy4QCGu2CJCKw
-    delay: 965
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.184
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 987
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.166
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 767
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.81
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 965
-  - name: 美国 - 紐約 - Dedicated.com
-    server: 216.52.183.243
-    type: ss
-    port: 1001
-    password: 83XvX4Vo%*3a
-    cipher: aes-128-gcm
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      mux: true
-      path: /
-    delay: 2088
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.164
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 758
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.222
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1899
-  - name: 法国 - 格拉沃利讷 - OVH SAS
-    server: 37.59.21.131
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 716
-  - name: 瑞士 - 苏黎世 - DataCamp Limited
-    server: 84.17.53.163
-    type: ss
-    country: 🇨🇭CH
-    port: 110
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 820
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 51.89.8.47
-    type: ss
-    country: 🇬🇧GB
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1391
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.222.31
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 770
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.233
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1058
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.204.70
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1618
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
-    server: 24.199.103.101
-    port: 35678
-    type: ss
-    cipher: aes-256-gcm
-    password: DuE6Gplaap
-    delay: 1112
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.167
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 812
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.207
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1099
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.139
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1021
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.204.82
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 962
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.214
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1086
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.209
-    type: ss
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 811
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.211
-    type: ss
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1155
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.212
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 918
-  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
-    server: 195.181.166.175
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: asdKkaskJKfnsa
-    delay: 936
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.33.86
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 779
-  - name: 英国 - 伦敦 - OVH SAS
-    server: 198.244.228.191
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 621
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 141.95.64.70
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 798
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 141.95.126.108
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 783
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 162.19.83.28
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1507
-  - name: 法国 - 格拉沃利讷 - OVH SAS
-    server: 37.59.21.129
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 795
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 162.19.84.198
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 879
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.119
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 944
-  - name: 法国 - 鲁贝 - OVH SAS
-    server: 162.19.59.169
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 824
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.138
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 2129
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.76
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1061
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.45
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1084
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.14.40
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1113
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.210.173
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 801
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.211.49
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 847
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.224
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1058
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.228
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1086
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.227
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 825
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.230
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1225
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.222.35
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 2003
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.75.84
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 763
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.139
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 799
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.84
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 782
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.222.39
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1078
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.157
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 895
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.95
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1295
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.203
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 967
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.148
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 774
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.76
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1448
-  - name: 美国 - 芝加哥 - Datacamp Limited
-    server: 89.187.181.179
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 2105
-  - name: 荷兰 - 哈勒姆 - Online S.A.S.
-    server: 51.158.202.190
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1714
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.110.171
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 933
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.110.240
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 942
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.186
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 902
-  - name: 德国 - 法兰克福 - OVH SAS
-    server: 162.19.171.97
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 856
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.195
-    type: ss
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 944
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 141.95.99.192
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 834
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.183
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 938
-  - name: 德国 - 法兰克福 - OVH SAS
-    server: 57.129.1.22
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1128
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.71.221
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 907
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 141.95.125.48
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1040
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.161
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1983
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.20.106
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 862
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.159.221.229
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 787
-  - name: 马来西亚 - Puchong Batu Dua Belas - Gigabit Hosting Sdn Bhd
-    server: my-83-gg.p9m.net
-    type: vmess
-    port: 12001
-    udp: true
-    uuid: 5bd931a2-edf3-41c7-b3e4-48bb3fb85b1f
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        Host: my-83-gg.p9m.net
-    delay: 815
-  - name: 孟加拉国 - Paltan - Media & Multimedia
-    server: vn4.4gspeed.me
-    type: vmess
-    port: 443
-    udp: true
-    uuid: e2264d7f-d1e5-4486-97d7-ef506fcdbfbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /4gspeed.me
-      headers:
-        Host: dl.kgvn.garenanow.com
-    delay: 1786
-  - name: 孟加拉国 - Paltan - Media & Multimedia
-    server: vn3.4gspeed.me
-    type: vmess
-    port: 443
-    udp: true
-    uuid: e2264d7f-d1e5-4486-97d7-ef506fcdbfbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /4gspeed.me
-      headers:
-        Host: dl.kgvn.garenanow.com
-    delay: 1234
-  - name: 孟加拉国 - Paltan - Media & Multimedia
-    server: vn3.4gspeed.me
-    type: vmess
-    port: 80
-    udp: true
-    uuid: e2264d7f-d1e5-4486-97d7-ef506fcdbfbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /4gspeed.me
-      headers:
-        Host: dl.kgvn.garenanow.com
-    delay: 1010
-  - name: 孟加拉国 - Paltan - Media & Multimedia
-    server: vn4.4gspeed.me
-    type: vmess
-    port: 80
-    udp: true
-    uuid: e2264d7f-d1e5-4486-97d7-ef506fcdbfbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /4gspeed.me
-      headers:
-        Host: dl.kgvn.garenanow.com
-    delay: 1614
-  - name: 越南 - 胡志明市 - VPSTTT
-    server: vn1.4gspeed.me
-    type: vmess
-    port: 443
-    udp: true
-    uuid: e2264d7f-d1e5-4486-97d7-ef506fcdbfbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /4gspeed.me
-      headers:
-        Host: dl.kgvn.garenanow.com
-    delay: 874
-  - name: 美国 - Ashburn - Hetzner Online GmbH
-    server: 5.161.191.195
-    type: vmess
-    country: 🇩🇪DE
-    port: 2083
-    uuid: 1c5cd450-a5cc-4803-d0ef-1ea424cc4ba2
-    alterId: 0
-    cipher: auto
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 779
-  - name: 印度尼西亚 - 泗水 - PT. Wowrack Cepat Teknologi Nusantara
-    server: 202.43.249.35
-    type: vmess
-    country: 🇮🇩ID
-    port: 8080
-    uuid: 01f840b5-82d1-4193-ece4-a31ea69546ea
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: tms.dingtalk.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: tms.dingtalk.com
-    delay: 453
+    delay: 2784
   - name: 新加坡 - 新加坡 - DigitalOcean, LLC
     server: 146.190.96.165
     port: 51456
@@ -1127,612 +549,258 @@ proxies:
     ws-opts:
       path: /
     udp: true
-    delay: 390
-  - name: 美国 - 聖塔克拉利塔 - Multacom Corporation
-    server: v2.us-c.microsoftdebug.com
+    delay: 969
+  - name: 美国 - 聖荷西 - PEG TECH INC
+    server: 38.63.0.80
     type: vmess
-    port: 80
-    udp: true
-    uuid: 7a7f762a-809f-4040-bb16-c7e3af95479e
-    alterId: 0
+    country: 🇺🇸US
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /f0uncvgo.ts
-      headers:
-        Host: 7a7f762a-809f-4040-bb16-c7e3af95479e.us-c.microsoftdebug.com
-    delay: 1354
-  - name: 美国 - 馬納薩斯 - G-Core Labs S.A.
-    server: v2.us1.microsoftdebug.com
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 7a7f762a-809f-4040-bb16-c7e3af95479e
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: 7a7f762a-809f-4040-bb16-c7e3af95479e.us1.microsoftdebug.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /windows7.ios
-      headers:
-        HOST: 7a7f762a-809f-4040-bb16-c7e3af95479e.us1.microsoftdebug.com
-    delay: 1256
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD
-    server: tr-10-pq.p9m.net
-    type: vmess
-    port: 12000
-    udp: true
-    uuid: 5bd931a2-edf3-41c7-b3e4-48bb3fb85b1f
-    alterId: 0
-    cipher: auto
-    network: ws
+    servername: www.19458162.xyz
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /index
+      path: /path/1696598013851
       headers:
-        Host: tr-10-pq.p9m.net
-    delay: 1984
-  - name: 越南 - Thu GJuc - MINHHIEN
-    server: hcm02.4ghatde.com
+        HOST: www.19458162.xyz
+    delay: 1330
+  - name: 中国 - 惠州市 - PEG TECH INC
+    server: 198.2.202.88
     type: vmess
-    country: 🇻🇳VN
-    port: 80
-    uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
-    alterId: 0
+    country: 🇺🇸US
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     network: ws
-    servername: hcm02.4ghatde.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /svip2.4ghatde.com
-      headers:
-        HOST: hcm02.4ghatde.com
-    delay: 702
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD
-    server: depb.forget.lat
-    type: trojan
-    port: 443
-    password: 087e0918-88a6-3049-ac4c-28585e142434
-    sni: depb.forget.lat
-    skip-cert-verify: true
-    udp: true
-    delay: 2001
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc.
-    server: 3.72.166.15
-    type: trojan
-    country: 🇩🇪DE
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 1539
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc.
-    server: 3.76.128.198
-    type: trojan
-    country: 🇩🇪DE
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 860
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.181
-    type: ss
-    country: 🇳🇴NO
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 931
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 141.94.143.221
-    type: ss
-    country: 🇩🇪DE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 809
-  - name: 英国 - 伦敦 - OVH SAS
-    server: 198.244.231.34
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 633
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.110.168
-    type: ss
-    country: 🇳🇴NO
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 896
-  - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.110.170
-    type: ss
-    country: 🇳🇴NO
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 923
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 162.19.204.83
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 814
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 162.19.204.78
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 873
-  - name: 法国 - 格拉沃利讷 - OVH SAS
-    server: 37.59.21.132
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 762
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 51.38.99.96
-    type: vmess
-    country: 🇫🇷FR
-    port: 443
-    uuid: d1b86be4-546b-4f22-b15c-1180d3f100d9
-    alterId: 0
-    cipher: auto
-    network: ws
+    servername: www.65825524.xyz
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /freevmess
-    delay: 1346
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 51.255.49.192
+      path: /path/1695993071029
+      headers:
+        HOST: www.65825524.xyz
+    delay: 2776
+  - name: 美国 - Reston - OVH US LLC
+    server: 15.204.240.119
     type: trojan
-    country: 🇫🇷FR
-    port: 443
-    password: 4cf9259e-cd09-4f38-9293-db448c116a47
-    sni: fifa.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1045
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.173.159
-    type: trojan
-    country: 🇫🇷FR
-    port: 443
-    password: e4f288433b
-    sni: pol1.connecton.surf
-    skip-cert-verify: true
-    udp: true
-    delay: 1251
-  - name: 法国 - 巴黎 - Amazon Technologies Inc.
-    server: 15.236.169.213
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 2309
-  - name: 法国 - 巴黎 - Amazon.com, Inc.
-    server: 35.181.86.84
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-directvpn
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 917
-  - name: 英国 - 伦敦 - Amazon Technologies Inc.
-    server: 13.43.167.4
-    type: trojan
-    country: 🇬🇧GB
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 1487
-  - name: 英国 - 伦敦 - Amazon Technologies Inc.
-    server: 3.11.165.148
-    type: trojan
-    country: 🇬🇧GB
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trj.rollingnext.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 1230
-  - name: 德国 - Frankfurt Am Main - Hetzner Online AG
-    server: 91.107.158.132
-    type: vmess
-    country: 🇮🇷IR
-    port: 443
-    uuid: 0f119360-55d1-408f-b407-e2e9d2996d2e
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 872
-  - name: 俄罗斯 - 圣彼得堡 - Beget LLC
-    server: 31.129.105.239
-    type: vmess
-    country: 🇷🇺RU
-    port: 16231
-    uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 1252
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.200.6.140
-    type: ss
-    country: 🇦🇺AU
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 1549
-  - name: 荷兰 - 阿姆斯特丹 - SCALEWAY
-    server: eromanga-sevendays.net
-    type: vmess
     country: 🇺🇸US
     port: 443
-    uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: phosphorylative.aurorainiceland.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
+    password: b53e3f90-64c1-11ee-98ee-1239d0255272
     skip-cert-verify: true
-    ws-opts:
-      path: /nimvws
-      headers:
-        HOST: phosphorylative.aurorainiceland.com
-    delay: 2393
-  - name: 德国 - 比勒费尔德 - Cloudflare, Inc.
-    server: iran02.biqibao.site
-    type: vmess
-    country: 🇺🇸US
-    port: 2052
-    uuid: 25e7cc80-3942-4c1e-b9f6-fde524b631d7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: de.biqibao.site
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /public?ed=2048
-      headers:
-        HOST: de.biqibao.site
-    delay: 1843
-  - name: 越南 - Thành Phố Cao Lãnh - AI-SOL
-    server: 103.149.252.174
-    type: vmess
-    country: 🇻🇳VN
-    port: 80
-    uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /4ghatde.com
-    delay: 974
-  - name: 美国 - 凤凰城 - Oracle Corporation
-    server: cf-lt.sharecentre.online
-    type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: bffa23aa-ae0a-4c02-af77-2a14c8c0b81c
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ssrsub.v006.ssrsub.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /api/v3/download.getFile
-      headers:
-        HOST: ssrsub.v006.ssrsub.com
-    delay: 1658
-  - name: 英国 - 加的夫 - Oracle Corporation
-    server: 172.67.128.217
-    type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: 95f73823-dd11-48a3-8b52-2f9ffb10f0b5
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: jdf.shabijichang.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: jdf.shabijichang.com
-    delay: 1234
-  - name: 美国 - 聖荷西 - Globaldata Investments Inc
-    server: 156.251.130.159
-    type: vmess
-    country: 🇿🇦ZA
-    port: 443
-    uuid: 4ab4a477-72db-4b88-a17a-a165a1ade668
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /2532e16141e/
-    delay: 1114
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 162.19.204.80
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 2788
-  - name: 德国 - 兰河畔林堡 - OVH SAS
-    server: 141.95.125.11
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 894
-  - name: 巴西 - São Paulo - Oracle Corporation
-    server: sbl.shabijichang.com
-    type: vmess
-    port: 80
     udp: true
-    uuid: 53701585-591f-48a3-9515-8831ed0524ac
+    delay: 1400
+  - name: 罗马尼亚 - Orastie - Orange Romania Communication S.A
+    server: 103.212.81.87
+    type: vmess
+    country: 🇧🇩BD
+    port: 8880
+    uuid: fda2abe0-602a-11ee-b439-205c6d5f5d78
     alterId: 0
     cipher: auto
     network: ws
+    ws-path: /waq0ygpk
+    servername: eu-1.0rd.net
+    ws-headers:
+      HOST: eu-1.0rd.net
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2185
-  - name: 德国 - 法兰克福 - OVH SAS
-    server: 57.129.1.21
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 962
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.77
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 878
-  - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.79
-    type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 878
+    delay: 2281
   - name: 法国 - 斯特拉斯堡 - OVH SAS
     server: 57.128.74.169
-    type: ss
-    country: 🇧🇪BE
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 879
+    password: asdKkaskJKfnsa
+    delay: 1149
   - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.78
-    type: ss
-    country: 🇧🇪BE
+    server: 57.128.32.79
     port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1075
-  - name: 德国 - 法兰克福 - OVH SAS
-    server: 57.129.1.20
     type: ss
-    country: 🇧🇪BE
-    port: 443
-    password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 1030
+    password: asdKkaskJKfnsa
+    delay: 1172
   - name: 法国 - 斯特拉斯堡 - OVH SAS
-    server: 57.128.32.86
-    type: ss
-    country: 🇧🇪BE
+    server: 57.128.32.77
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 1891
+    password: asdKkaskJKfnsa
+    delay: 1206
   - name: 瑞士 - 苏黎世 - DataCamp Limited
     server: 84.17.53.163
-    type: ss
-    country: 🇨🇭CH
     port: 80
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1158
+  - name: 法国 - 格拉沃利讷 - OVH SAS
+    server: 141.95.157.210
+    type: ss
+    country: 🇩🇪DE
+    port: 443
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 878
+    delay: 1159
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: 141.94.143.221
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1203
   - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.201
+    server: 62.210.88.88
     type: ss
     country: 🇫🇷FR
     port: 443
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 800
+    delay: 1430
   - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.37.167
-    type: ss
-    country: 🇫🇷FR
+    server: 51.158.54.167
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 1128
+    password: asdKkaskJKfnsa
+    delay: 1257
   - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.165
-    type: ss
-    country: 🇫🇷FR
+    server: 51.158.203.5
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 2703
+    password: asdKkaskJKfnsa
+    delay: 2242
   - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.146
+    server: 51.158.203.6
     type: ss
     country: 🇫🇷FR
     port: 443
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 1007
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.168
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1473
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.49
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1348
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.200.169
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 2306
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.237
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 839
-  - name: 法国 - 巴黎 - Online S.A.S.
-    server: 62.210.88.73
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1030
-  - name: 法国 - 巴黎 - SCALEWAY
-    server: 51.158.54.216
-    type: ss
-    country: 🇫🇷FR
-    port: 443
-    password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1138
+    delay: 942
   - name: 荷兰 - 哈勒姆 - Online S.A.S.
     server: 51.158.195.96
-    type: ss
-    country: 🇫🇷FR
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 1329
+    password: asdKkaskJKfnsa
+    delay: 980
   - name: 法国 - 巴黎 - Online S.A.S.
-    server: 51.158.204.81
+    server: 51.158.200.143
     type: ss
     country: 🇫🇷FR
     port: 443
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 1094
+    delay: 1824
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.222.31
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1066
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.156
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: asdKkaskJKfnsa
+    cipher: aes-256-cfb
+    delay: 2361
   - name: 法国 - 巴黎 - SCALEWAY
     server: 51.159.107.252
-    type: ss
-    country: 🇫🇷FR
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 838
+    password: asdKkaskJKfnsa
+    delay: 842
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 62.210.88.73
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1091
   - name: 法国 - 巴黎 - Online S.A.S.
     server: 51.158.203.4
-    type: ss
-    country: 🇫🇷FR
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 1130
-  - name: 中国 - 香港 - PCCW IMS Limited
-    server: 112.120.244.125
+    password: asdKkaskJKfnsa
+    delay: 2488
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.165
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1104
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.146
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 2764
+  - name: 法国 - 巴黎 - Online S.A.S.
+    server: 51.158.200.168
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1427
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.159.221.226
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1090
+  - name: 法国 - 巴黎 - SCALEWAY
+    server: 51.158.54.214
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 833
+  - name: 英国 - 伦敦 - OVH SAS
+    server: 51.38.71.175
     type: vmess
-    country: 🇭🇰HK
-    port: 55455
-    uuid: d2ce45e6-9f22-492d-d81d-d639067a7583
+    country: 🇬🇧GB
+    port: 80
+    uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
     alterId: 0
     cipher: auto
     network: ws
-    ws-path: /
-    servername: hkt.123ddns.xyz
+    ws-path: /vmess
+    servername: uk1.v2-ray.us
     ws-headers:
-      HOST: hkt.123ddns.xyz
+      HOST: uk1.v2-ray.us
     http-opts: {}
     h2-opts: {}
-    tls: true
     skip-cert-verify: true
-    delay: 1227
-  - name: 爱尔兰 - 都柏林 - Amazon.com, Inc.
-    server: 52.213.21.237
+    delay: 911
+  - name: 英国 - 伦敦 - Amazon Technologies Inc.
+    server: 3.11.165.148
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1040
+  - name: 爱尔兰 - 都柏林 - Amazon.com
+    server: 63.34.66.133
     type: trojan
     country: 🇮🇪IE
     port: 22222
@@ -1740,187 +808,284 @@ proxies:
     sni: trj.rollingnext.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1197
-  - name: 挪威 - 奥斯陆 - Packet Exchange Limited
-    server: 165.231.120.102
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1937
+    delay: 1079
+  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc.
+    server: 34.252.47.136
+    type: trojan
+    country: 🇮🇪IE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1079
   - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.111.182
-    type: ss
-    country: 🇳🇴NO
+    server: 146.59.111.197
     port: 443
-    password: asdKkaskJKfnsa
+    type: ss
     cipher: aes-256-cfb
-    delay: 1352
+    password: asdKkaskJKfnsa
+    delay: 993
   - name: 波兰 - 华沙 - OVH SAS
-    server: 146.59.110.169
-    type: ss
-    country: 🇳🇴NO
+    server: 146.59.111.185
     port: 443
+    type: ss
+    cipher: aes-256-cfb
     password: asdKkaskJKfnsa
-    cipher: aes-256-cfb
-    delay: 1227
-  - name: 泰国 - 曼谷 - Metrabyte Co., Ltd
-    server: 119.59.127.144
+    delay: 1194
+  - name: 俄罗斯 - 圣彼得堡 - Beget LLC
+    server: 31.129.105.239
+    port: 16231
+    type: vmess
+    uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+    delay: 1503
+  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
+    server: 195.181.166.174
+    port: 443
     type: ss
-    country: 🇹🇭TH
-    port: 989
-    password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 2265
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD
-    server: 74.119.192.130
+    password: asdKkaskJKfnsa
+    delay: 1278
+  - name: 瑞典 - 斯德哥尔摩 - Datacamp Limited
+    server: 195.181.166.175
+    port: 443
     type: ss
-    country: 🇺🇸US
-    port: 50888
-    password: ADkNikuMKeeOL0r3LPPv1w
-    cipher: chacha20-ietf-poly1305
-    delay: 1987
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 1276
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tw1.yihaobao.xyz
+    type: trojan
+    country: 🇹🇼TW
+    port: 443
+    password: 8c3210fe-ce13-4220-88ff-8d5274d5b835
+    skip-cert-verify: true
+    udp: true
+    delay: 396
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: 61.228.93.241
+    type: trojan
+    country: 🇹🇼TW
+    port: 443
+    password: 1381fa76-e460-3a03-a01b-b9ad00e01415
+    sni: tone.zoozoo.co.za
+    skip-cert-verify: true
+    udp: true
+    delay: 403
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 162.19.204.78
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: asdKkaskJKfnsa
+    delay: 967
   - name: 英国 - 伦敦 - OVH SAS
-    server: 198.244.231.27
+    server: 198.244.228.191
+    port: 443
     type: ss
-    country: 🇺🇸US
-    port: 443
-    password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 632
-  - name: 美国 - Ashburn - Oracle Corporation
-    server: no.09.ijg.cc
+    password: asdKkaskJKfnsa
+    delay: 661
+  - name: 越南 - 河內市 - LAM A Architecture Construction Company Limited
+    server: 103.163.218.2
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 686
+  - name: 中国 - 香港 - Amazon.com
+    server: xxxcm.zzcloud.top
     type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 9Mdw86d7Cz
+    country: 🇨🇳CN
+    port: 38036
+    password: 9139a77f-f4be-4836-8bdb-f8316b188d1b
+    sni: i.love.you.5l.91merry.top
     skip-cert-verify: true
     udp: true
-    delay: 1800
-  - name: 美国 - 達拉斯 - Dot-Tech LLC
-    server: 66.11.114.214
+    delay: 310
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc.
+    server: sg3.421421.xyz
     type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: PejNHihtOo
-    sni: barbecuesauce.sovietart.site
+    country: 🇸🇬SG
+    port: 20230
+    password: 79264973-4c6f-40b3-bd09-ce1155feb75e
+    sni: 421421.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1245
+    delay: 395
+  - name: 美国 - 庫卡蒙格牧場 - ColoCrossing
+    server: 23.94.122.147
+    type: vmess
+    country: 🇺🇸US
+    port: 60222
+    uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+    delay: 1278
+  - name: 意大利 - Siziano - Oracle Corporation
+    server: 172.67.78.109
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: beaa0ee8-1ff6-4ee5-982d-258f0d830018
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ml3.shabijichang.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ml3.shabijichang.com
+    delay: 1500
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG
+    server: 104.31.16.58
+    type: vmess
+    country: 🇺🇸US
+    port: 2053
+    uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b5.iraniancp.click
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: b5.iraniancp.click
+    delay: 2276
+  - name: 日本 - 东京 - Oracle Corporation
+    server: 131.186.47.138
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    delay: 897
   - name: 越南 - Thành Phố Cao Lãnh - AI-SOL
     server: dn1.4ghatde.com
-    type: vmess
-    country: 🇻🇳VN
     port: 80
+    type: vmess
     uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
     alterId: 0
     cipher: auto
-    network: ws
-    servername: dn1.4ghatde.com
-    http-opts: {}
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
+    servername: dn1.4ghatde.com
+    network: ws
     ws-opts:
       path: /4ghatde.com
       headers:
-        HOST: dn1.4ghatde.com
-    delay: 1467
-  - name: 越南 - 河內市 - LAM A Architecture Construction Company Limited
-    server: 103.163.218.2
-    type: ss
-    country: 🇻🇳VN
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 702
-  - name: 中国 - 香港 - Proxy Registration Eons Data
-    server: syvsx-1094-tr-2.d-cmi.iote.bond
-    port: 889
-    type: trojan
-    password: PJUKhmVpDDqtAvMHDvmMpoQYChiuwjgv
-    sni: cdn.cjhh.lol
+        Host: dn1.4ghatde.com
+    delay: 2025
+  - name: 越南 - Thành Phố Cao Lãnh - AI-SOL
+    server: 103.149.252.174
+    port: 80
+    type: vmess
+    uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    udp: true
-    delay: 1096
-  - name: 中国 - 香港 - Converged Communications Limited
-    server: 103.231.15.146
-    type: ss
-    port: 443
-    password: cf79ef65c44a
-    cipher: aes-256-gcm
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: yjy4.viynos.com
-      mode: websocket
-      mux: true
-      path: /quykewbbt
-      skip-cert-verify: false
-      tls: true
-    delay: 2865
-  - name: 英国 - 伦敦 - Oracle Corporation
-    server: 312.outline-vpn.cloud
+    network: ws
+    ws-opts:
+      path: /4ghatde.com
+    delay: 1212
+  - name: 美国 - 洛杉矶 - Sharktech
+    server: www.75409854.xyz
     type: vmess
     country: 🇺🇸US
-    port: 80
-    uuid: a1a676e4-016e-4bf0-96fe-4b6aaf53abc2
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ld.shabijichang.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: ld.shabijichang.com
-    delay: 2126
-  - name: 美国 - 達拉斯 - Dot-Tech LLC
-    server: barbecuesauce.sovietart.site
-    type: trojan
-    country: 🇺🇸US
     port: 443
-    password: PejNHihtOo
-    sni: barbecuesauce.sovietart.site
+    uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
+    alterId: 64
+    cipher: auto
+    network: ws
+    servername: www.75409854.xyz
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
-    udp: true
-    delay: 1751
-  - name: 荷兰 - 阿姆斯特丹 - Oracle Corporation
-    server: amstd.shabijichang.com
+    ws-opts:
+      path: /path/1694429908748
+      headers:
+        HOST: www.75409854.xyz
+    delay: 2039
+  - name: 美国 - 迈阿密 - Kamatera, Inc.
+    server: 66.55.64.124
     type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 53701585-591f-48a3-9515-8831ed0524ac
+    country: 🇺🇸US
+    port: 13337
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
     alterId: 0
     cipher: auto
     network: ws
-    servername: amstd.shabijichang.com
+    servername: mi-1.trollfunny.net
     http-opts: {}
     h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: amstd.shabijichang.com
-    delay: 1679
-  - name: 卢森堡 - Roost - FranTech Solutions
-    server: cf.yx.alue.link
+        HOST: mi-1.trollfunny.net
+    delay: 1665
+  - name: 英国 - 大曼徹斯特郡 - 27Fibre Ltd
+    server: 104.16.0.118
     type: vmess
     country: 🏁ZZ
-    port: 2052
-    uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
+    port: 2082
+    uuid: 4c9eb135-ef97-4ebf-f041-ac06acda3cee
     alterId: 0
     cipher: auto
     network: ws
-    servername: lu.wx.alue.link
+    servername: tg1.mianfenyun012.eu.org
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /fjdsh
       headers:
-        HOST: lu.wx.alue.link
-    delay: 1160
+        HOST: tg1.mianfenyun012.eu.org
+    delay: 1843
+  - name: 德国 - 兰河畔林堡 - OVH SAS
+    server: 51.38.99.96
+    port: 443
+    type: vmess
+    uuid: d1b86be4-546b-4f22-b15c-1180d3f100d9
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /freevmess
+    delay: 1845
   - name: 日本 - 东京 - Oracle Corporation
     server: 39.164.141.104
     port: 40350
@@ -1929,6 +1094,6 @@ proxies:
     sni: chaosujp.ccoo520.xyz
     skip-cert-verify: true
     udp: true
-    delay: 2255
+    delay: 2593
 proxy-groups: []
 rules: []
