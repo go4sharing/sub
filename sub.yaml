@@ -16,7 +16,7 @@ proxies:
     protocol-param: 64763:09WKaO
     obfs: http_simple
     obfs-param: download.windowsupdate.com
-    delay: 479
+    delay: 272
   - name: 英国 - 伦敦 - OVH SAS
     server: 112.29.94.23
     type: vmess
@@ -29,7 +29,7 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 884
+    delay: 882
   - name: 荷兰 - 哈勒姆 - Online S.A.S.
     server: 51.158.195.96
     type: ss
@@ -37,51 +37,94 @@ proxies:
     port: 443
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 2596
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
-    server: 54.255.142.131
+    delay: 2139
+  - name: 荷兰 - 哈勒姆 - Online S.A.S.
+    server: 51.158.195.96
     type: ss
-    port: 443
-    password: amazonskr05
+    country: 🇫🇷FR
+    port: 80
+    password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 278
+    delay: 1243
+  - name: 英国 - 伦敦 - GTHost
+    server: 172.99.190.109
+    port: 443
+    type: vmess
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: linkvws
+    udp: true
+    delay: 2873
   - name: 新加坡 - 新加坡 - Amazon.com, Inc.
     server: 18.141.177.65
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 362
-  - name: 中国 - 臺北市 - AKILE LTD
-    server: hytron.io
+    delay: 294
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
+    server: 43.202.42.168
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 1551
+  - name: 美国 - 芝加哥 - Server Central Network
+    server: 66.241.124.229
     type: vmess
-    port: 8080
-    uuid: 010c265f-5455-4141-ca23-4d69357ded0d
+    country: 🇺🇸US
+    port: 443
+    uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
     alterId: 0
+    cipher: auto
+    network: ws
+    servername: cold-dawn-9246.fly.dev
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+      headers:
+        HOST: cold-dawn-9246.fly.dev
+    delay: 2216
+  - name: 美国 - 普罗维登斯 - Alibaba (US) Technology Co., Ltd.
+    server: n1698119642.izwhvan.cn
+    port: 443
+    type: vmess
+    uuid: fe57e1f2-704b-4896-92b6-c256737e9739
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: n1698119642.izwhvan.cn
+    delay: 2679
+  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
+    server: 45.199.138.146
+    type: vmess
+    port: 30000
+    uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+    alterId: 64
     cipher: auto
     network: ws
     http-opts: {}
     h2-opts: {}
-    ws-opts:
-      path: /
-      headers:
-        Host: aktw.daozhang.love
-    delay: 2527
-  - name: 加拿大 - 多伦多 - NetLab Global
-    server: 154.12.39.152
-    port: 23566
-    type: vmess
-    uuid: 041170e1-95fd-40b1-9bd0-1d28826f97e7
-    alterId: 0
-    cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    delay: 1238
+    ws-opts:
+      path: /path/1698932401577
+      headers:
+        Host: www.19229362.xyz
+    delay: 1905
   - name: 加拿大 - 多伦多 - NetLab Global
     server: 154.12.39.201
     port: 23566
@@ -96,7 +139,7 @@ proxies:
       method: GET
       path:
         - /
-    delay: 1266
+    delay: 1115
   - name: 加拿大 - 多伦多 - NetLab Global
     server: 154.12.39.216
     port: 701
@@ -111,7 +154,7 @@ proxies:
       method: GET
       path:
         - /
-    delay: 1512
+    delay: 1191
   - name: 加拿大 - 多伦多 - NetLab Global
     server: 154.12.39.95
     type: vmess
@@ -127,15 +170,22 @@ proxies:
         - /
     h2-opts: {}
     skip-cert-verify: true
-    delay: 1628
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: tw.fanqiecloud.top
-    type: ss
-    country: 🇹🇼TW
-    port: 48889
-    password: c074bbc9-e29d-4191-b001-d373b0c7f71e
-    cipher: chacha20-ietf-poly1305
-    delay: 1148
+    delay: 1168
+  - name: 加拿大 - 多伦多 - NetLab Global
+    server: 154.12.39.113
+    type: vmess
+    port: 23566
+    udp: true
+    uuid: 041170e1-95fd-40b1-9bd0-1d28826f97e7
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 1301
   - name: 中国 - 台湾 - Sky Digital Co., Ltd.
     server: fn600mtw005.testnewline.info
     port: 443
@@ -150,22 +200,46 @@ proxies:
       tls: true
       mux: true
     udp: true
-    delay: 1330
-  - name: 中国 - 香港 - Cloudie Limited
-    server: 43.240.15.69
-    type: ss
+    delay: 552
+  - name: 德国 - 杜塞尔多夫 - myLoc managed IT AG
+    server: 213.202.216.14
     port: 443
-    password: 3cda32d5cda5
-    cipher: aes-256-gcm
+    type: trojan
+    password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+    sni: downloadde.xn--mes358acgm99l.com
+    delay: 1316
+  - name: 中国 - 香港 - Cloudie Limited
+    server: 123.254.105.107
+    port: 443
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 20544f92a1fb
     plugin: v2ray-plugin
     plugin-opts:
-      host: jjy11.jurtcs.com
       mode: websocket
-      mux: true
-      path: /dxlvkpmlvqsi
-      skip-cert-verify: false
+      host: jyn42.xjhssba.today
+      path: /vtprtcemdw
       tls: true
-    delay: 425
+      mux: true
+    udp: true
+    delay: 434
+  - name: 日本 - Osaka - Oracle Corporation
+    server: jpd.zerodisk.site
+    type: vmess
+    port: 48493
+    udp: true
+    uuid: f8ef7c47-9735-439c-a42b-355bae224656
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jpd.zerodisk.site
+    delay: 1106
   - name: 日本 - 东京 - Oracle Corporation
     server: tk-006.xiaoxiaobujidao.xyz
     type: trojan
@@ -175,15 +249,7 @@ proxies:
     sni: tk-006.xiaoxiaobujidao.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1626
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.201.62.12
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-    delay: 568
+    delay: 722
   - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
     server: 43.201.103.127
     type: ss
@@ -191,28 +257,43 @@ proxies:
     udp: true
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 454
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.201.249.87
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 1597
+    delay: 442
+  - name: 韩国 - 春川市 - Oracle Corporation
+    server: cc1.clare88.tk
+    type: vmess
+    country: 🇰🇷KR
+    port: 12653
+    uuid: fce96161-0c58-4ba9-8430-660d84083888
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: cc1.clare88.tk
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    delay: 731
+  - name: 韩国 - 春川市 - Oracle Corporation
+    server: 146.56.98.184
+    type: vmess
+    country: 🇰🇷KR
+    port: 12653
+    uuid: fce96161-0c58-4ba9-8430-660d84083888
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    delay: 882
   - name: 波多黎各 - 圣胡安 - BrainStorm Network, Inc
     server: 185.47.255.219
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 2241
-  - name: 新加坡 - 新加坡 - Melbikomas UAB
-    server: 103.172.116.79
-    type: ss
-    port: 9044
-    password: KBGjZYcy4SyRShmA
-    cipher: aes-256-cfb
-    delay: 380
+    delay: 1578
   - name: 美国 - 洛杉矶 - Cnservers LLC
     server: 23.224.22.210
     type: vmess
@@ -226,42 +307,52 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 1304
-  - name: 美国 - 洛杉矶 - Ipxo LLC
-    server: 50.114.206.86
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 9bda5d52-ebb1-44df-bacf-039182452475
-    sni: 13-231-155-134.nhost.00cdn.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1516
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
-    server: 13.250.123.158
+    delay: 675
+  - name: 德国 - 法兰克福 - DataCamp Limited
+    server: 89.187.169.38
     type: ss
     port: 443
-    password: amazonskr05
+    udp: true
+    password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 1951
-  - name: 越南 - 胡志明市 - VTDIGITAL
-    server: vn3.4gspeed.me
+    delay: 1712
+  - name: 越南 - Tay Ho - MTD
+    server: VIP20.5GTOCDOCAO.COM
     type: vmess
     country: 🏁ZZ
     port: 80
-    uuid: 93bbb190-beb1-46e2-94e3-cf92e8b42ee4
+    uuid: e9882e7b-c7bc-4c13-ab4d-bc127d39925c
     alterId: 0
     cipher: auto
     network: ws
-    servername: dl.kgvn.garenanow.com
+    servername: dl.ops.kgvn.garenanow.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /4gspeed.me
+      path: /5gtocdocao.com
       headers:
-        HOST: dl.kgvn.garenanow.com
-    delay: 1493
+        HOST: dl.ops.kgvn.garenanow.com
+    delay: 753
+  - name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC
+    server: 162.159.136.232
+    type: vmess
+    country: 🏁ZZ
+    port: 2096
+    uuid: 49dc7300-1fc1-4c93-866f-aa493c4a3e5b
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: yuxORu6Ljohicef9.pouriya.cf
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /Amsterdam
+      headers:
+        HOST: yuxORu6Ljohicef9.pouriya.cf
+    delay: 2755
   - name: 德国 - 杜塞尔多夫 - myLoc managed IT AG
     server: 5.104.107.143
     type: trojan
@@ -271,7 +362,7 @@ proxies:
     sni: de1.xn--mes358a9urctx.com
     skip-cert-verify: true
     udp: true
-    delay: 1395
+    delay: 1260
   - name: 法国 - 格拉沃利讷 - OVH SAS
     server: 51.75.142.47
     type: vmess
@@ -284,7 +375,7 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 763
+    delay: 510
   - name: 爱尔兰 - 都柏林 - Amazon.com, Inc.
     server: 52.213.209.253
     type: trojan
@@ -294,7 +385,15 @@ proxies:
     sni: trj.rollingnext.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 2178
+    delay: 2108
+  - name: 德国 - 法兰克福 - Aeza International LTD
+    server: 79.137.202.6
+    type: ss
+    country: 🇷🇺RU
+    port: 47527
+    password: h05tTSrTihbcblZ67qSNTk
+    cipher: chacha20-ietf-poly1305
+    delay: 1035
   - name: 巴西 - São Paulo - Oracle Corporation
     server: 140.238.239.181
     type: ss
@@ -302,7 +401,7 @@ proxies:
     port: 20902
     password: 961eebd8-1a7a-4cec-9d42-546c59708fe1
     cipher: chacha20-ietf-poly1305
-    delay: 1219
+    delay: 1217
   - name: 德国 - 莱比锡 - Cloudflare, Inc.
     server: de-new01.gujuji.top
     type: vmess
@@ -320,22 +419,24 @@ proxies:
       path: /
       headers:
         HOST: de-new01.gujuji.top
-    delay: 1819
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: dl4.fanqiecloud.top
+    delay: 2688
+  - name: 美国 - 威奇托 - Cloudflare, Inc.
+    server: us-new01.gujuji.top
     type: vmess
-    port: 2086
-    uuid: c074bbc9-e29d-4191-b001-d373b0c7f71e
+    port: 8080
+    udp: true
+    uuid: f01aea88-9486-401c-b0be-dc03e06330b6
     alterId: 0
     cipher: auto
     network: ws
     http-opts: {}
     h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /sssddd
+      path: /
       headers:
-        Host: cf-tw.fanqiecloud.top
-    delay: 2538
+        Host: us-new01.gujuji.top
+    delay: 1655
   - name: 美国 - 威奇托 - Cloudflare, Inc.
     server: us-new02.gujuji.top
     type: vmess
@@ -353,7 +454,24 @@ proxies:
       path: /
       headers:
         HOST: us-new02.gujuji.top
-    delay: 1645
+    delay: 1596
+  - name: 美国 - 威奇托 - Cloudflare, Inc.
+    server: us-new04.gujuji.top
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: f01aea88-9486-401c-b0be-dc03e06330b6
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: us-new04.gujuji.top
+    delay: 1869
   - name: 美国 - 威奇托 - Cloudflare, Inc.
     server: us-new03.gujuji.top
     type: vmess
@@ -371,7 +489,24 @@ proxies:
       path: /
       headers:
         HOST: us-new03.gujuji.top
-    delay: 2558
+    delay: 1625
+  - name: 法国 - 巴黎 - Cloudflare, Inc.
+    server: fr-new01.gujuji.top
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: f01aea88-9486-401c-b0be-dc03e06330b6
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: fr-new01.gujuji.top
+    delay: 2479
   - name: 英国 - 伦敦 - Cloudflare, Inc.
     server: uk-new01.gujuji.top
     type: vmess
@@ -388,7 +523,27 @@ proxies:
       path: /
       headers:
         Host: uk-new01.gujuji.top
-    delay: 1767
+    delay: 2022
+  - name: 美国 - 洛杉矶 - Cnservers LLC
+    server: 23.224.22.210
+    type: trojan
+    country: 🇺🇸US
+    port: 49753
+    password: 4ECP7vbtsW
+    skip-cert-verify: true
+    udp: true
+    delay: 846
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
+    server: 8.217.134.91
+    port: 80
+    type: ss
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: ''
+    delay: 263
   - name: 德国 - 法兰克福 - OVH SAS
     server: 57.129.1.20
     type: ss
@@ -396,7 +551,7 @@ proxies:
     udp: true
     password: asdKkaskJKfnsa
     cipher: aes-256-cfb
-    delay: 868
+    delay: 540
   - name: 中国 - 香港 - Cloudie Limited
     server: 103.246.244.178
     type: ss
@@ -411,7 +566,7 @@ proxies:
       path: /kdjzdrfczb
       skip-cert-verify: false
       tls: true
-    delay: 1041
+    delay: 2030
   - name: 中国 - 香港 - Akari Networks
     server: yd-07.paofunlink.com
     port: 5957
@@ -422,7 +577,7 @@ proxies:
     obfs: plain
     protocol-param: 229225:zZ4fCm
     obfs-param: 2b49f229225.microsoft.com
-    delay: 398
+    delay: 930
   - name: 中国 - 香港 - Akari Networks
     server: yd-06.paofunlink.com
     port: 5953
@@ -433,7 +588,7 @@ proxies:
     obfs: plain
     protocol-param: 229225:zZ4fCm
     obfs-param: 2b49f229225.microsoft.com
-    delay: 376
+    delay: 437
   - name: 中国 - 香港 - Akari Networks
     server: yd-04.paofunlink.com
     port: 5956
@@ -444,7 +599,24 @@ proxies:
     obfs: plain
     protocol-param: 229225:zZ4fCm
     obfs-param: 2b49f229225.microsoft.com
-    delay: 347
+    delay: 683
+  - name: 美国 - 威奇托 - Cloudflare, Inc.
+    server: de-cdn.ikuan.dev
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: d437ef1c-413c-49af-a003-bfecefad82d4
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /update.microsoft.com
+      headers:
+        Host: us01-v6.freenode.pro
+    delay: 2282
   - name: 英国 - 大曼徹斯特郡 - 27Fibre Ltd
     server: 104.18.72.238
     type: vmess
@@ -462,94 +634,7 @@ proxies:
       path: /E6QkCpqXGX5EUZJdAACD
       headers:
         Host: uk-cf-gy.115cloud.link
-    delay: 1852
-  - name: 美国 - 洛杉矶 - ColoCrossing
-    server: freenodecdn.ikuan.dev
-    type: vmess
-    port: 8880
-    udp: true
-    uuid: d437ef1c-413c-49af-a003-bfecefad82d4
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /microsoft?ed=1024
-      headers:
-        Host: losangeles.freenode.pro
-    delay: 1144
-  - name: 美国 - 洛杉矶 - ColoCrossing
-    server: cdnikuan.ikuan.dev
-    type: vmess
-    port: 8880
-    udp: true
-    uuid: d437ef1c-413c-49af-a003-bfecefad82d4
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /microsoft?ed=1024
-      headers:
-        Host: losangeles.freenode.pro
-    delay: 1648
-  - name: 德国 - 莱比锡 - Cloudflare, Inc.
-    server: de-cdn.ikuan.dev
-    type: vmess
-    port: 2052
-    udp: true
-    uuid: 1110c7d7-5eef-4e2f-adaf-d2c28195d570
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /microsoft?ed=1024
-      headers:
-        Host: de05-v6.ikuan.dev
-    delay: 2556
-  - name: 美国 - 洛杉矶 - ColoCrossing
-    server: cdnikuan3.ikuan.dev
-    type: vmess
-    country: 🏁ZZ
-    port: 8880
-    uuid: 1110c7d7-5eef-4e2f-adaf-d2c28195d570
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: losangeles.freenode.pro
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /microsoft?ed=1024
-      headers:
-        HOST: losangeles.freenode.pro
-    delay: 935
-  - name: 美国 - 洛杉矶 - ColoCrossing
-    server: cdnikuan.ikuan.dev
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 1110c7d7-5eef-4e2f-adaf-d2c28195d570
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: losangeles.freenode.pro
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /microsoft?ed=1024
-      headers:
-        HOST: losangeles.freenode.pro
-    delay: 1819
+    delay: 1845
   - name: 日本 - 东京 - Oracle Corporation
     server: tk-007.xiaoxiaobujidao.xyz
     type: vmess
@@ -567,7 +652,7 @@ proxies:
       path: /xiaodao?ed=2048
       headers:
         Host: tk-007.xiaoxiaobujidao.xyz
-    delay: 2134
+    delay: 671
   - name: 日本 - 东京 - Oracle Corporation
     server: tk-007.xiaoxiaobujidao.xyz
     type: trojan
@@ -576,7 +661,25 @@ proxies:
     sni: tk-007.xiaoxiaobujidao.xyz
     skip-cert-verify: true
     udp: true
-    delay: 2184
+    delay: 982
+  - name: 美国 - 紐約 - Alibaba (US) Technology Co., Ltd.
+    server: xg107.npv4.com
+    type: trojan
+    port: 443
+    password: 844cead6-bd96-3c2b-9b8f-ba61302154c8
+    sni: xg107.npv4.com
+    skip-cert-verify: true
+    udp: true
+    delay: 2246
+  - name: 美国 - 凤凰城 - Oracle Corporation
+    server: px-000.xiaoxiaobujidao.xyz
+    type: trojan
+    port: 34547
+    password: 024e8d4d-7cc7-344f-b47a-5a1b5d5fb459
+    sni: px-000.xiaoxiaobujidao.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1147
   - name: 中国 - 苏州市 - Stacks Inc
     server: hk6.network-cdn-gw.cc
     type: ss
@@ -584,7 +687,15 @@ proxies:
     port: 47706
     password: a8543a4b-1d3c-4a52-950f-a36ad24ca28e
     cipher: chacha20-ietf-poly1305
-    delay: 562
+    delay: 548
+  - name: 中国 - 苏州市 - Stacks Inc
+    server: hk5.network-cdn-gw.cc
+    type: ss
+    country: 🇨🇳CN
+    port: 47705
+    password: a8543a4b-1d3c-4a52-950f-a36ad24ca28e
+    cipher: chacha20-ietf-poly1305
+    delay: 320
   - name: 中国 - 苏州市 - Stacks Inc
     server: hk1.network-cdn-gw.cc
     type: ss
@@ -592,7 +703,7 @@ proxies:
     port: 47795
     password: a8543a4b-1d3c-4a52-950f-a36ad24ca28e
     cipher: chacha20-ietf-poly1305
-    delay: 403
+    delay: 355
   - name: 中国 - 香港 - Cnservers LLC
     server: 183.240.232.93
     type: vmess
@@ -605,26 +716,29 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2695
-  - name: 中国 - 厦门市 - PEG TECH INC
-    server: 142.4.98.228
-    type: vmess
-    country: 🇺🇸US
-    port: 443
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    network: ws
-    servername: www.59274706.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /path/1698671600986
-      headers:
-        HOST: www.59274706.xyz
-    delay: 1983
+    delay: 2429
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
+    server: 8.217.237.237
+    port: 80
+    type: ss
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: ''
+    delay: 277
+  - name: 美国 - Crugers - Alibaba (US) Technology Co., Ltd.
+    server: 47.76.32.230
+    type: ss
+    port: 80
+    password: a-wym4ovY4Yw
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: ''
+      mode: http
+    delay: 314
   - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
     server: 8.217.90.160
     type: ss
@@ -635,20 +749,7 @@ proxies:
     plugin-opts:
       host: ''
       mode: http
-    delay: 252
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1092
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 229225:zZ4fCm
-    obfs: plain
-    obfs-param: 2b49f229225.microsoft.com
-    group: SSRProvider
-    delay: 477
+    delay: 269
   - name: 中国 - 台湾 - Akari Networks
     server: yd-05.paofunlink.com
     type: ssr
@@ -661,7 +762,20 @@ proxies:
     obfs: plain
     obfs-param: 2b49f229225.microsoft.com
     group: SSRProvider
-    delay: 879
+    delay: 1146
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    type: ssr
+    country: 🇨🇳CN
+    port: 5950
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 7521:12HsOu
+    obfs: plain
+    obfs-param: fb7bc7521.microsoft.com
+    group: SSRProvider
+    delay: 581
   - name: 中国 - 香港 - Kirino LLC
     server: sql.accessconnect.cc
     type: ssr
@@ -674,7 +788,7 @@ proxies:
     obfs: tls1.2_ticket_auth
     obfs-param: 72106203723.www.gov.hk
     group: SSRProvider
-    delay: 542
+    delay: 555
   - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
     server: 23341317-8bba-3a70-9085-b1e032767e01.nachoneko.ltd
     type: vmess
@@ -689,15 +803,23 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /
-    delay: 473
-  - name: 新加坡 - 新加坡 - Nearoute Limited
-    server: sg.kunlun-ppg.com
-    port: 10831
+    delay: 420
+  - name: 美国 - 洛杉矶 - Ipxo LLC
+    server: 50.114.206.34
     type: trojan
-    password: 2def95e7-ffe7-4f97-af9b-4d67b848b6bd
-    sni: alibaba-node.cn
+    country: 🇺🇸US
+    port: 443
+    password: c0241bbc-b0d6-4357-8a92-fd2ae8899953
+    sni: 13-231-155-134.nhost.00cdn.com
     skip-cert-verify: true
     udp: true
-    delay: 1166
+    delay: 1590
+  - name: 埃及 - 开罗 - Kaopu Cloud HK Limited
+    server: 38.54.59.99
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1544
 proxy-groups: []
 rules: []
