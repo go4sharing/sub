@@ -5,86 +5,474 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 英国 - 倫敦金融城 - OVH SAS
+    server: 78.39.56.6
+    port: 46585
+    type: vmess
+    uuid: 05af75d7-4c45-4222-b245-d36c5618135d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 2425
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: ffe4a0e2-65d0-4492-a2d4-f5955986fe89
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        Host: nbq11.ntbq.dynu.net
+    delay: 500
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: b3d43a0b-9ef8-4f87-a5c6-8da062e02620
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b11
+      headers:
+        Host: nbq11.ntbq.dynu.net
+    delay: 499
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 44209e14-2acf-4d62-ac06-5f7fe43e3591
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        Host: nbq11.ntbq.dynu.net
+    delay: 490
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 42246552-d778-440f-bbb5-8f0f14139c50
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq12.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+      headers:
+        HOST: nbq12.ntbq.dynu.net
+    delay: 778
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: 38ff99d8-dbaf-430a-867e-200b89f4c70a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 782
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bd47438-d696-499a-bcd5-134e4145135a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq12.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+      headers:
+        HOST: nbq12.ntbq.dynu.net
+    delay: 771
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: c0adcb77-692a-4122-983a-ec0f8f964ba1
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2669
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b91e2e5c-47cd-4cb1-bff3-f4a063c2bfd7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2870
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6152dab2-5a09-44fe-9c14-3ece9dbbc4b8
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+    delay: 558
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bd47438-d696-499a-bcd5-134e4145135a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2969
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bbe3014-9fce-4700-9b39-adc2bd657f63
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 807
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bd47438-d696-499a-bcd5-134e4145135a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 1100
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: a9a37f79-231c-4b57-849d-3717c1b561b4
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2658
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b3d43a0b-9ef8-4f87-a5c6-8da062e02620
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq12.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+      headers:
+        HOST: nbq12.ntbq.dynu.net
+    delay: 1031
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: ffe4a0e2-65d0-4492-a2d4-f5955986fe89
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 1060
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: d6bc538d-2496-4818-b160-2d5875ba9a91
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2651
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 44209e14-2acf-4d62-ac06-5f7fe43e3591
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 2663
+  - name: 美国 - Ashburn - Amazon.com, Inc.
+    server: 52.23.176.97
+    type: ss
+    country: 🇺🇸US
+    port: 34511
+    password: 5k55aIUjJaaQ8YjE6772wF
+    cipher: chacha20-ietf-poly1305
+    delay: 841
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
+    server: 146.190.108.227
+    type: trojan
+    country: 🇺🇸US
+    port: 1
+    password: '1'
+    sni: m.zoom.us
+    skip-cert-verify: true
+    udp: true
+    delay: 1395
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5953
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 511
+  - name: 中国 - 台湾 - Akari Networks
+    server: 120.232.177.250
+    port: 1073
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1483
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-02.paofunlink.com
+    type: ssr
+    country: 🇨🇳CN
+    port: 1073
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 40575:fV3Nxq
+    obfs: plain
+    obfs-param: microsoft.com
+    delay: 1594
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: b1fd7844-4c95-4316-9a15-c7b415e9d84c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 459
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: a9a37f79-231c-4b57-849d-3717c1b561b4
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 459
   - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
     server: 43.201.52.239
-    type: ss
     port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 863
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
-    server: 8.217.212.41
     type: ss
-    port: 80
-    password: a-wym4ovY4Yw
-    cipher: aes-128-gcm
-    plugin: obfs
-    plugin-opts:
-      host: ''
-      mode: http
-    delay: 1868
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 1902
   - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.201.149.200
-    type: ss
+    server: 43.201.47.103
     port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 706
-  - name: 德国 - 法兰克福 - Datacamp Limited
-    server: 109.61.80.225
     type: ss
-    country: 🇭🇺 HU
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 509
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
+    server: 43.200.6.58
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 510
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc.
+    server: 3.125.144.118
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-directvpn
+    skip-cert-verify: true
+    udp: true
+    delay: 2705
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
+    server: 43.201.255.57
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 563
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
+    server: 13.215.249.53
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 366
+  - name: 乌克兰 - Kyiv - G-Core Labs S.A
+    server: 5.188.6.8
+    type: ss
     port: 989
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 1097
-  - name: 中国 - 香港 - Cloudie Limited
-    server: 123.254.105.107
-    type: ss
-    port: 443
-    password: 20544f92a1fb
-    cipher: chacha20-ietf-poly1305
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: jyn42.xjhssba.today
-      mode: websocket
-      mux: true
-      path: /vtprtcemdw
-      skip-cert-verify: false
-      tls: true
-    delay: 751
-  - name: 中国 - 台湾 - Sky Digital Co., Ltd.
-    server: fn300mtw015.flybirdline.xyz
-    type: ss
-    port: 443
-    password: d7570e231c78
-    cipher: aes-256-gcm
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: fn300mtw015.flybirdline.xyz
-      mode: websocket
-      mux: true
-      path: /uanrmeers
-      skip-cert-verify: false
-      tls: true
-    delay: 748
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.200.6.58
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 698
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.201.47.103
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 705
+    delay: 1421
   - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 120.232.177.250
+    server: yd-02.paofunlink.com
     type: ssr
+    country: 🇨🇳CN
     port: 1082
     password: bxsnucrgk6hfish
     cipher: chacha20-ietf
@@ -92,133 +480,396 @@ proxies:
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 979
-  - name: 土耳其 - 伊斯坦布尔 - Netbudur Telekomunikasyon Limited Sirketi
-    server: shop.app
-    port: 8080
-    type: vmess
-    uuid: dea35652-2439-426a-86a7-5b2e535e934d
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        Host: azstutr.iiio.wiki
-    delay: 1895
-  - name: 日本 - 東京都 - Akari Networks
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11105
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 617
-  - name: 俄罗斯 - 莫斯科 - Aeza International LTD
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11107
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1141
-  - name: 中国 - 香港 - Hong Kong Broadband Network Ltd
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11111
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 481
-  - name: 中国 - 香港 - Hong Kong Broadband Network Ltd
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11001
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 500
-  - name: 德国 - 法兰克福 - Aeza International LTD
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11008
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 941
-  - name: 中国 - 台湾 - Akari Networks
-    server: tg_mfbpn_m1.52vpn.eu.org
-    type: vmess
-    country: 🇨🇳 CN
-    port: 11002
-    uuid: 07b3d36d-1bbb-3584-aabd-de2c77878934
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 783
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions
-    server: bjcu.xzyunjiasu.icu
-    port: 33952
-    type: ss
-    cipher: aes-256-gcm
-    password: 5c8b210a-2f00-4292-964b-05281c7ad5d1
-    delay: 1762
+    delay: 1308
   - name: 美国 - 希尔斯伯勒 - OVH SAS
+    server: 120.232.177.250
+    port: 1083
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 2000
+  - name: 美国 - 希尔斯伯勒 - OVH SAS
+    server: 120.232.177.250
+    port: 1080
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 2570
+  - name: 南非 - 開普敦 - Xneelo (Pty) Ltd
+    server: 41.203.4.34
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 1998
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: ffe4a0e2-65d0-4492-a2d4-f5955986fe89
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+    delay: 558
+  - name: 美国 - San Jose - Oracle Corporation
+    server: us.doushimeng.com
+    type: ss
+    country: 🇺🇸US
+    port: 22853
+    password: a87fed64-9116-42e9-a271-5afdba7a458d
+    cipher: chacha20-ietf-poly1305
+    delay: 1915
+  - name: 冰岛 - 凯夫拉维克国际机场 - STARK INDUSTRIES SOLUTIONS LTD
+    server: is-gy.115cloud.link
+    type: trojan
+    port: 38860
+    password: f5010476-19be-3918-865c-d83c751d176b
+    sni: is-gy.115cloud.link
+    skip-cert-verify: true
+    udp: true
+    delay: 1589
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5956
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1019
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5950
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 616
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
+    port: 5953
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 495
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5952
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 746
+  - name: 中国 - 台湾 - Akari Networks
     server: 120.232.177.250
     type: ssr
     country: 🇨🇳CN
-    port: 1083
+    port: 1070
     password: bxsnucrgk6hfish
     cipher: chacha20-ietf
     protocol: auth_aes128_sha1
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 2553
+    delay: 1239
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-02.paofunlink.com
+    port: 1074
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1920
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5950
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1569
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: 120.232.177.250
+    type: ssr
+    country: 🇨🇳CN
+    port: 1093
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 40575:fV3Nxq
+    obfs: plain
+    obfs-param: TG@wangcai_1
+    delay: 1433
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5954
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 609
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
+    port: 5956
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1016
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    type: ssr
+    country: 🇨🇳CN
+    port: 5958
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 40575:fV3Nxq
+    obfs: plain
+    obfs-param: microsoft.com
+    delay: 512
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
+    port: 5958
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 409
   - name: 中国 - 香港 - Akari Networks
     server: yd-04.paofunlink.com
     type: ssr
     country: 🇨🇳CN
-    port: 5956
+    port: 5955
     password: bxsnucrgk6hfish
     cipher: chacha20-ietf
     protocol: auth_aes128_sha1
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 1367
+    delay: 1451
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5955
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 576
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-05.paofunlink.com
+    port: 1070
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1974
   - name: 中国 - 香港 - Akari Networks
     server: 122.193.251.201
+    port: 5950
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1964
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
+    port: 5957
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 676
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    type: ssr
+    country: 🇨🇳CN
+    port: 5958
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 40575:fV3Nxq
+    obfs: plain
+    obfs-param: TG@wangcai_1
+    delay: 1889
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5958
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 853
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5951
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1093
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5953
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 396
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5959
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 470
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5958
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1134
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5956
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 903
+  - name: 美国 - 希尔斯伯勒 - OVH SAS
+    server: yd-02.paofunlink.com
+    type: ssr
+    port: 1081
+    password: bxsnucrgk6hfish
+    cipher: chacha20-ietf
+    protocol: auth_aes128_sha1
+    protocol-param: 40575:fV3Nxq
+    obfs: plain
+    obfs-param: TG@wangcai_1
+    delay: 1120
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5952
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 884
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-02.paofunlink.com
+    port: 1072
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1380
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
+    port: 5952
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1329
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5959
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 957
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
     type: ssr
     country: 🇨🇳CN
     port: 5954
@@ -228,81 +879,273 @@ proxies:
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 483
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5957
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 362
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 447
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1639
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5959
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 363
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1072
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 863
+    delay: 619
   - name: 中国 - 香港 - Akari Networks
     server: yd-06.paofunlink.com
+    port: 5955
     type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: TG@wangcai_1
-    delay: 563
+    delay: 541
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5959
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 534
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5951
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 671
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5950
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 488
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5951
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 648
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5956
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1119
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: yd-02.paofunlink.com
+    port: 1094
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1446
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
+    port: 5954
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 619
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5956
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1284
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5952
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1424
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-05.paofunlink.com
+    port: 1071
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1320
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5950
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1444
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5957
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1188
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: 120.232.177.250
+    port: 1092
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 992
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: yd-05.paofunlink.com
+    port: 1094
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1353
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5953
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 451
   - name: 中国 - 台湾 - Akari Networks
     server: yd-02.paofunlink.com
+    port: 1070
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 983
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-07.paofunlink.com
+    port: 5953
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 436
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: yd-02.paofunlink.com
+    port: 1091
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 441
+  - name: 中国 - 台湾 - Akari Networks
+    server: 120.232.177.250
+    port: 1072
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 389
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5954
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 851
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: 120.232.177.250
+    port: 1091
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 782
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
+    port: 5957
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1465
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-04.paofunlink.com
+    port: 5957
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1636
+  - name: 中国 - 台湾 - Akari Networks
+    server: yd-05.paofunlink.com
     type: ssr
     country: 🇨🇳CN
     port: 1074
@@ -312,117 +1155,9 @@ proxies:
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 385
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5958
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 541
+    delay: 915
   - name: 新加坡 - 新加坡 - OVH SAS
-    server: 120.232.177.250
-    type: ssr
-    country: 🇨🇳CN
-    port: 1090
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1483
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1090
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 463
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 559
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 437
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5950
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 493
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5958
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 491
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5951
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 408
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5956
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 540
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-05.paofunlink.com
+    server: yd-02.paofunlink.com
     type: ssr
     country: 🇨🇳CN
     port: 1092
@@ -431,1075 +1166,792 @@ proxies:
     protocol: auth_aes128_sha1
     protocol-param: 40575:fV3Nxq
     obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 463
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
-    port: 5955
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 397
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5959
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 331
+    obfs-param: microsoft.com
+    delay: 993
   - name: 中国 - 香港 - Akari Networks
     server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5959
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 1083
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1094
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 2128
-  - name: 美国 - 洛杉矶 - Enzu Inc
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1051
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 7521:12HsOu
-    obfs: plain
-    obfs-param: fb7bc7521.microsoft.com
-    group: SSRProvider
-    delay: 1561
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1072
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1889
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1071
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 882
-  - name: 美国 - 洛杉矶 - Enzu Inc
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1052
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 7521:12HsOu
-    obfs: plain
-    obfs-param: fb7bc7521.microsoft.com
-    group: SSRProvider
-    delay: 522
-  - name: 美国 - 洛杉矶 - Enzu Inc
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1053
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 7521:12HsOu
-    obfs: plain
-    obfs-param: fb7bc7521.microsoft.com
-    group: SSRProvider
-    delay: 537
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1093
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 884
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5950
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 479
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1094
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1308
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5954
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 509
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5957
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 433
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5956
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 785
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 120.232.177.250
-    type: ssr
-    country: 🇨🇳CN
-    port: 1080
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1202
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1083
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 902
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 377
-  - name: 中国 - 台湾 - Akari Networks
-    server: 120.232.177.250
-    type: ssr
-    country: 🇨🇳CN
-    port: 1073
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 2310
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
-    port: 5951
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 371
-  - name: 中国 - 台湾 - Akari Networks
-    server: 120.232.177.250
-    type: ssr
-    country: 🇨🇳CN
-    port: 1072
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1229
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-05.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1073
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1279
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.200
-    type: ssr
-    country: 🇨🇳CN
     port: 5955
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 430
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
     type: ssr
-    country: 🇨🇳CN
-    port: 5955
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 418
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5957
     password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: microsoft.com
-    delay: 448
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5950
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 527
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5956
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 460
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5954
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 508
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5955
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 447
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5959
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 349
+    delay: 677
   - name: 中国 - 香港 - Akari Networks
     server: yd-04.paofunlink.com
+    port: 5959
     type: ssr
-    country: 🇨🇳CN
-    port: 5951
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: TG@wangcai_1
-    delay: 448
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5954
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 597
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-04.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 405
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-06.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5957
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 460
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 437
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 460
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1091
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 2942
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5954
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 768
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5950
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 507
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5951
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 423
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-07.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5955
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 439
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5958
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 457
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 1480
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5951
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 422
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5956
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 514
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5953
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 406
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
-    port: 5952
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 413
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-02.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 1070
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
-    delay: 461
-  - name: 中国 - 香港 - Akari Networks
-    server: yd-01.paofunlink.com
-    type: ssr
-    country: 🇨🇳CN
-    port: 5950
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: microsoft.com
     delay: 487
   - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
-    port: 5957
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 560
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
+    server: 122.193.251.200
     port: 5951
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 340
-  - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
     type: ssr
-    country: 🇨🇳CN
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 550
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
     port: 5958
-    password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 451
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: 120.232.177.250
     type: ssr
-    country: 🇨🇳CN
-    port: 1091
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
-    protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
-    obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1614
-  - name: 新加坡 - 新加坡 - OVH SAS
-    server: 120.232.177.250
-    type: ssr
-    country: 🇨🇳CN
-    port: 1092
     password: bxsnucrgk6hfish
-    cipher: chacha20-ietf
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: TG@wangcai_1
-    delay: 470
+    delay: 1869
   - name: 中国 - 香港 - Akari Networks
-    server: 122.193.251.201
-    type: ssr
-    country: 🇨🇳CN
+    server: yd-06.paofunlink.com
     port: 5950
-    password: bxsnucrgk6hfish
+    type: ssr
     cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: TG@wangcai_1
-    delay: 441
+    delay: 1000
   - name: 新加坡 - 新加坡 - OVH SAS
-    server: 120.232.177.250
+    server: yd-05.paofunlink.com
+    port: 1092
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1859
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: yd-02.paofunlink.com
     type: ssr
     country: 🇨🇳CN
-    port: 1094
+    port: 1090
     password: bxsnucrgk6hfish
     cipher: chacha20-ietf
     protocol: auth_aes128_sha1
     protocol-param: 40575:fV3Nxq
     obfs: plain
     obfs-param: TG@wangcai_1
-    delay: 865
+    delay: 454
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5954
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 633
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.200
+    port: 5957
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 635
+  - name: 新加坡 - 新加坡 - OVH SAS
+    server: yd-05.paofunlink.com
+    port: 1090
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1601
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
+    port: 5951
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 1183
   - name: 中国 - 香港 - Akari Networks
     server: 122.193.251.201
+    port: 5955
     type: ssr
-    country: 🇨🇳CN
-    port: 5956
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
+    protocol-param: 40575:fV3Nxq
     obfs-param: TG@wangcai_1
-    delay: 365
-  - name: 中国 - 台湾 - Akari Networks
-    server: yd-05.paofunlink.com
+    delay: 653
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-06.paofunlink.com
+    port: 5952
     type: ssr
-    country: 🇨🇳CN
-    port: 1070
-    password: bxsnucrgk6hfish
     cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
     obfs: plain
-    obfs-param: microsoft.com
-    delay: 1476
-  - name: 德国 - 法兰克福 - Melbikomas UAB
-    server: 185.140.12.202
-    type: ss
-    country: 🇩🇪DE
-    port: 45633
-    password: 7JkDITroBcO7O4Vev2Y8el
-    cipher: chacha20-ietf-poly1305
-    delay: 822
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 6379
-    udp: true
-    password: zDNVedRFPQexG9v
-    cipher: aes-256-gcm
-    delay: 2138
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: >-
-      ak1732.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    type: ss
-    port: 8119
-    udp: true
-    password: cdBIDV42DCwnfIN
-    cipher: aes-256-gcm
-    delay: 1941
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    port: 5001
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    delay: 2847
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    country: 🇫🇷FR
-    port: 8119
-    password: cdBIDV42DCwnfIN
-    cipher: aes-256-gcm
-    delay: 1550
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    port: 5003
-    type: ss
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-    delay: 1716
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 2375
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-    delay: 1888
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    port: 8888
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    delay: 2346
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 6697
-    udp: true
-    password: TEzjfAYq2IjtuoS
-    cipher: aes-256-gcm
-    delay: 1622
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    port: 7307
-    type: ss
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-    delay: 2573
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 3389
-    udp: true
-    password: Y6R9pAtvxxzmGC
-    cipher: aes-256-gcm
-    delay: 2744
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 8118
-    udp: true
-    password: cdBIDV42DCwnfIN
-    cipher: aes-256-gcm
-    delay: 1131
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 5500
-    udp: true
-    password: KixLvKzwjekG00rm
-    cipher: aes-256-gcm
-    delay: 1097
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    country: 🇫🇷FR
-    port: 2376
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-    delay: 2872
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 8091
-    udp: true
-    password: PCnnH6SQSnfoS27
-    cipher: aes-256-gcm
-    delay: 2822
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 8000
-    password: KixLvKzwjekG00rm
-    cipher: aes-256-gcm
-    delay: 2517
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 7306
-    udp: true
-    password: FoOiGlkAA9yPEGP
-    cipher: aes-256-gcm
-    delay: 802
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: >-
-      www.outline.network.ak1941.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    type: ss
-    country: 🇫🇷FR
-    port: 7001
-    password: RexnBgU7EV5ADxG
-    cipher: aes-256-gcm
-    delay: 2233
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: 43.201.255.57
-    type: ss
-    port: 443
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 628
-  - name: 荷兰 - 阿姆斯特丹 - Akamai Technologies, Inc.
-    server: nl-v2ray.freevmess.com
-    type: vmess
-    port: 8442
-    uuid: 061bd7f6-c628-4c71-b5e8-b4e3b83e6ef2
-    alterId: 0
-    cipher: auto
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - nl-v2ray.freevmess.com
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2175
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
-    server: 13.215.249.53
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 288
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc.
-    server: 13.212.19.180
-    type: ss
-    country: 🇸🇬SG
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 597
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: >-
-      www.outline.network.ak1977.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    type: ss
-    country: 🇺🇸US
-    port: 8388
-    password: YWE3M
-    cipher: chacha20-ietf-poly1305
-    delay: 2339
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 51.81.186.195
-    type: ss
-    country: 🇺🇸US
-    port: 8388
-    password: YWE3M
-    cipher: chacha20-ietf-poly1305
-    delay: 996
-  - name: 意大利 - Milan - Akamai Technologies, Inc.
-    server: >-
-      www.outline.network.ak1984.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    type: ss
-    country: 🇺🇸US
-    port: 2443
-    password: VsqR4hNV80zzmlK/svwzdAy5XnHuG2Wo3RaTkFQy92k=
-    cipher: aes-256-gcm
-    delay: 2142
-  - name: 卢森堡 - 盧森堡市 - FranTech Solutions
-    server: 172.67.68.136
-    port: 80
-    type: vmess
-    uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        Host: buyvm.iiio.wiki
-    delay: 1227
-  - name: 卢森堡 - 盧森堡市 - FranTech Solutions
-    server: freeyx.cloudflare88.eu.org
-    port: 80
-    type: vmess
-    uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        Host: buyvm.iiio.wiki
-    delay: 1529
-  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD
-    server: 104.31.16.14
-    type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: f7558d50-dc17-4cd0-9c69-3f11060a56e1
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: fi1.xv2ray.net
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /vmess
-      headers:
-        HOST: fi1.xv2ray.net
-    delay: 2809
-  - name: 日本 - 东京 - Amazon Technologies Inc.
-    server: aws-hk03.aikun.online
+    protocol-param: 40575:fV3Nxq
+    obfs-param: TG@wangcai_1
+    delay: 952
+  - name: 法国 - 巴黎 - Amazon.com, Inc.
+    server: 35.181.109.150
     type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 283a4450-028d-4f8d-94fc-0a954ab4a96d
-    sni: cdn-65135431546231.78321.xyz
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 506
-  - name: 南非 - 開普敦 - Xneelo (Pty) Ltd
-    server: 41.203.4.34
-    type: ss
-    port: 989
+    delay: 1359
+  - name: 英国 - 伦敦 - Amazon Technologies Inc.
+    server: 13.43.199.216
+    type: trojan
+    country: 🇬🇧GB
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
     udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1802
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: 54.36.174.181
-    type: ss
-    port: 8881
-    password: kDWvXYZoTBcGkC4
-    cipher: aes-256-gcm
-    delay: 2338
-  - name: 波兰 - 弗罗茨瓦夫 - OVH SAS
-    server: >-
-      ak1751.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    port: 5600
-    type: ss
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    delay: 2326
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
-    server: c6.wuxianliulianng.xyz
-    port: 443
-    type: vmess
-    uuid: 1389986a-6eb6-4f7b-839c-9cfb83ab700d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: golinkwuxian.top
-    network: ws
-    ws-opts:
-      path: /apple
-      headers:
-        Host: 6666.golinkwuxian.top
-    delay: 1679
-  - name: 澳大利亚 - 悉尼 - Oracle Corporation
-    server: au.doushimeng.com
-    type: ss
-    port: 24652
+    delay: 2250
+  - name: 英国 - 伦敦 - Amazon Technologies Inc.
+    server: 18.130.141.82
+    type: trojan
+    country: 🇬🇧GB
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
     udp: true
-    password: c838ac58-aeb6-4a8a-b6de-ee10e94b4d33
-    cipher: chacha20-ietf-poly1305
     delay: 1125
-  - name: 土耳其 - 伊斯坦布尔 - Netbudur Telekomunikasyon Limited Sirketi
-    server: 23.227.38.33
-    type: vmess
-    country: 🇨🇦CA
-    port: 8080
-    uuid: dea35652-2439-426a-86a7-5b2e535e934d
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: azstutr.iiio.wiki
-    http-opts: {}
-    h2-opts: {}
+  - name: 德国 - 法兰克福 - Datacamp Limited
+    server: 109.61.80.225
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1060
+  - name: 爱尔兰 - 都柏林 - Amazon.com, Inc.
+    server: 54.73.12.110
+    type: trojan
+    country: 🇮🇪IE
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
     skip-cert-verify: true
-    ws-opts:
-      path: /aries?ed=2048
-      headers:
-        HOST: azstutr.iiio.wiki
-    delay: 1570
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD
-    server: 193.46.56.210
+    udp: true
+    delay: 1463
+  - name: 德国 - 纽伦堡 - Hetzner Online GmbH
+    server: 78.39.56.6
     type: vmess
-    country: 🇷🇺RU
-    port: 8443
-    uuid: b72694db-ed21-46c1-8923-325305fa787f
+    country: 🇮🇷IR
+    port: 28390
+    uuid: 98e7f8aa-a56d-4588-8031-57de4f7cdc44
     alterId: 0
     cipher: auto
     network: tcp
     http-opts: {}
     h2-opts: {}
+    skip-cert-verify: true
+    delay: 2075
+  - name: 土耳其 - Istanbul - Superonline Iletisim Hizmetleri A.S.
+    server: 78.39.56.6
+    port: 46227
+    type: vmess
+    uuid: ef11148e-4eb9-493b-b670-b4aa3f710262
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 1801
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG
+    server: 31.14.114.56
+    type: vmess
+    country: 🇮🇷IR
+    port: 10163
+    uuid: 87246b12-405d-4ebf-9f43-19875bb03ccc
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    delay: 1881
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG
+    server: 31.14.114.56
+    type: vmess
+    country: 🇮🇷IR
+    port: 13170
+    uuid: 0df8e0fe-3bbd-4348-9a9a-46600dca4fcf
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    delay: 1921
+  - name: 土耳其 - Istanbul - Superonline Iletisim Hizmetleri A.S.
+    server: tr01.v2red.com
+    type: vmess
+    country: 🇮🇷IR
+    port: 46227
+    uuid: ef11148e-4eb9-493b-b670-b4aa3f710262
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 2084
+  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
+    server: 154.85.1.130
+    type: vmess
+    country: 🇳🇱NL
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 1676
+    ws-opts:
+      path: /path/1698843555400
+    delay: 1461
   - name: 冰岛 - 凯夫拉维克国际机场 - STARK INDUSTRIES SOLUTIONS LTD
     server: is-gy.115cloud.link
     type: trojan
-    country: 🇷🇺RU
     port: 38860
-    password: 0eb43e96-2a82-3056-adad-37154c641dcb
+    password: 0342f097-9c9c-3b45-a8f2-6e94386aac84
     sni: is-gy.115cloud.link
     skip-cert-verify: true
     udp: true
-    delay: 1984
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: tw.doushimeng.com
-    type: ss
-    port: 48888
+    delay: 1498
+  - name: 瑞典 - 斯德哥尔摩 - Amazon.com
+    server: 16.171.251.44
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
     udp: true
-    password: c838ac58-aeb6-4a8a-b6de-ee10e94b4d33
-    cipher: chacha20-ietf-poly1305
-    delay: 768
+    delay: 2486
   - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
     server: b21.ntbq.dynu.net
     type: vmess
     port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
+    uuid: c0adcb77-692a-4122-983a-ec0f8f964ba1
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 2918
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 38ff99d8-dbaf-430a-867e-200b89f4c70a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        HOST: nbq11.ntbq.dynu.net
+    delay: 1628
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 2e3f1868-eeff-4a5c-995e-9e1a2cdf1bf3
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 493
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: 6bd47438-d696-499a-bcd5-134e4145135a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 1491
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 450cd674-1411-4ea1-979b-bf56da87b21d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 1897
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: a9a37f79-231c-4b57-849d-3717c1b561b4
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 506
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 42246552-d778-440f-bbb5-8f0f14139c50
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b21
+      headers:
+        HOST: b21.ntbq.dynu.net
+    delay: 2831
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        Host: nbq13.ntbq.dynu.net
+    delay: 724
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 18a4f80a-e6ba-4763-80da-7188fdee9abb
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+    delay: 1163
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: d6bc538d-2496-4818-b160-2d5875ba9a91
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 503
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: 6bbe3014-9fce-4700-9b39-adc2bd657f63
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 2034
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: ffe4a0e2-65d0-4492-a2d4-f5955986fe89
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 2067
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        Host: nbq11.ntbq.dynu.net
+    delay: 1179
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 42246552-d778-440f-bbb5-8f0f14139c50
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 500
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bd47438-d696-499a-bcd5-134e4145135a
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+    delay: 1651
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: c0adcb77-692a-4122-983a-ec0f8f964ba1
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+    delay: 1164
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b91e2e5c-47cd-4cb1-bff3-f4a063c2bfd7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 495
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bbe3014-9fce-4700-9b39-adc2bd657f63
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 496
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6bbe3014-9fce-4700-9b39-adc2bd657f63
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+    delay: 1573
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 44209e14-2acf-4d62-ac06-5f7fe43e3591
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 480
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: d201923c-daa9-4459-8e98-9b3ea0435926
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b21
+    delay: 964
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 18a4f80a-e6ba-4763-80da-7188fdee9abb
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 487
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        Host: tc12.kq1.dynu.net
+    delay: 501
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: d201923c-daa9-4459-8e98-9b3ea0435926
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 471
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 6152dab2-5a09-44fe-9c14-3ece9dbbc4b8
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+    delay: 479
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: c0adcb77-692a-4122-983a-ec0f8f964ba1
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 463
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b1fd7844-4c95-4316-9a15-c7b415e9d84c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 496
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b91e2e5c-47cd-4cb1-bff3-f4a063c2bfd7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b21
+      headers:
+        HOST: b21.ntbq.dynu.net
+    delay: 860
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
     alterId: 0
     cipher: auto
     network: ws
@@ -1510,194 +1962,635 @@ proxies:
       path: /b21
       headers:
         Host: b21.ntbq.dynu.net
-    delay: 766
+    delay: 1081
   - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: b22.ntbq.dynu.net
+    server: b21.ntbq.dynu.net
     type: vmess
     port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
+    uuid: d6bc538d-2496-4818-b160-2d5875ba9a91
     alterId: 0
     cipher: auto
     network: ws
+    servername: b21.ntbq.dynu.net
     http-opts: {}
     h2-opts: {}
     tls: true
     ws-opts:
-      path: /b22
+      path: /b21
       headers:
-        Host: b22.ntbq.dynu.net
-    delay: 541
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: nbq12.ntbq.dynu.net
-    type: vmess
-    port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /b12
-      headers:
-        Host: nbq12.ntbq.dynu.net
-    delay: 505
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: b24.ntbq.dynu.net
-    type: vmess
-    port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /b24
-      headers:
-        Host: b24.ntbq.dynu.net
-    delay: 770
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: b23.ntbq.dynu.net
-    type: vmess
-    port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /b23
-      headers:
-        Host: b23.ntbq.dynu.net
-    delay: 667
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: tc11.kq1.dynu.net
-    type: vmess
-    port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /vbub1
-      headers:
-        Host: tc11.kq1.dynu.net
-    delay: 717
+        Host: b21.ntbq.dynu.net
+    delay: 1077
   - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
     server: nbq11.ntbq.dynu.net
     type: vmess
+    country: 🇹🇼TW
     port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
+    uuid: d6bc538d-2496-4818-b160-2d5875ba9a91
     alterId: 0
     cipher: auto
     network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /b11
-      headers:
-        Host: nbq11.ntbq.dynu.net
-    delay: 720
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: nbq13.ntbq.dynu.net
-    type: vmess
-    port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /b13
-      headers:
-        Host: nbq13.ntbq.dynu.net
-    delay: 507
-  - name: 意大利 - Milan - Akamai Technologies, Inc.
-    server: 172.232.194.131
-    type: ss
-    country: 🇺🇸US
-    port: 2443
-    password: VsqR4hNV80zzmlK/svwzdAy5XnHuG2Wo3RaTkFQy92k=
-    cipher: aes-256-gcm
-    delay: 1085
-  - name: 美国 - San Jose - Oracle Corporation
-    server: us.doushimeng.com
-    type: ss
-    port: 22853
-    udp: true
-    password: c838ac58-aeb6-4a8a-b6de-ee10e94b4d33
-    cipher: chacha20-ietf-poly1305
-    delay: 1141
-  - name: 荷兰 - 阿姆斯特丹 - Yisp B.V.
-    server: 156.225.67.96
-    type: vmess
-    country: 🇭🇰HK
-    port: 443
-    uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52
-    alterId: 64
-    cipher: auto
-    network: ws
-    servername: www.48643700.xyz
+    servername: nbq11.ntbq.dynu.net
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /path/1696251693048
+      path: /b11
       headers:
-        HOST: www.48643700.xyz
-    delay: 1240
-  - name: 美国 - 普林斯顿 - Alibaba (US) Technology Co., Ltd.
-    server: 47.76.51.110
+        HOST: nbq11.ntbq.dynu.net
+    delay: 2481
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 44209e14-2acf-4d62-ac06-5f7fe43e3591
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b21.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b21
+      headers:
+        HOST: b21.ntbq.dynu.net
+    delay: 783
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 38ff99d8-dbaf-430a-867e-200b89f4c70a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 502
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 450cd674-1411-4ea1-979b-bf56da87b21d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+    delay: 488
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq13.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b3d43a0b-9ef8-4f87-a5c6-8da062e02620
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq13.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b13
+      headers:
+        HOST: nbq13.ntbq.dynu.net
+    delay: 1924
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: a9a37f79-231c-4b57-849d-3717c1b561b4
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        HOST: nbq11.ntbq.dynu.net
+    delay: 1205
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq11.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b91e2e5c-47cd-4cb1-bff3-f4a063c2bfd7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nbq11.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b11
+      headers:
+        HOST: nbq11.ntbq.dynu.net
+    delay: 1206
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b21.ntbq.dynu.net
+    type: vmess
+    port: 443
+    uuid: 6152dab2-5a09-44fe-9c14-3ece9dbbc4b8
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    ws-opts:
+      path: /b21
+      headers:
+        Host: b21.ntbq.dynu.net
+    delay: 2076
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: tc12.kq1.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b3d43a0b-9ef8-4f87-a5c6-8da062e02620
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tc12.kq1.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vbub2
+      headers:
+        HOST: tc12.kq1.dynu.net
+    delay: 500
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
+    server: 43.200.244.103
     type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 524
+  - name: 土耳其 - Köseköy - TurkTelekom Kocaeli Korfez
+    server: svtkk.edlaghiye.com
+    type: vmess
+    port: 8081
+    udp: true
+    uuid: 46d31ab6-d296-48fb-b37b-360e59af26cd
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - svtkk.edlaghiye.com
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1476
+  - name: 美国 - Minkler - Alibaba.com LLC
+    server: 47.254.16.114
+    type: vmess
+    country: 🇺🇸US
     port: 80
-    password: a-wym4ovY4Yw
-    cipher: aes-128-gcm
-    plugin: obfs
-    plugin-opts:
-      host: ''
-      mode: http
-    delay: 1239
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
-    server: 8.217.218.147
-    type: ss
-    port: 80
-    password: a-wym4ovY4Yw
-    cipher: aes-128-gcm
-    plugin: obfs
-    plugin-opts:
-      host: ''
-      mode: http
-    delay: 870
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: yd-02.paofunlink.com
+    uuid: f3464642-f113-4575-aa33-f68aef56b5c0
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /mePGXW6SFZZw2QyAqaYK
+    delay: 1591
+  - name: 美国 - 肯特 - Choopa
+    server: us-zl-gy.115cloud.link
+    type: trojan
+    country: 🇺🇸US
+    port: 38860
+    password: 0342f097-9c9c-3b45-a8f2-6e94386aac84
+    sni: us-zl-gy.115cloud.link
+    skip-cert-verify: true
+    udp: true
+    delay: 962
+  - name: 美国 - 威奇托 - Cloudflare, Inc.
+    server: us-new02.gujuji.top
+    port: 8080
+    type: vmess
+    uuid: 7fdbc047-438c-4c65-9859-101aaa60b6b6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us-new02.gujuji.top
+    udp: true
+    delay: 2325
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc.
+    server: ca-new01.gujuji.top
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: 7fdbc047-438c-4c65-9859-101aaa60b6b6
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: ca-new01.gujuji.top
+    delay: 1638
+  - name: 美国 - 威奇托 - Cloudflare, Inc.
+    server: us-new01.gujuji.top
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: 7fdbc047-438c-4c65-9859-101aaa60b6b6
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: us-new01.gujuji.top
+    delay: 1501
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b22.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: b91e2e5c-47cd-4cb1-bff3-f4a063c2bfd7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: b22.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b22
+      headers:
+        HOST: b22.ntbq.dynu.net
+    delay: 1617
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: b22.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 443
+    uuid: 450cd674-1411-4ea1-979b-bf56da87b21d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b22
+    delay: 1625
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
+    server: >-
+      sg2.88lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    password: 312d6c9a-a39b-4581-9c04-b27be91e47a2
+    sni: 13-231-155-134.nhost.00cdn.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1421
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc.
+    server: speed.cloudflare.com
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: 2a7334e2-d410-4cb1-bb35-8a15bc1a8d9e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us36821f246.vjfvyzfhhf.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/efNfrvVc
+      headers:
+        HOST: us36821f246.vjfvyzfhhf.xyz
+    delay: 872
+  - name: 中国 - 香港 - Akari Networks
+    server: 122.193.251.201
     type: ssr
-    port: 1080
+    port: 5959
     udp: true
     password: bxsnucrgk6hfish
     cipher: chacha20-ietf
     protocol: auth_aes128_sha1
-    protocol-param: 40575:fV3Nxq
+    protocol-param: 7521:12HsOu
     obfs: plain
-    obfs-param: TG@wangcai_1
-    delay: 1021
-  - name: 加拿大 - 多伦多 - Oracle Corporation
-    server: lonan.globa.abc.1145114.me
+    delay: 1066
+  - name: 中国 - 香港 - Akari Networks
+    server: yd-01.paofunlink.com
+    port: 5954
+    type: ssr
+    cipher: chacha20-ietf
+    password: bxsnucrgk6hfish
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 40575:fV3Nxq
+    obfs-param: microsoft.com
+    delay: 1383
+  - name: 印度 - 班加羅爾 - DigitalOcean, LLC
+    server: 172.67.227.174
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaoyindu01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaoyindu01.360ddns.online
+    delay: 1141
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
+    server: 172.67.56.2
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaomeiguo01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaomeiguo01.360ddns.online
+    delay: 2305
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
+    server: 162.159.134.13
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaomeiguo01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaomeiguo01.360ddns.online
+    delay: 1868
+  - name: 印度 - 班加羅爾 - DigitalOcean, LLC
+    server: 172.67.7.122
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaoyindu01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaoyindu01.360ddns.online
+    delay: 998
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
+    server: 172.67.121.220
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaomeiguo01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaomeiguo01.360ddns.online
+    delay: 684
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
+    server: 172.67.75.33
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: freewhoringinkoreasg01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: freewhoringinkoreasg01.360ddns.online
+    delay: 2363
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
+    server: 198.41.223.61
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: freewhoringinkoreasg01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: freewhoringinkoreasg01.360ddns.online
+    delay: 2597
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
+    server: 172.64.84.214
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: freewhoringinkoreasg01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: freewhoringinkoreasg01.360ddns.online
+    delay: 1663
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
+    server: 172.67.143.201
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: freewhoringinkoreasg01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: freewhoringinkoreasg01.360ddns.online
+    delay: 1133
+  - name: 日本 - 大阪市 - The Constant Company, LLC
+    server: 172.67.73.156
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaoriben01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaoriben01.360ddns.online
+    delay: 1121
+  - name: 日本 - 大阪市 - The Constant Company, LLC
+    server: 172.67.132.159
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaoriben01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaoriben01.360ddns.online
+    delay: 1817
+  - name: 日本 - 大阪市 - The Constant Company, LLC
+    server: 198.41.223.7
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: ae4ed5fb-3e7e-492d-9068-0a9112918e25
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baipiaoriben01.360ddns.online
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: baipiaoriben01.360ddns.online
+    delay: 2883
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG
+    server: 91.107.159.150
+    type: vmess
+    port: 21503
+    udp: true
+    uuid: c2535bea-6558-4854-8128-a71fb8fef4f9
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 91.107.159.150
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 470
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
+    server: nbq12.ntbq.dynu.net
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b12
+      headers:
+        Host: nbq12.ntbq.dynu.net
+    delay: 572
+  - name: 德国 - 法兰克福 - Oracle Corporation
+    server: lonan.europe.1145114.me
     type: vmess
     port: 2087
     udp: true
-    uuid: 60cc198b-9451-4bad-8292-52d93a8dd9ba
+    uuid: 03b31a08-c13d-4b74-8966-81df0221c393
     alterId: 0
     cipher: auto
     network: ws
@@ -1706,766 +2599,67 @@ proxies:
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /lonsdgn
+      path: /91819299-acb0=c8d7d41d97xianyu
       headers:
-        Host: cadci.44kk7t.tech
-    delay: 2262
-  - name: 美国 - 洛杉矶 - Cogent Communications
-    server: cf-ip.115cloud.link
+        Host: deabsjfbak.1145114.me
+    delay: 2602
+  - name: 新加坡 - 新加坡 - HotRoute
+    server: cmcu.1145114.me
     type: vmess
-    country: 🇯🇵JP
-    port: 2052
-    uuid: 8bd39f48-87a9-3ad9-a396-71914ddbf3cf
+    port: 2087
+    udp: true
+    uuid: 03b31a08-c13d-4b74-8966-81df0221c393
     alterId: 0
     cipher: auto
     network: ws
-    servername: us.cf.gy.115cloud.link
     http-opts: {}
     h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /ccae09d88e774b25a5da1a7adf1f1191
+      path: /lonan
       headers:
-        HOST: us.cf.gy.115cloud.link
-    delay: 1493
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: tc12.kq1.dynu.net
+        Host: sg003.1145114.me
+    delay: 1869
+  - name: 法国 - 斯特拉斯堡 - OVH SAS
+    server: f01.bzshare.com
     type: vmess
     port: 443
-    uuid: bf5eb8e2-462c-4c21-9df2-b5b990b12636
+    udp: true
+    uuid: 732bf605-0d96-42f9-a5f4-dc5ec076600a
     alterId: 0
     cipher: auto
     network: ws
     http-opts: {}
     h2-opts: {}
     tls: true
-    ws-opts:
-      path: /vbub2
-      headers:
-        Host: tc12.kq1.dynu.net
-    delay: 734
-  - name: 巴西 - São Paulo - Oracle Corporation
-    server: dl3.doushimeng.com
-    type: vmess
-    port: 2086
-    udp: true
-    uuid: c838ac58-aeb6-4a8a-b6de-ee10e94b4d33
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /uziiii
+      path: /D26xvdqUdCpvvPTz4R
       headers:
-        Host: cf-bx3s.doushimeng.com
-    delay: 1669
-  - name: 冰岛 - 凯夫拉维克国际机场 - STARK INDUSTRIES SOLUTIONS LTD
-    server: is-gy.115cloud.link
-    type: trojan
-    port: 38860
-    password: 8bd39f48-87a9-3ad9-a396-71914ddbf3cf
-    sni: is-gy.115cloud.link
-    skip-cert-verify: true
-    udp: true
-    delay: 1557
-  - name: 美国 - 普罗维登斯 - Alibaba (US) Technology Co., Ltd.
-    server: 47.76.44.217
-    type: ss
+        Host: fs.appls.eu.org
+    delay: 1950
+  - name: 美国 - 普林斯顿 - Alibaba (US) Technology Co., Ltd.
+    server: 47.76.51.110
     port: 80
-    password: a-wym4ovY4Yw
+    type: ss
     cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
     plugin: obfs
     plugin-opts:
-      host: ''
       mode: http
-    delay: 210
-  - name: 美国 - 凤凰城 - Tempest Hosting, LLC
-    server: 89.116.180.179
-    port: 443
-    type: trojan
-    password: d2698cf9-c47e-455c-8384-12e642cbba15
-    sni: p6us4.pqjc.buzz
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /pq/us4
-      headers:
-        Host: p6us4.pqjc.buzz
-    delay: 1468
-  - name: 俄罗斯 - 莫斯科 - LLC Baxet
-    server: cmbestvm.ifanr.org
-    port: 30111
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 2841
-  - name: 加拿大 - 多伦多 - Akamai Technologies
-    server: cmbestvm.ifanr.org
-    port: 21231
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1735
-  - name: 印度尼西亚 - 雅加达 - PT PC24 Cyber Indonesia
-    server: cmbestvm.ifanr.org
-    port: 22019
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 769
-  - name: 印度 - 孟买 - Akamai Technologies, Inc.
-    server: specialcunicom.zifanr.net
-    port: 20017
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1070
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: cmbestvm.ifaner.club
-    port: 20598
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 914
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: cmbestvm.ifaner.club
-    port: 20019
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 621
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: cmbestvm.ifaner.club
-    port: 20706
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 657
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd.
-    server: specialcunicom.zifanr.net
-    port: 30919
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 687
-  - name: 意大利 - Pescara - Netsons s.r.l
-    server: cmbestvm.ifanr.org
-    port: 23225
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 2432
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc.
-    server: cmbestvm.ifaner.club
-    port: 20529
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 494
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc.
-    server: specialcunicom.zifanr.net
-    port: 50716
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 657
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc.
-    server: lpeicm.bana.ink
-    port: 59908
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1647
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc.
-    server: lpeicm.bana.ink
-    port: 59902
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1762
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc.
-    server: cmbestvm.ifaner.club
-    port: 20122
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 866
-  - name: 日本 - 东京 - Amazon.com, Inc.
-    server: cmbestvm.ifaner.club
-    port: 30629
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 687
-  - name: 日本 - Inagi - NTT PC Communications, Inc.
-    server: specialcunicom.zifanr.net
-    port: 21110
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 700
-  - name: 日本 - Shinagawa - Datacamp Limited
-    server: cmbestvm.ifaner.club
-    port: 25124
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 832
-  - name: 泰国 - 曼谷 - Siamdata Communication Co., ltd.
-    server: cmbestvm.ifanr.org
-    port: 20120
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1278
-  - name: 美国 - 洛杉矶 - Cluster Logic Inc
-    server: cmbestvm.ifanr.org
-    port: 20550
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1751
-  - name: 美国 - 紐約 - DMIT Cloud Services
-    server: specialcunicom.zifanr.net
-    port: 50707
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1842
-  - name: 美国 - 芝加哥 - IT7 Networks Inc
-    server: cmbestvm.ifanr.org
-    port: 20809
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1128
-  - name: 美国 - 紐約 - DMIT Cloud Services
-    server: specialcunicom.zifanr.net
-    port: 21107
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 878
-  - name: 英国 - Poplar - Clouvider Limited
-    server: cmbestvm.ifaner.club
-    port: 22017
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1149
-  - name: 菲律宾 - Las Pinas - Eastern Telecommunications Philippines, Inc.
-    server: cmbestvm.ifaner.club
-    port: 20515
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 2376
-  - name: 越南 - Quận Gò Vấp - CLOUDCOREJSC
-    server: cmbestvm.ifanr.org
-    port: 23014
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 614
-  - name: 阿拉伯联合酋长国 - 夏尔迦 - Iomart Hosting Limited
-    server: cmbestvm.ifaner.club
-    port: 20401
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1882
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc.
-    server: specialcunicom.zifanr.net
-    port: 28108
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 799
-  - name: 中国 - 香港 - Hong Kong Broadband Network Ltd
-    server: cmbestvm.ifanr.org
-    port: 50053
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 591
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
-    server: cmbestvm.ifanr.org
-    port: 25507
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 2295
-  - name: 中国 - 香港 - G-Core Labs S.A.
-    server: cmbestvm.ifaner.club
-    port: 20918
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1310
-  - name: 中国 - 香港 - Alibaba.com LLC
-    server: cmgz18.zifaner.top
-    port: 21211
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1586
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
-    server: cmbestvm.ifanr.org
-    port: 20718
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 826
-  - name: 中国 - 香港 - G-Core Labs S.A.
-    server: specialcunicom.zifanr.net
-    port: 21044
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 1789
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd.
-    server: lpeicm.bana.ink
-    port: 59904
-    type: ssr
-    cipher: chacha20-ietf
-    password: download.microso
-    protocol: auth_aes128_sha1
-    obfs: http_simple
-    protocol-param: 13727:B7JB0z
-    obfs-param: 8045d13727.download.microsoft.com
-    delay: 2102
-  - name: 中国 - 香港 - ASSN-AKRN
-    server: 10.kccic2pa.xyz
-    port: 50010
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 2562
-  - name: 美国 - 波特蘭 - Wowrack.com
-    server: 33.kccic2pa.xyz
-    port: 50033
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 2302
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 35.kccic2pa.xyz
-    port: 50035
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 2323
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 36.kccic2pa.xyz
-    port: 50036
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1273
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 37.kccic2pa.xyz
-    port: 50037
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1075
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 38.kccic2pa.xyz
-    port: 50038
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1251
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 39.kccic2pa.xyz
-    port: 50039
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 2092
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 40.kccic2pa.xyz
-    port: 50040
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1052
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 44.kccic2pa.xyz
-    port: 50044
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1386
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 45.kccic2pa.xyz
-    port: 50045
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1337
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 46.kccic2pa.xyz
-    port: 50046
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1492
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 47.kccic2pa.xyz
-    port: 50047
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1411
-  - name: 美国 - 希尔斯伯勒 - OVH SAS
-    server: 49.kccic2pa.xyz
-    port: 50049
-    type: vmess
-    uuid: 0e9179c8-abbe-4e5b-aaa4-6e1f4f528eb0
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1236
-  - name: 日本 - 大阪市 - The Constant Company, LLC
-    server: 172.64.106.177
+      host: ''
+    delay: 2057
+  - name: 美国 - 普罗维登斯 - Alibaba (US) Technology Co., Ltd.
+    server: 47.76.44.217
     port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoriben01.360ddns.online
-    delay: 2130
-  - name: 日本 - 大阪市 - The Constant Company, LLC
-    server: 172.67.132.159
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoriben01.360ddns.online
-    delay: 1579
-  - name: 日本 - 大阪市 - The Constant Company, LLC
-    server: 172.67.73.156
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoriben01.360ddns.online
-    delay: 1744
-  - name: 日本 - 大阪市 - The Constant Company, LLC
-    server: 198.41.223.7
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoriben01.360ddns.online
-    delay: 1046
-  - name: 印度 - 班加羅爾 - DigitalOcean, LLC
-    server: 190.93.244.211
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoyindu01.360ddns.online
-    delay: 1384
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
-    server: 172.64.84.214
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaomeiguo01.360ddns.online
-    delay: 884
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
-    server: 172.67.75.33
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: freewhoringinkoreasg01.360ddns.online
-    delay: 1465
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC
-    server: 198.41.223.61
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: freewhoringinkoreasg01.360ddns.online
-    delay: 1361
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
-    server: 162.159.134.13
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaomeiguo01.360ddns.online
-    delay: 2619
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
-    server: 172.67.121.220
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaomeiguo01.360ddns.online
-    delay: 685
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC
-    server: 172.67.56.2
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaomeiguo01.360ddns.online
-    delay: 886
-  - name: 印度 - 班加羅爾 - DigitalOcean, LLC
-    server: 172.67.227.174
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoyindu01.360ddns.online
-    delay: 1431
-  - name: 印度 - 班加羅爾 - DigitalOcean, LLC
-    server: 172.67.5.96
-    port: 80
-    type: vmess
-    uuid: 372adebd-d2ba-4266-a7b4-62a6a7759542
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: baipiaoyindu01.360ddns.online
-    delay: 938
+    type: ss
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: ''
+    delay: 2933
 proxy-groups: []
 rules: []
