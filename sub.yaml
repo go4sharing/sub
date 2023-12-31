@@ -4,6 +4,24 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
+    server: 13.231.210.254
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 379
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 1
+    server: 8.218.194.227
+    type: ss
+    port: 80
+    password: a-wym4ovY4Yw
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: ''
+      mode: http
+    delay: 247
 proxy-groups: []
 rules: []
