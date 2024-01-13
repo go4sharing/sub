@@ -4,58 +4,20 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
-    server: b23.ntbq.dynu.net
-    port: 2024
-    type: vmess
-    uuid: a36db716-c6d0-4bc2-bd76-69e278215124
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 1293
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
-    server: c11.twtc.dynu.net
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 6
+    server: b36.ntbq.dynu.net
     type: ss
-    country: 🇹🇼TW
-    port: 3234
+    port: 3877
     password: a36db716-c6d0-4bc2-bd76-69e278215124
     cipher: chacha20-ietf-poly1305
-    delay: 1411
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 9
-    server: xibaozi.19890604.day
-    port: 10835
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1514
-  - name: 中国 - 台湾 - ONEPROVIDER - 4
+    delay: 1684
+  - name: 中国 - 台湾 - ONEPROVIDER - 5
     server: 223.165.4.173
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1139
-  - name: 中国 - 台湾 - Vertex Connectivity LLC - 10
-    server: tiananmen.19890604.day
-    port: 10807
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1198
-  - name: 中国 - 台湾 - Vertex Connectivity LLC - 11
-    server: tiananmen.19890604.day
-    port: 10804
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1202
-  - name: 中国 - 台湾 - Vertex Connectivity LLC - 12
-    server: tiananmen.19890604.day
-    port: 10805
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 2193
+    delay: 2705
   - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 1
     server: 8.217.135.205
     port: 443
@@ -69,15 +31,29 @@ proxies:
       path: ''
       tls: false
       mux: true
-    delay: 1806
-  - name: 中国 - 香港 - Baxet Group Inc. - 5
-    server: 156.251.226.142
+    delay: 246
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 2
+    server: 8.217.217.138
+    type: ss
+    country: 🇸🇬 SG
+    port: 80
+    password: a-wym4ovY4Yw
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: ''
+      mode: http
+    delay: 2964
+  - name: 中国 - 香港 - Baxet Group Inc. - 4
+    server: 103.20.222.181
     type: vmess
-    port: 56120
+    country: 🇭🇰HK
+    port: 53335
     uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
     alterId: 0
     cipher: auto
     network: ws
+    servername: hk-300.changding.tech
     http-opts: {}
     h2-opts: {}
     tls: true
@@ -85,39 +61,31 @@ proxies:
     ws-opts:
       path: /changding-tls1?ed=2048
       headers:
-        Host: hk-300.changding.tech
-    delay: 327
-  - name: 中国 - 香港 - HGC Global Communications Limited - 7
-    server: hkt.littleqqq.co
+        HOST: hk-300.changding.tech
+    delay: 358
+  - name: 中国 - 香港 - Hytron Network Services Limited - 7
+    server: 34.92.119.182
     type: vmess
-    country: 🇭🇰HK
-    port: 20759
-    uuid: e532931d-9c1d-4bec-a1c8-98263bb57dbb
+    port: 80
+    udp: true
+    uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
     alterId: 0
     cipher: auto
     network: ws
-    servername: hkt.littleqqq.co
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /hls/cctv5phd.m3u8
+      path: /vm-tls0?ed=2048
       headers:
-        HOST: hkt.littleqqq.co
-    delay: 2523
-  - name: 中国 - 香港 - PCCW IMS Limited - 8
-    server: tiananmen.19890604.day
-    port: 10810
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1646
-  - name: 中国 - 香港 - Xnnet LLC - 6
+        Host: hk-hy02.changding.tech
+    delay: 607
+  - name: 中国 - 香港 - Xnnet LLC - 3
     server: hk01.host.csznet.eu.org
     type: vmess
     port: 443
     udp: true
-    uuid: 77f7bdc2-ed10-4b84-887f-f464d0748c3d
+    uuid: cc67c829-5353-418d-aeee-75ea6d8b8cab
     alterId: 0
     cipher: auto
     network: ws
@@ -129,1140 +97,653 @@ proxies:
       path: /admin
       headers:
         Host: hk01.host.csznet.eu.org
-    delay: 520
+    delay: 1130
+  - name: 中国 - 香港 - Xnnet LLC - 8
+    server: hk01.host.csznet.eu.org
+    port: 443
+    type: vmess
+    uuid: 77f7bdc2-ed10-4b84-887f-f464d0748c3d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /admin
+      headers:
+        Host: hk01.host.csznet.eu.org
+    udp: true
+    delay: 573
   - name: 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
     server: 192.36.27.94
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1509
-  - name: 乌克兰 - Kyiv - G-Core Labs S.A - 1
-    server: 5.188.6.8
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1510
+    delay: 1543
   - name: 以色列 - 特拉维夫 - EDIS Infrastructure in Israel - 2
-    server: 193.182.144.183
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1551
-  - name: 以色列 - 特拉维夫 - EDIS Infrastructure in Israel - 3
     server: 193.182.144.240
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1321
+    delay: 1220
+  - name: 以色列 - 特拉维夫 - EDIS Infrastructure in Israel - 3
+    server: 193.182.144.183
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1502
   - name: 以色列 - 特拉维夫 - Interhost Communication Solutions Ltd. - 1
     server: 192.71.27.87
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1514
+    delay: 1501
+  - name: 保加利亚 - 索菲亞 - Kaopu Cloud HK Limited - 1
+    server: 38.54.27.148
+    type: ss
+    country: 🇧🇬BG
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 2715
   - name: 克罗地亚 - 萨格勒布 - Akton d.o.o. - 1
     server: 46.183.184.61
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1775
+    delay: 1446
   - name: 克罗地亚 - 萨格勒布 - Akton d.o.o. - 2
     server: 46.183.184.60
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 2573
-  - name: 加拿大 - Beauharnois - OVH SAS - 1
+    delay: 2137
+  - name: 加拿大 - Beauharnois - OVH SAS - 2
     server: 198.245.49.22
-    type: ss
-    country: 🇨🇦CA
     port: 989
-    password: f8f7aCzcPKbsF8p3
+    type: ss
     cipher: aes-256-cfb
-    delay: 998
+    password: f8f7aCzcPKbsF8p3
+    delay: 930
+  - name: 加拿大 - 多伦多 - Oracle Corporation - 1
+    server: 132.145.102.60
+    type: ss
+    port: 21001
+    password: 8fe3ac85-7130-4ce3-8038-b58ed8d13d38
+    cipher: chacha20-ietf-poly1305
+    delay: 731
   - name: 卢森堡 - 盧森堡市 - G-Core Labs S.A - 1
     server: 92.38.163.53
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1457
-  - name: 印度 - 班加羅爾 - DIGITALOCEAN - 1
-    server: xibaozi.19890604.day
-    port: 10840
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1527
+    delay: 1589
   - name: 危地马拉 - Guatemala City - SONDATECH - 1
-    server: 170.80.111.5
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 2082
-  - name: 危地马拉 - Guatemala City - SONDATECH - 2
     server: 170.80.111.6
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1588
-  - name: 塞尔维亚 - 贝尔格莱德 - M247 Europe SRL - 1
-    server: 194.71.126.31
+    delay: 1523
+  - name: 危地马拉 - Guatemala City - SONDATECH - 2
+    server: 170.80.111.5
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1341
+    delay: 1347
+  - name: 埃及 - 开罗 - Kaopu Cloud HK Limited - 1
+    server: 38.54.59.99
+    type: ss
+    country: 🇪🇬EG
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1574
   - name: 尼日利亚 - 拉哥斯 - ONEPROVIDER - 1
     server: 185.255.123.90
+    port: 989
     type: ss
-    country: 🇳🇬NG
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1579
+  - name: 巴基斯坦 - 卡拉奇 - Kaopu Cloud HK Limited - 1
+    server: 38.60.217.98
+    type: ss
+    country: 🇵🇰PK
     port: 989
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 1763
-  - name: 德国 - 法兰克福 - Baxet Group Inc. - 2
-    server: xibaozi.19890604.day
-    port: 10839
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 2387
+    delay: 1947
   - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 1
     server: 80.71.157.52
     port: 7710
     type: ss
     cipher: chacha20-ietf-poly1305
     password: A2RmMQmEDdFNJnq6jSxD2O
-    delay: 815
-  - name: 摩尔多瓦 - 基希讷乌 - Trabia SRL - 1
-    server: 178.175.134.2
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 983
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 2
-    server: 46.137.227.248
+    delay: 958
+  - name: 捷克 - České Budějovice - Stark Industries Solutions LTD - 1
+    server: cz1-vmess.sshmax.xyz
+    type: vmess
+    port: 80
+    udp: true
+    uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cz1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: cz1-vmess.sshmax.xyz
+    delay: 1226
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 1
+    server: 54.251.150.231
     type: ss
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 261
-  - name: 新加坡 - 新加坡 - HotRoute - 42
-    server: tank.19890604.day
-    port: 10829
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1508
-  - name: 新加坡 - 新加坡 - HotRoute - 43
-    server: tank.19890604.day
-    port: 10832
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1588
-  - name: 新加坡 - 新加坡 - HotRoute - 44
-    server: tank.19890604.day
-    port: 10827
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1588
+    delay: 512
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 10
     server: 103.172.116.94
-    port: 9043
+    port: 9093
     type: ss
     cipher: aes-256-cfb
-    password: HSZuyJQcWe8dxNdF
-    delay: 1304
+    password: wfLC2y7rzZyCmuyt
+    delay: 1146
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 11
-    server: 103.172.116.94
-    port: 9060
-    type: ss
-    cipher: aes-256-cfb
-    password: ueLXVkvh4hckhErQ
-    delay: 1288
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 12
-    server: 103.172.116.94
-    port: 9064
-    type: ss
-    cipher: aes-256-cfb
-    password: cp8pRSUAyLhTfVWH
-    delay: 1249
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 13
-    server: 103.172.116.94
-    port: 9070
-    type: ss
-    cipher: aes-256-cfb
-    password: bf7v334KKDV3YDhH
-    delay: 1158
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 14
-    server: 103.172.116.94
-    port: 9018
-    type: ss
-    cipher: aes-256-cfb
-    password: fG2artUmHfNT2cX7
-    delay: 1193
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 15
-    server: 103.172.116.94
-    port: 9040
-    type: ss
-    cipher: aes-256-cfb
-    password: p9z5BVADH2YFs3MN
-    delay: 1397
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 16
-    server: 103.172.116.94
-    port: 9030
-    type: ss
-    cipher: aes-256-cfb
-    password: GeregetR8cvQHzYr
-    delay: 1363
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 17
-    server: 103.172.116.94
-    port: 9006
-    type: ss
-    cipher: aes-256-cfb
-    password: FAdUvMJUq5vDgKEq
-    delay: 1194
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 18
-    server: 103.172.116.94
-    port: 9025
-    type: ss
-    cipher: aes-256-cfb
-    password: XPtzA9sCug3SPR4c
-    delay: 1368
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 19
-    server: 103.172.116.94
-    port: 9037
-    type: ss
-    cipher: aes-256-cfb
-    password: TN2YqghxeFDKZfLU
-    delay: 1390
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 20
-    server: 103.172.116.94
-    port: 9027
-    type: ss
-    cipher: aes-256-cfb
-    password: EXN3S3eQpjE7EJu8
-    delay: 1334
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 21
-    server: 103.172.116.94
-    port: 9019
-    type: ss
-    cipher: aes-256-cfb
-    password: GA9KzeEgvfxNrgmM
-    delay: 1334
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 22
-    server: 103.172.116.94
-    port: 9011
-    type: ss
-    cipher: aes-256-cfb
-    password: M3t2ZEQcMGRWBjRa
-    delay: 1389
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 23
-    server: 103.172.116.94
-    port: 9053
-    type: ss
-    cipher: aes-256-cfb
-    password: SBM7R883jBmnqe6C
-    delay: 1345
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 24
     server: 103.172.116.94
     type: ss
     country: 🇸🇬SG
-    port: 9042
-    password: S7KwUu7yBy58S3Ga
+    port: 9026
+    password: QWDDvVE9npNurQfA
     cipher: aes-256-cfb
-    delay: 1418
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 25
+    delay: 1231
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 12
     server: 103.172.116.94
-    port: 9084
+    port: 9057
     type: ss
     cipher: aes-256-cfb
-    password: c3NtHJ5ujV2tGDfj
-    delay: 1203
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 26
+    password: wjTugX3ZtHMB9c3Z
+    delay: 1239
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 13
     server: 103.172.116.94
-    port: 9038
+    port: 9010
     type: ss
     cipher: aes-256-cfb
-    password: gYCYXfkUQEs2TaJQ
-    delay: 1572
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 27
-    server: 103.172.116.94
-    port: 9041
-    type: ss
-    cipher: aes-256-cfb
-    password: U6qnYRhfyDmn8sgn
-    delay: 1608
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 28
-    server: 103.172.116.94
-    port: 9079
-    type: ss
-    cipher: aes-256-cfb
-    password: TPqX8edgbAURcAMb
-    delay: 1379
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 29
-    server: 103.172.116.94
-    port: 9001
-    type: ss
-    cipher: aes-256-cfb
-    password: UkXRsXvR6buDMG2Y
-    delay: 1245
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 3
+    password: f63gg8EruDnUrmz4
+    delay: 1269
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 14
     server: 103.172.116.94
     port: 9033
     type: ss
     cipher: aes-256-cfb
     password: UTJA57ypk2XKQpnm
-    delay: 1150
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 30
-    server: 103.172.116.94
-    type: ss
-    country: 🇸🇬SG
-    port: 9003
-    password: JdmRK9gMEqFgs8nP
-    cipher: aes-256-cfb
-    delay: 1284
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 31
-    server: 103.172.116.94
-    port: 9073
-    type: ss
-    cipher: aes-256-cfb
-    password: daFYagqDdBdA6VTX
-    delay: 2740
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 32
-    server: 103.172.116.94
-    port: 9045
-    type: ss
-    cipher: aes-256-cfb
-    password: Lp27rqyJq72bZsqX
-    delay: 1307
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 33
+    delay: 1169
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 15
     server: 103.172.116.94
     port: 9014
     type: ss
     cipher: aes-256-cfb
     password: KnJGad3FqTvjqbaX
     delay: 1274
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 34
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 16
     server: 103.172.116.94
-    port: 9010
+    port: 9006
     type: ss
     cipher: aes-256-cfb
-    password: f63gg8EruDnUrmz4
-    delay: 1340
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 35
-    server: 103.172.116.94
-    port: 9005
-    type: ss
-    cipher: aes-256-cfb
-    password: ZET59LF6DvCC8KVt
-    delay: 1204
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 36
-    server: 103.172.116.94
-    port: 9098
-    type: ss
-    cipher: aes-256-cfb
-    password: aLpQtfEZe445QyHk
-    delay: 1298
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 37
-    server: 103.172.116.94
-    port: 9031
-    type: ss
-    cipher: aes-256-cfb
-    password: BwcAUZk8hUFAkDGN
-    delay: 1270
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 38
-    server: 103.172.116.94
-    port: 9088
-    type: ss
-    cipher: aes-256-cfb
-    password: f8npKgNzdkss2ytn
-    delay: 1213
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 39
-    server: 103.172.116.94
-    port: 9094
-    type: ss
-    cipher: aes-256-cfb
-    password: rpgbNnU9rDDU4aWZ
-    delay: 1222
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 4
+    password: FAdUvMJUq5vDgKEq
+    delay: 2385
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 17
     server: 103.172.116.94
     port: 9046
     type: ss
     cipher: aes-256-cfb
     password: NvS8N4Vf8qAGPSCL
-    delay: 1256
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 40
+    delay: 1097
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 18
     server: 103.172.116.94
-    port: 9056
+    port: 9088
     type: ss
     cipher: aes-256-cfb
-    password: rNBfNuuANFCAk7KB
-    delay: 1673
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 41
-    server: 103.172.116.94
-    port: 9020
-    type: ss
-    cipher: aes-256-cfb
-    password: BNmAXXxAHYpTRdzu
-    delay: 1263
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 5
-    server: 103.172.116.94
-    port: 9057
-    type: ss
-    cipher: aes-256-cfb
-    password: wjTugX3ZtHMB9c3Z
-    delay: 1246
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 6
+    password: f8npKgNzdkss2ytn
+    delay: 1068
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 19
     server: 103.172.116.94
     port: 9032
     type: ss
     cipher: aes-256-cfb
     password: UWZQeLRWnkqgkseq
-    delay: 1232
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 7
+    delay: 2325
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 2
     server: 103.172.116.94
-    port: 9015
+    port: 9003
     type: ss
     cipher: aes-256-cfb
-    password: ZpNDDKRu9MagNvaf
-    delay: 1275
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 8
+    password: JdmRK9gMEqFgs8nP
+    delay: 1125
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 20
+    server: 103.172.116.94
+    type: ss
+    country: 🇸🇬SG
+    port: 9007
+    password: kSPmvwdFzGMMW5pY
+    cipher: aes-256-cfb
+    delay: 1077
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 21
+    server: 103.172.116.94
+    port: 9043
+    type: ss
+    cipher: aes-256-cfb
+    password: HSZuyJQcWe8dxNdF
+    delay: 1117
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 22
     server: 103.172.116.94
     port: 9061
     type: ss
     cipher: aes-256-cfb
     password: 4R3hUfZ2FHhDmNcP
-    delay: 1239
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 9
+    delay: 2031
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 23
     server: 103.172.116.94
-    port: 9093
+    type: ss
+    country: 🇸🇬SG
+    port: 9008
+    password: y9VURyNzJWNRYEGQ
+    cipher: aes-256-cfb
+    delay: 1213
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 24
+    server: 103.172.116.94
+    port: 9060
     type: ss
     cipher: aes-256-cfb
-    password: wfLC2y7rzZyCmuyt
-    delay: 1257
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 1
-    server: frontend.yijianlian.app
-    type: trojan
-    country: 🇨🇦CA
-    port: 54420
-    password: a6f5fbce-f2d7-400a-9043-3d3f4c2f6194
-    skip-cert-verify: true
-    udp: true
-    delay: 1874
-  - name: 日本 - Osaka - Oracle Corporation - 5
-    server: frontend.yijianlian.app
-    type: trojan
-    port: 54530
-    password: a6f5fbce-f2d7-400a-9043-3d3f4c2f6194
-    skip-cert-verify: true
-    udp: true
-    delay: 1620
-  - name: 日本 - Shinagawa - The Constant Company, LLC - 9
-    server: jp.littleqqq.co
+    password: ueLXVkvh4hckhErQ
+    delay: 1202
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 25
+    server: 103.172.116.94
+    port: 9037
+    type: ss
+    cipher: aes-256-cfb
+    password: TN2YqghxeFDKZfLU
+    delay: 1206
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 26
+    server: 103.172.116.94
+    port: 9027
+    type: ss
+    cipher: aes-256-cfb
+    password: EXN3S3eQpjE7EJu8
+    delay: 1223
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 27
+    server: 103.172.116.94
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    delay: 1145
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 28
+    server: 103.172.116.94
+    port: 9001
+    type: ss
+    cipher: aes-256-cfb
+    password: UkXRsXvR6buDMG2Y
+    delay: 1190
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 29
+    server: 103.172.116.94
+    type: ss
+    country: 🇸🇬SG
+    port: 9080
+    password: VP8ZPxQpJtZRCjfZ
+    cipher: aes-256-cfb
+    delay: 1235
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 3
+    server: 103.172.116.94
+    port: 9018
+    type: ss
+    cipher: aes-256-cfb
+    password: fG2artUmHfNT2cX7
+    delay: 2451
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 30
+    server: 103.172.116.94
+    port: 9053
+    type: ss
+    cipher: aes-256-cfb
+    password: SBM7R883jBmnqe6C
+    delay: 1240
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 31
+    server: 103.172.116.94
+    port: 9042
+    type: ss
+    cipher: aes-256-cfb
+    password: S7KwUu7yBy58S3Ga
+    delay: 2880
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 32
+    server: 103.172.116.94
+    port: 9031
+    type: ss
+    cipher: aes-256-cfb
+    password: BwcAUZk8hUFAkDGN
+    delay: 1065
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 33
+    server: 103.172.116.94
+    port: 9025
+    type: ss
+    cipher: aes-256-cfb
+    password: XPtzA9sCug3SPR4c
+    delay: 1127
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 34
+    server: 103.172.116.94
+    port: 9079
+    type: ss
+    cipher: aes-256-cfb
+    password: TPqX8edgbAURcAMb
+    delay: 1131
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 35
+    server: 103.172.116.94
+    port: 9070
+    type: ss
+    cipher: aes-256-cfb
+    password: bf7v334KKDV3YDhH
+    delay: 1124
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 36
+    server: 103.172.116.94
+    type: ss
+    port: 9058
+    password: dML2sfhbVwvtfNPe
+    cipher: aes-256-cfb
+    delay: 1123
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 37
+    server: 103.172.116.94
+    port: 9045
+    type: ss
+    cipher: aes-256-cfb
+    password: Lp27rqyJq72bZsqX
+    delay: 1166
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 38
+    server: 103.172.116.94
+    port: 9005
+    type: ss
+    cipher: aes-256-cfb
+    password: ZET59LF6DvCC8KVt
+    delay: 2456
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 39
+    server: 103.172.116.94
+    type: ss
+    country: 🇸🇬SG
+    port: 9050
+    password: FG5ddLsMPbV5CutE
+    cipher: aes-256-cfb
+    delay: 2135
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 4
+    server: 103.172.116.94
+    port: 9084
+    type: ss
+    cipher: aes-256-cfb
+    password: c3NtHJ5ujV2tGDfj
+    delay: 2453
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 41
+    server: 103.172.116.94
+    port: 9038
+    type: ss
+    cipher: aes-256-cfb
+    password: gYCYXfkUQEs2TaJQ
+    delay: 2548
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 42
+    server: 103.172.116.94
+    port: 9056
+    type: ss
+    cipher: aes-256-cfb
+    password: rNBfNuuANFCAk7KB
+    delay: 1215
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 5
+    server: 103.172.116.94
+    port: 9011
+    type: ss
+    cipher: aes-256-cfb
+    password: M3t2ZEQcMGRWBjRa
+    delay: 2466
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 6
+    server: 103.172.116.94
+    port: 9073
+    type: ss
+    cipher: aes-256-cfb
+    password: daFYagqDdBdA6VTX
+    delay: 2110
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 7
+    server: 103.172.116.94
+    type: ss
+    country: 🇸🇬SG
+    port: 9024
+    password: BejrQvtu9sqUeNuZ
+    cipher: aes-256-cfb
+    delay: 1134
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 8
+    server: 103.172.116.94
+    port: 9040
+    type: ss
+    cipher: aes-256-cfb
+    password: p9z5BVADH2YFs3MN
+    delay: 1547
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 9
+    server: 103.172.116.94
+    type: ss
+    country: 🇸🇬SG
+    port: 9059
+    password: 9XwYyZsK8SNzQDtY
+    cipher: aes-256-cfb
+    delay: 2123
+  - name: 新加坡 - 新加坡 - Oracle Corporation - 40
+    server: 43.228.147.5
     type: vmess
-    port: 62193
+    port: 37662
     udp: true
-    uuid: e532931d-9c1d-4bec-a1c8-98263bb57dbb
+    uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
     alterId: 0
     cipher: auto
     network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /live/UKPZrSI3K7dtNJmn
-      headers:
-        Host: www.tmall.com
-    delay: 1384
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
-    server: jp1.djjsvip.cfd
-    type: trojan
-    country: 🇯🇵JP
-    port: 443
-    password: 94fe4445-fc3f-4dd4-9bac-438b54f994c9
-    sni: download.xn--mes358acgm99l.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1353
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 6
-    server: 54.95.21.57
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 344
-  - name: 日本 - 东京 - Amazon.com, Inc. - 1
-    server: 43.207.197.15
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 708
-  - name: 日本 - 东京 - Amazon.com, Inc. - 8
-    server: 57.180.88.53
-    type: ss
-    port: 7841
-    udp: true
-    password: a6fdf209-6b20-41bd-bfd9-45ae7390d5ca
-    cipher: chacha20-ietf-poly1305
-    delay: 343
-  - name: 日本 - 东京 - Miku Network Limited - 2
-    server: cnah2.lanyunshi.top
-    port: 19901
-    type: vmess
-    uuid: 47a6b26b-f575-32e9-91e7-759c961c3a99
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 2331
-  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 3
-    server: dir01.netorigins2u.site
-    type: vmess
-    port: 30101
-    udp: true
-    uuid: 76a880d9-35d7-3a00-81c2-6792f3847f91
-    alterId: 0
-    cipher: auto
-    servername: jp01.tomoony.xyz
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 1528
-  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 7
-    server: ap-northeast-anycast.lnaspiring.com
-    type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: fce9d0cd-8f62-4fc6-8d0f-f1905af672a4
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: jpli.edge.233.tw
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
     ws-opts:
-      path: /geg/45?ed=2048
+      path: /vm-tls0?ed
       headers:
-        HOST: jpli.edge.233.tw
-    delay: 1648
-  - name: 日本 - 大阪市 - Nearoute Limited - 10
-    server: xijinping.19890604.day
-    port: 10812
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 2250
-  - name: 日本 - 大阪市 - Nearoute Limited - 11
-    server: xijinping.19890604.day
-    port: 10813
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1932
-  - name: 日本 - 大阪市 - Nearoute Limited - 12
-    server: xijinping.19890604.day
-    port: 10817
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1912
-  - name: 比利时 - 布鲁塞尔 - M247 Europe SRL - 1
-    server: 192.71.249.71
-    port: 989
+        Host: dci-sg.changding.me
+    delay: 695
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
+    server: 3.112.250.142
+    port: 443
     type: ss
+    country: 🇯🇵 JP
+    password: amazonskr05
     cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1259
-  - name: 比利时 - 布鲁塞尔 - M247 Europe SRL - 2
+    delay: 548
+  - name: 比利时 - 布鲁塞尔 - M247 Europe SRL - 1
     server: 192.71.249.78
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 2071
-  - name: 波兰 - 华沙 - Melbikomas UAB - 1
-    server: 217.30.10.68
+    delay: 1285
+  - name: 比利时 - 布鲁塞尔 - M247 Europe SRL - 2
+    server: 192.71.249.71
+    port: 989
     type: ss
-    country: 🇵🇱PL
-    port: 9007
-    password: kSPmvwdFzGMMW5pY
     cipher: aes-256-cfb
-    delay: 831
-  - name: 澳大利亚 - 悉尼 - Oracle Corporation - 1
-    server: frontend.yijianlian.app
-    type: trojan
-    country: 🇨🇦CA
-    port: 54590
-    password: a6f5fbce-f2d7-400a-9043-3d3f4c2f6194
-    skip-cert-verify: true
-    udp: true
-    delay: 1671
-  - name: 瑞士 - 伯尔尼 - Stark Industries Solutions LTD - 1
-    server: 94.131.99.8
-    port: 47182
-    type: vmess
-    uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 801
-  - name: 美国 - Herndon - Digicon Corporation - 26
-    server: 64.23.166.131
-    type: vmess
-    country: 🇺🇸US
-    port: 8080
-    uuid: 507f5aaf-b539-4086-99d6-b77f80eae189
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 677
-  - name: 美国 - Herndon - Digicon Corporation - 8
-    server: 64.23.166.217
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 81e30dd5-51bb-4225-f44f-71c4acc30285
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 963
-  - name: 美国 - Sterling - Digicon Corporation - 16
-    server: 64.23.174.32
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 7115e195-8629-4cf4-ae12-1245d5409acd
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 888
-  - name: 美国 - Sterling - Digicon Corporation - 17
-    server: 64.23.164.60
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 7115e195-8629-4cf4-ae12-1245d5409acd
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 949
-  - name: 美国 - Sterling - Digicon Corporation - 18
-    server: 64.23.174.42
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 733f1c94-7dee-4987-93a4-48be8e2a6b71
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 958
-  - name: 美国 - Sterling - Digicon Corporation - 22
-    server: 64.23.170.206
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: d1ec0dcb-9341-491f-f777-e971172cb6e8
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 687
-  - name: 美国 - Sterling - Digicon Corporation - 23
-    server: 64.23.174.30
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 825fce47-a3d2-4d03-b278-f18dd817e823
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 745
-  - name: 美国 - Sterling - Digicon Corporation - 7
-    server: 64.23.174.77
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: fa5aeebe-fc9b-471b-b9d2-64a1489e0cb1
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 903
-  - name: 美国 - 圣克拉拉 - Digicon Corporation - 11
-    server: 64.23.137.244
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 7115e195-8629-4cf4-ae12-1245d5409acd
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 756
-  - name: 美国 - 圣克拉拉 - Digicon Corporation - 14
-    server: 64.23.135.1
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 4a67cdbb-5536-4727-cff5-0ff9df6db4c9
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 933
-  - name: 美国 - 圣克拉拉 - Digicon Corporation - 20
-    server: 64.23.141.169
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: e5b71a34-b443-4713-85d5-7eafdcecbc76
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 776
-  - name: 美国 - 圣克拉拉 - DigitalOcean - 25
-    server: 64.23.143.80
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 96c95feb-50a1-4b9b-bccd-941ce904c29c
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 652
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 12
-    server: 24.199.104.97
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: fdeb9d46-986d-4f76-90c3-fba96ea7b4db
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 930
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 13
-    server: 24.144.88.126
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 9afb4de9-0896-41e4-8adc-7ad52d17891a
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 774
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 15
-    server: 147.182.193.242
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 718b8fc8-289f-42f5-a83d-8b8e97106dee
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 1007
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 19
-    server: 164.92.103.180
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: c0ff80d4-a8e4-4ddf-f84e-60524124679d
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 957
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 24
-    server: 137.184.122.63
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: e4b9e7bb-80e6-4fb8-f547-ad1be3351577
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 594
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 9
-    server: 146.190.40.140
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: e1cc6e3b-a46b-4e04-bdc6-78ae58663aec
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 879
-  - name: 美国 - 塔克維拉 - Akamai Technologies, Inc. - 29
-    server: dir01.netorigins2u.site
-    type: trojan
-    country: 🇯🇵JP
-    port: 36501
-    password: 867034da-9219-4b5f-8268-31a4b42d939b
-    sni: us01.abpilot.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 1677
-  - name: 美国 - 希尔斯伯勒 - OVH SAS - 3
+    password: f8f7aCzcPKbsF8p3
+    delay: 1205
+  - name: 瑞士 - 苏黎世 - DataCamp Limited - 1
+    server: 84.17.53.160
+    port: 989
+    type: ss
+    country: 🇨🇭 CH
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 2563
+  - name: 美国 - 希尔斯伯勒 - OVH SAS - 6
     server: 04.kccic2pa.xyz
-    type: vmess
-    country: 🇨🇳CN
     port: 50004
+    type: vmess
     uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
     alterId: 0
     cipher: auto
-    network: tcp
+    tls: false
+    skip-cert-verify: true
     servername: alibaba-node.cn
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1295
-  - name: 美国 - 旧金山 - Digicon Corporation - 10
-    server: 64.23.159.37
+    delay: 1151
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 3
+    server: 104.18.154.42
     type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 733f1c94-7dee-4987-93a4-48be8e2a6b71
+    country: 🏁ZZ
+    port: 80
+    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
     alterId: 0
     cipher: auto
     network: ws
+    servername: us3.889611.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
-    delay: 901
-  - name: 美国 - 旧金山 - Digicon Corporation - 21
-    server: 64.23.151.178
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: d1ec0dcb-9341-491f-f777-e971172cb6e8
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 689
-  - name: 美国 - 旧金山 - Digicon Corporation - 5
-    server: 64.23.159.150
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: fa5aeebe-fc9b-471b-b9d2-64a1489e0cb1
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 719
-  - name: 美国 - 旧金山 - Digicon Corporation - 6
-    server: 64.23.149.229
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 8110a621-f808-4810-f8b4-feeb92718ed2
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 632
-  - name: 美国 - 洛杉矶 - The Constant Company - 28
-    server: us.littleqqq.co
-    type: vmess
-    port: 21859
-    udp: true
-    uuid: e532931d-9c1d-4bec-a1c8-98263bb57dbb
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /live/UKPZrSI3K7dtNJmn
       headers:
-        Host: www.tmall.com
-    delay: 1873
-  - name: 美国 - 纽黑文 - Alibaba (US) Technology Co., Ltd. - 27
-    server: 47.76.189.253
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ''
-      path: ''
-      tls: false
-      mux: true
-    delay: 1541
-  - name: 美国 - 聖荷西 -  - 30
-    server: falungong.19890604.day
-    port: 10819
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 2241
-  - name: 美国 - 聖荷西 -  - 31
-    server: falungong.19890604.day
-    port: 10822
-    type: trojan
-    password: f6fa79f3-2239-4cb4-8733-ec8c93394a2c
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 2272
-  - name: 美国 - 芝加哥 - Oracle Corporation - 4
-    server: us4.doushimeng.com
-    type: ss
-    country: 🇺🇸US
-    port: 20802
-    password: b99d9cf1-5df3-477e-a94c-4d686230553f
-    cipher: chacha20-ietf-poly1305
-    delay: 919
+        HOST: us3.889611.com
+    delay: 1582
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 4
+    server: 162.159.142.208
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us3.889611.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: us3.889611.com
+    delay: 1432
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 5
+    server: 162.159.142.209
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us3.visaapp.top
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: us3.visaapp.top
+    delay: 1366
   - name: 美国 - 西雅圖 - Datacamp Limited - 2
     server: 212.102.47.198
-    type: ss
-    country: 🇺🇸 US
     port: 443
-    password: shadowsocks
+    type: ss
     cipher: aes-128-cfb
-    delay: 720
+    password: shadowsocks
+    delay: 1505
   - name: 美国 - 達拉斯 - GTHost - 1
     server: 167.88.62.104
-    type: ss
     port: 2376
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-    delay: 881
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 1
-    server: series-a2-mec.samanehha.co
     type: ss
-    country: 🇬🇧 GB
-    port: 443
-    password: u17T3BvpYaaiuW2c
-    cipher: chacha20-ietf-poly1305
-    delay: 1317
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 2
-    server: Fast_2ray_Telchannelll.fast2rayy.eu.org
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    delay: 2930
+  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 1
+    server: 18.168.142.54
     type: ss
     country: 🇬🇧GB
     port: 443
-    password: Bog0ELmMM9DSxDdQ
+    password: u17T3BvpYaaiuW2c
     cipher: chacha20-ietf-poly1305
-    delay: 1770
-  - name: 西班牙 - 马德里 - G-Core Labs S.A. - 1
-    server: 92.38.171.89
-    type: ss
-    country: 🇪🇸 ES
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1489
+    delay: 695
   - name: 阿塞拜疆 - 巴库 - G-Core Labs S.A. - 1
     server: 180.149.44.120
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 2277
-  - name: 阿尔巴尼亚 - 地拉那 - Keminet Ltd. - 1
-    server: 31.171.153.182
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 1263
-  - name: 韩国 - Gangdong-gu - Korea Telecom - 9
-    server: p225.panda004.net
-    port: 51194
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    delay: 747
-  - name: 韩国 - Gangnam-gu - Korea Telecom - 4
-    server: 222.112.15.134
+    delay: 1734
+  - name: >-
+      韩国 - Gasan-dong - Cloud Information Technology (Intl) Telecom Group
+      LIMITED - 1
+    server: c001.panda003.net
     type: ss
     country: 🇰🇷KR
-    port: 59084
+    port: 53243
     password: qwerREWQ@@
     cipher: aes-256-cfb
-    delay: 608
-  - name: 韩国 - Gwangmyeong - Korea Telecom - 5
-    server: p236.panda004.net
-    type: ss
-    country: 🇰🇷 KR
-    port: 58023
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 2139
-  - name: 韩国 - Gwangmyeong - Korea Telecom - 6
-    server: p232.panda004.net
-    type: ss
-    port: 4398
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 807
-  - name: 韩国 - Seongnam-si - Korea Telecom - 7
-    server: p221.panda001.net
-    type: ss
-    country: 🇰🇷KR
-    port: 34642
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 2024
-  - name: 韩国 - Songpa-gu - Korea Telecom - 10
+    delay: 420
+  - name: 韩国 - Songpa-gu - Korea Telecom - 3
     server: 125.141.26.10
-    type: ss
-    country: 🇰🇷KR
     port: 59084
+    type: ss
+    cipher: aes-256-cfb
     password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 578
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 1
-    server: 43.202.52.93
-    port: 443
+    delay: 406
+  - name: 韩国 - 春川市 - Oracle Corporation - 2
+    server: kr.colacloud.site
     type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 460
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
-    server: 43.201.55.242
-    type: ss
-    country: 🇰🇷KR
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 577
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 3
-    server: 43.201.64.47
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 518
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
-    server: tg_mfbpn_asg2.52vpn.eu.org
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 1702
+    port: 20352
+    udp: true
+    password: 144db0df-da3c-40e7-90eb-75e900c7eca8
+    cipher: chacha20-ietf-poly1305
+    delay: 2984
   - name: 马其顿 - 斯科普里 - Akton d.o.o. - 1
     server: 46.183.185.37
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-    delay: 1348
+    delay: 1461
+  - name: 马恩岛 - 道格拉斯 - Netcetera Ltd. - 1
+    server: 37.235.55.21
+    type: ss
+    country: 🇮🇲 IM
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1464
+  - name: 马恩岛 - 道格拉斯 - Netcetera Ltd. - 2
+    server: 192.71.211.161
+    type: ss
+    country: 🇸🇪 SE
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1212
+  - name: 马恩岛 - 道格拉斯 - Netcetera Ltd. - 3
+    server: 37.235.55.42
+    type: ss
+    country: 🇮🇲 IM
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1498
+  - name: 马耳他 - 瓦莱塔 - Melita Limited - 1
+    server: 171.22.254.17
+    type: ss
+    country: 🇲🇹MT
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1372
