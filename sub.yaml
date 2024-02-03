@@ -4,9 +4,18 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 香港 - PCCW IMS Limited - 1
-    server: 1.65.139.54
+  - name: 中国 - 台湾 - Gigabit Hosting Sdn Bhd - 4
+    server: 103.4.29.29
     type: ss
+    port: 2003
+    udp: true
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 1398
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 5
+    server: 47.243.196.229
+    type: ss
+    country: 🇺🇸 US
     port: 443
     password: a-wym4ovY4Yw
     cipher: aes-128-gcm
@@ -14,15 +23,106 @@ proxies:
     plugin-opts:
       host: ''
       mode: websocket
-      mux: true
-      path: ''
-      skip-cert-verify: true
       tls: false
-    delay: 1800
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-    server: 195.14.146.81
+    delay: 1456
+  - name: 中国 - 香港 - Cloudflare, Inc. - 2
+    server: 194.104.146.124
     type: vmess
-    country: 🇨🇾CY
+    port: 30810
+    uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+      headers:
+        host: wapv62g.gorun.tech
+    delay: 832
+  - name: 中国 - 香港 - Cloudflare, Inc. - 3
+    server: 194.156.163.108
+    type: vmess
+    port: 21010
+    uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+      headers:
+        host: wapv62g.gorun.tech
+    delay: 737
+  - name: 中国 - 香港 - Cloudflare, Inc. - 6
+    server: 154.9.237.174
+    type: vmess
+    port: 20003
+    uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+      headers:
+        host: wapv62g.gorun.tech
+    delay: 1666
+  - name: 中国 - 香港 - PCCW IMS Limited - 1
+    server: 1.65.139.54
+    port: 443
+    type: ss
+    cipher: aes-128-gcm
+    password: a-wym4ovY4Yw
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ''
+      path: ''
+      tls: false
+      mux: true
+    delay: 953
+  - name: 俄罗斯 - Zelenograd - LLC Baxet - 1
+    server: 45.144.2.113
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: www.apple.com
+    delay: 795
+  - name: 加拿大 - 多伦多 - Akamai Technologies - 1
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇨🇦 CA
+    port: 20117
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 2161
+  - name: 加拿大 - 多伦多 - Akamai Technologies - 2
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇨🇦 CA
+    port: 20118
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 2392
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
+    server: 92.223.12.8
+    type: vmess
+    country: 🇧🇷BR
     port: 80
     uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
     alterId: 0
@@ -36,11 +136,11 @@ proxies:
       path: /@forwardv2ray
       headers:
         HOST: xyz33.servecounterstrike.com
-    delay: 1792
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 2
-    server: 195.14.146.81
+    delay: 2432
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 11
+    server: 197.215.140.234
     type: vmess
-    country: 🇨🇾CY
+    country: 🇱🇾LY
     port: 80
     uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
     alterId: 0
@@ -54,17 +154,17 @@ proxies:
       path: /@forwardv2ray
       headers:
         HOST: saman8888.servecounterstrike.com
-    delay: 1824
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 3
-    server: 94.176.183.12
+    delay: 1989
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 12
+    server: 92.223.116.223
     type: vmess
-    country: 🇫🇷FR
+    country: 🇸🇬SG
     port: 443
-    uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
+    uuid: 8ed466fb-1aba-4bde-90a6-8536817c2230
     alterId: 0
     cipher: auto
     network: ws
-    servername: soft8989.redirectme.net
+    servername: mom5.sytes.net
     http-opts: {}
     h2-opts: {}
     tls: true
@@ -72,12 +172,12 @@ proxies:
     ws-opts:
       path: /@forwardv2ray
       headers:
-        HOST: soft8989.redirectme.net
-    delay: 2856
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 4
-    server: 94.176.183.12
+        HOST: mom5.sytes.net
+    delay: 1880
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 13
+    server: 5.252.26.6
     type: vmess
-    country: 🇫🇷FR
+    country: 🇹🇭TH
     port: 443
     uuid: 7282d494-b506-4f34-9950-fb0c18820439
     alterId: 0
@@ -92,9 +192,83 @@ proxies:
       path: /@forwardv2ray
       headers:
         HOST: yasoft8889.zapto.org
-    delay: 2749
+    delay: 1390
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 14
+    server: 79.133.108.16
+    type: vmess
+    country: 🇺🇦UA
+    port: 443
+    uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: xyz33.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: xyz33.servecounterstrike.com
+    delay: 1869
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 2
+    server: 130.193.166.2
+    type: vmess
+    country: 🇮🇶IQ
+    port: 80
+    uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: xyz33.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: xyz33.servecounterstrike.com
+    delay: 1693
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 3
+    server: 45.82.101.5
+    type: vmess
+    country: 🇮🇹IT
+    port: 443
+    uuid: 238c9557-f231-423a-ba6f-668d1cc64cf2
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mom6.sytes.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: mom6.sytes.net
+    delay: 1650
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 4
+    server: 92.46.108.106
+    type: vmess
+    country: 🇰🇿KZ
+    port: 80
+    uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: saman8888.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: saman8888.servecounterstrike.com
+    delay: 2455
   - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 5
-    server: 197.215.140.234
+    server: 197.215.140.235
     type: vmess
     country: 🇱🇾LY
     port: 80
@@ -110,299 +284,260 @@ proxies:
       path: /@forwardv2ray
       headers:
         HOST: saber.serveirc.com
-    delay: 2504
+    delay: 1575
   - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 6
-    server: 109.68.233.242
+    server: 5.252.26.6
     type: vmess
-    country: 🇹🇯TJ
-    port: 80
-    uuid: 726a0a65-04fd-4531-a96b-5510537737fc
+    country: 🇹🇭TH
+    port: 443
+    uuid: ae5fa0e0-a56b-439d-9bd3-0546b50d3e18
     alterId: 0
     cipher: auto
     network: ws
-    servername: saber.serveirc.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: saber.serveirc.com
-    delay: 1889
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 7
-    server: 195.14.146.81
-    type: vmess
-    country: 🇨🇾CY
-    port: 80
-    uuid: 726a0a65-04fd-4531-a96b-5510537737fc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: saber.serveirc.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: saber.serveirc.com
-    delay: 2075
-  - name: 德国 - 杜塞尔多夫 - myLoc managed IT AG - 1
-    server: 5.104.108.120
-    type: trojan
-    country: 🇩🇪DE
-    port: 443
-    udp: true
-    password: 676ccd3b-793d-4efd-b93c-48943711055d
-    sni: 20-24-33-134.nhost.00cdn.com
-    skip-cert-verify: true
-    delay: 2198
-  - name: 德国 - 法兰克福 - Akamai Technologies, Inc. - 3
-    server: 192.46.239.111
-    type: trojan
-    country: 🇩🇪DE
-    port: 443
-    udp: true
-    password: 437b599e-5b9c-4db7-a2a1-f550cc6ba3d1
-    skip-cert-verify: true
-    delay: 1305
-  - name: 德国 - 法兰克福 - Datacamp Limited - 4
-    server: 149.40.62.114
-    port: 443
-    type: ss
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      R1lKGvLE9llrsrE8+ljScaTSOPTZz3LZGavn9O3XphU=:EXmASbpxwohn93xht33mYpo/fymXyTKrm3v4DDMLZ8E=
-    delay: 881
-  - name: 德国 - 纽伦堡 - Hetzner Online GmbH - 2
-    server: yox.wqasersrewqa.xyz
-    type: vmess
-    country: 🇩🇪DE
-    port: 2083
-    uuid: 46b2092e-8ef0-4885-aaea-e6c13b75eb60
-    alterId: 0
-    cipher: auto
-    network: tcp
+    servername: soft99.gotdns.ch
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 2404
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 5
-    server: cfcdn2.sanfencdn9.com
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: soft99.gotdns.ch
+    delay: 1380
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 7
+    server: 37.110.209.228
+    type: vmess
+    country: 🇺🇿UZ
+    port: 80
+    uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: xyz33.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: xyz33.servecounterstrike.com
+    delay: 1561
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 8
+    server: 181.174.80.182
+    type: vmess
+    country: 🇬🇹GT
+    port: 80
+    uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: xyz33.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: xyz33.servecounterstrike.com
+    delay: 1877
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 9
+    server: 37.110.209.228
+    type: vmess
+    country: 🇺🇿UZ
+    port: 80
+    uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: saman8888.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: saman8888.servecounterstrike.com
+    delay: 1778
+  - name: 土耳其 - 伊斯坦布尔 - Iksir Internet Hizmetleri A.S. - 10
+    server: 185.123.101.241
+    type: ss
+    country: 🇹🇷 TR
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 2828
+  - name: 希腊 - 雅典 - Stark Industries Solutions LTD - 1
+    server: 94.131.8.32
     type: vmess
     country: 🇺🇸US
-    port: 2052
-    uuid: 58ecb66f-8b55-4b2a-97c9-7b87e189d2f7
+    port: 8080
+    uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
     alterId: 0
     cipher: auto
     network: ws
-    servername: jpafzyhfsg3.yofnhkfc.xyz
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /video/u4eCZTxW
-      headers:
-        HOST: jpafzyhfsg3.yofnhkfc.xyz
-    delay: 2273
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 3
-    server: 54.179.218.224
+      path: /vmess
+    delay: 2488
+  - name: 希腊 - 雅典 - Stark Industries Solutions LTD - 2
+    server: 94.131.8.32
+    type: vmess
+    country: 🇺🇸US
+    port: 2086
+    uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+    delay: 1727
+  - name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 2
+    server: 18.158.85.126
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trj.rollingnext.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 834
+  - name: 德国 - 法兰克福 - diva-e Datacenters GmbH - 1
+    server: 212.224.107.33
+    type: vmess
+    country: 🇩🇪DE
+    port: 20204
+    uuid: d4ea02e0-9ba8-40a9-8683-b1246bc63d44
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 769
+  - name: 意大利 - Milan - Akamai Technologies, Inc. - 1
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
     type: ss
-    country: 🇸🇬SG
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 1490
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 11
+    country: 🇮🇹 IT
+    port: 20120
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1427
+  - name: 新加坡 - 新加坡 - Akamai Technologies - 6
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇬 SG
+    port: 20106
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 744
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 1
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇬 SG
+    port: 20108
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 425
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 2
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇬 SG
+    port: 20210
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1402
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 4
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇬 SG
+    port: 20107
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 861
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 5
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇬 SG
+    port: 20109
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 774
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 9
+    server: gdct003.theyydsnode.top
+    type: ss
+    port: 21526
+    password: 4bff7d9f-1086-47ba-8d35-10872dc31637
+    cipher: chacha20-ietf-poly1305
+    delay: 906
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 3
     server: 103.172.116.90
     type: ss
-    port: 9006
-    udp: true
-    password: FAdUvMJUq5vDgKEq
+    country: 🏁ZZ
+    port: 9059
+    password: 9XwYyZsK8SNzQDtY
     cipher: aes-256-cfb
-    delay: 1984
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 2
+    delay: 2421
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 7
     server: 103.172.116.90
-    type: ss
-    port: 9098
-    udp: true
-    password: aLpQtfEZe445QyHk
-    cipher: aes-256-cfb
-    delay: 1775
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 4
-    server: 103.172.116.94
-    port: 9061
-    type: ss
-    cipher: aes-256-cfb
-    password: 4R3hUfZ2FHhDmNcP
-    delay: 1264
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 6
-    server: 103.172.116.94
     type: ss
     port: 9041
-    udp: true
     password: U6qnYRhfyDmn8sgn
     cipher: aes-256-cfb
-    delay: 2520
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 7
-    server: 103.172.116.94
-    port: 9027
-    type: ss
-    country: 🏁 ZZ
-    password: EXN3S3eQpjE7EJu8
-    cipher: aes-256-cfb
-    delay: 2361
+    delay: 1233
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 8
-    server: 103.172.116.94
+    server: 103.172.116.90
     type: ss
     country: 🇸🇬SG
-    port: 9043
-    password: HSZuyJQcWe8dxNdF
+    port: 9031
+    password: BwcAUZk8hUFAkDGN
     cipher: aes-256-cfb
-    delay: 2975
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 1
-    server: tank.19890604.day
-    type: trojan
-    country: 🇨🇳 CN
-    port: 10827
-    password: 061014c2-9214-450a-83af-84a1429b18bb
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    udp: true
-    delay: 2147
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 10
-    server: 183.236.51.7
-    type: trojan
-    country: 🇨🇳CN
-    port: 10832
-    password: de50f3fd-9e4c-486a-9c4e-ce5fe85cef30
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    udp: true
-    delay: 529
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 9
-    server: tank.19890604.day
-    type: trojan
-    port: 10831
-    password: de50f3fd-9e4c-486a-9c4e-ce5fe85cef30
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    delay: 1994
-  - name: 日本 - Chiyoda - Africa on Cloud - 2
-    server: xijinping.19890604.day
-    type: trojan
-    country: 🇺🇸 US
-    port: 10812
-    password: 061014c2-9214-450a-83af-84a1429b18bb
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    udp: true
-    delay: 2605
-  - name: 日本 - Chiyoda - Africa on Cloud - 7
-    server: xijinping.19890604.day
-    type: trojan
-    country: 🇨🇳 CN
-    port: 10818
-    password: 061014c2-9214-450a-83af-84a1429b18bb
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1510
-  - name: 日本 - Chiyoda - Africa on Cloud - 8
-    server: xijinping.19890604.day
-    type: trojan
-    country: 🇨🇳 CN
-    port: 10814
-    password: 061014c2-9214-450a-83af-84a1429b18bb
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1824
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 6
-    server: 13.231.78.35
+    delay: 2433
+  - name: 日本 - 东京 - Amazon Technologies Inc - 9
+    server: 13.112.10.231
+    port: 443
     type: ss
     country: 🇯🇵 JP
-    port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 293
-  - name: 日本 - 东京 - Eons Data Communications Limited - 4
-    server: 104.19.23.125
-    type: vmess
-    country: 🏁ZZ
-    port: 2052
-    uuid: 58ecb66f-8b55-4b2a-97c9-7b87e189d2f7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: kvjqqknzjp6.yofnhkfc.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /video/Zo98PYfE
-      headers:
-        HOST: kvjqqknzjp6.yofnhkfc.xyz
-    delay: 1594
-  - name: 日本 - 东京 - Eons Data Communications Limited - 5
-    server: 104.16.227.169
-    type: vmess
-    country: 🏁ZZ
-    port: 2052
-    uuid: 58ecb66f-8b55-4b2a-97c9-7b87e189d2f7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: kvjqqknzjp6.yofnhkfc.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /video/Zo98PYfE
-      headers:
-        HOST: kvjqqknzjp6.yofnhkfc.xyz
-    delay: 1542
-  - name: 日本 - 东京 - Eons Data Communications Limited - 9
-    server: 104.16.114.66
-    type: vmess
-    country: 🏁ZZ
-    port: 2052
-    uuid: 58ecb66f-8b55-4b2a-97c9-7b87e189d2f7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: kvjqqknzjp6.yofnhkfc.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /video/Zo98PYfE
-      headers:
-        HOST: kvjqqknzjp6.yofnhkfc.xyz
-    delay: 1580
+    delay: 2011
+  - name: 日本 - 东京 - Oracle Corporation - 13
+    server: jp.colacloud.site
+    type: ss
+    port: 51310
+    udp: true
+    password: 5ce2c5b1-4ff9-455f-8488-8cca416d8893
+    cipher: chacha20-ietf-poly1305
+    delay: 2178
   - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 1
     server: ap-northeast-anycast.lnaspiring.com
-    type: vmess
     port: 80
-    udp: true
+    type: vmess
     uuid: 38f987ef-bf53-4534-8223-39caf8b24223
     alterId: 0
     cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
+    network: ws
     ws-opts:
       path: /geg/45?ed=2048
       headers:
         Host: jpli.edge.233.tw
-    delay: 2968
-  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 3
-    server: 172.64.229.3
+    udp: true
+    delay: 1037
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 10
+    server: ap-northeast-anycast.lnaspiring.com
     type: vmess
     country: 🇺🇸US
     port: 80
-    uuid: 37aded7f-a1ba-448b-9529-b0498c813b98
+    uuid: a0b63317-33b5-4197-8ea0-f11e96d19767
     alterId: 0
     cipher: auto
     network: ws
@@ -414,106 +549,193 @@ proxies:
       path: /geg/45?ed=2048
       headers:
         HOST: jpli.edge.233.tw
-    delay: 665
-  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
-    server: 15.237.227.42
-    type: trojan
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 1035
-  - name: 法国 - 巴黎 - Amazon.com, Inc. - 2
-    server: 15.188.12.11
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    udp: true
-    password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    network: tcp
-    delay: 1272
-  - name: 波兰 - 华沙 - Cloudflare, Inc. - 1
-    server: freepl.adw1681ddaw.tk
-    port: 8080
+    delay: 1991
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 11
+    server: ap-northeast-anycast.lnaspiring.com
     type: vmess
-    uuid: f842de05-935f-4755-fa0f-c96a8cb06151
+    country: 🇺🇸US
+    port: 80
+    uuid: c64fa146-e851-4dfa-8f90-59a8fee49bc3
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: jpli.edge.233.tw
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /geg/45?ed=2048
+      headers:
+        HOST: jpli.edge.233.tw
+    delay: 2010
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 12
+    server: ap-northeast-anycast.lnaspiring.com
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: fce9d0cd-8f62-4fc6-8d0f-f1905af672a4
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: jpli.edge.233.tw
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /geg/45?ed=2048
+      headers:
+        HOST: jpli.edge.233.tw
+    delay: 1348
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 14
+    server: 162.159.142.233
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
-    servername: freepl.adw1681ddaw.tk
     network: ws
     ws-opts:
-      path: /free-quorecs
+      path: /
       headers:
-        Host: freepl.adw1681ddaw.tk
-    delay: 2903
-  - name: 爱尔兰 - 都柏林 - Amazon.com, Inc. - 1
-    server: 52.214.102.44
-    port: 22222
+        Host: jp3.889611.com
+    delay: 2376
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 15
+    server: 162.159.142.236
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: jp3.visaapp.top
+    delay: 1612
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 2
+    server: ap-northeast-anycast.lnaspiring.com
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: b69211d8-42b8-46d9-8fdc-730053f2e76c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: jpli.edge.233.tw
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /geg/45?ed=2048
+      headers:
+        HOST: jpli.edge.233.tw
+    delay: 972
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 3
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20201
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1085
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 4
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20202
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1199
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 5
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20204
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1199
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 6
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20205
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1268
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 7
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20203
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1519
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 8
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇯🇵 JP
+    port: 20105
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 893
+  - name: 法国 - 尼斯 - Serverd SAS - 2
+    server: 172.67.200.152
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: cf5883a6-86f3-4df0-8d09-28e5e63bffcf
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn3.pojojo.fun
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /coustomer
+      headers:
+        HOST: cdn3.pojojo.fun
+    delay: 1200
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 3
+    server: 35.181.249.34
     type: trojan
+    country: 🇫🇷FR
+    port: 22222
     password: telegram-id-directvpn
-    sni: trojan.miwan.co.uk
-    delay: 1473
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 1
-    server: 82.148.98.42
-    type: vmess
-    port: 80
-    uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    sni: trj.rollingnext.co.uk
     skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        host: mehdi21.servecounterstrike.com
-    delay: 2608
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 2
-    server: 185.76.48.122
-    type: vmess
-    country: 🇬🇧GB
+    udp: true
+    delay: 866
+  - name: 法国 - 巴黎 - Global Internet Solutions LLC - 4
+    server: 172.67.204.84
+    type: trojan
     port: 443
-    uuid: 695ae833-9d90-4598-b431-c4cd214106c0
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: tasnim.onthewifi.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
+    udp: true
+    password: qj1Dz1CJmFQRhWr1SP80aA
+    alpn:
+      - h2
+      - http/1.1
+    sni: cdn-21.gsmxreality.com
     skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: tasnim.onthewifi.com
-    delay: 2051
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 3
-    server: 181.174.80.182
-    type: vmess
-    country: 🇬🇹GT
-    port: 80
-    uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: mehdi21.servecounterstrike.com
-    http-opts: {}
-    h2-opts: {}
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 443trojan
+    delay: 2535
+  - name: 法国 - 鲁贝 - OVH SAS - 1
+    server: 141.94.115.231
+    port: 443
+    type: trojan
+    country: 🇩🇪 DE
+    password: f46677ae-8d38-4580-9359-d91078fa49c9
     skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: mehdi21.servecounterstrike.com
-    delay: 2087
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 4
-    server: 37.110.209.228
+    udp: true
+    delay: 1789
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 1
+    server: 185.188.144.4
     type: vmess
-    country: 🇺🇿UZ
+    country: 🇦🇿AZ
     port: 80
     uuid: 75916879-adcf-45b3-98d8-54a2412470b5
     alterId: 0
@@ -527,9 +749,146 @@ proxies:
       path: /@forwardv2ray
       headers:
         HOST: sahar55.serveirc.com
-    delay: 2578
-  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 5
-    server: 13.50.197.142
+    delay: 1884
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 2
+    server: 181.39.11.210
+    type: vmess
+    country: 🇪🇨EC
+    port: 80
+    uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mehdi21.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: mehdi21.servecounterstrike.com
+    delay: 2135
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 3
+    server: 197.215.140.234
+    type: vmess
+    country: 🇱🇾LY
+    port: 80
+    uuid: 75916879-adcf-45b3-98d8-54a2412470b5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: sahar55.serveirc.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: sahar55.serveirc.com
+    delay: 2766
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 4
+    server: 93.123.17.135
+    type: vmess
+    country: 🇳🇱NL
+    port: 443
+    uuid: 2faa61a8-e696-4db6-9559-6d0593f7230e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: kosar34.sytes.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: kosar34.sytes.net
+    delay: 1694
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 6
+    server: 80.240.113.5
+    type: vmess
+    country: 🇸🇪SE
+    port: 443
+    uuid: a692469f-5b96-4f49-9a5b-7eb1e7f11566
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mehdi13.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: mehdi13.servecounterstrike.com
+    delay: 2033
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 7
+    server: 79.133.108.5
+    type: vmess
+    country: 🇺🇦UA
+    port: 80
+    uuid: a692469f-5b96-4f49-9a5b-7eb1e7f11566
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mehdi13.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: mehdi13.servecounterstrike.com
+    delay: 2533
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 8
+    server: 79.133.108.25
+    type: vmess
+    country: 🇺🇦UA
+    port: 80
+    uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mehdi21.servecounterstrike.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: mehdi21.servecounterstrike.com
+    delay: 1586
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 9
+    server: 92.38.170.6
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 2faa61a8-e696-4db6-9559-6d0593f7230e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: kosar34.sytes.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: kosar34.sytes.net
+    delay: 2489
+  - name: 瑞典 - 斯德哥尔摩 - Akamai Technologies, Inc. - 5
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇸🇪 SE
+    port: 20119
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1377
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 10
+    server: 13.51.154.183
     type: trojan
     country: 🇸🇪SE
     port: 22222
@@ -537,103 +896,88 @@ proxies:
     sni: trj.rollingnext.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1345
-  - name: 美国 - Ashburn - Hetzner Online GmbH - 10
-    server: server10.beheshtbaneh.com
+    delay: 937
+  - name: 美国 - Ashburn - Hetzner Online GmbH - 13
+    server: 104.21.82.183
     type: vmess
+    country: 🏁ZZ
     port: 8880
-    udp: true
-    uuid: 66d4af1c-fcc3-479b-847c-3260253e1faa
+    uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
     alterId: 0
     cipher: auto
     network: ws
+    servername: server5.beheshtbaneh.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        Host: server10.beheshtbaneh.com
-    delay: 2987
-  - name: 美国 - Ashburn - Hetzner Online GmbH - 16
-    server: 104.24.208.37
-    port: 80
+        HOST: server5.beheshtbaneh.com
+    delay: 1304
+  - name: 美国 - Piscataway - ReliableSite.Net LLC - 11
+    server: gov.uk
+    port: 443
     type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
+    skip-cert-verify: false
+    servername: gov.uk
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /77848824
       headers:
-        Host: my1.tooters.ir
-    delay: 1369
-  - name: 美国 - Ashburn - Hetzner Online GmbH - 17
-    server: 104.22.51.162
-    port: 80
+        Host: zheshiscp.com
+    udp: true
+    delay: 1741
+  - name: 美国 - Piscataway - ReliableSite.Net LLC - 12
+    server: 151.101.64.144
     type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: my1.tooters.ir
-    delay: 949
-  - name: 美国 - Ashburn - Hetzner Online GmbH - 18
-    server: 173.245.58.11
-    type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: my1.prapt3.ir
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        HOST: my1.prapt3.ir
-    delay: 1052
-  - name: 美国 - Ashburn - Hetzner Online GmbH - 9
-    server: server12.beheshtbaneh.com
-    type: vmess
-    country: 🇺🇸US
-    port: 8880
-    uuid: 39c03e6d-9efd-4e5a-8851-cd4ed0ec303c
-    alterId: 0
-    cipher: auto
-    network: ws
-    ws-path: /
-    servername: server12.beheshtbaneh.com
-    ws-headers:
-      HOST: server12.beheshtbaneh.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2100
-  - name: 美国 - 凤凰城 - Tempest Hosting, LLC - 12
-    server: 89.116.180.158
-    type: trojan
     country: 🇺🇸US
     port: 443
-    udp: true
-    password: 676ccd3b-793d-4efd-b93c-48943711055d
-    sni: 3us2.pqjc.buzz
+    uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: zheshiscp.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /pq/us2
+      path: /77848824
       headers:
-        Host: 3us2.pqjc.buzz
+        HOST: zheshiscp.com
+    delay: 2244
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 2
+    server: east.eeeeeef998.buzz
+    type: trojan
+    country: 🇨🇳 CN
+    port: 15006
+    password: 7084bed5-740d-42fc-bc30-76d2ffbb66b4
+    sni: data.steamdownload.top
+    skip-cert-verify: true
+    udp: true
+    delay: 779
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 7
+    server: server32.beheshtbaneh.com
+    port: 8880
+    type: vmess
+    uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
-    delay: 2517
-  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 6
+    ws-opts:
+      path: /
+      headers:
+        Host: server32.beheshtbaneh.com
+    udp: true
+    delay: 2470
+  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 10
     server: www.coldstone.club
     port: 8080
     type: vmess
@@ -646,8 +990,8 @@ proxies:
       path: /
       headers:
         Host: www.coldstone.club
-    delay: 2964
-  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 7
+    delay: 1938
+  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 9
     server: 104.21.83.10
     port: 8080
     type: vmess
@@ -660,110 +1004,127 @@ proxies:
       path: /
       headers:
         Host: www.coldstone.club
-    delay: 2297
-  - name: 美国 - 庫卡蒙格牧場 - ColoCrossing - 1
+    delay: 1609
+  - name: 美国 - 庫卡蒙格牧場 - ColoCrossing - 3
     server: rl1.269999.xyz
-    type: vmess
-    country: 🇨🇳CN
     port: 27102
+    type: vmess
     uuid: 460d53e3-3fa4-456a-83d1-d75d17d87c65
     alterId: 0
     cipher: auto
-    network: ws
-    servername: u2.269999.xyz
-    http-opts: {}
-    h2-opts: {}
     tls: true
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: u2.269999.xyz
-    delay: 2282
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 13
-    server: 104.21.94.99
-    type: vmess
-    country: 🏁ZZ
-    port: 8080
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: www.blueberrywindow.online
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: www.blueberrywindow.online
-    delay: 1481
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 2
-    server: 172.67.212.114
-    port: 8080
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    tls: false
+    servername: u2.269999.xyz
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: www.crispyrainbow.biz
-    delay: 1525
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 3
-    server: 172.67.166.190
-    port: 8080
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: www.crispyrainbow.online
-    delay: 1531
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 5
-    server: 104.21.23.176
-    port: 8080
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: www.crispyrainbow.biz
-    delay: 1559
-  - name: 美国 - 洛杉矶 - Psychz Networks - 11
-    server: us-west-anycast.lnaspiring.com
-    type: vmess
-    country: 🇺🇸US
+        Host: rl1.269999.xyz
+    delay: 2125
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 17
+    server: 23.227.38.35
     port: 80
-    uuid: b69211d8-42b8-46d9-8fdc-730053f2e76c
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
     alterId: 0
     cipher: auto
+    tls: false
     network: ws
-    servername: uspz.edge.233.tw
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
     ws-opts:
-      path: /geg/44?ed=2048
+      path: /
       headers:
-        HOST: uspz.edge.233.tw
-    delay: 1556
-  - name: 美国 - 洛杉矶 - Psychz Networks - 14
+        Host: us3.889611.com
+    delay: 1388
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 18
+    server: 23.227.38.34
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.889611.com
+    delay: 1571
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 19
+    server: 162.159.142.201
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.889611.com
+    delay: 1624
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 20
+    server: 162.159.142.202
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.889611.com
+    delay: 1660
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 21
+    server: 162.159.142.204
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.889611.com
+    delay: 1697
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 22
+    server: 162.159.142.205
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.889611.com
+    delay: 1658
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 23
+    server: 162.159.142.206
+    port: 80
+    type: vmess
+    uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us3.visaapp.top
+    delay: 1411
+  - name: 美国 - 洛杉矶 - Psychz Networks - 15
     server: 104.16.10.0
     type: vmess
     country: 🏁ZZ
     port: 80
-    uuid: 37aded7f-a1ba-448b-9529-b0498c813b98
+    uuid: 38f987ef-bf53-4534-8223-39caf8b24223
     alterId: 0
     cipher: auto
     network: ws
@@ -775,117 +1136,153 @@ proxies:
       path: /geg/44?ed=2048
       headers:
         HOST: uspz.edge.233.tw
-    delay: 2993
+    delay: 920
   - name: 美国 - 洛杉矶 - Psychz Networks - 8
-    server: 108.181.5.18
-    port: 18657
+    server: us-west-anycast.lnaspiring.com
     type: vmess
-    uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 1353
-  - name: 美国 - 聖荷西 - Eons Data Communications Limited - 4
-    server: 172.64.150.65
-    port: 2095
-    type: vmess
-    uuid: bdede9d3-68c4-4bb1-8ad1-9a8eb07ff76f
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /video/qYZue4zaWS
-      headers:
-        Host: us82pRzxDMb.fzbqfrse.xyz
-    delay: 2478
-  - name: 美国 - 芝加哥 - Oracle Corporation - 15
-    server: us.colacloud.site
-    type: ss
-    port: 20552
-    udp: true
-    password: b499af38-00c0-4a46-99ab-60588aa4c679
-    cipher: chacha20-ietf-poly1305
-    delay: 1874
-  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
-    server: 188.114.99.150
-    type: vmess
-    country: 🇳🇱NL
-    port: 443
-    uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
+    country: 🇺🇸US
+    port: 80
+    uuid: d0eeeadb-f223-42bf-a239-99c3377c9b40
     alterId: 0
     cipher: auto
     network: ws
-    servername: fi1.xv2ray.net
+    servername: uspz.edge.233.tw
     http-opts: {}
     h2-opts: {}
-    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /geg/44?ed=2048
+      headers:
+        HOST: uspz.edge.233.tw
+    delay: 1480
+  - name: 美国 - 芝加哥 - Oracle Corporation - 14
+    server: 104.17.25.1
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: aa8edc9c-978a-4f09-906f-a2668751e935
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: usnatvpn.catnipballs.gay
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: usnatvpn.catnipballs.gay
+    delay: 1319
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 16
+    server: 104.18.11.74
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: e393dd86-fddc-4bce-8abe-d902cf831670
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us2jdgv5GC7.fzbqfrse.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/DDC4btA8wc/
+      headers:
+        HOST: us2jdgv5GC7.fzbqfrse.xyz
+    delay: 2576
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 4
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇺🇸 US
+    port: 20112
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1339
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 5
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇺🇸 US
+    port: 20111
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1684
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 6
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+    type: ss
+    country: 🇺🇸 US
+    port: 20114
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+    cipher: chacha20-ietf-poly1305
+    delay: 1359
+  - name: 美国 - 達拉斯 - Choopa - 1
+    server: 45.32.192.94
+    type: vmess
+    port: 12079
+    udp: true
+    uuid: e63f477b-59d7-485e-9385-c38888b60cbf
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 664
+  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+    server: 104.18.203.232
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 4ddd51a1-208d-4061-8b4a-0930872d6b30
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: worker-weathered-tree-3500.xbfungd.workers.dev
+    http-opts: {}
+    h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /vmess
       headers:
-        HOST: fi1.xv2ray.net
-    delay: 1719
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 1
-    server: 35.177.97.162
-    type: trojan
-    country: 🇬🇧GB
-    port: 22222
-    udp: true
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    delay: 923
+        HOST: worker-weathered-tree-3500.xbfungd.workers.dev
+    delay: 1862
   - name: 英国 - 伦敦 - Amazon Technologies Inc. - 2
-    server: 13.40.58.205
-    port: 22222
-    type: trojan
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    delay: 831
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 3
-    server: series-a2-me.samanehha.co
+    server: fast_2ray_telchannelll.fast2rayy.eu.org
     type: ss
     country: 🇬🇧 GB
     port: 443
     password: Bog0ELmMM9DSxDdQ
     cipher: chacha20-ietf-poly1305
-    delay: 1220
+    delay: 2181
   - name: 英国 - 伦敦 - Amazon Technologies Inc. - 4
     server: Fast_2ray_Telchannelll.fast2rayy.eu.org
-    type: ss
-    country: 🇬🇧GB
     port: 443
-    password: Bog0ELmMM9DSxDdQ
-    cipher: chacha20-ietf-poly1305
-    delay: 2597
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 5
-    server: jseyu.arvancode.eu.Org
     type: ss
-    country: 🇬🇧GB
-    port: 443
-    password: Bog0ELmMM9DSxDdQ
     cipher: chacha20-ietf-poly1305
-    delay: 2045
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 6
-    server: jseyu.arvancode.eu.org
+    password: Bog0ELmMM9DSxDdQ
+    delay: 908
+  - name: 英国 - 伦敦 - Linode - 1
+    server: sj6hn4kq43eqwkk1.zozazutenoga.shop
     type: ss
-    country: 🇬🇧GB
-    port: 443
-    password: Bog0ELmMM9DSxDdQ
+    country: 🇬🇧 GB
+    port: 20116
+    password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
     cipher: chacha20-ietf-poly1305
-    delay: 1646
-  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 7
-    server: 13.42.139.200
+    delay: 1297
+  - name: 英国 - 伦敦 - OVH SAS - 3
+    server: 198.244.190.189
+    port: 443
     type: trojan
     country: 🇺🇸 US
-    port: 22222
-    password: telegram-id-directvpn
+    password: 81dfb458-9a26-486a-a0da-914c380459c6
     skip-cert-verify: true
     udp: true
-    delay: 1143
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 10
-    server: mci------join.outline-vpn.cloud
+    delay: 2105
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+    server: 172.67.174.120
     type: vless
     port: 80
     udp: true
@@ -898,23 +1295,23 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 2321
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 8
-    server: 172.67.174.120
+    delay: 991
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 6
+    server: 104.21.47.232
     type: vless
-    country: 🇺🇸US
     port: 80
     udp: true
-    uuid: ''
+    uuid: 00000000-0000-0000-0000-000000000000
     network: ws
     skip-cert-verify: true
+    client-fingerprint: chrome
     servername: public.列列男事的事列上赛男85.shop
     ws-opts:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 974
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 9
+    delay: 989
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 7
     server: 104.21.47.232
     type: vless
     country: 🏁ZZ
@@ -928,106 +1325,93 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 971
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
-    server: 104.25.255.254
-    type: trojan
-    country: 🏁ZZ
-    port: 443
-    udp: true
-    password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-    sni: hdfy8c1.foriran.me
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
-    delay: 2583
-  - name: 越南 - 北江市 - Idata Technology Solutions Company Limited - 1
-    server: 103.118.29.229
-    type: trojan
-    country: 🏁ZZ
-    port: 443
-    udp: true
-    password: eb9e8a52-0fec-4a10-8d16-af3b32874933
-    sni: 3sao.5gtocdocao.com
-    skip-cert-verify: true
-    delay: 1680
-  - name: 韩国 - Seongnam-si - Korea Telecom - 3
-    server: 125.141.31.71
-    port: 54345
-    type: ss
-    country: 🇰🇷 KR
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 316
-  - name: 韩国 - Seongnam-si - Korea Telecom - 4
-    server: p222.panda001.net
-    type: ss
-    country: 🇰🇷 KR
-    port: 54345
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 809
-  - name: 韩国 - 春川市 - Oracle Corporation - 1
-    server: chuncheonarm.yuwan.link
+    delay: 1023
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
+    server: 188.114.97.20
     type: vmess
+    country: 🇨🇴CO
+    port: 443
+    uuid: 200ea676-464d-4ccf-bb5b-c50fd216c61b
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nl1.xv2ray.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: nl1.xv2ray.net
+    delay: 1314
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 3
+    server: 172.67.161.65
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 3ae5e25b-8331-4288-9018-5fc6b34069dd
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nl1.xv2ray.net
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: nl1.xv2ray.net
+    delay: 1760
+  - name: 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 2
+    server: 172.67.185.208
+    port: 2095
+    type: vmess
+    uuid: 3c1cca21-1373-4707-a575-195e9da0fb71
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ebiii.fozool76.lol
+    udp: true
+    delay: 1182
+  - name: 葡萄牙 - 里斯本 - Stark Industries Solutions LTD - 1
+    server: 94.131.10.135
+    port: 2095
+    type: vmess
+    uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: 94.131.10.135
+    udp: true
+    delay: 1155
+  - name: 阿尔巴尼亚 - 地拉那 - Keminet Ltd. - 1
+    server: 31.171.153.182
+    type: ss
+    country: 🇦🇱AL
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1344
+  - name: 韩国 - 水原市 - Korea Telecom - 2
+    server: 125.141.26.8
+    type: ss
     country: 🇰🇷KR
-    port: 20326
-    uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: youku.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: youku.com
-    delay: 1458
-  - name: 韩国 - 春川市 - Oracle Corporation - 2
-    server: 144.24.93.29
-    type: vmess
-    country: 🇬🇧GB
-    port: 20326
-    uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: chuncheonarm.yuwan.link
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: chuncheonarm.yuwan.link
-    delay: 1316
-  - name: 韩国 - 春川市 - Oracle Corporation - 7
-    server: kr.colacloud.site
-    type: ss
-    port: 20352
-    udp: true
-    password: b499af38-00c0-4a46-99ab-60588aa4c679
-    cipher: chacha20-ietf-poly1305
-    delay: 2827
-  - name: 韩国 - 首尔特别市 - MOACK.Co.LTD - 5
-    server: 45.154.14.209
-    type: vmess
-    country: 🇬🇧 GB
-    port: 48852
-    uuid: 557769ba-e085-49ef-8ac6-96cf3d1a9730
-    alterId: 0
-    cipher: auto
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1465
-  - name: 韩国 - 首尔特别市 - MOACK.Co.LTD - 6
+    port: 57428
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 432
+  - name: 韩国 - 首尔特别市 - MOACK.Co.LTD - 1
     server: 45.154.14.201
     port: 28514
     type: vmess
@@ -1042,4 +1426,4 @@ proxies:
       path:
         - /
     udp: true
-    delay: 1819
+    delay: 1945
