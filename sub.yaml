@@ -1,169 +1,323 @@
 port: 7890
-socks-port: 7891
 allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 巴西 - São Paulo - Oracle Corporation - 1
-    server: 152.67.41.90
-    type: ss
-    country: 🇧🇷BR
-    port: 7703
-    password: 86379168-47dd-4fc3-a2d7-5183802487f6
-    cipher: aes-256-gcm
-    delay: 1301
-  - name: 巴西 - São Paulo - Oracle Corporation - 2
-    server: 144.22.215.228
-    type: ss
-    country: 🇧🇷BR
-    port: 7704
-    password: 86379168-47dd-4fc3-a2d7-5183802487f6
-    cipher: aes-256-gcm
-    delay: 1319
-  - name: 波兰 - 华沙 - Cloudflare, Inc. - 2
-    server: 151.101.3.10
+  - name: 中国 - 台湾 - Akari Networks - 8
+    server: 188.253.6.35
+    port: 20009
     type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+    uuid: 287b32ab-9d3a-4810-9817-39954ea66f61
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: false
     network: ws
-    servername: nmsl.kp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
     ws-opts:
-      path: /aries?ed=2048
-      headers:
-        HOST: nmsl.kp
-    delay: 2232
-  - name: 波兰 - 华沙 - FAST - 1
-    server: 94.228.165.234
-    port: 15214
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: DmMQUmI7pgQDnrWqLXC00L
-    delay: 2447
-  - name: 德国 - 杜塞尔多夫 - Contabo GmbH - 1
-    server: 185.218.126.248
-    type: vmess
-    port: 80
+      path: /
     udp: true
-    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+    delay: 1252
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 10
+    server: nb22.ntbq.dynu.net
+    port: 12002
+    type: vmess
+    uuid: 46a8c6ce-0095-4229-9e35-238d6634feca
     alterId: 0
     cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /v1893298323Py
-    delay: 1209
-  - name: 德国 - 杜塞尔多夫 - myLoc managed IT AG - 2
-    server: 5.104.108.109
-    port: 443
-    type: trojan
-    password: e86e242e-b5d5-46ae-a410-3684f7d70ac2
-    skip-cert-verify: true
-    delay: 933
-  - name: 德国 - 杜塞尔多夫 - myLoc managed IT AG - 3
-    server: 5.104.108.120
-    type: trojan
-    country: 🇩🇪 DE
-    port: 443
-    password: e86e242e-b5d5-46ae-a410-3684f7d70ac2
+    tls: false
     skip-cert-verify: true
     udp: true
-    delay: 905
-  - name: 德国 - 法兰克福 - DigitalOcean, LLC - 7
-    server: 165.22.16.248
-    type: ss
-    country: 🇩🇪DE
-    port: 1080
-    password: PW1kppCGHiY9SSZh1VogXQ
-    cipher: chacha20-ietf-poly1305
-    delay: 683
-  - name: 德国 - 法兰克福 - DigitalOcean, LLC - 8
-    server: 172.64.107.163
+    delay: 1769
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 11
+    server: nb22.ntbq.dynu.net
     type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    country: 🇹🇼TW
+    port: 12002
+    uuid: 1d08abce-b0ad-4f5e-aa49-884d5f6690f8
     alterId: 0
     cipher: auto
-    network: ws
-    servername: newde1.xn--mes53ddysu0o3gl.top
+    network: tcp
+    ws-path: /
+    servername: b13.ntbq.dynu.net
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
+    delay: 1528
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 12
+    server: nb22.ntbq.dynu.net
+    type: vmess
+    port: 12002
+    udp: true
+    uuid: 7baddf37-f8bb-4744-bd9d-88d42dda603a
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1605
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 13
+    server: b13.ntbq.dynu.net
+    port: 9489
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: b13.ntbq.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 1336
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 14
+    server: 114.45.76.8
+    port: 18912
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: ty12t.twty.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 351
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 15
+    server: b24.ntbq.dynu.net
+    port: 3271
+    type: trojan
+    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
+    sni: b24.ntbq.dynu.net
+    skip-cert-verify: true
+    delay: 1237
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 16
+    server: b24.ntbq.dynu.net
+    type: trojan
+    port: 3271
+    udp: true
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: b24.ntbq.dynu.net
+    skip-cert-verify: true
+    delay: 2267
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 17
+    server: b12.ntbq.dynu.net
+    type: trojan
+    port: 9755
+    udp: true
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: b12.ntbq.dynu.net
+    skip-cert-verify: true
+    delay: 2288
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 18
+    server: 220.141.145.234
+    port: 13761
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: ty11t.twty.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 469
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 19
+    server: 114.37.108.103
+    port: 3271
+    type: trojan
+    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
+    sni: b24.ntbq.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 1580
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
+    server: nb22.ntbq.dynu.net
+    port: 12002
+    type: vmess
+    uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: nb22.ntbq.dynu.net
+    delay: 2995
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 20
+    server: ty12t.twty.dynu.net
+    port: 18912
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: ty12t.twty.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 994
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 21
+    server: 114.37.108.103
+    port: 3271
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: b24.ntbq.dynu.net
+    skip-cert-verify: true
+    udp: true
+    delay: 653
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 22
+    server: ty11t.twty.dynu.net
+    port: 13761
+    type: trojan
+    password: c0aeab85-0e75-48bb-98a5-65092b120e64
+    sni: ty11t.twty.dynu.net
+    delay: 1290
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 23
+    server: 125.224.142.242
+    port: 14431
+    type: vmess
+    uuid: c0aeab85-0e75-48bb-98a5-65092b120e64
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    delay: 986
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 24
+    server: dotu-twv2.03p4fad6vd.com
+    port: 11018
+    type: trojan
+    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    delay: 2645
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 25
+    server: dotu-twv1.03p4fad6vd.com
+    port: 11014
+    type: vmess
+    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    alterId: 0
+    cipher: auto
+    tls: false
+    delay: 2409
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 26
+    server: dotu-twv2.03p4fad6vd.com
+    port: 11017
+    type: trojan
+    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    delay: 2977
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 27
+    server: dotu-twv2.03p4fad6vd.com
+    port: 11016
+    type: trojan
+    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    delay: 1507
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 28
+    server: dotu-twv1.03p4fad6vd.com
+    port: 11012
+    type: vmess
+    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    alterId: 0
+    cipher: auto
+    tls: false
+    delay: 1828
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+    server: nb22.ntbq.dynu.net
+    port: 12002
+    type: vmess
+    uuid: 867b8e57-9355-40dc-a696-9ca2518b091e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 2470
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 4
+    server: nb22.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 12002
+    uuid: bbbf3acb-bfaa-4545-9d2c-dcac332b71ac
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: mehdi20.mehdimoghaddam.fun
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 2268
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 5
+    server: nb22.ntbq.dynu.net
+    type: vmess
+    country: 🇨🇳 TW
+    port: 12002
+    uuid: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: nb22.ntbq.dynu.net
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1105
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 6
+    server: nb22.ntbq.dynu.net
+    type: vmess
+    country: 🇹🇼TW
+    port: 12002
+    uuid: a36db716-c6d0-4bc2-bd76-69e278215124
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 2038
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 9
+    server: nb22.ntbq.dynu.net
+    port: 12002
+    type: vmess
+    uuid: 04b694b2-7022-4767-801b-6d21611f548b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 1523
+  - name: 中国 - 怀化市 - PEG TECH INC - 7
+    server: 38.14.107.227
+    port: 38100
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
     ws-opts:
-      path: /xn--mes53ddysu0o3gl
+      path: /path/271624282113
       headers:
-        HOST: newde1.xn--mes53ddysu0o3gl.top
-    delay: 1163
-  - name: 德国 - 法兰克福 - G-Core Labs S.A. - 9
+        Host: www.23179753.xyz
+    delay: 1436
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 1
+    server: 47.76.185.99
+    type: ss
+    port: 80
+    password: a-wym4ovY4Yw
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: ''
+      mode: http
+    delay: 1559
+  - name: 中国 - 香港 - Hytron Network Services Limited - 29
     server: cmcm.yam168.com
-    port: 53003
+    port: 53000
     type: trojan
     password: 9109e709-6926-4299-a6c1-cda9cdca8b33
     skip-cert-verify: true
-    delay: 1678
-  - name: 德国 - 法兰克福 - Oracle Corporation - 5
-    server: dl3s.doushimeng.com
+    delay: 809
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 30
+    server: dotu-hkv2.03p4fad6vd.com
+    port: 11007
+    type: trojan
+    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
+    sni: cloudflare.node-ssl.cdn-alibaba.com
+    skip-cert-verify: true
+    delay: 1660
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 31
+    server: dotu-hkv1.03p4fad6vd.com
+    port: 11004
     type: vmess
-    port: 2082
-    udp: true
-    uuid: aa22e03b-981c-4577-b8d9-5677e4807cd9
+    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
     alterId: 0
     cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /asdas
-      headers:
-        Host: cf-de13.doushimeng.com
-    delay: 2906
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 4
-    server: 104.21.20.19
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 4be6650b-41be-4878-a28e-553fc4fb73e8
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: de2.xv2ray.net
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /vmess
-      headers:
-        HOST: de2.xv2ray.net
-    delay: 865
-  - name: 德国 - 莱比锡 - Cloudflare, Inc. - 6
-    server: 172.67.0.238
-    type: vmess
-    port: 8080
-    udp: true
-    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: eu3.openxai.link
-    delay: 2275
-  - name: 俄罗斯 - 喀山 - LLC BAXET - 1
-    server: 151.101.3.10
+    tls: false
+    delay: 2749
+  - name: 俄罗斯 - 喀山 - LLC BAXET - 2
+    server: 151.101.131.10
     type: vmess
     country: 🇺🇸US
     port: 80
@@ -179,56 +333,477 @@ proxies:
       path: /aries?ed=2048
       headers:
         HOST: mihoyo.gov.kp
-    delay: 1989
-  - name: 俄罗斯 - 莫斯科 - LLC Baxet - 2
+    delay: 2911
+  - name: 俄罗斯 - 莫斯科 - LLC Baxet - 1
     server: ru01.bsawc.shop
-    type: trojan
     port: 30005
+    type: trojan
     password: 9b3f69de-e059-4f29-8fca-0c93ec644fc9
     sni: ru01.bsawc.shop
     skip-cert-verify: true
     udp: true
-    delay: 2731
-  - name: 俄罗斯 - 莫斯科 - LLC BAXET - 3
-    server: 172.64.133.144
+    delay: 1109
+  - name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 1
+    server: 15.223.113.222
+    type: trojan
+    country: 🇨🇦CA
+    port: 16903
+    udp: true
+    password: 9sykKV9fh5DP
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1418
+  - name: 加拿大 - 多伦多 - Amazon.com, Inc. - 2
+    server: 15.156.207.175
+    type: trojan
+    country: 🇨🇦CA
+    port: 16886
+    udp: true
+    password: WcG1f49D8Qcn
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1182
+  - name: 南非 - 约翰内斯堡 - Oracle Corporation - 1
+    server: 104.21.75.246
     type: vmess
-    country: 🇺🇸US
+    country: 🏁ZZ
     port: 80
-    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    uuid: dd965564-8dae-402c-b15c-9eb808cfeee6
     alterId: 0
     cipher: auto
     network: ws
-    servername: newru1.xn--mes53ddysu0o3gl.top
+    servername: yhnsb3.shabijichang.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /xn--mes53ddysu0o3gl
+      path: /
       headers:
-        HOST: newru1.xn--mes53ddysu0o3gl.top
-    delay: 2504
-  - name: 法国 - 巴黎 - G-Core Labs S.A. - 5
+        HOST: yhnsb3.shabijichang.com
+    delay: 2152
+  - name: 土耳其 - 伊斯坦布尔 - G-Core Labs S.A. - 1
+    server: cmcm.yam168.com
+    port: 53007
+    type: trojan
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    skip-cert-verify: true
+    delay: 1739
+  - name: 巴西 - São Paulo - Oracle Corporation - 1
+    server: 152.67.41.90
+    port: 7703
+    type: ss
+    cipher: aes-256-gcm
+    password: 86379168-47dd-4fc3-a2d7-5183802487f6
+    delay: 1465
+  - name: 巴西 - São Paulo - Oracle Corporation - 2
+    server: 144.22.215.228
+    port: 7704
+    type: ss
+    cipher: aes-256-gcm
+    password: 86379168-47dd-4fc3-a2d7-5183802487f6
+    delay: 1216
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 10
+    server: 18.193.117.57
+    type: trojan
+    country: 🇩🇪DE
+    port: 16917
+    udp: true
+    password: zodFRV8fWMxL
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1508
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 8
+    server: 3.72.39.12
+    type: trojan
+    country: 🇩🇪DE
+    port: 16882
+    udp: true
+    password: 8iVReBQ9g(y(
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1072
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 9
+    server: 52.59.196.80
+    type: trojan
+    country: 🇩🇪DE
+    port: 16914
+    udp: true
+    password: K1XNxPQR3G06
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1196
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+    server: 172.67.174.58
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 237f1c11e3e9e373.Tiderace.gately.info
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: 237f1c11e3e9e373.Tiderace.gately.info
+    delay: 890
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+    server: 104.21.30.249
+    port: 2052
+    type: vmess
+    uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 237f1c11e3e9e373.Tiderace.gately.info
+    delay: 1005
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 7
+    server: 172.66.44.158
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 237f1c11e3e9e373.Tiderace.gately.info
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: 237f1c11e3e9e373.Tiderace.gately.info
+    delay: 2457
+  - name: 德国 - 柏林 - 1&1 IONOS SE - 1
+    server: 172.67.235.237
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: www.31000oooowe2.bf
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /df97b21e-3943-4865-af18-b5ea9676b037
+      headers:
+        HOST: www.31000oooowe2.bf
+    delay: 1283
+  - name: 德国 - 柏林 - 1&1 IONOS SE - 4
+    server: 172.67.220.64
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: www.31000oooowe2.bf
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /df97b21e-3943-4865-af18-b5ea9676b037
+      headers:
+        HOST: www.31000oooowe2.bf
+    delay: 1168
+  - name: 德国 - 法兰克福 - Akamai Technologies, Inc. - 11
+    server: 104.18.25.92
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mysan2.jaquay22.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        HOST: mysan2.jaquay22.workers.dev
+    delay: 1656
+  - name: 德国 - 法兰克福 - CDS Global Cloud Co., Ltd - 6
+    server: tahaquran8.xyz
+    type: vless
+    port: 443
+    uuid: 962a733d-2614-0b9b-7ffe-9ac92ffea8eb
+    network: ws
+    tls: true
+    ws-opts:
+      path: /current_time
+    delay: 2064
+  - name: 德国 - 法兰克福 - DigitalOcean, LLC - 2
+    server: 165.22.16.248
+    port: 1080
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: PW1kppCGHiY9SSZh1VogXQ
+    delay: 850
+  - name: 德国 - 莱比锡 - Cloudflare, Inc. - 12
+    server: 172.67.188.193
+    port: 8080
+    type: vmess
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: eu3.openxai.link
+    delay: 1012
+  - name: 德国 - 莱比锡 - Cloudflare, Inc. - 13
+    server: 190.93.246.208
+    type: vmess
+    country: 🇨🇷CR
+    port: 8080
+    uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: eu3.openxai.link
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        HOST: eu3.openxai.link
+    delay: 1525
+  - name: 意大利 - 罗马市 - Stark Industries Solutions LTD - 1
+    server: it-full.privateip.net
+    type: vmess
+    country: 🇺🇦UA
+    port: 443
+    uuid: 11eddfee-7c3b-400e-bd65-939a21e32c74
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /RACEVPN
+    delay: 1538
+  - name: 意大利 - 罗马市 - Stark Industries Solutions LTD - 2
+    server: it-full.privateip.net
+    type: trojan
+    country: 🇺🇦UA
+    port: 443
+    password: 31583130-de1f-44ce-a433-1dbb108e1846
+    skip-cert-verify: true
+    udp: true
+    delay: 1359
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 3
+    server: 13.213.46.155
+    type: trojan
+    country: 🇸🇬SG
+    port: 16908
+    udp: true
+    password: 0dLcNZYoTMJZ
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 753
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 4
+    server: 13.229.229.40
+    type: trojan
+    country: 🇸🇬SG
+    port: 16885
+    udp: true
+    password: 9xEdbRmxbxdo
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 467
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 1
+    server: 175.41.164.105
+    type: ss
+    country: 🇸🇬SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 843
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 2
+    server: 54.251.73.151
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 384
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 5
+    server: 18.141.208.57
+    type: trojan
+    country: 🇸🇬SG
+    port: 16897
+    udp: true
+    password: (KQbyTqA8o9l
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 937
+  - name: 新加坡 - 新加坡 - G-Core Labs S.A. - 7
+    server: cmcm.yam168.com
+    port: 53002
+    type: trojan
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    skip-cert-verify: true
+    delay: 1093
+  - name: 新加坡 - 新加坡 - M247 Europe SRL - 10
+    server: cmcm.yam168.com
+    port: 42012
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 850
+  - name: 新加坡 - 新加坡 - M247 Europe SRL - 8
+    server: cmcm.yam168.com
+    port: 42011
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 895
+  - name: 新加坡 - 新加坡 - M247 Europe SRL - 9
+    server: cmcm.yam168.com
+    port: 42013
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 897
+  - name: 新加坡 - 新加坡 - Oracle Corporation - 6
+    server: sg.colacloud.site
+    type: ss
+    port: 42752
+    udp: true
+    password: bd296abc-686f-461d-91d3-26fc270de3f2
+    cipher: chacha20-ietf-poly1305
+    delay: 1591
+  - name: 日本 - Chiyoda - CLOUD-NETWORK - 8
+    server: cmcm.yam168.com
+    port: 42009
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 1063
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
+    server: 13.230.225.104
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 271
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 2
+    server: 18.181.194.63
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 325
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 3
+    server: 52.199.42.84
+    type: trojan
+    country: 🇯🇵JP
+    port: 16914
+    udp: true
+    password: xfBFynxc0H)x
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 391
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 5
+    server: 52.193.100.24
+    type: trojan
+    country: 🇯🇵JP
+    port: 16907
+    udp: true
+    password: llyPGFcoYFU5
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 756
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 6
+    server: 119.23.104.213
+    port: 8474
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: a501c82c72d790b8
+    delay: 654
+  - name: 日本 - 东京 - Amazon.com, Inc. - 4
+    server: 54.199.206.196
+    type: trojan
+    country: 🇯🇵JP
+    port: 16911
+    udp: true
+    password: C1bpfKqsXw0c
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 383
+  - name: 日本 - 东京 - G-Core Labs S.A. - 7
+    server: cmcm.yam168.com
+    port: 53001
+    type: trojan
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    skip-cert-verify: true
+    delay: 1099
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 5
+    server: 13.36.170.152
+    type: trojan
+    country: 🇫🇷FR
+    port: 16893
+    udp: true
+    password: Zgo2adFqBabv
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1739
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 4
+    server: 15.188.225.132
+    type: trojan
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 843
+  - name: 法国 - 巴黎 - G-Core Labs S.A. - 6
     server: cmcm.yam168.com
     port: 53006
     type: trojan
     password: 9109e709-6926-4299-a6c1-cda9cdca8b33
     skip-cert-verify: true
-    delay: 1231
-  - name: 法国 - 巴黎 - SCALEWAY - 4
-    type: vless
+    delay: 2006
+  - name: 法国 - 巴黎 - SCALEWAY - 2
     server: 62.210.101.0
+    type: vless
     port: 18700
+    udp: true
     uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
     network: tcp
     tls: true
-    udp: true
+    skip-cert-verify: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: update.microsoft
     reality-opts:
       public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
       short-id: 6ba85179e30d4fc2
-    delay: 1172
+    delay: 2243
   - name: 法国 - 巴黎 - Stark Industries Solutions LTD - 1
     server: 188.114.97.53
     port: 443
@@ -236,543 +811,372 @@ proxies:
     uuid: 8c929251-406f-4b32-9173-07ccd242cb58
     alterId: 0
     cipher: auto
-    skip-cert-vertify: true
-    network: ws
     tls: true
+    network: ws
     ws-opts:
       path: /vmess
       headers:
         Host: fr1-vmess.sshmax.xyz
-    delay: 2528
-  - name: 法国 - 马赛 - Oracle Corporation - 2
-    server: achk.cloudflarest.link
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: fr.grpc.gay
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /rongseven?ed=2048
-      headers:
-        HOST: fr.grpc.gay
-    delay: 2464
+    delay: 1252
   - name: 法国 - 马赛 - Oracle Corporation - 3
     server: fr01.bsawc.shop
-    type: trojan
     port: 23752
+    type: trojan
     password: 9b3f69de-e059-4f29-8fca-0c93ec644fc9
     sni: fr01.bsawc.shop
     skip-cert-verify: true
     udp: true
-    delay: 2082
-  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+    delay: 2670
+  - name: 澳大利亚 - 悉尼 - Oracle Corporation - 1
+    server: au02.bsawc.shop
+    type: trojan
+    port: 38152
+    udp: true
+    password: 9b3f69de-e059-4f29-8fca-0c93ec644fc9
+    sni: au02.bsawc.shop
+    skip-cert-verify: true
+    delay: 2030
+  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 1
+    server: 34.240.226.66
+    type: trojan
+    country: 🇮🇪IE
+    port: 22222
+    password: telegram-id-directvpn
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 805
+  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 2
+    server: 3.254.16.76
+    type: trojan
+    country: 🇮🇪IE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    network: tcp
+    delay: 881
+  - name: 爱沙尼亚 - 塔林 - Stark Industries Solutions LTD - 1
+    server: 104.21.75.79
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 5c6f16ce-6a20-41e5-9274-06b4c45051b5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ee2-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: ee2-vmess.sshmax.xyz
+    delay: 981
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 4
+    server: 13.48.200.89
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 864
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 5
+    server: 13.49.98.221
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 911
+  - name: 瑞典 - 斯德哥尔摩 - Amazon.com, Inc. - 1
+    server: 51.21.51.150
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    udp: true
+    delay: 793
+  - name: 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 2
     server: 104.21.20.16
     type: vmess
     country: 🏁ZZ
-    port: 80
-    uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
+    port: 443
+    uuid: 802c1068-ee2b-4c87-b49d-e7f3043e75d2
     alterId: 0
     cipher: auto
     network: ws
-    servername: fi2-vmess.sshmax.xyz
+    servername: se2-vmess.sshmax.xyz
     http-opts: {}
     h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
       path: /vmess
       headers:
-        HOST: fi2-vmess.sshmax.xyz
-    delay: 877
-  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
-    server: 172.67.204.84
+        HOST: se2-vmess.sshmax.xyz
+    delay: 2502
+  - name: 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 3
+    server: zula.ir
     type: vmess
     country: 🇺🇸US
     port: 80
-    uuid: c9e99213-170b-458a-b45b-79454ac7cf4b
+    uuid: 802c1068-ee2b-4c87-b49d-e7f3043e75d2
     alterId: 0
     cipher: auto
     network: ws
-    servername: fi2-vmess.sshmax.xyz
+    servername: se2-vmess.sshmax.xyz
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /vmess
       headers:
-        HOST: fi2-vmess.sshmax.xyz
-    delay: 836
-  - name: 韩国 - 春川市 - Oracle Corporation - 3
-    server: dotu-krv1.03p4fad6vd.com
-    port: 11043
+        HOST: se2-vmess.sshmax.xyz
+    delay: 1906
+  - name: 美国 - Ashburn - Amazon Technologies Inc. - 39
+    server: 3.83.24.211
+    type: trojan
+    country: 🇺🇸US
+    port: 16887
+    udp: true
+    password: QmJi77YCr9Or
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1048
+  - name: 美国 - Ashburn - Amazon.com, Inc. - 37
+    server: 52.90.115.252
+    type: trojan
+    country: 🇺🇸US
+    port: 16896
+    udp: true
+    password: e2XSBIvw)Q3l
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1292
+  - name: 美国 - Dublin - Amazon.com, Inc. - 40
+    server: 3.15.6.140
+    type: trojan
+    country: 🇺🇸US
+    port: 16887
+    udp: true
+    password: Ix)4JgV4QDUl
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1846
+  - name: 美国 - Dublin - Amazon.com, Inc. - 41
+    server: 18.219.167.137
+    type: trojan
+    country: 🇺🇸US
+    port: 16906
+    udp: true
+    password: siY8ghkfBIlZ
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1231
+  - name: 美国 - San Jose - Oracle Corporation - 42
+    server: xray.cheeshon.cyou
     type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-krv1.03p4fad6vd.com
-    delay: 2307
-  - name: 韩国 - 水原市 - Korea Telecom - 1
-    server: 125.141.26.10
-    type: ss
-    country: 🇰🇷KR
-    port: 4319
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 686
-  - name: 韩国 - 水原市 - Korea Telecom - 2
-    server: p228.panda004.net
-    port: 4319
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    delay: 1155
-  - name: 加拿大 - 多伦多 - Akamai Technologies - 1
-    server: 162.159.200.3
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+    port: 19344
+    uuid: ac9dd407-d053-4c67-e44e-31d6a5833ff4
     alterId: 0
     cipher: auto
     network: ws
-    servername: ca3.889611.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /ac9dd407
+    delay: 1280
+  - name: 美国 - 丹佛 - GTHost - 3
+    server: 172.67.136.12
+    port: 8080
+    type: vmess
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: www.ywnouvbale.biz
+    delay: 1350
+  - name: 美国 - 丹佛 - GTHost - 30
+    server: 104.21.46.66
+    type: vmess
+    country: 🏁ZZ
+    port: 8080
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: www.ywnouvbale.biz
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: ca3.889611.com
-    delay: 1345
-  - name: 加拿大 - 多伦多 - Akamai Technologies - 2
-    server: 162.159.200.1
+        HOST: www.ywnouvbale.biz
+    delay: 1304
+  - name: 美国 - 丹佛 - GTHost - 4
+    server: 104.21.54.252
+    port: 8080
     type: vmess
-    country: 🏁ZZ
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: www.velvetmountain.shop
+    delay: 2123
+  - name: 美国 - 丹佛 - GTHost - 5
+    server: www.ywnouvbale.biz
+    port: 8080
+    type: vmess
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: www.ywnouvbale.biz
+    delay: 2520
+  - name: 美国 - 克利夫頓 - Atlantic.net - 44
+    server: 69.87.217.103
+    type: ss
+    country: 🇺🇸US
+    port: 25365
+    password: TELEGRAM:@ZEDMODEON
+    cipher: aes-128-gcm
+    delay: 704
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 47
+    server: 172.64.136.142
+    type: vmess
+    country: 🇺🇸US
     port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
     alterId: 0
     cipher: auto
     network: ws
-    servername: ca3.889611.com
+    servername: newus1.xn--mes53ddysu0o3gl.top
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /xn--mes53ddysu0o3gl
       headers:
-        HOST: ca3.889611.com
-    delay: 1353
-  - alterId: 0
-    cipher: auto
-    name: 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-    network: ws
-    port: 80
-    server: 172.67.217.144
-    skip-cert-verify: true
-    tls: false
+        HOST: newus1.xn--mes53ddysu0o3gl.top
+    delay: 1057
+  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 23
+    server: 172.67.166.194
+    port: 8080
     type: vmess
-    uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8
-    ws-opts:
-      headers:
-        host: lv1.xv2ray.net
-      path: /
-    delay: 2020
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 42
-    type: vmess
-    server: 8.222.167.147
-    port: 80
-    cipher: auto
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
     alterId: 0
+    cipher: auto
     tls: false
-    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /
       headers:
-        host: my1.tooters.ir
-    delay: 1153
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 43
-    network: ws
-    port: 80
-    server: 104.16.77.74
+        Host: www.coldstone.club
+    delay: 1623
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 38
+    server: 35.91.255.158
+    type: trojan
+    country: 🇺🇸US
+    port: 16900
+    udp: true
+    password: 7e151XKub(WO
+    sni: www.myethblog.com
     skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 2164
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 44
-    network: ws
-    port: 80
-    server: 172.67.253.134
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 2183
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 45
-    network: ws
-    port: 80
-    server: 172.67.253.71
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 891
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 46
-    network: ws
-    port: 80
-    server: 172.67.253.221
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 878
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 47
-    network: ws
-    port: 80
-    server: 172.67.253.105
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 952
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 48
-    network: ws
-    port: 80
-    server: 172.67.253.194
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 2235
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 49
-    network: ws
-    port: 80
-    server: 172.67.253.243
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 1647
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 52
-    network: ws
-    port: 80
-    server: 172.67.253.239
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 929
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 53
-    network: ws
-    port: 80
-    server: 172.67.253.190
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /?ed=2048
-    delay: 1637
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 54
-    network: ws
-    port: 80
-    server: 188.114.96.113
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: a.prapt4.ir
-      path: /
-    delay: 1191
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 56
-    network: ws
-    port: 80
-    server: for-irancell.outline-vpn.cloud
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /
-    delay: 2410
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 57
+    delay: 797
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 43
     server: 8.222.249.190
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
-    skip-cert-vertify: true
-    network: ws
     tls: false
+    network: ws
     ws-opts:
       path: /
       headers:
         Host: my1.tooters.ir
-    delay: 1675
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 58
-    network: ws
-    port: 80
-    server: 104.24.208.37
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: my1.tooters.ir
-      path: /
-    delay: 1179
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 61
-    network: ws
-    port: 80
+    delay: 1581
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 45
     server: 104.22.51.162
-    skip-cert-verify: true
-    tls: false
+    port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
     ws-opts:
-      headers:
-        host: my1.tooters.ir
       path: /
-    delay: 2179
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 75
+      headers:
+        Host: my1.tooters.ir
+    delay: 1651
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 48
     server: 172.67.253.175
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
-    skip-cert-vertify: true
-    network: ws
     tls: false
+    network: ws
     ws-opts:
       path: /?ed=2048
       headers:
         Host: my1.tooters.ir
-    delay: 1156
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 波特蘭 - Hetzner Online GmbH - 76
-    network: ws
-    port: 80
+    delay: 1170
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 49
     server: 104.21.69.44
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    ws-opts:
-      headers:
-        host: a.prapt4.ir
-      path: /
-    delay: 2071
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 77
-    type: vmess
-    server: 8.222.159.252
     port: 80
-    cipher: auto
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
+    cipher: auto
     tls: false
-    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /
       headers:
-        host: my1.tooters.ir
-    delay: 1655
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 78
+        Host: a.prapt4.ir
+    delay: 2129
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 50
     server: 158.178.242.5
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
-    skip-cert-vertify: true
-    network: ws
     tls: false
+    network: ws
     ws-opts:
       path: /
       headers:
         Host: my1.tooters.ir
-    delay: 1662
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 82
+    delay: 1271
+  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 2
+    server: 23.227.38.35
     type: vmess
-    server: 8.222.174.108
-    port: 80
-    cipher: auto
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: my1.tooters.ir
-    delay: 2109
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 83
-    type: vmess
-    server: 8.222.215.228
-    port: 80
-    cipher: auto
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: my1.tooters.ir
-    delay: 2037
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 達拉斯 - GTHost - 9
-    network: ws
-    port: 8080
-    server: 104.21.54.252
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    ws-opts:
-      headers:
-        host: www.velvetmountain.shop
-      path: /
-    delay: 1312
-  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 10
-    server: 104.16.35.48
-    port: 2086
-    type: vmess
-    uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: ws
-    tls: false
-    ws-opts:
-      path: /video/Z7qdcrAGRw
-      headers:
-        Host: us77SmSk86j.fzbqfrse.xyz
-    delay: 2570
-  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 59
-    server: 104.18.38.241
-    type: vmess
-    country: 🏁ZZ
-    port: 2086
-    uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us77SmSk86j.fzbqfrse.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /video/Z7qdcrAGRw
-      headers:
-        HOST: us77SmSk86j.fzbqfrse.xyz
-    delay: 1633
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 60
-    server: 104.21.63.52
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us65.netfilx.live
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: us65.netfilx.live
-    delay: 1203
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 3
-    server: 104.18.15.151
-    type: vmess
-    country: 🏁ZZ
+    country: 🇨🇦CA
     port: 80
     uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
     alterId: 0
@@ -786,98 +1190,26 @@ proxies:
       path: /
       headers:
         HOST: us3.889611.com
-    delay: 730
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 4
-    server: 162.159.142.209
+    delay: 1404
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 6
+    server: cloudflare.cfgo.cc
     type: vmess
     country: 🏁ZZ
     port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+    uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff
     alterId: 0
     cipher: auto
     network: ws
-    servername: us3.visaapp.top
+    servername: wap.hostmjj.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: us3.visaapp.top
-    delay: 1011
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 5
-    server: 104.18.154.42
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: us3.889611.com
-    delay: 1991
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 6
-    server: 162.159.142.208
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: us3.889611.com
-    delay: 1720
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 7
-    server: 104.18.15.147
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: us3.889611.com
-    delay: 695
-  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 74
-    server: digitalocean.com
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: us3.visaapp.top
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: us3.visaapp.top
-    delay: 1916
-  - name: 美国 - 洛杉矶 - IT7 Networks Inc - 69
+        HOST: wap.hostmjj.com
+    delay: 2014
+  - name: 美国 - 洛杉矶 - IT7 Networks Inc - 46
     server: 216.24.188.189
     type: vless
     port: 53555
@@ -890,700 +1222,562 @@ proxies:
     servername: addons.mozilla.org
     reality-opts:
       public-key: tbez1qn3jAT8TYsvh-w4Jh24mZHV6h8uWt1NaOizpBo
-    delay: 1152
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 13
+    delay: 963
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 10
+    server: 23.227.39.45
     type: vmess
-    server: 23.227.38.11
     port: 8080
+    uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
+    alterId: 0
     cipher: auto
+    network: ws
+    servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
+      headers:
+        host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    delay: 2496
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 11
+    server: 23.227.38.44
+    type: vmess
+    port: 8080
+    uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
+      headers:
+        host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    delay: 1245
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 12
+    server: 23.227.39.24
+    type: vmess
+    port: 8080
+    uuid: eb6b425d-0a43-4f4b-998f-e83d1b7e0997
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: per-essex-patterns-bowling.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: eb6b425d-0a43-4f4b-998f-e83d1b7e0997-vm
+      headers:
+        host: per-essex-patterns-bowling.trycloudflare.com
+    delay: 1124
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 13
+    server: 23.227.39.23
+    type: vmess
+    port: 8080
     uuid: e380bde6-f120-4b80-bdae-ea68b1b64504
     alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: configured-creek-relating-theater.trycloudflare.com
+    cipher: auto
     network: ws
+    servername: configured-creek-relating-theater.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
       path: e380bde6-f120-4b80-bdae-ea68b1b64504-vm
       headers:
         host: configured-creek-relating-theater.trycloudflare.com
-    delay: 748
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 16
-    type: vmess
-    server: yh1.freeh1.xyz
-    port: 8080
-    cipher: auto
-    uuid: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: uh-lawyers-instruments-kernel.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4-vm
-      headers:
-        host: uh-lawyers-instruments-kernel.trycloudflare.com
-    delay: 1231
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 35
-    type: vmess
-    server: yh1.dtku41.xyz
-    port: 8080
-    cipher: auto
-    uuid: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: uh-lawyers-instruments-kernel.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4-vm
-      headers:
-        host: uh-lawyers-instruments-kernel.trycloudflare.com
-    delay: 1006
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 37
-    type: vmess
-    server: 23.227.38.23
-    port: 8080
-    cipher: auto
-    uuid: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: uh-lawyers-instruments-kernel.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4-vm
-      headers:
-        host: uh-lawyers-instruments-kernel.trycloudflare.com
-    delay: 765
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 39
-    type: vmess
-    server: yh2.dtku41.xyz
-    port: 8080
-    cipher: auto
-    uuid: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: uh-lawyers-instruments-kernel.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: 4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4-vm
-      headers:
-        host: uh-lawyers-instruments-kernel.trycloudflare.com
-    delay: 1023
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 51
-    server: 162.159.130.208
+    delay: 1806
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 14
+    server: 23.227.38.22
     type: vmess
     port: 8080
-    uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
+    uuid: eb6b425d-0a43-4f4b-998f-e83d1b7e0997
     alterId: 0
     cipher: auto
     network: ws
-    servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+    servername: per-essex-patterns-bowling.trycloudflare.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
+      path: eb6b425d-0a43-4f4b-998f-e83d1b7e0997-vm
       headers:
-        host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    delay: 1430
-  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 55
-    server: yh1.dtku41.xyz
+        host: per-essex-patterns-bowling.trycloudflare.com
+    delay: 1178
+  - name: 美国 - 洛杉矶 - Limestone Networks, Inc. - 27
+    server: 162.159.134.23
     type: vmess
     port: 8080
-    uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
+    uuid: e380bde6-f120-4b80-bdae-ea68b1b64504
     alterId: 0
     cipher: auto
     network: ws
-    servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+    servername: configured-creek-relating-theater.trycloudflare.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
+      path: e380bde6-f120-4b80-bdae-ea68b1b64504-vm
       headers:
-        host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    delay: 1965
-  - name: 美国 - 洛杉矶 - Multacom Corporation - 1
-    server: 142.171.174.206
+        host: configured-creek-relating-theater.trycloudflare.com
+    delay: 1051
+  - name: 美国 - 洛杉矶 - PEG TECH INC - 1
+    server: 142.4.97.71
     type: vmess
-    port: 8880
-    udp: true
-    uuid: b46cb204-5849-4b86-852d-8154fb8eb580
-    alterId: 0
+    port: 36000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     network: ws
     http-opts: {}
     h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
-      path: b46cb204-5849-4b86-852d-8154fb8eb580-vm
-    delay: 1460
-  - name: 美国 - 洛杉矶 - Psychz Networks - 11
-    type: vmess
-    server: yh3.freeh1.xyz
-    port: 8080
-    cipher: auto
-    uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: larger-marketing-amounts-skin.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+      path: /path/271624282113
       headers:
-        host: larger-marketing-amounts-skin.trycloudflare.com
-    delay: 1313
-  - name: 美国 - 洛杉矶 - Psychz Networks - 12
-    type: vmess
-    server: yh1.freeh1.xyz
-    port: 8080
-    cipher: auto
-    uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: larger-marketing-amounts-skin.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
-      headers:
-        host: larger-marketing-amounts-skin.trycloudflare.com
-    delay: 1293
-  - name: 美国 - 洛杉矶 - Psychz Networks - 14
-    type: vmess
-    server: yh3.freeh1.xyz
-    port: 8080
-    cipher: auto
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    network: ws
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 2052
-  - name: 美国 - 洛杉矶 - Psychz Networks - 15
-    server: 188.114.98.201
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1748
-  - name: 美国 - 洛杉矶 - Psychz Networks - 17
-    server: 190.93.246.26
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 784
-  - name: 美国 - 洛杉矶 - Psychz Networks - 18
-    server: 173.245.58.57
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 795
-  - name: 美国 - 洛杉矶 - Psychz Networks - 19
-    server: 172.66.173.72
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1350
-  - name: 美国 - 洛杉矶 - Psychz Networks - 20
-    server: 141.101.114.11
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 763
-  - name: 美国 - 洛杉矶 - Psychz Networks - 21
-    server: 173.245.59.42
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 771
-  - name: 美国 - 洛杉矶 - Psychz Networks - 22
-    server: 172.67.3.129
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 2175
-  - name: 美国 - 洛杉矶 - Psychz Networks - 23
-    server: 141.101.122.49
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 820
-  - name: 美国 - 洛杉矶 - Psychz Networks - 24
-    server: 141.101.114.186
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1064
-  - name: 美国 - 洛杉矶 - Psychz Networks - 25
-    server: 173.245.49.10
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 791
-  - name: 美国 - 洛杉矶 - Psychz Networks - 26
-    server: 188.114.97.49
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1613
-  - name: 美国 - 洛杉矶 - Psychz Networks - 27
-    server: 141.101.121.11
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 754
-  - name: 美国 - 洛杉矶 - Psychz Networks - 28
-    server: 172.66.165.149
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1420
-  - name: 美国 - 洛杉矶 - Psychz Networks - 29
-    server: 103.21.244.76
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1045
-  - name: 美国 - 洛杉矶 - Psychz Networks - 30
-    server: 141.101.121.130
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 715
-  - name: 美国 - 洛杉矶 - Psychz Networks - 31
-    server: 172.66.128.78
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1477
-  - name: 美国 - 洛杉矶 - Psychz Networks - 32
-    server: 190.93.244.249
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1859
-  - name: 美国 - 洛杉矶 - Psychz Networks - 33
-    server: 103.21.244.92
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 765
-  - name: 美国 - 洛杉矶 - Psychz Networks - 34
-    server: 108.162.194.215
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1860
-  - name: 美国 - 洛杉矶 - Psychz Networks - 36
-    server: 108.162.195.102
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1235
-  - name: 美国 - 洛杉矶 - Psychz Networks - 38
-    server: 108.162.193.241
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 772
-  - name: 美国 - 洛杉矶 - Psychz Networks - 40
-    server: 173.245.49.32
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 1487
-  - name: 美国 - 洛杉矶 - Psychz Networks - 41
-    server: 162.159.24.165
-    type: vmess
-    port: 8080
-    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: pcs-referenced-camera-concerns.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
-      headers:
-        host: pcs-referenced-camera-concerns.trycloudflare.com
-    delay: 2087
-  - name: 美国 - 洛杉矶 - The Constant Company - 50
-    server: us.littleqqq.co
-    port: 21859
-    type: vmess
-    uuid: 09fba290-11cc-4d49-88a0-3bd873d83b4d
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /live/UKPZrSI3K7dtNJmn
-      headers:
-        Host: www.tmall.com
-    udp: true
-    delay: 839
-  - name: 美国 - 洛杉矶 - Vantiva USA Shared Services Inc. - 62
-    server: 104.21.83.10
-    port: 8080
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: www.coldstone.club
-    delay: 2239
-  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 2
-    server: IT-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz
+        Host: www.31033708.xyz
+    delay: 961
+  - name: 美国 - 洛杉矶 - PEG TECH INC - 25
+    server: 142.4.97.77
     type: vmess
     country: 🇺🇸US
-    port: 4591
-    uuid: 11a5286f-44fc-4d35-992f-2db2773b1aa5
-    alterId: 0
+    port: 36000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     network: ws
-    servername: bing.com
+    servername: www.31033708.xyz
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /WER3212221T
+      path: /path/271624282113
       headers:
-        HOST: bing.com
-    delay: 1584
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
-    type: vless
-    server: zsf-5fa.pages.dev
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: zsf-5fa.pages.dev
+        HOST: www.31033708.xyz
+    delay: 890
+  - name: 美国 - 洛杉矶 - Psychz Networks - 15
+    server: 190.93.246.226
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
     network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /freecodes
-    delay: 1487
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
-    type: vless
-    server: zsf-5fa.pages.dev
-    port: 2083
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: zsf-5fa.pages.dev
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1280
+  - name: 美国 - 洛杉矶 - Psychz Networks - 16
+    server: 190.93.246.239
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
     network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /youtube-由零開始
-    delay: 1566
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
-    type: vless
-    server: zsf-5fa.pages.dev
-    port: 2087
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: zsf-5fa.pages.dev
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2098
+  - name: 美国 - 洛杉矶 - Psychz Networks - 17
+    server: 173.245.49.157
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
     network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /youtube-由零開始
-    delay: 1479
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
-    type: vless
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2106
+  - name: 美国 - 洛杉矶 - Psychz Networks - 18
+    server: 188.114.96.8
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1875
+  - name: 美国 - 洛杉矶 - Psychz Networks - 19
+    server: 188.114.96.31
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1803
+  - name: 美国 - 洛杉矶 - Psychz Networks - 20
+    server: 188.114.98.33
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2563
+  - name: 美国 - 洛杉矶 - Psychz Networks - 21
+    server: 188.114.96.69
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1846
+  - name: 美国 - 洛杉矶 - Psychz Networks - 22
+    server: 108.162.196.163
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1379
+  - name: 美国 - 洛杉矶 - Psychz Networks - 24
+    server: 190.93.245.232
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1292
+  - name: 美国 - 洛杉矶 - Psychz Networks - 26
+    server: 108.162.195.228
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1377
+  - name: 美国 - 洛杉矶 - Psychz Networks - 28
+    server: fbi.gov
+    type: vmess
+    port: 8080
+    uuid: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: larger-marketing-amounts-skin.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: d137d31c-5e9d-4cb2-8f7b-b171fc63e2aa-vm
+      headers:
+        host: larger-marketing-amounts-skin.trycloudflare.com
+    delay: 2006
+  - name: 美国 - 洛杉矶 - Psychz Networks - 29
+    server: 162.159.61.113
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1834
+  - name: 美国 - 洛杉矶 - Psychz Networks - 31
+    server: 141.101.114.54
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1838
+  - name: 美国 - 洛杉矶 - Psychz Networks - 32
+    server: fbi.gov
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2266
+  - name: 美国 - 洛杉矶 - Psychz Networks - 33
+    server: fbi.gov
+    type: vmess
+    port: 8080
+    uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
+      headers:
+        host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    delay: 1233
+  - name: 美国 - 洛杉矶 - Psychz Networks - 34
+    server: 198.41.222.161
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2156
+  - name: 美国 - 洛杉矶 - Psychz Networks - 35
+    server: 198.41.201.21
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 1910
+  - name: 美国 - 洛杉矶 - Psychz Networks - 36
+    server: 198.41.217.193
+    type: vmess
+    port: 8080
+    uuid: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: pcs-referenced-camera-concerns.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 4f6032e4-ba53-4087-b1e1-8b0ef5ebfebc-vm
+      headers:
+        host: pcs-referenced-camera-concerns.trycloudflare.com
+    delay: 2970
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
     server: zsf-5fa.pages.dev
+    type: vless
     port: 2053
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
     tls: true
     servername: zsf-5fa.pages.dev
-    network: ws
     ws-opts:
       path: /youtube-由零開始
-    delay: 1476
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
-    server: 104.21.47.232
+    delay: 2197
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
+    server: zsf-5fa.pages.dev
     type: vless
-    port: 80
-    udp: true
-    uuid: 00000000-0000-0000-0000-000000000000
+    port: 2083
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: public.列列男事的事列上赛男85.shop
+    tls: true
+    servername: zsf-5fa.pages.dev
     ws-opts:
-      path: /
-      headers:
-        Host: public.列列男事的事列上赛男85.shop
-    delay: 1104
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+      path: /?ed
+    delay: 1381
+  - name: 美国 - 芝加哥 - G-Core Labs S.A. - 51
+    server: cmcm.yam168.com
+    port: 53005
+    type: trojan
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    skip-cert-verify: true
+    delay: 1969
+  - name: 美国 - 芝加哥 - HIVELOCITY, Inc. - 52
+    server: cmcm.yam168.com
+    port: 42017
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 1875
+  - name: 美国 - 芝加哥 - HIVELOCITY, Inc. - 53
+    server: cmcm.yam168.com
+    port: 42018
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    delay: 1787
+  - name: 美国 - 西雅圖 - Spartan Host Ltd - 7
+    server: 45.145.72.212
+    type: vless
+    port: 11223
+    udp: true
+    uuid: 34d7aac1-fac7-4e17-b41e-5be028d286cd
+    network: tcp
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: addons.mozilla.org
+    reality-opts:
+      public-key: u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c
+    delay: 599
+  - name: 英国 - Harlesden - G-Core Labs S.A. - 10
+    server: cmcm.yam168.com
+    port: 53004
+    type: trojan
+    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
+    skip-cert-verify: true
+    delay: 1908
+  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 5
+    server: 18.132.207.45
+    type: trojan
+    country: 🇬🇧GB
+    port: 16895
+    udp: true
+    password: iBel3KlTTdvf
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1238
+  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 6
+    server: 52.56.66.91
+    type: trojan
+    country: 🇬🇧GB
+    port: 16887
+    udp: true
+    password: st)4tPBX8ODb
+    sni: www.myethblog.com
+    skip-cert-verify: true
+    delay: 1079
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 1
+    server: w3.sylarsun.eu.org
+    type: vless
+    port: 443
+    uuid: 89420825-e589-4735-bee1-6dc636fca343
+    network: ws
+    tls: true
+    servername: w3.sylarsun.eu.org
+    ws-opts:
+      path: /youtube-由零開始
+    delay: 2708
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
     server: 172.67.174.120
     type: vless
+    country: 🇺🇸US
     port: 80
     udp: true
-    uuid: 00000000-0000-0000-0000-000000000000
+    uuid: ''
     network: ws
     skip-cert-verify: true
-    client-fingerprint: chrome
     servername: public.列列男事的事列上赛男85.shop
     ws-opts:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 1106
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
+    delay: 1732
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 3
     server: mci------join.outline-vpn.cloud
     type: vless
     country: 🇺🇸US
@@ -1597,23 +1791,8 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 1100
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
-    server: 172.67.174.120
-    type: vless
-    country: 🇺🇸US
-    port: 80
-    udp: true
-    uuid: ''
-    network: ws
-    skip-cert-verify: true
-    servername: public.列列男事的事列上赛男85.shop
-    ws-opts:
-      path: /
-      headers:
-        Host: public.列列男事的事列上赛男85.shop
-    delay: 704
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    delay: 1621
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 4
     server: 104.21.47.232
     type: vless
     country: 🏁ZZ
@@ -1627,63 +1806,76 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 741
-  - name: 美国 - 西雅圖 - Spartan Host Ltd - 70
+    delay: 961
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 7
+    server: 104.21.47.232
     type: vless
-    server: 45.145.72.212
-    port: 11223
-    udp: true
-    uuid: 34d7aac1-fac7-4e17-b41e-5be028d286cd
-    tls: true
-    servername: addons.mozilla.org
-    flow: xtls-rprx-vision
-    network: tcp
-    reality-opts:
-      public-key: u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c
-    client-fingerprint: chrome
-    delay: 750
-  - name: 美国 - 芝加哥 - G-Core Labs S.A. - 79
-    server: cmcm.yam168.com
-    port: 53005
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 1295
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 芝加哥 - GTHost - 8
-    network: ws
-    port: 8080
-    server: 172.67.136.12
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    ws-opts:
-      headers:
-        host: www.ywnouvbale.biz
-      path: /
-    delay: 2389
-  - name: 美国 - 芝加哥 - HIVELOCITY, Inc. - 80
-    server: cmcm.yam168.com
-    port: 42017
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 967
-  - name: 美国 - 芝加哥 - HIVELOCITY, Inc. - 81
-    server: cmcm.yam168.com
-    port: 42018
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 940
-  - name: 葡萄牙 - 里斯本 - Stark Industries Solutions LTD - 1
-    server: 172.67.204.84
-    type: vmess
-    country: 🇺🇸US
     port: 80
-    uuid: 9d7d97c2-d7a5-41c9-a33c-370caed71287
+    udp: true
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: public.列列男事的事列上赛男85.shop
+    ws-opts:
+      path: /
+      headers:
+        Host: public.列列男事的事列上赛男85.shop
+    delay: 836
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 8
+    server: 172.67.174.120
+    type: vless
+    port: 80
+    udp: true
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: public.列列男事的事列上赛男85.shop
+    ws-opts:
+      path: /
+      headers:
+        Host: public.列列男事的事列上赛男85.shop
+    delay: 959
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 9
+    server: mci------join.outline-vpn.cloud
+    type: vless
+    port: 80
+    udp: true
+    uuid: 00000000-0000-0000-0000-000000000000
+    network: ws
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: public.列列男事的事列上赛男85.shop
+    ws-opts:
+      path: /
+      headers:
+        Host: public.列列男事的事列上赛男85.shop
+    delay: 2337
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
+    server: 188.114.99.77
+    type: vmess
+    country: 🇳🇱NL
+    port: 80
+    uuid: 2dd253e4-311f-4898-92f5-d4eb88ce27af
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nl1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: nl1-vmess.sshmax.xyz
+    delay: 1349
+  - name: 葡萄牙 - 里斯本 - Stark Industries Solutions LTD - 1
+    server: 104.21.25.94
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 44e35bf1-6e80-4dd0-88d4-ed90fcfd19ca
     alterId: 0
     cipher: auto
     network: ws
@@ -1695,814 +1887,45 @@ proxies:
       path: /vmess
       headers:
         HOST: pt1-vmess.sshmax.xyz
-    delay: 1308
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
-    server: 13.230.225.104
-    type: ss
-    country: 🇯🇵JP
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 1358
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
-    server: 119.23.104.213
-    port: 8474
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: a501c82c72d790b8
-    delay: 637
-  - name: 日本 - 东京 - G-Core Labs S.A. - 7
-    server: cmcm.yam168.com
-    port: 53001
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 914
-  - name: 日本 - 东京 - Oracle Corporation - 3
-    server: jp01.bsawc.shop
-    type: trojan
-    port: 35902
-    password: 9b3f69de-e059-4f29-8fca-0c93ec644fc9
-    sni: jp01.bsawc.shop
-    skip-cert-verify: true
-    udp: true
-    delay: 1384
-  - name: 日本 - 東京都 - Akari Networks - 6
-    server: bgp1.ktyyun.com
-    port: 16605
-    type: vmess
-    uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: bgp1.ktyyun.com
-    delay: 2018
-  - name: 日本 - Chiyoda - CLOUD-NETWORK - 5
-    server: cmcm.yam168.com
-    port: 42009
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 807
-  - name: 日本 - Chiyoda - CLOUD-NETWORK - 8
-    server: cmcm.yam168.com
-    port: 42008
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 683
-  - name: 日本 - Shinagawa - The Constant Company, LLC - 2
-    server: jp.littleqqq.co
-    port: 62193
-    type: vmess
-    uuid: 09fba290-11cc-4d49-88a0-3bd873d83b4d
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /live/UKPZrSI3K7dtNJmn
-      headers:
-        Host: www.tmall.com
-    udp: true
-    delay: 2207
-  - name: 瑞典 - 斯德哥尔摩 - Amazon.com, Inc. - 1
-    server: 51.21.51.150
-    type: trojan
-    country: 🇸🇪SE
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.miwan.co.uk
-    udp: true
-    delay: 774
-  - name: 土耳其 - 伊斯坦布尔 - G-Core Labs S.A. - 1
-    server: cmcm.yam168.com
-    port: 53007
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 1559
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 3
-    server: dotu-sgv1.03p4fad6vd.com
-    port: 11037
-    type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-sgv1.03p4fad6vd.com
-    delay: 2596
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 4
-    server: dotu-sgv1.03p4fad6vd.com
-    port: 11035
-    type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-sgv1.03p4fad6vd.com
-    delay: 1570
-  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 5
-    server: dotu-sgv1.03p4fad6vd.com
-    port: 11038
-    type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-sgv1.03p4fad6vd.com
-    delay: 2825
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
-    server: sgcft01.xqc.best
-    type: vmess
-    country: 🇺🇸US
-    port: 443
-    uuid: 16322585-c85d-4553-bc2a-bdb1585026e4
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: d17d3pnxztlslv.cloudfront.net
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /stream
-      headers:
-        HOST: d17d3pnxztlslv.cloudfront.net
-    delay: 1518
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 2
-    server: 104.20.30.205
+    delay: 1120
+  - name: 越南 - Thành Phố Thủ Dầu Một - Viet Digital Technology Liability Company - 1
+    server: 103.252.94.224
     type: vmess
     country: 🏁ZZ
     port: 80
-    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    uuid: 5278f5d3-f001-4459-94b6-7e0915238998
     alterId: 0
     cipher: auto
     network: ws
-    servername: newsg1.xn--mes53ddysu0o3gl.top
+    servername: bs2.loadingip.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /xn--mes53ddysu0o3gl
+      path: /bs
       headers:
-        HOST: newsg1.xn--mes53ddysu0o3gl.top
-    delay: 1897
-  - name: 新加坡 - 新加坡 - G-Core Labs S.A. - 8
-    server: cmcm.yam168.com
-    port: 53002
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 523
-  - name: 新加坡 - 新加坡 - M247 Europe SRL - 6
-    server: cmcm.yam168.com
-    port: 42011
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 833
-  - name: 新加坡 - 新加坡 - M247 Europe SRL - 7
-    server: cmcm.yam168.com
-    port: 42013
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 606
-  - name: 新加坡 - 新加坡 - M247 Europe SRL - 9
-    server: cmcm.yam168.com
-    port: 42012
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 905
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 6
-    type: vless
-    server: w3.sylarsun.eu.org
-    port: 443
-    uuid: 89420825-e589-4735-bee1-6dc636fca343
-    tls: true
-    servername: w3.sylarsun.eu.org
-    network: ws
-    ws-opts:
-      path: /youtube-由零開始
-    delay: 2128
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 7
-    type: vless
-    server: w1.sylar8.eu.org
-    port: 443
-    uuid: 29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2
-    tls: true
-    servername: w1.sylar8.eu.org
-    network: ws
-    ws-opts:
-      path: fuck0yes!
-    delay: 1783
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 8
-    server: mci------join.outline-vpn.cloud
-    type: vless
-    port: 80
-    udp: true
-    uuid: 00000000-0000-0000-0000-000000000000
-    network: ws
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: public.列列男事的事列上赛男85.shop
-    ws-opts:
-      path: /
-      headers:
-        Host: public.列列男事的事列上赛男85.shop
-    delay: 2971
-  - cipher: chacha20-ietf-poly1305
-    name: 英国 - 伦敦 - Amazon Technologies Inc. - 2
-    password: W74XFALLLuw6m5IA
-    port: 443
-    server: series-a1.samanehha.co
-    type: ss
-    delay: 2367
-  - cipher: chacha20-ietf-poly1305
-    name: 英国 - 伦敦 - Amazon Technologies Inc. - 3
-    password: mps3FwmDjLrWaOVg
-    port: 443
-    server: series-a2.samanehha.co
-    type: ss
-    delay: 680
-  - cipher: chacha20-ietf-poly1305
-    name: 英国 - 伦敦 - Amazon Technologies Inc. - 4
-    password: W74XFALLLuw6m5IA
-    port: 443
-    server: java.ct.arvancode.eu.Org
-    type: ss
-    delay: 858
-  - cipher: chacha20-ietf-poly1305
-    name: 英国 - 伦敦 - Amazon Technologies Inc. - 5
-    password: W74XFALLLuw6m5IA
-    port: 443
-    server: java.ct.arvancode.eu.org
-    type: ss
-    delay: 979
-  - name: 英国 - 伦敦 - LINODE-UK - 1
-    server: 162.159.142.244
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: uk3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: uk3.889611.com
-    delay: 1512
-  - name: 英国 - Harlesden - G-Core Labs S.A. - 9
-    server: cmcm.yam168.com
-    port: 53004
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 1382
-  - name: 越南 - 波來古市 - Vietnam Posts and Telecommunications Group - 1
+        HOST: bs2.loadingip.com
+    delay: 1544
+  - name: 越南 - 波來古市 - Vietnam Posts and Telecommunications Group - 2
     server: cmcm.yam168.com
     port: 42041
     type: ss
     cipher: chacha20-ietf-poly1305
     password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    delay: 780
-  - name: 越南 - 波來古市 - Vietnam Posts and Telecommunications Group - 2
+    delay: 898
+  - name: 越南 - 波來古市 - Vietnam Posts and Telecommunications Group - 3
     server: cmcm.yam168.com
     port: 53008
     type: trojan
     password: 9109e709-6926-4299-a6c1-cda9cdca8b33
     skip-cert-verify: true
-    delay: 761
-  - name: 中国 - 怀化市 - PEG TECH INC - 10
-    server: 38.14.107.227
-    port: 38100
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    skip-cert-vertify: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /path/271624282113
-      headers:
-        Host: www.23179753.xyz
-    delay: 1448
-  - name: 中国 - 台湾 - Akari Networks - 15
-    server: 188.253.6.35
-    port: 20009
-    type: vmess
-    uuid: 287b32ab-9d3a-4810-9817-39954ea66f61
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-    udp: true
-    delay: 1159
-  - name: 中国 - 台湾 - Akari Networks - 42
-    server: bgp1.ktyyun.com
-    port: 16002
-    type: vmess
-    uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: bgp1.ktyyun.com
-    delay: 1112
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 1
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇹🇼TW
-    port: 12002
-    uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
-    alterId: 0
-    cipher: auto
-    network: tcp
-    ws-path: /
-    servername: b13.ntbq.dynu.net
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 670
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 16
-    server: c12.twtc.dynu.net
-    port: 14431
-    type: vmess
-    uuid: c0aeab85-0e75-48bb-98a5-65092b120e64
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-    delay: 880
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 17
-    server: ty11t.twty.dynu.net
-    type: trojan
-    port: 13761
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: ty11t.twty.dynu.net
-    delay: 1119
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 18
-    server: b13.ntbq.dynu.net
-    port: 9489
-    type: trojan
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: b13.ntbq.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 908
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 19
-    server: ty12t.twty.dynu.net
-    type: trojan
-    port: 18912
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: ty12t.twty.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 569
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    port: 12002
-    udp: true
-    uuid: 46a8c6ce-0095-4229-9e35-238d6634feca
-    alterId: 0
-    cipher: auto
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1746
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 20
-    server: b13.ntbq.dynu.net
-    port: 9489
-    type: trojan
-    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
-    sni: b13.ntbq.dynu.net
-    skip-cert-verify: true
-    delay: 882
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 21
-    server: b24.ntbq.dynu.net
-    port: 3271
-    type: trojan
-    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
-    sni: b24.ntbq.dynu.net
-    skip-cert-verify: true
-    delay: 882
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 22
-    server: ty11t.twty.dynu.net
-    type: trojan
-    port: 13761
-    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
-    sni: ty11t.twty.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1096
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 23
-    server: 61.228.179.198
-    type: vmess
-    country: 🇹🇼TW
-    port: 12002
-    uuid: 46a8c6ce-0095-4229-9e35-238d6634feca
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1152
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 24
-    server: 125.224.142.242
-    port: 14431
-    type: vmess
-    uuid: c0aeab85-0e75-48bb-98a5-65092b120e64
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    delay: 991
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 25
-    server: 114.37.108.103
-    type: trojan
-    country: 🇹🇼TW
-    port: 3271
-    password: 5d9d54c4-8c6d-4b77-b9f7-33735b5de7c4
-    sni: b24.ntbq.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 363
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 26
-    server: 220.141.145.234
-    type: trojan
-    country: 🇹🇼TW
-    port: 13761
-    password: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
-    sni: ty11t.twty.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 437
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 27
-    server: 114.37.108.103
-    type: trojan
-    country: 🇹🇼TW
-    port: 3271
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: b24.ntbq.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 1311
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 28
-    server: 114.45.76.8
-    type: trojan
-    country: 🇹🇼TW
-    port: 18912
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: ty12t.twty.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 696
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 29
-    server: 220.141.145.234
-    type: trojan
-    country: 🇹🇼TW
-    port: 13761
-    password: c0aeab85-0e75-48bb-98a5-65092b120e64
-    sni: ty11t.twty.dynu.net
-    skip-cert-verify: true
-    udp: true
-    delay: 400
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    port: 12002
-    udp: true
-    uuid: 19999918-f5fc-4a0b-89d1-f19210b430c9
-    alterId: 0
-    cipher: auto
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 629
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 30
-    server: ty11t.twty.dynu.net
-    port: 13761
-    type: trojan
-    password: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
-    sni: ty11t.twty.dynu.net
-    skip-cert-verify: true
-    delay: 715
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 31
-    server: dotu-twv2.03p4fad6vd.com
-    port: 11018
-    type: trojan
-    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    delay: 1597
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 34
-    server: dotu-twv1.03p4fad6vd.com
-    port: 11014
-    type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-twv1.03p4fad6vd.com
-    delay: 1228
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 36
-    server: dotu-twv2.03p4fad6vd.com
-    port: 11017
-    type: trojan
-    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    delay: 1366
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 38
-    server: dotu-twv2.03p4fad6vd.com
-    port: 11016
-    type: trojan
-    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
     delay: 928
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 39
-    server: dotu-twv1.03p4fad6vd.com
-    port: 11012
+  - name: 韩国 - 春川市 - Oracle Corporation - 1
+    server: dotu-krv1.03p4fad6vd.com
+    port: 11043
     type: vmess
     uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
     alterId: 0
     cipher: auto
-    skip-cert-vertify: true
-    network: tcp
     tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-twv1.03p4fad6vd.com
-    delay: 1654
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 4
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇹🇼TW
-    port: 12002
-    uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6
-    alterId: 0
-    cipher: auto
-    network: tcp
-    ws-path: /
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1177
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 5
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇹🇼TW
-    port: 12002
-    uuid: 232c3a62-f299-4d70-9a97-8b5820b93f1a
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1789
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 6
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇨🇳 TW
-    port: 12002
-    uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
-    alterId: 0
-    cipher: auto
-    network: tcp
-    ws-path: /
-    servername: nb22.ntbq.dynu.net
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2368
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇨🇳 TW
-    port: 12002
-    uuid: 04b694b2-7022-4767-801b-6d21611f548b
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1267
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 8
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇨🇳 TW
-    port: 12002
-    uuid: 12c3ce3a-f05c-4e0c-9eec-00a4f70affd4
-    alterId: 0
-    cipher: auto
-    network: tcp
-    ws-path: /
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2137
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 9
-    server: nb22.ntbq.dynu.net
-    type: vmess
-    country: 🇹🇼TW
-    port: 12002
-    uuid: 867b8e57-9355-40dc-a696-9ca2518b091e
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2212
-  - name: 中国 - 香港 - Baxet Group Inc. - 11
-    server: 104.18.15.148
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: hk3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: hk3.889611.com
-    delay: 2109
-  - name: 中国 - 香港 - Baxet Group Inc. - 12
-    server: 162.159.200.4
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: hk3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: hk3.889611.com
-    delay: 1703
-  - name: 中国 - 香港 - Baxet Group Inc. - 13
-    server: 162.159.200.5
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: hk3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: hk3.889611.com
-    delay: 1651
-  - name: 中国 - 香港 - Baxet Group Inc. - 14
-    server: 162.159.142.212
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: hk3.889611.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: hk3.889611.com
-    delay: 1471
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 41
-    server: bgp1.ktyyun.com
-    port: 16601
-    type: vmess
-    uuid: 3b40af01-e7e5-3cf2-807d-3f6df986f34b
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: bgp1.ktyyun.com
-    delay: 1776
-  - name: 中国 - 香港 - Hytron Network Services Limited - 40
-    server: cmcm.yam168.com
-    port: 53000
-    type: trojan
-    password: 9109e709-6926-4299-a6c1-cda9cdca8b33
-    skip-cert-verify: true
-    delay: 555
-  - name: 中国 - 香港 - Vertex Connectivity LLC - 32
-    server: tiananmen.19890604.day
-    port: 10803
-    client-fingerprint: chrome
-    type: trojan
-    password: 1fb1e787-5b16-405d-8e38-fb179dfc61f9
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: false
-    delay: 2078
-  - name: 中国 - 香港 - Vertex Connectivity LLC - 35
-    server: dotu-hkv2.03p4fad6vd.com
-    port: 11007
-    type: trojan
-    password: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    skip-cert-verify: true
-    delay: 1298
-  - name: 中国 - 香港 - Vertex Connectivity LLC - 37
-    server: dotu-hkv1.03p4fad6vd.com
-    port: 11004
-    type: vmess
-    uuid: 565aa5e6-15ff-3f58-b134-4ac80c744d48
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: tcp
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        Host: dotu-hkv1.03p4fad6vd.com
-    delay: 1179
-  - name: 中国 - 香港 - WAP.AC LTD - 33
-    server: data-hk-v1.shwjfkw.cn
-    port: 20207
-    type: vmess
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 0
-    cipher: auto
-    skip-cert-vertify: true
-    network: ws
-    tls: false
-    ws-opts:
-      path: /debian
-      headers:
-        Host: data-hk-v1.shwjfkw.cn
-    delay: 1372
-proxy-groups: []
-rules: []
+    delay: 2123
