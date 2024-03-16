@@ -5,20 +5,6 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 1
-    server: 47.243.196.229
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ''
-      path: ''
-      tls: false
-      mux: true
-    delay: 1479
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 2
     server: 8.218.71.80
     type: ss
     port: 443
@@ -33,51 +19,127 @@ proxies:
       path: ''
       skip-cert-verify: true
       tls: false
-    delay: 706
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 3
-    server: 8.218.82.85
-    type: ss
-    port: 443
-    udp: true
-    password: a-wym4ovY4Yw
-    cipher: aes-128-gcm
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ''
-      mode: websocket
-      mux: true
-      path: ''
-      skip-cert-verify: true
-      tls: false
-    delay: 2493
-  - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 1
-    server: 134.122.41.160
-    port: 3389
+    delay: 1917
+  - name: 中国 - 香港 - Hytron Network Services Limited - 2
+    server: hkcft01.xqc.best
     type: vmess
-    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    country: 🇺🇸US
+    port: 443
+    uuid: d52ac80d-4bf9-4505-b67a-e0b781b3b2bb
     alterId: 0
     cipher: auto
-    tls: false
+    network: ws
+    servername: drplky41bs67j.cloudfront.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
-    network: http
+    ws-opts:
+      path: /stream
+      headers:
+        HOST: drplky41bs67j.cloudfront.net
+    delay: 1708
+  - name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 2
+    server: 15.222.1.20
+    type: trojan
+    country: 🇨🇦CA
+    port: 14881
+    udp: true
+    password: (2bBQNKHKnhv
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1569
+  - name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 3
+    server: 35.182.250.189
+    type: trojan
+    country: 🇨🇦CA
+    port: 14893
+    udp: true
+    password: 1KRFfw33wDv0
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 2473
+  - name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 4
+    server: 3.96.194.250
+    type: trojan
+    country: 🇨🇦CA
+    port: 14908
+    udp: true
+    password: fCeD4ENhDn1J
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1492
+  - alterId: 0
+    cipher: auto
     http-opts:
-      method: GET
-      path:
-        - /
       headers:
         Host:
           - internet.life.com.by
+      method: GET
+      path:
+        - /
+    name: 加拿大 - 多伦多 - DigitalOcean, LLC - 1
+    network: http
+    port: 3389
+    server: 134.122.41.160
+    skip-cert-verify: true
+    tls: false
+    type: vmess
     udp: true
-    delay: 911
-  - name: 卢森堡 - 盧森堡市 - FranTech Solutions - 1
-    server: 163.172.64.22
-    type: ss
-    country: 🇫🇷FR
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 2826
-  - name: 印度 - 孟买 - Akamai Technologies, Inc. - 1
+    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    delay: 682
+  - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 5
+    server: 172.64.133.66
+    type: vmess
+    port: 80
+    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /xn--mes53ddysu0o3gl
+      headers:
+        Host: ca22.xn--mes53ddysu0o3gl.top
+    delay: 1568
+  - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 6
+    server: 172.64.196.128
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ca22.xn--mes53ddysu0o3gl.top
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /xn--mes53ddysu0o3gl
+      headers:
+        HOST: ca22.xn--mes53ddysu0o3gl.top
+    delay: 1459
+  - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 7
+    server: 172.64.130.100
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ca22.xn--mes53ddysu0o3gl.top
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /xn--mes53ddysu0o3gl
+      headers:
+        HOST: ca22.xn--mes53ddysu0o3gl.top
+    delay: 1547
+  - name: 印度 - 孟买 - Akamai Technologies, Inc. - 2
     server: cntwo.nnslink.xyz
     type: trojan
     port: 21208
@@ -85,45 +147,85 @@ proxies:
     sni: cntwo.nnslink.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1013
-  - name: 巴西 - 圣保罗 - G-Core Labs S.A. - 1
-    server: 78.111.102.232
-    port: 3389
-    type: vmess
-    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-    alterId: 0
+    delay: 1145
+  - alterId: 0
     cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
     http-opts:
-      method: GET
-      path:
-        - /
       headers:
         Host:
           - internet.life.com.by
+      method: GET
+      path:
+        - /
+    name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
+    network: http
+    port: 3389
+    server: 139.59.24.215
+    skip-cert-verify: true
+    tls: false
+    type: vmess
     udp: true
-    delay: 1450
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 5
+    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    delay: 559
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      headers:
+        Host:
+          - internet.life.com.by
+      method: GET
+      path:
+        - /
+    name: 哈萨克斯坦 - 阿拉木圖 - G-Core Labs S.A. - 1
+    network: http
+    port: 3389
+    server: 45.82.31.164
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    delay: 1461
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      headers:
+        Host:
+          - internet.life.com.by
+      method: GET
+      path:
+        - /
+    name: 巴西 - 圣保罗 - G-Core Labs S.A. - 1
+    network: http
+    port: 3389
+    server: 78.111.102.232
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    delay: 1080
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 4
     server: 3.79.61.241
     type: trojan
     country: 🇩🇪DE
-    port: 14696
+    port: 14880
     udp: true
-    password: kUuctGr3nd0g
+    password: HRM3FDOlD6Ox
     sni: appsvs.shop
     skip-cert-verify: true
-    delay: 888
-  - name: 德国 - 法兰克福 - Akamai Technologies - 6
-    server: 172.104.136.167
-    type: ss
+    delay: 1863
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 5
+    server: 18.192.49.44
+    type: trojan
     country: 🇩🇪DE
-    port: 80
-    password: OlmnDdyqH2sYYGPlZriS1d
-    cipher: chacha20-ietf-poly1305
-    delay: 795
-  - name: 德国 - 法兰克福 - Akamai Technologies, Inc. - 2
+    port: 14914
+    udp: true
+    password: sc)vpnu8Ezgp
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1019
+  - name: 德国 - 法兰克福 - Akamai Technologies, Inc. - 1
     server: cntwo.nnslink.xyz
     type: trojan
     port: 21206
@@ -131,27 +233,8 @@ proxies:
     sni: cntwo.nnslink.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1358
-  - name: 德国 - 法兰克福 - firstcolo GmbH - 1
-    server: 31.172.83.109
-    port: 37153
-    type: vmess
-    uuid: e1d38117-d0c0-4934-b124-2c671836d4ae
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - internet.life.com.by
-    udp: true
-    delay: 884
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 3
+    delay: 2273
+  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 2
     server: channel.hopev2ray.link
     type: vmess
     country: 🇺🇸US
@@ -168,8 +251,8 @@ proxies:
       path: /vmess
       headers:
         HOST: de1.xv2ray.net
-    delay: 1617
-  - name: 德国 - 门迪希 - firstcolo GmbH - 4
+    delay: 1875
+  - name: 德国 - 门迪希 - firstcolo GmbH - 3
     server: 212.224.86.13
     type: vmess
     port: 29432
@@ -180,32 +263,15 @@ proxies:
     network: http
     http-opts:
       method: GET
+      path:
+        - /
       headers:
         Host:
           - internet.life.com.by
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2121
+    delay: 1637
   - name: 挪威 - 奥斯陆 - Stark Industries Solutions LTD - 1
-    server: tel.hopev2ray.link
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: 8d6abe4b-4b36-475a-8d97-f59d8e5b72af
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: no2-vmess.sshmax.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /vmess
-      headers:
-        HOST: no2-vmess.sshmax.xyz
-    delay: 2495
-  - name: 挪威 - 奥斯陆 - Stark Industries Solutions LTD - 2
     server: channel.hopev2ray.link
     type: vmess
     country: 🇺🇸US
@@ -222,27 +288,87 @@ proxies:
       path: /vmess
       headers:
         HOST: no2-vmess.sshmax.xyz
-    delay: 985
+    delay: 1012
   - name: 新加坡 - 新加坡 - Akamai Technologies - 1
     server: cntwo.nnslink.xyz
     type: trojan
     port: 21205
-    udp: true
     password: f1d19213-1da8-385d-8ec6-e7e0923c39f7
     sni: cntwo.nnslink.xyz
     skip-cert-verify: true
-    delay: 944
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 3
-    server: jp06.421421.xyz
+    udp: true
+    delay: 1128
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc - 5
+    server: 47.129.59.100
     type: trojan
-    country: 🇯🇵JP
-    port: 20230
-    password: 578547e6-f06f-4a04-8283-4a13a56c9a82
-    sni: 421421.xyz
+    country: 🇺🇸US
+    port: 14909
+    udp: true
+    password: tzguN(PtzGor
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 468
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 2
+    server: 54.151.150.76
+    type: trojan
+    country: 🇸🇬SG
+    port: 14912
+    udp: true
+    password: zpTLJWGHC7kJ
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 584
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 4
+    server: 13.213.35.21
+    type: trojan
+    country: 🇸🇬SG
+    port: 14900
+    password: Jmp4E(vybY)D
+    sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-    delay: 357
-  - name: 日本 - 东京 - Microsoft Corporation - 2
+    delay: 608
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 3
+    server: 54.179.94.102
+    type: trojan
+    country: 🇸🇬SG
+    port: 14898
+    udp: true
+    password: EUyYDF4Z01ip
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1030
+  - name: 日本 - 东京 - Amazon Technologies Inc - 3
+    server: 13.114.99.68
+    type: trojan
+    country: 🇯🇵JP
+    port: 14883
+    udp: true
+    password: u8jnRZ)EhWV3
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 377
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
+    server: 52.195.228.142
+    type: trojan
+    country: 🇯🇵JP
+    port: 14901
+    udp: true
+    password: FZ8UMSpxcyaa
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 2847
+  - name: 日本 - 东京 - Amazon.com, Inc. - 2
+    server: 54.65.67.36
+    type: trojan
+    country: 🇯🇵JP
+    port: 14909
+    udp: true
+    password: WwXszjR2(huE
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 292
+  - name: 日本 - 东京 - Microsoft Corporation - 1
     server: cntwo.nnslink.xyz
     type: trojan
     port: 21203
@@ -250,16 +376,16 @@ proxies:
     sni: cntwo.nnslink.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1015
-  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 1
-    server: cntwo.nnslink.xyz
+    delay: 1209
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
+    server: 15.236.3.208
     type: trojan
-    port: 21204
-    password: f1d19213-1da8-385d-8ec6-e7e0923c39f7
-    sni: cntwo.nnslink.xyz
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-privatevpns
     skip-cert-verify: true
     udp: true
-    delay: 1089
+    delay: 897
   - name: 法国 - 巴黎 - Amazon Technologies Inc. - 2
     server: 13.39.202.47
     type: trojan
@@ -269,107 +395,107 @@ proxies:
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1332
-  - name: 法国 - 巴黎 - SCALEWAY - 1
-    server: 51.159.155.52
-    port: 3389
-    type: vmess
-    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - internet.life.com.by
-    udp: true
-    delay: 1156
-  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 2
-    server: 18.203.128.22
+    delay: 878
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 4
+    server: 15.237.188.40
     type: trojan
-    country: 🇮🇪IE
+    country: 🇫🇷FR
+    port: 14888
+    udp: true
+    password: cGzZMECrwPfy
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1185
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 3
+    server: 35.181.173.206
+    type: trojan
+    country: 🇫🇷FR
+    port: 14908
+    udp: true
+    password: bWZKmFtUhoNz
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 793
+  - name: 爱尔兰 - 都柏林 - Amazon.com, Inc. - 1
+    server: 99.81.36.133
     port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.miwan.co.uk
+    skip-cert-verify: false
+    udp: true
+    delay: 1694
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 1
+    server: 13.51.39.153
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    udp: true
     password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-    udp: true
-    delay: 1851
-  - name: 爱尔兰 - 都柏林 - Amazon.com, Inc. - 1
-    server: 52.210.210.139
+    delay: 834
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 2
+    server: 13.50.173.207
     type: trojan
-    country: 🇮🇪IE
+    country: 🇸🇪SE
     port: 22222
-    udp: true
     password: telegram-id-privatevpns
     sni: trojan.miwan.co.uk
-    network: tcp
-    delay: 779
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 1
-    server: 109.230.114.2
-    type: vmess
-    country: 🇮🇶IQ
-    port: 80
-    uuid: 5e529016-d961-438e-9a99-0dcc5c0df208
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: rahyaft.serveirc.com
-    http-opts: {}
-    h2-opts: {}
     skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: rahyaft.serveirc.com
-    delay: 1854
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 2
-    server: 109.230.114.2
-    type: vmess
-    country: 🇮🇶IQ
-    port: 443
-    uuid: 5e529016-d961-438e-9a99-0dcc5c0df208
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: rahyaft.serveirc.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /@forwardv2ray
-      headers:
-        HOST: rahyaft.serveirc.com
-    delay: 2144
-  - name: 美国 - 圣克拉拉 - EGIHosting - 1
-    server: sjc002.sfrae.net
-    type: ss
-    port: 44214
-    password: fade2b35-7872-442e-a54e-6ccf9b970476
-    cipher: aes-256-gcm
-    delay: 1428
-  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 70
-    server: 104.21.83.10
-    port: 8080
-    type: vmess
-    uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: www.coldstone.club
     udp: true
-    delay: 1453
-  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 71
+    delay: 823
+  - name: 美国 - Ashburn - Amazon.com, Inc. - 3
+    server: 54.172.101.204
+    type: trojan
+    country: 🇺🇸US
+    port: 14904
+    udp: true
+    password: LQU6jo31A)Y9
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1420
+  - name: 美国 - Ashburn - Amazon.com, Inc. - 6
+    server: 18.232.120.3
+    type: trojan
+    country: 🇺🇸US
+    port: 14897
+    udp: true
+    password: H5Oz9BZZVagd
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 2188
+  - name: 美国 - Dublin - Amazon.com, Inc. - 2
+    server: 18.227.24.162
+    type: trojan
+    country: 🇺🇸US
+    port: 14893
+    udp: true
+    password: xJ77RcyEtNpf
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1549
+  - name: 美国 - Dublin - Amazon.com, Inc. - 4
+    server: 18.189.143.130
+    type: trojan
+    country: 🇺🇸US
+    port: 14886
+    udp: true
+    password: ynuFbL0ByN2I
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1178
+  - name: 美国 - Dublin - Amazon.com, Inc. - 9
+    server: 3.16.76.97
+    type: trojan
+    country: 🇺🇸US
+    port: 14890
+    password: GDm)xUb2xU0e
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+    delay: 1571
+  - name: 美国 - 圣克拉拉 - GlobalTeleHost Corp. - 10
     server: www.coldstone.club
     type: vmess
     country: 🇺🇸US
@@ -386,567 +512,38 @@ proxies:
       path: /
       headers:
         HOST: www.coldstone.club
-    delay: 1938
-  - name: 美国 - 堪薩斯城 - WholeSale Internet - 3
-    server: mahilu.site
-    type: vmess
-    port: 2052
+    delay: 2208
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 5
+    server: 34.209.196.139
+    type: trojan
+    country: 🇺🇸US
+    port: 14888
     udp: true
-    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    password: TtoVIOFTfBRL
+    sni: appsvs.shop
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        Host: mahilu.site
-    delay: 1816
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 2
-    server: 104.21.63.52
-    port: 80
-    type: vmess
-    uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: us65.netfilx.live
-    delay: 1532
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 10
-    server: 104.21.239.99
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /
-      headers:
-        Host: a.prapt1.ir
-    delay: 1195
+    delay: 1325
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 7
+    server: 52.39.68.162
+    type: trojan
+    country: 🇺🇸US
+    port: 14887
+    udp: true
+    password: F6TPgY)wXPoX
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1270
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 8
+    server: 54.187.218.44
+    type: trojan
+    country: 🇺🇸US
+    port: 14888
+    udp: true
+    password: )H9cmRb13B)v
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1022
   - name: 美国 - 波特蘭 - Hetzner Online GmbH - 11
-    server: 104.21.234.53
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 934
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 12
-    server: 104.21.220.121
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1242
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 13
-    server: 104.21.235.56
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1213
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 14
-    server: 104.21.224.81
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1904
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 15
-    server: 104.21.224.49
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 2015
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 16
-    server: 104.21.224.220
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1116
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 17
-    server: 104.21.224.46
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1219
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 18
-    server: 104.21.224.162
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 1234
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 19
-    server: 104.21.228.20
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai08
-      headers:
-        Host: a.prapt1.ir
-    delay: 1224
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 20
-    server: 104.21.225.5
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai08
-      headers:
-        Host: a.prapt1.ir
-    delay: 1106
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 21
-    server: 104.21.224.246
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1261
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 22
-    server: 104.21.231.37
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1094
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 23
-    server: 104.21.236.62
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai08
-      headers:
-        Host: a.prapt4.ir
-    delay: 1256
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 24
-    server: 104.21.224.136
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 1238
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 25
-    server: 104.21.229.28
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1067
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 26
-    server: 104.21.238.73
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt1.ir
-    delay: 1346
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 27
-    server: 104.21.233.48
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1257
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 28
-    server: 104.21.227.36
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1311
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 29
-    server: 104.21.224.142
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 2663
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 30
-    server: 104.21.235.55
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    udp: true
-    delay: 1248
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 31
-    server: 104.21.224.188
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 2130
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 32
-    server: 104.21.238.93
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 981
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 33
-    server: 104.21.224.233
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1079
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 34
-    server: 104.21.224.18
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 2041
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 35
-    server: 104.21.228.42
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt4.ir
-    delay: 1029
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 36
-    server: 104.21.238.72
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt4.ir
-    delay: 1082
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 37
-    server: 104.21.224.240
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1249
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 38
-    server: 104.21.229.25
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt1.ir
-    delay: 1041
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 39
-    server: 104.21.224.2
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai08
-      headers:
-        Host: a.prapt4.ir
-    delay: 1049
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 4
-    server: 104.21.224.76
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 1110
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 40
-    server: 104.21.224.241
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1082
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 41
-    server: 104.21.227.39
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳
-      headers:
-        Host: a.prapt1.ir
-    delay: 899
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 42
-    server: 104.21.233.68
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt4.ir
-    delay: 1069
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 43
-    server: 104.21.231.39
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai08
-      headers:
-        Host: a.prapt4.ir
-    delay: 1861
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 44
     server: 104.21.230.54
     port: 80
     type: vmess
@@ -961,41 +558,39 @@ proxies:
       headers:
         Host: a.prapt4.ir
     udp: true
-    delay: 905
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 45
-    server: 104.21.226.34
+    delay: 1488
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 12
+    server: 104.21.220.105
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai08
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt1.ir
-    udp: true
-    delay: 913
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 46
-    server: 104.21.232.62
+    delay: 2955
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 13
+    server: 104.21.220.62
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai08
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
-        Host: a.prapt4.ir
-    udp: true
-    delay: 2130
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 47
-    server: 104.21.219.130
+        Host: a.prapt1.ir
+    delay: 1201
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 14
+    server: 104.21.220.5
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1007,38 +602,38 @@ proxies:
       path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt1.ir
-    delay: 1194
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 48
-    server: 104.21.224.224
-    type: vmess
+    delay: 1332
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 15
+    server: 104.21.237.85
     port: 80
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳@WangCai_8
       headers:
-        Host: a.prapt1.ir
-    delay: 1246
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 49
-    server: 104.21.224.130
-    type: vmess
+        Host: a.prapt4.ir
+    delay: 1020
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 16
+    server: 104.21.233.66
     port: 80
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      path: /?ed=2048&Telegram🇨🇳
       headers:
-        Host: a.prapt1.ir
-    delay: 1937
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 5
+        Host: a.prapt4.ir
+    delay: 1324
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 17
     server: 104.21.219.107
     port: 80
     type: vmess
@@ -1051,129 +646,82 @@ proxies:
       path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt1.ir
-    delay: 1270
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 50
-    server: 104.21.224.201
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1077
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 51
-    server: 104.21.224.86
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 989
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 52
-    server: 104.21.224.161
+    delay: 1014
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 18
+    server: 104.21.238.93
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai_8
+      path: /?ed=2048&Telegram🇨🇳
       headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 2927
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 53
-    server: 104.21.224.180
-    type: vmess
+        Host: a.prapt4.ir
+    delay: 1156
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 19
+    server: 104.21.223.179
     port: 80
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: ws
-    http-opts: {}
-    h2-opts: {}
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        Host: a.prapt1.ir
+    delay: 2437
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 20
+    server: 104.21.226.10
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳@WangCai_8
       headers:
-        Host: a.prapt1.ir
-    delay: 1606
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 54
-    server: 104.21.237.69
-    type: vmess
+        Host: a.prapt4.ir
+    delay: 1314
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 21
+    server: 104.21.219.7
     port: 80
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: ws
-    http-opts: {}
-    h2-opts: {}
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        Host: a.prapt1.ir
+    delay: 1206
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 22
+    server: 104.21.227.39
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳
       headers:
         Host: a.prapt1.ir
-    delay: 2702
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 55
-    server: 104.21.224.236
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1114
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 56
-    server: 104.21.233.67
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1934
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 57
-    server: 104.21.227.38
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1066
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 58
+    delay: 2313
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 23
     server: 104.21.236.84
     port: 80
     type: vmess
@@ -1187,39 +735,9 @@ proxies:
       path: /?ed=2048&Telegram🇨🇳 @WangCai08
       headers:
         Host: a.prapt1.ir
-    delay: 1114
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 59
-    server: 104.21.224.21
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /
-      headers:
-        Host: a.prapt1.ir
-    delay: 1138
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 6
-    server: 104.21.224.52
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 1143
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 60
-    server: 188.114.96.113
+    delay: 2356
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 24
+    server: 104.21.228.21
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1227,196 +745,464 @@ proxies:
     cipher: auto
     tls: false
     network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: a.prapt4.ir
-    delay: 1556
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 61
-    server: 104.21.224.242
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 2817
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 62
-    server: 104.21.69.44
-    port: 80
-    type: vmess
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: a.prapt4.ir
-    delay: 1645
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 63
-    server: 104.21.224.244
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
-        Host: a.prapt1.ir
-    delay: 2810
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 64
-    server: 104.21.239.75
-    type: vmess
+        Host: a.prapt4.ir
+    delay: 2996
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 25
+    server: 104.21.232.41
     port: 80
+    type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
+    tls: false
+    skip-cert-verify: true
     network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳
       headers:
         Host: a.prapt4.ir
-    delay: 1005
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 65
-    server: 104.21.224.216
+    delay: 1312
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 26
+    server: 104.21.228.42
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    udp: true
-    delay: 991
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 66
-    server: 104.21.237.89
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
     skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt4.ir
-    delay: 990
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 67
-    server: 104.21.237.88
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
     network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳@WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 2271
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 68
-    server: 104.21.227.37
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
     ws-opts:
       path: /?ed=2048&Telegram🇨🇳
       headers:
         Host: a.prapt4.ir
-    delay: 960
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 69
-    server: 104.21.224.182
-    type: vmess
-    port: 80
-    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
+    delay: 2559
+  - alterId: 0
     cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 27
     network: ws
-    http-opts: {}
-    h2-opts: {}
+    port: 80
+    server: 104.21.221.16
     skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-      headers:
-        Host: a.prapt1.ir
-    delay: 2046
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 7
-    server: 104.21.224.23
     type: vmess
-    port: 80
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt1.ir
-    delay: 920
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 8
-    server: 104.21.224.62
+      path: /?ed=2048
+    delay: 1974
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 28
+    network: ws
+    port: 80
+    server: 104.21.221.215
+    skip-cert-verify: true
     type: vmess
-    port: 80
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
     ws-opts:
-      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt1.ir
-    delay: 1202
-  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 9
-    server: 104.21.224.24
+      path: /?ed=2048
+    delay: 1381
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 29
+    network: ws
+    port: 80
+    server: 104.21.221.197
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048
+    delay: 1328
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 30
+    network: ws
+    port: 80
+    server: 104.21.221.137
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048
+    delay: 1309
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 31
+    server: 104.21.222.115
     port: 80
     type: vmess
     uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2048&amp;Telegram🇨🇳
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
       headers:
         Host: a.prapt4.ir
+    delay: 1382
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 32
+    server: 104.21.224.20
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt1.ir
+    delay: 1036
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 33
+    network: ws
+    port: 80
+    server: 104.21.221.247
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048
+    delay: 2008
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 34
+    server: 104.21.229.26
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳@WangCai_8
+      headers:
+        Host: a.prapt4.ir
+    delay: 1356
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 35
+    server: 104.21.223.183
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        Host: a.prapt1.ir
+    delay: 1248
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 36
+    server: 104.21.224.61
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048&amp;Telegram🇨🇳@WangCai_8
+      headers:
+        Host: a.prapt1.ir
     udp: true
-    delay: 1200
+    delay: 1190
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 37
+    server: 104.21.222.111
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        Host: a.prapt4.ir
+    delay: 1241
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 38
+    server: 104.21.224.136
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048&amp;Telegram🇨🇳@WangCai_8
+      headers:
+        Host: a.prapt1.ir
+    udp: true
+    delay: 1014
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 39
+    server: 104.21.239.95
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: a.prapt4.ir
+    delay: 1531
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 40
+    network: ws
+    port: 80
+    server: 104.21.221.252
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048
+    delay: 1090
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 41
+    network: ws
+    port: 80
+    server: 104.21.221.203
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048
+    delay: 1449
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 42
+    network: ws
+    port: 80
+    server: 104.21.224.65
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /
+    delay: 1278
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 43
+    server: 104.21.236.64
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai08
+      headers:
+        Host: a.prapt1.ir
+    delay: 1281
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 44
+    server: 104.21.225.6
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt4.ir
+    delay: 1296
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 45
+    server: 104.21.222.208
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+      headers:
+        Host: a.prapt4.ir
+    delay: 1287
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 46
+    server: 104.21.228.44
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt4.ir
+    delay: 1232
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 47
+    server: 104.21.230.53
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt1.ir
+    delay: 1226
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 48
+    server: 104.21.225.29
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt4.ir
+    delay: 1346
+  - name: 美国 - 波特蘭 - Hetzner Online GmbH - 49
+    server: 104.21.239.96
+    port: 80
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048&Telegram🇨🇳
+      headers:
+        Host: a.prapt1.ir
+    delay: 2227
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 50
+    network: ws
+    port: 80
+    server: 104.21.224.233
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048&Telegram🇨🇳
+    delay: 1408
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 波特蘭 - Hetzner Online GmbH - 51
+    network: ws
+    port: 80
+    server: 104.21.224.8
+    skip-cert-verify: true
+    type: vmess
+    uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+    ws-opts:
+      headers:
+        Host: a.prapt1.ir
+      path: /?ed=2048&Telegram🇨🇳
+    delay: 1050
+  - name: 美国 - 洛杉矶 - Akamai Technologies, Inc. - 1
+    server: cntwo.nnslink.xyz
+    type: trojan
+    port: 21201
+    password: f1d19213-1da8-385d-8ec6-e7e0923c39f7
+    sni: cntwo.nnslink.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1616
+  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+    server: 188.114.99.150
+    type: vmess
+    country: 🇳🇱NL
+    port: 443
+    uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: fi1.xv2ray.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: fi1.xv2ray.net
+    delay: 1808
+  - name: 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+    server: 188.114.97.20
+    type: vmess
+    country: 🇨🇴CO
+    port: 80
+    uuid: e4c7e0ce-ed93-40d9-8f38-90497cb83864
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: fi1.xv2ray.net
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: fi1.xv2ray.net
+    delay: 1156
+  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 2
+    server: 18.171.173.111
+    type: trojan
+    country: 🇬🇧GB
+    port: 14878
+    udp: true
+    password: nNqlvtwe44MU
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1226
+  - name: 英国 - 伦敦 - Amazon Technologies Inc. - 3
+    server: 18.134.252.182
+    type: trojan
+    country: 🇬🇧GB
+    port: 14883
+    udp: true
+    password: vQXmmuuSvpT0
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 1145
   - name: 英国 - 伦敦 - LINODE-UK - 1
     server: cntwo.nnslink.xyz
     type: trojan
@@ -1425,29 +1211,7 @@ proxies:
     sni: cntwo.nnslink.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1252
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
-    server: w1.sylar8.eu.org
-    type: vless
-    port: 443
-    uuid: 29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2
-    network: ws
-    tls: true
-    servername: w1.sylar8.eu.org
-    ws-opts:
-      path: /freecodes
-    delay: 2296
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 3
-    server: w3.sylarsun.eu.org
-    type: vless
-    port: 443
-    uuid: 89420825-e589-4735-bee1-6dc636fca343
-    network: ws
-    tls: true
-    servername: w3.sylarsun.eu.org
-    ws-opts:
-      path: /youtube-由零開始
-    delay: 2348
+    delay: 1527
   - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
     server: 188.114.97.20
     type: vmess
@@ -1466,4 +1230,14 @@ proxies:
       path: /vmess
       headers:
         HOST: nl1.xv2ray.net
-    delay: 1125
+    delay: 1083
+  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 1
+    server: 52.79.49.244
+    type: trojan
+    country: 🇰🇷KR
+    port: 14912
+    udp: true
+    password: xj(OlbPB(PCt
+    sni: appsvs.shop
+    skip-cert-verify: true
+    delay: 667
