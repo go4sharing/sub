@@ -4,23 +4,44 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - cipher: aes-128-gcm
-    name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 20
-    password: oiwym4ovI4Yb
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: ''
-      mode: websocket
-      mux: true
-      path: ''
-      skip-cert-verify: true
-      tls: false
-    port: 443
-    server: 61.224.79.46
-    tfo: false
-    type: ss
-    delay: 945
-  - name: 中国 - 台湾 - Cloudflare, Inc. - 3
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 1
+    network: tcp
+    port: '35068'
+    server: 183.240.188.44
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 271
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 14
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35072
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 423
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 9
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35073
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 378
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 27
     server: 118.163.128.81
     port: 12559
     type: vless
@@ -35,200 +56,53 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1338
-  - name: 中国 - 台湾 - Cloudflare, Inc. - 4
-    server: 61.220.41.143
-    port: 36633
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 2152
-  - name: 中国 - 香港 - Aeza International LTD - 1
-    server: controlist.vbothfwmbh.top
-    type: ss
-    country: 🇸🇬SG
-    port: 20172
-    password: df30da54-317f-4726-98bd-8bc8ec8140c9
-    cipher: chacha20-ietf-poly1305
-    delay: 683
-  - alterId: 0
-    cipher: auto
-    name: 中国 - 香港 - Akile LTD - 23
-    network: tcp
-    port: '44827'
-    server: hkscdn02.dorabbb.top
-    servername: ''
-    tls: false
-    type: vmess
-    uuid: 86933ebf-fe3a-4c67-8eb6-25c82bf07e85
-    delay: 2243
-  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 18
-    server: 8.218.82.85
-    port: 443
-    type: ss
-    cipher: aes-128-gcm
-    password: a-wym4ovY4Yw
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ''
-      path: ''
-      tls: false
-      mux: true
-    delay: 398
+    delay: 1756
   - cipher: aes-128-gcm
-    name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 19
+    name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 2
     password: a-wym4ovY4Yw
     plugin: v2ray-plugin
     plugin-opts:
       host: ''
       mode: websocket
       mux: true
-      path: /
+      path: ''
       skip-cert-verify: true
       tls: false
     port: 443
-    server: 8.218.196.35
+    server: 47.243.196.229
     type: ss
-    delay: 1270
-  - name: 中国 - 香港 - Cloudflare, Inc. - 10
-    server: 18.167.20.205
+    delay: 2661
+  - name: 中国 - 香港 - Alibaba.com LLC - 4
+    server: 8.210.33.152
     port: 443
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
+    type: ss
+    cipher: aes-128-gcm
+    country: SG
+    password: a-wym4ovY4Yw
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: ''
+      mode: websocket
+      tls: false
+    delay: 1821
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 香港 - Amazon Technologies Inc. - 16
     network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1025
-  - name: 中国 - 香港 - Cloudflare, Inc. - 11
-    server: 117.18.13.170
-    port: 40269
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
+    port: '10163'
+    server: zf.lalayun.cyou
+    servername: ''
     skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 786
-  - name: 中国 - 香港 - Cloudflare, Inc. - 12
-    server: 194.169.55.101
-    port: 31613
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
     tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
+    tls: false
+    type: vmess
+    uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
     ws-opts:
-      path: TG@ZDYZ2
       headers:
-        Host: cfed.tgzdyz2.top
-    delay: 722
-  - name: 中国 - 香港 - Cloudflare, Inc. - 13
-    server: 45.78.30.50
-    port: 8080
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 528
-  - name: 中国 - 香港 - Cloudflare, Inc. - 14
-    server: 38.207.161.88
-    port: 41018
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1558
-  - name: 中国 - 香港 - Cloudflare, Inc. - 15
-    server: 156.251.180.162
-    port: 35183
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 434
-  - name: 中国 - 香港 - Cloudflare, Inc. - 16
-    server: 47.244.255.95
-    port: 8449
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 468
-  - name: 中国 - 香港 - Cloudflare, Inc. - 2
-    server: 47.243.183.127
-    port: 2053
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1641
-  - name: 中国 - 香港 - Cloudflare, Inc. - 5
+        Host: hk.lalayunssl.xyz
+      path: /v2ray
+    delay: 1377
+  - name: 中国 - 香港 - Cloudflare, Inc. - 17
     server: 103.44.255.27
     port: 443
     type: vless
@@ -243,10 +117,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 808
-  - name: 中国 - 香港 - Cloudflare, Inc. - 6
-    server: 47.76.32.108
-    port: 2083
+    delay: 1066
+  - name: 中国 - 香港 - Cloudflare, Inc. - 18
+    server: 47.244.255.95
+    port: 8449
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -259,10 +133,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2272
-  - name: 中国 - 香港 - Cloudflare, Inc. - 7
-    server: 43.198.53.11
-    port: 443
+    delay: 615
+  - name: 中国 - 香港 - Cloudflare, Inc. - 19
+    server: 38.207.161.88
+    port: 41018
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -275,10 +149,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1003
-  - name: 中国 - 香港 - Cloudflare, Inc. - 8
-    server: 45.8.186.188
-    port: 443
+    delay: 1655
+  - name: 中国 - 香港 - Cloudflare, Inc. - 20
+    server: 45.78.30.50
+    port: 8080
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -291,8 +165,24 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1514
-  - name: 中国 - 香港 - Cloudflare, Inc. - 9
+    delay: 653
+  - name: 中国 - 香港 - Cloudflare, Inc. - 21
+    server: 117.18.13.170
+    port: 40269
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 791
+  - name: 中国 - 香港 - Cloudflare, Inc. - 22
     server: 101.78.164.239
     port: 12313
     type: vless
@@ -307,145 +197,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2618
-  - name: 中国 - 香港 - Cnservers LLC - 21
-    server: 183.237.20.158
-    port: 41242
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 638
-  - alterId: 64
-    cipher: auto
-    name: 中国 - 香港 - Cnservers LLC - 22
-    network: tcp
-    port: '35601'
-    server: 120.238.122.243
-    servername: ''
-    tls: false
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    delay: 2478
-  - name: 中国 - 香港 - Hytron Network Services Limited - 17
-    server: 154.16.248.177
-    type: vmess
-    country: 🇯🇵JP
-    port: 3386
-    uuid: b00c57f5-3f8f-38e7-b269-6ca1dea41096
-    alterId: 0
-    cipher: chacha20-poly1305
-    network: ws
-    servername: 154.16.248.177
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /db00
-      headers:
-        Host: cache-hk-1.cn-db.top
-    delay: 1673
-  - name: 中国 - 香港 - Rackip Consultancy Pte. LTD - 24
-    server: 183.236.51.59
-    port: 54437
-    type: vmess
-    alterId: 64
-    cipher: auto
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    tfo: false
-    tls: false
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    delay: 445
-  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
-    server: 94.131.108.133
-    type: ss
-    country: 🇺🇸US
-    port: 8881
-    password: a8H2xE6f0ubGLeSvZrfQIWRDKE1LgY
-    cipher: chacha20-ietf-poly1305
-    delay: 2650
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 4
-    server: 3.79.178.43
-    type: trojan
-    country: 🇩🇪DE
-    port: 12916
-    password: VB4Wg5UF2xeT
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-    delay: 1648
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 5
-    server: 18.184.55.99
-    type: trojan
-    country: 🇩🇪DE
-    port: 12937
-    password: 5K55ir9zSLQN
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-    delay: 1020
-  - alterId: 0
-    cipher: auto
-    h2-opts: {}
-    http-opts: {}
-    name: 德国 - 杜塞尔多夫 - Contabo GmbH - 2
-    network: ws
-    port: 80
-    server: 185.218.126.248
-    skip-cert-verify: true
-    type: vmess
-    udp: true
-    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-    ws-opts:
-      headers:
-        Host: internet.life.com.by
-      path: /v1893298323Py
-    delay: 1884
-  - name: 德国 - 法兰克福 - Akamai Technologies, Inc. - 1
-    server: 194.195.245.204
-    type: vmess
-    country: 🇩🇪DE
-    port: 18100
-    uuid: 1d98567647cd11ee8469f23c93ff01cb
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 962
-  - delay: 1734
-    name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 3
-    password: f37a931d-7092-48fe-b82f-a98da3040eb2
-    port: 2053
-    server: 95.164.68.116
-    skip-cert-verify: true
-    type: trojan
-    udp: true
-  - name: 新加坡 - 新加坡 - Akari Networks Limited - 3
-    server: 106.15.199.119
-    port: 7891
-    type: socks5
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    udp: true
-    delay: 1762
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc - 2
-    server: 47.128.150.220
-    type: trojan
-    country: 🇺🇸US
-    port: 12910
-    password: lFKgkPZ(zbWX
-    sni: appsvs.shop
-    skip-cert-verify: true
-    udp: true
-    delay: 746
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 1
-    server: 156.251.183.226
-    port: 34147
+    delay: 1210
+  - name: 中国 - 香港 - Cloudflare, Inc. - 23
+    server: 206.237.2.118
+    port: 2000
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -458,8 +213,24 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1316
-  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 28
+    delay: 2584
+  - name: 中国 - 香港 - Cloudflare, Inc. - 24
+    server: 45.8.186.188
+    port: 443
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1504
+  - name: 中国 - 香港 - Cloudflare, Inc. - 25
     server: 119.17.25.40
     port: 37992
     type: vless
@@ -474,587 +245,8 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2216
-  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 31
-    server: 45.251.240.229
-    port: 34237
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1493
-  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 39
-    server: 52.147.69.148
-    port: 443
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 993
-  - name: 日本 - 东京 - Amazon.com, Inc. - 2
-    server: 57.181.42.0
-    type: ss
-    country: 🇯🇵JP
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 2039
-  - alterId: 0
-    cipher: auto
-    name: 日本 - 东京 - G-Core Labs S.A. - 1
-    network: ws
-    port: '8080'
-    server: 87.120.204.161
-    servername: jp-4.trollfunny.net
-    skip-cert-verify: false
-    tfo: false
-    tls: true
-    type: vmess
-    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-    ws-opts:
-      headers:
-        Host: ''
-      path: /
-    delay: 2389
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 10
-    server: 47.91.21.127
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 610
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 11
-    server: 152.70.246.67
-    port: 45696
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1631
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 12
-    server: 129.154.223.89
-    port: 15800
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2224
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 13
-    server: 146.56.171.182
-    port: 11659
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 880
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 14
-    server: 132.226.171.158
-    port: 9527
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2898
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 15
-    server: 193.123.239.18
-    port: 49248
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 926
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 16
-    server: 193.122.126.64
-    port: 53777
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 912
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 17
-    server: 152.70.246.67
-    port: 33405
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 838
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 18
-    server: 132.226.168.199
-    port: 18421
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2328
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 19
-    server: 129.154.212.181
-    port: 22561
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2763
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 20
-    server: 193.122.126.138
-    port: 8243
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 949
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 21
-    server: 193.122.110.164
-    port: 25800
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1869
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 22
-    server: 146.56.171.182
-    port: 11659
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1141
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 23
-    server: 146.56.151.32
-    port: 19
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 991
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 25
-    server: 47.91.15.247
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 729
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 26
-    server: 132.226.171.158
-    port: 9527
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1104
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 29
-    server: 132.226.168.199
-    port: 18421
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1004
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 3
-    server: 129.154.212.181
-    port: 44699
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1838
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 30
-    server: 129.154.212.181
-    port: 44699
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1958
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 32
-    server: 176.97.73.99
-    port: 2053
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1128
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 33
-    server: 176.97.73.99
-    port: 2053
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1767
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 34
-    server: 47.245.56.207
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 497
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 35
-    server: 147.78.247.110
-    port: 50013
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 652
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 36
-    server: 47.245.42.162
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 648
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 37
-    server: 47.245.37.12
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 650
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 38
-    server: 47.245.57.109
-    port: 80
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    tfo: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 506
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 4
-    server: 152.70.246.67
-    port: 33405
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1743
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 40
-    server: 45.66.128.116
-    port: 48368
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 719
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 41
-    server: 54.238.114.82
-    port: 443
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 812
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 5
-    server: 146.56.144.32
-    port: 11202
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1511
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 6
-    server: 193.122.126.138
-    port: 8243
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2036
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 7
-    server: 146.56.188.95
-    port: 48888
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2002
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 8
-    server: 152.70.244.254
-    port: 27644
-    type: vless
-    client-fingerprint: random
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2652
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 9
+    delay: 1936
+  - name: 中国 - 香港 - Cloudflare, Inc. - 26
     server: 146.56.136.49
     port: 61153
     type: vless
@@ -1069,92 +261,464 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 2115
-  - name: 日本 - 福岡市 - Cloudflare, Inc. - 24
-    server: 121.181.87.111
-    port: 12405
-    type: vless
+    delay: 1736
+  - name: 中国 - 香港 - Cnservers LLC - 5
+    server: 183.237.20.158
+    port: 41242
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 600
+  - name: 中国 - 香港 - Rackip Consultancy Pte. LTD - 15
+    server: 183.236.51.59
+    port: 54437
+    type: vmess
+    alterId: 64
+    cipher: auto
     client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
     skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1121
-  - name: 日本 - 福岡市 - Cloudflare, Inc. - 27
-    server: 14.52.249.135
-    port: 10082
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
     tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1104
-  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 3
-    server: 13.36.110.187
+    tls: false
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    delay: 512
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 香港 - Vertex Connectivity LLC - 10
+    network: tcp
+    port: '35044'
+    server: 183.240.188.45
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 680
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 11
+    server: 120.233.43.22
+    type: vmess
+    country: 🇨🇳CN
+    port: 35001
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 406
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 香港 - Vertex Connectivity LLC - 12
+    network: tcp
+    port: '35009'
+    server: 120.233.43.22
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 340
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 香港 - Vertex Connectivity LLC - 13
+    network: tcp
+    port: '35011'
+    server: 120.233.43.22
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 360
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 3
+    server: 183.240.188.45
+    type: vmess
+    country: 🇨🇳CN
+    port: 35003
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 263
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 6
+    server: 183.240.188.45
+    type: vmess
+    country: 🇨🇳CN
+    port: 35004
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 738
+  - name: 中国 - 香港 - Vertex Connectivity LLC - 7
+    server: 120.233.43.22
+    type: vmess
+    country: 🇨🇳CN
+    port: 35012
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 255
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 香港 - Vertex Connectivity LLC - 8
+    network: tcp
+    port: '35002'
+    server: 120.233.43.22
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 401
+  - country: RU
+    name: 俄罗斯 - 莫斯科 - LLC Baxet - 1
+    password: 2ee6f407-3a86-48d9-9042-3f80dd18fad6
+    port: 30002
+    server: ru01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    sni: ru01.freeflyingcloud.xyz
     type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
+    udp: true
+    delay: 986
+  - name: 加拿大 - Montreal - GLOBALTELEHOST Corp. - 1
+    server: 158.51.121.36
+    type: vmess
+    country: 🇨🇦CA
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 158.51.121.36
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+      headers:
+        HOST: 158.51.121.36
+    delay: 2438
+  - name: 加拿大 - 溫哥華 - GLOBALTELEHOST Corp. - 2
+    server: 158.51.123.111
+    type: vmess
+    country: 🇨🇦CA
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 158.51.123.111
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+      headers:
+        HOST: 158.51.123.111
+    delay: 2545
+  - name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
+    server: 139.59.73.171
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: blr1-7.trollfunny.net
+    delay: 2063
+  - name: 印度尼西亚 - 雅加达 - Akamai Technologies, Inc. - 1
+    server: china2.one.edu.kg
+    type: trojan
+    port: 12061
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
     skip-cert-verify: true
     udp: true
-    delay: 773
-  - name: 法国 - 巴黎 - Amazon.com, Inc. - 2
-    server: 51.44.14.91
+    delay: 1664
+  - name: 奥地利 - Vienna - Stark Industries Solutions LTD - 1
+    server: 95.164.9.196
     type: trojan
-    country: 🇺🇸US
-    port: 12946
-    password: vWaoO8VmdiL3
+    country: 🇬🇮GI
+    port: 2053
+    udp: true
+    password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
+    sni: ftp.debian.org
+    skip-cert-verify: true
+    delay: 1589
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      headers:
+        Host:
+          - internet.life.com.by
+      method: GET
+      path:
+        - /
+    name: 巴西 - 圣保罗 - G-Core Labs S.A. - 1
+    network: http
+    port: 3389
+    server: 78.111.102.232
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+    delay: 1190
+  - name: 巴西 - 圣保罗 - G-Core Labs S.A. - 2
+    server: 89.39.161.234
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: br2-5.trollfunny.net
+    delay: 1824
+  - name: 德国 - Frankfurt - GTHost - 2
+    server: 23.158.56.229
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+    delay: 1403
+  - name: 德国 - Frankfurt - GTHost - 3
+    server: 23.158.56.60
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+    delay: 1257
+  - name: 德国 - Frankfurt - GTHost - 4
+    server: 23.158.56.50
+    type: vmess
+    port: 443
+    udp: true
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+    delay: 1266
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 5
+    server: 18.184.55.99
+    type: trojan
+    country: 🇩🇪DE
+    port: 14947
+    password: EKBna9Ulx6Qv
     sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-    delay: 1452
-  - name: 法国 - 格拉沃利讷 - OVH SAS - 1
-    server: 51.210.182.170
+    delay: 965
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 6
+    server: 3.124.189.182
     type: trojan
-    country: 🇫🇷FR
-    port: 443
-    password: 73440da0-ed8d-11ee-873e-1239d0255272
+    country: 🇩🇪DE
+    port: 14923
+    password: WEgJlmRMDyJ8
+    sni: appsvs.shop
     skip-cert-verify: true
     udp: true
-    delay: 1803
-  - name: 爱尔兰 - 都柏林 - Microsoft Corporation - 1
-    server: 13.94.97.31
+    delay: 1047
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 8
+    server: 3.75.248.224
+    type: trojan
+    country: 🇩🇪DE
+    port: 14927
+    password: 7DwLQeVyzfXL
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+    delay: 884
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 9
+    server: 3.79.178.43
+    type: trojan
+    country: 🇩🇪DE
+    port: 14926
+    password: KwoYwR2dEeWZ
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+    delay: 968
+  - name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 7
+    server: 18.156.80.248
+    type: trojan
+    country: 🇩🇪DE
+    port: 14924
+    password: SHnxtYoJ3ZMh
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+    delay: 849
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 10
+    server: 91.107.137.180
+    type: vmess
+    country: 🇮🇷IR
+    port: 52361
+    uuid: e5625c1e-96af-494d-ad26-b15a036c57a0
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 927
+  - alterId: 0
+    cipher: auto
+    name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 1
+    password: f37a931d-7092-48fe-b82f-a98da3040eb2
+    port: 2053
+    server: 95.164.68.116
+    skip-cert-verify: true
+    sni: ftp.debian.org
+    tls: true
+    type: trojan
+    udp: true
+    delay: 1351
+  - name: 新加坡 - 新加坡 - Alibaba (US) Technology Co., Ltd. - 3
+    server: 47.236.246.45
+    type: vmess
+    port: 10000
+    udp: true
+    uuid: d0236eb0-f020-11ee-966e-00163e0de184
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vpnjantit
+    delay: 998
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 1
+    server: 18.142.56.221
     type: ss
-    country: 🇮🇪IE
-    port: 48172
-    password: Ue9GePNo835kHoYiO4nuN0
-    cipher: chacha20-ietf-poly1305
-    delay: 944
-  - cipher: chacha20-ietf-poly1305
-    country: ' IE'
-    name: 爱尔兰 - 都柏林 - Microsoft Corporation - 2
-    password: hMQ681A9fFpXM5r6TCkgb2
-    port: 14745
-    server: 13.94.97.79
+    country: 🇸🇬SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 2597
+  - cipher: aes-256-cfb
+    name: 新加坡 - 新加坡 - Amazon.com, Inc. - 2
+    password: amazonskr05
+    port: 443
+    server: 54.169.147.64
     type: ss
-    delay: 955
-  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 1
-    server: 5.42.72.241
-    port: 30482
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2gUQ2cQTPtBGNjbCXKMKeH
-    delay: 2743
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 3
+    delay: 454
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 4
+    server: 139.162.9.77
+    port: 8443
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2419
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 5
+    server: 156.251.183.226
+    port: 34147
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1723
+  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 14
+    server: 52.147.69.148
+    port: 443
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1099
+  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 19
+    server: 45.251.240.229
+    port: 34237
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1081
+  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 47
     server: 211.75.74.232
     port: 4443
     type: vless
@@ -1169,8 +733,722 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1616
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 4
+    delay: 1755
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 8
+    server: 13.230.147.26
+    type: trojan
+    country: 🇯🇵JP
+    port: 14945
+    password: wsWh6MQGjPq5
+    sni: appsvs.shop
+    skip-cert-verify: true
+    udp: true
+    delay: 300
+  - name: 日本 - 东京 - Amazon.com, Inc. - 2
+    server: 57.181.42.0
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 907
+  - name: 日本 - 东京 - Galaxy Broadband Pvt Ltd - 1
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35041
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 655
+  - name: 日本 - 东京 - Galaxy Broadband Pvt Ltd - 4
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35006
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 485
+  - name: 日本 - 东京 - Galaxy Broadband Pvt Ltd - 5
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35005
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 565
+  - name: 日本 - 东京 - Galaxy Broadband Pvt Ltd - 6
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35040
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 376
+  - name: 日本 - 东京 - Oracle Corporation - 7
+    server: jp01.freeflyingcloud.xyz
+    type: trojan
+    country: 🇯🇵JP
+    port: 44402
+    udp: true
+    password: 905ab1ed-d561-495b-a3bb-a567f7c7c0b7
+    sni: jp01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    delay: 977
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 10
+    server: 123.157.129.110
+    type: trojan
+    country: 🇨🇳CN
+    port: 12032
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
+    sni: cdn.alibaba.com
+    skip-cert-verify: true
+    udp: true
+    delay: 706
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 11
+    server: 123.157.129.110
+    type: trojan
+    country: 🇨🇳CN
+    port: 12033
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
+    sni: cdn.alibaba.com
+    skip-cert-verify: true
+    udp: true
+    delay: 925
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 12
+    server: 123.157.129.92
+    type: trojan
+    country: 🇨🇳CN
+    port: 12033
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
+    sni: cdn.alibaba.com
+    skip-cert-verify: true
+    udp: true
+    delay: 504
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 3
+    server: china3.one.edu.kg
+    type: trojan
+    port: 12033
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
+    skip-cert-verify: true
+    udp: true
+    delay: 883
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 9
+    server: 123.157.129.92
+    type: trojan
+    country: 🇨🇳CN
+    port: 12032
+    password: 694d996c-ce03-4e23-8722-54c9ed7972c4
+    sni: cdn.alibaba.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1049
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 13
+    server: 54.238.114.82
+    port: 443
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 890
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 15
+    server: 47.245.37.12
+    port: 80
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 991
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 16
+    server: 176.97.73.99
+    port: 2053
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1204
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 17
+    server: 47.245.30.208
+    port: 80
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 854
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 18
+    server: 47.245.56.207
+    port: 80
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 994
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 20
+    server: 176.97.73.82
+    port: 2053
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 2277
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 21
+    server: 176.97.73.99
+    port: 2053
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1190
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 22
+    server: 129.154.212.181
+    port: 44699
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1645
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 23
+    server: 132.226.168.199
+    port: 18421
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1634
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 24
+    server: 132.226.171.158
+    port: 9527
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1569
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 26
+    server: 146.56.151.32
+    port: 19
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1685
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 28
+    server: 146.56.171.182
+    port: 11659
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1582
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 29
+    server: 193.122.126.138
+    port: 8243
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1596
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 30
+    server: 152.70.246.67
+    port: 33405
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1499
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 31
+    server: 193.122.126.64
+    port: 53777
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1651
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 32
+    server: 193.122.110.164
+    port: 25800
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1652
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 33
+    server: 129.154.212.181
+    port: 22561
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1668
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 34
+    server: 132.226.168.199
+    port: 18421
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1664
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 35
+    server: 146.56.171.182
+    port: 11659
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1601
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 36
+    server: 132.226.171.158
+    port: 9527
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1668
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 37
+    server: 129.154.223.89
+    port: 15800
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1672
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 38
+    server: 193.123.239.18
+    port: 49248
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1662
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 39
+    server: 129.154.212.181
+    port: 44699
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1629
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 40
+    server: 152.70.246.67
+    port: 45696
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1740
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 41
+    server: 152.70.244.254
+    port: 27644
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1666
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 42
+    server: 146.56.188.95
+    port: 48888
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1721
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 43
+    server: 146.56.146.8
+    port: 11370
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1674
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 44
+    server: 193.122.126.138
+    port: 8243
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 2216
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 45
+    server: 146.56.144.32
+    port: 11202
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1677
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 46
+    server: 152.70.246.67
+    port: 33405
+    type: vless
+    client-fingerprint: random
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1700
+  - name: 日本 - 福岡市 - Cloudflare, Inc. - 25
+    server: 14.52.249.135
+    port: 10082
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1685
+  - name: 日本 - 福岡市 - Cloudflare, Inc. - 27
+    server: 121.181.87.111
+    port: 12405
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1956
+  - name: 法国 - 巴黎 - Online S.A.S. - 1
+    server: 62.210.116.202
+    type: vmess
+    port: 80
+    udp: true
+    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /frfrfffvmn01N
+    delay: 2895
+  - name: 法国 - 巴黎 - Stark Industries Solutions LTD - 4
+    server: 104.21.69.44
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: e87bbfd4-7382-4c25-b2fd-03c695b49190
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: fr2-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: fr2-vmess.sshmax.xyz
+    delay: 2388
+  - name: 法国 - 格拉沃利讷 - OVH SAS - 2
+    server: 51.210.182.170
+    port: 443
+    type: trojan
+    password: 73440da0-ed8d-11ee-873e-1239d0255272
+    skip-cert-verify: true
+    udp: true
+    delay: 2585
+  - name: 法国 - 马赛 - Oracle Corporation - 3
+    server: 84.235.235.247
+    type: trojan
+    country: 🇩🇪DE
+    port: 30502
+    password: 098e2bf5-9c9d-4152-aa7d-1d29e07cbbad
+    sni: fr01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1016
+  - name: 澳大利亚 - Alexandria - DigitalOcean, LLC - 1
+    server: 170.64.228.79
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: syd1-3.trollfunny.net
+    delay: 2978
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 1
+    server: 13.48.66.181
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: false
+    delay: 932
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 20
     server: 199.19.110.225
     port: 123
     type: vless
@@ -1185,24 +1463,41 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1589
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 10
-    server: 104.19.48.109
-    port: 2053
-    type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
-    alterId: 0
-    cipher: auto
-    tls: true
+    delay: 1915
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 21
+    server: 34.95.126.8
+    port: 80
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    tfo: false
     skip-cert-verify: false
-    servername: data-hk-1.cn-db.top
     network: ws
     ws-opts:
-      path: /db00
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
-        Host: data-hk-1.cn-db.top
-    delay: 2985
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 11
+        Host: a.ssll.gay
+    delay: 779
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 14
+    server: 143.110.136.188
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sfo2-4.trollfunny.net
+    delay: 812
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 17
     server: 104.17.147.118
     port: 2053
     type: vmess
@@ -1210,120 +1505,164 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     servername: data-hk-2.cn-db.top
     network: ws
     ws-opts:
       path: /db00
       headers:
         Host: data-hk-2.cn-db.top
-    delay: 1678
+    udp: true
+    delay: 2331
+  - name: 美国 - 洛杉矶 - Cnservers LLC - 2
+    server: 202.91.34.222
+    type: ss
+    port: 16899
+    password: Yc2CtrIz8L
+    cipher: aes-128-gcm
+    delay: 1141
+  - name: 美国 - 洛杉矶 - Cnservers LLC - 3
+    server: 38.6.174.30
+    type: vmess
+    port: 3600
+    udp: true
+    uuid: 32ff97ce-d8f9-4899-b302-770dfa284e64
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 553
+  - name: 美国 - 洛杉矶 - GTHost - 10
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: pKEW8JPByTVTLtM
+    cipher: aes-256-gcm
+    delay: 721
+  - name: 美国 - 洛杉矶 - GTHost - 11
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 5003
+    password: g5MeD6Ft3CWlJId
+    cipher: aes-256-gcm
+    delay: 2834
+  - name: 美国 - 洛杉矶 - GTHost - 12
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 8882
+    password: kDWvXYZoTBcGkC4
+    cipher: aes-256-gcm
+    delay: 773
+  - name: 美国 - 洛杉矶 - GTHost - 13
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 9101
+    password: e4FCWrgpkji3QY
+    cipher: aes-256-gcm
+    delay: 729
+  - name: 美国 - 洛杉矶 - GTHost - 15
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 3389
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 791
+  - name: 美国 - 洛杉矶 - GTHost - 16
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 6697
+    password: TEzjfAYq2IjtuoS
+    cipher: aes-256-gcm
+    delay: 799
+  - name: 美国 - 洛杉矶 - GTHost - 8
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 8118
+    password: cdBIDV42DCwnfIN
+    cipher: aes-256-gcm
+    delay: 687
+  - name: 美国 - 洛杉矶 - GTHost - 9
+    server: 38.114.114.208
+    type: ss
+    country: 🇺🇸US
+    port: 5601
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 654
   - alterId: 0
     cipher: auto
-    name: 美国 - 拉斯维加斯 - FranTech Solutions - 12
+    h2-opts: {}
+    http-opts: {}
+    name: 美国 - 洛杉矶 - Hosteons Pte. Ltd - 4
     network: ws
-    port: 2053
-    server: 104.19.163.54
-    servername: data-hk-3.cn-db.top
+    port: 2052
+    server: 66.225.246.70
     skip-cert-verify: true
-    tls: true
     type: vmess
-    udp: true
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+    uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333
     ws-opts:
       headers:
-        Host: data-hk-3.cn-db.top
-      path: /db00
-    delay: 2839
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 5
-    server: 104.19.230.106
-    port: 2083
+        host: 45.92.124.52
+      path: /vmess
+    delay: 1086
+  - alterId: 0
+    cipher: auto
+    h2-opts: {}
+    http-opts: {}
+    name: 美国 - 洛杉矶 - The Constant Company - 1
+    network: tcp
+    port: 11662
+    server: 149.28.64.6
+    skip-cert-verify: true
     type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+    uuid: 41d32579-a8b4-4bc7-cd5f-aac5e75513da
+    delay: 602
+  - name: 美国 - 聖荷西 -  - 5
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35030
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
     alterId: 0
     cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: data-hk-1.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: data-hk-1.cn-db.top
-    delay: 1626
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 6
-    server: 104.17.119.169
-    port: 2083
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 648
+  - alterId: 0
+    cipher: auto
+    name: 美国 - 聖荷西 -  - 6
+    network: tcp
+    port: '35029'
+    server: 183.240.188.44
+    servername: ''
+    tls: false
     type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 622
+  - name: 美国 - 聖荷西 -  - 7
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35019
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
     alterId: 0
     cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: data-hk-1.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: data-hk-1.cn-db.top
-    delay: 1976
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 7
-    server: 104.19.189.194
-    port: 443
-    type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: data-hk-3.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: data-hk-3.cn-db.top
-    delay: 1998
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 8
-    server: 104.19.164.33
-    port: 2053
-    type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: cache-hk-1.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: cache-hk-1.cn-db.top
-    delay: 2843
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 9
-    server: 104.18.58.193
-    port: 443
-    type: vmess
-    uuid: 4f574408-dfef-338a-a7d9-f7d1e70ff8d9
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    servername: cache-hk-1.cn-db.top
-    network: ws
-    ws-opts:
-      path: /db00
-      headers:
-        Host: cache-hk-1.cn-db.top
-    delay: 1833
-  - name: 美国 - 波德 - Majestic Hosting Solutions, LLC - 1
-    server: controlist.vbothfwmbh.top
-    type: ss
-    country: 🇸🇬SG
-    port: 20182
-    password: df30da54-317f-4726-98bd-8bc8ec8140c9
-    cipher: chacha20-ietf-poly1305
-    delay: 1335
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 743
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
     server: 45.80.111.38
     port: 2096
     type: vless
@@ -1338,332 +1677,133 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1667
-  - name: 英国 - 伦敦 - Aeza International LTD - 1
-    server: 46.226.162.112
-    port: 32913
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KTwIQM1cQJwtkrjfld6Usn
-    delay: 1899
-  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
-    type: trojan
-    server: 185.236.233.111
-    port: 2053
-    udp: true
-    password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
-    sni: ftp.debian.org
+    delay: 1657
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 140.99.233.156
+    port: 2087
+    type: vless
+    client-fingerprint: chrome
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: cfed.tgzdyz2.top
+    network: ws
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2215
+  - country: GB
+    name: 英国 - 伦敦 - Oracle Corporation - 1
+    password: 2ee6f407-3a86-48d9-9042-3f80dd18fad6
+    port: 22252
+    server: uk01.freeflyingcloud.xyz
     skip-cert-verify: true
-    network: tcp
-    delay: 1484
-  - name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 2
-    server: 159.223.211.229
-    port: 49585
+    sni: uk01.freeflyingcloud.xyz
+    type: trojan
+    udp: true
+    delay: 2600
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
+    server: 91.242.229.77
     type: vmess
-    LLC - 1: None
-    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
+    country: 🇳🇱NL
+    port: 80
+    uuid: 56890326-df58-432d-be1e-67064e2b4355
     alterId: 0
     cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+    delay: 1744
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 2
+    server: 188.114.98.224
+    type: vmess
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 6-xusersget-j0.module-soft.com
+    http-opts: {}
+    h2-opts: {}
     tls: true
     skip-cert-verify: true
-    servername: www.speedtest.net
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    udp: true
-    delay: 1079
-  - name: 越南 - Liên Chiểu - VINAMEEDVIETNAM - 1
-    server: controlist.vbothfwmbh.top
-    type: ss
-    country: 🇸🇬SG
-    port: 20177
-    password: df30da54-317f-4726-98bd-8bc8ec8140c9
-    cipher: chacha20-ietf-poly1305
-    delay: 2063
-  - name: 韩国 - Anyang-si - Korea Telecom - 33
-    server: 221.150.109.87
-    type: ss
-    country: 🇰🇷KR
-    port: 43926
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 632
-  - name: 韩国 - Anyang-si - Korea Telecom - 34
-    server: p231.panda004.net
-    port: 43926
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    delay: 1960
-  - name: 韩国 - Gangdong-gu - Korea Telecom - 38
-    server: 203.234.238.140
-    type: ss
-    country: 🇰🇷KR
-    port: 58449
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 469
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 10
-    server: 129.154.211.201
-    port: 33155
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 1417
+  - alterId: 0
+    cipher: auto
+    country: US
+    h2-opts: {}
+    http-opts: {}
+    name: 荷兰 - 阿姆斯特丹 - GTHost - 3
+    network: ws
+    port: 443
+    server: naomir.cfd
+    servername: naomir.cfd
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    ws-opts:
+      headers:
+        HOST: naomir.cfd
+      path: /linkvws
+    delay: 1846
+  - name: 菲律宾 - 马尼拉 - Techavenue International Ltd - 1
+    server: 38.46.29.88
+    port: 16028
+    type: vmess
+    uuid: a6057371-3cf3-43c1-c4b2-421bae0cb256
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /a6057371
+    delay: 909
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 24
+    server: 132.226.228.151
+    port: 30843
     type: vless
     client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     tls: true
     tfo: false
     skip-cert-verify: false
-    servername: a.ssll.gay
+    servername: cfed.tgzdyz2.top
     network: ws
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      path: TG@ZDYZ2
       headers:
-        Host: a.ssll.gay
-    delay: 1197
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
-    server: 140.238.7.57
-    port: 9999
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1570
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 12
-    server: 140.238.19.251
-    port: 10261
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2590
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 13
-    server: 132.226.230.177
-    port: 48132
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1630
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 14
-    server: 129.154.192.48
-    port: 21650
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1775
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 15
-    server: 152.70.251.80
-    port: 22802
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 2047
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 16
-    server: 152.70.234.249
-    port: 17029
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1785
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 17
-    server: 193.123.233.169
-    port: 39803
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1585
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 18
-    server: 193.123.250.205
-    port: 56785
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 981
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 19
-    server: 146.56.161.141
-    port: 45593
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1521
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 20
+        Host: cfed.tgzdyz2.top
+    delay: 1715
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 25
     server: 193.122.112.161
     port: 10003
     type: vless
     client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     tls: true
     tfo: false
     skip-cert-verify: false
-    servername: a.ssll.gay
+    servername: cfed.tgzdyz2.top
     network: ws
     ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      path: TG@ZDYZ2
       headers:
-        Host: a.ssll.gay
-    delay: 1503
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 21
-    server: 146.56.169.23
-    port: 34237
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1573
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 22
-    server: 132.226.172.226
-    port: 46730
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1296
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 23
-    server: 193.122.113.210
-    port: 34237
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 707
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 24
-    server: 146.56.166.59
-    port: 46060
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1819
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 25
-    server: 129.154.212.181
-    port: 20309
-    type: vless
-    client-fingerprint: chrome
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1655
+        Host: cfed.tgzdyz2.top
+    delay: 2159
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 26
-    server: 140.238.19.251
-    port: 10261
+    server: 132.145.83.155
+    port: 33799
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -1676,10 +1816,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1841
+    delay: 1751
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 27
-    server: 152.70.251.80
-    port: 22802
+    server: 146.56.135.192
+    port: 16617
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -1692,7 +1832,7 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1184
+    delay: 1558
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 28
     server: 121.146.123.101
     port: 10238
@@ -1708,10 +1848,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 946
+    delay: 1841
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 29
-    server: 132.145.83.155
-    port: 33799
+    server: 140.238.19.251
+    port: 10261
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -1724,10 +1864,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1110
+    delay: 1474
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 30
-    server: 193.122.112.161
-    port: 10003
+    server: 152.70.251.80
+    port: 22802
     type: vless
     client-fingerprint: chrome
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
@@ -1740,58 +1880,10 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2061
+    delay: 1996
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 31
-    server: 132.226.228.151
-    port: 30843
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 859
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 32
-    server: 146.56.135.192
-    port: 16617
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1601
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-    server: 132.145.95.1
-    port: 8443
-    type: vless
-    client-fingerprint: chrome
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1614
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-    server: 152.70.248.236
-    port: 28756
+    server: 129.154.212.181
+    port: 20309
     type: vless
     client-fingerprint: chrome
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -1804,8 +1896,136 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 1905
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 8
+    delay: 1772
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 32
+    server: 146.56.166.59
+    port: 46060
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1642
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 33
+    server: 193.122.113.210
+    port: 34237
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1774
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 34
+    server: 132.226.172.226
+    port: 46730
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1615
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 35
+    server: 146.56.161.141
+    port: 45593
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1741
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 36
+    server: 146.56.169.23
+    port: 34237
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1688
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 37
+    server: 193.123.250.205
+    port: 56785
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1418
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 38
+    server: 152.70.234.249
+    port: 17029
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1713
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 39
+    server: 129.154.192.48
+    port: 21650
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1722
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 40
     server: 146.56.42.31
     port: 48652
     type: vless
@@ -1820,8 +2040,88 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 2243
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 9
+    delay: 1744
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 41
+    server: 132.226.230.177
+    port: 48132
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1820
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 42
+    server: 193.123.233.169
+    port: 39803
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1633
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 43
+    server: 129.154.211.201
+    port: 33155
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1782
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 44
+    server: 140.238.19.251
+    port: 10261
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1876
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 45
+    server: 140.238.7.57
+    port: 9999
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1957
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 46
     server: 146.56.141.168
     port: 47590
     type: vless
@@ -1836,80 +2136,256 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 1944
-  - name: 韩国 - Yongin-si - Dotname Korea Corp - 1
-    server: controlist.vbothfwmbh.top
-    type: ss
-    country: 🇸🇬SG
-    port: 20181
-    password: df30da54-317f-4726-98bd-8bc8ec8140c9
-    cipher: chacha20-ietf-poly1305
-    delay: 1175
+    delay: 1839
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 47
+    server: 152.70.248.236
+    port: 28756
+    type: vless
+    client-fingerprint: chrome
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: a.ssll.gay
+    network: ws
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 1879
   - name: 韩国 - 京畿道 - Korea Telecom - 2
-    server: 125.141.31.72
-    port: 51472
-    type: ss
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    delay: 462
-  - name: 韩国 - 京畿道 - Korea Telecom - 35
-    server: p229.panda004.net
+    server: 125.141.26.7
     type: ss
     country: 🇰🇷KR
-    port: 10218
+    port: 49032
     password: qwerREWQ@@
     cipher: aes-256-cfb
-    delay: 519
-  - name: 韩国 - 春川市 - Oracle Corporation - 40
-    server: dxcdn02.dorabbb.top
-    port: 48824
+    delay: 588
+  - name: 韩国 - 京畿道 - Korea Telecom - 6
+    server: p227.panda004.net
+    port: 49032
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 86933ebf-fe3a-4c67-8eb6-25c82bf07e85
-    delay: 723
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+    delay: 2759
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 10
+    network: tcp
+    port: '35016'
+    server: 120.233.43.82
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1100
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 11
+    network: tcp
+    port: '35008'
+    server: 120.238.122.162
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1246
+  - name: 韩国 - 春川市 - Oracle Corporation - 12
+    server: 120.233.43.22
+    type: vmess
+    country: 🇨🇳CN
+    port: 35016
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1201
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 13
+    network: tcp
+    port: '35007'
+    server: 120.233.43.82
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1362
+  - name: 韩国 - 春川市 - Oracle Corporation - 15
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35016
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1649
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 16
+    network: tcp
+    port: '35008'
+    server: 120.233.43.82
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1642
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 17
+    network: tcp
+    port: '35015'
+    server: 120.233.43.82
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1563
+  - name: 韩国 - 春川市 - Oracle Corporation - 18
+    server: 183.240.188.44
+    type: vmess
+    country: 🇨🇳CN
+    port: 35007
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1107
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 19
+    network: tcp
+    port: '35015'
+    server: 183.240.188.45
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 1122
+  - name: 韩国 - 春川市 - Oracle Corporation - 20
+    server: 120.233.43.22
+    type: vmess
+    country: 🇨🇳CN
+    port: 35015
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1568
+  - name: 韩国 - 春川市 - Oracle Corporation - 21
+    server: 120.233.43.22
+    type: vmess
+    country: 🇨🇳CN
+    port: 35007
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1458
+  - name: 韩国 - 春川市 - Oracle Corporation - 22
+    server: 183.240.188.45
+    type: vmess
+    country: 🇨🇳CN
+    port: 35016
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1131
+  - alterId: 0
+    cipher: auto
+    name: 韩国 - 春川市 - Oracle Corporation - 8
+    network: tcp
+    port: '35016'
+    server: 120.238.122.162
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    delay: 966
+  - name: 韩国 - 春川市 - Oracle Corporation - 9
+    server: 120.238.122.162
+    type: vmess
+    country: 🇨🇳CN
+    port: 35015
+    uuid: 2add5c39-f353-3b58-b886-195251fab44f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1053
+  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 7
+    server: 13.124.212.29
+    type: ss
+    country: 🇰🇷 KR
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1305
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 1
+    server: 3.38.162.154
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 390
+  - cipher: aes-256-cfb
+    name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 14
+    password: amazonskr05
+    port: 443
+    server: 43.203.233.33
+    tfo: false
+    type: ss
+    delay: 625
   - cipher: aes-256-cfb
     name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 3
     password: amazonskr05
     port: 443
-    server: 3.38.162.154
+    server: 43.201.110.81
     type: ss
-    delay: 1013
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 36
-    server: 43.201.0.179
-    type: trojan
-    country: 🇺🇸US
-    port: 12940
-    password: pl7IsynCzy8X
-    sni: appsvs.shop
-    skip-cert-verify: true
     udp: true
-    delay: 1325
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 37
-    server: 43.202.41.139
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 679
+    delay: 1225
   - cipher: aes-256-cfb
     name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
     password: amazonskr05
     port: 443
     server: 43.203.192.6
     type: ss
-    delay: 711
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
-    server: 43.203.220.68
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
+    delay: 758
+  - cipher: aes-256-cfb
+    name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
     password: amazonskr05
-    delay: 650
-  - name: 韩国 - 首尔特别市 - Korea Telecom - 39
-    server: 222.112.15.134
+    port: 443
+    server: 43.203.220.68
     type: ss
-    country: 🇰🇷KR
+    udp: true
+    delay: 436
+  - name: 韩国 - 首尔特别市 - Korea Telecom - 23
+    server: 222.112.15.134
     port: 50942
-    password: qwerREWQ@@
+    type: ss
     cipher: aes-256-cfb
-    delay: 507
+    password: qwerREWQ@@
+    delay: 868
