@@ -4,18 +4,59 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 33
-    server: 183.240.220.199
-    type: ss
-    country: 🇨🇳CN
-    port: 47564
-    password: 3ca531c0-2a07-4c27-8df3-8fe928544e70
-    cipher: chacha20-ietf-poly1305
-    delay: 431
-  - name: 中国 - 台湾 - Cloudflare, Inc. - 26
-    server: 61.220.41.143
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 1
+    server: 172.67.172.176
+    type: vmess
+    port: 8080
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /
+      headers:
+        Host: oiictw.yydsii.com
+    delay: 2733
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
+    server: 172.67.185.64
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: oiictw.yydsii.com
+    delay: 2745
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+    server: 172.67.199.144
+    type: vmess
+    port: 8080
+    udp: true
+    uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: oiictw.yydsii.com
+    delay: 2772
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 11
+    server: 103.137.63.37
     type: vless
-    port: 36633
+    port: 53760
     udp: true
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
@@ -27,8 +68,22 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2302
-  - name: 中国 - 台湾 - Cloudflare, Inc. - 5
+    delay: 1517
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 13
+    server: 211.75.74.232
+    type: vless
+    port: 4443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 958
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 18
     server: 118.163.128.81
     type: vless
     port: 13688
@@ -43,313 +98,11 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1139
-  - name: 中国 - 香港 - Apple Network, LLC - 22
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11005
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 2013
-  - name: 中国 - 香港 - Apple Network, LLC - 23
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11007
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 624
-  - name: 中国 - 香港 - Apple Network, LLC - 24
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11003
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 400
-  - name: 中国 - 香港 - Apple Network, LLC - 29
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11008
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 1585
-  - name: 中国 - 香港 - Apple Network, LLC - 30
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11006
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 1653
-  - name: 中国 - 香港 - Apple Network, LLC - 31
-    server: 117.169.102.151
-    type: ss
-    country: 🇨🇳CN
-    port: 11001
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 301
-  - name: 中国 - 香港 - Apple Network, LLC - 32
-    server: ss.hkglink.xyz
-    type: ss
-    country: 🇨🇳CN
-    port: 11004
-    password: 6d401212-f545-4b1e-9fe5-d4f741b7a7f1
-    cipher: aes-128-gcm
-    delay: 525
-  - name: 中国 - 香港 - Cloudflare, Inc. - 1
-    server: 152.32.252.175
+    delay: 1685
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 21
+    server: 118.163.128.81
     type: vless
-    port: 8969
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1686
-  - name: 中国 - 香港 - Cloudflare, Inc. - 10
-    server: 8.217.221.165
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 258
-  - name: 中国 - 香港 - Cloudflare, Inc. - 11
-    server: 8.218.3.12
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 996
-  - name: 中国 - 香港 - Cloudflare, Inc. - 12
-    server: 47.242.174.27
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 275
-  - name: 中国 - 香港 - Cloudflare, Inc. - 13
-    server: 47.236.12.195
-    type: vless
-    port: 443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2392
-  - name: 中国 - 香港 - Cloudflare, Inc. - 14
-    server: 8.222.137.178
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2300
-  - name: 中国 - 香港 - Cloudflare, Inc. - 15
-    server: 8.218.201.73
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 399
-  - name: 中国 - 香港 - Cloudflare, Inc. - 16
-    server: 8.222.160.61
-    type: vless
-    port: 2053
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 2161
-  - name: 中国 - 香港 - Cloudflare, Inc. - 17
-    server: 8.217.159.210
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 204
-  - name: 中国 - 香港 - Cloudflare, Inc. - 18
-    server: 152.70.251.80
-    type: vless
-    port: 22802
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1225
-  - name: 中国 - 香港 - Cloudflare, Inc. - 19
-    server: 8.209.222.232
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 768
-  - name: 中国 - 香港 - Cloudflare, Inc. - 2
-    server: 103.44.255.27
-    type: vless
-    port: 443
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 2596
-  - name: 中国 - 香港 - Cloudflare, Inc. - 20
-    server: 47.245.57.38
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 621
-  - name: 中国 - 香港 - Cloudflare, Inc. - 21
-    server: 8.217.145.40
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 267
-  - name: 中国 - 香港 - Cloudflare, Inc. - 25
-    server: 45.249.246.59
-    type: vless
-    port: 49454
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1351
-  - name: 中国 - 香港 - Cloudflare, Inc. - 27
-    server: 8.217.85.14
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 241
-  - name: 中国 - 香港 - Cloudflare, Inc. - 28
-    server: 38.207.161.206
-    type: vless
-    port: 39522
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 2326
-  - name: 中国 - 香港 - Cloudflare, Inc. - 3
-    server: 47.244.255.95
-    type: vless
-    port: 8449
-    udp: true
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 420
-  - name: 中国 - 香港 - Cloudflare, Inc. - 4
-    server: 206.237.2.118
-    type: vless
-    port: 2000
+    port: 12559
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
     tls: true
@@ -359,11 +112,11 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2219
-  - name: 中国 - 香港 - Cloudflare, Inc. - 6
-    server: 101.78.164.239
+    delay: 1232
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 8
+    server: 61.220.41.143
     type: vless
-    port: 12313
+    port: 36633
     udp: true
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
@@ -375,8 +128,26 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 608
-  - name: 中国 - 香港 - Cloudflare, Inc. - 7
+    delay: 1668
+  - name: 中国 - 香港 - Akari Networks - 31
+    server: 120.233.42.83
+    type: vmess
+    country: 🇨🇳CN
+    port: 20207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: data-hk-v1.shwjfkw.cn
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /debian
+      headers:
+        HOST: data-hk-v1.shwjfkw.cn
+    delay: 2048
+  - name: 中国 - 香港 - Cloudflare, Inc. - 10
     server: 103.149.144.102
     type: vless
     port: 443
@@ -391,22 +162,8 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1940
-  - name: 中国 - 香港 - Cloudflare, Inc. - 8
-    server: 45.8.186.188
-    type: vless
-    port: 443
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    client-fingerprint: chrome
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: TG@ZDYZ2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1544
-  - name: 中国 - 香港 - Cloudflare, Inc. - 9
+    delay: 1601
+  - name: 中国 - 香港 - Cloudflare, Inc. - 12
     server: 118.193.44.62
     type: vless
     port: 49454
@@ -421,7 +178,331 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1404
+    delay: 312
+  - name: 中国 - 香港 - Cloudflare, Inc. - 14
+    server: 103.247.29.42
+    type: vless
+    port: 10081
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2105
+  - name: 中国 - 香港 - Cloudflare, Inc. - 15
+    server: 152.32.252.175
+    type: vless
+    port: 8969
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1600
+  - name: 中国 - 香港 - Cloudflare, Inc. - 16
+    server: 101.78.164.239
+    type: vless
+    port: 12313
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 656
+  - name: 中国 - 香港 - Cloudflare, Inc. - 17
+    server: 45.8.186.188
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2637
+  - name: 中国 - 香港 - Cloudflare, Inc. - 19
+    server: 8.217.164.10
+    type: vless
+    port: 2096
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 451
+  - name: 中国 - 香港 - Cloudflare, Inc. - 20
+    server: 47.244.255.95
+    type: vless
+    port: 8449
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 362
+  - name: 中国 - 香港 - Cloudflare, Inc. - 22
+    server: 38.207.161.206
+    type: vless
+    port: 39522
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2256
+  - name: 中国 - 香港 - Cloudflare, Inc. - 23
+    server: 8.217.145.40
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 599
+  - name: 中国 - 香港 - Cloudflare, Inc. - 24
+    server: 103.44.255.27
+    type: vless
+    port: 443
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: juzibaipiao.5112233.xyz
+    delay: 292
+  - name: 中国 - 香港 - Cloudflare, Inc. - 25
+    server: 8.209.222.232
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 555
+  - name: 中国 - 香港 - Cloudflare, Inc. - 26
+    server: 47.242.54.157
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 186
+  - name: 中国 - 香港 - Cloudflare, Inc. - 27
+    server: 103.44.255.27
+    type: vless
+    port: 443
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 310
+  - name: 中国 - 香港 - Cloudflare, Inc. - 4
+    server: 119.8.62.199
+    type: vless
+    port: 13080
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 388
+  - name: 中国 - 香港 - Cloudflare, Inc. - 5
+    server: 8.217.159.210
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 291
+  - name: 中国 - 香港 - Cloudflare, Inc. - 6
+    server: 8.217.85.14
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 303
+  - name: 中国 - 香港 - Cloudflare, Inc. - 7
+    server: 47.245.57.38
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 859
+  - name: 中国 - 香港 - Cloudflare, Inc. - 9
+    server: 45.249.246.59
+    type: vless
+    port: 49454
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1671
+  - name: 中国 - 香港 - Cnservers LLC - 28
+    server: 183.237.20.158
+    type: vmess
+    port: 41242
+    udp: true
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1021
+  - name: 中国 - 香港 - Cnservers LLC - 29
+    server: 120.238.122.243
+    type: vmess
+    country: 🇨🇳 CN
+    port: 35601
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    delay: 247
+  - name: 中国 - 香港 - G-Core Labs S.A. - 30
+    server: vip.basicnode.host
+    type: vmess
+    country: 🇨🇳CN
+    port: 16627
+    uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 193.25.215.160
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /niuniu
+      headers:
+        HOST: 193.25.215.160
+    delay: 1313
+  - name: 中国 - 香港 - MoeChuang Network Limited - 33
+    server: hk.1.thap.xyz
+    port: 41878
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 32b29d7b-6e50-40b7-8f0a-49bd50bcbe0d
+    delay: 388
+  - name: 中国 - 香港 - Rackip Consultancy Pte. LTD - 32
+    server: 183.236.51.59
+    port: 54437
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+    delay: 2896
+  - name: 冰岛 - 凯夫拉维克国际机场 - STARK INDUSTRIES SOLUTIONS LTD - 2
+    server: 104.21.13.125
+    type: vmess
+    port: 80
+    uuid: 7e67dfca-3f0d-4ba1-a7e8-b272bcfc156f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: is2-vmess.sshmax.xyz
+    delay: 1147
+  - name: 冰岛 - 哈夫纳夫约杜尔 - Advania Island ehf - 1
+    server: 37.235.49.152
+    type: ss
+    country: 🇮🇸 IS
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1347
   - name: 加拿大 - Montreal - GLOBALTELEHOST Corp. - 1
     server: 158.51.121.36
     port: 443
@@ -435,455 +516,385 @@ proxies:
     network: ws
     ws-opts:
       path: /linkvws
-    delay: 1611
-  - name: 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 3
-    type: vmess
-    server: 23.162.200.227
-    port: 443
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    tls: true
+    delay: 1322
+  - name: 加拿大 - 多伦多 - Amazon Technologies Inc. - 3
+    server: 35.183.197.221
+    type: trojan
+    country: 🇨🇦CA
+    port: 12049
+    udp: true
+    password: 3FO(t97lPHQG
+    sni: appsvs.shop
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /linkvws
-    delay: 1111
+    delay: 1092
   - name: 加拿大 - 溫哥華 - GLOBALTELEHOST Corp. - 2
-    type: vmess
     server: 158.51.123.111
     port: 443
-    cipher: auto
+    type: vmess
     uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
     alterId: 0
+    cipher: auto
     tls: true
     skip-cert-verify: true
     network: ws
     ws-opts:
       path: /linkvws
-    delay: 898
+    delay: 983
+  - name: 土耳其 - Güngören - Kapteyan - 1
+    server: 172.67.152.170
+    type: vmess
+    country: 🇺🇸US
+    port: 2095
+    uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tu.mahilu.site
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: tu.mahilu.site
+    delay: 1989
   - name: 奥地利 - Vienna - Stark Industries Solutions LTD - 1
-    server: at1.trojanvpn.de
-    type: trojan
-    port: 2053
-    udp: true
-    password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
-    sni: ftp.debian.org
-    skip-cert-verify: true
-    delay: 2013
-  - name: 奥地利 - Vienna - Stark Industries Solutions LTD - 2
     server: 95.164.9.196
-    type: trojan
-    country: 🇬🇮GI
     port: 2053
-    udp: true
+    type: trojan
     password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
     sni: ftp.debian.org
     skip-cert-verify: true
-    delay: 1074
-  - name: 巴西 - 圣保罗 - Stark Industries Solutions LTD - 1
-    server: 95.164.4.51
-    type: vmess
-    country: 🇧🇷BR
-    port: 8443
-    uuid: 574363e2-e447-460d-a5b2-e662d6813afe
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    delay: 1519
-  - name: 德国 - Frankfurt - GTHost - 3
-    server: 23.158.56.60
-    type: vmess
-    country: 🇩🇪DE
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: 23.158.56.60
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkvws
-      headers:
-        HOST: 23.158.56.60
-    delay: 1256
-  - name: 德国 - Frankfurt - GTHost - 4
-    server: 23.158.56.229
-    type: vmess
-    country: 🇩🇪DE
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: 23.158.56.229
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkvws
-      headers:
-        HOST: 23.158.56.229
-    delay: 1763
-  - name: 德国 - 法兰克福 - Oracle Corporation - 7
-    server: de01.appleid.bf
-    type: vmess
-    country: 🇺🇸US
-    port: 2086
-    uuid: 9ba2d813-155e-4174-bdd4-a374eb2ed7a0
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /ws?ed=2048
-    delay: 2311
-  - name: 德国 - 法兰克福 - Oracle Corporation - 8
-    server: de01.appleid.bf
-    type: vmess
-    country: 🇺🇸US
-    port: 2086
-    uuid: 24b58175-fdcf-4ed8-82f8-bc23e7f8f348
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: de01.appleid.bf
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /ws?ed=2048
-      headers:
-        HOST: de01.appleid.bf
-    delay: 1190
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 1
-    server: 95.164.68.116
-    type: trojan
-    country: 🇩🇪DE
-    port: 2053
     udp: true
+    delay: 1112
+  - name: 奥地利 - Vienna - Stark Industries Solutions LTD - 2
+    server: at1.trojanvpn.de
+    port: 2053
+    type: trojan
+    password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
+    sni: ftp.debian.org
+    skip-cert-verify: true
+    delay: 1863
+  - name: 德国 - 杜塞尔多夫 - Contabo GmbH - 1
+    server: 185.218.126.248
+    type: vmess
+    port: 80
+    udp: true
+    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /v1893298323Py
+    delay: 1139
+  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 2
+    server: 95.164.68.116
+    port: 2053
+    type: trojan
     password: f37a931d-7092-48fe-b82f-a98da3040eb2
     sni: ftp.debian.org
     skip-cert-verify: true
-    delay: 1022
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 2
-    server: de2.trojanvpn.de
-    type: trojan
-    country: 🇬🇮GI
-    port: 2053
     udp: true
-    password: f37a931d-7092-48fe-b82f-a98da3040eb2
-    sni: de2.trojanvpn.de
-    skip-cert-verify: true
-    delay: 1938
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 5
+    delay: 1088
+  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 3
     server: 80.92.204.106
-    type: ss
-    country: 🇩🇪DE
     port: 9080
-    password: VP8ZPxQpJtZRCjfZ
+    type: ss
     cipher: aes-256-cfb
-    delay: 1994
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-    server: 77.91.73.244
+    password: VP8ZPxQpJtZRCjfZ
+    delay: 1009
+  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 4
+    server: 104.21.25.49
     type: vmess
-    country: 🇷🇺RU
-    port: 80
-    uuid: d8d635a3-3807-4886-a6dc-81d44ce9b6aa
+    country: 🏁ZZ
+    port: 443
+    uuid: 14079e58-c48c-473f-81b5-a680a20f614e
     alterId: 0
     cipher: auto
     network: ws
-    servername: de3-vmess.sshmax.xyz
+    servername: de2-vmess.sshmax.xyz
     http-opts: {}
     h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
       path: /vmess
       headers:
-        HOST: de3-vmess.sshmax.xyz
-    delay: 1778
+        HOST: de2-vmess.sshmax.xyz
+    delay: 2153
+  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 5
+    server: 172.67.204.84
+    type: trojan
+    port: 2083
+    udp: true
+    password: 0e81a9cd-d849-4101-8d64-574c283207de
+    sni: de1.trojanvpn.de
+    skip-cert-verify: true
+    ws-opts:
+      path: >-
+        %25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252Fwebsocket
+      headers:
+        Host: de1.trojanvpn.de
+    network: ws
+    delay: 2176
+  - name: 意大利 - Siziano - Oracle Corporation - 1
+    server: it01.freeflyingcloud.xyz
+    type: trojan
+    port: 48102
+    password: 6d257b63-0632-4dd6-b021-3085f8dc28b2
+    skip-cert-verify: true
+    udp: true
+    delay: 1771
+  - name: 意大利 - Siziano - Oracle Corporation - 2
+    server: it01.freeflyingcloud.xyz
+    type: trojan
+    port: 48102
+    password: ecc532e2-3f8b-4a30-b176-78951fda6542
+    sni: it01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1806
+  - name: 意大利 - Siziano - Oracle Corporation - 3
+    server: it01.freeflyingcloud.xyz
+    type: trojan
+    country: 🇮🇹IT
+    port: 48102
+    udp: true
+    password: 0f823acc-0136-4203-8151-7fd99677f5aa
+    sni: it01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    delay: 1144
+  - name: 意大利 - Siziano - Oracle Corporation - 4
+    server: it01.freeflyingcloud.xyz
+    type: trojan
+    country: 🇬🇧GB
+    port: 48102
+    udp: true
+    password: d9254b13-7175-4183-a691-518f8f0409a9
+    sni: it01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    delay: 1199
   - name: 拉脱维亚 - 里加 - DataClub S.A. - 1
     server: 46.183.217.232
-    type: ss
-    country: 🇧🇿BZ
     port: 989
-    password: f8f7aCzcPKbsF8p3
+    type: ss
     cipher: aes-256-cfb
-    delay: 1200
-  - name: 挪威 - 奥斯陆 - Stark Industries Solutions LTD - 1
-    server: channel.hopev2ray.link
+    password: f8f7aCzcPKbsF8p3
+    delay: 1340
+  - name: 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 2
+    server: 172.67.132.209
     type: vmess
     country: 🇺🇸US
     port: 80
-    uuid: 8d6abe4b-4b36-475a-8d97-f59d8e5b72af
+    uuid: 7e85049a-2b44-4621-991f-1e10e2210bc9
     alterId: 0
     cipher: auto
     network: ws
-    servername: no2-vmess.sshmax.xyz
+    servername: lv1-vmess.sshmax.xyz
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /vmess
       headers:
-        HOST: no2-vmess.sshmax.xyz
-    delay: 1526
-  - name: 摩尔多瓦 - 基希讷乌 - Stark Industries Solutions LTD - 1
-    server: gzdxc.kd69.vip
+        HOST: lv1-vmess.sshmax.xyz
+    delay: 1140
+  - name: 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 3
+    server: 172.67.204.84
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 844b31ab-8270-40aa-9c9a-d07ef2af591e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: lv1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: lv1-vmess.sshmax.xyz
+    delay: 2183
+  - name: 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 4
+    server: 104.21.69.44
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 844b31ab-8270-40aa-9c9a-d07ef2af591e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: lv1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: lv1-vmess.sshmax.xyz
+    delay: 1163
+  - name: 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 5
+    server: 104.21.13.125
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 7e85049a-2b44-4621-991f-1e10e2210bc9
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: lv1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: lv1-vmess.sshmax.xyz
+    delay: 1173
+  - name: 挪威 - 奥斯陆 - Stark Industries Solutions LTD - 1
+    server: zula.ir
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 753d0d83-3f5b-4821-860e-082f0b3db609
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: no1-vmess.sshmax.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: no1-vmess.sshmax.xyz
+    delay: 1013
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 1
+    server: cfcdn2.sanfencdn9.com
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: aa385f39-d784-4b80-9725-c3904a337cf8
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: jpafzyhfsg3.yofnhkfc.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/u4eCZTxW
+      headers:
+        HOST: jpafzyhfsg3.yofnhkfc.xyz
+    delay: 2219
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc - 3
+    server: 47.128.64.71
     type: ss
-    country: 🇨🇳CN
-    port: 21245
-    password: c40453e6-6e01-4c37-b4cb-e116262eb129
-    cipher: aes-128-gcm
-    delay: 1282
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 2
-    server: 13.215.208.103
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 240
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc - 4
+    server: 47.129.9.69
+    type: ss
+    port: 443
+    udp: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 413
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 13
+    server: 13.215.162.189
     type: ss
     country: 🇺🇸 US
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 1498
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 1
-    server: 54.179.101.194
-    port: 443
+    delay: 416
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 5
+    server: 18.142.225.182
     type: ss
-    country: 🇸🇬 SG
+    port: 443
+    udp: true
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 408
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-    server: 8.222.169.182
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1797
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 100
-    server: 8.222.174.108
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1650
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 101
-    server: 8.222.187.107
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1537
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 102
-    server: 8.222.249.190
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /freecodes
-      headers:
-        host: cf.xujiang.link
-    delay: 1650
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 103
-    server: 8.222.129.32
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1607
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 104
-    server: 8.222.215.228
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1691
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 105
-    server: 8.222.182.10
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1609
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 106
-    server: 8.222.130.137
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1130
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 11
-    server: tg.wxgqlfx.top
-    type: vless
+    delay: 502
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 6
+    server: 13.215.184.228
+    type: ss
     port: 443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1358
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 7
+    server: 13.214.212.171
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1687
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 8
+    server: 13.250.125.144
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 242
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 10
+    server: 54.179.167.94
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 479
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 11
+    server: singapore.freejc.test.freecarriertraffic.133141.xyz
+    type: vmess
+    country: 🇸🇬SG
+    port: 80
+    uuid: cc8624d9-9012-41fc-a425-0039ad48ae85
+    alterId: 0
+    cipher: auto
     network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
+    servername: baidu.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
       path: /?ed=2048
       headers:
-        host: jd.wxgqlfx.top
-    delay: 2020
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 12
-    server: 8.222.168.24
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+        HOST: baidu.com
+    delay: 723
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 12
+    server: singapore.freejc.test.freecarriertraffic.133141.xyz
+    type: vmess
+    country: 🇸🇬SG
+    port: 80
+    uuid: 6563634a-d2ff-4e14-a6c0-47de90a57780
+    alterId: 0
+    cipher: auto
     network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1837
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 13
-    server: 8.222.145.164
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1812
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 14
-    server: 8.222.137.166
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
+    servername: baidu.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
       path: /?ed=2048
       headers:
-        host: jd.wxgqlfx.top
-    delay: 1396
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 15
-    server: 8.222.144.219
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1465
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 16
-    server: 8.222.229.22
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /freecodes
-      headers:
-        host: cf.xujiang.link
-    delay: 1848
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 17
-    server: 47.236.87.206
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1374
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 18
-    server: 8.222.167.8
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 1667
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 19
-    server: 47.236.168.17
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1472
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 20
+        HOST: baidu.com
+    delay: 727
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 9
+    server: 54.169.51.80
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 236
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 100
     server: 8.222.168.155
     type: vless
     port: 8443
@@ -895,816 +906,10 @@ proxies:
       path: /youtube-由零開始
       headers:
         host: cf.xujiang.link
-    delay: 2245
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 21
-    server: 8.222.140.185
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /freecodes
-      headers:
-        host: cf.xujiang.link
-    delay: 2094
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 22
-    server: 47.236.171.205
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2085
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 23
-    server: 47.236.145.85
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2156
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 24
-    server: 8.222.221.197
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2306
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 25
-    server: 47.236.79.77
-    type: vless
-    port: 2083
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2081
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 26
-    server: 47.236.147.146
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2189
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 27
-    server: 8.222.129.245
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2406
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 28
-    server: 8.222.168.234
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2311
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 29
-    server: 8.222.168.155
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2403
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 30
-    server: 8.222.168.24
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2204
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 31
-    server: 8.222.145.110
-    type: vless
-    port: 2087
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        host: cfed.tgzdyz2.top
-    delay: 2140
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 32
-    server: 8.222.164.44
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /freecodes
-      headers:
-        host: cf.xujiang.link
-    delay: 2397
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 33
-    server: 47.236.7.246
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2408
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 34
-    server: 47.236.5.223
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2332
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 35
-    server: 47.236.75.113
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2209
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 36
-    server: 47.236.165.25
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2211
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 37
-    server: 8.222.155.242
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2499
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 38
-    server: 47.236.130.95
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2356
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 39
-    server: 47.236.114.167
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2360
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 40
-    server: 8.222.160.176
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2153
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 41
-    server: 8.222.129.32
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2154
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 42
-    server: 47.236.161.155
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2361
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 43
-    server: 8.222.130.137
-    type: vless
-    port: 2083
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2220
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 44
-    server: 47.236.148.174
-    type: vless
-    port: 2083
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2415
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 45
-    server: 8.222.187.107
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2350
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 46
-    server: 47.236.174.206
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2414
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 47
-    server: 8.222.169.181
-    type: vless
-    port: 46458
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1999
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 48
-    server: 8.222.211.124
-    type: vless
-    port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2346
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 49
-    server: 8.222.219.252
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2123
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 50
-    server: 8.222.169.182
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2072
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 51
-    server: 8.222.159.252
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2351
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 52
-    server: 8.222.147.203
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2351
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 53
-    server: 8.222.159.252
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2056
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 54
-    server: 47.236.144.48
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2107
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 55
-    server: 8.222.180.86
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2312
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 56
-    server: 47.236.166.184
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2137
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 57
-    server: 8.222.140.185
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2600
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 58
-    server: 8.222.229.22
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2606
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 59
+    delay: 2362
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 101
     server: 8.222.137.178
     type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2279
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 60
-    server: 8.222.180.86
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2152
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 61
-    server: 8.222.221.197
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2115
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 62
-    server: 8.222.248.188
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2283
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 63
-    server: 8.222.167.8
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2282
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 64
-    server: 8.222.136.196
-    type: vless
-    port: 8443
-    uuid: 86cb9a9b-dc2e-45d6-b35d-7ce1daa32a15
-    network: ws
-    tls: true
-    servername: dns68.shift.cloudns.org
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: dns68.shift.cloudns.org
-    delay: 1748
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 65
-    server: 8.222.136.247
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2072
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 66
-    server: 8.222.160.176
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2124
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 67
-    server: 8.222.168.234
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2330
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 68
-    server: 8.222.190.225
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2369
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 69
-    server: 8.222.154.50
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2149
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 70
-    server: 8.222.162.45
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2150
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 71
-    server: 8.222.164.44
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2294
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 72
-    server: 8.222.160.61
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1891
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 73
-    server: 8.222.212.116
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1839
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 74
-    server: 8.222.224.163
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2026
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 75
-    server: 8.222.182.10
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2131
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 76
-    server: 8.222.174.108
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2110
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 77
-    server: 8.222.154.227
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1975
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 78
-    server: 8.222.167.147
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2170
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 79
-    server: 8.222.219.252
-    type: vless
-    port: 2087
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1941
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 80
-    server: 8.222.175.78
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2007
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 81
-    server: 8.222.154.227
-    type: vless
-    port: 2096
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2017
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 82
-    server: 8.222.227.191
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2182
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 83
-    server: 8.222.137.166
-    type: vless
     port: 2087
     uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
     network: ws
@@ -1714,86 +919,8 @@ proxies:
       path: /youtube-由零開始
       headers:
         host: cf.xujiang.link
-    delay: 2181
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 84
-    server: 8.222.244.192
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1980
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 85
-    server: 8.222.215.228
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1980
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 86
-    server: 8.222.211.124
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2124
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 87
-    server: 8.222.130.137
-    type: vless
-    port: 8443
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 2017
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 88
-    server: 8.222.168.155
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1945
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 89
-    server: 8.222.155.242
-    type: vless
-    port: 2053
-    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
-    network: ws
-    tls: true
-    servername: jd.wxgqlfx.top
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: jd.wxgqlfx.top
-    delay: 1922
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 9
+    delay: 2326
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 102
     server: 8.222.154.50
     type: vless
     port: 2053
@@ -1808,9 +935,9 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1335
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 90
-    server: 8.222.129.32
+    delay: 1968
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 103
+    server: 8.222.137.178
     type: vless
     port: 8443
     uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
@@ -1821,9 +948,87 @@ proxies:
       path: /?ed=2048
       headers:
         host: jd.wxgqlfx.top
-    delay: 2192
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 91
-    server: 8.222.188.56
+    delay: 1996
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 104
+    server: 8.222.167.8
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2161
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 105
+    server: 8.222.215.228
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1986
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 106
+    server: 8.222.154.50
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2011
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 107
+    server: 8.222.248.188
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2101
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 108
+    server: 47.236.166.184
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1895
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 109
+    server: 47.236.87.206
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2110
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 110
+    server: 47.236.114.167
     type: vless
     port: 2096
     uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
@@ -1834,22 +1039,9 @@ proxies:
       path: /?ed=2048
       headers:
         host: jd.wxgqlfx.top
-    delay: 2228
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 92
-    server: 8.222.190.225
-    type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
-    network: ws
-    tls: true
-    servername: cf.xujiang.link
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        host: cf.xujiang.link
-    delay: 2255
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 93
-    server: 8.222.184.198
+    delay: 1875
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 111
+    server: 8.222.160.176
     type: vless
     port: 8443
     uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
@@ -1860,8 +1052,164 @@ proxies:
       path: /?ed=2048
       headers:
         host: jd.wxgqlfx.top
-    delay: 1929
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 94
+    delay: 2089
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 112
+    server: 8.222.175.78
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2067
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 113
+    server: 8.222.130.137
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2262
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 114
+    server: 8.222.174.108
+    type: vless
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1945
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 115
+    server: 8.222.140.185
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /freecodes
+      headers:
+        host: cf.xujiang.link
+    delay: 1210
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 116
+    server: 8.222.145.164
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 1199
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 117
+    server: 8.222.129.245
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 1210
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 118
+    server: 8.222.144.219
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 1169
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 14
+    server: 47.236.144.48
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1003
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 15
+    server: 8.222.168.24
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2100
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 16
+    server: 8.222.249.190
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /freecodes
+      headers:
+        host: cf.xujiang.link
+    delay: 2264
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 17
+    server: 8.222.174.108
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2159
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 18
+    server: 8.222.129.32
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2146
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 19
     server: 8.222.167.147
     type: vless
     port: 2087
@@ -1873,47 +1221,60 @@ proxies:
       path: /youtube-由零開始
       headers:
         host: cf.xujiang.link
-    delay: 2388
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 95
-    server: 8.222.129.245
+    delay: 2144
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 20
+    server: 8.222.182.10
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2178
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 21
+    server: 8.222.169.182
     type: vless
     port: 8443
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
     network: ws
     tls: true
-    servername: cf.xujiang.link
+    servername: jd.wxgqlfx.top
     ws-opts:
-      path: /youtube-由零開始
+      path: /?ed=2048
       headers:
-        host: cf.xujiang.link
-    delay: 2199
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 96
-    server: 8.222.131.102
+        host: jd.wxgqlfx.top
+    delay: 2032
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 22
+    server: 8.222.160.176
     type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
     network: ws
     tls: true
-    servername: cf.xujiang.link
+    servername: jd.wxgqlfx.top
     ws-opts:
-      path: /freecodes
+      path: /?ed=2048
       headers:
-        host: cf.xujiang.link
-    delay: 2231
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 97
-    server: 8.222.180.86
+        host: jd.wxgqlfx.top
+    delay: 1975
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 23
+    server: 8.222.219.252
     type: vless
-    port: 2087
-    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
     network: ws
     tls: true
-    servername: cf.xujiang.link
+    servername: jd.wxgqlfx.top
     ws-opts:
-      path: /youtube-由零開始
+      path: /?ed=2048
       headers:
-        host: cf.xujiang.link
-    delay: 1629
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 98
+        host: jd.wxgqlfx.top
+    delay: 2033
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 24
     server: 8.222.150.197
     type: vless
     port: 2087
@@ -1925,8 +1286,609 @@ proxies:
       path: /youtube-由零開始
       headers:
         host: cf.xujiang.link
-    delay: 1578
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 99
+    delay: 2231
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 25
+    server: 8.222.169.181
+    type: vless
+    port: 46458
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2105
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 26
+    server: 8.222.159.252
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2038
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 27
+    server: 8.222.129.32
+    type: vless
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1994
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 28
+    server: 47.236.148.174
+    type: vless
+    port: 2083
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2090
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 29
+    server: 8.222.164.44
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /freecodes
+      headers:
+        host: cf.xujiang.link
+    delay: 2128
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 30
+    server: 8.222.130.137
+    type: vless
+    port: 2083
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1875
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 31
+    server: 8.222.187.107
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1970
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 32
+    server: 47.236.174.206
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1978
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 33
+    server: 8.222.137.166
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2186
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 34
+    server: 8.222.211.124
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2261
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 35
+    server: 8.222.190.225
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2270
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 36
+    server: tg.wxgqlfx.top
+    type: vless
+    port: 443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2226
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 37
+    server: 47.236.130.95
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2052
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 38
+    server: 8.222.180.86
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2107
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 39
+    server: 47.236.161.155
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2313
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 40
+    server: 8.222.131.102
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /freecodes
+      headers:
+        host: cf.xujiang.link
+    delay: 2290
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 41
+    server: 47.236.12.195
+    type: vless
+    port: 443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2240
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 42
+    server: 47.236.7.246
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2045
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 43
+    server: 47.236.79.77
+    type: vless
+    port: 2083
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2033
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 44
+    server: 8.222.211.124
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2153
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 45
+    server: 8.222.130.137
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2106
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 46
+    server: 8.222.154.227
+    type: vless
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2236
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 47
+    server: 8.222.154.227
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2150
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 48
+    server: 8.222.187.107
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2298
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 49
+    server: 8.222.136.247
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2109
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 50
+    server: 8.222.136.196
+    type: vless
+    port: 8443
+    uuid: 86cb9a9b-dc2e-45d6-b35d-7ce1daa32a15
+    network: ws
+    tls: true
+    servername: dns68.shift.cloudns.org
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: dns68.shift.cloudns.org
+    delay: 1855
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 51
+    server: 8.222.168.234
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2435
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 52
+    server: 8.222.162.45
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2227
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 53
+    server: 8.222.221.197
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2549
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 54
+    server: 8.222.180.86
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2493
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 55
+    server: 8.222.160.61
+    type: vless
+    port: 2053
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2185
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 56
+    server: 8.222.180.86
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2364
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 57
+    server: 8.222.244.192
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2189
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 58
+    server: 8.222.219.252
+    type: vless
+    port: 2087
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2228
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 59
+    server: 8.222.164.44
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2249
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 60
+    server: 8.222.168.155
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2285
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 61
+    server: 8.222.160.61
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2594
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 62
+    server: 47.236.168.17
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2462
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 63
+    server: 8.222.227.191
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2343
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 64
+    server: 8.222.167.147
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2485
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 65
+    server: 47.236.147.146
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2287
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 66
+    server: 8.222.145.110
+    type: vless
+    port: 2087
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        host: cfed.tgzdyz2.top
+    delay: 2471
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 67
+    server: 8.222.221.197
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2462
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 68
+    server: 47.236.75.113
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2073
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 69
+    server: 8.222.168.155
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2630
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 70
+    server: 8.222.215.228
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2595
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 71
     server: 8.222.237.131
     type: vless
     port: 2087
@@ -1938,282 +1900,390 @@ proxies:
       path: /youtube-由零開始
       headers:
         host: cf.xujiang.link
-    delay: 1666
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 3
-    server: sg01.freeflyingcloud.xyz
-    type: trojan
-    country: 🇺🇸US
-    port: 35702
-    udp: true
-    password: 63db084a-e2ce-46db-9dd6-d4ed2c3d2663
-    sni: sg01.freeflyingcloud.xyz
+    delay: 2509
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 72
+    server: 8.222.129.32
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2463
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 73
+    server: 8.222.137.166
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2141
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 74
+    server: 8.222.167.8
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2481
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 75
+    server: 47.236.171.205
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1961
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 76
+    server: 47.236.165.25
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1963
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 77
+    server: 47.236.5.223
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2125
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 78
+    server: 8.222.147.203
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1974
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 79
+    server: 8.222.168.234
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2078
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 80
+    server: 8.222.229.22
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /freecodes
+      headers:
+        host: cf.xujiang.link
+    delay: 2275
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 81
+    server: 8.222.155.242
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2181
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 82
+    server: 8.222.190.225
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1885
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 83
+    server: 47.236.145.85
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2094
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 84
+    server: 8.222.175.78
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2218
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 85
+    server: 8.222.169.182
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2086
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 86
+    server: 8.222.168.24
+    type: vless
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2017
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 87
+    server: 8.222.224.163
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2179
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 88
+    server: 8.222.140.185
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2183
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 89
+    server: 8.222.155.242
+    type: vless
+    port: 2053
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1953
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 90
+    server: 8.222.184.198
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1939
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 91
+    server: 8.222.212.116
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2037
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 92
+    server: 8.222.188.56
+    type: vless
+    port: 2096
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2133
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 93
+    server: 8.222.160.61
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 1953
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 94
+    server: 8.222.229.22
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2311
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 95
+    server: 8.222.238.141
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2295
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 96
+    server: 8.222.159.252
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2127
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 97
+    server: 8.222.182.10
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2131
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 98
+    server: 8.222.129.245
+    type: vless
+    port: 8443
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2365
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 99
+    server: 8.222.168.24
+    type: vless
+    port: 2087
+    uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1
+    network: ws
+    tls: true
+    servername: cf.xujiang.link
+    ws-opts:
+      path: /youtube-由零開始
+      headers:
+        host: cf.xujiang.link
+    delay: 2294
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 2
+    server: 104.19.35.187
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: mix.tgdns68.vps666.onflashdrive.app
+    http-opts: {}
+    h2-opts: {}
     skip-cert-verify: true
-    delay: 2644
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 4
-    server: sg01.freeflyingcloud.xyz
-    type: trojan
-    country: 🇺🇸US
-    port: 35702
-    udp: true
-    password: 4378e5d1-cddd-42b0-bcc5-d4350fc59b4a
-    sni: sg01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 1023
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 5
-    server: sg01.freeflyingcloud.xyz
-    type: trojan
-    country: 🇸🇬SG
-    port: 35702
-    udp: true
-    password: 904dd222-2514-4a68-9185-32f89113afd9
-    sni: sg01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 1192
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 6
-    server: sg01.freeflyingcloud.xyz
-    type: trojan
-    country: 🇸🇬SG
-    port: 35702
-    udp: true
-    password: 89148410-25da-4dd9-8d32-247ca226e041
-    sni: sg01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 1206
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 7
-    server: sg01.freeflyingcloud.xyz
-    type: trojan
-    country: 🏁 ZZ
-    port: 35702
-    udp: true
-    password: 68dc22fb-e7f3-4806-acd7-b4182d80981e
-    sni: sg01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 1201
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 8
-    server: sg01.freeflyingcloud.xyz
-    port: 35702
-    type: trojan
-    password: d9254b13-7175-4183-a691-518f8f0409a9
-    sni: sg01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 1244
-  - name: 日本 - 东京 - Amazon Technologies Inc - 2
-    server: 13.113.218.2
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 367
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
-    server: 54.168.200.34
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 562
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 42
-    server: 52.69.81.42
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 1876
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 5
-    server: 18.183.77.187
-    type: ss
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 681
-  - name: 日本 - 东京 - Amazon.com, Inc. - 3
-    server: 57.181.36.85
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 1774
-  - name: 日本 - 东京 - Amazon.com, Inc. - 40
-    server: 43.207.175.104
-    type: ss
-    country: 🇦🇺 AU
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 278
-  - name: 日本 - 东京 - Amazon.com, Inc. - 41
-    server: jp07.421421.xyz
-    type: trojan
-    country: 🇯🇵JP
-    port: 20230
-    udp: true
-    password: 50cbd14f-187c-4a11-859e-8312917366d6
-    sni: 421421.xyz
-    skip-cert-verify: true
-    delay: 409
-  - name: 日本 - 东京 - Amazon.com, Inc. - 6
-    server: 57.180.65.163
-    type: ss
-    country: 🇧🇪 BE
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 261
-  - name: 日本 - 东京 - Oracle Corporation - 1
-    server: jp01.freeflyingcloud.xyz
-    type: trojan
-    country: 🇯🇵JP
-    port: 44402
-    udp: true
-    password: 68dc22fb-e7f3-4806-acd7-b4182d80981e
-    sni: jp01.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 2189
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 10
-    server: 47.245.54.197
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
     ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      path: /TG@dns68公益节点
       headers:
-        host: a.ssll.gay
-    delay: 1282
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 11
-    server: 47.245.15.207
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 406
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 12
-    server: 47.74.34.135
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 334
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 13
-    server: 8.209.252.13
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 689
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 14
-    server: 47.245.26.167
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 693
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 15
-    server: 47.245.10.164
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 877
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 16
-    server: 47.245.13.93
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 698
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 17
-    server: 47.245.29.126
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 631
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 18
-    server: 8.209.243.99
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 906
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 20
-    server: 47.245.30.208
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 950
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 22
-    server: 47.245.33.158
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 933
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 23
-    server: 47.245.56.50
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 940
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 24
+        HOST: mix.tgdns68.vps666.onflashdrive.app
+    delay: 2474
+  - name: 日本 - Okubo-naka - Cloudflare, Inc. - 19
     server: 1.232.40.93
     type: vless
     port: 11211
@@ -2228,8 +2298,121 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1175
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 26
+    delay: 1274
+  - name: 日本 - 东京 - Amazon Technologies Inc - 8
+    server: 13.113.218.2
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 180
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
+    server: 13.231.229.48
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 754
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 10
+    server: 3.112.214.89
+    type: ss
+    country: 🇯🇵 JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 350
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 11
+    server: 52.199.117.47
+    type: ss
+    country: 🇯🇵 JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 295
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 3
+    server: 54.168.200.34
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 592
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 30
+    server: b5d28a9.sd.gladns.com
+    type: ss
+    country: 🇨🇳CN
+    port: 8474
+    password: a501c82c72d790b8
+    cipher: chacha20-ietf-poly1305
+    delay: 2748
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 4
+    server: 52.195.237.198
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 232
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 6
+    server: 52.198.245.28
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 262
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 7
+    server: 18.183.168.44
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 366
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 9
+    server: 52.195.237.101
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 247
+  - name: 日本 - 东京 - Amazon.com, Inc. - 2
+    server: 57.180.65.163
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 369
+  - name: 日本 - 东京 - Amazon.com, Inc. - 5
+    server: 54.199.167.157
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 625
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 12
+    server: 47.245.54.197
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 366
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 13
+    server: 47.74.34.135
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 363
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 14
     server: 8.209.248.161
     type: vless
     port: 80
@@ -2240,11 +2423,35 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 441
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 27
-    server: 129.154.223.89
+    delay: 411
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 15
+    server: 47.91.29.108
     type: vless
-    port: 15800
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 1383
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 16
+    server: 47.245.11.216
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+      headers:
+        host: a.ssll.gay
+    delay: 356
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 20
+    server: 132.226.168.199
+    type: vless
+    port: 18421
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -2254,8 +2461,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 671
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 28
+    delay: 2091
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 21
     server: 132.226.168.199
     type: vless
     port: 18421
@@ -2270,11 +2477,27 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1865
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 29
-    server: 132.226.168.199
+    delay: 2131
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 23
+    server: 146.56.171.182
     type: vless
-    port: 18421
+    port: 11659
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2121
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 24
+    server: 129.154.223.89
+    type: vless
+    port: 15800
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -2284,9 +2507,9 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 1113
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 30
-    server: 47.245.42.210
+    delay: 1080
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 25
+    server: 47.245.56.50
     type: vless
     port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -2296,32 +2519,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 460
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 31
-    server: 47.74.46.84
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 502
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 32
-    server: 47.74.16.67
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 677
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 33
+    delay: 331
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 26
     server: 47.74.11.9
     type: vless
     port: 80
@@ -2332,8 +2531,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 490
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 34
+    delay: 417
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 27
     server: 47.245.7.212
     type: vless
     port: 80
@@ -2344,9 +2543,9 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 500
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 35
-    server: 47.74.16.255
+    delay: 318
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 28
+    server: 47.245.10.164
     type: vless
     port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -2356,44 +2555,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 586
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 36
-    server: 47.245.37.12
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 2487
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 37
-    server: 47.245.11.62
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 463
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 38
-    server: 47.245.11.216
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 549
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 39
+    delay: 315
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 29
     server: 47.74.5.233
     type: vless
     port: 80
@@ -2404,44 +2567,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai_8 /?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 552
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 7
-    server: 47.245.41.169
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 480
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 8
-    server: 47.245.15.236
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 417
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 9
-    server: 47.91.29.108
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-      headers:
-        host: a.ssll.gay
-    delay: 375
-  - name: 日本 - 福岡市 - Cloudflare, Inc. - 19
+    delay: 313
+  - name: 日本 - 福岡市 - Cloudflare, Inc. - 17
     server: 14.52.249.135
     type: vless
     port: 10082
@@ -2454,8 +2581,8 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1653
-  - name: 日本 - 福岡市 - Cloudflare, Inc. - 21
+    delay: 1572
+  - name: 日本 - 福岡市 - Cloudflare, Inc. - 18
     server: 121.181.87.111
     type: vless
     port: 12405
@@ -2468,8 +2595,8 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1469
-  - name: 日本 - 福岡市 - Cloudflare, Inc. - 25
+    delay: 1572
+  - name: 日本 - 福岡市 - Cloudflare, Inc. - 22
     server: 112.168.91.60
     type: vless
     port: 18888
@@ -2484,60 +2611,170 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1180
-  - name: 波兰 - 华沙 - Melbikomas UAB - 1
-    server: 217.30.10.18
-    type: ss
-    country: 🇵🇱PL
-    port: 9019
-    password: GA9KzeEgvfxNrgmM
-    cipher: aes-256-cfb
-    delay: 1868
-  - name: 澳大利亚 - 悉尼 - Amazon Technologies Inc. - 1
-    server: 13.55.157.2
-    type: trojan
-    country: 🇦🇺AU
+    delay: 390
+  - name: 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
+    server: 104.21.30.254
+    type: vmess
     port: 443
     udp: true
-    password: pj9MupyKqZ
-    sni: aka.ms
-    skip-cert-verify: true
-    delay: 759
-  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 1
-    server: 34.248.81.151
-    type: trojan
-    country: 🇮🇪IE
-    port: 22222
-    udp: true
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    delay: 809
-  - name: 瑞典 - 斯德哥尔摩 - Amazon.com, Inc. - 1
-    server: 51.21.121.78
-    type: trojan
-    country: 🇸🇪SE
-    port: 22222
-    udp: true
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    network: tcp
-    delay: 936
-  - name: 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 2
-    server: 95.164.33.62
-    type: trojan
-    country: 🇸🇪SE
-    port: 443
-    udp: true
-    password: 0b1371aa-649d-41dc-9126-338c87936500
-    sni: sourceforge.net
+    uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
     ws-opts:
-      path: /websocket
+      path: /vmess
       headers:
-        Host: se1.trojanvpn.de
+        Host: be2-vmess.sshmax.xyz
+    delay: 2121
+  - name: 法国 - 巴黎 - Akamai Technologies, Inc. - 2
+    server: 104.16.60.8
+    type: vmess
+    country: 🏁ZZ
+    port: 8880
+    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+    alterId: 0
+    cipher: auto
     network: ws
-    delay: 1550
+    servername: d396-flower-d396.megare7260.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /afrhms16v.bestxray.buzz/linkws
+      headers:
+        HOST: d396-flower-d396.megare7260.workers.dev
+    delay: 1556
+  - name: 法国 - 马赛 - Oracle Corporation - 1
+    server: achk.cloudflarest.link
+    type: vmess
+    country: 🇪🇸ES
+    port: 80
+    uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: fr.grpc.gay
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /rongseven?ed=2048
+      headers:
+        HOST: fr.grpc.gay
+    delay: 1754
+  - name: 波兰 - 华沙 - Cloudflare, Inc. - 2
+    server: 151.101.67.10
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nmsl.kp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /aries?ed=2560
+      headers:
+        HOST: nmsl.kp
+    delay: 2494
+  - name: 波兰 - 华沙 - Cloudflare, Inc. - 5
+    server: 162.159.135.61
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: open.alipay.ovh
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /aries?ed=2048
+      headers:
+        HOST: open.alipay.ovh
+    delay: 1964
+  - name: 波兰 - 华沙 - OVH SAS - 1
+    server: 188.114.98.0
+    port: 2086
+    type: vmess
+    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: admin.arzonhost.ir
+    delay: 1275
+  - name: 波兰 - 华沙 - OVH SAS - 3
+    server: admin.arzonhost.ir
+    port: 2086
+    type: vmess
+    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: admin.arzonhost.ir
+    delay: 1527
+  - name: 波兰 - 华沙 - OVH SAS - 4
+    server: 172.67.223.242
+    port: 2086
+    type: vmess
+    uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: admin.arzonhost.ir
+    delay: 2549
+  - name: 瑞典 - 斯德哥尔摩 - Aeza International LTD - 1
+    server: 80.240.124.4
+    type: vmess
+    country: 🇧🇷BR
+    port: 443
+    uuid: 1e88fa44-945e-4d6b-b256-2581f89fc3d9
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: kosar11.bounceme.net
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /@forwardv2ray
+      headers:
+        HOST: kosar11.bounceme.net
+    delay: 2255
+  - name: 瑞典 - 斯德哥尔摩 - Cloudflare, Inc. - 2
+    server: 172.67.149.124
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    udp: true
+    password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+    sni: hdfyc1.achaemenidempireofpersia.uk
+    network: grpc
+    grpc-opts:
+      grpc-service-name: xw7uebRG4KlUXGGYTVEagC5V7fI
+    delay: 1404
   - name: 美国 - Ashburn - GTHost - 3
     server: 23.154.136.2
     port: 443
@@ -2551,126 +2788,139 @@ proxies:
     network: ws
     ws-opts:
       path: /linkvws
-    delay: 1338
-  - name: 美国 - North Bergen - DigitalOcean, LLC - 4
-    server: 143.244.153.8
+    delay: 1776
+  - name: 美国 - 亚特兰大 - Akamai Technologies, Inc. - 21
+    server: 104.16.61.8
     type: vmess
+    port: 80
+    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /obdii.cfd/linkws
+      headers:
+        Host: d396-flower-d396.megare7260.workers.dev
+    delay: 1425
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 11
+    server: 34.211.194.207
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 602
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 14
+    server: us04.421421.xyz
+    type: trojan
     country: 🇺🇸US
-    port: 80
-    uuid: 003d8cf3-8a1c-4aa5-a87a-feb24452f742
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    port: 20230
+    password: ebbf7922-f9c6-4e99-b588-edd68108f269
+    sni: 421421.xyz
     skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 877
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 6
-    server: 34.95.126.8
-    type: vless
-    port: 80
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    client-fingerprint: chrome
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 985
-  - name: 美国 - 威奇托 - Cloudflare, Inc. - 13
-    server: cdnikuancdnikuan.internetcdn.ggff.net
-    type: vmess
-    country: 🏁ZZ
-    port: 8080
-    uuid: 92cb85be-007a-4a3c-9efc-33b03152a2e7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: 26022940dc1234123455cf1.us.pisces.eu.org
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /Microsoftupdate?ed=2048
-      headers:
-        HOST: 26022940dc1234123455cf1.us.pisces.eu.org
-    delay: 2107
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 12
-    server: 104.19.173.68
-    type: vmess
-    country: 🏁ZZ
-    port: 80
-    uuid: ce1afadd-835a-452e-8305-eba75f5a22c7
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: usvmqlsgf1ljbtzjun8.lovemianfei.store
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: usvmqlsgf1ljbtzjun8.lovemianfei.store
-    delay: 2410
-  - name: 美国 - 水牛城 - HostPapa - 1
-    server: 8.218.136.67
-    type: vmess
-    country: 🇸🇬SG
-    port: 34237
-    uuid: 3af4aff0-c9cf-3d44-a9c3-35c2e6290bc1
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cache-hk-2.cn-db.top
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /db00
-      headers:
-        HOST: cache-hk-2.cn-db.top
-    delay: 1423
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 10
+    udp: true
+    delay: 930
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 5
+    server: 35.87.25.21
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 581
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 6
+    server: 35.91.54.169
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 706
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 7
     server: 35.93.23.124
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 697
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 15
+    delay: 649
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 8
     server: 52.12.162.168
-    type: ss
     port: 443
-    password: amazonskr05
+    type: ss
     cipher: aes-256-cfb
-    delay: 682
+    password: amazonskr05
+    delay: 724
   - name: 美国 - 波特蘭 - Amazon.com, Inc. - 9
     server: 34.220.228.24
-    type: ss
     port: 443
-    password: amazonskr05
+    type: ss
     cipher: aes-256-cfb
+    password: amazonskr05
     delay: 591
-  - name: 美国 - 洛杉矶 - Zhihua Lu - 16
-    server: time.cloudflare.com
+  - name: 美国 - 洛杉矶 - Psychz Networks - 1
+    server: 23.227.39.11
     type: vmess
+    country: 🇨🇦CA
     port: 8080
-    uuid: 007ed733-b751-44fa-ae72-69dbc9aaeccb
+    uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
     alterId: 0
     cipher: auto
     network: ws
+    servername: dongtaiwang15.dtku47.xyz
     http-opts: {}
     h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /
+      path: /1IKYjV0r/
       headers:
-        Host: us.mooon.top
-    delay: 1493
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+        HOST: dongtaiwang15.dtku47.xyz
+    delay: 1026
+  - name: 美国 - 洛杉矶 - Psychz Networks - 12
+    server: 104.19.58.60
+    port: 8080
+    type: vmess
+    uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+      headers:
+        Host: concentrations-taxi-about-recognised.trycloudflare.com
+    delay: 1072
+  - name: 美国 - 洛杉矶 - Psychz Networks - 24
+    server: 104.17.169.220
+    type: vmess
+    country: 🏁ZZ
+    port: 8080
+    uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: booty-pensions-scheduling-blogging.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+      headers:
+        HOST: booty-pensions-scheduling-blogging.trycloudflare.com
+    delay: 1250
+  - name: 美国 - 洛杉矶 - Psychz Networks - 28
+    server: yh7.dtku41.xyz
+    port: 8080
+    type: vmess
+    uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+      headers:
+        Host: booty-pensions-scheduling-blogging.trycloudflare.com
+    delay: 2201
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
     server: 154.219.5.87
     type: vless
     port: 2053
@@ -2685,11 +2935,11 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 2315
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
-    server: 192.9.246.112
+    delay: 1915
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 43.153.80.208
     type: vless
-    port: 8443
+    port: 443
     uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
     network: ws
     tls: true
@@ -2698,8 +2948,8 @@ proxies:
       path: /?ed=2048
       headers:
         host: jd.wxgqlfx.top
-    delay: 1790
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
+    delay: 1513
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
     server: 204.93.210.131
     type: vless
     port: 2096
@@ -2711,8 +2961,21 @@ proxies:
       path: telegram🇨🇳@wangcai_8/?ed=2048
       headers:
         host: a.ssll.gay
-    delay: 1646
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
+    delay: 2242
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 192.9.246.112
+    type: vless
+    port: 8443
+    uuid: 38a2070d-a256-48f3-891b-c9b68b01c8f7
+    network: ws
+    tls: true
+    servername: jd.wxgqlfx.top
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: jd.wxgqlfx.top
+    delay: 2431
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
     server: 79.99.28.165
     type: vless
     port: 8443
@@ -2724,57 +2987,386 @@ proxies:
       path: /?ed=2048
       headers:
         host: jd.wxgqlfx.top
-    delay: 2157
-  - name: 美国 - 費利蒙 - Xentain Solutions Inc. - 11
-    server: 23.162.168.211
+    delay: 2167
+  - name: 美国 - 聖荷西 - Eons Data Communications Limited - 13
+    server: 183.240.220.199
+    type: ss
+    country: 🇨🇳CN
+    port: 58159
+    password: dadbb58a-18fa-4836-8fb1-8751de9a24a9
+    cipher: chacha20-ietf-poly1305
+    delay: 785
+  - name: 美国 - 芝加哥 - Akamai Technologies, Inc. - 23
+    server: 104.16.61.8
     type: vmess
+    country: 🏁ZZ
     port: 80
-    udp: true
-    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
     alterId: 0
     cipher: auto
     network: ws
+    servername: freevpn878.hamidimorteza680.workers.dev
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /eisasqa
-    delay: 754
-  - name: 美国 - 迈阿密 - GTHost - 2
-    server: 38.110.1.111
-    type: ss
-    country: 🏁 ZZ
-    port: 8000
-    password: KixLvKzwjekG00rm
-    cipher: aes-256-gcm
-    delay: 1084
-  - name: 英国 - 伦敦 - OVH SAS - 3
-    server: 172.67.223.242
+      path: /glweidf.cfd/linkws
+      headers:
+        HOST: freevpn878.hamidimorteza680.workers.dev
+    delay: 2130
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 15
+    server: cfcdn1.sanfencdn9.com
     type: vmess
-    country: 🇺🇸US
+    country: 🏁ZZ
+    port: 2052
+    uuid: aa385f39-d784-4b80-9725-c3904a337cf8
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: tw1bQiWSE4x.fzbqfrse.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/GQ2qE5Us9g
+      headers:
+        HOST: tw1bQiWSE4x.fzbqfrse.xyz
+    delay: 1542
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 2
+    server: speed.cloudflare.com
+    type: vmess
+    country: 🇺🇸 US
+    port: 80
+    uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: range-shape-b3fuegu.bananok182.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /hms02.fxiaomi.sbs/link
+      headers:
+        HOST: range-shape-b3fuegu.bananok182.workers.dev
+    delay: 2959
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 22
+    server: 104.18.202.250
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /hms02.fxiaomi.sbs/link
+      headers:
+        HOST: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    delay: 1558
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 25
+    server: speed.cloudflare.com
+    type: vmess
+    port: 80
+    uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 7ehhjdelicate-unit-e634.bowik41429.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /glweidf.sbs/linkws
+      headers:
+        HOST: 7ehhjdelicate-unit-e634.bowik41429.workers.dev
+    delay: 1715
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 4
+    server: 104.16.61.8
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: range-shape-b3fuegu.bananok182.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /hms02.fxiaomi.sbs/link
+      headers:
+        HOST: range-shape-b3fuegu.bananok182.workers.dev
+    delay: 971
+  - name: 美国 - 費利蒙 - Xentain Solutions Inc. - 10
+    server: 23.162.168.211
+    port: 80
+    type: vmess
+    uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /eisasqa
+    udp: true
+    delay: 610
+  - name: 美国 - 迈阿密 - Akamai Technologies, Inc. - 26
+    server: speed.cloudflare.com
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: d396-flower-d396.megare7260.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /obdii.cfd/linkws
+      headers:
+        HOST: d396-flower-d396.megare7260.workers.dev
+    delay: 2491
+  - name: 美国 - 迈阿密 - Akamai Technologies, Inc. - 27
+    server: 104.16.61.8
+    type: vmess
+    country: 🏁ZZ
+    port: 8880
+    uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: yaghoob55freenodes.repaco69437403.workers.dev
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /jahfkjha.cfd/linkws
+      headers:
+        HOST: yaghoob55freenodes.repaco69437403.workers.dev
+    delay: 1337
+  - name: 芬兰 - 赫尔辛基 - Global Internet Solutions LLC - 1
+    server: 78.153.139.25
+    type: ss
+    country: 🇳🇱NL
+    port: 32147
+    password: shQZL9C2pW14rc84mjNXzb
+    cipher: chacha20-ietf-poly1305
+    delay: 1055
+  - name: 芬兰 - 赫尔辛基 - Global Internet Solutions LLC - 2
+    server: 78.153.139.25
+    type: ss
+    country: 🇳🇱NL
+    port: 32147
+    password: M807YF1oYc9DhVonmTYecH
+    cipher: chacha20-ietf-poly1305
+    delay: 1062
+  - name: 芬兰 - 赫尔辛基 - Global Internet Solutions LLC - 5
+    server: 78.153.139.25
+    type: ss
+    country: 🇫🇮FI
+    port: 32147
+    password: x42TrxfyOtPPXJuEv4gJdt
+    cipher: chacha20-ietf-poly1305
+    delay: 1038
+  - name: 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 3
+    server: 65.109.180.131
+    port: 443
+    type: trojan
+    password: afa19815-faef-45c0-9297-4ae1d6991569
+    sni: maill.peymanribvar.xyz
+    skip-cert-verify: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: kZWbU3k5jFb03dB5w
+    udp: true
+    delay: 1420
+  - name: 芬兰 - 赫尔辛基 - Partner LLC - 4
+    server: 163.172.64.22
+    type: ss
+    country: 🇫🇷FR
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1174
+  - name: 英国 - City of London - Microsoft Corporation - 2
+    server: 52.151.74.225
+    port: 62651
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: fNDeeFNHeI9cKZkvgERq8n
+    delay: 1393
+  - name: 英国 - City of London - Microsoft Corporation - 3
+    server: 52.151.70.24
+    port: 47169
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: hVKny3qtcPWTmGpfhOmYzS
+    delay: 771
+  - name: 英国 - Rainham - OVH SAS - 1
+    server: 94.140.0.110
+    port: 8880
+    type: vmess
+    uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: food.zhaal.ir
+    delay: 2840
+  - name: 英国 - 伦敦 - Oracle Corporation - 4
+    server: uk01.freeflyingcloud.xyz
+    type: trojan
+    port: 22252
+    password: 0d5b3d65-e71e-4235-bf68-ea753ad87cc2
+    sni: uk01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1945
+  - name: 英国 - 伦敦 - Oracle Corporation - 5
+    server: uk01.freeflyingcloud.xyz
+    type: trojan
+    port: 22252
+    password: ecc532e2-3f8b-4a30-b176-78951fda6542
+    skip-cert-verify: true
+    udp: true
+    delay: 1587
+  - name: 英国 - 伦敦 - Oracle Corporation - 8
+    server: uk01.freeflyingcloud.xyz
+    type: trojan
+    country: 🇬🇧GB
+    port: 22252
+    udp: true
+    password: d9254b13-7175-4183-a691-518f8f0409a9
+    sni: uk01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    delay: 1525
+  - name: 英国 - 伦敦 - Oracle Corporation - 9
+    server: uk01.freeflyingcloud.xyz
+    type: trojan
+    country: 🇬🇧GB
+    port: 22252
+    udp: true
+    password: 68dc22fb-e7f3-4806-acd7-b4182d80981e
+    sni: uk01.freeflyingcloud.xyz
+    skip-cert-verify: true
+    delay: 2157
+  - name: 英国 - 伦敦 - OVH SAS - 6
+    server: mizban.arzonhost.ir
     port: 2086
+    type: vmess
+    uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: mizban.arzonhost.ir
+    delay: 1582
+  - name: 英国 - 伦敦 - OVH SAS - 7
+    server: 104.21.4.14
+    type: vmess
+    port: 2086
+    udp: true
     uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
     alterId: 0
     cipher: auto
     network: ws
-    servername: mizban.arzonhost.ir
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: mizban.arzonhost.ir
-    delay: 2733
-  - name: 英国 - 大曼徹斯特郡 - 27Fibre Ltd - 4
+        Host: mizban.arzonhost.ir
+    delay: 2508
+  - name: 英国 - 倫敦金融城 - GTHost - 13
+    server: 68.168.31.196
+    type: vmess
+    country: 🇬🇧GB
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 68.168.31.196
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+      headers:
+        HOST: 68.168.31.196
+    delay: 1212
+  - name: 英国 - 劍橋 - Mythic Beasts Address - 10
+    server: 104.18.19.191
+    type: vmess
+    port: 2052
+    udp: true
+    uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: helanv6cf.inekokkk.top
+    delay: 2085
+  - name: 英国 - 劍橋 - Mythic Beasts Address - 11
+    server: 104.18.36.119
+    port: 2052
+    type: vmess
+    uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: helanv6cf.inekokkk.top
+    delay: 1687
+  - name: 英国 - 大曼徹斯特郡 - 27Fibre Ltd - 16
     server: nc.cm.xiaomi-api.xyz
-    type: ss
-    country: 🇨🇳CN
     port: 19593
-    password: 2bfaafe5-d825-424e-bb6b-471c8f4daef3
+    type: ss
     cipher: chacha20-ietf-poly1305
-    delay: 1251
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 1
+    password: 2bfaafe5-d825-424e-bb6b-471c8f4daef3
+    delay: 1655
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 12
+    server: 103.14.35.56
+    type: vless
+    port: 443
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2619
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 14
     server: 172.67.174.120
     type: vless
     country: 🇺🇸US
@@ -2787,8 +3379,8 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 1344
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
+    delay: 1545
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 15
     server: mci------join.outline-vpn.cloud
     type: vless
     country: 🇺🇸US
@@ -2801,16 +3393,24 @@ proxies:
       path: /
       headers:
         Host: public.列列男事的事列上赛男85.shop
-    delay: 2211
-  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 2
-    server: 188.114.98.224
+    delay: 1478
+  - name: 荷兰 - Bergeijk - Stark Industries Solutions LTD - 1
+    server: 103.106.2.90
+    type: ss
+    country: 🇧🇩BD
+    port: 8881
+    password: oxp4Xr64OKpXV127Zwtzl14P8L8PovqbFGPHbnbhRf7CxCSW1E
+    cipher: chacha20-ietf-poly1305
+    delay: 1677
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 4
+    server: 104.17.207.13
     type: vmess
     port: 8443
     uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
     alterId: 0
     cipher: auto
     network: ws
-    servername: 6-xusersget-j0.module-soft.com
+    servername: 4-flistget-m6.module-soft.com
     http-opts: {}
     h2-opts: {}
     tls: true
@@ -2819,29 +3419,168 @@ proxies:
       path: /build
       headers:
         host: ktokr.module-soft.com
-    delay: 1314
-  - name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 1
-    server: 159.223.211.229
+    delay: 2159
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 5
+    server: 188.114.98.20
     type: vmess
-    port: 49585
-    udp: true
-    uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
     alterId: 0
     cipher: auto
-    network: http
-    servername: www.speedtest.net
-    http-opts:
-      method: GET
-      path:
-        - /
+    network: ws
+    servername: 8-flistget-l3.module-soft.com
+    http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 1016
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 10
-    server: 132.226.172.226
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 2077
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 6
+    server: 45.85.119.65
+    type: vmess
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 1-alistget-r9.module-soft.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 2129
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 7
+    server: 188.114.96.65
+    type: vmess
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 1-aitemsset-m8.module-soft.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 2318
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 8
+    server: 104.17.81.63
+    type: vmess
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 9-jusersget-d7.module-soft.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 2243
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 9
+    server: 104.18.21.81
+    type: vmess
+    port: 8443
+    uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 4-musersset-x4.module-soft.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /build
+      headers:
+        host: ktokr.module-soft.com
+    delay: 2137
+  - name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 11
+    server: www.ilovepdf.com
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: AlphaOmegaFree
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: nl-free2.alphaspeedtest.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /wss9000?ed=2560
+      headers:
+        HOST: nl-free2.alphaspeedtest.com
+    delay: 1982
+  - name: 荷兰 - 阿姆斯特丹 - GH-AMS - 10
+    server: 141.11.189.249
+    type: ss
+    country: 🇫🇷FR
+    port: 8080
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    cipher: chacha20-ietf-poly1305
+    delay: 904
+  - name: 荷兰 - 阿姆斯特丹 - GH-AMS - 3
+    server: beecomf.xyz
+    type: ss
+    country: 🇺🇸 US
+    port: 8080
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    cipher: chacha20-ietf-poly1305
+    delay: 1191
+  - name: 荷兰 - 阿姆斯特丹 - Mythic Beasts Ltd - 2
+    server: cfcdn1.sanfencdn9.com
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: helanv6cf.inekokkk.top
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: helanv6cf.inekokkk.top
+    delay: 1836
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 15
+    server: 210.111.176.108
     type: vless
-    port: 46730
+    port: 20082
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 660
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 16
+    server: 193.123.250.205
+    type: vless
+    port: 56785
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -2851,8 +3590,52 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 2070
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 11
+    delay: 583
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 17
+    server: 132.226.230.177
+    type: vless
+    port: 48132
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: a.ssll.gay
+    ws-opts:
+      path: Telegram🇨🇳 @WangCai2 /?ed=2048
+      headers:
+        Host: a.ssll.gay
+    delay: 919
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 18
+    server: 152.70.251.80
+    type: vless
+    port: 22802
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2257
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 19
+    server: 193.122.112.161
+    type: vless
+    port: 10003
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG@ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1730
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 20
     server: 146.56.161.141
     type: vless
     port: 45593
@@ -2865,11 +3648,11 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 1676
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 12
-    server: 146.56.169.23
+    delay: 1301
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 21
+    server: 132.226.172.226
     type: vless
-    port: 34237
+    port: 46730
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -2879,8 +3662,8 @@ proxies:
       path: Telegram🇨🇳 @WangCai2 /?ed=2048
       headers:
         Host: a.ssll.gay
-    delay: 2294
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
+    delay: 2209
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 22
     server: 3.38.176.54
     type: vless
     port: 8443
@@ -2895,116 +3678,114 @@ proxies:
       path: TG@ZDYZ2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1494
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 8
-    server: 193.123.250.205
-    type: vless
-    port: 56785
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    client-fingerprint: chrome
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1028
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 9
-    server: 132.226.230.177
-    type: vless
-    port: 48132
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    client-fingerprint: chrome
-    servername: a.ssll.gay
-    ws-opts:
-      path: Telegram🇨🇳 @WangCai2 /?ed=2048
-      headers:
-        Host: a.ssll.gay
-    delay: 1838
-  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 3
+    delay: 1505
+  - name: 韩国 - 京畿道 - Korea Telecom - 10
+    server: 125.141.31.73
+    type: ss
+    port: 42185
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 1046
+  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 12
+    server: 52.78.184.192
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 418
+  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 13
     server: 54.180.156.133
     port: 443
     type: ss
-    country: 🇰🇷 KR
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 2885
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 14
-    server: 43.201.69.200
-    port: 443
-    type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 612
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 15
-    server: 43.201.47.36
-    type: ss
-    country: 🇦🇺 AU
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 422
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
+    delay: 961
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 1
     server: 43.201.82.233
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 450
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
-    server: 43.201.54.34
+    delay: 614
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 11
+    server: 43.203.227.246
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 414
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 14
+    server: 3.34.95.205
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1271
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
+    server: 43.201.69.200
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 503
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
+    delay: 516
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 3
     server: 43.201.110.81
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-    delay: 484
-  - name: 韩国 - 首尔特别市 - HostHub - 13
-    server: 48.sking.app
-    type: vmess
-    country: 🇰🇷KR
+    delay: 448
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 4
+    server: 43.201.34.246
+    type: ss
     port: 443
-    uuid: 7977f3f4-009f-4408-af51-0362d2044945
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: 48.sking.app
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: 48.sking.app
-    delay: 1071
-  - name: 韩国 - 首尔特别市 - Oracle Corporation - 1
-    server: kr02.freeflyingcloud.xyz
-    type: trojan
-    country: 🇰🇷KR
-    port: 21702
     udp: true
-    password: 68dc22fb-e7f3-4806-acd7-b4182d80981e
-    sni: kr02.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 846
-  - name: 韩国 - 首尔特别市 - Oracle Corporation - 6
-    server: kr02.freeflyingcloud.xyz
-    type: trojan
-    country: 🇰🇷KR
-    port: 21702
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 418
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
+    server: 43.203.233.33
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 458
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 6
+    server: 43.203.220.68
+    type: ss
+    country: 🇦🇺 AU
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1093
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 7
+    server: 43.203.201.192
+    type: ss
+    port: 443
     udp: true
-    password: 6010117d-c631-450d-b24f-cb7e71cce238
-    sni: kr02.freeflyingcloud.xyz
-    skip-cert-verify: true
-    delay: 1574
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 379
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 8
+    server: 43.202.41.139
+    type: ss
+    port: 443
+    udp: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 474
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+    server: 43.201.54.34
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 624
+  - name: 马来西亚 - 吉隆坡 - EGIHosting - 1
+    server: 172.252.217.227
+    type: ss
+    port: 16899
+    password: Yc2CtrIz8L
+    cipher: aes-128-gcm
+    delay: 1185
