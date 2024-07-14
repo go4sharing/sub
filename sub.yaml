@@ -4,10 +4,41 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 香港 - Cloudflare, Inc. - 10
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 18
+    server: tw99.jinkela2024vpn.xyz
+    type: vmess
+    country: 🏁 ZZ
+    port: 3283
+    uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: tw99.jinkela2024vpn.xyz
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    delay: 848
+  - name: 中国 - 香港 - Cloudflare, Inc. - 1
     server: 146.56.141.168
-    port: 47590
     type: vless
+    port: 47590
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1591
+  - name: 中国 - 香港 - Cloudflare, Inc. - 10
+    server: 146.56.166.59
+    type: vless
+    port: 46060
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -16,28 +47,37 @@ proxies:
       path: /
       headers:
         Host: a.ssll.gay
-    delay: 1324
+    delay: 2021
   - name: 中国 - 香港 - Cloudflare, Inc. - 11
     server: 146.56.141.168
+    type: vless
     port: 47590
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
+    tls: true
+    servername: a.ssll.gay
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 2823
+        Host: a.ssll.gay
+    delay: 1869
   - name: 中国 - 香港 - Cloudflare, Inc. - 12
-    server: 35.229.179.98
-    port: 25775
+    server: 146.56.146.7
     type: vless
+    port: 21713
+    uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+    network: ws
+    tls: true
+    servername: dns68.putata.eu.org
+    ws-opts:
+      path: /
+      headers:
+        Host: dns68.putata.eu.org
+    delay: 2473
+  - name: 中国 - 香港 - Cloudflare, Inc. - 2
+    server: 146.56.141.168
+    type: vless
+    port: 47590
     udp: true
     uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
@@ -47,56 +87,55 @@ proxies:
       path: /?ed=2560
       headers:
         Host: go.jp980.cloudns.org
-    delay: 1483
+    delay: 2325
   - name: 中国 - 香港 - Cloudflare, Inc. - 3
-    server: 47.76.192.24
-    port: 8443
+    server: 35.229.179.98
     type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
+    port: 25775
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1166
+  - name: 中国 - 香港 - Cloudflare, Inc. - 4
+    server: 47.76.98.98
+    type: vless
+    port: 8443
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
     ws-opts:
       path: /?ed=2560
       headers:
         Host: mositr.freenods.sbs
-    udp: true
-    delay: 382
-  - name: 中国 - 香港 - Cloudflare, Inc. - 4
-    server: 47.76.26.26
-    port: 2083
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 490
+    delay: 299
   - name: 中国 - 香港 - Cloudflare, Inc. - 5
-    server: 47.76.29.115
-    port: 2087
+    server: 47.76.178.146
     type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    port: 2053
+    uuid: a27dedf5-5e63-48ec-8239-e256b1b3d310
     network: ws
     tls: true
-    servername: go.jp980.cloudns.org
+    client-fingerprint: random
+    servername: 3555.aespa.dynv6.net
     ws-opts:
-      path: /?ed=2560
+      path: /?proxyip=proxyip.us.fxxk.dedyn.io
       headers:
-        Host: go.jp980.cloudns.org
-    delay: 562
+        Host: 3555.aespa.dynv6.net
+    delay: 1727
   - name: 中国 - 香港 - Cloudflare, Inc. - 6
     server: 47.238.35.50
-    port: 2053
     type: vless
+    port: 2053
     udp: true
     uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
@@ -106,41 +145,40 @@ proxies:
       path: /?ed=2560
       headers:
         Host: go.jp980.cloudns.org
-    delay: 929
+    delay: 282
   - name: 中国 - 香港 - Cloudflare, Inc. - 7
-    server: 103.148.72.147
-    port: 1443
+    server: 47.76.192.24
     type: vless
+    port: 8443
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1053
+  - name: 中国 - 香港 - Cloudflare, Inc. - 8
+    server: 103.148.72.147
+    type: vless
+    port: 1443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
-    network: ws
     ws-opts:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1675
-  - name: 中国 - 香港 - Cloudflare, Inc. - 8
-    server: 47.76.98.98
-    port: 8443
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1425
+    delay: 1409
   - name: 中国 - 香港 - Cloudflare, Inc. - 9
-    server: 146.56.141.168
-    port: 47590
+    server: 47.76.29.115
     type: vless
+    port: 2087
     udp: true
     uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
@@ -150,243 +188,454 @@ proxies:
       path: /?ed=2560
       headers:
         Host: go.jp980.cloudns.org
-    delay: 1172
-  - name: 中国 - 香港 - CTG Server Ltd. - 2
-    server: 183.236.51.23
-    port: 51707
+    delay: 1245
+  - name: 中国 - 香港 - Cnservers LLC - 16
+    server: 120.232.153.71
     type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    country: 🇨🇳CN
+    port: 45972
+    uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
     alterId: 64
     cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 2360
-  - name: 中国 - 香港 - PCCW IMS Limited - 1
-    server: in06.dns2024.org
-    type: vmess
-    country: 🇹🇼TW
-    port: 63082
-    uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
-    alterId: 0
-    cipher: auto
     network: tcp
-    ws-path: /
-    servername: mbngfvbcvb_cdn.vbdf.lol
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 1483
-  - name: 亚美尼亚 - Yerevan - G-Core Labs S.A. - 1
-    server: 146.185.248.22
-    port: 989
+    delay: 2675
+  - name: 中国 - 香港 - Cnservers LLC - 17
+    server: 120.237.79.157
+    type: vmess
+    country: 🇨🇳CN
+    port: 32998
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 186
+  - name: 中国 - 香港 - CTG Server Ltd. - 14
+    server: 183.236.51.23
+    type: vmess
+    country: 🇨🇳CN
+    port: 54100
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1809
+  - name: 中国 - 香港 - CTG Server Ltd. - 15
+    server: 183.236.51.23
+    type: vmess
+    country: 🇨🇳CN
+    port: 45020
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 862
+  - name: 中国 - 香港 - Rackip Consultancy Pte. LTD - 13
+    server: 183.238.202.173
+    type: vmess
+    port: 54565
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    delay: 2110
+  - name: 以色列 - 特拉维夫 - EDIS Infrastructure in Israel - 1
+    server: 193.182.144.238
     type: ss
-    country: 🇷🇺 RU
+    port: 989
+    udp: true
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 2404
+    delay: 2125
   - name: 俄罗斯 - 多莫傑多沃 - Cloudflare, Inc. - 1
     server: 212.41.15.119
-    port: 443
     type: vless
+    port: 443
     uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
     tls: true
     servername: juzibaipiao.5112233.xyz
-    network: ws
     ws-opts:
       path: /
       headers:
         Host: juzibaipiao.5112233.xyz
-    delay: 2280
-  - name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
-    server: 64.227.144.190
-    port: 50690
+    delay: 1775
+  - name: 冰岛 - 哈夫纳夫约杜尔 - Advania Island ehf - 1
+    server: 37.235.49.152
     type: ss
-    country: 🇺🇸 US
-    password: Pt8rEXhZboslNIYZjj7iF9
+    country: 🇮🇸 IS
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 2399
+  - name: 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+    type: ss
+    server: 23.162.200.28
+    port: 3389
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 1034
+  - name: >-
+      土耳其 - Osmangazi - PENTECH BILISIM TEKNOLOJILERI SANAYI VE TICARET LIMITED
+      SIRKETi - 4
+    server: 31.210.50.196
+    type: ss
+    country: 🇹🇷TR
+    port: 12422
+    password: eCyhRp9I5LTxGiHipiPVko
     cipher: chacha20-ietf-poly1305
-    delay: 675
-  - name: 德国 - 法兰克福 - Leaseweb Deutschland GmbH - 8
+    delay: 1132
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 1
+    server: 108.162.192.63
+    type: vmess
+    port: 80
+    udp: true
+    uuid: 2ac4e269-1576-4f41-8c0d-6242e3c5fd8c
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: >-
+          1270.0.1.dl3.烏克爾拯救聖誕老人電影.yркельпасаетcанту.фильм.urkel.烏克爾救援.wonkacapitano.buzz.
+    delay: 1694
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 2
+    server: 104.19.244.19
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 9ac947aa-de86-41c3-9a60-4c061c7c95f0
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: >-
+      dl3.plot.cценарий.劇情голов0рез.fir3brand.煽動者追逐雷恩.погонезаpейн.wonkacapitano.buzz.
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: >-
+          dl3.plot.cценарий.劇情голов0рез.fir3brand.煽動者追逐雷恩.погонезаpейн.wonkacapitano.buzz.
+    delay: 1711
+  - name: 土耳其 - 伊兹密尔 - Stark Industries Solutions LTD - 3
+    server: 95.164.11.94
+    type: ss
+    country: 🇬🇮GI
+    port: 443
+    password: tLnjstIShztOoajOhIwfGg
+    cipher: chacha20-ietf-poly1305
+    delay: 2518
+  - name: 尼日利亚 - 拉哥斯 - ONEPROVIDER - 1
+    server: 185.255.123.90
+    type: ss
+    country: 🇳🇱 NL
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 1524
+  - name: 巴西 - 里约热内卢 - Golden Link - 1
+    server: 172.64.150.8
+    type: vmess
+    country: 🇺🇸US
+    port: 2082
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 1420
+  - name: 巴西 - 里约热内卢 - Golden Link - 2
+    server: p1.v2raybrasil.cloud
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 2304
+  - name: 巴西 - 里约热内卢 - Golden Link - 3
+    server: c3.v2raybrasil.cloud
+    type: vmess
+    country: 🇺🇸US
+    port: 2082
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 2126
+  - name: 巴西 - 里约热内卢 - Golden Link - 4
+    server: 104.26.5.32
+    type: vmess
+    country: 🇺🇸US
+    port: 2082
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 1438
+  - name: 巴西 - 里约热内卢 - Golden Link - 5
+    server: 172.64.150.8
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 1440
+  - name: 巴西 - 里约热内卢 - Golden Link - 6
+    server: 104.18.7.41
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 1453
+  - name: 巴西 - 里约热内卢 - Golden Link - 7
+    server: 104.18.37.248
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ybr.redbullplus.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: ybr.redbullplus.xyz
+    delay: 1544
+  - name: 德国 - Falkenstein - Hetzner Online GmbH - 2
+    server: 195.15.202.32
+    type: vmess
+    country: 🇨🇭CH
+    port: 41304
+    uuid: 738298b4-95b0-44ed-8f9a-a22dc0df5dd9
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1765
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 3
+    server: 3.73.45.155
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    delay: 755
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 4
+    server: 52.29.156.38
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    delay: 762
+  - name: 德国 - 法兰克福 - Leaseweb Deutschland GmbH - 1
     server: 37.1.192.68
     type: ss
     country: 🇩🇪 DE
     port: 23166
     password: 1n89nFNTdzc3mEOtkNWA9B
     cipher: chacha20-ietf-poly1305
-    delay: 994
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 1
-    server: 80.92.204.106
+    delay: 2360
+  - name: 拉脱维亚 - Riga - Azeronline Information Services - 1
+    server: 104.21.51.208
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: cb4fca5f-edf8-415b-aa8f-ac52f415296a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: de01.tradex2080.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /0fpZFB6IbpNptGAxAtI0QM
+      headers:
+        HOST: de01.tradex2080.com
+    delay: 1138
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 11
+    server: 13.212.62.12
     type: ss
-    country: 🇷🇺 RU
-    port: 9025
-    password: XPtzA9sCug3SPR4c
+    country: 🇺🇸 US
+    port: 443
+    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 1490
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 10
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9000
-    password: a3GFYt36Sm82Vys9
-    cipher: aes-256-cfb
-    delay: 1447
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 11
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9037
-    password: TN2YqghxeFDKZfLU
-    cipher: aes-256-cfb
-    delay: 2875
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 12
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9064
-    password: cp8pRSUAyLhTfVWH
-    cipher: aes-256-cfb
-    delay: 1663
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 13
-    server: 80.92.204.106
-    port: 9042
-    type: ss
-    country: 🇷🇺 RU
-    password: S7KwUu7yBy58S3Ga
-    cipher: aes-256-cfb
-    delay: 1475
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 14
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9097
-    password: Sn5B7jTqr76aCJT8
-    cipher: aes-256-cfb
-    delay: 1475
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 15
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9080
-    password: VP8ZPxQpJtZRCjfZ
-    cipher: aes-256-cfb
-    delay: 1660
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 2
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9019
-    password: GA9KzeEgvfxNrgmM
-    cipher: aes-256-cfb
-    delay: 1245
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 3
-    server: 80.92.204.106
-    port: 9031
-    type: ss
-    country: 🇷🇺 RU
-    password: BwcAUZk8hUFAkDGN
-    cipher: aes-256-cfb
-    delay: 1051
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 4
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9005
-    password: ZET59LF6DvCC8KVt
-    cipher: aes-256-cfb
-    delay: 1229
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 5
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9061
-    password: 4R3hUfZ2FHhDmNcP
-    cipher: aes-256-cfb
-    delay: 1176
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 6
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9098
-    password: aLpQtfEZe445QyHk
-    cipher: aes-256-cfb
-    delay: 1520
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 7
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9094
-    password: rpgbNnU9rDDU4aWZ
-    cipher: aes-256-cfb
-    delay: 1184
-  - name: 德国 - 法兰克福 - Stark Industries Solutions LTD - 9
-    server: 80.92.204.106
-    type: ss
-    country: 🇷🇺 RU
-    port: 9084
-    password: c3NtHJ5ujV2tGDfj
-    cipher: aes-256-cfb
-    delay: 1933
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 21
-    server: 18.139.110.249
+    delay: 348
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 3
+    server: 3.0.19.102
     type: ss
     country: 🇸🇬 SG
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 389
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 19
+    delay: 417
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 4
+    server: 54.255.232.203
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 422
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 42
+    server: 18.143.107.4
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 2622
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 43
+    server: 13.229.229.218
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 257
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 6
+    server: 13.250.14.224
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 460
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 7
+    server: 13.250.98.179
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 410
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 9
+    server: 13.250.116.168
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 350
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 10
     server: 52.77.254.168
     type: ss
     country: 🇸🇬 SG
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 317
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 20
+    delay: 351
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 44
+    server: sg007.421421.xyz
+    type: trojan
+    country: 🇸🇬SG
+    port: 20230
+    udp: true
+    password: 7b1dc908-93f8-4111-8d80-e69a9a2d5476
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 902
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 5
+    server: 54.179.241.46
+    type: ss
+    country: 🇸🇬 SG
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 407
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 8
     server: 54.251.87.81
     type: ss
     country: 🇸🇬 SG
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 411
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 24
+    delay: 353
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 32
     server: 47.236.10.182
-    port: 2087
     type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1386
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 25
-    server: 47.236.189.92
-    port: 2053
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1314
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 26
-    server: 47.236.10.182
     port: 2096
-    type: vless
     udp: true
     uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
@@ -396,565 +645,445 @@ proxies:
       path: /?ed=2560
       headers:
         Host: go.jp980.cloudns.org
-    delay: 1579
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 27
-    server: 47.236.232.148
-    port: 8443
+    delay: 1312
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 33
+    server: 47.236.189.92
     type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1586
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 28
-    server: 47.236.75.152
     port: 2053
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1559
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 34
+    server: 47.236.75.152
+    type: vless
+    port: 2053
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
     ws-opts:
       path: /?ed=2560
       headers:
         Host: mositr.freenods.sbs
-    udp: true
-    delay: 1526
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 29
-    server: 47.236.232.148
-    port: 2083
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1595
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 30
-    server: 47.236.189.92
-    port: 2053
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1709
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 31
+    delay: 1583
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 35
     server: 8.222.204.128
-    port: 443
     type: vless
+    port: 443
     uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+    network: ws
     tls: true
     servername: dns68.putata.eu.org
-    network: ws
     ws-opts:
       path: /
       headers:
         Host: dns68.putata.eu.org
-    delay: 1966
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 32
-    server: 168.138.160.54
-    port: 19081
+    delay: 1781
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 36
+    server: 47.236.80.110
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
+    port: 2096
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
     ws-opts:
-      path: /
+      path: /tg@zdyz2
       headers:
-        Host: a.ssll.gay
-    delay: 2159
+        Host: cfed.tgzdyz2.top
+    delay: 1751
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 37
+    server: 47.236.232.148
+    type: vless
+    port: 2083
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1750
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 38
+    server: 47.236.145.85
+    type: vless
+    port: 2087
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1677
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 39
+    server: 47.236.189.92
+    type: vless
+    port: 2053
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1399
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 40
+    server: 47.236.10.182
+    type: vless
+    port: 2087
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1401
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 41
+    server: 47.236.232.148
+    type: vless
+    port: 8443
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1651
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 1
     server: 103.172.116.103
     type: ss
-    country: 🏁 ZZ
-    port: 9003
-    password: JdmRK9gMEqFgs8nP
+    country: 🇸🇬 SG
+    port: 9031
+    password: BwcAUZk8hUFAkDGN
     cipher: aes-256-cfb
-    delay: 1140
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 10
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9006
-    password: FAdUvMJUq5vDgKEq
-    cipher: aes-256-cfb
-    delay: 2579
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 11
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9053
-    password: SBM7R883jBmnqe6C
-    cipher: aes-256-cfb
-    delay: 1219
+    delay: 1046
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 12
     server: 103.172.116.103
     type: ss
-    country: 🏁 ZZ
-    port: 9098
-    password: aLpQtfEZe445QyHk
+    port: 9099
+    password: 7heRqkPG3hg4UnRm
     cipher: aes-256-cfb
-    delay: 1060
+    delay: 1110
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 13
+    server: 103.172.116.103
+    type: ss
+    country: 🇸🇬SG
+    port: 9045
+    password: Lp27rqyJq72bZsqX
+    cipher: aes-256-cfb
+    delay: 2478
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 14
+    server: 103.172.116.103
+    type: ss
+    port: 9025
+    password: XPtzA9sCug3SPR4c
+    cipher: aes-256-cfb
+    delay: 1222
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 15
+    server: 103.172.116.103
+    type: ss
+    country: 🇸🇬SG
+    port: 9084
+    password: c3NtHJ5ujV2tGDfj
+    cipher: aes-256-cfb
+    delay: 1655
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 16
+    server: 103.172.116.103
+    type: ss
+    port: 9010
+    password: f63gg8EruDnUrmz4
+    cipher: aes-256-cfb
+    delay: 1201
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 17
+    server: 103.172.116.103
+    type: ss
+    port: 9043
+    udp: true
+    password: HSZuyJQcWe8dxNdF
+    cipher: aes-256-cfb
+    delay: 1093
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 18
     server: 103.172.116.103
     type: ss
     country: 🏁 ZZ
     port: 9079
     password: TPqX8edgbAURcAMb
     cipher: aes-256-cfb
-    delay: 1060
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 14
+    delay: 1236
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 19
     server: 103.172.116.103
     type: ss
-    country: 🏁 ZZ
-    port: 9080
-    password: VP8ZPxQpJtZRCjfZ
+    country: 🇸🇬SG
+    port: 9041
+    password: U6qnYRhfyDmn8sgn
     cipher: aes-256-cfb
-    delay: 1799
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 15
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9032
-    password: UWZQeLRWnkqgkseq
-    cipher: aes-256-cfb
-    delay: 2599
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 16
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9093
-    password: wfLC2y7rzZyCmuyt
-    cipher: aes-256-cfb
-    delay: 1070
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 17
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9088
-    password: f8npKgNzdkss2ytn
-    cipher: aes-256-cfb
-    delay: 1058
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 18
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9015
-    password: ZpNDDKRu9MagNvaf
-    cipher: aes-256-cfb
-    delay: 1103
+    delay: 1290
   - name: 新加坡 - 新加坡 - Melbikomas UAB - 2
     server: 103.172.116.103
     type: ss
-    country: 🏁 ZZ
-    port: 9099
-    password: 7heRqkPG3hg4UnRm
+    country: 🇸🇬 SG
+    port: 9014
+    password: KnJGad3FqTvjqbaX
     cipher: aes-256-cfb
-    delay: 1103
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 22
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9024
-    password: BejrQvtu9sqUeNuZ
-    cipher: aes-256-cfb
-    delay: 1535
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 23
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9027
-    password: EXN3S3eQpjE7EJu8
-    cipher: aes-256-cfb
-    delay: 1105
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 3
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9094
-    password: rpgbNnU9rDDU4aWZ
-    cipher: aes-256-cfb
-    delay: 1156
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 4
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9008
-    password: y9VURyNzJWNRYEGQ
-    cipher: aes-256-cfb
-    delay: 1463
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 5
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9070
-    password: bf7v334KKDV3YDhH
-    cipher: aes-256-cfb
-    delay: 1217
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 6
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9019
-    password: GA9KzeEgvfxNrgmM
-    cipher: aes-256-cfb
-    delay: 2546
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 7
-    server: 103.172.116.103
-    type: ss
-    country: 🏁 ZZ
-    port: 9073
-    password: daFYagqDdBdA6VTX
-    cipher: aes-256-cfb
-    delay: 1925
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 8
+    delay: 1108
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 20
     server: 103.172.116.103
     type: ss
     country: 🏁 ZZ
     port: 9011
     password: M3t2ZEQcMGRWBjRa
     cipher: aes-256-cfb
-    delay: 1075
-  - name: 新加坡 - 新加坡 - Melbikomas UAB - 9
+    delay: 1209
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 21
+    server: 103.172.116.103
+    type: ss
+    country: 🇸🇬SG
+    port: 9037
+    password: TN2YqghxeFDKZfLU
+    cipher: aes-256-cfb
+    delay: 1817
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 22
     server: 103.172.116.103
     type: ss
     country: 🏁 ZZ
-    port: 9007
-    password: kSPmvwdFzGMMW5pY
+    port: 9040
+    password: p9z5BVADH2YFs3MN
     cipher: aes-256-cfb
-    delay: 1229
-  - name: 日本 - 东京 - Bage Cloud LLC - 1
-    server: 47.123.4.164
-    port: 7890
-    type: http
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    tls: false
-    udp: true
-    delay: 429
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 2
-    server: 146.56.171.182
-    port: 11659
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: a.ssll.gay
-    delay: 1573
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 3
-    server: 146.56.171.182
-    port: 11659
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 888
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 4
-    server: 193.122.110.164
-    port: 25800
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1002
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 5
-    server: 152.70.245.66
-    port: 12693
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1243
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 6
-    server: 129.154.223.89
-    port: 15800
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 2477
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 7
-    server: 59.3.87.55
-    port: 39109
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: /tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 732
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 8
-    server: 193.122.125.174
-    port: 2053
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1562
-  - name: 爱尔兰 - 都柏林 - Microsoft Corporation - 1
-    server: 13.74.171.103
+    delay: 1239
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 23
+    server: 103.172.116.103
     type: ss
-    country: 🇮🇪 IE
-    port: 46541
-    password: lZJqAB32wR97hbobEBmWV0
-    cipher: chacha20-ietf-poly1305
-    delay: 796
-  - name: 爱沙尼亚 - 塔林 - Cloudflare, Inc. - 1
-    server: 38.180.10.150
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: /tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1666
-  - name: 瑞典 - 斯德哥尔摩 - Amazon.com, Inc. - 1
-    server: 13.60.107.151
-    type: trojan
-    country: 🇺🇸 US
-    port: 22222
-    password: telegram-id-directvpn
-    skip-cert-verify: true
-    udp: true
-    delay: 871
-  - name: 立陶宛 - 维尔纽斯 - EDIS GmbH - 1
-    server: 192.36.61.59
-    port: 989
-    type: ss
-    country: 🇸🇪 SE
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1838
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 92
-    server: 154.17.227.26
-    port: 18618
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1423
-  - name: 美国 - 圣安东尼奥 - Dedicated.com - 4
-    type: vmess
-    network: ws
-    server: 104.19.45.11
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    tls: false
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: ip13.freegradely.xyz
-      path: github.com/Alvin9999
-    delay: 939
-  - name: 美国 - 洛杉矶 - Global Communication Network Limited - 28
-    server: speedtest-rtc.xtspeeder002.xyz
-    port: 37041
-    type: ss
-    cipher: aes-256-ctr
-    password: JHe7ay97yuw8ue
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 607ab498e8.v4-dy.ixigua.com
-    delay: 891
-  - name: 美国 - 洛杉矶 - HostPapa - 106
-    server: 156.251.176.112
-    port: 38337
-    type: vless
-    client-fingerprint: chrome
-    uuid: 7509f896-2115-4420-b487-501c9103bebd
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /vless?ed=2560
-      headers:
-        Host: ccs.443888.xyz
-    delay: 1892
-  - name: 美国 - 洛杉矶 - HostPapa - 107
-    server: 156.251.176.11
-    port: 60559
-    type: vless
-    client-fingerprint: chrome
-    uuid: 7509f896-2115-4420-b487-501c9103bebd
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /vless?ed=2560
-      headers:
-        Host: ccs.443888.xyz
-    delay: 1696
-  - name: 美国 - 洛杉矶 - NetLab Global - 3
-    server: j0078.ruixiangseo.xyz
-    type: trojan
     country: 🏁 ZZ
-    port: 43002
-    password: 4CCF9A9AB80E9889198B02ECE7FA08DD
-    sni: j0078.ruixiangseo.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 542
-  - name: 美国 - 洛杉矶 - Psychz Networks - 5
-    type: vmess
-    network: ws
-    server: 104.19.46.36
-    port: 2086
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    tls: false
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: ip13.freegradely.xyz
-      path: github.com/Alvin9999
-    delay: 1093
-  - name: 美国 - 洛杉矶 - Psychz Networks - 6
-    server: 104.19.47.27
-    port: 2086
-    type: vmess
-    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip2.1457230.xyz
-    delay: 820
-  - name: 美国 - 洛杉矶 - Psychz Networks - 7
-    server: 104.19.55.49
-    port: 2052
-    type: vmess
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: cdn1.freegradely.xyz
-    delay: 924
-  - name: 美国 - 洛杉矶 - Psychz Networks - 8
-    server: 104.19.38.8
-    port: 2052
-    type: vmess
-    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: cdn1.freegradely.xyz
-    delay: 794
-  - name: 美国 - 纽约 - GTHost - 1
-    server: 38.99.82.85
+    port: 9003
+    password: JdmRK9gMEqFgs8nP
+    cipher: aes-256-cfb
+    delay: 1868
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 24
+    server: 103.172.116.103
     type: ss
-    country: 🇺🇸 US
-    port: 20002
-    password: ̈́m͒ߍM֡Tyۙҫ1͛P̎
-    cipher: chacha20-ietf-poly1305
-    delay: 664
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
-    server: 204.93.210.208
-    port: 8443
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: a.ssll.gay
-    tls: true
-    ws-opts:
-      headers:
-        Host: a.ssll.gay
-      path: Twitterfreecodes
-    delay: 1024
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
-    server: 185.148.104.199
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1269
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
-    server: 43.153.103.203
+    country: 🇸🇬SG
+    port: 9032
+    password: UWZQeLRWnkqgkseq
+    cipher: aes-256-cfb
+    delay: 1339
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 25
+    server: 103.172.116.103
+    type: ss
+    port: 9057
+    password: wjTugX3ZtHMB9c3Z
+    cipher: aes-256-cfb
+    delay: 1255
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 26
+    server: 103.172.116.103
+    type: ss
+    port: 9015
+    password: ZpNDDKRu9MagNvaf
+    cipher: aes-256-cfb
+    delay: 1236
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 27
+    server: 103.172.116.103
+    type: ss
+    port: 9026
+    udp: true
+    password: QWDDvVE9npNurQfA
+    cipher: aes-256-cfb
+    delay: 1311
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 28
+    server: 103.172.116.103
+    type: ss
+    port: 9005
+    password: ZET59LF6DvCC8KVt
+    cipher: aes-256-cfb
+    delay: 1209
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 29
+    server: 103.172.116.103
+    type: ss
+    port: 9097
+    password: Sn5B7jTqr76aCJT8
+    cipher: aes-256-cfb
+    delay: 1259
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 30
+    server: 103.172.116.103
+    type: ss
+    port: 9030
+    password: GeregetR8cvQHzYr
+    cipher: aes-256-cfb
+    delay: 1064
+  - name: 新加坡 - 新加坡 - Melbikomas UAB - 31
+    server: 103.172.116.103
+    type: ss
+    port: 9098
+    udp: true
+    password: aLpQtfEZe445QyHk
+    cipher: aes-256-cfb
+    delay: 2142
+  - name: 新加坡 - 新加坡 - Oracle Corporation - 45
+    server: osg4.dean52.top
+    type: vmess
+    country: 🇺🇸US
     port: 443
+    uuid: 04198516-1acb-429e-f222-d344ed1cd9da
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: osg4.dean52.top
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /04198516-1acb-429e-f222-d344ed1cd9da
+      headers:
+        HOST: osg4.dean52.top
+    delay: 1918
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 11
+    server: jp006.421421.xyz
+    type: trojan
+    country: 🇯🇵JP
+    port: 20230
+    udp: true
+    password: 7b1dc908-93f8-4111-8d80-e69a9a2d5476
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 1147
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 5
+    server: 54.95.211.49
+    type: ss
+    country: 🇯🇵 JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 279
+  - name: 日本 - 东京 - Amazon.com, Inc. - 12
+    server: jp005.421421.xyz
+    type: trojan
+    country: 🇯🇵JP
+    port: 20230
+    udp: true
+    password: 7b1dc908-93f8-4111-8d80-e69a9a2d5476
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 915
+  - name: 日本 - 东京 - Amazon.com, Inc. - 3
+    server: 57.180.19.240
+    type: ss
+    country: 🇧🇪 BE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 310
+  - name: 日本 - 东京 - Amazon.com, Inc. - 4
+    server: 54.250.63.178
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 385
+  - name: 日本 - 东京 - Stark Industries Solutions LTD - 2
+    server: 198.41.192.162
+    type: vmess
+    port: 80
+    udp: true
+    uuid: 7496e6b1-7eee-49c5-9f74-56428d3b44d4
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: dl3.守望者.hаблюдатели.watchers.aгентразведки.偵察探員.wonkacapitano.buzz.
+    delay: 1453
+  - name: 日本 - 大阪市 - Akamai Technologies, Inc. - 1
+    server: cfcdn3.sanfencdn9.com
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: a174de4b-6126-4b88-b21e-1388004a2e02
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: kvjqqknzjp6.yofnhkfc.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/Zo98PYfE
+      headers:
+        HOST: kvjqqknzjp6.yofnhkfc.xyz
+    delay: 1608
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 10
+    server: 193.122.125.174
     type: vless
+    port: 2053
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 2269
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 6
+    server: 59.3.87.55
+    type: vless
+    port: 39109
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: /tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1300
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 7
+    server: 129.154.223.89
+    type: vless
+    port: 15800
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1891
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 8
+    server: 146.56.171.182
+    type: vless
+    port: 11659
     udp: true
     uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
@@ -964,465 +1093,11 @@ proxies:
       path: /?ed=2560
       headers:
         Host: go.jp980.cloudns.org
-    delay: 1269
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
-    server: 89.116.161.250
-    port: 8443
+    delay: 1502
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 9
+    server: 222.113.18.206
     type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1439
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
-    server: 216.205.52.109
-    port: 2083
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1414
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
-    server: 204.93.210.80
-    port: 2096
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    servername: a.ssll.gay
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1672
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
-    server: 204.93.210.49
-    port: 2096
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    servername: a.ssll.gay
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 802
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
-    server: 14.102.229.66
-    port: 2087
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    tls: true
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1622
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
-    server: 130.250.137.196
-    port: 2053
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    network: ws
-    tls: true
-    servername: juzibaipiao.5112233.xyz
-    ws-opts:
-      path: /
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1401
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
-    server: 64.94.86.147
-    port: 2053
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: a.ssll.gay
-    tls: true
-    ws-opts:
-      headers:
-        Host: a.ssll.gay
-      path: twitterfreecodes
-    delay: 1258
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
-    server: 155.46.213.166
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1538
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
-    server: 204.93.210.184
-    port: 8443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1527
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
-    server: 130.250.137.196
-    port: 2053
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1280
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
-    server: 155.46.213.37
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1576
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
-    server: 89.116.161.250
-    port: 8443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1446
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
-    server: 155.46.213.9
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: /tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1018
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
-    server: 205.233.181.41
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 969
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
-    server: 204.93.210.132
-    port: 2096
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: a.ssll.gay
-    delay: 1284
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
-    server: 167.68.11.106
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1585
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
-    server: 45.80.110.130
-    port: 2087
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: a.ssll.gay
-    tls: true
-    ws-opts:
-      headers:
-        Host: a.ssll.gay
-      path: Twitterfreecodes
-    delay: 1280
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
-    server: 45.80.110.209
-    port: 2083
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: a.ssll.gay
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      headers:
-        Host: a.ssll.gay
-      path: twitterfreecodes
-    delay: 1375
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
-    server: 66.235.200.1
-    port: 8443
-    type: vless
-    network: ws
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    servername: 698Aa4AA.Swz-UUz-316.PageS.Dev
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      headers:
-        Host: 698Aa4AA.Swz-UUz-316.PageS.Dev
-      path: /
-    delay: 1204
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
-    server: 45.159.217.54
-    port: 2087
-    type: vless
-    network: ws
-    uuid: 775213ac-3976-439a-8977-3277c0e4735d
-    servername: fq521.6789.cloudns.be
-    tls: true
-    ws-opts:
-      headers:
-        Host: fq521.6789.cloudns.be
-      path: Twitter苏小柠
-    delay: 1403
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
-    type: vless
-    network: ws
-    server: 209.46.30.217
-    port: 8443
-    uuid: 775213ac-3976-439a-8977-3277c0e4735d
-    servername: fq521.6789.cloudns.be
-    tls: true
-    delay: 1225
-    ws-opts:
-      headers:
-        Host: fq521.6789.cloudns.be
-      path: Twitter苏小柠
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
-    server: 94.140.0.0
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 652
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
-    server: 94.140.0.99
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1176
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
-    server: 94.140.0.138
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 941
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
-    server: 147.78.140.193
-    port: 2096
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 938
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
-    server: 147.78.140.5
-    port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 766
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
-    server: 147.78.140.193
-    port: 2096
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: /tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1128
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
-    server: 147.78.140.30
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1157
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
-    server: 64.94.86.147
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 813
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
-    server: 64.94.86.123
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 958
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
-    server: 185.18.250.138
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 710
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
-    server: 185.18.250.131
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1086
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
-    server: 140.99.233.156
-    port: 2087
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1122
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
-    server: 45.80.111.8
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1228
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
-    server: 45.80.111.199
-    port: 443
-    type: vless
+    port: 38961
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
     tls: true
@@ -1432,477 +1107,3573 @@ proxies:
       headers:
         Host: cfed.tgzdyz2.top
     delay: 1070
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
-    server: 188.244.122.210
-    port: 443
+  - name: 法国 - 奧奈叢林 - Cloudflare, Inc. - 1
+    server: 46.105.170.124
     type: vless
+    port: 2053
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
-    network: ws
     ws-opts:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1038
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    delay: 1512
+  - name: 爱尔兰 - 都柏林 - Stark Industries Solutions LTD - 1
+    server: 66.81.247.246
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 28f8d51a-0e75-4fc3-a36e-03bf4e4d0910
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: >-
+      127.0.0.1.太空學員.jосмическийкадет.spacecadet.安靜的地方第天day0ne.wonkacapitano.buzz.
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: >-
+          127.0.0.1.太空學員.jосмическийкадет.spacecadet.安靜的地方第天day0ne.wonkacapitano.buzz.
+    delay: 1881
+  - name: 爱沙尼亚 - 塔林 - Cloudflare, Inc. - 1
+    server: 38.180.10.150
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: /tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1568
+  - name: 瑞典 - 斯德哥尔摩 - Amazon.com - 3
+    server: 16.171.204.16
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    delay: 1057
+  - name: 瑞典 - 斯德哥尔摩 - Amazon.com, Inc. - 4
+    server: 51.20.237.232
+    type: trojan
+    country: 🇸🇪SE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    delay: 960
+  - name: 瑞典 - 斯德哥尔摩 - M247 Europe SRL - 2
+    server: 176.97.77.71
+    type: ss
+    country: 🇬🇧GB
+    port: 31778
+    password: O94mAncNLvAihvJBCOnA3L
+    cipher: chacha20-ietf-poly1305
+    delay: 757
+  - name: 瑞典 - 斯德哥尔摩 - Oracle Corporation - 1
+    server: swejs.lydurlclub.top
+    type: trojan
+    country: 🇸🇬SG
+    port: 443
+    udp: true
+    password: b06d7f06-51ba-402d-991a-3fe1e432247c
+    skip-cert-verify: true
+    delay: 1115
+  - name: 美国 - Ashburn - GTHost - 4
+    server: 38.86.135.141
+    type: ss
+    port: 8882
+    password: kDWvXYZoTBcGkC4
+    cipher: aes-256-gcm
+    delay: 664
+  - name: 美国 - 丹佛 - GTHost - 231
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8080
+    password: KixLvKzwjekG00rm
+    cipher: aes-256-gcm
+    delay: 2886
+  - name: 美国 - 丹佛 - GTHost - 232
+    server: 69.50.95.53
+    type: ss
+    country: 🇺🇸US
+    port: 5498
+    password: lGqs95QkFHo2NV
+    cipher: aes-256-gcm
+    delay: 802
+  - name: 美国 - 丹佛 - GTHost - 234
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8000
+    password: KixLvKzwjekG00rm
+    cipher: aes-256-gcm
+    delay: 1883
+  - name: 美国 - 丹佛 - GTHost - 235
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 9102
+    password: e4FCWrgpkji3QY
+    cipher: aes-256-gcm
+    delay: 2714
+  - name: 美国 - 丹佛 - GTHost - 236
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 7306
+    password: FoOiGlkAA9yPEGP
+    cipher: aes-256-gcm
+    delay: 1950
+  - name: 美国 - 丹佛 - GTHost - 237
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8882
+    password: kDWvXYZoTBcGkC4
+    cipher: aes-256-gcm
+    delay: 1429
+  - name: 美国 - 丹佛 - GTHost - 238
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 9090
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 906
+  - name: 美国 - 丹佛 - GTHost - 239
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 5500
+    password: KixLvKzwjekG00rm
+    cipher: aes-256-gcm
+    delay: 1485
+  - name: 美国 - 丹佛 - GTHost - 240
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 6379
+    password: zDNVedRFPQexG9v
+    cipher: aes-256-gcm
+    delay: 1700
+  - name: 美国 - 丹佛 - GTHost - 241
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 4444
+    password: pKEW8JPByTVTLtM
+    cipher: aes-256-gcm
+    delay: 1187
+  - name: 美国 - 丹佛 - GTHost - 242
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 7001
+    password: RexnBgU7EV5ADxG
+    cipher: aes-256-gcm
+    delay: 1704
+  - name: 美国 - 丹佛 - GTHost - 243
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 5000
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 1429
+  - name: 美国 - 丹佛 - GTHost - 244
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 6679
+    password: TEzjfAYq2IjtuoS
+    cipher: aes-256-gcm
+    delay: 1119
+  - name: 美国 - 丹佛 - GTHost - 245
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 3389
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 1867
+  - name: 美国 - 丹佛 - GTHost - 246
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 5601
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 1556
+  - name: 美国 - 丹佛 - GTHost - 247
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8118
+    password: cdBIDV42DCwnfIN
+    cipher: aes-256-gcm
+    delay: 1677
+  - name: 美国 - 丹佛 - GTHost - 248
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 2375
+    password: faBAoD54k87UJG7
+    cipher: aes-256-gcm
+    delay: 1355
+  - name: 美国 - 丹佛 - GTHost - 249
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 9101
+    password: e4FCWrgpkji3QY
+    cipher: aes-256-gcm
+    delay: 2112
+  - name: 美国 - 丹佛 - GTHost - 250
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 2376
+    password: faBAoD54k87UJG7
+    cipher: aes-256-gcm
+    delay: 1906
+  - name: 美国 - 丹佛 - GTHost - 251
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8119
+    password: cdBIDV42DCwnfIN
+    cipher: aes-256-gcm
+    delay: 1048
+  - name: 美国 - 丹佛 - GTHost - 252
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 8009
+    password: XKFKl2rULjIp74
+    cipher: aes-256-gcm
+    delay: 1348
+  - name: 美国 - 丹佛 - GTHost - 253
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸US
+    port: 445
+    password: zDNVedRFPQexG9v
+    cipher: aes-256-gcm
+    delay: 1352
+  - name: 美国 - 丹佛 - GTHost - 3
+    server: 69.50.95.191
+    type: ss
+    country: 🇺🇸 US
+    port: 5600
+    password: Y6R9pAtvxxzmGC
+    cipher: aes-256-gcm
+    delay: 2169
+  - name: 美国 - 圣克拉拉 - HostPapa - 226
+    server: 162.159.128.248
+    type: vmess
+    port: 80
+    uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn1.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn1.hostmjj.com
+    delay: 620
+  - name: 美国 - 圣克拉拉 - HostPapa - 256
+    server: 172.64.229.209
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn2.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn2.hostmjj.com
+    delay: 1814
+  - name: 美国 - 圣克拉拉 - HostPapa - 261
+    server: 162.159.129.138
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn2.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn2.hostmjj.com
+    delay: 1050
+  - name: 美国 - 圣克拉拉 - HostPapa - 269
+    server: 162.159.128.105
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn2.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn2.hostmjj.com
+    delay: 731
+  - name: 美国 - 圣克拉拉 - HostPapa - 270
+    server: 162.159.136.98
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn2.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn2.hostmjj.com
+    delay: 843
+  - name: 美国 - 圣克拉拉 - HostPapa - 271
+    server: 162.159.133.109
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rn2.hostmjj.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rn2.hostmjj.com
+    delay: 725
+  - name: 美国 - 圣安东尼奥 - Dedicated.com - 51
+    server: 104.19.46.103
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 765
+  - name: 美国 - 圣安东尼奥 - Dedicated.com - 54
+    server: 104.19.47.45
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 900
+  - name: 美国 - 圣安东尼奥 - Dedicated.com - 56
+    server: 104.19.32.216
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 1049
+  - name: 美国 - 圣安东尼奥 - Dedicated.com - 64
+    server: 104.19.59.89
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 1113
+  - name: 美国 - 圣安东尼奥 - Dedicated.com - 73
+    server: 104.19.46.33
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip13.freegradely.xyz
+    delay: 844
+  - name: 美国 - 德雷珀 - FiberState, LLC - 230
+    server: 183.232.139.22
+    type: trojan
+    country: 🇨🇳CN
+    port: 40081
+    udp: true
+    password: GsKYmYOE
+    skip-cert-verify: true
+    delay: 1524
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 5
+    server: russia.com
+    type: vmess
+    port: 80
+    uuid: 06d65689-a12a-467c-9ff8-0363fe90c0b4
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /api/v3/download.getFile
+      headers:
+        Host: sssub.v2.001.ssrsub.com
+    delay: 2530
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 233
+    server: 34.216.76.22
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 661
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 259
+    server: us003.421421.xyz
+    type: trojan
+    country: 🇺🇸US
+    port: 20230
+    udp: true
+    password: 7b1dc908-93f8-4111-8d80-e69a9a2d5476
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 909
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 260
+    server: us004.421421.xyz
+    type: trojan
+    country: 🇺🇸US
+    port: 20230
+    udp: true
+    password: 7b1dc908-93f8-4111-8d80-e69a9a2d5476
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 995
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 99
+    server: 52.25.101.93
+    type: ss
+    country: 🇺🇸 US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 624
+  - name: 美国 - 洛杉矶 - Clouvider Limited - 2
+    server: usa.lydurlclub.top
+    type: trojan
+    country: 🇸🇬SG
+    port: 443
+    udp: true
+    password: b06d7f06-51ba-402d-991a-3fe1e432247c
+    skip-cert-verify: true
+    delay: 1064
+  - name: 美国 - 洛杉矶 - Global Communication Network Limited - 224
+    server: speedtest-rtc.xtspeeder002.xyz
+    type: ss
+    port: 37041
+    password: JHe7ay97yuw8ue
+    cipher: aes-256-ctr
+    plugin: obfs
+    plugin-opts:
+      host: 607ab498e8.v4-dy.ixigua.com
+      mode: http
+    delay: 1019
+  - name: 美国 - 洛杉矶 - HostPapa - 200
+    server: 47.76.154.53
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 921
+  - name: 美国 - 洛杉矶 - HostPapa - 206
+    server: 125.129.129.66
+    type: vless
+    port: 12245
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1203
+  - name: 美国 - 洛杉矶 - HostPapa - 211
+    server: 132.226.229.248
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1739
+  - name: 美国 - 洛杉矶 - HostPapa - 212
+    server: 132.226.22.106
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1825
+  - name: 美国 - 洛杉矶 - HostPapa - 213
+    server: 193.123.225.106
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 2028
+  - name: 美国 - 洛杉矶 - HostPapa - 214
+    server: 193.123.244.37
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1742
+  - name: 美国 - 洛杉矶 - HostPapa - 216
+    server: 1.220.146.22
+    type: vless
+    port: 30027
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1327
+  - name: 美国 - 洛杉矶 - HostPapa - 217
+    server: 156.251.176.112
+    type: vless
+    port: 38337
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1034
+  - name: 美国 - 洛杉矶 - HostPapa - 220
+    server: 14.45.190.97
+    type: vless
+    port: 12371
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1277
+  - name: 美国 - 洛杉矶 - HostPapa - 221
+    server: 156.251.176.11
+    type: vless
+    port: 60559
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1216
+  - name: 美国 - 洛杉矶 - HostPapa - 222
+    server: 47.76.194.234
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 1097
+  - name: 美国 - 洛杉矶 - HostPapa - 223
+    server: 8.210.109.11
+    type: vless
+    port: 34237
+    uuid: 7509f896-2115-4420-b487-501c9103bebd
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless?ed=2560
+      headers:
+        Host: ccs.443888.xyz
+    delay: 994
+  - name: 美国 - 洛杉矶 - Psychz Networks - 1
+    server: 23.227.38.3
+    type: vmess
+    country: 🇨🇦CA
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip1.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip1.1457230.xyz
+    delay: 994
+  - name: 美国 - 洛杉矶 - Psychz Networks - 10
+    server: 104.26.0.56
+    type: vmess
+    country: 🇺🇸US
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 1312
+  - name: 美国 - 洛杉矶 - Psychz Networks - 11
+    server: 172.64.167.22
+    type: vmess
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 748
+  - name: 美国 - 洛杉矶 - Psychz Networks - 12
+    server: 172.64.233.9
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1515
+  - name: 美国 - 洛杉矶 - Psychz Networks - 13
+    server: 172.64.166.2
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1048
+  - name: 美国 - 洛杉矶 - Psychz Networks - 14
+    server: 104.26.7.132
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 1640
+  - name: 美国 - 洛杉矶 - Psychz Networks - 15
+    server: 172.64.233.37
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1499
+  - name: 美国 - 洛杉矶 - Psychz Networks - 16
+    server: 172.64.233.27
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1908
+  - name: 美国 - 洛杉矶 - Psychz Networks - 17
+    server: 172.64.233.32
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 2126
+  - name: 美国 - 洛杉矶 - Psychz Networks - 18
+    server: 172.64.167.5
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 836
+  - name: 美国 - 洛杉矶 - Psychz Networks - 19
+    server: 172.64.167.35
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 724
+  - name: 美国 - 洛杉矶 - Psychz Networks - 20
+    server: 172.64.167.29
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 646
+  - name: 美国 - 洛杉矶 - Psychz Networks - 21
+    server: 172.64.166.33
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 862
+  - name: 美国 - 洛杉矶 - Psychz Networks - 22
+    server: 104.26.7.132
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 1162
+  - name: 美国 - 洛杉矶 - Psychz Networks - 225
+    server: 104.17.106.171
+    type: vmess
+    port: 2052
+    udp: true
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: cdn2.freegradely.xyz
+    delay: 733
+  - name: 美国 - 洛杉矶 - Psychz Networks - 227
+    server: 23.227.38.6
+    type: vmess
+    country: 🇨🇦CA
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip005.dtku47.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip005.dtku47.xyz
+    delay: 757
+  - name: 美国 - 洛杉矶 - Psychz Networks - 228
+    server: 23.227.38.5
+    type: vmess
+    country: 🇨🇦CA
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip005.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip005.freegradely.xyz
+    delay: 2007
+  - name: 美国 - 洛杉矶 - Psychz Networks - 229
+    server: 23.227.38.13
+    type: vmess
+    country: 🇨🇦CA
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn2.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn2.freegradely.xyz
+    delay: 720
+  - name: 美国 - 洛杉矶 - Psychz Networks - 23
+    server: 172.64.166.9
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 719
+  - name: 美国 - 洛杉矶 - Psychz Networks - 24
+    server: 172.64.99.22
+    type: vmess
+    country: 🇺🇸US
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip2.1457230.xyz
+    delay: 769
+  - name: 美国 - 洛杉矶 - Psychz Networks - 25
+    server: 172.64.233.24
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1616
+  - name: 美国 - 洛杉矶 - Psychz Networks - 254
+    server: 172.64.99.22
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 868
+  - name: 美国 - 洛杉矶 - Psychz Networks - 257
+    server: 172.64.198.249
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 812
+  - name: 美国 - 洛杉矶 - Psychz Networks - 258
+    server: 172.64.175.88
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 754
+  - name: 美国 - 洛杉矶 - Psychz Networks - 26
+    server: 172.64.233.15
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1728
+  - name: 美国 - 洛杉矶 - Psychz Networks - 262
+    server: 104.17.106.151
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 1013
+  - name: 美国 - 洛杉矶 - Psychz Networks - 263
+    server: 104.19.42.79
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn3.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn3.freegradely.xyz
+    delay: 931
+  - name: 美国 - 洛杉矶 - Psychz Networks - 264
+    server: 104.16.148.244
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip006.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip006.freegradely.xyz
+    delay: 1068
+  - name: 美国 - 洛杉矶 - Psychz Networks - 265
+    server: 104.19.38.62
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip006.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip006.freegradely.xyz
+    delay: 936
+  - name: 美国 - 洛杉矶 - Psychz Networks - 266
+    server: 104.20.17.186
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 1143
+  - name: 美国 - 洛杉矶 - Psychz Networks - 267
+    server: 104.19.46.103
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 733
+  - name: 美国 - 洛杉矶 - Psychz Networks - 268
+    server: 104.19.21.240
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn3.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn3.freegradely.xyz
+    delay: 745
+  - name: 美国 - 洛杉矶 - Psychz Networks - 27
+    server: 172.64.167.19
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 683
+  - name: 美国 - 洛杉矶 - Psychz Networks - 272
+    server: 104.19.51.232
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip005.dtku47.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip005.dtku47.xyz
+    delay: 676
+  - name: 美国 - 洛杉矶 - Psychz Networks - 28
+    server: 172.64.233.17
+    type: vmess
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1540
+  - name: 美国 - 洛杉矶 - Psychz Networks - 29
+    server: 172.64.166.22
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 713
+  - name: 美国 - 洛杉矶 - Psychz Networks - 30
+    server: 172.64.233.7
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 1811
+  - name: 美国 - 洛杉矶 - Psychz Networks - 31
+    server: 172.64.166.12
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 779
+  - name: 美国 - 洛杉矶 - Psychz Networks - 32
+    server: 172.64.166.16
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 679
+  - name: 美国 - 洛杉矶 - Psychz Networks - 33
+    server: 172.64.166.28
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 819
+  - name: 美国 - 洛杉矶 - Psychz Networks - 34
+    server: 172.64.167.44
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 826
+  - name: 美国 - 洛杉矶 - Psychz Networks - 36
+    server: 104.26.0.50
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip5-4.freegradely.xyz
+    delay: 1384
+  - name: 美国 - 洛杉矶 - Psychz Networks - 37
+    server: 104.19.58.175
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 742
+  - name: 美国 - 洛杉矶 - Psychz Networks - 38
+    server: 104.19.38.12
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 923
+  - name: 美国 - 洛杉矶 - Psychz Networks - 39
+    server: 104.19.45.47
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip2.1457230.xyz
+    delay: 799
+  - name: 美国 - 洛杉矶 - Psychz Networks - 40
+    server: 104.19.21.73
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 796
+  - name: 美国 - 洛杉矶 - Psychz Networks - 41
+    server: 104.19.123.11
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip2.1457230.xyz
+    delay: 730
+  - name: 美国 - 洛杉矶 - Psychz Networks - 42
+    server: 104.19.21.220
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn2.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn2.freegradely.xyz
+    delay: 731
+  - name: 美国 - 洛杉矶 - Psychz Networks - 43
+    server: 104.20.25.146
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 1493
+  - name: 美国 - 洛杉矶 - Psychz Networks - 44
+    server: 104.19.38.8
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 796
+  - name: 美国 - 洛杉矶 - Psychz Networks - 45
+    server: 104.19.45.90
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 931
+  - name: 美国 - 洛杉矶 - Psychz Networks - 46
+    server: 104.19.47.77
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip1.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip1.1457230.xyz
+    delay: 932
+  - name: 美国 - 洛杉矶 - Psychz Networks - 47
+    server: 104.19.21.71
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 893
+  - name: 美国 - 洛杉矶 - Psychz Networks - 48
+    server: 104.19.47.122
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 1117
+  - name: 美国 - 洛杉矶 - Psychz Networks - 49
+    server: 104.19.47.80
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip2.1457230.xyz
+    delay: 1083
+  - name: 美国 - 洛杉矶 - Psychz Networks - 50
+    server: 104.19.47.79
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 716
+  - name: 美国 - 洛杉矶 - Psychz Networks - 52
+    server: 104.19.47.32
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 798
+  - name: 美国 - 洛杉矶 - Psychz Networks - 53
+    server: 104.19.46.22
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 835
+  - name: 美国 - 洛杉矶 - Psychz Networks - 55
+    server: 104.19.32.46
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip002-3.dtku47.xyz
+    delay: 721
+  - name: 美国 - 洛杉矶 - Psychz Networks - 57
+    server: 104.19.47.88
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip1.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip1.1457230.xyz
+    delay: 841
+  - name: 美国 - 洛杉矶 - Psychz Networks - 58
+    server: 104.19.46.27
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip1.1457230.xyz
+    delay: 918
+  - name: 美国 - 洛杉矶 - Psychz Networks - 59
+    server: 104.19.38.88
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip5-4.freegradely.xyz
+    delay: 784
+  - name: 美国 - 洛杉矶 - Psychz Networks - 6
+    server: 104.26.0.66
+    type: vmess
+    country: 🇺🇸US
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn2.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn2.freegradely.xyz
+    delay: 1248
+  - name: 美国 - 洛杉矶 - Psychz Networks - 60
+    server: 104.19.21.63
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 1012
+  - name: 美国 - 洛杉矶 - Psychz Networks - 61
+    server: 104.19.45.50
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip13.freegradely.xyz
+    delay: 1100
+  - name: 美国 - 洛杉矶 - Psychz Networks - 62
+    server: 104.19.46.36
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 1091
+  - name: 美国 - 洛杉矶 - Psychz Networks - 63
+    server: 104.19.45.19
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip2.1457230.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip2.1457230.xyz
+    delay: 1059
+  - name: 美国 - 洛杉矶 - Psychz Networks - 65
+    server: 104.19.123.11
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 926
+  - name: 美国 - 洛杉矶 - Psychz Networks - 66
+    server: 104.19.47.36
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 1105
+  - name: 美国 - 洛杉矶 - Psychz Networks - 68
+    server: 104.19.46.39
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 953
+  - name: 美国 - 洛杉矶 - Psychz Networks - 69
+    server: 104.19.46.63
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 1205
+  - name: 美国 - 洛杉矶 - Psychz Networks - 7
+    server: 172.64.198.249
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip2.1457230.xyz
+    delay: 637
+  - name: 美国 - 洛杉矶 - Psychz Networks - 70
+    server: 104.19.45.42
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 771
+  - name: 美国 - 洛杉矶 - Psychz Networks - 71
+    server: 104.19.47.27
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 1836
+  - name: 美国 - 洛杉矶 - Psychz Networks - 72
+    server: 104.19.38.18
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 752
+  - name: 美国 - 洛杉矶 - Psychz Networks - 74
+    server: 104.19.45.11
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 1119
+  - name: 美国 - 洛杉矶 - Psychz Networks - 75
+    server: 104.19.21.230
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 797
+  - name: 美国 - 洛杉矶 - Psychz Networks - 76
+    server: 104.19.32.226
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn2.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn2.freegradely.xyz
+    delay: 815
+  - name: 美国 - 洛杉矶 - Psychz Networks - 77
+    server: 104.17.106.151
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 813
+  - name: 美国 - 洛杉矶 - Psychz Networks - 78
+    server: 104.19.38.12
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 791
+  - name: 美国 - 洛杉矶 - Psychz Networks - 79
+    server: 104.19.55.49
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip11.freegradely.xyz
+    delay: 1157
+  - name: 美国 - 洛杉矶 - Psychz Networks - 8
+    server: 172.64.194.76
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 815
+  - name: 美国 - 洛杉矶 - Psychz Networks - 80
+    server: 104.19.46.56
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip14.freegradely.xyz
+    delay: 906
+  - name: 美国 - 洛杉矶 - Psychz Networks - 81
+    server: 104.19.58.175
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 850
+  - name: 美国 - 洛杉矶 - Psychz Networks - 82
+    server: 104.19.46.17
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 683
+  - name: 美国 - 洛杉矶 - Psychz Networks - 83
+    server: 104.19.42.49
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 726
+  - name: 美国 - 洛杉矶 - Psychz Networks - 84
+    server: 104.19.45.17
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 687
+  - name: 美国 - 洛杉矶 - Psychz Networks - 85
+    server: 104.19.38.8
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 931
+  - name: 美国 - 洛杉矶 - Psychz Networks - 86
+    server: 104.19.21.63
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip11.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip11.freegradely.xyz
+    delay: 913
+  - name: 美国 - 洛杉矶 - Psychz Networks - 87
+    server: 104.19.32.88
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip5-4.freegradely.xyz
+    delay: 930
+  - name: 美国 - 洛杉矶 - Psychz Networks - 88
+    server: 104.19.21.71
+    type: vmess
+    port: 2052
+    udp: true
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: cdn1.freegradely.xyz
+    delay: 887
+  - name: 美国 - 洛杉矶 - Psychz Networks - 89
+    server: 104.19.45.13
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 863
+  - name: 美国 - 洛杉矶 - Psychz Networks - 9
+    server: 172.64.175.88
+    type: vmess
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 743
+  - name: 美国 - 洛杉矶 - Psychz Networks - 90
+    server: 104.19.45.15
+    type: vmess
+    port: 2086
+    udp: true
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip14.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: ip14.freegradely.xyz
+    delay: 796
+  - name: 美国 - 洛杉矶 - Psychz Networks - 91
+    server: 104.19.45.35
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip13.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip13.freegradely.xyz
+    delay: 918
+  - name: 美国 - 洛杉矶 - Psychz Networks - 92
+    server: 104.19.47.65
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 707
+  - name: 美国 - 洛杉矶 - Psychz Networks - 93
+    server: 104.19.57.4
+    type: vmess
+    country: 🏁ZZ
+    port: 2086
+    uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: ip11.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: ip11.freegradely.xyz
+    delay: 885
+  - name: 美国 - 洛杉矶 - Psychz Networks - 94
+    server: 104.20.25.146
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 1224
+  - name: 美国 - 洛杉矶 - Psychz Networks - 95
+    server: 104.19.21.81
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 777
+  - name: 美国 - 洛杉矶 - Psychz Networks - 96
+    server: 104.18.57.111
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 782
+  - name: 美国 - 洛杉矶 - Psychz Networks - 98
+    server: 104.19.55.49
+    type: vmess
+    country: 🏁ZZ
+    port: 2052
+    uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn1.freegradely.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        HOST: cdn1.freegradely.xyz
+    delay: 950
+  - name: 美国 - 洛杉矶 - Sharktech - 35
+    server: 170.178.179.186
+    type: vmess
+    country: 🇺🇸US
+    port: 30000
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /path/191019072927
+    delay: 1062
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
+    server: 130.250.137.196
+    type: vless
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1153
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
+    server: 45.80.110.231
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 857
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
+    server: 45.80.110.213
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1099
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
+    server: 154.197.88.97
+    type: vless
+    port: 2053
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1061
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
+    server: 31.22.116.134
+    type: vless
+    port: 2096
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1125
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
+    server: 167.68.11.48
+    type: vless
+    port: 443
+    udp: true
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: TG%40ZDYZ2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1112
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
     server: 45.80.110.245
-    port: 80
     type: vless
+    port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 1035
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
-    server: 45.80.110.44
-    port: 80
+    delay: 1094
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
+    server: 64.94.86.123
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 987
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
-    server: 45.80.110.41
     port: 80
-    type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 902
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
-    server: 45.80.110.19
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
     servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1276
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
-    server: 45.80.110.13
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
     delay: 1130
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
-    server: 45.80.110.201
-    port: 80
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
+    server: 64.94.86.147
     type: vless
+    port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 952
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
-    server: 45.80.110.175
-    port: 80
+    delay: 1137
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
+    server: 94.140.0.138
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1146
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
+    server: 185.18.250.138
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 894
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
-    server: 45.80.110.192
-    port: 80
+    delay: 1070
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
+    server: 147.78.140.193
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 932
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
-    server: 45.80.110.213
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1110
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
-    server: 45.80.110.130
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    port: 2096
     udp: true
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: false
-    servername: a.ssll.gay
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
     network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
     ws-opts:
-      path: Twitterfreecodes
+      path: /?ed=2048
       headers:
-        Host: a.ssll.gay
-    delay: 932
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
-    server: 45.80.110.209
-    port: 80
+        Host: juzibaipiao.5112233.xyz
+    delay: 1077
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
+    server: 94.140.0.0
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1014
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
-    server: 45.80.110.231
     port: 80
-    type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 1019
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    delay: 1074
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
     server: 45.80.110.46
-    port: 80
     type: vless
+    port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 1125
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
-    server: 45.80.110.161
-    port: 80
+    delay: 1185
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
+    server: 154.197.121.254
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
+    port: 8443
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
     network: ws
+    tls: true
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1344
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
+    server: 147.78.140.5
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1174
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
+    server: 130.250.137.196
+    type: vless
+    port: 2053
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1241
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
+    server: 94.140.0.99
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1757
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
+    server: 155.46.213.100
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 921
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    delay: 1101
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
+    server: 45.133.247.14
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1237
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
+    server: 94.140.0.157
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1301
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
+    server: 27.50.49.13
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1215
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
+    server: 45.80.111.199
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: /tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1217
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
+    server: 45.80.110.13
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1204
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
+    server: 185.59.218.169
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: /tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1218
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
+    server: 188.244.122.210
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1354
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 126
+    server: 204.93.210.218
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 986
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 127
+    server: 164.38.155.75
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1356
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 128
+    server: 164.38.155.63
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1351
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 129
+    server: 45.80.110.44
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1281
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 130
+    server: 45.80.110.130
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1267
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 131
+    server: 185.59.218.144
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1516
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 132
+    server: 204.93.210.24
+    type: vless
+    port: 2096
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1566
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 133
+    server: 38.59.244.77
+    type: vless
+    port: 28555
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1491
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 134
+    server: 155.46.213.9
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: /tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1469
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 135
+    server: 185.148.104.199
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1010
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 136
+    server: 31.12.75.79
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1269
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 137
     server: 45.80.110.238
-    port: 80
     type: vless
+    port: 80
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1242
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 138
+    server: 188.42.145.159
+    type: vless
+    port: 2096
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1228
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 139
+    server: 91.193.58.119
+    type: vless
+    port: 2053
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1343
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 140
+    server: 27.50.48.222
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1344
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 141
+    server: 45.80.110.19
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1284
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 142
+    server: 45.80.110.175
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1237
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 143
+    server: 155.46.213.37
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1512
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 144
+    server: 94.247.142.245
+    type: vless
+    port: 2096
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1477
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 145
+    server: 45.80.110.12
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1435
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 146
+    server: 204.93.210.208
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1093
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 147
+    server: 45.80.110.13
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1618
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 148
+    server: 204.93.210.184
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1536
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 149
+    server: 45.159.217.54
+    type: vless
+    port: 2087
+    uuid: 775213ac-3976-439a-8977-3277c0e4735d
+    network: ws
+    tls: true
+    servername: fq521.6789.cloudns.be
+    ws-opts:
+      path: Twitter苏小柠
+      headers:
+        Host: fq521.6789.cloudns.be
+    delay: 1555
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 150
+    server: 185.18.250.131
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1374
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 151
+    server: 94.247.142.245
+    type: vless
+    port: 8443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1486
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 152
+    server: 188.42.145.140
+    type: vless
+    port: 443
+    udp: true
+    uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: g1.youyuan.us.kg
+    ws-opts:
+      path: /?proxyip=proxyip.multacom.fxxk.dedyn.io
+      headers:
+        Host: g1.youyuan.us.kg
+    delay: 1380
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 153
+    server: 31.22.116.159
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1377
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 154
+    server: 205.233.181.41
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1369
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 155
+    server: 27.50.49.232
+    type: vless
+    port: 8443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1403
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 156
+    server: 185.174.138.141
+    type: vless
+    port: 8443
+    uuid: 775213ac-3976-439a-8977-3277c0e4735d
+    network: ws
+    tls: true
+    servername: fq521.6789.cloudns.be
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: fq521.6789.cloudns.be
+    delay: 1536
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 157
+    server: 31.12.75.3
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1564
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 158
+    server: 45.80.110.245
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: twitter苏小柠
+      headers:
+        Host: a.ssll.gay
+    delay: 1546
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 159
+    server: 185.59.218.0
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1401
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 160
+    server: 216.205.52.109
+    type: vless
+    port: 2083
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1354
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 161
+    server: 45.80.110.43
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1490
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 162
+    server: 185.176.24.71
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1301
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 163
+    server: 155.46.213.166
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1550
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 164
+    server: 217.163.76.59
+    type: vless
+    port: 443
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1354
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 165
+    server: 66.81.247.161
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
     delay: 1176
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
-    server: 45.80.110.112
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 166
+    server: 45.80.110.201
+    type: vless
     port: 80
-    type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
     network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: a.ssll.gay
-    delay: 1002
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
-    server: 45.80.110.245
+    delay: 1326
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 167
+    server: 154.197.121.248
+    type: vless
     port: 8443
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: a.ssll.gay
-    tls: true
-    ws-opts:
-      headers:
-        Host: a.ssll.gay
-      path: twitter苏小柠
-    delay: 1190
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
-    server: 45.80.110.230
-    port: 2053
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
     network: ws
     tls: true
-    servername: a.ssll.gay
+    servername: mositr.freenods.sbs
     ws-opts:
       path: Twitterfreecodes
       headers:
-        Host: a.ssll.gay
-    delay: 1154
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
-    server: 45.80.110.234
-    port: 2083
+        Host: mositr.freenods.sbs
+    delay: 1497
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 168
+    server: 43.153.80.208
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1203
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
-    server: 45.80.110.13
-    port: 8443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1394
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
-    server: 45.80.110.8
     port: 443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
     network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
     ws-opts:
-      path: Twitterfreecodes
+      path: /?ed=2560
       headers:
-        Host: a.ssll.gay
-    delay: 1510
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
-    server: 45.80.110.223
-    port: 2053
+        Host: go.jp980.cloudns.org
+    delay: 1970
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 169
+    server: 185.148.106.44
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
+    port: 2083
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
     network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1429
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
-    server: 45.80.110.217
-    port: 2053
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1510
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
-    server: 45.80.110.12
-    port: 8443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1363
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
-    server: 45.80.110.43
-    port: 8443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1209
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
-    server: 45.80.110.222
-    port: 2087
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: a.ssll.gay
-    network: ws
+    servername: juzibaipiao.5112233.xyz
     ws-opts:
       path: /
       headers:
-        Host: a.ssll.gay
-    delay: 1337
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
-    server: 94.247.142.245
-    port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
         Host: juzibaipiao.5112233.xyz
-    delay: 1315
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
-    server: 94.247.142.245
-    port: 8443
+    delay: 1275
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 170
+    server: 45.80.110.230
     type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1380
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
-    server: 31.22.116.134
-    port: 2096
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1013
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
-    server: 91.193.58.119
     port: 2053
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1414
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 171
+    server: 45.159.218.162
+    type: vless
+    port: 8443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
     ws-opts:
       path: /?ed=2048
       headers:
         Host: juzibaipiao.5112233.xyz
-    delay: 1202
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
+    delay: 1414
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 172
+    server: 140.99.233.156
+    type: vless
+    port: 2087
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1529
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 173
+    server: 188.42.145.159
+    type: vless
+    port: 8443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1511
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 174
+    server: 188.42.145.159
+    type: vless
+    port: 443
+    uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+    network: ws
+    tls: true
+    servername: VIrgiNiavPn-nL.pagEs.dEv
+    ws-opts:
+      path: /
+      headers:
+        Host: VIrgiNiavPn-nL.pagEs.dEv
+    delay: 1774
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 175
+    server: 45.80.110.223
+    type: vless
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1756
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 176
     server: 217.163.76.75
-    port: 443
     type: vless
+    port: 443
     uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
     tls: true
     servername: mositr.freenods.sbs
-    network: ws
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: mositr.freenods.sbs
-    delay: 1536
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
-    server: 164.38.155.75
-    port: 443
+    delay: 1764
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 177
+    server: 88.216.66.193
     type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1429
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 178
+    server: 185.176.24.120
+    type: vless
+    port: 443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
-    network: ws
     ws-opts:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1203
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
-    server: 31.22.116.159
-    port: 443
+    delay: 1582
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 179
+    server: 45.8.211.50
     type: vless
+    port: 443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
-    network: ws
     ws-opts:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1407
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
-    server: 217.163.76.59
-    port: 443
+    delay: 2195
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 180
+    server: 31.12.75.140
     type: vless
+    port: 2053
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1805
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 181
+    server: 204.93.210.208
+    type: vless
+    port: 8443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1518
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 182
+    server: 45.80.110.217
+    type: vless
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1768
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 183
+    server: 27.50.48.108
+    type: vless
+    port: 443
     uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
     tls: true
     servername: mositr.freenods.sbs
-    network: ws
     ws-opts:
       path: Twitterfreecodes
       headers:
         Host: mositr.freenods.sbs
-    delay: 1380
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
-    server: 164.38.155.63
-    port: 443
+    delay: 1519
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 184
+    server: 167.68.11.106
     type: vless
+    port: 443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
     tls: true
@@ -1911,560 +4682,529 @@ proxies:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1483
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+    delay: 1665
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 185
+    server: 45.80.110.130
+    type: vless
+    port: 2087
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1617
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 186
+    server: 147.78.140.30
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1629
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 187
+    server: 45.80.110.209
+    type: vless
+    port: 2083
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: a.ssll.gay
+    ws-opts:
+      path: twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1698
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 188
+    server: 14.102.229.66
+    type: vless
+    port: 2087
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1820
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 189
+    server: 66.235.200.1
+    type: vless
+    port: 8443
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: 698Aa4AA.Swz-UUz-316.PageS.Dev
+    ws-opts:
+      path: /
+      headers:
+        Host: 698Aa4AA.Swz-UUz-316.PageS.Dev
+    delay: 1591
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 190
+    server: 45.80.110.234
+    type: vless
+    port: 2083
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1622
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 191
+    server: 204.93.210.49
+    type: vless
+    port: 2096
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1624
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 192
+    server: 216.205.52.180
+    type: vless
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: 78345.pages.dev
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: 78345.pages.dev
+    delay: 1693
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 193
+    server: 199.181.197.39
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1529
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 194
     server: 154.92.9.60
-    port: 443
     type: vless
+    port: 443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
-    network: ws
     ws-opts:
       path: /tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
-    delay: 1012
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
-    server: 88.216.66.193
+    delay: 1454
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 195
+    server: 185.59.218.158
+    type: vless
     port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
     ws-opts:
-      path: /?ed=2048
+      path: tg@zdyz2
       headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1004
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
-    server: 94.242.231.244
-    port: 2053
+        Host: cfed.tgzdyz2.top
+    delay: 1490
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 196
+    server: 45.80.110.161
     type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 994
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
-    server: 188.42.145.159
-    port: 8443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 995
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
-    server: 188.42.145.159
-    port: 2096
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1058
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
-    server: 185.174.138.141
-    port: 8443
-    type: vless
-    uuid: 775213ac-3976-439a-8977-3277c0e4735d
-    tls: true
-    servername: fq521.6789.cloudns.be
-    network: ws
+    servername: a.ssll.gay
     ws-opts:
       path: Twitterfreecodes
       headers:
-        Host: fq521.6789.cloudns.be
-    delay: 1484
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
-    server: 31.12.75.3
-    port: 443
+        Host: a.ssll.gay
+    delay: 1059
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 197
+    server: 185.59.218.139
     type: vless
+    port: 443
     uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
     tls: true
     servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1685
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 198
+    server: 89.116.161.250
+    type: vless
+    port: 8443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
     network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1192
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 199
+    server: 154.197.121.127
+    type: vless
+    port: 8443
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1100
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 201
+    server: 43.153.103.203
+    type: vless
+    port: 443
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1206
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 202
+    server: 45.80.110.41
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1041
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 203
+    server: 45.80.110.8
+    type: vless
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1422
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 204
+    server: 38.59.240.180
+    type: vless
+    port: 47403
+    udp: true
+    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+    network: ws
+    tls: true
+    servername: go.jp980.cloudns.org
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: go.jp980.cloudns.org
+    delay: 1157
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 205
+    server: 94.247.142.245
+    type: vless
+    port: 443
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1249
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 207
+    server: 185.176.24.186
+    type: vless
+    port: 443
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
+    ws-opts:
+      path: tg@zdyz2
+      headers:
+        Host: cfed.tgzdyz2.top
+    delay: 1202
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 208
+    server: 45.80.110.209
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1098
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 209
+    server: 45.80.110.112
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 1099
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 210
+    server: 204.93.210.46
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 978
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 215
+    server: 94.242.231.244
+    type: vless
+    port: 2053
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1083
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 218
+    server: 185.176.24.140
+    type: vless
+    port: 2087
+    udp: true
+    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    network: ws
+    tls: true
+    servername: juzibaipiao.5112233.xyz
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: juzibaipiao.5112233.xyz
+    delay: 1197
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 219
+    server: 45.80.110.192
+    type: vless
+    port: 80
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: a.ssll.gay
+    ws-opts:
+      path: Twitterfreecodes
+      headers:
+        Host: a.ssll.gay
+    delay: 984
+  - name: 美国 - 聖荷西 - PEG TECH INC - 255
+    server: 108.186.57.252
+    type: vmess
+    country: 🇺🇸US
+    port: 38001
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /path/351800142602
+    delay: 1020
+  - name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 97
+    server: cfcdn1.sanfencdn9.com
+    type: vmess
+    country: 🇺🇸 US
+    port: 2082
+    uuid: a174de4b-6126-4b88-b21e-1388004a2e02
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us4Bb5oSgJA.fzbqfrse.xyz
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /video/CuTy87zAzV/
+      headers:
+        HOST: us4Bb5oSgJA.fzbqfrse.xyz
+    delay: 1624
+  - name: 美国 - 迈阿密 - Stark Industries Solutions LTD - 67
+    server: 198.41.193.181
+    type: vmess
+    country: 🏁ZZ
+    port: 80
+    uuid: 92791642-1471-4b93-980a-81030985f3ce
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: >-
+      127.0.0.1.mrarsha.kомната0.房間騎自行車的人.bелосипедисты.bikeriders.wonkacapitano.buzz.
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vmess
+      headers:
+        HOST: >-
+          127.0.0.1.mrarsha.kомната0.房間騎自行車的人.bелосипедисты.bikeriders.wonkacapitano.buzz.
+    delay: 1505
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 1
+    server: 51.195.208.150
+    type: vless
+    port: 2053
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1559
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
+    server: 51.38.69.149
+    type: vless
+    port: 2053
+    udp: true
+    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: mositr.freenods.sbs
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mositr.freenods.sbs
+    delay: 1610
+  - name: 荷兰 - Meppel - Stark Industries Solutions LTD - 1
+    server: 172.67.191.234
+    type: trojan
+    port: 443
+    udp: true
+    password: 7f2782e1-1f1a-4c5b-b4ae-cead54b8c381
+    sni: nl1.tRojANVpN.xYZ
+    skip-cert-verify: true
+    ws-opts:
+      path: >-
+        %25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F
+      headers:
+        Host: nl1.tRojANVpN.xYZ
+    network: ws
+    delay: 1156
+  - name: 荷兰 - 阿姆斯特丹 - Global Connectivity Solutions LLP - 3
+    server: 89.23.107.119
+    type: ss
+    country: 🇷🇺RU
+    port: 58505
+    password: 1GJM3tobduimZSHjmZodHr
+    cipher: chacha20-ietf-poly1305
+    delay: 2147
+  - name: 荷兰 - 阿姆斯特丹 - Oracle Corporation - 2
+    server: 102.724064.xyz
+    type: vmess
+    country: 🇬🇧GB
+    port: 443
+    uuid: 8f33df9e-0255-4341-bea5-93ccc9f62fa7
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: 102.724064.xyz
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /oqpsvws
+      headers:
+        HOST: 102.724064.xyz
+    delay: 1822
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 3
+    server: 129.154.211.201
+    type: vless
+    port: 33155
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.ssll.gay
+    ws-opts:
+      path: /
+      headers:
+        Host: a.ssll.gay
+    delay: 1333
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
+    server: 129.154.206.254
+    type: vless
+    port: 59158
+    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    network: ws
+    tls: true
+    servername: cfed.tgzdyz2.top
     ws-opts:
       path: tg@zdyz2
       headers:
         Host: cfed.tgzdyz2.top
     delay: 1325
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
-    server: 185.59.218.0
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1278
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
-    server: 45.8.211.50
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    network: ws
-    tls: true
-    servername: cfed.tgzdyz2.top
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1260
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
-    server: 188.42.145.140
-    port: 443
-    type: vless
-    network: ws
-    uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-    servername: g1.youyuan.us.kg
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    tfo: false
-    client-fingerprint: chrome
-    ws-opts:
-      headers:
-        Host: g1.youyuan.us.kg
-      path: /?proxyip=proxyip.multacom.fxxk.dedyn.io
-    delay: 1143
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
-    server: 31.12.75.140
-    port: 2053
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    tls: true
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1329
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
-    server: 185.59.218.139
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1357
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
-    server: 185.59.218.169
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: /tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1263
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
-    server: 185.176.24.186
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1358
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
-    server: 185.176.24.71
-    port: 443
-    type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-    tls: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: tg@zdyz2
-      headers:
-        Host: cfed.tgzdyz2.top
-    delay: 1441
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
-    server: 188.42.145.159
-    port: 443
-    type: vless
-    network: ws
-    uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-    servername: VIrgiNiavPn-nL.pagEs.dEv
-    tls: true
-    ws-opts:
-      headers:
-        Host: VIrgiNiavPn-nL.pagEs.dEv
-      path: /
-    delay: 1467
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
-    server: 154.197.121.127
-    port: 8443
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1263
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
-    server: 45.133.247.14
-    port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1307
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
-    server: 154.197.88.97
-    port: 2053
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1114
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
-    server: 154.197.121.248
-    port: 8443
-    type: vless
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: mositr.freenods.sbs
-    delay: 1401
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
-    server: 27.50.49.232
-    port: 8443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1573
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
-    server: 27.50.48.222
-    port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1387
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
-    server: 216.205.52.180
-    port: 2053
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    servername: 78345.pages.dev
-    tls: true
-    ws-opts:
-      headers:
-        Host: 78345.pages.dev
-      path: /?ed
-    delay: 1126
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
-    server: 27.50.48.108
-    port: 443
-    type: vless
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: mositr.freenods.sbs
-    delay: 1456
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
-    server: 38.59.240.180
-    port: 47403
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1356
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
-    server: 204.93.210.218
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1256
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
-    server: 199.181.197.39
-    port: 443
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: juzibaipiao.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1383
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
-    server: 204.93.210.226
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1260
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
-    server: 45.159.218.162
-    port: 8443
-    type: vless
-    udp: true
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    network: ws
-    tls: true
-    servername: juzibaipiao.5112233.xyz
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: juzibaipiao.5112233.xyz
-    delay: 1442
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
-    server: 38.59.244.77
-    port: 28555
-    type: vless
-    udp: true
-    uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-    network: ws
-    tls: true
-    servername: go.jp980.cloudns.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: go.jp980.cloudns.org
-    delay: 1606
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
-    server: 155.46.213.100
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1430
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
-    server: 66.81.247.161
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    servername: a.ssll.gay
-    network: ws
-    ws-opts:
-      path: Twitterfreecodes
-      headers:
-        Host: a.ssll.gay
-    delay: 1265
-  - name: 美国 - 西雅圖 - Hostwinds LLC. - 2
-    server: 23.254.166.237
-    type: vmess
-    country: 🏁 ZZ
-    port: 2086
-    uuid: 8d0fd618-5d60-40d6-9f23-e503555f496f
-    alterId: 0
-    cipher: auto
-    network: ws
-    ws-path: /
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 915
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 1
-    server: 51.195.208.150
-    port: 2053
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1366
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
-    server: 51.38.69.149
-    port: 2053
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 1645
-  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
-    server: 193.29.139.251
-    type: ss
-    country: 🇳🇱 NL
-    port: 8080
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    cipher: chacha20-ietf-poly1305
-    delay: 1935
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-    server: 140.238.7.57
-    port: 9999
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    servername: a.ssll.gay
-    ws-opts:
-      path: /
-      headers:
-        Host: a.ssll.gay
-    delay: 1162
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
-    server: 146.56.99.255
-    port: 56789
-    type: vless
-    client-fingerprint: random
-    uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-    tls: true
-    tfo: false
-    skip-cert-verify: true
-    servername: mositr.freenods.sbs
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: mositr.freenods.sbs
-    udp: true
-    delay: 2340
   - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 1
     server: 13.124.244.90
     type: ss
-    country: 🇰🇷 KR
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 475
-  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 3
+    delay: 570
+  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 2
     server: 54.180.251.250
     type: ss
     country: 🇰🇷 KR
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 562
-  - name: 韩国 - 首尔特别市 - Oracle Corporation - 2
-    server: kkr100515a.go02.top
-    type: trojan
-    country: 🇯🇵 JP
-    port: 30056
-    password: M3lOal9RPR
-    skip-cert-verify: true
-    udp: true
-    delay: 888
+    delay: 542
