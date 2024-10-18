@@ -4,149 +4,162 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 仁怀市 - PEG TECH INC - 3
+  - name: 中国 - 仁怀市 - PEG TECH INC - 4
     server: 183.236.51.23
     port: 40434
     type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    skip-cert-verify: true
     tls: false
+    skip-cert-verify: true
     udp: true
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    delay: 1106
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
-    server: 61.220.126.180
+    delay: 1417
+  - name: 中国 - 香港 - Cloudflare, Inc. - 2
+    server: 162.159.153.249
+    type: vless
     port: 443
-    type: trojan
-    country: 🇹🇼 TW
-    password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
-    skip-cert-verify: true
     udp: true
-    delay: 2382
-  - name: 中国 - 香港 - Hong Kong Cable Television Limited - 5
-    server: hkt2.bika.hk
-    type: vmess
-    country: 🏁 ZZ
-    port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
-    alterId: 0
-    cipher: auto
-    network: tcp
-    servername: hkt2.bika.hk
-    http-opts: {}
-    h2-opts: {}
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
     skip-cert-verify: true
-    delay: 2072
-  - cipher: aes-256-cfb
-    name: 中国 - 香港 - Internet Solutions Limited - 4
-    password: hGkQ6915tD
-    port: 16088
-    server: 120.232.81.50
-    tfo: false
-    type: ss
-    delay: 999
-  - cipher: chacha20-ietf-poly1305
-    name: 中国 - 香港 - Stacks Inc - 6
-    password: 29774f68-6f8c-492d-9ada-5cfd4313d218
-    port: 11001
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1816
+  - name: 中国 - 香港 - Cnservers LLC - 5
+    server: 120.232.153.40
+    port: 35601
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    delay: 2418
+  - name: 中国 - 香港 - G-Core Labs S.A. - 3
+    server: 91.199.84.246
+    type: trojan
+    country: 🇷🇺RU
+    port: 443
+    udp: true
+    password: '3690911436885991424'
+    sni: giving-marmoset.opossum872.cfd
+    skip-cert-verify: true
+    delay: 1089
+  - name: 中国 - 香港 - Stacks Inc - 6
     server: 183.240.255.75
-    tfo: false
+    port: 11001
     type: ss
-    delay: 2503
+    cipher: chacha20-ietf-poly1305
+    password: b1bfb546-0259-44f0-8c9a-8b8702618df9
+    delay: 1609
   - name: 中国 - 香港 - SunnyVision Limited - 1
     server: 150.107.46.21
     port: 8083
     type: ssr
-    country: 🇭🇰 HK
-    password: iFqnzSscN
     cipher: aes-256-cfb
+    password: iFqnzSscN
     protocol: origin
     obfs: tls1.2_ticket_auth
-    delay: 1380
-  - name: 俄罗斯 - Il'inskoye - Cloudflare, Inc. - 1
-    server: 31.129.49.103
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1225
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 5
-    server: 3.68.23.11
-    type: trojan
-    country: 🇩🇪DE
-    port: 22222
-    udp: true
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    delay: 2031
-  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 2
-    server: speedtest.net
-    port: 443
+    protocol-param: ''
+    obfs-param: ''
+    delay: 2348
+  - name: 加拿大 - 多伦多 - GLOBALTELEHOST Corp. - 1
+    server: 23.162.200.227
     type: vmess
-    alpn:
-      - http/1.1
+    country: 🏁 ZZ
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
     alterId: 0
     cipher: auto
-    client-fingerprint: chrome
     network: ws
-    servername: mehrjavan.ir
-    skip-cert-verify: true
+    http-opts: {}
+    h2-opts: {}
     tls: true
-    udp: true
-    uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: mehrjavan.ir
-      max_early_data: 2560
-      path: /m28jcoZZUhkqg6pk11
-    delay: 1777
-  - name: 德国 - 兰河畔林堡 - OVH SAS - 3
-    server: 183.236.48.161
-    port: 33288
-    type: vmess
-    udp: true
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    network: tcp
     skip-cert-verify: true
-    tls: false
-    delay: 985
-  - name: 德国 - 兰河畔林堡 - OVH SAS - 4
+    ws-opts:
+      path: /linkvws
+    delay: 1200
+  - name: 土耳其 - Ataşehir - Hostkey B.V. - 1
+    server: 185.24.151.214
+    type: ss
+    country: 🇮🇷IR
+    port: 52952
+    password: >-
+      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+    cipher: chacha20-ietf-poly1305
+    delay: 1495
+  - name: 土耳其 - Ataşehir - Hostkey B.V. - 2
+    server: exchange.gameaurela.click
+    port: 52952
+    type: ss
+    country: 🇬🇧 GB
+    password: >-
+      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+    cipher: chacha20-ietf-poly1305
+    delay: 2855
+  - name: 塞浦路斯 - 尼科西亚 - Hostman LTD - 1
+    server: select-racer.sunbeam921.monster
+    type: trojan
+    country: 🇨🇿CZ
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 1567
+  - name: 德国 - Frankfurt - GTHost - 1
+    server: 23.157.88.6
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    network: ws
+    servername: 23.157.88.6
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: linkvws
+      headers:
+        HOST: 23.157.88.6
+    delay: 1224
+  - name: 德国 - Frankfurt - GTHost - 2
+    server: 23.158.56.39
+    type: vmess
+    country: 🇩🇪DE
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    network: ws
+    servername: 23.158.56.39
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: linkvws
+      headers:
+        HOST: 23.158.56.39
+    delay: 2382
+  - name: 德国 - 兰河畔林堡 - OVH SAS - 5
     server: 183.236.48.166
     port: 33288
     type: vmess
-    udp: true
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    network: tcp
-    skip-cert-verify: true
     tls: false
+    skip-cert-verify: true
+    udp: true
     delay: 824
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 1
-    server: 194.35.119.193
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1489
-  - name: 德国 - 法兰克福 - GTHost - 6
+  - name: 德国 - 法兰克福 - GTHost - 4
     server: 195.254.165.63
     port: 34497
     type: vmess
@@ -154,3002 +167,2944 @@ proxies:
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     servername: ttl.unique69.com
     network: http
     http-opts:
       method: GET
       path:
         - /@HosseinStore_Za/@NEKO_Za
-    delay: 1638
-  - name: 新加坡 - 新加坡 - Akile LTD - 3
-    server: gdcub.yunnode.win
-    port: 31738
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 151d4e55-c58e-4a93-a524-e4fceda74706
-    delay: 1216
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 1
-    server: 13.212.100.34
-    type: ss
+    udp: true
+    delay: 1832
+  - name: 德国 - 法兰克福 - OVH SAS - 3
+    server: 57.129.28.69
+    type: vmess
+    country: 🇧🇪BE
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: baradiha.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /linkvws
+      headers:
+        HOST: baradiha.com
+    delay: 1271
+  - name: 新加坡 - 新加坡 - Akamai Technologies, Inc. - 1
+    server: 139.162.40.74
+    type: vmess
     country: 🇸🇬SG
     port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 873
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 1
+    cipher: auto
+    network: ws
+    servername: 139.162.40.74
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: linkvws
+      headers:
+        HOST: 139.162.40.74
+    delay: 1073
   - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 4
-    server: 3.0.93.45
+    server: glad-boxer.opossum872.cfd
+    type: trojan
+    country: 🇸🇬SG
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 1118
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 6
+    server: 54.254.23.34
     type: ss
     country: 🇸🇬SG
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 374
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 2
+    delay: 288
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 2
+    server: romantic-katydid.sheepdog670.boats
+    type: trojan
+    country: 🇸🇬SG
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 862
+  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 3
+    server: engaged-dove.opossum872.cfd
+    type: trojan
+    country: 🇸🇬SG
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 805
+  - name: 新加坡 - 新加坡 - Oracle Corporation - 5
     server: 221.181.185.71
     port: 20705
     type: ss
     cipher: aes-256-cfb
     password: 75ly0yJ90LP5Ural
     udp: true
-    delay: 884
+    delay: 1451
   - name: 日本 - 东京 - Amazon Technologies Inc - 1
+    server: 13.115.189.201
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 332
+  - name: 日本 - 东京 - Amazon Technologies Inc - 3
     server: 13.114.140.218
+    port: 443
     type: ss
-    port: 443
-    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 956
-  - cipher: aes-256-cfb
-    name: 日本 - 东京 - Amazon Technologies Inc - 2
     password: amazonskr05
-    port: 443
+    delay: 418
+  - name: 日本 - 东京 - Amazon Technologies Inc - 4
     server: 13.112.168.104
-    tfo: false
+    port: 443
     type: ss
-    delay: 716
-  - name: 日本 - 东京 - Amazon Technologies Inc. - 3
-    server: 18.183.186.69
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 269
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 2
+    server: 54.238.98.72
     type: ss
     country: 🇯🇵JP
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 404
-  - name: 日本 - 东京 - DMIT Cloud Services - 10
-    server: thick.superpokemon.com
+    delay: 334
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 6
+    server: guiding-duckling.opossum872.cfd
     type: trojan
     country: 🇯🇵JP
-    port: 28332
-    udp: true
-    password: laNA8DwSX3CuqSaOy6ReFl4SCZ8FyKcx79TYApR5neDBZ2jxOaIg03zYCD3E3p
-    sni: thick.superpokemon.com
-    skip-cert-verify: true
-    delay: 951
-  - name: 日本 - 东京 - DMIT Cloud Services - 11
-    server: okelvv.superpokemon.com
-    type: trojan
-    country: 🇯🇵JP
-    port: 28346
-    udp: true
-    password: SF8D9jAzN0ScwCB5llEAFIpxxneaOZyCTa3qa23D8ypKSgORRXu76Y3YeDZ4C3
-    sni: okelvv.superpokemon.com
-    skip-cert-verify: true
-    delay: 803
-  - name: 日本 - 东京 - DMIT Cloud Services - 12
-    server: venusaur.superpokemon.com
-    type: trojan
-    country: 🇯🇵JP
-    port: 28333
-    udp: true
-    password: aaR2NOCSeu5SC8Xw7pg4SzYla3C083DynpK3ZAx9B6TjY3FxFRyEAOeDIDqlZc
-    sni: venusaur.superpokemon.com
-    skip-cert-verify: true
-    delay: 1291
-  - name: 日本 - 东京 - DMIT Cloud Services - 13
-    server: pretty.meijireform.com
-    type: trojan
-    country: 🇯🇵JP
-    port: 18333
-    udp: true
-    password: AaS7EXZSZ0CY933ApSTN4gxlF3DORl8jyD6pwKBIYDunq23ezeyCa85cxaFCRO
-    sni: pretty.meijireform.com
-    skip-cert-verify: true
-    delay: 2164
-  - name: 日本 - 东京 - DMIT Cloud Services - 14
-    server: 154.31.115.24
-    type: trojan
-    country: 🇯🇵JP
-    port: 28335
-    udp: true
-    password: unDYR3ap8O4Aw6eD3DZ3SFYEX52Z3yTjlINeF8Cz970cgKaASCOxByxaSqlRpC
-    sni: plowman.meijireform.com
-    skip-cert-verify: true
-    delay: 349
-  - name: 日本 - 东京 - DMIT Cloud Services - 4
-    server: caterpie.superpokemon.com
-    type: trojan
-    country: 🇯🇵JP
-    port: 18333
-    udp: true
-    password: 5OZS3AXSpw9DOEc6x83D3uIYCZBDCFFSjqz24NyaxeelCKn3TyA8p0Y7RgaRal
-    sni: caterpie.superpokemon.com
-    skip-cert-verify: true
-    delay: 704
-  - name: 日本 - 东京 - DMIT Cloud Services - 5
-    server: 154.31.114.111
-    type: trojan
-    country: 🇯🇵JP
-    port: 18333
-    udp: true
-    password: AaS7EXZSZ0CY933ApSTN4gxlF3DORl8jyD6pwKBIYDunq23ezeyCa85cxaFCRO
-    sni: pretty.meijireform.com
-    skip-cert-verify: true
-    delay: 447
-  - name: 日本 - 东京 - DMIT Cloud Services - 6
-    server: 154.31.115.26
-    type: trojan
-    country: 🇯🇵JP
-    port: 18333
-    udp: true
-    password: 5OZS3AXSpw9DOEc6x83D3uIYCZBDCFFSjqz24NyaxeelCKn3TyA8p0Y7RgaRal
-    sni: caterpie.superpokemon.com
-    skip-cert-verify: true
-    delay: 983
-  - name: 日本 - 东京 - DMIT Cloud Services - 7
-    server: 154.31.114.4
-    type: trojan
-    country: 🇯🇵JP
-    port: 28333
-    udp: true
-    password: aaR2NOCSeu5SC8Xw7pg4SzYla3C083DynpK3ZAx9B6TjY3FxFRyEAOeDIDqlZc
-    sni: venusaur.superpokemon.com
-    skip-cert-verify: true
-    delay: 544
-  - name: 日本 - 东京 - DMIT Cloud Services - 8
-    server: 154.31.114.13
-    type: trojan
-    country: 🇯🇵JP
-    port: 28332
-    udp: true
-    password: laNA8DwSX3CuqSaOy6ReFl4SCZ8FyKcx79TYApR5neDBZ2jxOaIg03zYCD3E3p
-    sni: thick.superpokemon.com
-    skip-cert-verify: true
-    delay: 835
-  - name: 日本 - 东京 - DMIT Cloud Services - 9
-    server: nagoya.meijireform.com
-    type: trojan
-    country: 🇯🇵JP
-    port: 28334
-    udp: true
-    password: AlXz60wCelxpngS37q5ZFFOC3ESARRDNaB4yp2ZxTYCD8eOI3cyD8au9SjaK3Y
-    sni: nagoya.meijireform.com
-    skip-cert-verify: true
-    delay: 1006
-  - name: 日本 - 东京 - G-Core Labs S.A. - 15
-    type: vmess
-    server: 15086.kuaiyin02.top
-    port: 15086
-    cipher: auto
-    uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: tcp
-    delay: 1187
-  - name: 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-    type: vmess
-    server: 104.17.213.57
     port: 443
-    cipher: auto
-    uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 1166
+  - name: 日本 - 东京 - Amazon.com, Inc. - 5
+    server: expert-sloth.opossum872.cfd
+    type: trojan
+    country: 🇯🇵JP
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 947
+  - name: 日本 - 东京 - Amazon.com, Inc. - 7
+    server: jp006.421421.xyz
+    type: trojan
+    country: 🇯🇵JP
+    port: 20230
+    udp: true
+    password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
+    sni: 421421.xyz
+    skip-cert-verify: true
+    delay: 916
+  - name: 日本 - 中野區 - Internet Initiative Japan Inc. - 8
+    server: 61.172.235.22
+    port: 11001
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9bfad321-59c2-42dc-be43-6985c6f84bba
+    delay: 947
+  - name: 法国 - 巴黎 - Stark Industries Solutions LTD - 1
+    server: 185.234.64.146
+    type: trojan
+    country: 🇫🇷 FR
+    port: 2053
+    udp: true
+    password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0
+    skip-cert-verify: true
+    delay: 1039
+  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 1
+    server: 34.252.56.67
+    type: trojan
+    country: 🇮🇪IE
+    port: 22222
+    udp: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    delay: 791
+  - name: 美国 - Ashburn - Amazon.com, Inc. - 64
+    server: normal-pigeon.sheepdog670.boats
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 2226
+  - name: 美国 - Ashburn - GTHost - 2
+    server: 69.50.93.113
+    port: 9101
+    type: ss
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+    delay: 1590
+  - name: 美国 - Ashburn - GTHost - 4
+    server: 69.50.93.113
+    type: ss
+    port: 5004
+    password: g5MeD6Ft3CWlJId
+    cipher: aes-256-gcm
+    delay: 2055
+  - name: 美国 - Ashburn - Oracle Corporation - 180
+    server: 104.19.36.122
+    type: vless
+    port: 443
+    udp: true
+    uuid: dbd09021-e676-423e-bffe-d86507df5c19
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: p1us1.globals-download.com
+    ws-opts:
+      path: /pq/us1
+      headers:
+        Host: p1us1.globals-download.com
+    delay: 1687
+  - name: 美国 - Ashburn - Oracle Corporation - 71
+    server: 104.19.56.213
+    type: vless
+    port: 443
+    udp: true
+    uuid: dbd09021-e676-423e-bffe-d86507df5c19
+    network: ws
+    tls: true
+    client-fingerprint: chrome
+    servername: p1us3.globals-download.com
+    ws-opts:
+      path: /pq/us3
+      headers:
+        Host: p1us3.globals-download.com
+    delay: 1445
+  - name: 美国 - Dublin - Amazon.com, Inc. - 65
+    server: wanted-pipefish.opossum872.cfd
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 2250
+  - name: 美国 - San Jose - Oracle Corporation - 159
+    server: 37.123.193.219
+    type: vless
+    port: 443
+    udp: true
+    uuid: 5c191320-7ee7-400b-e6ab-388896461b57
+    network: ws
+    tls: true
+    servername: us.setoncatholic.net
+    ws-opts:
+      path: /bing
+      headers:
+        Host: us.setoncatholic.net
+    delay: 1160
+  - name: 美国 - South Fulton - Cloudflare, Inc. - 127
+    server: 207.174.31.150
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1819
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 101
+    server: www.wto.org
+    type: vless
+    port: 8443
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: ln.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ln.ylka.us.kg
+    delay: 1931
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 28
+    server: lp.ylks.xyz
+    type: vless
+    port: 8443
+    udp: true
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    network: ws
+    tls: true
+    servername: lp.YLKs.xyZ
+    ws-opts:
+      path: /h4zv4t6q1licdn9h?ed=2560
+      headers:
+        Host: lp.YLKs.xyZ
+    delay: 2287
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 63
+    server: 172.66.47.117
+    port: 8443
+    type: trojan
+    password: bpb-trojan
+    sni: AZaDneT-Hwt.pAGES.dev
+    network: ws
+    ws-opts:
+      path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
+      headers:
+        Host: AZaDneT-Hwt.pAGES.dev
+    delay: 1103
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 66
+    server: 172.66.44.139
+    port: 8443
+    type: trojan
+    password: bpb-trojan
+    sni: AZaDneT-Hwt.pAGES.dev
+    network: ws
+    ws-opts:
+      path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
+      headers:
+        Host: AZaDneT-Hwt.pAGES.dev
+    udp: true
+    delay: 1100
+  - name: 美国 - 丹佛 - GTHost - 3
+    server: 69.50.95.218
+    port: 3306
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    delay: 2139
+  - name: 美国 - 丹佛 - GTHost - 5
+    server: 69.50.95.218
+    port: 2375
+    type: ss
+    country: 🇺🇸 US
+    password: faBAoD54k87UJG7
+    cipher: aes-256-gcm
+    delay: 886
+  - name: 美国 - 丹佛 - GTHost - 9
+    server: 69.50.95.218
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    delay: 1794
+  - name: 美国 - 亚特兰大 - Akamai Technologies, Inc. - 11
+    server: 188.114.99.134
+    type: vmess
+    country: 🇨🇴CO
+    port: 443
+    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
     alterId: 0
+    cipher: auto
+    network: ws
+    servername: linde06.indiavideo.sbs
+    http-opts: {}
+    h2-opts: {}
     tls: true
     skip-cert-verify: true
-    network: ws
     ws-opts:
       path: /linkws
       headers:
-        host: xmivideo.cfd
-    delay: 1757
-  - name: 爱尔兰 - 都柏林 - Microsoft Corporation - 1
-    server: 13.74.66.239
-    type: ss
-    country: 🇮🇪IE
-    port: 12919
-    password: 27oHrBVTnqyiSARogNNZwW
-    cipher: chacha20-ietf-poly1305
-    delay: 792
-  - name: 瑞典 - 斯德哥尔摩 - Amazon.com - 1
-    server: 16.171.114.206
+        HOST: linde06.indiavideo.sbs
+    delay: 1785
+  - name: 美国 - 亚特兰大 - BrainStorm Network, Inc - 61
+    server: polite-racer.sheepdog670.boats
     type: trojan
     country: 🇸🇪SE
-    port: 28331
+    port: 443
     udp: true
-    password: TenEweDD23Y3SyaFuOySZARlaD4IYF3COx3RSC9pKljApX8BacCN6q5Zzx0g78
-    sni: bribery.freetrade.link
+    password: '3648425794742788096'
     skip-cert-verify: true
-    delay: 960
-  - name: 瑞典 - 斯德哥尔摩 - Amazon.com - 2
-    server: bribery.freetrade.link
-    type: trojan
-    country: 🇸🇪SE
-    port: 28331
-    udp: true
-    password: TenEweDD23Y3SyaFuOySZARlaD4IYF3COx3RSC9pKljApX8BacCN6q5Zzx0g78
-    sni: bribery.freetrade.link
-    skip-cert-verify: true
-    delay: 1310
-  - name: 美国 - Reston - Cloudflare, Inc. - 121
-    server: 20.246.127.166
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 2466
-  - name: 美国 - South Fulton - Cloudflare, Inc. - 87
-    server: 207.174.31.150
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1734
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 155
-    server: www.wto.org
-    port: 8443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylka.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylka.us.kg
-    delay: 1769
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 184
-    server: 172.66.47.117
-    type: trojan
-    country: 🇺🇸US
-    port: 8443
-    udp: true
-    password: bpb-trojan
-    sni: AZaDneT-Hwt.pAGES.dev
-    ws-opts:
-      path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
-      headers:
-        Host: azadnet-hwt.pages.dev
-    fingerprint: randomized
-    network: ws
-    delay: 1263
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 204
-    server: 172.66.44.139
-    type: trojan
-    country: 🇺🇸US
-    port: 8443
-    udp: true
-    password: bpb-trojan
-    sni: AZaDneT-Hwt.pAGES.dev
-    ws-opts:
-      path: /trJVqjkRZ0POGhfThT/MTUyLjcwLjkwLjE2OA==?ed=2560
-      headers:
-        Host: azadnet-hwt.pages.dev
-    fingerprint: randomized
-    network: ws
-    delay: 1420
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 208
-    server: 199.232.95.123
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    udp: true
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: false
-    servername: fastly.com
-    network: ws
-    ws-opts:
-      path: /BCXzvAcvSB7JzMWj?ed=2560
-      headers:
-        Host: sara193.ir
-    delay: 638
-  - name: 美国 - 丹佛 - GTHost - 1
-    type: ss
-    server: 69.50.95.218
-    port: 9090
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-    delay: 623
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 10
-    password: kDWvXYZoTBcGkC4
-    port: 8882
-    server: 69.50.92.99
-    type: ss
-    delay: 2053
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 12
-    password: lGqs95QkFHo2NV
-    port: 5498
-    server: 69.50.95.179
-    type: ss
-    delay: 1461
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 173
-    password: zDNVedRFPQexG9v
-    port: 6379
-    server: 69.50.95.179
-    type: ss
-    delay: 1838
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 174
-    password: Y6R9pAtvxxzmGC
-    port: 3389
-    server: 69.50.95.179
-    type: ss
-    delay: 1597
-  - name: 美国 - 丹佛 - GTHost - 177
-    server: 69.50.92.110
-    type: ss
-    country: 🇺🇸US
-    port: 5498
-    password: lGqs95QkFHo2NV
-    cipher: aes-256-gcm
-    delay: 1859
-  - name: 美国 - 丹佛 - GTHost - 179
-    server: 69.50.92.99
-    type: ss
-    country: 🇺🇸US
-    port: 2375
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-    delay: 1973
-  - name: 美国 - 丹佛 - GTHost - 2
-    server: 69.50.95.218
-    type: ss
-    country: 🇺🇸US
-    port: 5000
-    password: Y6R9pAtvxxzmGC
-    cipher: aes-256-gcm
-    delay: 671
-  - name: 美国 - 丹佛 - GTHost - 3
-    server: 69.50.95.218
-    type: ss
-    country: 🇺🇸US
-    port: 8000
-    password: KixLvKzwjekG00rm
-    cipher: aes-256-gcm
-    delay: 788
-  - name: 美国 - 丹佛 - GTHost - 4
-    server: 69.50.95.218
-    type: ss
-    country: 🇺🇸US
-    port: 8888
-    password: Y6R9pAtvxxzmGC
-    cipher: aes-256-gcm
-    delay: 832
-  - name: 美国 - 丹佛 - GTHost - 5
-    server: 69.50.95.218
-    type: ss
-    country: 🇺🇸US
-    port: 5499
-    password: lGqs95QkFHo2NV
-    cipher: aes-256-gcm
-    delay: 697
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 6
-    password: PCnnH6SQSnfoS27
-    port: 8090
-    server: 69.50.95.218
-    type: ss
-    delay: 582
-  - name: 美国 - 丹佛 - GTHost - 7
-    server: 69.50.95.218
-    type: ss
-    country: 🇺🇸US
-    port: 8882
-    password: kDWvXYZoTBcGkC4
-    cipher: aes-256-gcm
-    delay: 626
-  - cipher: aes-256-gcm
-    name: 美国 - 丹佛 - GTHost - 8
-    password: kDWvXYZoTBcGkC4
-    port: 8881
-    server: 69.50.92.99
-    type: ss
-    delay: 841
-  - name: 美国 - 丹佛 - GTHost - 9
-    server: 69.50.92.99
-    port: 6379
-    type: ss
-    country: 🇺🇸 US
-    password: zDNVedRFPQexG9v
-    cipher: aes-256-gcm
-    delay: 2160
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 11
-    type: ss
-    server: 52.43.33.6
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 943
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 13
+    delay: 2520
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 10
     server: 35.94.175.12
     port: 443
     type: ss
-    country: 🇺🇸 US
-    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 854
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 178
+    password: amazonskr05
+    delay: 664
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 62
     server: 54.185.199.99
+    port: 443
     type: ss
-    country: 🇺🇸US
-    port: 443
-    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 738
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 181
-    server: 154.17.7.213
-    type: trojan
-    country: 🇺🇸US
-    port: 28331
-    udp: true
-    password: 4FRjnlacyw3AITNXYC50SFC3EaSKq9BDplYz2C7ZDye8DZSxRp6g3uxO8a3AOe
-    sni: proclaim.missionsec.io
-    skip-cert-verify: true
-    delay: 874
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 182
-    server: 154.17.17.123
-    type: trojan
-    country: 🇺🇸US
-    port: 28332
-    udp: true
-    password: 8DAzZXOSwYcDlgOej2lC3AYypa30F4pxnqCSEZKR7yD3Sx89RuNa6aCBeFT35I
-    sni: penguin.missionsec.io
-    skip-cert-verify: true
-    delay: 947
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 183
-    server: 154.17.20.96
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: Nn7D3pZ0RDISZlC6ayayFCl3A9ReSOS25wCB84AxOX8a3gEzTuFY3YDKexqcpj
-    sni: playful.missionsec.io
-    skip-cert-verify: true
-    delay: 989
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 185
-    server: enfuego.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: TD7FKA3CZSyRgCeXp60xjaEa3uSzFaS5BOpC2lY3y9cYRA884qZOI3wxlNDneD
-    sni: enfuego.missionsec.io
-    skip-cert-verify: true
-    delay: 1397
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 186
-    server: 154.17.16.123
-    type: trojan
-    country: 🇺🇸US
-    port: 28334
-    udp: true
-    password: X9gKnC4japSDlAyB8OpYZ5RwSN2IeS33czeClO73FD6DqauaFCRxxEyY8AZT03
-    sni: seagull.missionsec.io
-    skip-cert-verify: true
-    delay: 971
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 187
-    server: proclaim.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 28331
-    udp: true
-    password: 4FRjnlacyw3AITNXYC50SFC3EaSKq9BDplYz2C7ZDye8DZSxRp6g3uxO8a3AOe
-    sni: proclaim.missionsec.io
-    skip-cert-verify: true
-    delay: 1339
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 188
-    server: seagull.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 28334
-    udp: true
-    password: X9gKnC4japSDlAyB8OpYZ5RwSN2IeS33czeClO73FD6DqauaFCRxxEyY8AZT03
-    sni: seagull.missionsec.io
-    skip-cert-verify: true
-    delay: 1351
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 189
-    server: disciples.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: nFxZpRAcgDyuSNF3jeRIay4YDzS76BC90eDlCZ5w3O2Sa3CaX3KlpxAE8OY8qT
-    sni: disciples.missionsec.io
-    skip-cert-verify: true
-    delay: 1436
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 191
-    server: tobster.freetrade.link
-    type: trojan
-    country: 🇺🇸US
-    port: 28343
-    udp: true
-    password: ASRpD3DYlZTNagqjxKS2BcF39y3y8DO30e85zCZXaCau6EO7RwxF4YAIenplSC
-    sni: tobster.freetrade.link
-    skip-cert-verify: true
-    delay: 1426
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 192
-    server: playful.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: Nn7D3pZ0RDISZlC6ayayFCl3A9ReSOS25wCB84AxOX8a3gEzTuFY3YDKexqcpj
-    sni: playful.missionsec.io
-    skip-cert-verify: true
-    delay: 1449
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 193
-    server: 154.17.17.150
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: nFxZpRAcgDyuSNF3jeRIay4YDzS76BC90eDlCZ5w3O2Sa3CaX3KlpxAE8OY8qT
-    sni: disciples.missionsec.io
-    skip-cert-verify: true
-    delay: 905
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 196
-    server: 154.17.22.65
-    type: trojan
-    country: 🇺🇸US
-    port: 28343
-    udp: true
-    password: ASRpD3DYlZTNagqjxKS2BcF39y3y8DO30e85zCZXaCau6EO7RwxF4YAIenplSC
-    sni: tobster.freetrade.link
-    skip-cert-verify: true
-    delay: 880
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 199
-    server: penguin.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 28332
-    udp: true
-    password: 8DAzZXOSwYcDlgOej2lC3AYypa30F4pxnqCSEZKR7yD3Sx89RuNa6aCBeFT35I
-    sni: penguin.missionsec.io
-    skip-cert-verify: true
-    delay: 1454
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 202
-    server: 154.17.14.35
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    udp: true
-    password: TD7FKA3CZSyRgCeXp60xjaEa3uSzFaS5BOpC2lY3y9cYRA884qZOI3wxlNDneD
-    sni: enfuego.missionsec.io
-    skip-cert-verify: true
-    delay: 944
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 203
-    server: 154.17.27.123
-    type: trojan
-    country: 🇺🇸US
-    port: 28331
-    udp: true
-    password: DxuCRlZS3aq5pgI8YYcBCZFln7e83XDONSROjAepSK3CaFyATz0aw3DyE6294x
-    sni: starfish.missionsec.io
-    skip-cert-verify: true
-    delay: 1057
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 190
-    server: training.freetrade.link
-    type: trojan
-    country: 🇺🇸US
-    port: 18333
-    udp: true
-    password: Y4O3x7D8RSepyNXDA8ZOZEaKB3F9Y35Ca3TpuxlR6aCAeygSDl0IwcjCz2nSqF
-    sni: training.freetrade.link
-    skip-cert-verify: true
-    delay: 1304
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 194
-    server: 154.17.11.95
-    type: trojan
-    country: 🇺🇸US
-    port: 28332
-    udp: true
-    password: leuyp3KXzDl9aDZSCAEDxRIOgF4A73pn68aYc8a33CxCeO2wFY05BjSZqTRSyN
-    sni: chapter.freetrade.link
-    skip-cert-verify: true
-    delay: 1001
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 195
-    server: testify.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 28334
-    udp: true
-    password: x2uDYA5XgC87FaeCnR9SFNEZc8SDwp3p0z4yRCj33IZBYxeayaDlTlO6Sq3OAK
-    sni: testify.missionsec.io
-    skip-cert-verify: true
-    delay: 1311
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 197
-    server: harvest.missionsec.io
-    type: trojan
-    country: 🇺🇸US
-    port: 28331
-    udp: true
-    password: Y3Tw3OF8IxN7SDZCRSaqFljeeYzEAa98235l3DBxnRaODcAygpZuK4CpyC60XS
-    sni: harvest.missionsec.io
-    skip-cert-verify: true
-    delay: 2003
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 198
-    server: 154.21.86.20
-    type: trojan
-    country: 🇺🇸US
-    port: 28334
-    udp: true
-    password: x2uDYA5XgC87FaeCnR9SFNEZc8SDwp3p0z4yRCj33IZBYxeayaDlTlO6Sq3OAK
-    sni: testify.missionsec.io
-    skip-cert-verify: true
-    delay: 848
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 200
-    server: 154.17.18.105
-    type: trojan
-    country: 🇺🇸US
-    port: 18331
-    udp: true
-    password: YRA8xacOj3zNCTB7npA83EgDD2Su9eIlXe0CY4q56RFxZawCaKOyDZly33SFpS
-    sni: livers.freetrade.link
-    skip-cert-verify: true
-    delay: 916
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 201
-    server: 154.21.81.134
-    type: trojan
-    country: 🇺🇸US
-    port: 18333
-    udp: true
-    password: Y4O3x7D8RSepyNXDA8ZOZEaKB3F9Y35Ca3TpuxlR6aCAeygSDl0IwcjCz2nSqF
-    sni: training.freetrade.link
-    skip-cert-verify: true
-    delay: 1102
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 205
-    server: 154.17.0.15
-    type: trojan
-    country: 🇺🇸US
-    port: 28331
-    udp: true
-    password: Y3Tw3OF8IxN7SDZCRSaqFljeeYzEAa98235l3DBxnRaODcAygpZuK4CpyC60XS
-    sni: harvest.missionsec.io
-    skip-cert-verify: true
-    delay: 926
-  - name: 美国 - 洛杉矶 - Psychz Networks - 176
-    server: fbi.gov
+    password: amazonskr05
+    delay: 813
+  - name: 美国 - 洛杉矶 - Psychz Networks - 6
+    server: 172.64.167.22
     port: 2095
     type: vmess
     uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
     cipher: auto
-    udp: true
     tls: false
-    network: ws
-    servername: ip10.6016725.xyz
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: ip10.6016725.xyz
-    delay: 1002
-  - name: 美国 - 洛杉矶 - Psychz Networks - 180
-    server: 104.26.0.56
-    port: 2095
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip10.6016725.xyz
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: ip10.6016725.xyz
-    delay: 1853
-  - name: 美国 - 洛杉矶 - Psychz Networks - 206
-    server: 139.9.45.178
-    port: 7890
-    type: http
-    client-fingerprint: chrome
-    skip-cert-verify: true
-    tls: false
-    udp: true
-    delay: 531
-  - name: 美国 - 洛杉矶 - Psychz Networks - 209
-    server: 104.19.58.175
-    port: 2082
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip15.6929198.xyz
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: ip15.6929198.xyz
-    delay: 923
-  - name: 美国 - 洛杉矶 - Psychz Networks - 210
-    server: fbi.gov
-    port: 2082
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip15.6929198.xyz
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: ip15.6929198.xyz
-    delay: 2311
-  - name: 美国 - 紐約 - Cloudflare, Inc. - 162
-    server: 199.232.37.15
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    udp: true
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /BCXzvAcvSB7JzMWj?ed=2560
+      path: /github.com/Alvin9999
       headers:
-        Host: sara193.ir
-    delay: 898
+        Host: ip11.6016725.xyz
+    delay: 839
+  - name: 美国 - 洛杉矶 - Psychz Networks - 7
+    server: 23.170.40.116
+    type: vmess
+    port: 12345
+    uuid: 0c7fe100-fcce-4c6d-8208-a53f73e93e17
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: github.com/Alvin9999
+      headers:
+        Host: www.bing.com
+    delay: 747
+  - name: 美国 - 洛杉矶 - Psychz Networks - 8
+    server: fbi.gov
+    port: 2095
+    type: vmess
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ip10.6016725.xyz
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        Host: ip10.6016725.xyz
+    udp: true
+    delay: 892
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
-    server: 192.0.54.48
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 2319
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
-    server: 45.67.215.98
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /?proxyip=proxyip.oraclm.fxxm.dedyn.io
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1796
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
-    server: 198.62.62.15
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2028
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
-    server: 45.67.215.53
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 2022
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
-    server: 198.62.62.227
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1748
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
-    server: 69.84.182.15
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2211
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
-    server: 45.67.215.19
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 2081
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
-    server: 198.62.62.245
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 2158
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
-    server: 198.62.62.215
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2139
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
-    server: 198.62.62.161
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 2058
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
-    server: 216.221.213.149
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 2380
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
-    server: 198.62.62.84
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylka.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylka.us.kg
-    delay: 2165
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
-    server: 198.62.62.84
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 2301
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
-    server: 69.84.182.163
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2176
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
-    server: 198.62.62.13
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 2363
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
-    server: 198.62.62.236
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 2353
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
-    server: 69.84.182.58
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1919
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
-    server: 198.62.62.9
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 2149
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
-    server: 198.62.62.131
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 2362
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
-    server: 198.62.62.92
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 2156
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
-    server: 198.62.62.237
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 2262
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
-    server: 45.67.215.144
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2429
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
-    server: 217.163.76.203
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 2295
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
-    server: 69.84.182.27
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 2299
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
-    server: 69.84.182.232
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1411
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 126
-    server: 198.62.62.77
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1254
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 127
-    server: 69.84.182.233
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1746
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 128
-    server: 198.62.62.14
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1670
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 129
     server: 69.84.182.119
-    port: 443
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
     network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
     ws-opts:
       path: /freecodes
       headers:
-        Host: ln.ylks01.eu.org
-    delay: 1749
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 130
-    server: 160.79.105.99
-    port: 443
+        Host: lp.ylks01.eu.org
+    delay: 1547
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
+    server: 198.62.62.233
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
     ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
+      path: /blue
       headers:
-        Host: dn.ylks.xyz
-    delay: 1917
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 131
+        Host: do.ylks.xyz
+    delay: 1527
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
+    server: 198.62.62.137
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1466
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
+    server: 198.62.62.59
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1486
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
+    server: 69.84.182.21
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1534
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
     server: 69.84.182.127
+    type: vless
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1927
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 132
-    server: 69.84.182.110
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1562
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 133
-    server: 198.62.62.127
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1565
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 134
-    server: 216.221.214.50
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1879
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 135
-    server: 45.67.215.99
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.oracln.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 1446
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 136
-    server: 198.62.62.48
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1571
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 137
-    server: 204.110.220.254
-    port: 80
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 1994
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 138
-    server: 216.24.57.171
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1767
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 139
-    server: 216.24.57.108
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 1876
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
-    server: 198.62.62.1
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1182
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 140
-    server: 216.24.57.59
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1310
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 141
-    server: 204.110.220.120
-    port: 80
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1868
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 142
-    server: 69.84.182.176
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: an.ylks.xyz
-    delay: 1700
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 143
-    server: 216.24.57.98
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1765
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 144
-    server: 198.62.62.251
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: dm.ylks.xyz
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1796
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
+    server: 69.84.182.33
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
     skip-cert-verify: true
+    servername: do.ylks.xyz
     ws-opts:
       path: /blue
       headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1468
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 145
-    server: 216.24.57.129
-    port: 443
+        Host: do.ylks.xyz
+    delay: 1230
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
+    server: 198.62.62.15
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
+    tls: true
+    servername: dp.ylks.xyz
     ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
+      path: /freecodes
       headers:
-        Host: dn.ylks.xyz
-    delay: 1780
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 146
-    server: 69.84.182.233
-    port: 443
+        Host: dp.ylks.xyz
+    delay: 1448
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
+    server: 198.62.62.241
     type: vless
+    port: 443
+    udp: true
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
     network: ws
+    tls: true
+    servername: ap.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: an.ylks.xyz
-    delay: 1790
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 147
-    server: 173.249.197.84
+        Host: ap.ylks.xyz
+    delay: 1285
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
+    server: 69.84.182.164
+    type: vless
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 2330
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 148
-    server: 192.0.54.218
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1717
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 149
-    server: 198.62.62.75
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1874
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
-    server: 69.84.182.134
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1602
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 150
-    server: 204.110.220.120
-    port: 80
-    type: vless
+    udp: true
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
     network: ws
+    tls: true
+    servername: ap.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: an.ylks.xyz
-    delay: 2543
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 151
-    server: 216.24.57.36
-    port: 443
-    type: vless
-    udp: true
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    network: ws
-    tls: true
-    servername: ll.kpcloud.eu.org
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ll.kpcloud.eu.org
-    delay: 1608
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 152
-    server: 198.62.62.151
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1805
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 153
-    server: 69.84.182.196
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1746
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 154
-    server: 69.84.182.141
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1734
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 156
-    server: 204.110.220.254
-    port: 80
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1273
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 157
-    server: 216.24.57.24
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1352
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 158
-    server: 194.76.18.243
+        Host: ap.ylks.xyz
+    delay: 1675
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
+    server: 198.62.62.110
     type: vless
     port: 443
     udp: true
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    network: ws
-    tls: true
-    servername: ll.kpcloud.eu.org
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ll.kpcloud.eu.org
-    delay: 1391
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 159
-    server: 45.67.215.161
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: am.ylks.xyz
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 983
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
-    server: 192.200.160.44
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
     network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1551
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
+    server: 198.62.62.241
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
     ws-opts:
       path: /freecodes
       headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1589
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 160
-    server: 69.84.182.93
-    port: 443
+        Host: lp.ylks01.eu.org
+    delay: 1670
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
+    server: 198.62.62.140
     type: vless
-    network: ws
-    tls: true
+    port: 443
     udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lm.ylks01.eu.org
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1270
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 161
-    server: 217.163.76.65
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
+    tls: true
+    servername: dp.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: dn.ylks.xyz
-    delay: 1162
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 163
-    server: 104.19.209.229
-    port: 8880
+        Host: dp.ylks.xyz
+    delay: 1574
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
+    server: 69.84.182.41
     type: vless
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: late-tooth.granzinhannah.workers.dev
-    delay: 592
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 164
-    server: 69.84.182.200
     port: 443
-    type: vless
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
     network: ws
     tls: true
-    udp: true
-    servername: dm.ylks.xyz
     skip-cert-verify: true
+    servername: ao.ylks.xyz
     ws-opts:
       path: /blue
       headers:
-        Host: dm.ylks.xyz
+        Host: ao.ylks.xyz
+    delay: 1538
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
+    server: 69.84.182.219
+    type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1652
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
+    server: 198.62.62.161
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.ylks01.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.ylks01.eu.org
     delay: 1312
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 165
-    server: 206.238.237.133
-    port: 443
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
+    server: 69.84.182.234
     type: vless
-    network: ws
-    tls: true
+    port: 443
     udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1179
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 166
-    server: 69.84.182.179
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1168
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 167
-    server: 69.84.182.75
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1406
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 168
-    server: 198.62.62.44
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: am.ylks.xyz
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1010
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 169
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1229
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
+    server: 198.62.62.227
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1354
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
+    server: 198.62.62.119
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1464
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+    server: 198.62.62.1
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 868
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
+    server: 216.221.213.149
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1626
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
+    server: 198.62.62.67
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1226
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
+    server: 192.0.54.48
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1599
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
+    server: 192.0.63.109
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1464
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
+    server: 69.84.182.178
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1503
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
+    server: 69.84.182.196
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1751
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 126
+    server: 198.62.62.217
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1488
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 128
+    server: 198.62.62.9
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1568
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 129
     server: 69.84.182.100
-    port: 443
     type: vless
-    network: ws
-    tls: true
+    port: 443
     udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1235
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
-    server: 94.247.142.241
-    port: 443
-    type: vless
-    network: ws
-    uuid: 775213ac-3976-439a-8977-3277c0e4735d
-    servername: fq521.6789.cloudns.be
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      headers:
-        Host: fq521.6789.cloudns.be
-      path: /twitterfreecodessecurity
-    delay: 1445
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 170
-    server: 198.62.62.170
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1215
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 171
-    server: 217.163.76.60
-    type: vless
-    port: 443
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     network: ws
     tls: true
-    servername: ll.kpcloud.eu.org
+    servername: dp.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: ll.kpcloud.eu.org
-    delay: 1241
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 172
-    server: 198.62.62.183
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1220
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
-    type: vless
-    network: ws
+        Host: dp.ylks.xyz
+    delay: 1686
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
     server: 188.42.145.140
+    type: vless
     port: 443
     uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-    servername: g1.youyuan.us.kg
+    network: ws
     tls: true
-    client-fingerprint: chrome
-    packet-encoding: ''
-    delay: 1557
+    servername: g1.youyuan.us.kg
     ws-opts:
+      path: /
       headers:
         Host: g1.youyuan.us.kg
-      path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
-    server: 198.62.62.92
-    port: 443
+    delay: 1174
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 130
+    server: 69.84.182.97
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1631
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
-    server: 69.84.182.251
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1324
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 207
-    server: 45.67.215.208
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1082
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
-    server: 192.200.160.211
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1455
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 211
-    server: 69.84.182.86
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylka.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylka.us.kg
-    delay: 743
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 212
-    server: 198.62.62.185
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1032
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 213
-    server: 216.24.57.171
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1100
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
-    server: 69.84.182.38
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: dm.ylks.xyz
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1470
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 131
+    server: 198.62.62.44
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
     skip-cert-verify: true
+    servername: ao.ylks.xyz
     ws-opts:
       path: /blue
       headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1554
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
-    server: 69.84.182.104
-    port: 443
+        Host: ao.ylks.xyz
+    delay: 1346
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 132
+    server: 69.84.182.97
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1511
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
-    server: 198.62.62.14
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1418
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
-    server: 198.62.62.128
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1260
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
-    server: 198.62.62.203
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1501
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
-    server: 45.67.215.42
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1193
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
-    server: 198.62.62.42
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1447
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
-    server: 69.84.182.29
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylka.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylka.us.kg
-    delay: 1485
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
-    server: 198.62.62.220
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylka.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylka.us.kg
-    delay: 1199
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
-    server: 69.84.182.165
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1414
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
-    server: 198.62.62.174
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1595
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
-    server: 192.200.160.63
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1579
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
-    server: 198.62.62.52
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: ln.ylks.us.kg
-    delay: 1481
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
-    server: 198.62.62.148
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1635
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
-    server: 69.84.182.59
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1527
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
-    server: 198.62.62.176
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1935
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
-    server: 217.163.76.84
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.oracln.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1634
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
-    server: 69.84.182.127
-    port: 443
-    type: vless
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
     network: ws
+    tls: true
+    servername: ap.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: an.ylks.xyz
-    delay: 2003
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
-    server: 69.84.182.39
-    port: 443
+        Host: ap.ylks.xyz
+    delay: 1327
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 133
+    server: 69.84.182.44
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1740
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
-    server: 198.62.62.39
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1934
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
-    server: 69.84.182.187
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1812
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
-    server: 69.84.182.192
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.ylks01.eu.org
-    delay: 1817
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
-    server: 198.62.62.91
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1935
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
-    server: 206.238.237.74
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cm.ylks.xyz
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1650
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
-    server: 198.62.62.156
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
+    tls: true
+    servername: cp.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: dn.ylks.xyz
-    delay: 1927
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
-    server: 198.62.62.233
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1931
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
-    server: 198.62.62.176
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1839
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
-    server: 198.62.62.241
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1954
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
-    server: 198.62.62.211
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1975
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
-    server: 69.84.182.193
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1773
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
-    server: 69.84.182.145
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1672
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
-    server: 198.62.62.10
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1674
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
-    server: 69.84.182.70
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1419
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
-    server: 198.62.62.48
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1700
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+        Host: cp.ylks.xyz
+    delay: 1533
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 134
     server: 198.62.62.236
-    port: 443
     type: vless
+    port: 443
+    udp: true
     uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
     network: ws
+    tls: true
+    servername: ap.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: an.ylks.xyz
-    delay: 1975
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
-    server: 216.24.57.239
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1782
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
-    server: 198.62.62.241
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1973
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
+        Host: ap.ylks.xyz
+    delay: 1599
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 135
     server: 198.62.62.237
-    port: 443
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1431
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
-    server: 198.62.62.227
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1854
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
-    server: 198.62.62.217
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1487
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
-    server: 160.79.105.118
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1864
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
-    server: 198.62.62.165
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1801
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
-    server: 206.238.236.83
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: cm.ylks.xyz
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1394
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 136
+    server: 69.84.182.100
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
     skip-cert-verify: true
+    servername: ao.ylks.xyz
     ws-opts:
       path: /blue
       headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1879
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
-    server: 69.84.182.102
-    port: 443
+        Host: ao.ylks.xyz
+    delay: 1445
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 137
+    server: 192.0.63.8
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2002
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
-    server: 198.62.62.137
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1684
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
-    server: 198.62.62.186
-    port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: am.ylks.xyz
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1578
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 138
+    server: 69.84.182.70
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1252
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 139
+    server: 69.84.182.192
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1426
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: 94.247.142.241
+    type: vless
+    port: 443
+    udp: true
+    uuid: 775213ac-3976-439a-8977-3277c0e4735d
+    network: ws
+    tls: true
+    servername: fq521.6789.cloudns.be
+    ws-opts:
+      path: /twitterfreecodessecurity
+      headers:
+        Host: fq521.6789.cloudns.be
+    delay: 1016
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 140
+    server: 192.0.63.8
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1606
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 141
+    server: 69.84.182.145
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
     skip-cert-verify: true
+    servername: ao.ylks.xyz
     ws-opts:
       path: /blue
       headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1617
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
-    server: 69.84.182.178
-    port: 443
+        Host: ao.ylks.xyz
+    delay: 1406
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 142
+    server: 69.84.182.75
     type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     network: ws
+    tls: true
+    servername: cp.ylks.xyz
     ws-opts:
       path: /freecodes
       headers:
-        Host: an.ylks.xyz
-    delay: 1654
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+        Host: cp.ylks.xyz
+    delay: 1582
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 143
+    server: 216.221.214.50
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1604
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 144
+    server: 198.62.62.110
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1158
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 145
+    server: 69.84.182.26
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1304
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 146
     server: 160.79.105.106
-    port: 443
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
     network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.kpcloud.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.kpcloud.eu.org
+    delay: 1135
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 147
+    server: 198.62.62.10
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
     ws-opts:
       path: /freecodes
       headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1502
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
-    server: 69.84.182.178
-    port: 443
+        Host: lp.ylks01.eu.org
+    delay: 1573
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 148
+    server: 69.84.182.84
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1413
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 149
+    server: 198.62.62.131
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1621
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 173.249.197.84
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.ylks01.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.ylks01.eu.org
+    delay: 1047
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 150
+    server: 69.84.182.127
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1619
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 151
+    server: 198.62.62.185
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1344
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 152
+    server: 198.62.62.211
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1417
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 153
+    server: 198.62.62.14
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1578
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 154
+    server: 198.62.62.236
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1594
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 155
+    server: 198.62.62.81
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1471
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 156
+    server: 69.84.182.210
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1432
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 157
+    server: 69.84.182.30
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1429
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 158
+    server: 198.62.62.148
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1597
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: 216.24.57.108
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1480
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 160
+    server: 198.62.62.42
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1445
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 161
+    server: 198.62.62.165
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1597
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 162
+    server: 198.62.62.102
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1459
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 163
+    server: 69.84.182.200
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1479
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 164
+    server: 206.238.237.74
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1033
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 165
+    server: 198.62.62.28
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1424
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 166
+    server: 198.62.62.77
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1383
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 167
+    server: 69.84.182.232
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1345
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 168
+    server: 45.67.215.218
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1000
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 169
+    server: 69.84.182.163
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1242
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 216.24.57.98
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1324
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 170
+    server: 69.84.182.44
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1325
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 171
+    server: 198.62.62.252
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1180
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 172
+    server: 198.62.62.39
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1351
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 173
+    server: 198.62.62.215
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1467
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 174
+    server: 198.62.62.28
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1329
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 175
+    server: 198.62.62.9
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1330
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 176
+    server: 194.76.18.197
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1379
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 177
+    server: 198.62.62.176
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1447
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 178
+    server: 69.84.182.233
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1583
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 179
+    server: 45.67.215.95
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1252
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: 216.24.57.239
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1185
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 181
+    server: 198.62.62.0
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1052
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 182
+    server: 69.84.182.106
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1274
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 183
+    server: 198.62.62.13
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.ylks01.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.ylks01.eu.org
+    delay: 1438
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 184
+    server: 69.84.182.58
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1223
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 185
+    server: 212.183.88.134
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.oraclp.fxxp.dedyp.io
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1520
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 186
+    server: 151.101.3.10
+    type: vless
+    port: 80
+    udp: true
+    uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: uni.fi
+    delay: 1117
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 187
+    server: 45.67.215.144
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1444
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 188
+    server: 206.238.237.60
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1470
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 189
+    server: 206.238.236.83
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: cp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: cp.ylks.xyz
+    delay: 1590
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 216.24.57.24
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1303
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: 216.24.57.59
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1280
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+    server: 216.24.57.171
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1483
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 216.24.57.129
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: do.ylks.xyz
+    delay: 1191
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 69.84.182.134
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1056
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 69.84.182.178
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1130
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 69.84.182.139
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1388
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+    server: 216.24.57.29
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.kpcloud.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.kpcloud.eu.org
+    delay: 1304
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 69.84.182.251
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1060
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
+    server: 192.200.160.63
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1205
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
+    server: 198.62.62.13
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1377
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
+    server: 160.79.104.178
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1322
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 198.62.62.156
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1031
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 198.62.62.84
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1410
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: 198.62.62.32
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1132
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
+    server: 198.62.62.60
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1306
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
+    server: 69.84.182.52
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1210
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
+    server: 192.200.160.2
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1351
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: 69.84.182.232
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1297
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
+    server: 69.84.182.165
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.ylks01.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.ylks01.eu.org
+    delay: 1102
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
+    server: 198.62.62.84
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1369
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
+    server: 69.84.182.179
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1413
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
+    server: 198.62.62.22
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1216
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    server: 45.67.215.42
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1017
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 69.84.182.29
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1375
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 69.84.182.140
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1396
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
+    server: 198.62.62.185
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1364
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    server: 69.84.182.15
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1390
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
+    server: 198.62.62.27
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1108
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
+    server: 69.84.182.163
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1308
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
+    server: 69.84.182.110
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1309
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
+    server: 198.62.62.227
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1137
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
+    server: 198.62.62.122
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1395
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
+    server: 69.84.182.212
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: do.ylks.xyz
+    delay: 1132
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
+    server: 198.62.62.52
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1315
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
+    server: 198.62.62.208
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1109
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+    server: 198.62.62.128
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1320
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
+    server: 69.84.182.164
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylka.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylka.us.kg
+    delay: 1306
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
+    server: 69.84.182.77
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1142
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
+    server: 69.84.182.86
+    type: vless
+    port: 443
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
     tls: true
     servername: ln.ylka.us.kg
-    network: ws
     ws-opts:
       path: /?ed=2560
       headers:
         Host: ln.ylka.us.kg
-    delay: 1541
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
-    server: 69.84.182.52
-    port: 443
+    delay: 1132
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
+    server: 198.62.62.220
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
     network: ws
+    tls: true
+    servername: cp.ylks.xyz
     ws-opts:
-      path: /?ed=2560
+      path: /freecodes
       headers:
-        Host: ln.ylks.us.kg
-    delay: 1173
+        Host: cp.ylks.xyz
+    delay: 1187
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
+    server: 198.62.62.208
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1182
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+    server: 192.200.160.101
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1230
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+    server: 188.42.145.159
+    type: vless
+    port: 443
+    udp: true
+    uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+    network: ws
+    tls: true
+    servername: VIrgiNiavPn-nL.pagEs.dEv
+    ws-opts:
+      path: /security
+      headers:
+        Host: VIrgiNiavPn-nL.pagEs.dEv
+    delay: 1064
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
+    server: 69.84.182.93
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1027
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
-    server: 69.84.182.70
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1449
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
-    server: 69.84.182.97
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1622
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
-    server: 216.24.57.29
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: ln.kpcloud.eu.org
-    delay: 1276
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
-    server: 69.84.182.97
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1228
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
-    server: 198.62.62.185
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1366
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
-    server: 69.84.182.44
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1679
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
-    server: 69.84.182.247
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1630
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
-    server: 198.62.62.0
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1637
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
-    server: 206.238.236.160
-    port: 443
-    type: vless
-    udp: true
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    network: ws
-    tls: true
-    servername: ll.kpcloud.eu.org
-    ws-opts:
-      path: /blue
-      headers:
-        Host: ll.kpcloud.eu.org
-    delay: 1643
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
-    server: 198.62.62.81
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1479
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
-    server: 69.84.182.172
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1660
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
-    server: 198.62.62.131
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: am.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: am.ylks.xyz
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    delay: 1483
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
-    server: 69.84.182.212
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1385
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
-    server: 198.62.62.140
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1414
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
-    server: 69.84.182.44
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1567
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
-    server: 198.62.62.166
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    servername: an.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: an.ylks.xyz
-    delay: 1659
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
-    server: 69.84.182.139
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /?proxyip=proxyip.us.fxxm.dedyn.io
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1694
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
-    server: 198.62.62.9
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1686
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
     server: 198.62.62.64
-    port: 443
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: ln.ylks.us.kg
     network: ws
+    tls: true
+    servername: lp.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: ln.ylks.us.kg
-    delay: 1098
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
-    server: 198.62.62.28
-    port: 443
+        Host: lp.ylks.us.kg
+    delay: 795
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    server: 198.62.62.127
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1584
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
-    server: 198.62.62.22
     port: 443
-    type: vless
-    network: ws
-    tls: true
     udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: dm.ylks.xyz
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1515
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
-    server: 69.84.182.84
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 1686
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
-    server: 69.84.182.33
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     tls: true
-    servername: ln.ylks.us.kg
-    network: ws
+    servername: lp.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: ln.ylks.us.kg
-    delay: 1773
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
-    server: 160.79.104.178
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dm.ylks.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /blue
-      headers:
-        Host: dm.ylks.xyz
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1924
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
-    server: 69.84.182.100
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: dn.ylks.xyz
-    delay: 2051
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
-    server: 69.84.182.172
-    port: 443
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: lm.ylks01.eu.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: lm.ylks01.eu.org
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    delay: 1680
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
+        Host: lp.ylks.us.kg
+    delay: 763
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
     server: 69.84.182.101
-    port: 443
     type: vless
+    port: 443
+    udp: true
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: dn.ylks.xyz
     network: ws
+    tls: true
+    servername: dp.ylks.xyz
     ws-opts:
-      path: /?proxyip=proxyip.us.fxxn.dedyn.io
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
       headers:
-        Host: dn.ylks.xyz
-    delay: 2019
-  - name: 美国 - 聖荷西 - PEG TECH INC - 175
+        Host: dp.ylks.xyz
+    delay: 1096
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
+    server: 198.62.62.22
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1224
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
+    server: 69.84.182.141
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1219
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
+    server: 69.84.182.59
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1046
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    server: 192.200.160.211
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: lo.kpcloud.eu.org
+    ws-opts:
+      path: /blue
+      headers:
+        Host: lo.kpcloud.eu.org
+    delay: 1304
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
+    server: 198.62.62.245
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1310
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
+    server: 69.84.182.70
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1123
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
+    server: 69.84.182.197
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1415
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    server: 69.84.182.84
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1133
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    server: 198.62.62.174
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1270
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
+    server: 192.0.54.218
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: do.ylks.xyz
+    delay: 1230
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
+    server: 160.79.105.99
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: do.ylks.xyz
+    delay: 1359
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
+    server: 198.62.62.166
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1280
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
+    server: 69.84.182.104
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxo.dedyo.io
+      headers:
+        Host: do.ylks.xyz
+    delay: 1348
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 69.84.182.187
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks01.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.ylks01.eu.org
+    delay: 1509
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
+    server: 198.62.62.14
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: co.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: co.ylks.xyz
+    delay: 1471
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    server: 69.84.182.27
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1340
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
+    server: 69.84.182.145
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1050
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
+    server: 198.62.62.237
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: dp.ylks.xyz
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: dp.ylks.xyz
+    delay: 1342
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
+    server: 69.84.182.39
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: do.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: do.ylks.xyz
+    delay: 1182
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
+    server: 69.84.182.32
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 966
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
+    server: 198.62.62.12
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1560
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
+    server: 160.79.105.118
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.kpcloud.eu.org
+    ws-opts:
+      path: /freecodes
+      headers:
+        Host: lp.kpcloud.eu.org
+    delay: 1497
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
+    server: 69.84.182.176
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    servername: ap.ylks.xyz
+    ws-opts:
+      path: /?proxyip=proxyip.us.fxxp.dedyp.io
+      headers:
+        Host: ap.ylks.xyz
+    delay: 1449
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
+    server: 198.62.62.75
+    type: vless
+    port: 443
+    udp: true
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    network: ws
+    tls: true
+    servername: lp.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: lp.ylks.us.kg
+    delay: 1493
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
+    server: 69.84.182.39
+    type: vless
+    port: 443
+    udp: true
+    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: ao.ylks.xyz
+    ws-opts:
+      path: /blue
+      headers:
+        Host: ao.ylks.xyz
+    delay: 1299
+  - name: 美国 - 聖荷西 - PEG TECH INC - 190
     server: 183.236.51.23
     port: 52112
     type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    udp: true
     tls: false
     skip-cert-verify: true
-    network: tcp
-    delay: 2278
-  - name: 英国 - 伦敦 - Datacamp Limited - 1
+    udp: true
+    delay: 736
+  - name: 美国 - 迈阿密 - GTHost - 1
+    server: 38.110.1.12
+    port: 2375
     type: ss
-    server: 212.102.53.198
-    port: 443
-    cipher: aes-128-gcm
-    password: shadowsocks
-    delay: 759
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
-    server: 192.236.249.102
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+    delay: 1262
+  - name: 英国 - Erith - OVH SAS - 2
+    server: 151.101.2.228
+    type: vmess
+    country: 🇺🇸US
+    port: 80
+    uuid: 7f3e901c-76eb-4480-8803-947e4674ecaa
+    alterId: 0
+    cipher: auto
     network: ws
+    servername: bRItISh.ovH.55.ISVvpn.UK.
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /freecodes
+      path: /RACEVPN?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
       headers:
-        Host: cn.ylks.xyz
-    delay: 1873
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-    server: 152.67.212.141
+        HOST: bRItISh.ovH.55.ISVvpn.UK.
+    delay: 2692
+  - name: 英国 - 伦敦 - Global Connectivity Solutions LLP - 1
+    server: 89.185.84.185
+    type: ss
+    country: 🇷🇺RU
+    port: 12575
+    password: MdeeQzzQP9HTGvy3NKC9FR
+    cipher: chacha20-ietf-poly1305
+    delay: 2417
+  - name: 英国 - 金丝雀码头 - Catixs Ltd - 3
+    server: gdcub.yunnode.win
+    type: ss
+    port: 35634
+    password: 5e872ea0-b37a-4a6c-9364-844c8458f239
+    cipher: chacha20-ietf-poly1305
+    delay: 2059
+  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
+    server: 45.87.175.154
+    type: ss
+    country: 🇱🇹LT
+    port: 8080
+    password: g9AJsrBPgW4Nhjoy3xCioC
+    cipher: chacha20-ietf-poly1305
+    delay: 1878
+  - name: 越南 - 河內市 - Kaopu Cloud HK Limited - 2
+    server: gdcub.yunnode.win
+    type: ss
+    port: 31660
+    password: 07c1e8da-045d-4814-a8f0-c60040fa3588
+    cipher: chacha20-ietf-poly1305
+    delay: 1489
+  - name: 越南 - 胡志明市 - Vpsttt Computer Company Limited - 1
+    server: std1.loadingip.com
+    type: trojan
+    country: 🏁 ZZ
     port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    servername: cn.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /freecodes
-      headers:
-        Host: cn.ylks.xyz
-    delay: 1513
+    udp: true
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
+    skip-cert-verify: true
+    delay: 1855
   - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 3
     server: 52.78.193.3
-    type: ss
-    country: 🇰🇷KR
     port: 443
-    password: amazonskr05
+    type: ss
     cipher: aes-256-cfb
-    delay: 379
+    password: amazonskr05
+    delay: 494
   - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 1
-    server: 3.38.102.189
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 537
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
     server: 3.35.222.240
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
-    delay: 963
-  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
-    server: 43.203.197.215
+    delay: 1055
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
+    server: 3.38.102.189
+    port: 443
     type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    delay: 398
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 5
+    server: striking-shepherd.opossum872.cfd
+    type: trojan
+    country: 🇰🇷KR
+    port: 443
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 1330
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 6
+    server: driving-lamprey.opossum872.cfd
+    type: trojan
     country: 🇺🇸US
     port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 410
+    udp: true
+    password: '3648425794742788096'
+    skip-cert-verify: true
+    delay: 1230
   - name: 韩国 - 首尔特别市 - Oracle Corporation - 4
+    server: 140.238.18.228
+    type: vless
+    port: 443
+    udp: true
+    uuid: 2353e75d-7cec-4e7f-9eae-e996117cac04
+    network: tcp
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: updates.cdn-apple.com
+    reality-opts:
+      public-key: t_MDb0CgA1ZwyIj7NpJ2hvp85C9sH8Nsnd8etE8NKw4
+    delay: 1296
+  - name: 韩国 - 首尔特别市 - Oracle Corporation - 7
     server: 221.181.185.71
     port: 23382
     type: ss
     cipher: aes-256-cfb
     password: f52SZksXnGNfc72Q
-    delay: 1204
-  - name: 韩国 - 首尔特别市 - Oracle Corporation - 6
+    delay: 855
+  - name: 韩国 - 首尔特别市 - Oracle Corporation - 8
     server: 182.92.216.171
     port: 7890
     type: http
-    alterId: -1
-    client-fingerprint: chrome
-    skip-cert-verify: true
     tls: false
-    udp: true
-    delay: 991
+    skip-cert-verify: true
+    delay: 527
