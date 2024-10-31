@@ -4,153 +4,87 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 德国 - 法兰克福 - intercolo GmbH - 2
-    server: 37.114.33.109
+  - name: 波兰 - 华沙 - Melbikomas UAB - 1
+    server: 217.30.10.18
+    port: 9019
+    type: ss
+    cipher: aes-256-cfb
+    password: GA9KzeEgvfxNrgmM
+    delay: 1568
+  - name: 德国 - 兰河畔林堡 - OVH SAS - 2
+    server: 120.232.153.37
+    port: 46665
     type: vmess
-    country: 🇩🇪DE
-    port: 12213
-    uuid: cdc95a8e-3acb-436f-8fc3-336ebd544003
-    alterId: 0
+    uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
+    alterId: 64
     cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
-    delay: 876
-  - name: 德国 - 纽伦堡 - Hetzner Online GmbH - 1
-    server: api.turkiye6.xyz
-    port: 443
-    type: ss
-    country: 🇩🇪 DE
-    password: lQHuqev0bDeSuxSCL
-    cipher: chacha20-ietf-poly1305
-    delay: 2821
-  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
-    server: 45.87.175.192
-    port: 8080
-    type: ss
-    country: 🇱🇹 LT
-    password: cvII85TrW6n0OGyfpHVS1u
-    cipher: chacha20-ietf-poly1305
-    delay: 1880
-  - name: 荷兰 - Meppel - Karizanta LTD - 2
-    type: vless
-    network: http
-    server: 185.113.10.235
-    port: 443
-    uuid: f1a495fd-8236-45b7-ae71-4c855ad15367
-    servername: neshan.org
-    skip-cert-verify: false
     udp: true
-    delay: 2976
-    http-opts:
-      headers:
-        Host:
-          - neshan.org
-      method: GET
-      path:
-        - /
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 10
+    delay: 980
+  - name: 德国 - Frankfurt - GTHost - 1
     type: ss
-    server: 35.94.16.186
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 1614
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 9
-    type: ss
-    server: 54.200.148.115
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    delay: 688
-  - name: 美国 - 丹佛 - GTHost - 1
-    type: ss
-    server: 69.50.92.110
-    port: 8009
+    server: 23.157.88.61
+    port: 2376
     cipher: aes-256-gcm
-    alterId: 0
-    tls: true
-    password: XKFKl2rULjIp74
-    skip-cert-verify: true
-    delay: 2746
-  - name: 美国 - 丹佛 - GTHost - 3
+    password: faBAoD54k87UJG7
+    delay: 1606
+  - alterId: 0
+    cipher: auto
+    client-fingerprint: chrome
+    name: 法国 - 斯特拉斯堡 - OVH SAS - 1
+    network: ws
+    port: 2082
+    server: s1c.v2.v001sss.xyz
+    skip-cert-verify: false
+    tfo: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+    ws-opts:
+      headers:
+        Host: s1c.v2.v001sss.xyz
+      path: /
+    delay: 2089
+  - name: 美国 - 達拉斯 - Datacamp Limited - 4
+    type: ss
+    server: 156.146.38.168
+    port: 443
+    cipher: aes-128-gcm
+    password: shadowsocks
+    delay: 1899
+  - cipher: aes-256-gcm
+    name: 美国 - 達拉斯 - GTHost - 3
+    password: Y6R9pAtvxxzmGC
+    port: 3389
+    server: 23.134.94.168
+    type: ss
+    delay: 1725
+  - name: 美国 - 丹佛 - GTHost - 1
+    server: 69.50.92.110
+    port: 5000
+    type: ss
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+    delay: 1031
+  - name: 美国 - 丹佛 - GTHost - 5
     server: 69.50.92.110
     port: 5498
     type: ss
     country: 🇺🇸 US
     password: lGqs95QkFHo2NV
     cipher: aes-256-gcm
-    delay: 952
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 12
-    type: vless
-    network: ws
-    server: 199.232.5.79
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    servername: mefa.ir
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    client-fingerprint: chrome
-    delay: 1648
-    ws-opts:
-      headers:
-        Host: mefa.ir
-      path: /H?ed=2560
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 13
-    type: vless
-    network: ws
-    server: 154.17.10.6
-    port: 54593
-    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
-    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    tfo: true
-    client-fingerprint: chrome
-    packet-encoding: xudp
-    mptcp: true
-    smux:
-      enabled: true
-      max-streams: 10
-      padding: true
-      protocol: h2mux
-    ws-opts:
-      headers:
-        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
-      path: /buefubwuefuwefuwffewf
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    delay: 1628
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 14
-    type: vless
-    network: ws
-    server: 154.21.89.73
-    port: 27629
-    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
-    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    tfo: true
-    client-fingerprint: chrome
-    packet-encoding: xudp
-    mptcp: true
-    smux:
-      enabled: true
-      max-streams: 10
-      padding: true
-      protocol: h2mux
-    ws-opts:
-      headers:
-        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
-      path: /buefubwuefuwefuwffewf
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    delay: 1623
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 15
+    delay: 1027
+  - name: 美国 - 洛杉矶 - GTHost - 9
+    server: 38.75.136.117
+    type: ss
+    country: 🇺🇸US
+    port: 2376
+    password: faBAoD54k87UJG7
+    cipher: aes-256-gcm
+    delay: 1465
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 10
     type: vless
     network: ws
     server: 154.26.238.128
@@ -175,8 +109,60 @@ proxies:
       path: /buefubwuefuwefuwffewf
       v2ray-http-upgrade: true
       v2ray-http-upgrade-fast-open: true
-    delay: 2509
-  - name: 美国 - 洛杉矶 - Ipxo LLC - 16
+    delay: 771
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 11
+    type: vless
+    network: ws
+    server: 154.21.89.73
+    port: 27629
+    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
+    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
+    skip-cert-verify: false
+    tls: true
+    udp: true
+    tfo: true
+    client-fingerprint: chrome
+    packet-encoding: xudp
+    mptcp: true
+    smux:
+      enabled: true
+      max-streams: 10
+      padding: true
+      protocol: h2mux
+    ws-opts:
+      headers:
+        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
+      path: /buefubwuefuwefuwffewf
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    delay: 795
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 12
+    type: vless
+    network: ws
+    server: 154.17.10.6
+    port: 54593
+    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
+    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
+    skip-cert-verify: false
+    tls: true
+    udp: true
+    tfo: true
+    client-fingerprint: chrome
+    packet-encoding: xudp
+    mptcp: true
+    smux:
+      enabled: true
+      max-streams: 10
+      padding: true
+      protocol: h2mux
+    ws-opts:
+      headers:
+        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
+      path: /buefubwuefuwefuwffewf
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    delay: 803
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 13
     type: vless
     network: ws
     server: 154.17.25.25
@@ -201,8 +187,60 @@ proxies:
       path: /buefubwuefuwefuwffewf
       v2ray-http-upgrade: true
       v2ray-http-upgrade-fast-open: true
-    delay: 1615
-  - name: 美国 - 洛杉矶 - Psychz Networks - 4
+    delay: 770
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 14
+    type: vless
+    network: ws
+    server: 142.147.94.108
+    port: 10086
+    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
+    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
+    skip-cert-verify: false
+    tls: true
+    udp: true
+    tfo: true
+    client-fingerprint: chrome
+    packet-encoding: xudp
+    mptcp: true
+    smux:
+      enabled: true
+      max-streams: 10
+      padding: true
+      protocol: h2mux
+    ws-opts:
+      headers:
+        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
+      path: /buefubwuefuwefuwffewf
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    delay: 850
+  - name: 美国 - 洛杉矶 - Ipxo LLC - 15
+    type: vless
+    network: ws
+    server: 142.147.94.159
+    port: 37049
+    uuid: 2fa6651f-7067-4e5c-a944-f0836d239efd
+    servername: akilelaxub.eessgrgrgrgr.cloudns.nz
+    skip-cert-verify: false
+    tls: true
+    udp: true
+    tfo: true
+    client-fingerprint: chrome
+    packet-encoding: xudp
+    mptcp: true
+    smux:
+      enabled: true
+      max-streams: 10
+      padding: true
+      protocol: h2mux
+    ws-opts:
+      headers:
+        Host: akilelaxub.eessgrgrgrgr.cloudns.nz
+      path: /buefubwuefuwefuwffewf
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    delay: 888
+  - name: 美国 - 洛杉矶 - Psychz Networks - 6
     type: vmess
     server: japan.com
     port: 2095
@@ -216,55 +254,22 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: ip2.6016725.xyz
-    delay: 1337
-  - name: 美国 - 洛杉矶 - Psychz Networks - 5
-    server: 172.67.70.92
-    type: vmess
-    country: 🇺🇸US
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ip3.6929198.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        HOST: ip3.6929198.xyz
-    delay: 1389
-  - name: 美国 - 洛杉矶 - Psychz Networks - 6
-    type: vmess
-    server: 172.64.167.29
-    port: 2095
-    cipher: auto
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: ip2.6016725.xyz
-    delay: 1358
+    delay: 2808
   - name: 美国 - 洛杉矶 - Psychz Networks - 7
-    type: vmess
-    server: 104.26.5.88
+    server: russia.com
     port: 2095
-    cipher: auto
+    type: vmess
     uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
     alterId: 0
+    cipher: auto
     tls: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     network: ws
     ws-opts:
-      path: github.com/Alvin9999
+      path: /github.com/Alvin9999
       headers:
-        host: ip2.6016725.xyz
-    delay: 2430
+        Host: ip11.6016725.xyz
+    delay: 2391
   - name: 美国 - 洛杉矶 - Psychz Networks - 8
     type: vmess
     server: japan.com
@@ -279,133 +284,38 @@ proxies:
       path: github.com/Alvin9999
       headers:
         host: ip3.6929198.xyz
-    delay: 1833
-  - name: 美国 - 迈阿密 - Cloudflare, Inc. - 17
-    type: vless
-    server: 167.82.30.71
-    port: 80
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /4u7lAS4nPLtz0xPz?ed=2560
-      headers:
-        Host: samane.ir
-    delay: 1518
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
-    type: vless
-    network: ws
-    server: 151.101.3.10
-    port: 80
-    uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
-    udp: true
-    delay: 916
-    ws-opts:
-      headers:
-        Host: uni.fi
-      path: /?ed=2048
-  - alterId: 0
-    cipher: auto
-    name: 美国 - 沃尔纳特 - Psychz Networks - 19
-    network: ws
-    port: 8443
-    server: 104.21.238.200
-    servername: http1.9290254.xyz
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: http1.9290254.xyz
-      path: github.com/Alvin9999
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    delay: 1785
+    delay: 1863
   - name: 美国 - 西雅圖 - Datacamp Limited - 2
     type: ss
     server: 212.102.47.131
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
-    delay: 732
-  - name: 美国 - Reston - Cloudflare, Inc. - 18
-    type: vless
-    server: 104.20.19.168
-    port: 8880
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: late-tooth.granzinhannah.workers.dev
-    delay: 1791
-  - cipher: aes-128-gcm
-    name: 日本 - 东京 - Datacamp Limited - 1
-    password: shadowsocks
-    port: 443
-    server: 149.22.87.240
-    tfo: false
-    type: ss
-    delay: 2161
-  - name: 土耳其 - Ataşehir - Hostkey B.V. - 1
-    type: ss
-    server: 185.24.151.214
-    port: 52952
-    cipher: chacha20-ietf-poly1305
-    alterId: 0
-    tls: true
-    password: >-
-      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-    skip-cert-verify: true
-    delay: 2240
-  - name: 土耳其 - Ataşehir - Hostkey B.V. - 2
-    server: exchange.gameaurela.click
-    port: 52952
-    type: ss
-    country: 🇬🇧 GB
-    password: >-
-      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-    cipher: chacha20-ietf-poly1305
-    delay: 2283
-  - name: 意大利 - Milan - Seflow S.N.C. Di Marco Brame' & C. - 1
-    server: ent1.imyourdaddy.top
-    type: trojan
-    country: 🏁 ZZ
-    port: 20983
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-    skip-cert-verify: true
-    udp: true
-    delay: 2635
+    delay: 927
+  - alterId: 64
+    cipher: auto
+    name: 英国 - 伦敦 - OVH SAS - 2
+    network: tcp
+    port: '43526'
+    server: 120.232.153.71
+    servername: ''
+    tls: false
+    type: vmess
+    uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+    delay: 1247
   - name: 英国 - Stretford - M247 Europe SRL - 1
     type: ss
-    server: 141.98.101.179
+    server: 141.98.101.180
     port: 443
     cipher: aes-128-gcm
     password: shadowsocks
-    delay: 805
-  - name: 中国 - 香港 - CTG Server Ltd. - 2
-    type: vmess
-    server: 183.236.51.23
-    port: 51002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    network: tcp
-    delay: 941
-  - name: 中国 - 香港 - Hytron Network Services Limited - 1
-    server: ent1.imyourdaddy.top
-    port: 20101
+    delay: 820
+  - name: 越南 - 胡志明市 - Vpsttt Computer Company Limited - 1
+    server: 36.50.134.29
+    port: 443
     type: trojan
-    country: 🇯🇵 JP
-    password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    country: 🏁 ZZ
+    password: 94d219c9-1afc-4d42-b090-8b3794764380
     skip-cert-verify: true
     udp: true
-    delay: 2323
+    delay: 1685
