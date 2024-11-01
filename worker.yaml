@@ -4,125 +4,35 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 108
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 20
     type: vless
-    network: ws
     server: 199.232.5.101
     port: 443
     uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    servername: mefa.ir
-    skip-cert-verify: true
-    tls: true
     udp: true
+    tls: true
     client-fingerprint: chrome
-    delay: 863
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+    servername: mefa.ir
+    network: ws
     ws-opts:
+      path: /H?ed=2560
       headers:
         Host: mefa.ir
-      path: /H?ed=2560
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 109
+    delay: 964
+  - name: 美国 - Reston - Cloudflare, Inc. - 23
     type: vless
-    network: ws
-    server: 199.232.5.79
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    servername: mefa.ir
-    skip-cert-verify: true
-    tls: true
+    server: 104.20.19.168
+    port: 8880
+    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
     udp: true
-    client-fingerprint: chrome
-    delay: 883
-    ws-opts:
-      headers:
-        Host: mefa.ir
-      path: /H?ed=2560
-  - name: 美国 - 迈阿密 - Cloudflare, Inc. - 118
-    type: vless
-    network: ws
-    server: 167.82.30.71
-    port: 80
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    skip-cert-verify: false
-    udp: true
-    delay: 1116
-    ws-opts:
-      headers:
-        Host: samane.ir
-      path: /4u7lAS4nPLtz0xPz?ed=2560
-  - name: 美国 - 紐約 - Cloudflare, Inc. - 117
-    type: vless
-    network: ws
-    server: 199.232.37.15
-    port: 80
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    skip-cert-verify: false
-    udp: true
-    delay: 1571
-    ws-opts:
-      headers:
-        Host: sara193.ir
-      path: /BCXzvAcvSB7JzMWj?ed=2560
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
-    type: vless
-    network: ws
-    server: 151.101.3.10
-    port: 80
-    uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
-    udp: true
-    delay: 750
-    ws-opts:
-      headers:
-        Host: uni.fi
-      path: /?ed=2048
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
-    type: vless
-    network: ws
-    server: 104.19.58.30
-    port: 443
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    servername: az.ylks.xyz
-    tls: true
-    ws-opts:
-      headers:
-        Host: az.ylks.xyz
-      path: /?ed=2048
-    delay: 830
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 17
-    type: vless
-    network: ws
-    server: 104.21.78.221
-    port: 443
-    uuid: 79bf326d-93de-494f-a7a1-f9aaa764f86a
-    servername: kir-too-kos-o-koon-maman-arzeshi-begoo-jooooooon.pages.dev
-    tls: true
-    delay: 1206
-    ws-opts:
-      headers:
-        Host: kir-too-kos-o-koon-maman-arzeshi-begoo-jooooooon.pages.dev
-      path: /
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 18
-    type: vless
-    network: ws
-    server: 172.67.166.115
-    port: 443
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    servername: az.ylks.xyz
-    tls: true
-    ws-opts:
-      headers:
-        Host: az.ylks.xyz
-      path: /?ed=2048
-    delay: 1210
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 19
-    server: 172.67.180.238
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
     skip-cert-verify: false
     network: ws
     ws-opts:
-      path: /trep2km0aVhJcl29WO?ed=2560
+      path: /?ed=2048
       headers:
-        Host: 403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV
-    delay: 1409
+        Host: late-tooth.granzinhannah.workers.dev
+    delay: 832
