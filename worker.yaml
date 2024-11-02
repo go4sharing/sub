@@ -3,36 +3,4 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies:
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 20
-    type: vless
-    server: 199.232.5.101
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    udp: true
-    tls: true
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-    servername: mefa.ir
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: mefa.ir
-    delay: 964
-  - name: 美国 - Reston - Cloudflare, Inc. - 23
-    type: vless
-    server: 104.20.19.168
-    port: 8880
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
-    udp: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: late-tooth.granzinhannah.workers.dev
-    delay: 832
+proxies: []
