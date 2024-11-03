@@ -3,4 +3,19 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 美国 - Reston - Cloudflare, Inc. - 36
+    server: 104.20.71.132
+    port: 8880
+    client-fingerprint: chrome
+    type: vless
+    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram@Linkvws?ed=2560
+      headers:
+        Host: late-tooth.granzinhannah.workers.dev
+    delay: 2293
