@@ -5,221 +5,137 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 爱尔兰 - 都柏林 - Microsoft Corporation - 1
-    server: 52.169.126.67
+    server: 52.169.217.145
+    port: 13832
     type: ss
-    country: 🇮🇪IE
-    port: 64401
-    password: qM7y4D7jun6cC5NMdQ3FE5
     cipher: chacha20-ietf-poly1305
-    delay: 1751
-  - name: 韩国 - Gwanak-gu - SK Broadband Co Ltd - 3
-    server: 221.139.79.57
+    password: SaKH2gJcsbr6UzHEzPBz41
+    delay: 775
+  - name: 德国 - 法兰克福 - firstcolo GmbH - 2
+    server: 31.172.87.116
+    port: 443
+    type: trojan
+    password: 8bcd0f06-c7f4-4548-b059-5410926ffac7
+    sni: uni.fi
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vsAzoREN3Iyuo2VCA3xzaKR
+    udp: true
+    delay: 1473
+  - name: 荷兰 - 阿姆斯特丹 - Des Equity LLC - 3
+    server: 208.67.105.196
+    port: 42029
     type: ss
-    port: 54345
-    password: qwerREWQ@@
-    cipher: aes-256-cfb
-    delay: 843
+    cipher: chacha20-ietf-poly1305
+    password: >-
+      SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+    delay: 2776
+  - name: 荷兰 - 阿姆斯特丹 - Servers Tech Fzco - 2
+    server: 77.246.97.187
+    type: ss
+    country: 🇳🇱NL
+    port: 7749
+    password: 7kJQs2RYHhViTYWaf1RobB
+    cipher: chacha20-ietf-poly1305
+    delay: 1368
   - name: 荷兰 - Rozendaal - NForce Entertainment B.V. - 1
     server: 109.201.152.181
     port: 443
     type: ss
     cipher: aes-128-cfb
     password: shadowsocks
-    delay: 882
-  - name: 加拿大 - 蒙特利尔 - OVH SAS - 2
-    server: 15.235.50.172
-    type: vmess
-    country: 🇨🇦CA
-    port: 443
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: baradiha.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkvws
-      headers:
-        HOST: baradiha.com
-    delay: 2733
+    delay: 1090
   - name: 加拿大 - 溫哥華 - Datacamp Limited - 1
     server: 149.22.95.183
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-    delay: 713
-  - name: 美国 - 奥勒姆 - Ace Data Centers, Inc. - 1
-    server: 150.241.102.95
-    port: 21771
+    delay: 1407
+  - name: 立陶宛 - 维尔纽斯 - Hostkey B.V. - 1
+    server: 107.181.155.244
+    port: 55330
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: 5mgZJzPv7hrLX4KMdPIeAW
-    delay: 1523
-  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 3
-    server: 54.149.182.67
-    port: 443
+    password: >-
+      rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
+    delay: 1981
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 11
+    server: 54.191.9.106
     type: ss
-    cipher: aes-256-cfb
+    country: 🏁 ZZ
+    port: 443
     password: amazonskr05
-    delay: 1350
-  - name: 美国 - 達拉斯 - Datacamp Limited - 2
+    cipher: aes-256-cfb
+    delay: 773
+  - name: 美国 - 波特蘭 - Amazon.com, Inc. - 8
+    server: 44.243.115.246
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1337
+  - name: 美国 - 達拉斯 - Datacamp Limited - 12
     server: 156.146.38.168
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-    delay: 1676
-  - name: 美国 - 洛杉矶 - Psychz Networks - 15
-    server: 104.26.5.112
-    type: vmess
-    country: 🇺🇸US
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ip3.6929198.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        HOST: ip3.6929198.xyz
-    delay: 1415
-  - name: 美国 - 洛杉矶 - Psychz Networks - 16
-    server: 172.64.166.8
-    port: 2082
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ip26.6929198.xyz
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip26.6929198.xyz
-    delay: 2103
-  - name: 美国 - 洛杉矶 - Psychz Networks - 17
-    server: 172.64.166.33
-    port: 2095
-    type: vmess
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    tls: false
+    delay: 2230
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 10
+    server: 103.170.72.120
+    port: 27061
+    type: trojan
+    password: auto
+    sni: trojanfree-76s.pages.dev
     skip-cert-verify: true
     network: ws
     ws-opts:
-      path: github.com/Alvin9999
+      path: /
       headers:
-        Host: ip2.6016725.xyz
-    delay: 1313
-  - name: 美国 - 洛杉矶 - Psychz Networks - 18
-    server: 172.64.167.29
-    type: vmess
-    country: 🇺🇸US
-    port: 2082
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ip18.6929198.xyz
-    http-opts: {}
-    h2-opts: {}
+        Host: trojanfree-76s.pages.dev
+    udp: true
+    delay: 2632
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 9
+    server: 103.170.72.129
+    port: 27051
+    type: trojan
+    password: auto
+    sni: trojanfree-76s.pages.dev
     skip-cert-verify: true
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        HOST: ip18.6929198.xyz
-    delay: 1463
-  - name: 美国 - 洛杉矶 - Psychz Networks - 19
-    server: 172.64.175.88
-    port: 2082
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ip26.6929198.xyz
     network: ws
     ws-opts:
-      path: github.com/Alvin9999
+      path: /
       headers:
-        Host: ip26.6929198.xyz
-    delay: 1326
-  - name: 美国 - 洛杉矶 - Psychz Networks - 20
-    server: 104.19.21.71
-    type: vmess
-    country: 🏁ZZ
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ip2.6016725.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        HOST: ip2.6016725.xyz
-    delay: 1294
-  - name: 美国 - 洛杉矶 - Psychz Networks - 21
-    server: 104.19.45.13
-    type: vmess
-    country: 🏁ZZ
-    port: 2095
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ip2.6016725.xyz
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        HOST: ip2.6016725.xyz
-    delay: 1345
-  - name: 美国 - 洛杉矶 - Psychz Networks - 22
-    server: 104.19.38.9
-    port: 2082
-    type: vmess
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ip26.6929198.xyz
-    network: ws
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        Host: ip26.6929198.xyz
-    delay: 1486
-  - name: 美国 - 紐約 - Datacamp Limited - 4
-    server: 37.19.198.160
-    port: 443
+        Host: trojanfree-76s.pages.dev
+    udp: true
+    delay: 2633
+  - name: 美国 - 华盛顿特区 - GTHost - 7
+    server: 38.86.135.141
+    port: 8882
     type: ss
-    cipher: aes-128-gcm
-    password: shadowsocks
-    delay: 885
-  - name: 美国 - 聖荷西 - PEG TECH INC - 14
-    server: 137.175.113.192
-    port: 8388
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+    delay: 1198
+  - name: 美国 - 纽约 - GTHost - 13
+    server: 142.202.48.105
+    port: 8080
     type: ss
-    cipher: chacha20-ietf
-    password: asd123456
-    delay: 731
-  - name: 美国 - 聖荷西 - PEG TECH INC - 26
+    country: 🇺🇸 US
+    password: KixLvKzwjekG00rm
+    cipher: aes-256-gcm
+    delay: 2786
+  - name: 美国 - 纽约 - GTHost - 14
+    server: 142.202.48.105
+    port: 7306
+    type: ss
+    country: 🇺🇸 US
+    password: FoOiGlkAA9yPEGP
+    cipher: aes-256-gcm
+    delay: 2622
+  - name: 美国 - 聖荷西 - PEG TECH INC - 15
     server: 183.236.51.23
     port: 52112
     type: vmess
@@ -228,37 +144,30 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-    delay: 2418
-  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 2
-    server: 13.250.3.43
+    delay: 1113
+  - name: 日本 - 中野區 - Internet Initiative Japan Inc. - 3
+    server: 61.172.235.22
+    port: 11001
     type: ss
-    country: 🇸🇬SG
-    port: 443
-    password: amazonskr05
-    cipher: aes-256-cfb
-    delay: 262
-  - name: 意大利 - 罗马市 - SonderCloud Limited - 1
-    server: 194.41.59.80
-    port: 8388
-    type: ss
-    cipher: chacha20-ietf
-    password: asd123456
-    delay: 607
-  - name: 英国 - 伦敦 - Amazon.com, Inc. - 3
-    server: 51.24.32.145
+    cipher: chacha20-ietf-poly1305
+    password: a58a5239-3b34-4c35-8724-953ef363015c
+    delay: 1374
+  - name: 瑞典 - 斯德哥尔摩 - Amazon Technologies Inc. - 2
+    server: 13.50.208.162
     port: 22222
     type: trojan
     password: telegram-id-privatevpns
     sni: trojan.burgerip.co.uk
-    delay: 1263
-  - name: 英国 - Stretford - M247 Europe SRL - 1
+    skip-cert-verify: false
+    delay: 1872
+  - name: 英国 - Stretford - M247 Europe SRL - 2
     server: 141.98.101.182
     port: 443
     type: ss
     cipher: aes-128-gcm
     password: shadowsocks
-    delay: 1239
-  - name: 中国 - 香港 - CTG Server Ltd. - 4
+    delay: 777
+  - name: 中国 - 香港 - CTG Server Ltd. - 6
     server: 183.236.48.163
     port: 40002
     type: vmess
@@ -266,12 +175,35 @@ proxies:
     alterId: 64
     cipher: auto
     tls: false
-    delay: 910
-  - name: 中国 - 香港 - Dalian Yichuan Industrial CO - 2
-    server: 103.149.183.10
+    delay: 914
+  - name: 中国 - 香港 - CTG Server Ltd. - 8
+    server: 183.236.51.23
+    port: 56601
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    delay: 1211
+  - name: 中国 - 香港 - Leaseweb Asia Pacific pte. ltd. - 2
+    server: 203.23.128.33
+    port: 990
     type: ss
-    country: 🇭🇰HK
-    port: 8388
-    password: asd123456
-    cipher: chacha20-ietf
-    delay: 460
+    cipher: chacha20-ietf-poly1305
+    password: f8f7aCzcPKbsF8p3
+    delay: 2354
+  - name: 中国 - 香港 - Stacks Inc - 3
+    server: 183.232.229.165
+    type: ss
+    country: 🇨🇳CN
+    port: 11001
+    password: 03da697a-c4b4-42c8-af5f-612bd5dbd9ba
+    cipher: chacha20-ietf-poly1305
+    delay: 382
+  - name: 中国 - 香港 - Stacks Inc - 7
+    server: 183.240.255.75
+    port: 11001
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: e182d6b4-403c-40d6-bd66-6d281a67d282
+    delay: 318
