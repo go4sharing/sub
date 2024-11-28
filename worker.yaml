@@ -4,39 +4,27 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 台湾 - Cloudflare, Inc. - 5
-    server: 210.61.97.241
-    type: vless
-    port: 81
-    udp: true
-    uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a
-    network: ws
-    tls: true
-    skip-cert-verify: true
+  - name: 中国 - 香港 - Cloudflare, Inc. - 6
+    server: 103.44.255.81
+    port: 443
     client-fingerprint: chrome
-    servername: sub.putata.eu.org
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: sub.putata.eu.org
-    delay: 1435
-  - name: 土耳其 - Kocasinan - Cloudflare, Inc. - 1
-    server: 95.164.116.22
     type: vless
-    port: 2501
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
+    uuid: 23d9aa04-8a2a-4ffc-9a3c-479a9f43f6fe
     tls: true
-    servername: a.mifeng.us.kg
+    tfo: false
+    skip-cert-verify: false
+    servername: 445566.666888.lol
+    network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /?ed=2560fp=random
       headers:
-        Host: a.mifeng.us.kg
-    delay: 1850
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 1
-    server: 2.58.56.31
+        Host: 445566.666888.lol
+    delay: 271
+  - name: 摩尔多瓦 - Sîngera - Cloudflare, Inc. - 1
+    server: 95.164.22.239
     type: vless
     port: 2003
+    udp: true
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     network: ws
     tls: true
@@ -45,8 +33,22 @@ proxies:
       path: /?ed=2560
       headers:
         Host: a.mifeng.us.kg
-    delay: 1068
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 1
+    delay: 2137
+  - name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 1
+    server: 64.110.103.142
+    type: vless
+    port: 587
+    udp: true
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.mifeng.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    delay: 2337
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 2
     server: 160.16.242.208
     type: vless
     port: 8889
@@ -59,127 +61,9 @@ proxies:
       path: /?ed=2560
       headers:
         Host: a.mifeng.us.kg
-    delay: 630
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 4
-    server: 151.101.65.122
-    type: vless
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: metrix.ir
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: metrix.ir
-    delay: 1778
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 5
-    server: 151.101.65.210
-    type: vless
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: firefox
-    servername: pooleno.ir
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: pooleno.ir
-    delay: 1426
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 6
-    server: 167.82.97.49
-    type: vless
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: cosmocare.ir
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: cosmocare.ir
-    delay: 1488
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
-    server: 104.18.13.229
-    port: 8443
-    client-fingerprint: chrome
-    type: vless
-    uuid: 68abcacf-4d6c-4b40-a9ff-1b68c9721230
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: pardazeshvpn-tg75.pages.dev
-    network: ws
-    ws-opts:
-      path: >-
-        /Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048fp=random
-      headers:
-        Host: pardazeshvpn-tg75.pages.dev
-    delay: 987
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 3
-    server: 217.163.76.107
-    port: 8443
-    client-fingerprint: chrome
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    tfo: false
-    skip-cert-verify: false
-    servername: edgood.889876.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048fp=chrome
-      headers:
-        Host: edgood.889876.xyz
-    delay: 1653
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
-    server: 104.18.12.229
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: mav2flyng.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /%2F
-      headers:
-        Host: mav2flyng.pages.dev
-    delay: 2898
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
-    server: 103.214.68.133
-    type: vless
-    port: 587
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    servername: a.mifeng.us.kg
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    delay: 1271
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
-    server: 195.200.19.139
-    type: vless
-    port: 6060
-    udp: true
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    servername: a.mifeng.us.kg
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    delay: 1938
-  - name: 西班牙 - 查馬丁區 - Cloudflare, Inc. - 1
-    server: 94.250.246.200
+    delay: 436
+  - name: 法国 - 奧奈叢林 - Cloudflare, Inc. - 2
+    server: 152.228.207.76
     type: vless
     port: 8080
     udp: true
@@ -191,4 +75,64 @@ proxies:
       path: /?ed=2560
       headers:
         Host: a.mifeng.us.kg
-    delay: 1630
+    delay: 1485
+  - name: 美国 - Reston - Cloudflare, Inc. - 425
+    server: ip.sb
+    port: 8080
+    client-fingerprint: chrome
+    type: vless
+    uuid: 365de7de-77b2-4a62-aec3-66a6bd41813e
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    servername: feng5.ogazo8c3.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048fp=randomizedfp=chrome
+      headers:
+        Host: feng5.ogazo8c3.workers.dev
+    delay: 1137
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 424
+    server: 140.248.129.207
+    port: 80
+    client-fingerprint: chrome
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    servername: amir55.ir
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: amir55.ir
+    delay: 888
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 104.16.150.224
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: blue2024
+    sni: ha.lii2010.us.kg
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: ha.lii2010.us.kg
+    delay: 2757
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
+    server: 103.214.68.133
+    type: vless
+    port: 587
+    udp: true
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    servername: a.mifeng.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    delay: 2470
