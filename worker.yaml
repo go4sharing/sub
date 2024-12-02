@@ -4,16 +4,73 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
-    server: 103.214.68.133
-    port: 587
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 3
+    server: 119.192.167.123
     type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    port: 10000
+    uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+    network: ws
     tls: true
-    servername: a.mifeng.us.kg
+    servername: edgetunnel.xiaomayi.nyc.mn
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: edgetunnel.xiaomayi.nyc.mn
+    delay: 1847
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
+    server: 61.74.55.112
+    type: vless
+    port: 50000
+    uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+    network: ws
+    tls: true
+    servername: edgetunnel.xiaomayi.nyc.mn
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: edgetunnel.xiaomayi.nyc.mn
+    delay: 1103
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 186
+    server: 151.101.65.210
+    type: vless
+    port: 443
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    client-fingerprint: firefox
+    servername: pooleno.ir
+    ws-opts:
+      path: /GGPPfZ3NKyOoKNiK?ed=2560fp=firefox
+      headers:
+        Host: pooleno.ir
+    delay: 1175
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 4
+    server: 114.34.202.224
+    port: 10004
+    client-fingerprint: chrome
+    type: vless
+    uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: test2.ccdd.site
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /?ed=2560fp=chrome
       headers:
-        Host: a.mifeng.us.kg
-    delay: 1947
+        Host: test2.ccdd.site
+    delay: 1152
+  - name: 中国 - 香港 - Cloudflare, Inc. - 5
+    server: 42.98.167.229
+    type: vless
+    port: 12345
+    uuid: f2b3219c-215f-4b7e-96d8-25b751d79988
+    network: ws
+    tls: true
+    servername: edgetunnel.xiaomayi.nyc.mn
+    ws-opts:
+      path: /telegram🇨🇳+@wangcai2+/?ed=2048
+      headers:
+        Host: edgetunnel.xiaomayi.nyc.mn
+    delay: 1481
