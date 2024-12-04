@@ -3,4 +3,16 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 303
+    server: 154.85.99.206
+    type: trojan
+    port: 443
+    password: bpb-trojan
+    sni: bpb.my79801.com
+    ws-opts:
+      path: '%2Ftr%3Fed%3D2560'
+      headers:
+        Host: bpb.my79801.com
+    network: ws
+    delay: 1320
