@@ -4,7 +4,23 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 意大利 - Gallarate - Cloudflare, Inc. - 2
+  - name: 德国 - 莱比锡 - Cloudflare, Inc. - 51
+    server: 2na9noed62ec.dopraxrocks.com
+    port: 80
+    type: vless
+    uuid: 5c4f6ca8-b824-48de-8f33-ec3c9eda1c5e
+    tls: false
+    servername: speedtest.net
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - speedtest.net
+    delay: 1120
+  - name: 意大利 - Gallarate - Cloudflare, Inc. - 1
     server: 204.216.216.148
     port: 8443
     type: vless
@@ -17,8 +33,8 @@ proxies:
       headers:
         Host: dsb.ylks.us.kg
     udp: true
-    delay: 1629
-  - name: 美国 - Reston - Cloudflare, Inc. - 46
+    delay: 1282
+  - name: 美国 - Reston - Cloudflare, Inc. - 52
     server: 129.80.222.224
     port: 443
     type: vless
@@ -31,64 +47,8 @@ proxies:
       headers:
         Host: dsb.ylks.us.kg
     udp: true
-    delay: 1207
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
-    server: 160.79.105.221
-    port: 443
-    type: vless
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    tls: true
-    servername: dsb.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: dsb.ylks.us.kg
-    udp: true
-    delay: 2060
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
-    server: 45.67.215.48
-    port: 443
-    type: vless
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    tls: true
-    servername: dsb.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560&proxyip=45.67.215.48:443
-      headers:
-        Host: dsb.ylks.us.kg
-    udp: true
-    delay: 1070
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
-    server: 45.67.215.178
-    port: 443
-    type: vless
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    tls: true
-    servername: dsb.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: dsb.ylks.us.kg
-    udp: true
-    delay: 1204
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
-    server: 160.123.255.20
-    port: 443
-    type: vless
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    tls: true
-    servername: dsb.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: dsb.ylks.us.kg
-    udp: true
-    delay: 1216
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    delay: 1122
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
     server: 160.123.255.121
     port: 443
     type: vless
@@ -101,8 +61,8 @@ proxies:
       headers:
         Host: dsb.ylks.us.kg
     udp: true
-    delay: 2475
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    delay: 1872
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
     server: 160.79.104.76
     port: 443
     type: vless
@@ -115,9 +75,9 @@ proxies:
       headers:
         Host: dsb.ylks.us.kg
     udp: true
-    delay: 1364
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
-    server: 63.141.128.99
+    delay: 1371
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+    server: 216.221.210.185
     port: 443
     type: vless
     uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
@@ -129,4 +89,31 @@ proxies:
       headers:
         Host: dsb.ylks.us.kg
     udp: true
-    delay: 2510
+    delay: 1717
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
+    server: 194.76.18.10
+    port: 443
+    type: vless
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    tls: true
+    servername: dsb.ylks.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: dsb.ylks.us.kg
+    udp: true
+    delay: 1164
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 11
+    server: 172.67.207.57
+    port: 443
+    type: trojan
+    password: yaml777
+    sni: yaml7.ggff.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: yaml7.ggff.net
+    delay: 1272
