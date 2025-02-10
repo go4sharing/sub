@@ -4,20 +4,44 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - Reston - Cloudflare, Inc. - 6
-    server: 104.26.12.101
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    server: 104.16.96.120
+    port: 443
     type: vless
-    port: 2052
-    udp: true
-    uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+    uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+    tls: true
+    servername: edgetunnel-3pc.pages.dev
+    client-fingerprint: random
     network: ws
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: >-
-      Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     ws-opts:
-      path: /?ed=1080/telegram@v2ray_alpha
+      path: /?ed=2560
       headers:
-        Host: >-
-          Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    delay: 2905
+        Host: edgetunnel-3pc.pages.dev
+    udp: true
+    delay: 2208
+  - name: 美国 - Reston - Cloudflare, Inc. - 70
+    server: 104.26.14.85
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.xn--i-sx6a60i.us.kg.
+    delay: 1992
+  - name: 美国 - Reston - Cloudflare, Inc. - 71
+    server: 172.67.73.163
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.xn--i-sx6a60i.us.kg.
+    delay: 2063
