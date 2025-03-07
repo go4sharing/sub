@@ -4,8 +4,68 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 加拿大 - 列治文 - Cloudflare, Inc. - 1
-    server: 155.248.196.123
+  - name: 中国 - 台湾 - Cloudflare, Inc. - 3
+    server: 210.61.97.241
+    type: vless
+    port: 81
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1250
+  - name: 中国 - 香港 - Cloudflare, Inc. - 2
+    server: 141.11.216.39
+    type: vless
+    port: 8080
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1483
+  - name: 中国 - 香港 - Cloudflare, Inc. - 4
+    server: 47.239.231.62
+    type: vless
+    port: 7443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 2465
+  - name: 中国 - 香港 - Cloudflare, Inc. - 5
+    server: 165.154.43.92
+    type: vless
+    port: 35184
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 752
+  - name: 印度 - Santa Cruz - Cloudflare, Inc. - 1
+    server: 141.148.203.6
     type: vless
     port: 443
     udp: true
@@ -13,89 +73,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1064
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 2
-    server: 149.28.100.40
-    type: vless
-    port: 33333
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2208
-  - name: 加拿大 - 密西沙加 - Cloudflare, Inc. - 3
-    server: 140.238.158.238
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1303
+        Host: cc1.ylks.us.kg
+    delay: 2258
   - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 1
-    server: 54.255.217.120
-    type: vless
-    port: 8192
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 681
-  - name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 3
-    server: 141.147.147.28
-    type: vless
-    port: 8443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 899
-  - name: 法国 - 伊斯特爾 - Cloudflare, Inc. - 2
-    server: 129.151.225.228
-    type: vless
-    port: 8443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1319
-  - name: 法国 - 奧奈叢林 - Cloudflare, Inc. - 1
-    server: 193.123.81.105
+    server: 138.2.107.107
     type: vless
     port: 443
     udp: true
@@ -103,210 +88,133 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2647
-  - name: 澳大利亚 - 悉尼 - Cloudflare, Inc. - 1
-    server: 192.9.180.162
+        Host: v5.dbbn2024.us.kg
+    delay: 1492
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 2
+    server: 8.222.234.182
     type: vless
-    port: 443
+    port: 587
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfgc.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1570
-  - name: 瑞士 - 温特图尔 - Cloudflare, Inc. - 1
-    server: 140.238.212.95
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1541
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 3
+    server: 8.222.192.60
     type: vless
-    port: 443
+    port: 30021
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: edfgc.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1200
-  - name: 美国 - Reston - Cloudflare, Inc. - 14
-    server: icook.tw
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 964
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 4
+    server: 43.156.253.94
     type: vless
     port: 443
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfga.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1157
-  - name: 美国 - Reston - Cloudflare, Inc. - 32
-    server: >-
-      join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 2425
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 5
+    server: 129.226.150.167
     type: vless
     port: 443
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfga.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1109
-  - name: 美国 - Reston - Cloudflare, Inc. - 34
-    server: www.ipchicken.com
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 952
+  - name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 9
+    server: 141.147.147.180
     type: vless
     port: 443
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfga.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1330
-  - name: 美国 - Reston - Cloudflare, Inc. - 38
-    server: www.hugedomains.com
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2295
-  - name: 美国 - Reston - Cloudflare, Inc. - 46
-    server: 172.67.110.232
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1889
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 19
-    server: nikon.ns.cloudflare.com
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1446
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 20
-    server: benedict.ns.cloudflare.com
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1512
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 23
-    server: huxley.ns.cloudflare.com
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2576
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 30
-    server: braden.ns.cloudflare.com
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1532
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 8
-    server: www.wto.org
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1145
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
-    server: 154.83.2.230
-    port: 8880
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1472
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 8
+    server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+    port: 80
     type: vless
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     tls: false
-    servername: redw.pooriam.ir
+    servername: Join--E-L-i-V-2-R-A-Y.net
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: >-
-        /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
       headers:
-        Host: redw.pooriam.ir
+        Host: Join--E-L-i-V-2-R-A-Y.net
+    delay: 824
+  - name: 波兰 - 普魯斯科夫 - Cloudflare, Inc. - 2
+    server: 176.105.253.98
+    type: vless
+    port: 443
     udp: true
-    delay: 941
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
-    server: 212.183.88.186
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 2363
+  - name: 美国 - Flower Mound - Cloudflare, Inc. - 53
+    server: 154.89.203.200
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1546
+  - name: 美国 - Reston - Cloudflare, Inc. - 18
+    server: 172.67.79.211
     type: vless
     port: 443
     udp: true
@@ -314,30 +222,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1699
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
-    server: www.speedtest.net
-    port: 2052
-    type: vless
-    uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-    tls: false
-    servername: >-
-      Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    network: ws
-    ws-opts:
-      path: /?ed=1080
-      headers:
-        Host: >-
-          Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    udp: true
-    delay: 1918
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
-    server: 162.159.153.68
+        Host: v5.dbbn2024.us.kg
+    delay: 1376
+  - name: 美国 - Reston - Cloudflare, Inc. - 28
+    server: 172.67.95.24
     type: vless
     port: 443
     udp: true
@@ -345,14 +237,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1050
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
-    server: 212.183.88.136
+        Host: cc1.ylks.us.kg
+    delay: 1165
+  - name: 美国 - Reston - Cloudflare, Inc. - 30
+    server: iplocation.io
     type: vless
     port: 443
     udp: true
@@ -360,14 +252,164 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
+        Host: cc1.ylks.us.kg
+    delay: 2921
+  - name: 美国 - Reston - Cloudflare, Inc. - 35
+    server: ip.sb
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1628
+  - name: 美国 - Reston - Cloudflare, Inc. - 42
+    server: toy-people.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1274
+  - name: 美国 - Reston - Cloudflare, Inc. - 47
+    server: 172.67.120.0
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1252
+  - name: 美国 - Reston - Cloudflare, Inc. - 49
+    server: 172.67.49.134
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1096
+  - name: 美国 - Reston - Cloudflare, Inc. - 68
+    server: 104.25.254.4
+    type: vless
+    port: 2087
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1382
+  - name: 美国 - Reston - Cloudflare, Inc. - 80
+    server: 172.67.106.26
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1093
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 31
+    server: 162.159.39.181
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1149
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 39
+    server: arvind.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1220
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 46
+    server: 162.159.44.48
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 889
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 55
+    server: 91.149.239.72
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
     delay: 1620
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
-    server: 104.16.144.196
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 56
+    server: lewis.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -375,14 +417,59 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 2120
+        Host: v5.dbbn2024.us.kg
+    delay: 1655
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 59
+    server: damien.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1667
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 63
+    server: trevor.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 2080
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 81
+    server: pranab.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1035
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
-    server: 135.84.76.115
+    server: kyree.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -390,14 +477,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1106
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
-    server: 172.64.152.251
+        Host: v5.dbbn2024.us.kg
+    delay: 1043
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: sullivan.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -405,14 +492,29 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1731
+        Host: v5.dbbn2024.us.kg
+    delay: 975
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: moura.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1695
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
-    server: 104.16.195.32
+    server: 162.159.133.85
     type: vless
     port: 443
     udp: true
@@ -420,14 +522,29 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1966
+        Host: v5.dbbn2024.us.kg
+    delay: 1825
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
-    server: 104.17.146.152
+    server: 108.165.152.91
+    type: vless
+    port: 2083
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1773
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: www.udemy.com
     type: vless
     port: 443
     udp: true
@@ -435,14 +552,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1383
+        Host: v5.dbbn2024.us.kg
+    delay: 1614
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
-    server: ashton.ns.cloudflare.com
+    server: 104.17.124.174
     type: vless
     port: 443
     udp: true
@@ -450,14 +567,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1044
+        Host: cc1.ylks.us.kg
+    delay: 1556
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
-    server: decker.ns.cloudflare.com
+    server: www.ddwhm.com
     type: vless
     port: 443
     udp: true
@@ -465,59 +582,43 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1427
+        Host: cc1.ylks.us.kg
+    delay: 2275
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
-    server: 192.210.196.113
+    server: 103.160.204.59
     type: vless
-    port: 34237
+    port: 443
     udp: true
     uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 858
+        Host: v5.dbbn2024.us.kg
+    delay: 1756
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
-    server: 104.16.144.119
+    server: 185.174.138.197
+    port: 8080
     type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    servername: a.xn--i-sx6a60i.us.kg.
     network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1616
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
-    server: 162.159.152.206
-    type: vless
-    port: 443
+        Host: a.xn--i-sx6a60i.us.kg.
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c1.bgm2024.us.kg
-    delay: 985
+    delay: 1417
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
-    server: 45.67.215.117
+    server: tasteatlas.com
     type: vless
     port: 443
     udp: true
@@ -525,14 +626,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1873
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
-    server: 212.183.88.225
+        Host: cc1.ylks.us.kg
+    delay: 955
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 216.221.210.185
     type: vless
     port: 443
     udp: true
@@ -540,14 +641,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 2361
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
-    server: 104.16.159.190
+        Host: v5.dbbn2024.us.kg
+    delay: 2387
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 162.159.36.104
     type: vless
     port: 443
     udp: true
@@ -555,14 +656,29 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 2243
+        Host: v5.dbbn2024.us.kg
+    delay: 1861
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: www.4chan.org
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 2567
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
-    server: 130.250.137.19
+    server: uriah.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -570,14 +686,29 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1739
+        Host: v5.dbbn2024.us.kg
+    delay: 1129
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
-    server: 149.129.8.215
+    server: ignacio.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1802
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: www.okcupid.com
     type: vless
     port: 443
     udp: true
@@ -585,29 +716,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1286
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
-    server: 198.62.62.156
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1477
+        Host: v5.dbbn2024.us.kg
+    delay: 2427
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
-    server: 63.141.128.96
+    server: 162.159.152.196
     type: vless
     port: 443
     udp: true
@@ -615,14 +731,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1578
+        Host: v5.dbbn2024.us.kg
+    delay: 1792
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
-    server: 198.62.62.4
+    server: 185.133.35.125
     type: vless
     port: 443
     udp: true
@@ -630,29 +746,29 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1737
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
-    server: 63.141.128.140
-    type: vless
-    port: 443
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c1.bgm2024.us.kg
-    delay: 1736
+        Host: v5.dbbn2024.us.kg
+    delay: 1423
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
-    server: www.digitalocean.com
+    server: 27.50.48.21
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1485
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: dylan.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -660,13 +776,88 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: cc1.ylks.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1522
+        Host: cc1.ylks.us.kg
+    delay: 1017
   - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 27.50.49.208
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1252
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
+    server: 92.243.75.49
+    type: vless
+    port: 2087
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 2353
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
+    server: sage.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1044
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
+    server: 104.17.71.31
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1754
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
+    server: 104.16.153.254
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 2280
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
     server: 154.83.2.228
     port: 8880
     type: vless
@@ -680,9 +871,9 @@ proxies:
       headers:
         Host: redw.pooriam.ir
     udp: true
-    delay: 1300
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
-    server: 198.41.221.186
+    delay: 1068
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
+    server: cris.ns.cloudflare.com
     type: vless
     port: 443
     udp: true
@@ -690,29 +881,14 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1894
-  - name: 美国 - 肯特 - Cloudflare, Inc. - 33
-    server: 35.212.182.176
-    type: vless
-    port: 54321
-    udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-    network: ws
-    tls: true
-    skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2073
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 2
-    server: 172.67.181.209
+        Host: v5.dbbn2024.us.kg
+    delay: 1525
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
+    server: 47.57.233.126
     type: vless
     port: 443
     udp: true
@@ -720,13 +896,452 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: v5.dbbn2024.us.kg
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1603
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 3
+        Host: v5.dbbn2024.us.kg
+    delay: 1349
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
+    server: 162.159.129.67
+    type: vless
+    port: 8443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1565
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
+    server: 104.17.128.1
+    type: vless
+    port: 2096
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 2382
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
+    server: www.pcmag.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1963
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
+    server: rustam.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1387
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
+    server: 104.17.161.203
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 865
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
+    server: theo.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1033
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+    server: craig.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1170
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
+    server: 135.84.76.110
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 2318
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
+    server: kip.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 854
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    server: 104.19.4.237
+    type: vless
+    port: 8443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1043
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
+    server: 37.123.193.154
+    type: vless
+    port: 666
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 826
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
+    server: 156.238.18.163
+    port: 2095
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      headers:
+        Host: redw.pooriam.ir
+    delay: 1213
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
+    server: 212.183.88.176
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 2616
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
+    server: 154.83.2.230
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    servername: redw.pooriam.ir
+    network: ws
+    ws-opts:
+      path: >-
+        /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      headers:
+        Host: redw.pooriam.ir
+    udp: true
+    delay: 608
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    server: whatismyipaddress.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1635
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
+    server: 185.16.110.107
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1913
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    server: 202.37.33.80
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 2640
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    server: 156.238.18.165
+    port: 2052
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      headers:
+        Host: redw.pooriam.ir
+    delay: 1093
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
+    server: 92.243.74.239
+    type: vless
+    port: 8443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 2703
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
+    server: thaddeus.ns.cloudflare.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 836
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
+    server: 185.146.173.112
+    port: 8880
+    type: vless
+    uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram
+      headers:
+        Host: photographipictureai.ir
+    delay: 1778
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 188.42.89.68
+    port: 8880
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram
+      headers:
+        Host: a.xn--i-sx6a60i.us.kg.
+    delay: 1607
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
+    server: 92.243.74.239
+    port: 8443
+    type: trojan
+    password: Aimer
+    sni: agepb.ambercc.filegear-sg.me
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: agepb.ambercc.filegear-sg.me
+    udp: true
+    delay: 1414
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+    server: 185.238.248.47
+    type: vless
+    port: 11876
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1444
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
+    server: www.iakeys.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1242
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+    server: 172.67.156.115
+    type: vless
+    port: 2087
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 931
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+    server: icook.hk
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1233
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 4
+    server: ipinfo.in
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: v5.dbbn2024.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: v5.dbbn2024.us.kg
+    delay: 1808
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+    server: comicabc.com
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1105
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 6
+    server: ip.gs
+    type: vless
+    port: 443
+    udp: true
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: cc1.ylks.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: cc1.ylks.us.kg
+    delay: 1021
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
     server: 104.21.69.44
     port: 80
     type: vless
@@ -738,8 +1353,8 @@ proxies:
       path: /tmevpnAndroid2/?ed=2560
       headers:
         Host: a.xn--i-sx6a60i.us.kg.
-    delay: 770
-  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 4
+    delay: 962
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 8
     server: 104.21.30.29
     port: 80
     type: vless
@@ -750,79 +1365,139 @@ proxies:
       path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
       headers:
         Host: a.mifeng.us.kg
-    delay: 750
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
-    server: 152.70.57.182
+    delay: 988
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 10
+    server: 119.194.79.217
     type: vless
-    port: 443
+    port: 10022
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfgc.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1561
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1180
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 2
-    server: 220.86.175.229
+    server: 125.138.28.68
     type: vless
-    port: 30001
+    port: 38822
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfga.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1167
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1462
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 3
-    server: 175.213.146.92
+    server: 211.107.83.151
     type: vless
-    port: 12020
+    port: 10001
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfgc.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 1054
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1593
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-    server: 118.47.65.248
+    server: 121.129.110.160
     type: vless
-    port: 30012
+    port: 12329
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c1.bgm2024.us.kg
+    servername: edfga.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c1.bgm2024.us.kg
-    delay: 2213
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 1617
   - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
-    server: 132.145.94.80
+    server: 14.39.43.121
     type: vless
-    port: 443
+    port: 32764
     udp: true
-    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
     network: ws
     tls: true
     skip-cert-verify: true
-    servername: c01.ylkszy.eu.org
+    servername: edfgc.aimercc.filegear-sg.me
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: c01.ylkszy.eu.org
-    delay: 2145
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1463
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
+    server: 221.165.8.35
+    type: vless
+    port: 50000
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfga.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfga.aimercc.filegear-sg.me
+    delay: 2964
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
+    server: 221.163.173.252
+    type: vless
+    port: 50000
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1591
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 8
+    server: 118.33.118.200
+    type: vless
+    port: 12338
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1209
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 9
+    server: 119.200.244.99
+    type: vless
+    port: 12524
+    udp: true
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    network: ws
+    tls: true
+    skip-cert-verify: true
+    servername: edfgc.aimercc.filegear-sg.me
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edfgc.aimercc.filegear-sg.me
+    delay: 1200
