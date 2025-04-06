@@ -3,4 +3,17 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
+    server: 104.16.178.238
+    port: 80
+    type: vless
+    uuid: d4eddaf9-a660-4905-b835-cad98677b380
+    tls: false
+    servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    delay: 1610
