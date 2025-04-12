@@ -4,16 +4,205 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
-    server: 104.16.178.238
-    port: 80
+  - name: 加拿大 - 旺市 - Cloudflare, Inc. - 2
+    server: 155.248.219.28
+    type: hysteria2
+    country: 🇨🇦CA
+    port: 30300
+    udp: true
+    password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+    sni: www.bing.com
+    skip-cert-verify: true
+    delay: 2119
+  - name: 加拿大 - 旺市 - Cloudflare, Inc. - 3
+    server: 192.18.145.7
+    type: hysteria2
+    country: 🇨🇦CA
+    port: 45979
+    udp: true
+    password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+    sni: www.bing.com
+    skip-cert-verify: true
+    delay: 1743
+  - name: 德国 - 纽伦堡 - Cloudflare, Inc. - 6
+    server: de1.xiaoliyu.cyou
+    type: hysteria2
+    country: 🇩🇪DE
+    port: 24270
+    udp: true
+    password: 334c4713-73ea-4e71-b827-21a22d31736b
+    sni: de1.xiaoliyu.cyou
+    skip-cert-verify: true
+    delay: 2452
+  - name: 法国 - 巴黎 - Cloudflare, Inc. - 1
+    server: 172.67.204.19
+    port: 443
+    type: vmess
+    uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    network: ws
+    ws-opts:
+      path: /azumase.ren
+      headers:
+        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    delay: 2357
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 26
+    server: 65.75.194.43
+    port: 10511
     type: vless
-    uuid: d4eddaf9-a660-4905-b835-cad98677b380
-    tls: false
-    servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccr.aimercc.filegear-sg.me
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    delay: 1610
+        Host: edccr.aimercc.filegear-sg.me
+    udp: true
+    delay: 988
+  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 10
+    server: us1.xiaoliyu.cyou
+    type: hysteria2
+    country: 🇺🇸US
+    port: 23022
+    udp: true
+    password: 334c4713-73ea-4e71-b827-21a22d31736b
+    sni: us1.xiaoliyu.cyou
+    skip-cert-verify: true
+    delay: 2049
+  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 9
+    server: us1.xiaoliyu.cyou
+    type: hysteria2
+    country: 🇺🇸US
+    port: 26977
+    udp: true
+    password: 334c4713-73ea-4e71-b827-21a22d31736b
+    sni: us1.xiaoliyu.cyou
+    skip-cert-verify: true
+    delay: 1939
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 216.24.57.30
+    port: 443
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    delay: 2145
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 103.116.7.103
+    port: 2083
+    type: vless
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccr.aimercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edccr.aimercc.filegear-sg.me
+    udp: true
+    delay: 1972
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 27.50.49.230
+    port: 8443
+    type: vless
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccy.ambercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edccy.ambercc.filegear-sg.me
+    udp: true
+    delay: 954
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 92.243.74.239
+    port: 8443
+    type: vless
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccr.aimercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: edccr.aimercc.filegear-sg.me
+    udp: true
+    delay: 1071
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 104.129.166.131
+    port: 8443
+    type: vless
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccr.aimercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edccr.aimercc.filegear-sg.me
+    udp: true
+    delay: 1362
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 108.165.152.207
+    port: 443
+    type: vless
+    uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+    tls: true
+    servername: edccy.ambercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: edccy.ambercc.filegear-sg.me
+    udp: true
+    delay: 1364
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
+    server: 45.67.215.95
+    port: 443
+    type: trojan
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    delay: 2383
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
+    server: 194.76.18.129
+    type: trojan
+    country: 🇰🇿KZ
+    port: 443
+    udp: true
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    network: ws
+    delay: 2147
+  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
+    server: 121.167.108.242
+    port: 50000
+    type: trojan
+    password: ji0612uenfs
+    sni: ji0612e.nfjunka.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560&proxyip=121.167.108.242:50000
+      headers:
+        Host: ji0612e.nfjunka.xyz
+    delay: 2809
