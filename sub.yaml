@@ -5,12 +5,13 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 奥地利 - 維也納 - Foundation for Applied Privacy - 1
-    server: 51.15.15.82
-    port: 989
+    server: 51.15.23.63
     type: ss
-    cipher: aes-256-cfb
+    country: 🇫🇷FR
+    port: 989
     password: f8f7aCzcPKbsF8p3
-    delay: 770
+    cipher: aes-256-cfb
+    delay: 1823
   - name: 澳大利亚 - 墨尔本 - The Constant Company, LLC - 1
     server: bsuqian01.dynu.net
     port: 42426
@@ -24,7 +25,14 @@ proxies:
     client-fingerprint: chrome
     network: tcp
     udp: true
-    delay: 989
+    delay: 875
+  - name: 波兰 - 华沙 - 1337 Services GmbH - 1
+    server: 51.15.15.82
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 1816
   - name: 俄罗斯 - 莫斯科 - LLC Baxet - 1
     server: hy2.694463.xyz
     port: 10011
@@ -34,7 +42,7 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
     udp: true
-    delay: 1050
+    delay: 220
   - name: 俄罗斯 - 莫斯科 - LLC BAXET - 2
     server: 46.17.41.5
     type: hysteria2
@@ -44,7 +52,7 @@ proxies:
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-    delay: 1004
+    delay: 803
   - name: 法国 - 巴黎 - Online S.A.S. - 1
     server: tgju.org
     port: 8080
@@ -58,7 +66,7 @@ proxies:
       headers:
         Host: IO.IhJtq0hklC.ZULAiR.OrG.
     udp: true
-    delay: 989
+    delay: 877
   - name: 韩国 - 首尔特别市 - Shenzhen Tencent Computer Systems Company Limited - 1
     server: 43.131.255.175
     type: ss
@@ -66,7 +74,7 @@ proxies:
     port: 3306
     password: 1601e3c29c8db1a88942cf0cad731bf3
     cipher: aes-256-cfb
-    delay: 385
+    delay: 570
   - name: 韩国 - Gasan-dong - LG DACOM Corporation - 2
     server: p080.panda001.net
     port: 36379
@@ -74,7 +82,7 @@ proxies:
     cipher: aes-256-cfb
     password: qwerREWQ@@
     udp: true
-    delay: 1239
+    delay: 791
   - name: 韩国 - Gwanak-gu - Korea Telecom - 3
     server: p221.panda001.net
     type: ss
@@ -82,7 +90,7 @@ proxies:
     port: 34669
     password: qwerREWQ@@
     cipher: aes-256-cfb
-    delay: 714
+    delay: 476
   - name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 1
     server: 0:0:0:0:0:ffff:9df5:4c61
     port: 2095
@@ -101,21 +109,15 @@ proxies:
         Host:
           - nl1.bugfreenet.biz.ddns-ip.net
     udp: true
-    delay: 724
-  - name: 罗马尼亚 - 布加勒斯特 - Stark Industries Solutions LTD - 1
-    server: bsuqian01.dynu.net
-    port: 17930
-    type: vless
-    uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    servername: www.nvidia.com
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    delay: 1525
+    delay: 569
+  - name: 美国 - 华盛顿特区 - GTHost - 2
+    server: 38.107.226.14
+    type: ss
+    country: 🇺🇸 US
+    port: 2375
+    password: faBAoD54k87UJG7
+    cipher: aes-256-gcm
+    delay: 1450
   - name: 美国 - 华盛顿特区 - GTHost - 3
     server: 38.107.226.14
     type: ss
@@ -123,41 +125,17 @@ proxies:
     port: 8882
     password: kDWvXYZoTBcGkC4
     cipher: aes-256-gcm
-    delay: 967
-  - name: 美国 - 华盛顿特区 - GTHost - 4
-    server: 38.107.226.14
-    type: ss
-    country: 🇺🇸 US
-    port: 7002
-    password: RexnBgU7EV5ADxG
-    cipher: aes-256-gcm
-    delay: 582
+    delay: 930
   - name: 美国 - 洛杉矶 - GTHost - 1
     server: 38.114.114.108
+    port: 8091
     type: ss
-    country: 🇺🇸US
-    port: 8119
-    password: cdBIDV42DCwnfIN
     cipher: aes-256-gcm
-    delay: 1008
-  - name: 美国 - 洛杉矶 - GTHost - 2
-    server: 38.114.114.108
-    type: ss
-    port: 8882
-    password: kDWvXYZoTBcGkC4
-    cipher: aes-256-gcm
-    delay: 748
-  - name: 美国 - 洛杉矶 - Sharktech - 6
-    server: 05fcb8e9-svhls0-t1bnjq-1krtb.los.gotochinatown.net
-    port: 443
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    tls: true
-    delay: 1992
-  - name: 美国 - 紐約 - Cloudflare, Inc. - 7
-    server: 159.54.173.8
-    port: 443
+    password: PCnnH6SQSnfoS27
+    delay: 865
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
+    server: 161.145.150.26
+    port: 2087
     type: trojan
     password: Aimer
     sni: epcca.ambercc.filegear-sg.me
@@ -166,8 +144,8 @@ proxies:
       path: /?ed=2560
       headers:
         Host: epcca.ambercc.filegear-sg.me
-    delay: 1522
-  - name: 美国 - 芝加哥 - Sharktech - 5
+    delay: 1479
+  - name: 美国 - 芝加哥 - Sharktech - 4
     server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
     type: vmess
     country: 🇨🇳CN
@@ -179,15 +157,7 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2740
-  - name: 葡萄牙 - 里斯本 - BrainStorm Network, Inc - 1
-    server: 185.231.233.112
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    udp: true
-    delay: 693
+    delay: 906
   - name: 日本 - 东京 - Akamai Technologies - 1
     server: 120.253.242.194
     port: 35244
@@ -204,21 +174,7 @@ proxies:
       headers:
         Host: jp4.vip2.g2.moonbase.life
     udp: true
-    delay: 579
-  - name: 日本 - Chiyoda - CLOUD-NETWORK - 2
-    server: beiyong.dynuddns.net
-    port: 48121
-    type: vless
-    uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    servername: www.nvidia.com
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    delay: 1323
+    delay: 1062
   - name: 泰国 - 曼谷 - Kaopu Cloud HK Limited - 1
     server: bsuqian01.dynu.net
     port: 16955
@@ -232,14 +188,7 @@ proxies:
     client-fingerprint: chrome
     network: tcp
     udp: true
-    delay: 1142
-  - name: 希腊 - 塞萨洛尼基 - Global Connectivity Solutions LLP - 1
-    server: 185.39.207.60
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Z0UurGkG6iJa
-    delay: 728
+    delay: 1612
   - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
     server: console.03.aliyun.aq.kunlunaqs.com
     type: ss
@@ -250,7 +199,7 @@ proxies:
     plugin-opts:
       host: 215996dd9f1c3db1e54b.microsoft.com
       mode: http
-    delay: 689
+    delay: 444
   - name: 意大利 - 罗马市 - SonderCloud Limited - 1
     server: 194.41.59.80
     type: ss
@@ -258,7 +207,19 @@ proxies:
     port: 8388
     password: asd123456
     cipher: chacha20-ietf
-    delay: 563
+    delay: 478
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
+    server: 159.54.173.8
+    port: 443
+    type: trojan
+    password: Aimer
+    sni: epcca.ambercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: epcca.ambercc.filegear-sg.me
+    delay: 1092
   - name: 英国 - 伦敦 - OVH SAS - 1
     server: uk1.test3.net
     type: trojan
@@ -267,7 +228,7 @@ proxies:
     password: 127c3420-2133-11f0-b720-1239d0255272
     skip-cert-verify: true
     udp: true
-    delay: 1397
+    delay: 1500
   - name: 英国 - 伦敦 - OVH SAS - 2
     server: 51.38.65.155
     type: trojan
@@ -277,7 +238,7 @@ proxies:
     sni: tgju.org
     skip-cert-verify: true
     udp: true
-    delay: 915
+    delay: 1252
   - name: 英国 - 伦敦 - OVH SAS - 3
     server: uk1.test3.net
     type: trojan
@@ -286,7 +247,7 @@ proxies:
     password: 3c94e2e0-2133-11f0-8832-1239d0255272
     skip-cert-verify: true
     udp: true
-    delay: 1300
+    delay: 1254
   - name: 英国 - 伦敦 - OVH SAS - 4
     server: uk1.test3.net
     type: trojan
@@ -295,24 +256,7 @@ proxies:
     password: c8b9db60-2132-11f0-880d-1239d0255272
     skip-cert-verify: true
     udp: true
-    delay: 1297
-  - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.155.19
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    delay: 2791
-  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 4
-    server: 47.92.152.169
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 182
+    delay: 1001
   - name: 中国 - 广州市 - China Mobile communications corporation - 3
     server: 120.210.205.59
     port: 50002
@@ -322,7 +266,7 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    delay: 180
+    delay: 226
   - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 1
     server: 112.132.215.12
     port: 50002
@@ -333,7 +277,7 @@ proxies:
     tls: false
     skip-cert-verify: true
     servername: ury-unit-c030ehei8.poget71138.workers.dev
-    delay: 167
+    delay: 152
   - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 2
     server: 112.132.215.34
     port: 50007
@@ -343,16 +287,16 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    delay: 163
-  - name: 中国 - 青园 - PEG TECH INC - 13
+    delay: 880
+  - name: 中国 - 青园 - PEG TECH INC - 11
     server: c2284d70-svhls0-t28b6o-ef48.sj.gotochinatown.net
     port: 443
     type: http
     username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
     password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
     tls: true
-    delay: 2130
-  - name: 中国 - 台湾 - Akari Networks - 12
+    delay: 997
+  - name: 中国 - 台湾 - Akari Networks - 10
     server: shenzhou02.mysynology.net
     port: 34313
     type: vless
@@ -365,16 +309,8 @@ proxies:
     client-fingerprint: chrome
     network: tcp
     udp: true
-    delay: 1030
-  - name: 中国 - 香港 - Access Telecom (BD) Ltd - 11
-    server: hkre1-cdn-route.couldflare-cdn.com
-    port: 443
-    type: http
-    username: mrwdfNTD8M79LCukCieldrqZWqs=
-    password: exaxgqkKkd0TAMrCxeonWg==
-    tls: true
-    delay: 1075
-  - name: 中国 - 香港 - CTG Server Ltd. - 10
+    delay: 795
+  - name: 中国 - 香港 - CTG Server Ltd. - 9
     server: 120.232.153.40
     port: 59082
     type: vmess
@@ -384,8 +320,18 @@ proxies:
     tls: false
     skip-cert-verify: false
     udp: true
-    delay: 535
-  - name: 中国 - 香港 - Google LLC - 5
+    delay: 781
+  - name: 中国 - 香港 - Global Connectivity Solutions LLP - 8
+    server: tw3.akebi.cc
+    type: hysteria2
+    country: 🇹🇼TW
+    port: 2021
+    udp: true
+    password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+    sni: hk03.akebi.cc
+    skip-cert-verify: false
+    delay: 199
+  - name: 中国 - 香港 - Google LLC - 4
     server: 35.220.230.251
     port: 30251
     type: vmess
@@ -394,8 +340,8 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    delay: 102
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 8
+    delay: 268
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 6
     server: console.03.aliyun.aq.kunlunaqs.com
     type: ss
     port: 45905
@@ -405,26 +351,8 @@ proxies:
     plugin-opts:
       host: 215996dd9f1c3db1e54b.microsoft.com
       mode: http
-    delay: 405
-  - name: 中国 - 香港 - PCCW IMS Limited - 7
-    server: 0ea1c2b6-sv6hs0-sv5jys-1t926.hk.p5pv.com
-    type: vmess
-    country: 🇭🇰 HK
-    port: 80
-    uuid: 921bd912-ef8a-11ef-8eaf-f23c9164ca5d
-    alterId: 2
-    cipher: auto
-    network: ws
-    servername: broadcastlv.chat.bilibili.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: broadcastlv.chat.bilibili.com
-    delay: 1098
-  - name: 中国 - 香港 - Polonetwork Limited - 9
+    delay: 302
+  - name: 中国 - 香港 - Polonetwork Limited - 7
     server: console.02.aliyun.aq.kunlunaqs.com
     type: ss
     port: 45578
@@ -434,12 +362,12 @@ proxies:
     plugin-opts:
       host: 215996dd9f1c3db1e54b.microsoft.com
       mode: http
-    delay: 360
-  - name: 中国 - 香港 - SonderCloud Limited - 6
+    delay: 291
+  - name: 中国 - 香港 - SonderCloud Limited - 5
     server: 154.197.26.120
     type: ss
     country: 🇸🇨SC
     port: 8388
     password: asd123456
     cipher: chacha20-ietf
-    delay: 117
+    delay: 242
