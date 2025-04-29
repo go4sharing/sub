@@ -4,7 +4,19 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - 紐約 - Cloudflare, Inc. - 7
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
+    server: 161.145.150.26
+    port: 2087
+    type: trojan
+    password: Aimer
+    sni: epcca.ambercc.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: epcca.ambercc.filegear-sg.me
+    delay: 1479
+  - name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5
     server: 159.54.173.8
     port: 443
     type: trojan
@@ -15,4 +27,4 @@ proxies:
       path: /?ed=2560
       headers:
         Host: epcca.ambercc.filegear-sg.me
-    delay: 1522
+    delay: 1092
