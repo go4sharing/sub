@@ -4,42 +4,49 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - Houxi - CloudRadium L.L.C - 7
+  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 3
     type: vmess
-    server: 183.238.90.8
-    port: 46920
+    server: 47.92.152.169
+    port: 50002
     cipher: auto
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    alterId: 0
     tls: false
     client-fingerprint: ''
-    delay: 1766
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 8
+    delay: 158
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 14
     password: exaxgqkKkd0TAMrCxeonWg==
     port: 1443
     server: twmoon1-cdn-route.couldflare-cdn.com
     skip-cert-verify: false
+    sni: twmoon1-cdn-route.couldflare-cdn.com
     tls: true
     type: http
     username: mrwdfNTD8M79LCukCieldrqZWqs=
-    sni: twmoon1-cdn-route.couldflare-cdn.com
-    delay: 1308
-  - cipher: chacha20-ietf-poly1305
-    name: 中国 - 台湾 - Pittqiao Network Information Co., Ltd. - 5
-    password: 937f6b6168b6
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: wt8v1.kvote.cn
-      mode: websocket
-      mux: true
-      path: /oqhygtklyhwi
-      tls: true
-    port: 443
-    server: 103.137.62.194
+    delay: 1793
+  - name: 中国 - 台湾 - Pittqiao Network Information Co., Ltd. - 8
+    server: mdss-tw.04z3susick.download
     type: ss
-    udp: true
-    delay: 1057
-  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 2
+    country: 🇨🇳CN
+    port: 12032
+    password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+    cipher: aes-128-gcm
+    delay: 709
+  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 5
+    server: 112.132.215.34
+    type: vmess
+    country: 🇨🇳 CN
+    port: 50007
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: tcp
+    ws-path: /
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1301
+  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 6
     type: vmess
     server: 112.132.215.12
     port: 50002
@@ -48,8 +55,19 @@ proxies:
     alterId: 0
     tls: false
     client-fingerprint: ''
-    delay: 687
-  - name: 中国 - 广州市 - China Mobile communications corporation - 3
+    delay: 321
+  - name: 中国 - 广州市 - China Mobile - 4
+    server: 183.236.51.36
+    type: vmess
+    port: 59003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 234
+  - name: 中国 - 广州市 - China Mobile communications corporation - 1
     type: vmess
     server: 120.210.205.59
     port: 50002
@@ -58,29 +76,23 @@ proxies:
     alterId: 64
     tls: false
     client-fingerprint: ''
-    delay: 2193
-  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 4
-    server: 120.26.55.225
+    delay: 865
+  - name: 中国 - 镇江市 - CHINAUNICOM CHINA169 Jiangsu Province Network - 16
     type: vmess
-    country: 🇨🇳CN
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
+    server: 103.56.63.19
+    port: 80
     cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 189
-  - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27139
-    name: 中国 - 澳门 - Cloudflare, Inc. - 14
-    delay: 1120
-  - name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 1
+    uuid: 2c0c131b-ff1c-4b76-a4b1-b623c63bbb39
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tms.dingtalk.com
+    client-fingerprint: ''
+    delay: 715
+  - name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 2
     type: vmess
     server: 47.104.186.133
     port: 50002
@@ -89,1767 +101,290 @@ proxies:
     alterId: 64
     tls: false
     client-fingerprint: ''
-    delay: 229
-  - type: ss
-    server: ssaomen.136470.xyz
-    port: 59010
-    cipher: 2022-blake3-aes-128-gcm
-    password: MDc5OWFlOGM3MDFiOTE5Mw==:ZjJjMTRiZDMtNWZiNy00MA==
-    name: 中国 - 香港 - Akile LTD - 13
-    delay: 1155
-  - type: ss
-    server: sshk01.521pokemon.com
-    port: 52011
-    cipher: 2022-blake3-aes-128-gcm
-    password: NWI2YjgyYzU1MzZkYzYzMA==:ZjJjMTRiZDMtNWZiNy00MA==
-    name: 中国 - 香港 - ASYMPTOTE NETWORK, LLC - 12
-    delay: 1267
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 15
-    server: 47.239.27.174
-    port: 5534
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 362
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 16
-    server: 122.10.17.144
-    port: 63168
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 640
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 17
-    server: 124.156.129.206
-    port: 6666
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2176
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 18
-    server: 156.234.17.144
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1221
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 19
-    server: 8.210.152.145
-    port: 26651
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 685
-  - name: 中国 - 香港 - Cloudflare, Inc. - 23
-    network: ws
-    port: 443
-    server: 116.204.210.10
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1366
-  - type: vless
-    name: 中国 - 香港 - Cloudflare, Inc. - 9
-    server: 47.76.218.163
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 757
-  - name: 中国 - 香港 - Cnservers LLC - 6
+    delay: 205
+  - name: 中国 - 香港 - Cnservers LLC - 12
+    type: vmess
     server: 120.198.71.216
     port: 46159
+    cipher: auto
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    tls: false
+    client-fingerprint: ''
+    delay: 2292
+  - name: 中国 - 香港 - CTG Server Ltd. - 10
+    server: 183.236.51.38
+    type: vmess
+    country: 🇨🇳CN
+    port: 36519
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 876
+  - name: 中国 - 香港 - CTG Server Ltd. - 15
+    server: 183.236.51.38
+    port: 41024
     type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 1150
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 20
-    password: <password>
-    port: 8443
-    server: 2608d13f-sx6ps0-t1bnjq-1krtb.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    sni: 2608d13f-sx6ps0-t1bnjq-1krtb.hkt.cdnhuawei.com
-    delay: 732
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 21
-    password: <password>
-    port: 8443
-    server: 0a5eba5f-sx15s0-t1bnjq-1krtb.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    sni: 0a5eba5f-sx15s0-t1bnjq-1krtb.hkt.cdnhuawei.com
-    delay: 719
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 22
-    password: <password>
-    port: 8443
-    server: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    sni: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
-    delay: 795
-  - type: ss
-    server: cnsg.1ga4cs.ccddn4.icu
-    port: 50503
-    cipher: chacha20-ietf-poly1305
-    password: pHSRsscdDjydAv4u
-    name: 中国 - 香港 - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED - 11
-    delay: 1990
-  - auth: nfsn666
-    name: 中国 - 香港 - Vapeline Technology - 10
-    password: nfsn666
-    port: 8888
-    server: hk.nfsn666.gq
-    skip-cert-verify: true
-    sni: hk.nfsn666.gq
-    type: hysteria2
-    delay: 1679
-  - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27137
-    name: 乌克兰 - Kyiv - Cloudflare, Inc. - 2
-    delay: 1214
-  - name: 乌克兰 - Kyiv - ONEPROVIDER - 1
-    server: 147.78.3.137
-    port: 20032
-    type: ss
-    cipher: aes-256-gcm
-    password: KKY5SF5THFSMZWS4
-    udp: true
-    delay: 1803
-  - skip-cert-verify: true
-    sni: il.mjt000.com
-    type: trojan
-    password: 6087d8e3-ea9e-48eb-8217-6050ff752f56
-    server: il.mjt000.com
-    port: 443
-    name: 以色列 - 佩塔提克瓦 - PQ HOSTING PLUS S.R.L. - 2
-    delay: 1755
-  - type: ss
-    server: js.yd.1.29d.cdnlinkms001.xyz
-    port: 31036
-    cipher: chacha20-ietf-poly1305
-    password: Yt3ZB8DxiVxPi4Mg
-    name: 以色列 - 特拉维夫 - Baxet Group Inc. - 1
-    delay: 700
-  - type: ss
-    server: ca001.dogsvip.site
-    port: 22002
-    cipher: aes-256-gcm
-    password: 5d1fcbee-ba62-4f1e-8b7d-463b788a52a9
-    name: 俄罗斯 - Fatezh - TGs4 Networks Inc. - 6
-    delay: 796
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: '1000'
-    name: 俄罗斯 - Zelenograd - LLC Baxet - 2
-    obfs: ''
-    port: 10803
-    protocol: ''
-    server: 185.22.155.71
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria
-    up: '1000'
-    auth-str: dongtaiwang.com
-    delay: 1391
-  - name: 俄罗斯 - 新西伯利亚 - LLC Baxet - 7
+    delay: 2782
+  - name: 中国 - 香港 - Datacamp Limited - 9
+    server: 3.link-hub.click
+    type: ssr
+    country: 🇨🇳CN
+    port: 40239
+    password: ENZ52K
+    cipher: rc4-md5
+    protocol: auth_aes128_md5
+    protocol-param: 92902:pFWGOQ
+    obfs: plain
+    obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+    delay: 2334
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 13
+    server: f641bba8-supts0-svp9t7-1oijm.cm.plebai.net
     type: vmess
-    server: dlgdc.thecxfcsp.top
-    port: 21564
-    cipher: auto
-    uuid: 9f9b21c3-e3fc-3e27-b878-82eeae401d12
+    country: 🇨🇳CN
+    port: 15228
+    uuid: bf140bc0-3f68-11ee-953a-f23c9164ca5d
     alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 1025
-  - name: 俄罗斯 - 莫斯科 - Aeza International LTD - 10
-    network: ws
-    port: 80
-    server: 151.101.130.228
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1166
+  - name: 中国 - 香港 - PCCW IMS Limited - 11
+    server: 64523f3e-sukw00-svxrt2-63bp.c.volczijie.com
+    type: vmess
+    country: 🇨🇳CN
+    port: 4138
+    uuid: 92b2a3d4-f353-11ef-b714-f23c93136cb3
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 952
+  - skip-cert-verify: true
+    sni: www.yrtok.com
+    type: trojan
+    password: 85f133142f04dbf6547da33895cfabb3
+    server: 116.31.75.150
+    port: 39001
+    name: 中国 - 香港 - Teleglobal Communication Services Limited - 17
+    delay: 620
+  - skip-cert-verify: true
+    sni: www.yrtok.com
+    type: trojan
+    password: 85f133142f04dbf6547da33895cfabb3
+    server: 113.99.140.184
+    port: 39001
+    name: 中国 - 香港 - Zenlayer Inc - 7
+    delay: 997
+  - client-fingerprint: firefox
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: 俄罗斯 - 圣彼得堡 - TimeWeb LLC - 4
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: AeGa3uPZPwKxK8-oefhzXVs6N376xXxw293dD0Gl-Vs
+      short-id: 0898b2d9
+    server: 188.225.87.169
+    tls: true
     type: vless
     udp: true
-    uuid: fbfb8c1f-b755-438c-af77-172f6453a3f2
-    ws-opts:
-      headers:
-        Host: joinshhproxybedeedeeeeee.ir
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.181 Safari/537.36
-      path: >-
-        /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
+    uuid: b4f3c864-3241-4abe-884e-adffcbbc5ffa
     xudp: true
-    delay: 774
-  - name: 俄罗斯 - 莫斯科 - JSC "ER-Telecom Holding" - 8
-    type: vmess
-    server: 112.65.92.20
-    port: 45200
-    cipher: auto
-    uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
-    alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 694
+    servername: mirror.yandex.ru
+    delay: 1110
   - down: ''
     fingerprint: ''
-    name: 俄罗斯 - 莫斯科 - LLC BAXET - 1
+    name: 俄罗斯 - 莫斯科 - LLC Baxet - 1
     obfs: ''
     obfs-password: ''
-    password: dongtaiwang.com
-    port: 12904
-    server: 46.17.41.5
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria2
-    up: ''
-    delay: 1785
-  - fast-open: true
-    name: 俄罗斯 - 莫斯科 - LLC Baxet - 3
-    password: dongtaiwang.com
-    port: 30033
-    server: 46.29.163.171
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
-    delay: 1098
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: 1000 Mbps
-    name: 俄罗斯 - 莫斯科 - LLC Baxet - 4
-    port: 62003
-    server: 176.32.35.226
-    servername: apple.com
-    skip-cert-verify: true
-    type: hysteria
-    up: 1000 Mbps
-    auth-str: dongtaiwang.com
-    delay: 1276
-  - fast-open: true
-    name: 俄罗斯 - 莫斯科 - LLC BAXET - 5
-    password: dongtaiwang.com
-    port: 30033
-    server: 46.17.41.217
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
-    delay: 1104
-  - fast-open: true
-    name: 俄罗斯 - 莫斯科 - LLC Baxet - 9
     password: dongtaiwang.com
     port: 50850
     server: 45.129.2.108
     skip-cert-verify: true
     sni: www.bing.com
     type: hysteria2
-    delay: 1905
-  - cipher: aes-256-cfb
-    name: 保加利亚 - 索菲亞 - DataCamp Limited - 1
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 37.19.203.147
-    type: ss
-    udp: true
-    delay: 1539
-  - type: ss
-    server: gdcm.cqrmv.cn
-    port: 36916
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      ZGFhNTBjOTYzMzgxMzUxMzM0NDI2ZjQ5ZjcxNzJhY2E=:YmE3YTBmMzAtMDcwMS00YTE2LWEwZDktNGU0ZWE3MWY=
-    name: 冰岛 - 凯夫拉维克国际机场 - STARK INDUSTRIES SOLUTIONS LTD - 1
-    delay: 1129
-  - alterId: 0
-    cipher: auto
-    country: 🇺🇸US
-    h2-opts: {}
-    http-opts: {}
-    name: 加拿大 - Beauharnois - OVH SAS - 1
-    network: ws
-    port: 443
-    server: cloudgetservice.mcloudservice.site
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    uuid: 2c329585-67a8-498b-8d38-176dac806bc7
-    ws-opts:
-      headers:
-        HOST: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
-      path: /linkws
-    servername: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
+    up: ''
     delay: 1363
-  - type: ss
-    server: cnamepc02-d2zdrzg6ilecsynk.besttarik.com
-    port: 51091
-    cipher: chacha20-ietf-poly1305
-    password: 6e3accf4-66c9-4f18-8e7f-56551ed40f22
-    name: 加拿大 - 多伦多 - The Constant Company - 2
-    delay: 1179
-  - skip-cert-verify: true
-    sni: ap-c.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-c.hinetwork.tw
-    port: 27125
-    name: 匈牙利 - 布达佩斯 - Xethost by 23Net - 1
-    delay: 1224
-  - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27136
-    name: 南极洲 - Kunlun - Cloudflare, Inc. - 1
-    delay: 1308
-  - skip-cert-verify: true
-    sni: ap-c.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-c.hinetwork.tw
-    port: 27126
-    name: 卢森堡 - Roost - FranTech Solutions - 1
-    delay: 770
-  - skip-cert-verify: true
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    type: trojan
-    password: 8ad9c6ab-fdc6-3e76-a97b-b9672e651237
-    server: cave-other.04z3susick.download
-    port: 41548
-    name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
-    delay: 835
-  - skip-cert-verify: true
-    sni: kz.mjt000.com
-    type: trojan
-    password: 786334e7-dd13-4ef2-8efe-306c46cb8cf0
-    server: kz.mjt000.com
-    port: 443
-    name: 哈萨克斯坦 - 阿拉木圖 - PQ HOSTING PLUS S.R.L. - 1
-    delay: 2092
-  - skip-cert-verify: true
-    sni: mmbiz10.redapricotcloud.com
-    type: trojan
-    password: 55f2afab-bc41-4231-b725-76bef15c3cf7
-    server: lm.kaiqsz.com
-    port: 55799
-    name: 哥伦比亚 - Cota - Oracle Corporation - 2
-    delay: 1048
-  - name: 哥伦比亚 - 波哥大 - BrainStorm Network, Inc - 1
-    server: 91.148.134.106
-    port: 20005
-    type: ss
-    cipher: aes-256-gcm
-    password: E5K0CSFUNO5JIKDM
-    udp: true
-    delay: 754
-  - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27145
-    name: 埃及 - 开罗 - Cloudflare, Inc. - 1
-    delay: 1186
-  - type: ss
-    server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
-    port: 40082
-    cipher: chacha20-ietf-poly1305
-    password: 17cfc172-b858-471d-976c-11525783a87f
-    name: 奥地利 - 維也納 - Zayo Infrastructure France SA - 1
-    delay: 1110
-  - type: ss
-    server: js.yd.1.29d.cdnlinkms001.xyz
-    port: 25332
-    cipher: chacha20-ietf-poly1305
-    password: Yt3ZB8DxiVxPi4Mg
-    name: 尼日利亚 - 拉哥斯 - Melbikomas UAB - 1
-    delay: 2148
-  - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
-    type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27147
-    name: 巴基斯坦 - 拉瓦尔品第 - Cloudflare, Inc. - 1
-    delay: 1094
-  - cipher: aes-256-cfb
-    name: 巴拉圭 - 亞松森 - IPXON Networks - 1
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 38.165.233.93
-    type: ss
-    udp: true
-    delay: 839
-  - type: ss
-    server: zf1.10101251.xyz
-    port: 64931
-    cipher: aes-256-gcm
-    password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-    name: 希腊 - 塞萨洛尼基 - Global Connectivity Solutions LLP - 1
-    delay: 1387
-  - type: ss
-    server: gdcm.cqrmv.cn
-    port: 40528
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      ZGFhNTBjOTYzMzgxMzUxMzM0NDI2ZjQ5ZjcxNzJhY2E=:YmE3YTBmMzAtMDcwMS00YTE2LWEwZDktNGU0ZWE3MWY=
-    name: 希腊 - 雅典 - PQ HOSTING PLUS S.R.L. - 2
-    delay: 1320
-  - name: 德国 - Falkenstein - Hetzner Online GmbH - 39
-    network: ws
-    port: 8880
-    server: www.speedtest.net
-    type: vless
-    udp: true
-    uuid: 👉BIA_CHANEL_JOKERRVPN👈
-    ws-opts:
-      headers:
-        Host: joker.ahang-alpha.IR
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
-      path: >-
-        /@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN?ed=2048
-    xudp: true
-    delay: 810
-  - name: 德国 - Falkenstein - Hetzner Online GmbH - 40
-    network: ws
-    port: 8880
-    server: speedtest.ir
-    type: vless
-    udp: true
-    uuid: 👉BIA_CHANEL_JOKERRVPN👈
-    ws-opts:
-      headers:
-        Host: joker.ahang-alpha.IR
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: >-
-        /@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN?ed=2048
-    xudp: true
-    delay: 937
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
-    server: 52.59.136.1
-    type: trojan
-    country: 🇩🇪DE
-    port: 22223
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
+  - delay: 2274
+    fast-open: true
+    name: 俄罗斯 - 莫斯科 - LLC Baxet - 2
+    password: dongtaiwang.com
+    port: 30033
+    server: 46.29.163.171
     skip-cert-verify: true
-    udp: true
-    delay: 1015
-  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 35
-    network: ws
-    port: 80
-    server: 151.101.194.228
-    type: vless
-    udp: true
-    uuid: ed87c882-17f3-491a-810c-c0000e4b279e
-    ws-opts:
-      headers:
-        Host: foffmelo.com
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195
-          Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5
-          Chrome/28.0.1500.94 Mobile Safari/537.36
-      path: /olem/ws?ed=1024
-    xudp: true
-    delay: 910
-  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 36
-    network: ws
-    port: 80
-    server: 151.101.2.228
-    type: vless
-    udp: true
-    uuid: ed87c882-17f3-491a-810c-c0000e4b279e
-    ws-opts:
-      headers:
-        Host: foffmelo.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/70.0.3538.102 Safari/537.36
-      path: /olem/ws?ed=1024
-    xudp: true
-    delay: 860
-  - skip-cert-verify: true
-    sni: dl.hncudehet.cc.tjcct.xyz
-    type: trojan
-    password: 725f30d5-9f5b-343e-a98d-9dce14f2ac0b
-    server: ahcu.k1ka52.ccddn4.icu
-    port: 65159
-    name: 德国 - Offenbach Am Main - dataforest GmbH - 29
-    delay: 1829
-  - name: 德国 - 兰河畔林堡 - OVH SAS - 38
-    network: ws
-    port: 12243
-    server: 185.232.152.17
-    type: vless
-    udp: true
-    uuid: 2d47a067-fa29-4d62-b596-b58c8782e880
-    ws-opts:
-      headers:
-        Host: ''
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.110 Safari/537.36
-      path: /
-    xudp: true
-    delay: 1645
-  - client-fingerprint: random
-    delay: 891
-    name: 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-    network: ws
-    port: 443
-    server: 104.24.230.10
+    sni: www.bing.com
+    type: hysteria2
+  - down: ''
+    fingerprint: ''
+    name: 俄罗斯 - 莫斯科 - LLC BAXET - 3
+    obfs: ''
+    obfs-password: ''
+    password: dongtaiwang.com
+    port: 30033
+    server: 46.17.41.217
     skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 72982133-27fb-46fc-9061-61113e77e201
-    ws-opts:
-      headers:
-        Host: jack.jack-cq.click
-      path: /?ed=2560
-    servername: jack.jack-cq.click
-  - type: vless
-    name: 德国 - 德赖艾希 - Cloudflare, Inc. - 31
-    server: 104.26.5.57
-    port: 443
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    client-fingerprint: randomized
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: UuhUHYygESDfgh.uYhJhGVgfCjgujhbUiLbVFdXDXM.XyZ
-      path: >-
-        /egFIvRfmDaCdL5Uk/ODQuMjM1LjE2OS4yMzQ=?ed=2560/?MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN
-    servername: UUHuhyYgESDfgh.UyHjhgvgFCjgujhBuILbVFDXdxM.xYZ
-    delay: 1633
-  - client-fingerprint: chrome
-    name: 德国 - 德赖艾希 - Cloudflare, Inc. - 34
-    network: ws
-    port: 443
-    server: 104.24.218.44
-    tls: true
-    type: vless
-    udp: true
-    uuid: f40b19a1-5515-4c93-804c-334873d38449
-    ws-opts:
-      headers:
-        Host: autumn.norjson.top
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: /?ed=2560
-    xudp: true
-    servername: autumn.norjson.top
-    delay: 934
-  - grpc-opts:
-      grpc-service-name: '@Zerov2shop'
-    name: 德国 - 戈斯拉尔 - Cavansir Ramazanov - 33
-    network: grpc
-    port: 25360
-    server: 5.231.26.127
-    type: vless
-    udp: true
-    uuid: 367991e3-a5cc-4b1a-fed8-2efe19933291
-    xudp: true
-    delay: 549
-  - name: 德国 - 法兰克福 - dataforest GmbH - 2
-    server: v34.emoyes.top
+    sni: www.bing.com
+    type: hysteria2
+    up: ''
+    delay: 1017
+  - name: 保加利亚 - 索菲亞 - Belcloud LTD - 1
     type: vmess
-    country: 🏁ZZ
-    port: 8443
-    uuid: 08b24d8d-10ab-4c5a-990e-4e0e194870af
-    alterId: 0
+    server: ppy-boardv2.02ijp4uos1.download
+    port: 26094
     cipher: auto
-    network: ws
-    servername: v34.emoyes.top
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: v34.emoyes.top
-    delay: 1501
-  - name: 德国 - 法兰克福 - dataforest GmbH - 30
-    type: vmess
-    server: v34.emoyes.top
-    port: 8443
-    cipher: auto
-    uuid: 491c0f63-71ed-4bed-8886-4214026e7b62
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
     alterId: 0
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: v34.emoyes.top
+    tls: false
     client-fingerprint: ''
-    servername: v34.emoyes.top
-    delay: 1263
-  - grpc-opts:
-      grpc-service-name: n1.cafedorehami.shop
-    name: 德国 - 法兰克福 - DigitalOcean, LLC - 42
-    network: grpc
-    port: 80
-    server: n1.cafedorehami.shop
-    type: vless
-    udp: true
-    uuid: v2rayvpn_official
-    xudp: true
-    delay: 1914
-  - name: 德国 - 法兰克福 - H2nexus LTD - 41
-    password: d558606f-7c22-4384-aebf-fb235dcea0ae
-    port: 1443
-    server: de2.587458.xyz
-    skip-cert-verify: false
-    sni: de2.587458.xyz
-    tfo: false
+    delay: 1473
+  - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 2
+    server: mdss-other.04z3susick.download
+    type: ss
+    country: 🇨🇳CN
+    port: 12045
+    password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+    cipher: aes-128-gcm
+    delay: 956
+  - down: ''
+    fingerprint: ''
+    name: 加拿大 - 多伦多 - Oracle Corporation - 1
+    obfs: ''
+    obfs-password: ''
+    password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+    port: 54530
+    server: 129.153.59.124
+    skip-cert-verify: true
+    sni: www.bing.com
     type: hysteria2
-    delay: 691
-  - name: 德国 - 法兰克福 - H2nexus LTD - 8
-    server: de2.587458.xyz
-    port: 1443
-    type: hysteria2
-    password: 8d3ba3b3-8224-4bd1-876d-5a36149e285b
-    auth: 8d3ba3b3-8224-4bd1-876d-5a36149e285b
-    sni: de2.587458.xyz
-    up: 50
-    down: 50
-    skip-cert-verify: false
-    udp: true
-    delay: 1098
-  - name: 德国 - 法兰克福 - Oracle Corporation - 10
-    server: time.is
-    port: 80
-    type: vless
-    uuid: e98b7eeb-1237-481c-8211-8eb861da8554
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 1314
-  - name: 德国 - 法兰克福 - Oracle Corporation - 11
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 19ff5e7d-91ad-47fb-a57f-5db634387cb8
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 684
-  - name: 德国 - 法兰克福 - Oracle Corporation - 12
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 00f2cd0f-d44a-4050-9be3-8256b6e5297f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 728
-  - name: 德国 - 法兰克福 - Oracle Corporation - 13
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 9e092ce2-b8e1-439d-aa0a-8df0e6645d16
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 657
-  - name: 德国 - 法兰克福 - Oracle Corporation - 14
-    server: time.is
-    port: 80
-    type: vless
-    uuid: b5a3433c-0320-4b26-a2fa-a93809cb45df
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 917
-  - name: 德国 - 法兰克福 - Oracle Corporation - 15
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 10aaaba0-3ffe-43b7-9ba7-8ab0208be195
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 918
-  - name: 德国 - 法兰克福 - Oracle Corporation - 16
-    server: time.is
-    port: 80
-    type: vless
-    uuid: e5d1ae78-298e-4a2b-9b53-fe3593cff6b5
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 1624
-  - name: 德国 - 法兰克福 - Oracle Corporation - 17
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 7049199f-352e-49a6-9aff-c1ac504fcd83
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 917
-  - name: 德国 - 法兰克福 - Oracle Corporation - 18
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 21af655d-9855-4aad-ab96-33094a1393f4
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 903
-  - name: 德国 - 法兰克福 - Oracle Corporation - 19
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 6ac9a366-caf4-4fbf-bf0a-749259dac157
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 917
-  - name: 德国 - 法兰克福 - Oracle Corporation - 20
-    server: time.is
-    port: 80
-    type: vless
-    uuid: ea3fe779-0384-49ce-90c9-3ef6ffef61fc
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 974
-  - name: 德国 - 法兰克福 - Oracle Corporation - 21
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 2cf2792f-4423-402f-9961-54894222ec74
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 913
-  - name: 德国 - 法兰克福 - Oracle Corporation - 22
-    server: time.is
-    port: 80
-    type: vless
-    uuid: d549bdfe-0b83-4db2-9e9a-a0e40e26ebfd
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 720
-  - name: 德国 - 法兰克福 - Oracle Corporation - 23
-    server: time.is
-    port: 80
-    type: vless
-    uuid: a3d98e00-8155-4586-a0e3-a982f0da7a8e
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 825
-  - name: 德国 - 法兰克福 - Oracle Corporation - 24
-    server: time.is
-    port: 80
-    type: vless
-    uuid: be64e9d4-32e5-4c36-b19b-86ebd0226b52
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 720
-  - name: 德国 - 法兰克福 - Oracle Corporation - 25
-    server: time.is
-    port: 80
-    type: vless
-    uuid: cbe1c50d-a155-434f-bbbf-d0b8c0fe76e3
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 720
-  - name: 德国 - 法兰克福 - Oracle Corporation - 26
-    server: time.is
-    port: 80
-    type: vless
-    uuid: c534b785-2a5d-44be-b695-cdf0cd3c8f78
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 789
-  - name: 德国 - 法兰克福 - Oracle Corporation - 27
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 9c3d195d-3b3d-4dc2-b22d-29b7df701e39
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 711
-  - name: 德国 - 法兰克福 - Oracle Corporation - 28
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 8cd94a61-1e1f-44dd-b89f-12bd8e622429
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 723
-  - name: 德国 - 法兰克福 - Oracle Corporation - 4
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 8a35e288-b156-414c-95be-c1cc5990e2a3
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 760
-  - name: 德国 - 法兰克福 - Oracle Corporation - 5
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 16772fcb-5a77-4abc-bd42-faa741a81503
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 752
-  - name: 德国 - 法兰克福 - Oracle Corporation - 6
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 45a99e2f-53a0-4e62-8115-323cb9f90fe4
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 670
-  - name: 德国 - 法兰克福 - Oracle Corporation - 7
-    server: time.is
-    port: 80
-    type: vless
-    uuid: b29b84f3-c974-4e45-89ad-cb11665f875f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 1855
-  - name: 德国 - 法兰克福 - Oracle Corporation - 9
-    server: time.is
-    port: 80
-    type: vless
-    uuid: 756de283-697a-47e4-bcf3-c32d1ecfbf43
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: dg.xiaoqi555.xyz
-    udp: true
-    delay: 1355
-  - client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: >-
-        CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-    name: 德国 - 法兰克福 - OVH SAS - 32
-    network: grpc
-    port: 2030
-    reality-opts:
-      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-      short-id: 7fe29733
-    server: ns7.esfahansiman.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 07c846af-4106-4790-9f83-10994c9e03d4
-    xudp: true
-    servername: wordpress.org
-    delay: 1383
-  - client-fingerprint: chrome
-    name: 德国 - 纽伦堡 - Hetzner Online GmbH - 37
-    network: raw
-    port: 443
-    reality-opts:
-      public-key: GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ
-      short-id: 7def4dde
-    server: vpn_proxy_channel_vpn_proxy_channel.hohod.ir
-    tls: true
-    type: vless
-    udp: true
-    uuid: 33707040-edcf-4185-94e4-2a071315c602
-    xudp: true
-    servername: vpn_proxy_channel_vpn_proxy_channel.hohod.ir
-    delay: 1930
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: 德国 - 纽伦堡 - Hetzner Online GmbH - 43
-    network: tcp
-    port: 2053
-    reality-opts:
-      public-key: J_hakbFY6qXqGMQr2hSQx686SjqZn4CU4d1BUai7G0Q
-      short-id: b5
-    server: FASTSHOVPNTELEGRAM.vinamarketcenter.ir
-    tls: true
-    type: vless
-    udp: true
-    uuid: ce5c0901-3f11-4ff5-add1-da22237e25cc
-    xudp: true
-    servername: www.tgju.org
-    delay: 1282
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: 德国 - 纽伦堡 - Hetzner Online GmbH - 44
-    network: tcp
-    port: 2053
-    reality-opts:
-      public-key: J_hakbFY6qXqGMQr2hSQx686SjqZn4CU4d1BUai7G0Q
-      short-id: b5
-    server: 78.47.254.182
-    tls: true
-    type: vless
-    udp: true
-    uuid: ce5c0901-3f11-4ff5-add1-da22237e25cc
-    xudp: true
-    servername: www.tgju.org
-    delay: 831
-  - cipher: aes-256-cfb
-    name: 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.153.197.5
+    up: ''
+    delay: 2685
+  - name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
+    server: mdss-other.04z3susick.download
+    type: ss
+    country: 🇨🇳CN
+    port: 12042
+    password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+    cipher: aes-128-gcm
+    delay: 943
+  - cipher: chacha20-ietf-poly1305
+    name: 哈萨克斯坦 - 阿拉木圖 - Newserverlife LLC - 1
+    password: K506onZay8EVJpqRV4WKQV
+    port: 1090
+    server: 91.217.10.60
     type: ss
     udp: true
-    delay: 661
+    delay: 1185
+  - name: 土耳其 - 伊兹密尔 - PQ HOSTING PLUS S.R.L. - 1
+    network: tcp
+    port: 53221
+    server: 94.131.108.195
+    type: vless
+    udp: true
+    uuid: 90efad13-d266-4d10-a914-bc40028ec469
+    xudp: true
+    delay: 1331
+  - name: 德国 - 法兰克福 - Bage Cloud LLC - 2
+    type: vmess
+    server: 112.65.92.20
+    port: 45274
+    cipher: auto
+    uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
+    alterId: 0
+    tls: false
+    client-fingerprint: ''
+    delay: 954
+  - cipher: aes-256-gcm
+    name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
+    password: KnYKwpw0w4c0RDnCo8KUcDQcwpp7w7bCv3nCgMOPHB/DnhLDj8OawrVVB2o5
+    port: 8443
+    server: '::ffff:b280:c8c6'
+    type: ss
+    udp: true
+    delay: 618
+  - cipher: chacha20-ietf-poly1305
+    name: 德国 - 萨尔布吕肯 - OVH ISP - 1
+    password: XwoHfpvuczzHOkOebGXiUO
+    port: 49551
+    server: 87.98.242.137
+    type: ss
+    udp: true
+    delay: 706
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: 新加坡 - 新加坡 - Contabo Asia Private Limited - 3
+    network: tcp
+    port: 33064
+    server: 62.146.232.152
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 942d56e4-cf72-4a7a-a87c-f555a270d79a
+    xudp: true
+    delay: 799
   - skip-cert-verify: true
-    sni: ap-g.hinetwork.tw
     type: trojan
-    password: da2c6761-4f08-48e8-bd98-11403dea8c35
-    server: ap-g.hinetwork.tw
-    port: 27149
-    name: 斐济 - 蘇瓦 - Cloudflare, Inc. - 1
-    delay: 820
-  - name: 斯洛文尼亚 - 卢布尔雅那 - Optimus IT d.o.o. - 1
-    server: 91.132.94.200
-    type: ss
-    country: 🇮🇶IQ
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 516
-  - type: ss
-    server: 33596250-29a8-431e-af9e-5e731b9e3d0a.zhongzhuan.076299.xyz
-    port: 28910
-    cipher: chacha20-ietf-poly1305
-    password: fd5bd1bc-eb46-4c98-89c8-655044f96d53
-    name: 新加坡 - 新加坡 - Akari Networks - 2
-    delay: 643
-  - auth: VLsjPt6CDwg1IqFgvD7KN6K58Q
-    name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 14
-    password: VLsjPt6CDwg1IqFgvD7KN6K58Q
-    port: 18447
-    server: 13.212.20.80
-    skip-cert-verify: true
-    type: hysteria2
-    delay: 1813
-  - auth: M3mkhElU3oHZy4KB1GchIXuqAPg
-    name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 16
-    password: M3mkhElU3oHZy4KB1GchIXuqAPg
-    port: 32815
-    server: 13.213.73.208
-    skip-cert-verify: true
-    type: hysteria2
-    delay: 830
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: 新加坡 - 新加坡 - Amazon.com, Inc. - 19
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 2fXYSD6vZyrb38UGOzeqjhQCj4N9kImoIjopb6tSii4
-      short-id: 9cbb1611
-    server: pq.aws63.yydjc.top
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7300363f-c18f-4bcf-a5a9-2ad35220505e
-    xudp: true
-    servername: iosapps.itunes.apple.com
-    delay: 1883
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 10
-    server: 47.74.157.194
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1801
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 12
-    server: 8.219.237.57
-    port: 31523
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 762
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 13
-    server: 8.222.243.73
-    port: 26385
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1092
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 3
-    network: ws
-    port: 443
-    server: 160.22.79.191
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1523
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 6
-    server: 146.235.18.248
-    port: 45137
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2505
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 7
-    server: 97.74.82.87
-    port: 45837
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1884
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-    server: 8.222.178.214
-    port: 6666
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1739
-  - type: vless
-    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 9
-    server: 43.156.116.194
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 704
-  - client-fingerprint: chrome
-    name: 新加坡 - 新加坡 - Coaxial Cable LLC - 11
-    network: tcp
-    port: 44073
-    reality-opts:
-      _spider-x: /
-      public-key: nRam85lBjCFi0rb3z2TdscE3iYf5XxkRQHMThf4dThk
-      short-id: bb3e0a552dfe5995
-    server: 92.112.23.189
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    uuid: d6b65f08-f2ea-4871-aa7f-1ffeb81447d1
-    servername: yahoo.com
-    delay: 1285
-  - client-fingerprint: chrome
-    name: 新加坡 - 新加坡 - Google LLC - 1
-    network: ws
-    port: 443
-    server: 168.138.181.208
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
-    ws-opts:
-      headers:
-        Host: sgp.rtot.me
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/50.0.2661.102 Safari/537.36
-      path: /bing
-    xudp: true
-    servername: sgp.rtot.me
-    delay: 1267
-  - type: vless
-    name: 新加坡 - 新加坡 - Leaseweb Singapore Pte. Ltd. - 4
-    server: 45.78.27.245
-    port: 8003
-    uuid: 000b9dea-f0c9-4f01-b94e-463ca9dcfa8b
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-      path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-    delay: 2613
-  - type: vless
-    name: 新加坡 - 新加坡 - Leaseweb Singapore Pte. Ltd. - 5
-    server: 103.117.102.127
-    port: 22317
-    uuid: 000b9dea-f0c9-4f01-b94e-463ca9dcfa8b
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-      path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-    delay: 999
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 18
-    network: ws
-    port: 8080
-    server: ip.sb
-    type: vless
-    udp: true
-    uuid: d03d2ff3-0b28-4c6b-bab5-4bfac274aa91
-    ws-opts:
-      headers:
-        Host: 0613.heweiyi.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/36.0.1985.125 Safari/537.36
-      path: /
-    xudp: true
-    delay: 1140
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 20
-    network: ws
-    port: 8080
-    server: ip.sb
-    type: vless
-    udp: true
-    uuid: bddbc661-a058-4722-dd74-5f8199a4fab6
-    ws-opts:
-      headers:
-        Host: 0611.heweiyi.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv)
-          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
-          Chrome/63.0.3239.111 Mobile Safari/537.36
-      path: /
-    xudp: true
-    delay: 1139
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 21
-    network: ws
-    port: 8080
-    server: 104.26.12.31
-    type: vless
-    udp: true
-    uuid: 9314580d-c11e-4f32-d544-566e6142565a
-    ws-opts:
-      headers:
-        Host: 0612.heweiyi.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/41.0.2272.76 Safari/537.36
-      path: /
-    xudp: true
-    delay: 1868
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 22
-    network: ws
-    port: 8080
-    server: 104.26.13.31
-    type: vless
-    udp: true
-    uuid: 9314580d-c11e-4f32-d544-566e6142565a
-    ws-opts:
-      headers:
-        Host: 0612.heweiyi.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: /
-    xudp: true
-    delay: 1788
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 23
-    network: ws
-    port: 8080
-    server: 172.67.75.172
-    type: vless
-    udp: true
-    uuid: 9314580d-c11e-4f32-d544-566e6142565a
-    ws-opts:
-      headers:
-        Host: 0612.heweiyi.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/31.0.1650.57 Safari/537.36
-      path: /
-    xudp: true
-    delay: 2545
+    password: LfcDJuqe
+    server: 36.151.251.62
+    port: 38632
+    name: 新加坡 - 新加坡 - DigitalOcean, LLC - 2
+    delay: 1675
   - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    name: 新加坡 - 新加坡 - Oracle Corporation - 17
+    delay: 2091
+    name: 新加坡 - 新加坡 - Oracle Corporation - 1
     password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
     port: 10086
     server: asg.pagate.top
     skip-cert-verify: false
     sni: asg.pagate.top
     type: hysteria2
-    delay: 1176
-  - alpn:
-      - ''
-    alterId: '0'
-    cipher: auto
-    name: 新加坡 - 新加坡 - PT Herza Digital Indonesia - 15
-    network: tcp
-    port: 56051
-    server: 38.47.176.251
-    skip-cert-verify: false
-    tls: false
+  - skip-cert-verify: true
+    type: trojan
+    password: HrTsLJvh
+    server: 223.111.144.12
+    port: 43196
+    name: 日本 - Shinagawa - The Constant Company - 1
+    delay: 2342
+  - skip-cert-verify: true
+    type: trojan
+    password: FpQhGpIr
+    server: 223.111.144.12
+    port: 43196
+    name: 日本 - Shinagawa - The Constant Company - 3
+    delay: 1913
+  - name: 日本 - 东京 - Eons Data Communications Limited - 2
+    server: 64523f3e-sukw00-svxrt2-63bp.c.volczijie.com
     type: vmess
-    udp: true
-    uuid: 2bca3569-0662-47f7-fdf8-421f30e71f44
-    xudp: true
-    delay: 831
-  - name: 日本 - Chiyoda - CTG Server Ltd. - 1
-    server: 183.236.51.38
-    port: 41302
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    country: 🇨🇳CN
+    port: 4151
+    uuid: 92b2a3d4-f353-11ef-b714-f23c93136cb3
     alterId: 0
     cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 649
-  - type: vless
-    name: 日本 - Chiyoda - InfoSphere - 7
-    server: 154.17.11.22
-    port: 19050
-    uuid: 000b9dea-f0c9-4f01-b94e-463ca9dcfa8b
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-      path: /iwanttosleep
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    servername: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-    delay: 1141
-  - type: vless
-    name: 日本 - Chiyoda - InfoSphere - 8
-    server: 154.7.181.222
-    port: 18556
-    uuid: 000b9dea-f0c9-4f01-b94e-463ca9dcfa8b
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-      path: /iwanttosleep
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    servername: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-    delay: 1148
-  - type: vless
-    name: 日本 - Chiyoda - InfoSphere - 9
-    server: 154.7.181.215
-    port: 12525
-    uuid: 000b9dea-f0c9-4f01-b94e-463ca9dcfa8b
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-      path: /iwanttosleep
-      v2ray-http-upgrade: true
-      v2ray-http-upgrade-fast-open: true
-    servername: usdgfuisgdifgsduikfgdskufguioefd.eessgrgrgrgr.cloudns.nz
-    delay: 2380
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 10
-    server: 217.142.250.28
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 795
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 11
-    server: 141.147.147.180
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 781
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 15
-    server: 140.83.57.20
-    port: 13118
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1909
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 17
-    server: 217.142.236.93
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2006
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 2
-    server: 150.66.0.85
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1224
-  - name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 20
-    network: ws
-    port: 443
-    server: 64.176.52.132
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1634
-  - type: vless
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 3
-    server: 152.69.192.40
-    port: 57005
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1565
-  - name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 4
-    network: ws
-    port: 19842
-    server: 121.85.55.59
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 371
-  - client-fingerprint: chrome
-    name: 日本 - Ōkubo-naka - Cloudflare, Inc. - 6
-    network: ws
-    port: 443
-    server: 138.2.39.24
-    tls: true
-    type: vless
-    udp: true
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    xudp: true
-    servername: steep.skyfigure.top
-    delay: 2819
-  - type: vless
-    name: 日本 - 成田市 - Cloudflare, Inc. - 12
-    server: 185.39.31.39
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1248
-  - type: vless
-    name: 日本 - 成田市 - Cloudflare, Inc. - 13
-    server: 158.101.80.84
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2510
-  - type: vless
-    name: 日本 - 成田市 - Cloudflare, Inc. - 16
-    server: 202.144.195.204
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 562
-  - type: vless
-    name: 日本 - 成田市 - Cloudflare, Inc. - 18
-    server: 132.145.124.43
-    port: 12502
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 765
-  - type: vless
-    name: 日本 - 成田市 - Cloudflare, Inc. - 5
-    server: 141.147.182.141
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2461
-  - type: vless
-    name: 日本 - 福岡市 - Cloudflare, Inc. - 14
-    server: 121.172.5.248
-    port: 34689
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 775
-  - type: vless
-    name: 日本 - 福岡市 - Cloudflare, Inc. - 19
-    server: 183.96.245.165
-    port: 30060
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 665
-  - type: ss
-    server: iecn.cutecloud.link
-    port: 52804
-    cipher: chacha20-ietf-poly1305
-    password: 9f17346f-f6be-3797-a1a7-8cc89fbf0ec1
-    name: 智利 - 圣地亚哥 - Oracle Corporation - 1
-    delay: 1599
-  - type: ss
-    server: ssjianpusai.136470.xyz
-    port: 59021
-    cipher: 2022-blake3-aes-128-gcm
-    password: ZmYzZjI5Mzk3YTQ2M2UyNA==:ZjJjMTRiZDMtNWZiNy00MA==
-    name: 柬埔寨 - 金边 - BUCT - 1
-    delay: 1280
-  - skip-cert-verify: true
-    sni: cloudflare.node-ssl.cdn-alibaba.com
-    type: trojan
-    password: 8ad9c6ab-fdc6-3e76-a97b-b9672e651237
-    server: cave-other.04z3susick.download
-    port: 41558
-    name: 柬埔寨 - 金边 - BUCT - 2
-    delay: 819
-  - http-opts:
-      headers: {}
-      path:
-        - /
-    name: 法国 - 巴黎 - Ace Data Centers II - 10
     network: tcp
-    port: 11260
-    server: 166.88.228.184
-    type: vless
-    udp: true
-    uuid: 1d7e539f-2c79-4c2a-8d96-d3a020f4a847
-    xudp: true
-    delay: 537
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1193
   - down: ''
     fingerprint: ''
-    name: 法国 - 巴黎 - Online S.A.S. - 1
+    name: 法国 - 巴黎 - Online S.A.S. - 2
     obfs: ''
     obfs-password: ''
     password: dongtaiwang.com
@@ -1859,12 +394,12 @@ proxies:
     sni: www.bing.com
     type: hysteria2
     up: ''
-    delay: 1456
+    delay: 1029
   - alpn:
       - h3
     auth-str: dongtaiwang.com
     auth_str: dongtaiwang.com
-    delay: 932
+    delay: 1431
     down: 100
     name: 法国 - 巴黎 - Online S.A.S. - 3
     port: 14241
@@ -1889,87 +424,60 @@ proxies:
     type: hysteria
     up: '11'
     auth-str: dongtaiwang.com
-    delay: 1050
-  - name: 法国 - 巴黎 - Online S.A.S. - 5
-    network: ws
-    port: 8080
-    server: 104.26.14.85
-    type: vless
-    udp: true
-    uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
-    ws-opts:
-      headers:
-        Host: QW.VU6d72nt9y.zULaiR.orG.
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: /?ed=2048
-    xudp: true
-    delay: 583
-  - auth: dongtaiwang.com
-    name: 法国 - 巴黎 - Online S.A.S. - 7
-    password: dongtaiwang.com
-    port: 4489
-    server: hy2-2.694463.xyz
+    delay: 2788
+  - name: 法国 - 格拉沃利讷 - OVH SAS - 1
+    server: fr1.test3.net
+    type: trojan
+    country: 🇫🇷FR
+    port: 443
+    password: d9aa8760-4945-11f0-84b7-1239d0255272
+    sni: www.speedtest.net
     skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
     udp: true
-    delay: 1251
-  - name: 法国 - 巴黎 - Online S.A.S. - 8
-    network: ws
-    port: 8080
-    server: 172.67.73.163
-    type: vless
-    udp: true
-    uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
-    ws-opts:
-      headers:
-        Host: QW.VU6d72nt9y.zULaiR.orG.
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
-      path: /?ed=2048
-    xudp: true
-    delay: 527
-  - name: 法国 - 巴黎 - Online S.A.S. - 9
+    delay: 1155
+  - name: 法国 - 鲁贝 - OVH SAS - 5
+    type: vmess
+    server: 112.65.92.20
+    port: 45211
+    cipher: auto
+    uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
+    alterId: 0
+    tls: false
+    client-fingerprint: ''
+    delay: 728
+  - name: 立陶宛 - Vilnius - Global Connectivity Solutions LLP - 1
+    type: vmess
+    server: ppy-boardv2.02ijp4uos1.download
+    port: 26153
+    cipher: auto
+    uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+    alterId: 0
+    tls: false
+    client-fingerprint: ''
+    delay: 1562
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: 美国 - Elk Grove Village - HostPapa - 1
     network: ws
     port: 80
-    server: tgju.org
-    type: vless
+    server: 172.67.199.104
+    skip-cert-verify: false
+    tls: false
+    type: vmess
     udp: true
-    uuid: 76ad8213-4617-47eb-92cc-5392b39b45ce
+    uuid: 03e92910-34b1-4245-ac63-04a865f43cd5
     ws-opts:
       headers:
-        Host: eLOQuENt-caSE.ZUlaIR.orG.
-        User-Agent: >-
-          Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-          like Gecko) Chrome/5.0.342.1 Safari/533.2
-      path: /?ed=2048
+        Host: eeefr5t6.4444916.xyz
+      path: /NjLXrucxVIcvpHPhIJoo2wcE6Q
     xudp: true
-    servername: eLOQuENt-caSE.ZUlaIR.orG.
-    delay: 815
-  - type: ss
-    server: gdcm.cqrmv.cn
-    port: 32561
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      ZGFhNTBjOTYzMzgxMzUxMzM0NDI2ZjQ5ZjcxNzJhY2E=:YmE3YTBmMzAtMDcwMS00YTE2LWEwZDktNGU0ZWE3MWY=
-    name: 法国 - 巴黎 - PQ HOSTING PLUS S.R.L. - 6
-    delay: 1335
-  - type: hysteria2
-    name: 法国 - 巴黎 - SCALEWAY - 2
-    server: 51.159.111.32
-    port: 31180
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-    tfo: false
-    delay: 1724
-  - name: 澳大利亚 - 悉尼 - DigitalOcean, LLC - 1
+    delay: 1279
+  - name: 美国 - 亚特兰大 - Akamai Technologies, Inc. - 3
     type: vmess
-    server: v35.heduian.link
-    port: 30835
+    server: v29.heduian.link
+    port: 30829
     cipher: auto
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
@@ -1978,271 +486,125 @@ proxies:
     ws-opts:
       path: /oooo
       headers:
-        Host: v35.heduian.link
+        Host: ocbc.com
     client-fingerprint: ''
-    delay: 1399
-  - type: ss
-    server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
-    port: 40083
-    cipher: chacha20-ietf-poly1305
-    password: 17cfc172-b858-471d-976c-11525783a87f
-    name: 爱尔兰 - 都柏林 - Misaka Network, Inc. - 1
-    delay: 655
-  - type: ss
-    server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
-    port: 51081
-    cipher: chacha20-ietf-poly1305
-    password: 6e3accf4-66c9-4f18-8e7f-56551ed40f22
-    name: 瑞典 - Spånga - The Constant Company - 1
-    delay: 884
-  - type: ss
-    server: js.yd.1.29d.cdnlinkms001.xyz
-    port: 25343
-    cipher: chacha20-ietf-poly1305
-    password: Yt3ZB8DxiVxPi4Mg
-    name: 罗马尼亚 - Lisaura - BFB ONE FZ-LLC - 1
-    delay: 578
-  - name: 美国 - Reston - OVH SAS - 2
-    server: usa.test3.net
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: ab33eed0-4684-11f0-8b81-1239d0255272
-    skip-cert-verify: true
-    udp: true
-    delay: 1901
-  - name: 美国 - Reston - OVH SAS - 3
-    server: usa.test3.net
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 9e937610-4684-11f0-a6b2-1239d0255272
-    skip-cert-verify: true
-    udp: true
-    delay: 1569
-  - name: 美国 - Reston - OVH SAS - 4
-    server: usa.test3.net
-    type: trojan
-    country: 🇺🇸US
-    port: 443
-    password: 8e2a3980-4684-11f0-b76c-1239d0255272
-    skip-cert-verify: true
-    udp: true
-    delay: 1573
-  - type: vless
-    name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 49
-    server: 104.16.125.228
-    port: 443
-    uuid: 96806a27-3e67-4927-ac62-0557249be651
-    tls: true
-    client-fingerprint: random
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: qwa-d40.pages.dev
-      path: /?ed=2560
-    servername: qwa-d40.pages.dev
-    delay: 2635
+    delay: 2124
   - auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    name: 美国 - 凤凰城 - Oracle Corporation - 98
+    delay: 1356
+    name: 美国 - 凤凰城 - Oracle Corporation - 7
     password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
     port: 10086
     server: aus.pagate.top
     skip-cert-verify: false
     sni: aus.pagate.top
     type: hysteria2
-    delay: 1030
-  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 6
+  - name: 美国 - 拉斯维加斯 - FranTech Solutions - 126
+    server: 45.147.201.231
+    port: 20062
     type: vmess
-    server: tk.hzlt.tkddns.xyz
-    port: 22641
+    uuid: e1dca130-d74e-47fa-82d6-4c3773e6f813
+    alterId: 0
     cipher: auto
-    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+    udp: true
+    delay: 1260
+  - alterId: 0
+    cipher: ''
+    name: 美国 - 普若佛 - Cloudflare, Inc. - 129
+    network: ws
+    port: 39128
+    server: 107.175.254.239
+    skip-cert-verify: true
+    tfo: false
+    tls: true
+    type: vless
+    uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+    ws-opts:
+      headers:
+        Host: hax-us3.lzjnb.shop
+      path: /lzjjj666
+    servername: hax-us3.lzjnb.shop
+    delay: 1426
+  - down: ''
+    fingerprint: ''
+    name: 美国 - 水牛城 - HostPapa - 6
+    obfs: ''
+    obfs-password: ''
+    password: 5CBqBh6MeDq6GajcilBiDg==
+    port: 61001
+    server: 192.227.152.86
+    skip-cert-verify: true
+    sni: 192-227-152-86.nip.io
+    type: hysteria2
+    up: ''
+    delay: 1441
+  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 2
+    server: 111.26.109.79
+    type: vmess
+    port: 30828
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: ocbc.com
+    delay: 1303
+  - name: 美国 - 洛杉矶 - HostPapa - 16
+    server: 141.101.121.34
+    port: 8443
+    type: vmess
+    uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+    alterId: 0
+    cipher: auto
     tls: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: zxjp-a.tkong.cc
-    client-fingerprint: ''
-    servername: zxjp-a.tkong.cc
-    delay: 1349
-  - name: 美国 - 水牛城 - HostPapa - 5
-    server: CCVfbgt667yuI.999864.XyZ
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: ecb31946-b81d-4e37-bfd9-2eb7fa5c4e52
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ccvfbgt667yui.999864.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /BbckrKsbv22PK1qu2TvM
-      headers:
-        HOST: ccvfbgt667yui.999864.xyz
-    delay: 1948
-  - type: vless
-    name: 美国 - 水牛城 - HostPapa - 56
-    server: 162.159.140.167
-    port: 443
-    uuid: 585acd30-52bf-4b70-a537-e13649fafefc
-    tls: true
-    client-fingerprint: chrome
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: xszaw34.7282728.xyz
-      path: >-
-        /rU9rSjDSOd4yY2fOe?ed=2048/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    servername: XszAW34.7282728.xYZ
-    delay: 2571
+        Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    delay: 1790
   - alpn:
-      - h3
-    congestion-controller: bbr
-    name: 美国 - 水牛城 - HostPapa - 92
-    password: a650ba6c-b538-4411-92a6-eaf81f3cc055
-    port: 18593
-    server: coco.edu.deal
-    sni: coco.edu.deal
-    type: tuic
-    uuid: a650ba6c-b538-4411-92a6-eaf81f3cc055
-    version: 5
-    delay: 983
-  - name: 美国 - 水牛城 - HostPapa - 93
-    password: a650ba6c-b538-4411-92a6-eaf81f3cc055
-    port: 42400
-    server: coco.edu.deal
-    skip-cert-verify: false
-    sni: coco.edu.deal
+      - h3%2Ch2%2Chttp%2F1.1
+    alterId: 0
+    cipher: ''
+    client-fingerprint: chrome
+    name: 美国 - 洛杉矶 - Madcityservers LLC - 128
+    network: ws
+    port: 443
+    server: 135.84.64.208
+    skip-cert-verify: true
     tfo: false
-    type: hysteria2
-    delay: 1819
-  - cipher: aes-256-cfb
-    name: 美国 - 波特蘭 - Amazon.com, Inc. - 1
-    password: awsps0501
-    port: 443
-    server: 35.91.94.11
-    type: ss
-    udp: true
-    delay: 466
-  - type: vless
-    name: 美国 - 波特蘭 - Cloudflare, Inc. - 50
-    server: 47.79.41.201
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2761
-  - type: ss
-    server: cnamepc03-ndtabspegg7plp3p.coffeehouse.wiki
-    port: 40070
-    cipher: chacha20-ietf-poly1305
-    password: 17cfc172-b858-471d-976c-11525783a87f
-    name: 美国 - 洛杉矶 - Akari Networks - 42
-    delay: 1258
-  - name: 美国 - 洛杉矶 - Bage Cloud LLC - 51
-    type: vmess
-    server: 112.65.92.20
-    port: 45251
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 560
-  - auth: aaf7a87d-ef38-433e-b86e-07ddea14fac4
-    name: 美国 - 洛杉矶 - Cogent Communications - 94
-    password: aaf7a87d-ef38-433e-b86e-07ddea14fac4
-    port: 55462
-    server: 154.21.206.251
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
-    delay: 1030
-  - skip-cert-verify: true
-    sni: cert.bitbyte.one
-    type: trojan
-    password: af4476cc-7ad0-4aec-999a-97f70bc9de99
-    server: lbsh.bnnodeservice.com
-    port: 34001
-    name: 美国 - 洛杉矶 - Datacamp Limited - 40
-    delay: 1334
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 53
-    type: vmess
-    server: 111.26.109.79
-    port: 30807
-    cipher: auto
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    tls: false
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: ocbc.com
-    client-fingerprint: ''
-    delay: 685
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 7
-    type: vmess
-    server: v7.heduian.link
-    port: 30807
-    cipher: auto
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    tls: false
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: ocbc.com
-    client-fingerprint: ''
-    delay: 1509
-  - name: 美国 - 洛杉矶 - FDCservers.net - 54
-    type: vmess
-    server: 112.65.92.20
-    port: 45202
-    cipher: auto
-    uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
-    alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 474
-  - client-fingerprint: chrome
-    name: 美国 - 洛杉矶 - Multacom Corporation - 75
-    network: ws
-    port: 443
-    server: ip.sb
-    skip-cert-verify: false
     tls: true
     type: vless
-    uuid: 58212526-ca5d-4c7f-b92a-4d514bfae27b
+    uuid: 149e1f3d-b2e0-4879-8d9c-7a13d01c32ed
     ws-opts:
       headers:
-        Host: xui1.31427397.xyz
-      path: /58212526-ca5d-4c7f-b92a-4d514bfae27b-vless?ed=2048
-    servername: xui1.31427397.xyz
-    delay: 1544
+        Host: mc1.777999.lol
+      path: /?ed=2560
+    servername: mc1.777999.lol
+    delay: 1535
+  - auth: dongtaiwang.com
+    delay: 1019
+    name: 美国 - 洛杉矶 - Psychz Networks - 10
+    password: dongtaiwang.com
+    port: 4710
+    server: 108.181.5.130
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria2
+    udp: true
   - alpn:
       - h3
     auth_str: dongtaiwang.com
-    down: 55 Mbps
-    name: 美国 - 洛杉矶 - Psychz Networks - 11
+    down: '50'
+    name: 美国 - 洛杉矶 - Psychz Networks - 8
     obfs: ''
     port: 17549
     protocol: ''
@@ -2250,29 +612,14 @@ proxies:
     skip-cert-verify: true
     sni: www.bing.com
     type: hysteria
-    up: 11 Mbps
+    up: '10'
     auth-str: dongtaiwang.com
-    delay: 1306
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: '55'
-    name: 美国 - 洛杉矶 - Psychz Networks - 12
-    obfs: ''
-    port: 11512
-    protocol: ''
-    server: 108.181.24.77
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '11'
-    auth-str: dongtaiwang.com
-    delay: 930
+    delay: 1298
   - alpn:
       - h3
     auth_str: dongtaiwang.com
     down: '100'
-    name: 美国 - 洛杉矶 - Psychz Networks - 13
+    name: 美国 - 洛杉矶 - Psychz Networks - 9
     obfs: ''
     port: 40528
     protocol: ''
@@ -2282,1039 +629,1841 @@ proxies:
     type: hysteria
     up: '100'
     auth-str: dongtaiwang.com
-    delay: 1411
-  - auth: dongtaiwang.com
-    name: 美国 - 洛杉矶 - Psychz Networks - 72
-    password: dongtaiwang.com
-    port: 4710
-    server: 108.181.5.130
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria2
-    udp: true
-    delay: 852
-  - name: 美国 - 洛杉矶 - Sharktech - 10
-    server: 7818a897-swd340-sxluj3-5jrf.hy2.gotochinatown.net
-    type: hysteria2
-    country: 🇺🇸US
+    delay: 1592
+  - down: ''
+    fingerprint: ''
+    name: 美国 - 洛杉矶 - Sharktech - 5
+    obfs: ''
+    obfs-password: ''
+    password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
     port: 8443
-    udp: true
-    password: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    sni: 7818a897-swd340-sxluj3-5jrf.hy2.gotochinatown.net
+    server: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
     skip-cert-verify: false
-    delay: 2401
-  - auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 100
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 8443
-    server: 939ab20d-sxsxs0-t4cy3j-1qkeg.hy2.gotochinatown.net
-    sni: 939ab20d-sxsxs0-t4cy3j-1qkeg.hy2.gotochinatown.net
+    sni: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
     type: hysteria2
+    up: ''
+    delay: 1474
+  - name: 美国 - 洛杉矶 - Shenzhen lesuyun Network Technology Co., Ltd - 4
+    server: mdss-us.04z3susick.download
+    type: ss
+    country: 🇨🇳CN
+    port: 12027
+    password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+    cipher: aes-128-gcm
+    delay: 2767
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
+    server: 170.114.45.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1235
-  - auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 101
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    port: 8443
-    server: 2ed3d3e8-sxp8g0-szgx2m-1t5n1.hy2.gotochinatown.net
-    sni: 2ed3d3e8-sxp8g0-szgx2m-1t5n1.hy2.gotochinatown.net
-    type: hysteria2
+    servername: jp.laoyoutiao.link
+    delay: 380
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
+    server: 168.100.6.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1667
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 103
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: be91567c-sxp8g0-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: be91567c-sxp8g0-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 1545
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
+    server: 185.148.104.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1619
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 104
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: 055b9b69-sxsxs0-sz7drj-3z3v.hy2.gotochinatown.net
-    sni: 055b9b69-sxsxs0-sz7drj-3z3v.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 2316
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
+    server: 160.79.105.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1395
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 105
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: 96ec4f23-sxsxs0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: 96ec4f23-sxsxs0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
+    servername: jp.laoyoutiao.link
+    delay: 451
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
+    server: 161.145.150.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1329
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 106
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: 0784916e-sxr340-sz7drj-3z3v.hy2.gotochinatown.net
-    sni: 0784916e-sxr340-sz7drj-3z3v.hy2.gotochinatown.net
-    type: hysteria2
+    servername: jp.laoyoutiao.link
+    delay: 491
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
+    server: 162.120.94.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1180
-  - auth: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    delay: 2268
-    name: 美国 - 洛杉矶 - Sharktech - 14
-    password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    port: 8443
-    server: b692acee-sxjog0-t7hmka-1plv4.hy2.gotochinatown.net
-    sni: b692acee-sxjog0-t7hmka-1plv4.hy2.gotochinatown.net
-    type: hysteria2
+    servername: jp.laoyoutiao.link
+    delay: 855
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
+    server: 192.0.63.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 17
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: 6d852e1c-sxc9s0-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: 6d852e1c-sxc9s0-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 576
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
+    server: 167.68.4.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 2924
-  - name: 美国 - 洛杉矶 - Sharktech - 18
-    server: b9c1a6e6-sxr340-t3f7qr-141tv.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    auth: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+    delay: 991
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
+    server: 170.114.46.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    sni: b9c1a6e6-sxr340-t3f7qr-141tv.hy2.gotochinatown.net
-    delay: 1942
-  - auth: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 19
-    password: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    port: 8443
-    server: 214c7b70-sxnds0-syuosn-1mffg.hy2.gotochinatown.net
-    sni: 214c7b70-sxnds0-syuosn-1mffg.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 398
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
+    server: 160.79.104.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1433
-  - name: 美国 - 洛杉矶 - Sharktech - 20
-    server: f117df3b-sxsxs0-szgx2m-1t5n1.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+    delay: 1947
+  - type: vless
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
+    server: 45.131.7.191
+    port: 80
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+      path: /Telegram:@ShadowProxy66/?ed=2560
+    delay: 796
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
+    server: 199.34.229.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    sni: f117df3b-sxsxs0-szgx2m-1t5n1.hy2.gotochinatown.net
-    delay: 1356
-  - auth: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 21
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 46439530-sxjog0-t3f7qr-141tv.hy2.gotochinatown.net
-    sni: 46439530-sxjog0-t3f7qr-141tv.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 401
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
+    server: 192.200.160.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1867
-  - auth: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 22
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 9780e2da-sxnds0-t3f7qr-141tv.hy2.gotochinatown.net
-    sni: 9780e2da-sxnds0-t3f7qr-141tv.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 1093
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
+    server: 195.13.54.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1429
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 23
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 42c52339-sxjog0-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: 42c52339-sxjog0-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 685
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
+    server: 198.62.62.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1881
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 24
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: 274e2e45-sxc9s0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: 274e2e45-sxc9s0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 412
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
+    server: 195.13.45.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1823
-  - auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 25
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    port: 8443
-    server: 3bdc9413-sxaf40-szgx2m-1t5n1.hy2.gotochinatown.net
-    sni: 3bdc9413-sxaf40-szgx2m-1t5n1.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 1003
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
+    server: 209.46.30.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    delay: 1455
-  - name: 美国 - 洛杉矶 - Sharktech - 27
-    server: e3814cb4-sxusg0-sz7drj-3z3v.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
+    delay: 766
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
+    server: 199.34.228.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    sni: e3814cb4-sxusg0-sz7drj-3z3v.hy2.gotochinatown.net
-    delay: 2449
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 28
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: 531c03a3-sxlj40-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: 531c03a3-sxlj40-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1894
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 29
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: d85210ee-sxp8g0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: d85210ee-sxp8g0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2268
-  - auth: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 30
-    password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    port: 8443
-    server: 6bb93070-sxlj40-tb74a6-1q9g2.hy2.gotochinatown.net
-    sni: 6bb93070-sxlj40-tb74a6-1q9g2.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1568
-  - name: 美国 - 洛杉矶 - Sharktech - 31
-    server: a2e56db4-sxlj40-t3f7qr-141tv.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    auth: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    udp: true
-    sni: a2e56db4-sxlj40-t3f7qr-141tv.hy2.gotochinatown.net
-    delay: 1350
-  - name: 美国 - 洛杉矶 - Sharktech - 33
-    server: 467b31c2-sxusg0-tb74a6-1q9g2.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    auth: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    udp: true
-    sni: 467b31c2-sxusg0-tb74a6-1q9g2.hy2.gotochinatown.net
-    delay: 1689
-  - name: 美国 - 洛杉矶 - Sharktech - 34
-    server: 317e6b1f-sxusg0-sz6xgb-5jrf.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    auth: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    udp: true
-    sni: 317e6b1f-sxusg0-sz6xgb-5jrf.hy2.gotochinatown.net
-    delay: 2938
-  - auth: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 35
-    password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    port: 8443
-    server: 5aa08eeb-sxhts0-tb74a6-1q9g2.hy2.gotochinatown.net
-    sni: 5aa08eeb-sxhts0-tb74a6-1q9g2.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1314
-  - name: 美国 - 洛杉矶 - Sharktech - 37
-    server: db93ea94-sxsxs0-sz6xgb-5jrf.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    auth: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    udp: true
-    sni: db93ea94-sxsxs0-sz6xgb-5jrf.hy2.gotochinatown.net
-    delay: 2013
-  - name: 美国 - 洛杉矶 - Sharktech - 38
-    server: 6298c6dd-sxr340-sz6xgb-5jrf.hy2.gotochinatown.net
-    port: 8443
-    type: hysteria2
-    password: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    auth: 24099fd0-1fc4-11eb-8684-f23c913c8d2b
-    udp: true
-    sni: 6298c6dd-sxr340-sz6xgb-5jrf.hy2.gotochinatown.net
-    delay: 1711
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 39
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: 15e288fd-sxlj40-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: 15e288fd-sxlj40-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2344
-  - auth: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    name: 美国 - 洛杉矶 - Sharktech - 60
-    password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    port: 8443
-    server: 08ab142d-sxnds0-t7hmka-1plv4.hy2.gotochinatown.net
-    sni: 08ab142d-sxnds0-t7hmka-1plv4.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2878
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 61
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 1c8ae6f4-sxlj40-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: 1c8ae6f4-sxlj40-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2084
-  - auth: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    name: 美国 - 洛杉矶 - Sharktech - 62
-    password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    port: 8443
-    server: d5a909b0-sxc9s0-t7hmka-1plv4.hy2.gotochinatown.net
-    sni: d5a909b0-sxc9s0-t7hmka-1plv4.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1551
-  - auth: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 63
-    password: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    port: 8443
-    server: 27de2282-sxlj40-syuosn-1mffg.hy2.gotochinatown.net
-    sni: 27de2282-sxlj40-syuosn-1mffg.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1878
-  - auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 65
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 8443
-    server: 7f3011d9-sxlj40-t4cy3j-1qkeg.hy2.gotochinatown.net
-    sni: 7f3011d9-sxlj40-t4cy3j-1qkeg.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1427
-  - auth: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    name: 美国 - 洛杉矶 - Sharktech - 66
-    password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    port: 8443
-    server: d2309762-sx8kg0-t7hmka-1plv4.hy2.gotochinatown.net
-    sni: d2309762-sx8kg0-t7hmka-1plv4.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1318
-  - auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 67
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    port: 8443
-    server: b34c6b53-sxhts0-szgx2m-1t5n1.hy2.gotochinatown.net
-    sni: b34c6b53-sxhts0-szgx2m-1t5n1.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2197
-  - auth: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 68
-    password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    port: 8443
-    server: fe72b2fa-sxjog0-tb74a6-1q9g2.hy2.gotochinatown.net
-    sni: fe72b2fa-sxjog0-tb74a6-1q9g2.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1337
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 69
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: 3f675303-sxfz40-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: 3f675303-sxfz40-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2594
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 70
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 0e020276-sxp8g0-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: 0e020276-sxp8g0-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1292
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 71
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: 5299407e-sxjog0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: 5299407e-sxjog0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1431
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 73
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: 5626a52d-sxaf40-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: 5626a52d-sxaf40-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1419
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 74
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: 7c017950-sxhts0-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: 7c017950-sxhts0-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1336
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 76
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 0805931f-sxhts0-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: 0805931f-sxhts0-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1573
-  - auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 78
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 8443
-    server: 0af317da-sxhts0-t4cy3j-1qkeg.hy2.gotochinatown.net
-    sni: 0af317da-sxhts0-t4cy3j-1qkeg.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2376
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 79
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: d608d137-sxnds0-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: d608d137-sxnds0-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2870
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 80
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: 4bd16930-sxhts0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: 4bd16930-sxhts0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1879
-  - auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 81
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    port: 8443
-    server: 13f32752-sxnds0-szgx2m-1t5n1.hy2.gotochinatown.net
-    sni: 13f32752-sxnds0-szgx2m-1t5n1.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2280
-  - auth: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    name: 美国 - 洛杉矶 - Sharktech - 82
-    password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    port: 8443
-    server: 6ef43b60-sxhts0-t7hmka-1plv4.hy2.gotochinatown.net
-    sni: 6ef43b60-sxhts0-t7hmka-1plv4.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1983
-  - auth: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 83
-    password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-    port: 8443
-    server: 32d4314b-sxp8g0-tb74a6-1q9g2.hy2.gotochinatown.net
-    sni: 32d4314b-sxp8g0-tb74a6-1q9g2.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2159
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 84
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: f11e9c30-swkhs0-sxlsd4-3z3v.hy2.gotochinatown.net
-    sni: f11e9c30-swkhs0-sxlsd4-3z3v.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1333
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 85
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: ee6a9d89-swd340-sxlsd4-3z3v.hy2.gotochinatown.net
-    sni: ee6a9d89-swd340-sxlsd4-3z3v.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1648
-  - auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 86
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 8443
-    server: 4712ded5-sxp8g0-t4cy3j-1qkeg.hy2.gotochinatown.net
-    sni: 4712ded5-sxp8g0-t4cy3j-1qkeg.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1372
-  - auth: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 87
-    password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-    port: 8443
-    server: b7287de1-sxr340-t4nd8s-wujn.hy2.gotochinatown.net
-    sni: b7287de1-sxr340-t4nd8s-wujn.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1712
-  - auth: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 88
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 6d7739bc-sxp8g0-t3f7qr-141tv.hy2.gotochinatown.net
-    sni: 6d7739bc-sxp8g0-t3f7qr-141tv.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1750
-  - auth: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 89
-    password: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    port: 8443
-    server: 34e98751-sxr340-szgx2m-1t5n1.hy2.gotochinatown.net
-    sni: 34e98751-sxr340-szgx2m-1t5n1.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1287
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 9
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net
-    sni: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 2104
-  - auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 90
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    port: 8443
-    server: 85ea18a0-sxr340-t4cy3j-1qkeg.hy2.gotochinatown.net
-    sni: 85ea18a0-sxr340-t4cy3j-1qkeg.hy2.gotochinatown.net
-    type: hysteria2
+    delay: 1393
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
+    server: 199.34.230.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
     delay: 1408
-  - auth: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 91
-    password: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
-    port: 8443
-    server: 7f9413c9-sxr340-syrqbs-1fy29.hy2.gotochinatown.net
-    sni: 7f9413c9-sxr340-syrqbs-1fy29.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1850
-  - auth: 21747146-3507-11ed-bb74-f23c9164ca5d
-    name: 美国 - 洛杉矶 - Sharktech - 95
-    password: 21747146-3507-11ed-bb74-f23c9164ca5d
-    port: 8443
-    server: d8a60535-sxnds0-t1smj4-u6bc.hy2.gotochinatown.net
-    sni: d8a60535-sxnds0-t1smj4-u6bc.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1740
-  - auth: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    name: 美国 - 洛杉矶 - Sharktech - 96
-    password: 6aaaf4f4-be44-11ed-a8bf-f23c91cfbbc9
-    port: 8443
-    server: d723371a-sxr340-syuosn-1mffg.hy2.gotochinatown.net
-    sni: d723371a-sxr340-syuosn-1mffg.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1751
-  - auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    name: 美国 - 洛杉矶 - Sharktech - 99
-    password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-    port: 8443
-    server: a4e3ef78-swin40-sxlsd4-3z3v.hy2.gotochinatown.net
-    sni: a4e3ef78-swin40-sxlsd4-3z3v.hy2.gotochinatown.net
-    type: hysteria2
-    udp: true
-    delay: 1623
-  - alpn:
-      - http/1.1
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
+    server: 184.174.80.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
     client-fingerprint: chrome
-    name: 美国 - 紐約 - Massivegrid LTD - 97
     network: ws
-    port: 443
-    server: 104.21.78.243
-    tls: true
-    type: vless
-    udp: true
-    uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
     ws-opts:
-      headers:
-        Host: ccvbnhj.7282728.xyz
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv)
-          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
-          Chrome/60.0.3112.116 Mobile Safari/537.36
-      path: /6r23FpdcA4KNAXX
-    xudp: true
-    servername: cCVBNhJ.7282728.XYZ
-    delay: 2009
-  - auth: 74c118db-b8b2-4380-ae1d-0a1465e468cf
-    client-fingerprint: chrome
-    down: 100
-    name: 美国 - 纽约 - FranTech Solutions - 110
-    obfs: salamander
-    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-    password: 74c118db-b8b2-4380-ae1d-0a1465e468cf
-    port: 31005
-    server: 45.147.201.231
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 100
-    delay: 1187
-  - auth: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
-    client-fingerprint: chrome
-    down: 50
-    name: 美国 - 纽约 - FranTech Solutions - 111
-    obfs: salamander
-    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-    password: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
-    port: 31005
-    server: 45.147.201.231
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 50
-    delay: 1224
-  - auth: 5833c1b9-b23d-43b3-9ac8-b7f66d1e01f6
-    client-fingerprint: chrome
-    down: 100
-    name: 美国 - 纽约 - FranTech Solutions - 112
-    obfs: salamander
-    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-    password: 5833c1b9-b23d-43b3-9ac8-b7f66d1e01f6
-    port: 31005
-    server: 45.147.201.231
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 100
-    delay: 1225
-  - auth: 47818923-af3a-47d3-bf8d-997059c5cfc2
-    client-fingerprint: chrome
-    down: 100
-    name: 美国 - 纽约 - FranTech Solutions - 113
-    obfs: salamander
-    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-    password: 47818923-af3a-47d3-bf8d-997059c5cfc2
-    port: 31005
-    server: 45.147.201.231
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 100
-    delay: 2115
-  - skip-cert-verify: true
-    sni: dl.shcuusdp.cc.tjcct.xyz
-    type: trojan
-    password: 725f30d5-9f5b-343e-a98d-9dce14f2ac0b
-    server: shcuac.aag436.ccddn4.icu
-    port: 4700
-    name: 美国 - 聖荷西 -  - 41
-    delay: 1836
-  - skip-cert-verify: true
-    sni: dl.shcuusan9.cc.tjcct.xyz
-    type: trojan
-    password: 725f30d5-9f5b-343e-a98d-9dce14f2ac0b
-    server: shcuac.aag437.ccddn4.icu
-    port: 65401
-    name: 美国 - 聖荷西 -  - 43
-    delay: 1519
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
-    network: ws
-    port: 80
-    server: 185.162.228.112
-    type: vless
-    udp: true
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    ws-opts:
-      headers:
-        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.101 Safari/537.36
-      path: /Telegram:@ShadowProxy66/?ed=2560
-    xudp: true
-    delay: 508
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
-    network: ws
-    port: 80
-    server: Join.VPNCUSTOMIZE.cloud1.hosting-ip.com
-    type: vless
-    udp: true
-    uuid: 9cc0db84-9437-4740-b4a6-da27d37cad7b
-    ws-opts:
-      headers:
-        Host: telegram.vpncustomize.dns-dynamic.net.
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: >-
-        /telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE
-    xudp: true
-    delay: 866
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
-    network: ws
-    port: 80
-    server: 91.206.71.162
-    type: vless
-    udp: true
-    uuid: 9cc0db84-9437-4740-b4a6-da27d37cad7b
-    ws-opts:
-      headers:
-        Host: telegram.vpncustomize.dns-dynamic.net.
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
-      path: >-
-        /telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE
-    xudp: true
-    delay: 1249
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
-    network: ws
-    port: 80
-    server: 45.131.7.191
-    type: vless
-    udp: true
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    ws-opts:
-      headers:
-        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/55.0.2883.87 Safari/537.36
-      path: /Telegram:@ShadowProxy66/?ed=2560
-    xudp: true
-    delay: 751
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
-    network: ws
-    port: 8080
-    server: 104.18.15.19
-    type: vless
-    udp: true
-    uuid: 9d4f6cfb-c921-4bde-ae0a-61781848d940
-    ws-opts:
-      headers:
-        Host: 0225.axpsivp.workers.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.90 Safari/537.36
       path: /?ed=2560
-    xudp: true
-    delay: 440
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
-    network: ws
-    port: 80
-    server: 45.131.4.83
-    type: vless
+      headers:
+        Host: jp.laoyoutiao.link
     udp: true
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    delay: 541
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
+    server: 205.233.181.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 530
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+    server: 45.131.4.83
+    port: 80
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    servername: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+    network: ws
+    ws-opts:
+      path: /Telegram:@ShadowProxy66/?ed=2560
       headers:
         Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/63.0.3239.84 Safari/537.36
-      path: /Telegram:@ShadowProxy66/?ed=2560
-    xudp: true
-    delay: 851
+    udp: true
+    delay: 413
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
+    server: 216.24.57.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 938
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
+    server: 216.116.134.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 643
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
+    server: 167.68.11.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 889
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
+    server: 209.94.90.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 535
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
+    server: 102.132.188.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 535
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
+    server: 125.134.6.129
+    port: 11333
+    type: vless
+    uuid: 6a7c2881-83f0-47ea-b05c-441a18960ef4
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: mihu.sorry.ip-ddns.com
+    udp: true
+    servername: mihu.sorry.ip-ddns.com
+    delay: 2488
   - type: vless
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
-    server: 104.129.164.39
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 127
+    server: 185.148.105.20
     port: 8880
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
     tls: false
-    client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
       headers:
         Host: ip.langmanshanxi.top
-      path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+      path: /Telegram @WangCai2 /?ed=2560
     servername: ip.langmanshanxi.top
-    delay: 609
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
-    server: 194.53.53.249
-    port: 2083
-    type: trojan
-    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    delay: 721
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+    network: ws
+    port: 8880
+    server: 104.129.164.39
+    type: vless
+    udp: true
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    ws-opts:
+      headers:
+        Host: ip.langmanshanxi.top
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
+          Safari/537.36
+      path: /Telegram🇮🇷@ShadowProxy66 /?ed=2560
+    xudp: true
+    delay: 404
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 130
+    network: ws
+    port: 80
+    server: 31.43.179.217
+    type: vless
+    udp: true
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    ws-opts:
+      headers:
+        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile
+          Safari/537.36
+      path: /Telegram:@ShadowProxy66/?ed=2560
+    xudp: true
+    delay: 1865
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 131
+    network: ws
+    port: 80
+    server: 168.100.6.8
+    type: vless
+    udp: true
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    ws-opts:
+      headers:
+        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+        User-Agent: >-
+          Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/65.0.3325.181 Safari/537.36
+      path: /Telegram:@ShadowProxy66/?ed=2560
+    xudp: true
+    delay: 987
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 132
+    network: ws
+    port: 80
+    server: 45.142.120.134
+    type: vless
+    udp: true
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    ws-opts:
+      headers:
+        Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/65.0.3325.181 Safari/537.36
+      path: /Telegram:@ShadowProxy66/?ed=2560
+    xudp: true
+    delay: 1034
+  - skip-cert-verify: true
     sni: vle.amclubsvip.dpdns.org
-    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /?ed=2560&PROT_TYPE=trojan
       headers:
         Host: vle.amclubsvip.dpdns.org
-    udp: true
-    delay: 2094
-  - alpn:
-      - http/1.1
-    client-fingerprint: randomized
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
-    network: ws
-    port: 443
+    type: trojan
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    server: 194.53.53.249
+    port: 2083
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    delay: 1981
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
     server: 104.17.147.22
-    tls: true
+    port: 443
     type: vless
-    udp: true
     uuid: 3058e698-61fd-4d12-95bc-f1fe4c071713
-    ws-opts:
-      headers:
-        Host: hozori.ir
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      path: /RklUHeautH5uvnSB/NTQuMTY5LjIyOS4xODg
-    xudp: true
-    servername: hOZori.iR
-    delay: 1627
-  - client-fingerprint: random
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
-    network: ws
-    port: 443
-    server: 104.16.17.151
-    skip-cert-verify: true
-    tfo: false
     tls: true
-    type: vless
-    uuid: 72982133-27fb-46fc-9061-61113e77e201
-    ws-opts:
-      headers:
-        Host: jack.jack-cq.click
-      path: /?ed=2560
-    servername: jack.jack-cq.click
-    delay: 1386
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
-    network: ws
-    port: 2082
-    server: 104.18.15.19
-    type: vless
-    udp: true
-    uuid: 54029e43-0588-418d-b102-dbf30f091788
-    ws-opts:
-      headers:
-        Host: 0120.enmvvniv.workers.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/63.0.3239.132 Safari/537.36
-      path: /?ed=2560
-    xudp: true
-    delay: 410
-  - client-fingerprint: random
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
-    network: ws
-    port: 443
-    server: 103.21.244.84
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 72982133-27fb-46fc-9061-61113e77e201
-    ws-opts:
-      headers:
-        Host: jack.jack-cq.click
-      path: /?ed=2560
-    servername: jack.jack-cq.click
-    delay: 1272
-  - client-fingerprint: chrome
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
-    network: ws
-    port: 443
-    server: 104.16.156.225
-    tls: true
-    type: vless
-    udp: true
-    uuid: f40b19a1-5515-4c93-804c-334873d38449
-    ws-opts:
-      headers:
-        Host: autumn.norjson.top
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.113 Safari/537.36
-      path: /
-    xudp: true
-    servername: autumn.norjson.top
-    delay: 1194
-  - alpn:
+    alpn:
       - http/1.1
+    servername: hOZori.iR
     client-fingerprint: randomized
-    name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
     network: ws
-    port: 443
-    server: www.speedtest.net
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3058e698-61fd-4d12-95bc-f1fe4c071713
     ws-opts:
+      path: /RklUHeautH5uvnSB/NTQuMTY5LjIyOS4xODg
       headers:
         Host: hozori.ir
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/59.0.3071.115 Safari/537.36
-      path: /Telegram@V2ray_Alpha
-    xudp: true
-    servername: hOZori.iR
-    delay: 2163
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: '100'
-    name: 美国 - 聖荷西 - SolidTools Technology - 15
-    port: 36194
-    protocol: udp
-    server: 198.40.52.27
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    udp: 'true'
-    up: '100'
-    delay: 958
-  - type: vless
-    name: 美国 - 肯特 - Cloudflare, Inc. - 46
-    server: 66.203.150.211
-    port: 7656
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 266
-  - type: vless
-    name: 美国 - 肯特 - Cloudflare, Inc. - 47
-    server: 66.203.144.241
-    port: 7656
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 1356
-  - down: ''
-    fingerprint: ''
-    name: 美国 - 芝加哥 - Cloudflare, Inc. - 8
-    obfs: ''
-    obfs-password: ''
-    password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-    port: 47262
-    server: 64.181.207.162
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
-    up: ''
-    delay: 1503
-  - name: 美国 - 芝加哥 - Sharktech - 26
-    server: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
-    port: 15229
-    type: trojan
-    password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
     udp: true
-    sni: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
-    delay: 1179
-  - skip-cert-verify: true
-    sni: 5e086b44-swkhs0-t4cy3j-1qkeg.cu.plebai.net
-    type: trojan
-    password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-    server: 5e086b44-swkhs0-t4cy3j-1qkeg.cu.plebai.net
-    port: 15229
-    name: 美国 - 芝加哥 - Sharktech - 48
-    delay: 1328
-  - type: ss
-    server: ssus03.521pokemon.com
-    port: 56013
-    cipher: 2022-blake3-aes-128-gcm
-    password: MTA2ZTcwNDVjZjU1ZmQzNw==:NWU2YzA5NmQtNzQ1OC00OQ==
-    name: 美国 - 費利蒙 - Akamai Technologies, Inc. - 44
-    delay: 1506
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    name: 美国 - 阿什本 - Hetzner Online GmbH - 77
-    network: ws
-    port: 2087
-    server: zula.ir
-    tls: true
+    delay: 2177
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 94.140.0.213
+    port: 8880
     type: vless
-    udp: true
-    uuid: 904cdf83-1b0c-4cd5-a0c1-6690c1ee6219
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /?ed=2560
       headers:
-        Host: rita.adaspoloandco.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: /downloader
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 557
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: 103.245.229.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 534
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 103.245.228.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 544
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: 185.162.231.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 560
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+    server: 185.162.230.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 568
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 212.183.88.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 552
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 192.65.217.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 1417
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 185.207.199.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1829
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 103.169.142.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 532
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+    server: 185.207.198.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 544
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 77.74.228.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 584
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
+    server: 185.133.35.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 554
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
+    server: 185.159.247.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 555
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
+    server: 104.234.239.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 574
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
+    server: 74.49.215.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 551
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 45.150.115.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 2476
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 193.124.224.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1664
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: 5.10.215.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1047
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
+    server: 89.116.46.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 856
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
+    server: 77.37.33.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 975
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
+    server: 45.80.108.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1015
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: 45.80.110.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 862
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
+    server: 185.251.81.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 842
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
+    server: 141.11.202.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 980
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
+    server: 141.11.203.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 545
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
+    server: 194.36.55.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 494
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    server: 25.129.199.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1868
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 104.239.72.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 493
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 25.129.198.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 493
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
+    server: 94.247.142.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 589
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    server: 25.129.196.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 512
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
+    server: 45.192.224.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 548
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
+    server: 31.43.179.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 479
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
+    server: 194.76.18.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 544
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
+    server: 89.116.161.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 480
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
+    server: 89.116.250.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 539
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
+    server: 88.216.66.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 612
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
+    server: 45.153.7.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 480
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
+    server: 89.116.180.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 507
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+    server: 88.216.67.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1294
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
+    server: 188.42.89.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 852
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
+    server: 188.42.88.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 832
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
+    server: 45.149.12.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 562
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
+    server: 188.164.248.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 622
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
+    server: 185.18.184.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 531
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
+    server: 160.153.137.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 554
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
+    server: 114.129.43.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 564
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
+    server: 185.59.218.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 416
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
+    server: 185.174.138.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 819
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
+    server: 193.9.49.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1903
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
+    server: 46.254.92.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 2317
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+    server: 185.176.24.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 959
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+    server: 5.182.84.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 926
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
+    server: 45.142.120.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 739
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
+    server: 5.182.85.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 798
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
+    server: 185.148.107.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 506
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    server: 213.241.198.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 947
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
+    server: 91.209.253.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 435
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
+    server: 154.83.2.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 751
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
+    server: 154.197.64.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 540
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
+    server: 154.197.75.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 2377
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    server: 154.197.108.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 750
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
+    server: 154.198.173.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 929
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
+    server: 154.194.0.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 943
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
+    server: 92.243.74.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1482
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    server: 92.243.75.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 436
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    server: 92.53.189.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 669
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
+    server: 46.202.30.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 526
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
+    server: 91.124.127.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 1076
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
+    server: 14.102.229.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 927
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
+    server: 45.159.218.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    servername: jp.laoyoutiao.link
+    delay: 697
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 45.159.216.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 2367
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
+    server: 69.84.182.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 666
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    server: 103.133.1.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 400
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
+    server: 66.45.118.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 655
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
+    server: 104.254.140.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 414
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
+    server: 66.81.247.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1132
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
+    server: 135.84.74.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 402
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
+    server: 104.129.164.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 416
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
+    server: 141.193.27.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1028
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
+    server: 154.85.99.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1480
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
+    server: 154.206.12.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 1604
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
+    server: 159.242.242.213
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: jp.laoyoutiao.link
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: jp.laoyoutiao.link
+    udp: true
+    delay: 416
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    http-opts:
+      headers:
+        Host:
+          - speedtest.net
+      path:
+        - /
+    name: 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+    network: http
+    port: 24715
+    server: 37.27.213.97
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 03fe3f21-177f-448c-b4cf-b6b9155563a4
     xudp: true
-    servername: rita.adaspoloandco.com
-    delay: 1533
-  - type: hysteria2
-    name: 美国 - 阿什本 - netcup GmbH - 45
-    server: 152.53.54.139
-    port: 36002
-    password: 6a8d4d12-0d8f-4a01-8244-765edcf6bfcd
-    sni: hk1.zongyunti.site
-    skip-cert-verify: true
-    tfo: false
-    delay: 1092
-  - client-fingerprint: chrome
+    delay: 476
+  - client-fingerprint: firefox
     http-opts:
       headers: {}
       path:
         - /
-    name: 美国 - 阿瓦達 - OVH US LLC - 64
+    name: 英国 - Erith - OVH SAS - 8
     network: tcp
     port: 443
-    server: 15.204.166.17
+    reality-opts:
+      public-key: guEY2h3j9K3Z_j0G6SyVjqhwOED7xjQ1Cutajkr6uFw
+      short-id: e60a15dd
+    server: 51.77.109.173
     tls: true
     type: vless
     udp: true
-    uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+    uuid: b4f3c864-3241-4abe-884e-adffcbbc5ffa
     xudp: true
-    servername: 147135010072.sec21org.com
-    delay: 1403
-  - name: 芬兰 - 赫尔辛基 - CGI GLOBAL LIMITED - 1
-    type: vmess
-    server: 112.65.92.20
-    port: 45275
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 490
-  - alpn:
-      - http/1.1
-    client-fingerprint: safari
-    name: 英国 - Erith - OVH SAS - 3
-    network: tcp
-    port: 443
-    server: 57.128.178.253
-    tls: true
-    type: vless
-    udp: true
-    uuid: 2b5feae8-1a36-43cd-a722-83522e34853c
-    xudp: true
-    servername: en.linceedab.com
-    delay: 1800
-  - name: 英国 - Slough - DigitalOcean, LLC - 1
+    servername: mirror.yandex.ru
+    delay: 1211
+  - name: 英国 - 伦敦 - Akamai Technologies, Inc. - 6
     type: vmess
     server: v36.heduian.link
     port: 30836
@@ -3328,392 +2477,270 @@ proxies:
       headers:
         Host: v36.heduian.link
     client-fingerprint: ''
-    delay: 1517
-  - type: vless
-    name: 英国 - 伦敦 - Grid Hosting Limited - 2
-    server: 217.179.91.152
-    port: 34045
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    tls: true
-    client-fingerprint: firefox
-    skip-cert-verify: false
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    network: tcp
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 2582
-  - client-fingerprint: firefox
-    name: 英国 - 伦敦 - Grid Hosting Limited - 4
-    network: tcp
-    port: 34045
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    server: 217.179.91.66
-    tls: true
-    type: vless
+    delay: 2457
+  - name: 英国 - 伦敦 - OVH SAS - 1
+    server: uk1.test3.net
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    password: 5d59a6f0-48a1-11f0-94a7-1239d0255272
+    skip-cert-verify: true
     udp: true
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 998
-  - name: 英国 - 倫敦 - Zhejiang Aiyun Network Technology Co Ltd - 5
+    delay: 1249
+  - name: 英国 - 伦敦 - OVH SAS - 2
+    server: uk1.test3.net
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    password: 6c8f2de0-48a2-11f0-bdd4-1239d0255272
+    skip-cert-verify: true
+    udp: true
+    delay: 1236
+  - name: 英国 - 伦敦 - OVH SAS - 3
+    server: uk1.test3.net
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    password: 2543a880-48a1-11f0-8578-1239d0255272
+    skip-cert-verify: true
+    udp: true
+    delay: 1240
+  - name: 英国 - 伦敦 - OVH SAS - 4
+    server: uk1.test3.net
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    password: 970ec930-48a2-11f0-a318-1239d0255272
+    skip-cert-verify: true
+    udp: true
+    delay: 1248
+  - name: 英国 - 伦敦 - OVH SAS - 5
+    server: uk1.test3.net
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    password: a7c7bbf0-48a1-11f0-b880-1239d0255272
+    skip-cert-verify: true
+    udp: true
+    delay: 1171
+  - client-fingerprint: chrome
+    name: 英国 - 伦敦 - OVH SAS - 7
+    password: 34876650-48a2-11f0-8fd6-1239d0255272
+    port: 443
+    server: 51.38.65.155
+    skip-cert-verify: true
+    sni: uk1.test3.net
+    type: trojan
+    udp: true
+    delay: 868
+  - name: 荷兰 - Meppel - PQ HOSTING PLUS S.R.L. - 2
+    type: vmess
+    server: v30.heduian.link
+    port: 30830
+    cipher: auto
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    tls: false
     network: ws
-    port: 80
-    server: www.speedtest.net
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: ocbc.com
+    client-fingerprint: ''
+    delay: 2687
+  - client-fingerprint: chrome
+    name: 荷兰 - 阿姆斯特丹 - Aeza International LTD - 7
+    network: ws
+    port: 8443
+    server: zula.ir
+    tls: true
     type: vless
     udp: true
-    uuid: telegram-id-ArV2ray2
+    uuid: 1eb16f02-dd2c-4a7b-8c46-34e1a62875f5
     ws-opts:
       headers:
-        Host: www.speedtest.net.b.1.speedtest2029.com.
+        Host: avid.adaspoloandco.com
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03)
+          Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile
+          Safari/537.36
+      path: /downloader
+    xudp: true
+    servername: avid.adaspoloandco.com
+    delay: 1902
+  - alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 4
+    network: ws
+    password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+    port: 2083
+    server: 104.21.78.206
+    skip-cert-verify: false
+    sni: inVIncibLE.fAfA20.shoP
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
+          (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+      path: /trxSsuyYmFFPA4woIq/NzguNDYuNTYuNDI=?ed=2560
+    delay: 1746
+  - alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 5
+    network: ws
+    password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+    port: 443
+    server: 104.21.75.120
+    skip-cert-verify: false
+    sni: inviNcIble.fafa20.ShOp
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3)
           AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
           Safari/537.36
-      path: >-
-        /-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry
-    xudp: true
-    delay: 1093
-  - name: 荷兰 - 阿姆斯特丹 - BrainStorm Network, Inc - 5
-    server: 109.104.154.131
-    port: 20000
-    type: ss
-    cipher: aes-256-gcm
-    password: TP5T4JQH5S8JLS50
-    udp: true
-    delay: 907
-  - client-fingerprint: random
-    name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 7
-    network: ws
-    port: 443
-    server: 188.114.99.93
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vless
-    uuid: 72982133-27fb-46fc-9061-61113e77e201
-    ws-opts:
-      headers:
-        Host: jack.jack-cq.click
-      path: /?ed=2560
-    servername: jack.jack-cq.click
-    delay: 1156
+      path: /tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+    delay: 2229
   - alpn:
-      - h3
+      - http/1.1
     client-fingerprint: randomized
-    name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 9
+    name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 6
     network: ws
-    password: bpb-trojan
-    port: 443
-    server: 172.67.180.227
+    password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+    port: 2083
+    server: 104.21.95.229
     skip-cert-verify: false
-    sni: mashdt.pages.dev
+    sni: INvincIBLE.fafA20.Shop
     type: trojan
     udp: true
     ws-opts:
       headers:
         User-Agent: >-
           Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/55.0.2883.87 Safari/537.36
-      path: /tr?ed=2560
-    delay: 1940
-  - type: ss
-    server: sshelan.136470.xyz
-    port: 59008
-    cipher: 2022-blake3-aes-128-gcm
-    password: NjFiNzkzYWIyMjhhZjBjYw==:ZjJjMTRiZDMtNWZiNy00MA==
-    name: 荷兰 - 阿姆斯特丹 - DigitalOcean, LLC - 6
-    delay: 1183
-  - name: 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 1
-    server: exchange.gameaurela.click
-    port: 52952
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: >-
-      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-    delay: 1622
-  - name: 荷兰 - 阿姆斯特丹 - Hostkey B.V. - 2
-    server: 141.98.4.67
-    port: 52952
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: >-
-      LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-    delay: 722
-  - name: 荷兰 - 阿姆斯特丹 - Interkvm Host SRL - 4
-    server: 203.25.108.78
-    type: ss
-    country: 🇮🇳IN
-    port: 44591
-    password: gSHbNTKWu4QLx3iMjJ7KBS
-    cipher: chacha20-ietf-poly1305
-    delay: 598
-  - name: 荷兰 - 阿姆斯特丹 - OVH SAS - 8
-    network: ws
-    port: 8880
-    server: www.speedtest.net
-    type: vless
+          like Gecko) Chrome/59.0.3071.115 Safari/537.36
+      path: /trYStgfIRQtOjkkxCQ/MTI5LjE1OS44NC43MQ==?ed=2560
+    delay: 1388
+  - name: 荷兰 - 阿姆斯特丹 - Oracle Corporation - 3
+    server: shy42.zqjc.cloud
+    type: hysteria2
+    country: 🇳🇱NL
+    port: 55215
     udp: true
-    uuid: V2rayfast_7
-    ws-opts:
-      headers:
-        Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/52.0.2743.116 Safari/537.36
-      path: /?ed=2048
-    xudp: true
-    delay: 1192
-  - name: 荷兰 - 阿姆斯特丹 - Servers Tech Fzco - 3
+    password: 867f512f-93d2-4344-853c-50965de9b103
+    sni: shy42.zqjc.cloud
+    skip-cert-verify: false
+    delay: 1457
+  - cipher: chacha20-ietf-poly1305
+    name: 荷兰 - 阿姆斯特丹 - Servers Tech Fzco - 1
+    password: v1vY3qvg5TkhK7dFwf7fRI
+    port: 4343
     server: 77.246.98.67
     type: ss
-    country: 🇳🇱NL
-    port: 4343
-    password: wZKkcqnHkoB64A1upA4K1M
-    cipher: chacha20-ietf-poly1305
-    delay: 631
-  - skip-cert-verify: true
-    sni: pt.mjt000.com
-    type: trojan
-    password: 786334e7-dd13-4ef2-8efe-306c46cb8cf0
-    server: pt.mjt000.com
-    port: 443
-    name: 葡萄牙 - 里斯本 - PQ HOSTING PLUS S.R.L. - 1
-    delay: 1738
-  - type: ss
-    server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
-    port: 51083
-    cipher: chacha20-ietf-poly1305
-    password: 6e3accf4-66c9-4f18-8e7f-56551ed40f22
-    name: 西班牙 - 马德里 - The Constant Company - 1
-    delay: 987
+    udp: true
+    delay: 1168
+  - cipher: aes-256-cfb
+    name: 葡萄牙 - 里斯本 - I4W - Web Solutions, Lda - 1
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 185.231.233.112
+    type: ss
+    udp: true
+    delay: 1065
   - client-fingerprint: firefox
-    name: 越南 - Hai BàTrưng - GLTEC - 5
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: 越南 - Cầu Diễn - WEB 360 TECHNOLOGY JOINT STOCK COMPANY - 5
     network: tcp
     port: 34045
     reality-opts:
       public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
       short-id: e8ab71d0
-    server: 59.153.217.57
+    server: 160.250.65.132
     tls: true
     type: vless
     udp: true
     uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    xudp: true
     servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 1268
-  - skip-cert-verify: true
-    sni: VN.catxstar.com
-    type: trojan
-    password: 1d99eb06-8f7c-4296-8c84-1e57084579a5
-    server: iepl01.tube-cat.com
-    port: 20029
-    name: 越南 - Hai BàTrưng - TOTHOST - 6
-    delay: 1862
+    delay: 2053
   - cipher: aes-256-cfb
     name: 越南 - Hải Dương - FASTLY - 1
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.28
+    server: 103.186.155.24
     type: ss
     udp: true
-    delay: 508
+    delay: 1942
   - cipher: aes-256-cfb
     name: 越南 - Hải Dương - FASTLY - 2
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.18
+    server: 103.186.155.19
     type: ss
     udp: true
-    delay: 1146
-  - client-fingerprint: firefox
-    name: 越南 - Trâu Quỳ - MOCLAMESOUL - 3
-    network: tcp
-    port: 34045
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    server: 103.12.77.78
-    tls: true
-    type: vless
+    delay: 1097
+  - cipher: aes-256-cfb
+    name: 越南 - Hải Dương - FASTLY - 3
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.25
+    type: ss
     udp: true
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 1816
-  - client-fingerprint: firefox
-    name: 越南 - Trâu Quỳ - MOCLAMESOUL - 7
-    network: tcp
-    port: 34045
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    server: 103.12.76.236
-    tls: true
-    type: vless
+    delay: 1088
+  - cipher: aes-256-cfb
+    name: 越南 - Hải Dương - FASTLY - 4
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.27
+    type: ss
     udp: true
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 1766
-  - client-fingerprint: firefox
-    name: 越南 - 河內市 - Thien Quang Digital technology joint stock company - 4
-    network: tcp
-    port: 34045
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    server: 103.81.86.9
-    tls: true
-    type: vless
-    udp: true
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    delay: 1733
-  - name: 阿曼 - 马斯喀特 - Kaopu Cloud HK Limited - 1
+    delay: 1080
+  - name: 阿塞拜疆 - 巴库 - Hostart LLC - 1
     type: vmess
     server: ppy-boardv2.02ijp4uos1.download
-    port: 26133
+    port: 26139
     cipher: auto
     uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
     alterId: 0
     tls: false
     client-fingerprint: ''
-    delay: 639
-  - type: vless
-    name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 4
-    server: 131.186.17.132
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2923
-  - type: vless
-    name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 5
-    server: 119.56.175.56
-    port: 12406
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 707
-  - type: vless
-    name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 6
-    server: 132.145.94.80
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 2134
-  - type: vless
-    name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 7
-    server: 52.141.25.42
-    port: 443
-    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      headers:
-        Host: steep.skyfigure.top
-      path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-    servername: steep.skyfigure.top
-    delay: 712
-  - name: 韩国 - 首尔特别市 - Amazon Technologies Inc. - 3
-    server: 13.125.35.232
-    port: 443
+    delay: 1751
+  - skip-cert-verify: true
+    sni: www.yrtok.com
+    type: trojan
+    password: 85f133142f04dbf6547da33895cfabb3
+    server: 203.156.253.12
+    port: 39001
+    name: 韩国 - Gangnam-gu - KINX - 3
+    delay: 1203
+  - name: 韩国 - Gwanak-gu - Korea Telecom - 1
+    server: 221.150.109.89
+    port: 11389
     type: ss
     cipher: aes-256-cfb
-    password: yijian0503
+    password: qwerREWQ@@
+    delay: 554
+  - cipher: aes-256-cfb
+    name: 韩国 - Gwanak-gu - Korea Telecom - 4
+    password: qwerREWQ@@
+    port: 5344
+    server: 125.141.26.14
+    type: ss
     udp: true
-    delay: 1033
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: 韩国 - 首尔特别市 - Oracle Corporation - 8
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: P--AseuV7sGvgy7YJ8iX58GxeP5-M2oq0Mq2YxPAXRs
-      short-id: f00d40f38482
-    server: 131.186.22.238
-    tls: true
-    type: vless
-    udp: true
-    uuid: 74dd96cd-3b12-4e03-8605-aeeb188d93f3
-    xudp: true
-    servername: buylite.music.apple.com
-    delay: 1961
-  - name: 韩国 - 首尔特别市 - The Constant Company, LLC - 1
-    server: 36.151.251.46
-    type: trojan
-    port: 4448
-    password: LfcDJuqe
-    skip-cert-verify: true
-    delay: 1704
-  - name: 韩国 - 首尔特别市 - The Constant Company, LLC - 2
-    server: 36.151.251.46
-    type: trojan
-    port: 4448
-    password: FpQhGpIr
-    skip-cert-verify: true
-    delay: 618
-  - type: ss
-    server: zf2.10101251.xyz
-    port: 30524
-    cipher: aes-256-gcm
-    password: e22b89ae-6996-4824-ac31-610ac7349e6a
-    name: 马其顿 - Arachinovo - Global Connectivity Solutions LLP - 1
-    delay: 1103
-  - type: ss
-    server: gdcm.cqrmv.cn
-    port: 42071
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      ZGFhNTBjOTYzMzgxMzUxMzM0NDI2ZjQ5ZjcxNzJhY2E=:YmE3YTBmMzAtMDcwMS00YTE2LWEwZDktNGU0ZWE3MWY=
-    name: 马来西亚 - 依斯干达公主城 - Maxis Broadband Sdn Bhd - 1
-    delay: 911
+    delay: 455
   - skip-cert-verify: true
-    sni: k31.tudou211.com
+    sni: k17.tudou211.com
     type: trojan
     password: 2b1ed981-6547-4094-998b-06a3323d6f6c
     server: 120.233.44.201
-    port: 21181
-    name: 马来西亚 - 吉隆坡 - TM TECHNOLOGY SERVICES SDN BHD - 2
-    delay: 1859
-  - skip-cert-verify: true
-    sni: sin.cloudfisher.xyz
-    type: trojan
-    password: 32beaca7-84be-11ef-bb6b-bc241111d95d
-    server: js.wnwwv.cn
-    port: 45837
-    name: 墨西哥 - Querétaro - Oracle Corporation - 1
-    delay: 1032
-  - name: 墨西哥 - 墨西哥城 - Latitude.sh - 2
-    type: vmess
-    server: 120.199.83.240
-    port: 45244
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
-    client-fingerprint: ''
-    delay: 2767
+    port: 21118
+    name: 韩国 - 首尔特别市 - Baxet Group Inc. - 2
+    delay: 1543
