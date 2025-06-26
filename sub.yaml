@@ -4,7 +4,20 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 7
+  - name: 中国 - 上海 - Hangzhou Alibaba Advertising Co., Ltd. - 7
+    server: 47.116.166.178
+    type: vmess
+    country: 🇨🇳CN
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 298
+  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 6
     server: 47.92.152.169
     port: 50002
     type: vmess
@@ -12,36 +25,19 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    delay: 362
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 10
-    server: vps.200566.xyz
+    delay: 193
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 15
+    server: tw.xiao666666.site
+    port: 26900
     type: hysteria2
-    country: 🇹🇼TW
-    port: 30329
+    password: 05168661-a845-4844-9e04-e610461ebad9
+    auth: 05168661-a845-4844-9e04-e610461ebad9
+    sni: tw.xiao666666.site
+    up: 150
+    down: 150
+    skip-cert-verify: false
     udp: true
-    password: 79739832-b888-415a-a454-8b53911c944a
-    sni: vps.200566.xyz
-    skip-cert-verify: true
-    delay: 376
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 5
-    server: tw40.453521.xyz
-    type: trojan
-    country: 🇹🇼TW
-    port: 3663
-    password: a348278e-71ac-499c-8069-28b1af18c372
-    skip-cert-verify: true
-    udp: true
-    delay: 483
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 6
-    server: 111.250.98.104
-    type: trojan
-    country: 🇹🇼TW
-    port: 3663
-    password: a348278e-71ac-499c-8069-28b1af18c372
-    sni: tw40.453521.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 419
+    delay: 2840
   - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 2
     server: 112.132.215.34
     port: 50007
@@ -51,19 +47,9 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    delay: 383
-  - name: 中国 - 广州市 - China Mobile communications corporation - 3
-    server: 120.210.205.59
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 449
-  - name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 4
-    server: 47.104.186.133
+    delay: 621
+  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 3
+    server: 112.132.215.12
     type: vmess
     country: 🇨🇳CN
     port: 50002
@@ -71,69 +57,174 @@ proxies:
     alterId: 64
     cipher: auto
     network: tcp
-    servername: trojan.burgerip.co.uk
+    servername: 09jzus.zdzdzd.xyz
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 448
-  - cipher: aes-256-gcm
-    name: 中国 - 香港 - BGP Network Limited - 1
-    password: 8360adcea0b1
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: kr6v1.dashengjs.net
-      mode: websocket
-      mux: true
-      path: /bylnxldqaquw
-      tls: true
-    port: 443
-    server: kr6v1.dashengjs.net
+    delay: 560
+  - name: 中国 - 广州市 - China Mobile - 4
+    server: 183.236.51.36
+    type: vmess
+    port: 59003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 537
+  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 1
+    server: 120.26.55.225
+    port: 50002
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    delay: 855
+  - name: 中国 - 臺北市 - Akari Networks - 11
+    server: wb.kaiqsz.com
+    port: 42765
+    type: trojan
+    password: a25ed269-105b-4f15-bee2-bc2785d38912
+    sni: wb.kaiqsz.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1730
+  - name: 中国 - 香港 - Akari Networks - 5
+    server: pop.air.1543.0tk8a3a1q4t94dler.com
     type: ss
+    port: 3052
+    password: VXPipi29nxMO
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+      mode: http
+    delay: 172
+  - name: 中国 - 香港 - Baxet Group Inc. - 16
+    server: 2.linkhub.support
+    port: 40206
+    type: ssr
+    cipher: rc4-md5
+    password: ENZ52K
+    protocol: auth_aes128_md5
+    obfs: plain
+    protocol-param: 92902:pFWGOQ
+    obfs-param: cd2b692902.6602b8463464108506.microsoft.com
     udp: true
-    delay: 1677
-  - name: 中国 - 香港 - CTG Server Ltd. - 12
-    server: 120.232.153.40
-    port: 31209
+    delay: 1110
+  - name: 中国 - 香港 - Dalian Yichuan Industrial CO - 10
+    server: 103.149.182.61
+    type: ss
+    country: 🇭🇰HK
+    port: 8388
+    password: asd123456
+    cipher: chacha20-ietf
+    delay: 1893
+  - name: 中国 - 香港 - High Family Technology Co - 12
+    server: hk-02.foxspirit.click
     type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    country: 🇭🇰HK
+    port: 1086
+    uuid: 4ca1e6db-f31a-4257-a95f-7bbef918cabd
     alterId: 0
     cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-    delay: 573
-  - name: 中国 - 香港 - CTG Server Ltd. - 9
-    server: 183.236.51.38
-    port: 46921
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    delay: 547
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 11
-    server: 5d847e9d-sxaf40-t1bnjq-1krtb.hkt.cdnhuawei.com
-    port: 8443
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-    password: <password>
+    network: ws
+    servername: www.ouabaua.com
+    http-opts: {}
+    h2-opts: {}
     tls: true
-    delay: 1718
-  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 8
-    server: e3e46c14-sv0xs0-sy4an7-1o20w.cm.plebai.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /zxascas
+      headers:
+        HOST: www.ouabaua.com
+    delay: 995
+  - name: 中国 - 香港 - High Family Technology Co - 13
+    server: hk-02.foxspirit.click
     type: vmess
-    country: 🇨🇳CN
-    port: 15228
-    uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
+    country: 🇭🇰HK
+    port: 1086
+    uuid: 4799f446-702b-407f-bbba-9b242fa38ed7
     alterId: 0
     cipher: auto
-    network: tcp
-    servername: e3e46c14-sv0xs0-sy4an7-1o20w.cm.plebai.net
+    network: ws
+    servername: www.ouabaua.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /zxascas
+      headers:
+        HOST: www.ouabaua.com
+    delay: 1394
+  - name: 中国 - 香港 - High Family Technology Co - 14
+    server: hk-02.foxspirit.click
+    type: vmess
+    country: 🇭🇰HK
+    port: 1086
+    uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: www.ouabaua.com
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /zxascas
+      headers:
+        HOST: www.ouabaua.com
+    delay: 1394
+  - name: 中国 - 香港 - PCCW IMS Limited - 8
+    server: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com
+    type: vmess
+    country: 🇭🇰HK
+    port: 80
+    uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    network: ws
+    servername: broadcastlv.chat.bilibili.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 769
-  - name: 俄罗斯 - 莫斯科 - LLC BAXET - 1
+    ws-opts:
+      path: /
+      headers:
+        HOST: broadcastlv.chat.bilibili.com
+    delay: 2716
+  - name: 中国 - 香港 - PCCW IMS Limited - 9
+    server: 7b5d670c-sw1z40-swjbhe-8bem.hgc1.tcpbbr.net
+    type: vmess
+    country: 🇭🇰 HK
+    port: 8080
+    uuid: ca506e08-ce3d-5e5a-c128-6358caca15e5
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-path: /
+    servername: broadcastlv.chat.bilibili.com
+    ws-headers:
+      HOST: broadcastlv.chat.bilibili.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1532
+  - name: 俄罗斯 - 莫斯科 - LLC Baxet - 1
+    server: 45.129.2.108
+    type: hysteria2
+    country: 🇷🇺RU
+    port: 50850
+    udp: true
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+    delay: 1378
+  - name: 俄罗斯 - 莫斯科 - LLC BAXET - 2
     server: 46.17.41.217
     port: 30033
     type: hysteria2
@@ -141,18 +232,8 @@ proxies:
     auth: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
-    delay: 1053
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 4
-    server: 129.153.59.124
-    type: hysteria2
-    country: 🇨🇦CA
-    port: 54530
-    udp: true
-    password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-    sni: www.bing.com
-    skip-cert-verify: true
-    delay: 1842
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 5
+    delay: 2341
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 2
     server: 150.230.24.24
     port: 30300
     type: hysteria2
@@ -163,379 +244,103 @@ proxies:
     alpn:
       - h3
     udp: true
-    delay: 1138
-  - name: 加拿大 - 多伦多 - HostPapa - 1
-    server: 172.67.131.27
+    delay: 1520
+  - name: 加拿大 - 多伦多 - Regxa Company for Information Technology Ltd - 1
+    server: ca.opensocks.site
+    type: ss
+    port: 8388
+    password: N2E4M
+    cipher: chacha20-ietf-poly1305
+    delay: 2003
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 1
+    server: 91.107.164.255
     type: vmess
-    country: 🇺🇸US
-    port: 2053
-    uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+    country: 🇩🇪DE
+    port: 33203
+    uuid: a82148dd-4f11-4472-b341-f63f57dce17f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1683
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 2
+    server: 78.39.56.4
+    type: vmess
+    country: 🇮🇷IR
+    port: 7600
+    uuid: ce63d7ce-bc85-455a-a12b-4e54eb39a14f
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 2666
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+    server: 102.132.188.3
+    type: vmess
+    port: 80
+    uuid: e95e35ba-f874-4eb3-9600-4dbd6d099f4e
     alterId: 0
     cipher: auto
     network: ws
-    servername: cc2d4.89060004.xyz
+    servername: h4.grAsSoRy.shop
     http-opts: {}
     h2-opts: {}
-    tls: true
     skip-cert-verify: true
     ws-opts:
       path: /
       headers:
-        HOST: cc2d4.89060004.xyz
-    delay: 2614
-  - name: 加拿大 - 多伦多 - HostPapa - 2
-    server: 104.21.3.189
-    type: vmess
-    country: 🏁ZZ
-    port: 2053
-    uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cc2d4.89060004.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: cc2d4.89060004.xyz
-    delay: 2603
-  - name: 加拿大 - 多伦多 - HostPapa - 3
-    server: 172.67.131.27
-    type: vmess
-    country: 🏁ZZ
-    port: 2087
-    uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cc2d2.89060004.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: cc2d2.89060004.xyz
-    delay: 1432
-  - name: 巴西 - 圣保罗 - Zenlayer Inc - 1
-    server: 42.240.152.238
-    port: 8842
-    type: trojan
-    password: 1b4c16925f934c57b954a9f0f23dea33
-    sni: brwx.spvpv.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1203
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 1
-    server: 172.66.141.21
-    port: 80
-    type: vless
-    uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
-    tls: false
-    servername: a1.ghormehsabzi.dpdns.org
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a1.ghormehsabzi.dpdns.org
-    udp: true
-    delay: 1491
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 11
-    server: 104.27.126.10
-    port: 80
-    type: vless
-    uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kssepa.sabzipolobamahi.dpdns.org
-    udp: true
-    servername: kssepa.sabzipolobamahi.dpdns.org
-    delay: 1972
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 2
-    server: 172.67.9.145
-    port: 80
-    type: vless
-    uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
-    tls: false
-    servername: kssepa.sabzipolobamahi.dpdns.org
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kssepa.sabzipolobamahi.dpdns.org
-    udp: true
-    delay: 490
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-    server: 172.67.56.112
-    port: 80
-    type: vless
-    uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
-    tls: false
-    servername: entezar.loseyourself.dpdns.org
-    network: ws
-    ws-opts:
-      path: /BaRAyeIran?ed=2560
-      headers:
-        Host: entezar.loseyourself.dpdns.org
-    udp: true
-    delay: 492
+        HOST: h4.grAsSoRy.shop
+    delay: 1327
   - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
-    server: 104.24.34.94
+    server: 172.67.36.32
     port: 80
     type: vless
-    uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
+    uuid: bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0
     tls: false
-    servername: kssepa.sabzipolobamahi.dpdns.org
     network: ws
     ws-opts:
-      path: /?ed=2571
+      path: /Telegram@V2ray_Alpha/?ed=2570
       headers:
-        Host: kssepa.sabzipolobamahi.dpdns.org
+        Host: barayeiran.nastaranh.dpdns.org
     udp: true
-    delay: 456
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 5
-    server: 104.24.135.83
-    port: 80
-    type: vless
-    uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
-    tls: false
-    servername: delam.ahaysiahzangi.dpdns.org
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: delam.ahaysiahzangi.dpdns.org
-    udp: true
-    delay: 482
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 6
-    server: 172.67.67.92
-    port: 80
-    type: vless
-    uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
-    tls: false
-    servername: delam.ahaysiahzangi.dpdns.org
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: delam.ahaysiahzangi.dpdns.org
-    udp: true
-    delay: 443
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 7
-    network: ws
-    port: 80
-    server: 104.24.56.187
+    delay: 570
+  - client-fingerprint: chrome
+    name: 德国 - 纽伦堡 - Hetzner Online GmbH - 5
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ
+      short-id: 7def4dde
+    server: vpn_proxy_channel_vpn_proxy_channel.hohod.ir
     skip-cert-verify: false
-    tls: false
-    type: vless
-    uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
-    ws-opts:
-      headers:
-        Host: a1.ghormehsabzi.dpdns.org
-      path: /?ed=2560
-    servername: a1.ghormehsabzi.dpdns.org
-    delay: 427
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 9
-    server: 172.66.212.68
-    port: 80
-    type: vless
-    uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2570
-      headers:
-        Host: entezar.loseyourself.dpdns.org
-    udp: true
-    delay: 1130
-  - name: 德国 - 法兰克福 - NKtelecom INC - 10
-    server: diwu94.di5ji.lat
-    port: 26900
-    type: hysteria2
-    password: 72da9901-e7b3-4ce4-88b6-0bcd97face5a
-    auth: 72da9901-e7b3-4ce4-88b6-0bcd97face5a
-    sni: diwu94.di5ji.lat
-    skip-cert-verify: true
-    udp: true
-    delay: 1434
-  - auth: d8b76675-5790-4097-a78e-ec5e3697425c
-    name: 德国 - 法兰克福 - NKtelecom INC - 12
-    password: d8b76675-5790-4097-a78e-ec5e3697425c
-    port: 26900
-    server: diwu94.di5ji.lat
-    skip-cert-verify: true
-    sni: diwu94.di5ji.lat
-    type: hysteria2
-    udp: true
-    delay: 1990
-  - name: 德国 - 法兰克福 - NKtelecom INC - 8
-    server: ztcloudde.ztcloud.xyz
-    port: 18550
-    type: hysteria2
-    password: 1568e9c4-d509-46a9-92e3-c9ce871a54cd
-    auth: 1568e9c4-d509-46a9-92e3-c9ce871a54cd
-    sni: ztcloudde.ztcloud.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 1436
-  - name: 意大利 - 罗马市 - PQ HOSTING PLUS S.R.L. - 1
-    server: v5.heduian.link
-    type: vmess
-    country: 🇨🇳CN
-    port: 30805
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: ws
-    servername: ocbc.com
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /oooo
-      headers:
-        HOST: ocbc.com
-    delay: 1776
-  - cipher: aes-256-cfb
-    country: 🇷🇺 RU
-    name: 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.153.197.5
-    type: ss
-    delay: 704
-  - name: 新加坡 - 新加坡 - NewMedia Express Pte Ltd - 6
-    network: ws
-    port: 8080
-    server: ip.sb
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    uuid: bddbc661-a058-4722-dd74-5f8199a4fab6
-    ws-opts:
-      headers:
-        Host: 0611.heweiyi.dpdns.org
-      path: /
-    delay: 1457
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 1
-    server: xjp3vl.xiao666666.site
-    port: 46350
-    type: vless
-    uuid: 6bb24294-1192-4e6c-9d96-2322d24078ac
     tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 1Chz-KxnZ6wuUwc-FdkxJkzSn7Qt_7hFO2_JDCfRpX8
-      short-id: 547f4d0f
-    client-fingerprint: qq
-    network: tcp
-    udp: true
-    servername: www.bing.com
-    delay: 2596
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 2
-    server: xjp3vl.xiao666666.site
-    port: 46350
     type: vless
-    uuid: 880a6a5a-bbb0-4cf1-b96a-42f1e62cdb43
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 1Chz-KxnZ6wuUwc-FdkxJkzSn7Qt_7hFO2_JDCfRpX8
-      short-id: 547f4d0f
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: www.bing.com
-    delay: 2956
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 3
-    server: xjp3vl.xiao666666.site
-    port: 46350
-    type: vless
-    uuid: e6834f4d-291a-4e4d-9b4d-2592a6044846
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 1Chz-KxnZ6wuUwc-FdkxJkzSn7Qt_7hFO2_JDCfRpX8
-      short-id: 547f4d0f
-    client-fingerprint: edge
-    network: tcp
-    udp: true
-    servername: www.bing.com
-    delay: 1589
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 4
-    server: xjp3vl.xiao666666.site
-    port: 46350
-    type: vless
-    uuid: 34d41d26-a1ef-4947-8301-0a90e6b2ad54
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 1Chz-KxnZ6wuUwc-FdkxJkzSn7Qt_7hFO2_JDCfRpX8
-      short-id: 547f4d0f
-    client-fingerprint: qq
-    network: tcp
-    udp: true
-    servername: www.bing.com
-    delay: 1031
-  - name: 新加坡 - 新加坡 - Oracle Corporation - 5
-    server: xjp3vl.xiao666666.site
-    port: 46350
-    type: vless
-    uuid: b18c5b59-574b-48c0-ac90-8280414908b1
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 1Chz-KxnZ6wuUwc-FdkxJkzSn7Qt_7hFO2_JDCfRpX8
-      short-id: 547f4d0f
-    client-fingerprint: safari
-    network: tcp
-    udp: true
-    servername: www.bing.com
-    delay: 2549
-  - name: 日本 - Chiyoda - SAKURA Internet Inc. - 3
-    server: 112.54.160.36
-    port: 30232
+    uuid: 33707040-edcf-4185-94e4-2a071315c602
+    servername: vpn_proxy_channel_vpn_proxy_channel.hohod.ir
+    delay: 1510
+  - name: 新加坡 - 新加坡 - Velo Link, Inc. - 1
+    server: ti3hyra4.slashdevslashnetslashtun.net
+    port: 16016
     type: ss
     cipher: aes-256-gcm
-    password: dwz1GtF7
-    delay: 276
-  - name: 日本 - 东京 - Akamai Technologies - 1
-    server: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
-    type: vmess
-    port: 3684
-    uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 715
-  - name: 日本 - 东京 - CDN77 Tokyo - 2
-    server: 120.232.206.14
-    port: 30032
-    type: ss
-    cipher: aes-256-gcm
-    password: dwz1GtF7
-    delay: 327
-  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
-    server: 13.37.66.53
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
+    password: A9QFM22KQPP4FDY5
+    udp: true
+    delay: 787
+  - name: 日本 - 东京 - Baxet Group Inc. - 1
+    server: ztcloudjp.ztcloud.xyz
+    port: 18530
+    type: hysteria2
+    password: 7788d84f-a530-4393-8ce4-a05ab4ef537d
+    auth: 7788d84f-a530-4393-8ce4-a05ab4ef537d
+    sni: ztcloudjp.ztcloud.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1354
-  - name: 法国 - 巴黎 - Online S.A.S. - 2
+    delay: 1995
+  - name: 法国 - 巴黎 - Online S.A.S. - 1
     network: ws
     port: 8080
     server: 172.67.73.163
@@ -547,14 +352,14 @@ proxies:
       headers:
         Host: QW.VU6d72nt9y.zULaiR.orG.
       path: /?ed=2048
-    delay: 1563
+    delay: 832
   - alpn:
       - h3
     auth-str: dongtaiwang.com
     auth_str: dongtaiwang.com
-    delay: 1123
+    delay: 1191
     down: '100'
-    name: 法国 - 巴黎 - Online S.A.S. - 3
+    name: 法国 - 巴黎 - Online S.A.S. - 2
     obfs: ''
     port: 15010
     protocol: ''
@@ -563,21 +368,7 @@ proxies:
     sni: apple.com
     type: hysteria
     up: '100'
-  - name: 法国 - 巴黎 - Online S.A.S. - 4
-    server: 104.26.14.85
-    port: 80
-    type: vless
-    uuid: 76ad8213-4617-47eb-92cc-5392b39b45ce
-    tls: false
-    servername: eLOQuENt-caSE.ZUlaIR.orG.
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: eLOQuENt-caSE.ZUlaIR.orG.
-    udp: true
-    delay: 933
-  - name: 法国 - 巴黎 - Online S.A.S. - 5
+  - name: 法国 - 巴黎 - Online S.A.S. - 3
     server: 51.159.226.1
     port: 14241
     type: hysteria
@@ -591,23 +382,8 @@ proxies:
     alpn:
       - h3
     udp: true
-    delay: 1426
-  - alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: '55'
-    name: 法国 - 巴黎 - Online S.A.S. - 6
-    obfs: ''
-    port: 46938
-    protocol: ''
-    server: 195.154.200.178
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '11'
-    auth-str: dongtaiwang.com
-    delay: 1147
-  - name: 法国 - 巴黎 - Online S.A.S. - 7
+    delay: 2666
+  - name: 法国 - 巴黎 - Online S.A.S. - 4
     network: ws
     port: 80
     server: tgju.org
@@ -620,129 +396,54 @@ proxies:
         Host: eLOQuENt-caSE.ZUlaIR.orG.
       path: /?ed=2048
     servername: eLOQuENt-caSE.ZUlaIR.orG.
-    delay: 862
-  - name: 瑞典 - 斯德哥尔摩 - Brainstorm Network - 1
-    server: 185.186.78.220
-    port: 20035
-    type: ss
-    cipher: aes-256-gcm
-    password: CSF7RS5O1OVPYNUP
-    udp: true
-    delay: 790
-  - name: 瑞典 - 斯德哥尔摩 - Brainstorm Network - 2
-    server: 185.186.78.220
-    type: ss
-    country: 🇸🇪SE
-    port: 20035
-    password: I0N0GFMPQ9PBB5XA
-    cipher: aes-256-gcm
-    delay: 747
-  - name: 立陶宛 - 维尔纽斯 - BrainStorm Network, Inc - 1
-    server: 185.237.185.77
-    type: ss
-    country: 🇱🇹LT
-    port: 20036
-    password: E95HYLF806NPZ1B3
-    cipher: aes-256-gcm
-    delay: 624
-  - name: 美国 - Elk Grove Village - HostPapa - 17
-    server: sxxcer4.000890604.xyz
-    port: 443
+    delay: 1085
+  - name: 法国 - 巴黎 - Online S.A.S. - 5
+    network: ws
+    port: 8080
+    server: 104.26.14.85
     type: vless
-    uuid: 13e26f64-2e0c-4461-92cd-d83294cc18f0
-    tls: true
-    alpn:
-      - http%2F1.1
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /WfxcqrR5ycVpIit2OdWk0KwirdY
-      headers:
-        Host: sxXCer4.000890604.xYz
     udp: true
-    servername: sxXCer4.000890604.xYz
-    delay: 2324
-  - name: 美国 - 亚特兰大 - Akamai Technologies, Inc. - 2
-    type: vmess
-    server: 111.26.109.79
-    port: 30807
-    cipher: auto
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    tls: false
-    network: ws
+    uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
     ws-opts:
-      path: /oooo
       headers:
-        Host: ocbc.com
-    client-fingerprint: ''
-    delay: 1520
-  - name: 美国 - 凤凰城 - Oracle Corporation - 5
-    server: aus.pagate.top
-    port: 10086
-    type: hysteria2
-    password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-    sni: aus.pagate.top
-    skip-cert-verify: false
-    delay: 1457
-  - name: 美国 - 北伯根 - DigitalOcean, LLC - 13
-    server: v4.heduian.link
-    port: 30804
-    type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: v4.heduian.link
-    delay: 1813
-  - name: 美国 - 水牛城 - HostPapa - 3
-    server: 107.175.34.118
+        Host: QW.VU6d72nt9y.zULaiR.orG.
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.80 Safari/537.36
+      path: /?ed=2048
+    xudp: true
+    delay: 1642
+  - name: 美国 - 凤凰城 - Oracle Corporation - 4
+    server: 132.226.117.48
     type: hysteria2
     country: 🇺🇸US
-    port: 3002
+    port: 30000
     udp: true
-    password: 14bdcd31-8a9f-4cf1-8fcc-60045900357d
-    sni: us.10101251.xyz
+    password: ca5c8e49-3b25-45f8-9fbb-6dd1806a1444
+    sni: www.apple.com
     skip-cert-verify: true
-    delay: 938
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 4
-    server: api.jquery.com
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: admin.kasrax.ir
-    http-opts: {}
-    h2-opts: {}
-    tls: true
+    delay: 1204
+  - down: ''
+    fingerprint: ''
+    name: 美国 - 拉斯维加斯 - FranTech Solutions - 5
+    obfs: ''
+    obfs-password: ''
+    password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
+    port: 3234
+    server: 209.141.47.127
     skip-cert-verify: true
-    ws-opts:
-      path: /us.kkp.me.eu.org/aa
-      headers:
-        HOST: admin.kasrax.ir
-    delay: 1058
-  - name: 美国 - 洛杉矶 - Psychz Networks - 6
-    server: 208.87.243.187
-    port: 40528
-    type: hysteria
-    auth_str: dongtaiwang.com
-    auth-str: dongtaiwang.com
-    up: 100
-    down: 100
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    delay: 1402
+    sni: ''
+    type: hysteria2
+    up: ''
+    disable-sni: true
+    delay: 1863
+  - name: 美国 - 洛杉矶 - Dedicated.com - 1
+    server: 104.192.226.106
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    delay: 630
   - name: 美国 - 洛杉矶 - Psychz Networks - 7
     server: 108.181.24.77
     port: 11512
@@ -757,7 +458,7 @@ proxies:
     alpn:
       - h3
     udp: true
-    delay: 944
+    delay: 2417
   - name: 美国 - 洛杉矶 - Psychz Networks - 8
     server: 108.181.5.130
     port: 4710
@@ -767,55 +468,1621 @@ proxies:
     sni: apple.com
     skip-cert-verify: true
     udp: true
-    delay: 1942
-  - name: 美国 - 洛杉矶 - Psychz Networks - 9
-    server: 208.87.243.151
-    port: 17549
-    type: hysteria
-    auth_str: dongtaiwang.com
-    auth-str: dongtaiwang.com
-    up: 10
-    down: 50
-    sni: www.bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-    delay: 949
-  - name: 美国 - 紐約 - Massivegrid LTD - 1
-    server: 104.21.38.90
+    delay: 2960
+  - name: 美国 - 洛杉矶 - Sharktech - 6
+    server: cd4281bd-sw3ts0-syhw90-1rsuw.hy2.gotochinatown.net
+    type: hysteria2
+    country: 🇺🇸US
+    port: 8443
+    udp: true
+    password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
+    sni: cd4281bd-sw3ts0-syhw90-1rsuw.hy2.gotochinatown.net
+    skip-cert-verify: false
+    delay: 2921
+  - name: 美国 - 盐湖城 - Bage Cloud LLC - 3
+    server: 112.65.92.20
+    type: vmess
+    port: 45251
+    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    delay: 671
+  - name: 美国 - 紐約 - Massivegrid LTD - 2
+    server: 104.21.52.157
     type: vmess
     country: 🏁ZZ
     port: 80
-    uuid: 2d068083-2cb0-4ae3-a44a-6fc82f3039cc
+    uuid: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
     alterId: 0
     cipher: auto
     network: ws
-    servername: dddcccdvfg.222856.xyz
+    servername: 222222222d.freevpn2026.dpdns.org
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
     ws-opts:
-      path: /87Ex2JiYYWr7FRa06b88JSo
+      path: /WsUikr8wXrXrFl2p8BiMhP42l
       headers:
-        HOST: dddcccdvfg.222856.xyz
-    delay: 2168
-  - name: 美国 - 紐約 - Massivegrid LTD - 18
-    server: 104.21.16.1
-    port: 443
-    type: trojan
-    password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c
-    sni: ttYUi.7777198.xYZ
-    alpn:
-      - http%2F1.1
-    skip-cert-verify: true
+        HOST: 222222222d.freevpn2026.dpdns.org
+    delay: 1208
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
+    server: 103.245.228.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /s1XRkMWuneQkqtp5KKSues
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ttYUi.7777198.xYZ
+        Host: bitget1.asdasd.click
     udp: true
-    delay: 2724
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
+    delay: 664
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
+    server: 185.148.106.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 433
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
+    server: 168.100.6.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 807
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
+    server: 204.93.210.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 457
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
+    server: 216.205.52.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 645
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
+    server: 198.62.62.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 439
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
+    server: 185.148.104.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 439
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
+    server: 160.153.0.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1526
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
+    server: 195.13.45.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1815
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
+    server: 192.0.54.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 814
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
+    server: 216.24.57.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 839
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
+    server: 188.164.159.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 514
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
+    server: 108.162.198.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 440
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
+    server: 209.94.90.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1537
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
+    server: 192.200.160.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 440
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
+    server: 160.79.105.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 429
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
+    server: 198.202.211.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2510
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
+    server: 209.46.30.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 603
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
+    server: 141.101.114.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2545
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
+    network: ws
+    port: 8880
+    server: 104.129.164.39
+    type: vless
+    udp: true
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    ws-opts:
+      headers:
+        Host: ip.langmanshanxi.top
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/55.0.2883.87 Safari/537.36
+      path: /Telegram🇨🇳
+    xudp: true
+    servername: ip.langmanshanxi.top
+    delay: 1512
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
+    server: 185.170.166.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1499
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
+    server: 185.207.197.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 552
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+    server: 188.164.158.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1565
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
+    server: 194.53.53.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1291
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
+    server: 170.114.46.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 705
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
+    server: 89.117.112.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1443
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
+    server: 47.57.245.232
+    port: 443
+    type: vless
+    uuid: 948f6596-66f9-4707-aa92-3107a214ce53
+    tls: true
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: oops.shalamshorba.dpdns.org
+    udp: true
+    servername: oops.shalamshorba.dpdns.org
+    delay: 2666
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
+    server: 190.93.247.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1498
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+    server: 212.183.88.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 790
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: 185.207.199.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 640
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 185.207.198.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1972
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: 192.65.217.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 502
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 77.74.228.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 951
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: 185.133.35.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 1533
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 23.227.60.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 512
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: 23.227.39.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 752
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+    server: 104.234.239.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1329
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 190.93.246.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 441
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 190.93.244.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 864
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 193.124.224.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 551
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 193.124.18.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 834
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+    server: 5.10.215.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 566
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 45.80.111.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 413
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
+    server: 140.99.233.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 874
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
+    server: 45.80.110.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1686
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
+    server: 45.80.108.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 786
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
+    server: 185.251.82.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2290
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 141.11.202.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 434
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 185.16.110.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 414
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: 77.75.199.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 538
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
+    server: 25.25.25.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 958
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
+    server: 109.176.239.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 481
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
+    server: 154.218.15.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1487
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: 45.192.222.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 631
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
+    server: 45.192.223.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 627
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
+    server: 154.92.9.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1517
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
+    server: 194.59.5.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 477
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
+    server: 185.176.26.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2610
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    server: 31.43.179.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 605
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 89.116.250.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 976
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 88.216.67.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1396
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
+    server: 188.42.89.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 505
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    server: 188.42.88.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1523
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
+    server: 193.227.99.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 935
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
+    server: 45.205.0.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 972
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
+    server: 5.10.246.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 430
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
+    server: 5.10.245.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 879
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
+    server: 5.10.244.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 497
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
+    server: 45.149.12.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 427
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
+    server: 160.153.1.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 477
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
+    server: '::ffff:91.193.58.48'
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: tw.laoyoutiao.link
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/?ed=2048
+      headers:
+        Host: tw.laoyoutiao.link
+    udp: true
+    delay: 435
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+    server: 185.148.107.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1345
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
+    server: 185.221.160.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 417
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
+    server: 185.176.24.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 851
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
+    server: 45.142.255.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2453
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
+    server: 45.142.120.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 876
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
+    server: 188.42.145.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 467
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
+    server: 46.254.92.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2442
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
+    server: 5.182.84.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 441
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
+    server: 46.254.93.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 449
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
+    server: 154.194.0.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 441
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
+    server: 154.197.108.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 469
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
+    server: 154.197.88.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 843
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+    server: 154.197.64.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1604
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+    server: 154.83.2.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1177
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
+    server: 92.243.74.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 460
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
+    server: 27.50.49.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 523
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
+    server: 92.243.75.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 538
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    server: 92.60.74.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 539
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
+    server: 92.53.188.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 1475
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
+    server: 92.53.189.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 523
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
+    server: 92.53.191.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 547
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
+    server: 92.53.190.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 836
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    server: 46.202.30.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 545
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
+    server: 14.102.228.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 449
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
+    server: 104.129.167.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 718
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
+    server: 104.129.164.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 542
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    server: 45.194.53.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 561
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    server: 167.68.11.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 726
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
+    server: 130.250.137.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 830
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
+    server: 154.85.99.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 629
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
+    server: 108.165.152.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 439
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
+    server: 195.13.54.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 456
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 184.174.80.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 597
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
+    server: 104.129.166.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 888
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
     server: 104.16.100.188
     port: 80
     type: vless
@@ -828,44 +2095,12 @@ proxies:
       headers:
         Host: entezar.loseyourself.dpdns.org
     udp: true
-    delay: 475
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
-    server: WWw.Speedtest.net
-    port: 8443
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: true
-    alpn:
-      - h2
-      - http/1.1
-    servername: jjaNGESN.SBS
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: jjangESN.sbs
-    udp: true
-    delay: 1566
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
-    server: 156.238.18.196
-    port: 2083
-    type: trojan
-    password: d6b8011a-c725-435a-9fec-bf6d3530392c
-    sni: vle.amclubdns.dpdns.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&PROT_TYPE=trojan
-      headers:
-        Host: vle.amclubdns.dpdns.org
-    udp: true
-    delay: 1388
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
-    server: 192.200.160.254
+    delay: 513
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    server: 167.68.4.3
     port: 8880
     type: vless
-    uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
     tls: false
     servername: Telegram-channel-WangCai2
     client-fingerprint: chrome
@@ -873,81 +2108,190 @@ proxies:
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: yg.bantony199.top
+        Host: bitget1.asdasd.click
     udp: true
-    delay: 954
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
-    server: 104.17.147.22
-    port: 2053
-    type: trojan
-    password: c4f42f64-a7cb-4bcb-874e-5088eac28576
-    sni: mAHsA.965871a.stORe
-    alpn:
-      - http%2F1.1
-    skip-cert-verify: true
+    delay: 436
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
+    server: 45.159.219.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /trm1dElsZUiMH92q8d
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: mAHsA.965871a.stORe
+        Host: bitget1.asdasd.click
     udp: true
-    delay: 2823
-  - name: 美国 - 芝加哥 - Larus Limited - 14
-    server: 120.233.128.68
-    port: 39001
-    type: trojan
-    password: 85f133142f04dbf6547da33895cfabb3
-    sni: 120.233.128.68
-    skip-cert-verify: true
+    delay: 439
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
+    server: 45.202.113.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
     udp: true
-    delay: 1112
-  - name: 英国 - Slough - DigitalOcean, LLC - 3
-    server: gb1.vip.edu.kg
-    port: 443
-    type: hysteria2
-    password: a9fdc6d4-3657-4bf8-b515-dd28bbce1886
-    auth: a9fdc6d4-3657-4bf8-b515-dd28bbce1886
-    skip-cert-verify: false
-    obfs: salamander
-    obfs-password: uEpX5JRpjcSyUrjR
+    delay: 1596
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
+    server: 66.235.200.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
     udp: true
-    sni: gb1.vip.edu.kg
-    delay: 1041
+    delay: 907
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
+    server: 199.34.228.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 438
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
+    server: 69.84.182.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 612
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
+    server: 154.206.12.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 816
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
+    server: 103.133.1.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 2033
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
+    server: 139.64.235.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 450
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
+    server: 199.34.229.3
+    port: 8880
+    type: vless
+    uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: bitget1.asdasd.click
+    udp: true
+    delay: 811
   - name: 英国 - 伦敦 - Regxa Company for Information Technology Ltd - 1
     server: ztcloudgb.ztcloud.xyz
     port: 18580
     type: hysteria2
-    password: 961994e0-a204-497d-9d64-4fb2202e6f3f
-    auth: 961994e0-a204-497d-9d64-4fb2202e6f3f
+    password: 0bc750db-bd26-4ec8-9559-29cc1bbcbb82
+    auth: 0bc750db-bd26-4ec8-9559-29cc1bbcbb82
     sni: ztcloudgb.ztcloud.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1521
+    delay: 921
   - name: 英国 - 伦敦 - Regxa Company for Information Technology Ltd - 2
-    server: hsyg.huasuan666.top
-    port: 22156
+    server: ztcloudgb.ztcloud.xyz
+    port: 18580
     type: hysteria2
-    password: ec12c3f0-bc9b-44ec-bbc6-990bbca7950c
-    auth: ec12c3f0-bc9b-44ec-bbc6-990bbca7950c
-    sni: hsyg.huasuan666.top
+    password: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c
+    auth: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c
+    sni: ztcloudgb.ztcloud.xyz
     skip-cert-verify: true
     udp: true
-    delay: 1117
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
-    server: 172.67.128.105
-    port: 80
-    type: vless
-    uuid: 4179c595-08ca-45cd-b555-91b6f1faeadc
+    delay: 964
+  - name: 英国 - 伦敦 - Regxa Company for Information Technology Ltd - 3
+    server: ztcloudgb.ztcloud.xyz
+    port: 18580
+    type: hysteria2
+    password: 7b5d702d-4f85-4b23-b0e8-668ec9eaf3ce
+    auth: 7b5d702d-4f85-4b23-b0e8-668ec9eaf3ce
+    sni: ztcloudgb.ztcloud.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1447
+  - name: 荷兰 - Meppel - PQ HOSTING PLUS S.R.L. - 2
+    server: v30.heduian.link
+    port: 30830
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
     tls: false
-    servername: di.dibdibini.dpdns.org
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /oooo
       headers:
-        Host: di.dibdibini.dpdns.org
+        Host: v30.heduian.link
     udp: true
-    delay: 670
-  - name: 荷兰 - 阿姆斯特丹 - ITGLOBAL.COM NL B.V. - 3
+    delay: 2795
+  - name: 荷兰 - 阿姆斯特丹 - ITGLOBAL.COM NL B.V. - 1
     server: 109.207.173.6
     port: 8443
     type: vless
@@ -963,66 +2307,92 @@ proxies:
         Host:
           - zula.ir
     udp: true
-    delay: 697
-  - name: 荷兰 - 阿姆斯特丹 - Online SAS NL - 1
-    server: 51.15.17.169
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 500
+    delay: 2455
+  - client-fingerprint: firefox
+    name: 越南 - Cầu Diễn - WEB 360 TECHNOLOGY JOINT STOCK COMPANY - 4
+    network: tcp
+    port: 34045
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    server: 160.250.65.132
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    delay: 2435
   - cipher: aes-256-cfb
-    country: 🏁 ZZ
     name: 越南 - Hải Dương - FASTLY - 1
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.22
+    server: 103.186.155.18
     type: ss
-    delay: 865
+    delay: 873
   - cipher: aes-256-cfb
     country: 🏁 ZZ
     name: 越南 - Hải Dương - FASTLY - 2
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.155.19
+    server: 103.186.154.37
     type: ss
-    delay: 885
+    delay: 909
   - cipher: aes-256-cfb
     country: 🏁 ZZ
     name: 越南 - Hải Dương - FASTLY - 3
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.155.133
+    server: 103.186.154.18
     type: ss
-    delay: 838
-  - name: 韩国 - Gangnam-gu - KINX - 2
+    delay: 897
+  - name: 韩国 - Gangnam-gu - KINX - 3
     server: 203.156.253.12
-    type: trojan
-    country: 🇨🇳CN
     port: 39001
-    udp: true
+    type: trojan
     password: 85f133142f04dbf6547da33895cfabb3
     sni: www.yrtok.com
     skip-cert-verify: true
-    delay: 412
-  - name: 韩国 - 首尔特别市 - Baxet Group Inc. - 3
+    udp: true
+    delay: 1673
+  - name: 韩国 - Gwanak-gu - Korea Telecom - 1
+    server: 125.141.31.72
+    port: 15098
+    type: ss
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+    delay: 433
+  - name: 韩国 - 首尔特别市 - Alibaba.com Singapore E-Commerce Private Limited - 2
+    server: v28.heduian.link
+    port: 30828
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: ocbc.com
+    delay: 1919
+  - name: 韩国 - 首尔特别市 - Baxet Group Inc. - 4
     server: ztcloudkr.ztcloud.xyz
     port: 18540
     type: hysteria2
-    password: 89f89edf-0bc2-4635-8744-fe4cffd2d4e4
-    auth: 89f89edf-0bc2-4635-8744-fe4cffd2d4e4
+    password: 5ce83070-e344-49fb-bb69-cd39ea51325d
+    auth: 5ce83070-e344-49fb-bb69-cd39ea51325d
     sni: ztcloudkr.ztcloud.xyz
     skip-cert-verify: true
     udp: true
-    delay: 2502
-  - name: 韩国 - 首尔特别市 - Sejong Networks - 1
-    server: kr2.qiangdong.xyz
-    type: ss
-    port: 1052
-    password: VXPipi29nxMO
-    cipher: aes-128-gcm
-    plugin: obfs
-    plugin-opts:
-      host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-      mode: http
-    delay: 916
+    delay: 1933
+  - name: 韩国 - 首尔特别市 - Baxet Group Inc. - 5
+    server: ztcloudkr.ztcloud.xyz
+    port: 18540
+    type: hysteria2
+    password: 7345c763-e388-4a4b-b40a-d61cab47d7bc
+    auth: 7345c763-e388-4a4b-b40a-d61cab47d7bc
+    sni: ztcloudkr.ztcloud.xyz
+    skip-cert-verify: true
+    udp: true
+    delay: 1562
