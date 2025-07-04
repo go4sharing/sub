@@ -4,35 +4,39 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 1
-    server: 129.153.59.124
-    type: hysteria2
-    country: 🇨🇦CA
-    port: 54530
-    udp: true
-    password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-    sni: www.bing.com
-    skip-cert-verify: true
-    delay: 2036
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
-    server: 104.24.159.174
-    port: 443
+  - name: 加拿大 - 密西沙加 - Cloudflare, Inc. - 1
+    server: 172.245.205.226
+    port: 6666
     type: vless
-    uuid: 621a5d75-7cfa-4677-8826-c4acec005dcf
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
     tls: true
-    servername: vmess.yxxc.cn
+    servername: rb.ylks0033.dpdns.org
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vmess.yxxc.cn
+        Host: rb.ylks0033.dpdns.org
     udp: true
-    delay: 1558
+    delay: 1754
+  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 6
+    server: ip.sb
+    port: 443
+    type: vless
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rc.ylks0033.dpdns.org
+    udp: true
+    servername: rc.ylks0033.dpdns.org
+    delay: 1501
   - alpn:
       - h2
       - http/1.1
     client-fingerprint: randomized
-    name: 德国 - 德赖艾希 - Cloudflare, Inc. - 5
+    name: 德国 - 德赖艾希 - Cloudflare, Inc. - 7
     network: ws
     port: 443
     server: 104.26.13.31
@@ -45,572 +49,23 @@ proxies:
         Host: finland-a3r.pages.dev
       path: /Tel-@V2ray_Alpha/?ed=2560
     servername: FinLAnd-A3r.pAgES.dEv
-    delay: 969
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
-    server: 66.81.247.177
-    port: 8880
+    delay: 1663
+  - name: 爱尔兰 - 都柏林 - Cloudflare, Inc. - 1
+    server: 192.210.183.136
+    port: 36678
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1922
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
-    server: 104.254.140.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 691
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
-    server: 66.45.118.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 759
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
-    server: 104.129.167.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 696
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
-    server: 139.64.235.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 881
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
-    server: 45.159.218.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 608
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
-    server: 103.133.1.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 811
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
-    server: 170.114.45.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 647
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
-    server: 161.145.150.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1961
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
-    server: 155.46.213.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 771
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
-    server: 156.238.19.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2050
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
-    server: 209.46.30.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 749
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
-    server: 147.185.161.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 769
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
-    server: 195.13.44.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 456
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
-    server: 159.246.55.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 915
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
-    server: 199.34.229.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1033
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
-    server: 63.141.128.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 987
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
-    server: 160.79.105.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2763
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
-    server: 167.68.11.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2722
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
-    server: 167.68.5.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1394
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
-    server: 155.46.167.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1621
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
-    server: 168.100.6.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1279
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
-    server: 159.112.235.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 965
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
-    server: 198.62.62.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 970
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
-    server: 195.13.55.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1029
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
-    server: 199.181.197.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2007
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 126
-    server: 192.0.54.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1035
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 127
-    server: 172.66.46.236
-    port: 443
-    type: vless
-    uuid: 0ef0630e-544c-4ed0-a4de-861f14695f37
+    uuid: bf9b316d-31ac-42ee-b8a5-8dc795118917
     tls: true
-    servername: M2-1CM.paGes.DeV
-    network: ws
-    ws-opts:
-      path: /ognicwivyrkxih6r
-      headers:
-        Host: M2-1CM.paGes.DeV
-    udp: true
-    delay: 1605
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 128
-    server: 104.19.219.139
-    port: 443
-    type: vless
-    uuid: dbb3c682-8564-4c02-aec9-23ecf7981820
-    tls: true
-    alpn:
-      - h3
-    servername: ARC-448.Pages.DEV
-    client-fingerprint: firefox
-    network: ws
-    ws-opts:
-      path: /api/v1
-      headers:
-        Host: ARC-448.Pages.DEV
-    udp: true
-    delay: 1549
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 129
-    server: 102.177.176.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: rrGm0NemTtGQ8Vrd2AzB7pSoW_kYtqYvhRxsx_MtwG0
+      short-id: 5d20
+    servername: swdist.apple.com
     client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
+    network: tcp
     udp: true
-    delay: 803
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
-    server: 141.101.121.224
-    port: 8080
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 1750293123492.china.baidu.bilibili.china.aeko.cn
-    udp: true
-    delay: 1406
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
-    server: 5.10.214.20
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram@WangCai2
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1099
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
-    server: 154.83.2.200
-    port: 443
-    type: trojan
-    password: d6b8011a-c725-435a-9fec-bf6d3530392c
-    sni: vle.amclubdns.dpdns.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&PROT_TYPE=trojan
-      headers:
-        Host: vle.amclubdns.dpdns.org
-    udp: true
-    delay: 1536
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
-    server: 141.101.121.108
-    port: 8080
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 1750293123492.china.baidu.bilibili.china.aeko.cn
-    udp: true
-    delay: 481
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
-    server: 156.238.18.112
-    port: 2053
-    type: trojan
-    password: d6b8011a-c725-435a-9fec-bf6d3530392c
-    sni: vle.amclubdns.dpdns.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&PROT_TYPE=trojan
-      headers:
-        Host: vle.amclubdns.dpdns.org
-    udp: true
-    delay: 1647
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
-    server: 185.162.231.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1086
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
-    server: 185.162.228.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 709
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
-    server: 185.162.229.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1158
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    delay: 1178
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
     server: 103.169.142.177
     port: 8880
     type: vless
@@ -624,498 +79,50 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 791
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
-    server: 192.65.217.177
+    delay: 771
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 100
+    server: 185.18.184.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 829
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
-    server: 213.109.205.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1686
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
-    server: 195.85.59.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1144
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
-    server: 195.26.229.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 807
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
-    server: 195.85.23.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1202
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
-    server: 77.37.33.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 814
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
-    server: 45.80.110.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1088
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
-    server: 185.251.83.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 992
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
-    server: 185.251.82.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2575
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
-    server: 185.251.81.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 661
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
-    server: 141.11.203.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 806
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
-    server: 94.247.142.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 724
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
-    server: 185.193.29.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 699
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
-    server: 194.36.55.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 721
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
-    server: 185.170.166.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 668
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
-    server: 164.38.155.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 605
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
-    server: 62.72.166.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 602
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
-    server: 103.116.7.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1924
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
-    server: 31.43.179.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /TelegramрЯЗ®рЯЗ≥ @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 691
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
-    server: 195.245.221.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1899
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
-    server: 89.116.161.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 683
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
-    server: 89.116.250.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 812
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
-    server: 45.153.7.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 880
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
-    server: 88.216.69.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2460
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
-    server: 89.117.112.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 922
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
-    server: 188.42.88.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2139
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
-    server: 194.152.44.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 706
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
-    server: 45.131.210.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 843
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
-    server: 45.131.4.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1518
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
+    delay: 766
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 101
     server: 45.149.12.177
     port: 8880
     type: vless
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 917
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
-    server: 45.85.119.177
+    delay: 1275
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 102
+    server: 114.129.43.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 866
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
-    server: 45.12.30.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 669
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
-    server: 45.85.118.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1802
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    delay: 580
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 103
     server: 185.221.160.177
     port: 8880
     type: vless
@@ -1129,52 +136,78 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 670
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
-    server: 77.105.163.177
+    delay: 855
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 104
+    server: 213.219.247.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: ip.langmanshanxi.top
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 2281
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
-    server: 194.53.53.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 854
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
-    server: 176.124.223.177
+    delay: 1779
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 105
+    server: 5.182.85.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 687
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    delay: 1418
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 106
+    server: 46.254.92.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 535
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 107
+    server: 185.176.24.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 674
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 108
+    server: 188.42.145.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1619
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 109
     server: 5.182.85.177
     port: 8880
     type: vless
@@ -1188,113 +221,49 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 858
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    delay: 2488
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
+    server: 185.207.199.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 739
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 110
+    server: 185.174.138.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 628
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 111
     server: 188.42.145.177
     port: 8880
     type: vless
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
     tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳@WangCai2/?ed=2560
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 1060
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
-    server: 45.8.211.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1131
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
-    server: 45.67.215.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1048
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
-    server: 213.219.247.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 822
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
-    server: 185.148.107.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 806
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
-    server: 46.254.93.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 730
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
-    server: 185.59.218.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 558
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    delay: 679
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 112
     server: 5.182.84.177
     port: 8880
     type: vless
@@ -1308,8 +277,122 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 696
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
+    delay: 1044
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 113
+    server: 5.182.84.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1869
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 114
+    server: 193.9.49.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1050
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 115
+    server: 193.233.132.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1155
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 116
+    server: 46.254.93.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 642
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 117
+    server: 185.148.107.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 579
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 118
+    server: 45.142.120.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1046
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 119
+    server: 45.142.255.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 729
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+    server: 147.78.140.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 701
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 120
     server: 154.83.2.177
     port: 8880
     type: vless
@@ -1323,37 +406,120 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 593
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
-    server: 92.53.190.177
+    delay: 685
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 121
+    server: 154.197.88.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
     servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 751
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
-    server: 92.53.188.177
+    delay: 691
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 122
+    server: 154.197.75.77
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
     tls: false
-    servername: ip.langmanshanxi.top
+    servername: Telegram-channel-WangCai2
     network: ws
     ws-opts:
-      path: /TelegramрЯЗ®рЯЗ≥ @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
       headers:
-        Host: ip.langmanshanxi.top
+        Host: free.cfdns.online
     udp: true
-    delay: 704
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
+    delay: 1000
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 123
+    server: 154.198.173.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1610
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 124
+    server: 154.197.64.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1000
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 125
+    server: 92.243.74.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2432
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 126
+    server: 92.243.75.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 604
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 127
+    server: 27.50.49.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 385
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 128
+    server: 27.50.48.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1997
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 129
     server: 92.53.189.177
     port: 8880
     type: vless
@@ -1367,54 +533,9 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 796
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
-    server: 91.124.127.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1116
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
-    server: 46.202.30.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    servername: Telegram-channel-WangCai2
-    delay: 1051
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
-    server: 108.165.216.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    servername: Telegram-channel-WangCai2
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    delay: 1057
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
-    server: 104.129.165.177
+    delay: 1180
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+    server: 74.49.214.177
     port: 8880
     type: vless
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
@@ -1422,13 +543,97 @@ proxies:
     servername: ip.langmanshanxi.top
     network: ws
     ws-opts:
-      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      path: /Telegram🇨🇳 @WangCai2
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 410
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
-    server: 104.129.166.177
+    delay: 955
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 130
+    server: 92.53.190.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 726
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 131
+    server: 92.53.188.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 546
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 132
+    server: 92.53.191.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 486
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 133
+    server: 92.53.190.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1537
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 134
+    server: 92.53.191.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1171
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 135
+    server: 46.202.30.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 414
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 136
+    server: 46.202.30.177
     port: 8880
     type: vless
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
@@ -1441,19 +646,1947 @@ proxies:
       headers:
         Host: ip.langmanshanxi.top
     udp: true
-    delay: 1137
-  - name: 韩国 - Yeongdong-gun - Cloudflare, Inc. - 2
-    server: 121.167.146.253
-    port: 15364
+    delay: 405
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 137
+    server: 185.148.105.20
+    port: 8880
     type: vless
-    uuid: 51997334-8829-47cd-a5ef-4e4311a000e2
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram@节点狂魔2/?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1662
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 138
+    server: 14.102.229.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 397
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 139
+    server: 14.102.228.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 394
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: 185.18.250.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1449
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 140
+    server: 130.250.137.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 572
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 141
+    server: 66.81.247.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 546
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 142
+    server: 69.84.182.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 740
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 143
+    server: 167.68.5.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 387
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 144
+    server: 104.129.166.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 615
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 145
+    server: 104.129.164.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2044
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 146
+    server: 135.84.67.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1187
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 147
+    server: 104.129.165.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 565
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 148
+    server: 135.84.76.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 849
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 149
+    server: 162.120.94.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1658
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 45.67.214.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 648
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 150
+    server: 156.243.83.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 891
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 151
+    server: 154.219.5.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1180
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 152
+    server: 154.206.12.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 533
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 153
+    server: 167.68.4.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 523
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 154
+    server: 170.114.46.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1958
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 155
+    server: 170.114.45.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1192
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 156
+    server: 185.148.104.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1136
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 157
+    server: 155.46.167.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2849
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 158
+    server: 192.0.54.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2070
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 159
+    server: 199.34.229.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 619
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: 45.150.115.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 992
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 160
+    server: 199.34.230.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2967
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 161
+    server: 205.233.181.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1965
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 162
+    server: 204.93.210.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 394
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 163
+    server: 199.34.228.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 538
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 164
+    server: 209.46.30.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 707
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 165
+    server: 195.13.45.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 874
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 166
+    server: 161.145.150.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 641
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 167
+    server: 195.13.54.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1934
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 168
+    server: 170.114.45.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 965
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 169
+    server: 135.84.74.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1421
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 5.182.34.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1410
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 170
+    server: 147.185.161.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 724
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 171
+    server: 216.205.52.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 959
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 172
+    server: 199.34.229.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 722
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 173
+    server: 104.129.166.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 728
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 174
+    server: 198.62.62.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 407
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 175
+    server: 155.46.167.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 424
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 176
+    server: 168.100.6.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 2504
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 177
+    server: 192.0.54.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1176
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 178
+    server: 102.177.176.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 569
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 179
+    server: 102.177.176.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 876
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: 188.244.122.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 749
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 181
+    network: ws
+    port: 8880
+    server: 104.129.164.39
+    type: vless
+    udp: true
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    ws-opts:
+      headers:
+        Host: ip.langmanshanxi.top
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/55.0.2883.87 Safari/537.36
+      path: /Telegram🇨🇳
+    xudp: true
+    servername: ip.langmanshanxi.top
+    delay: 596
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 182
+    server: 104.17.210.171
+    port: 443
+    type: vless
+    uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: rc.ylks0033.dpdns.org
+    udp: true
+    servername: rc.ylks0033.dpdns.org
+    delay: 916
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 5.10.214.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 626
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: 77.37.33.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 652
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+    server: 185.135.9.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 991
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 5.10.215.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 2380
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 5.10.214.20
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram@WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 2051
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 45.80.110.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1361
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 45.80.110.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 755
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+    server: 185.251.81.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1936
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 185.251.82.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 653
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
+    server: 185.251.83.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1868
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
+    server: 141.11.203.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1281
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
+    server: 91.193.58.219
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1728
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
+    server: 91.193.58.182
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 758
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 91.193.58.250
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 510
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 91.193.58.122
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 950
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: 91.193.58.107
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1841
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
+    server: 91.193.58.202
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 2640
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
+    server: 91.193.58.77
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 619
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
+    server: 91.193.58.162
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 415
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: 91.193.58.234
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1872
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
+    server: 91.193.58.208
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1671
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
+    server: 91.193.58.195
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1360
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
+    server: 91.193.58.93
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 537
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
+    server: 91.193.58.158
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 996
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    server: 91.193.58.210
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 514
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 91.193.58.110
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 852
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 91.193.58.7
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 393
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
+    server: 91.193.58.253
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1032
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    server: 91.193.58.206
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 829
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 48
+    server: 91.193.58.242
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1016
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 49
+    server: 91.193.58.70
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 2228
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 50
+    server: 91.193.58.157
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1013
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 51
+    server: 91.193.58.46
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 446
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
+    server: 91.193.58.62
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1637
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 53
+    server: 91.193.58.2
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 400
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 54
+    server: 91.193.58.174
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1029
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 55
+    server: 91.193.58.73
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1014
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 56
+    server: 91.193.58.68
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 436
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 57
+    server: 91.193.58.251
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1471
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 58
+    server: 91.193.58.220
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 2875
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 59
+    server: 91.193.58.177
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 981
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 60
+    server: 91.193.58.231
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 2876
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 61
+    server: 91.193.58.54
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 995
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 62
+    server: 91.193.58.99
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 441
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 63
+    server: 91.193.58.171
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 1700
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 64
+    server: 164.38.155.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 693
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 65
+    server: 91.193.58.124
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 2297
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 66
+    server: 164.38.155.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1403
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 67
+    server: 91.193.58.240
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 875
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 68
+    server: 91.193.58.115
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 871
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 69
+    server: 194.36.55.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 852
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
+    server: 103.160.204.40
+    type: trojan
+    country: 🇭🇰HK
+    port: 8443
+    udp: true
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    sni: vle.amclubdns.dpdns.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=trojan
+      headers:
+        Host: vle.amclubdns.dpdns.org
+    network: ws
+    delay: 2355
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 70
+    server: 25.26.27.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 831
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 71
+    server: 91.193.58.226
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 430
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 72
+    server: 194.36.55.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 870
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 73
+    server: 25.129.197.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1878
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 74
+    server: 25.129.198.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 2152
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 75
+    server: 91.193.58.183
+    port: 8880
+    type: vless
+    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: kjgx.laoyoutiao.link
+    udp: true
+    delay: 721
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 76
+    server: 25.129.198.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1175
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 77
+    server: 80.93.202.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 800
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 78
+    server: 154.211.8.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 977
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 79
+    server: 45.192.222.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 416
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
+    server: 188.164.159.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 695
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 80
+    server: 154.194.12.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 862
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 81
+    server: 62.72.166.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    servername: Telegram-channel-WangCai2
+    delay: 677
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 82
+    server: 103.116.7.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram@WangCai2/?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 1778
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 83
+    server: 89.116.161.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 395
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 84
+    server: 86.38.214.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 663
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 85
+    server: 89.116.180.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1159
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 86
+    server: 88.216.69.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 863
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 87
+    server: 89.116.250.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 2098
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 88
+    server: 89.116.250.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 629
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 89
+    server: 89.116.161.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 894
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
+    server: 185.207.197.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 628
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 90
+    server: 45.153.7.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: ip.langmanshanxi.top
+    network: ws
+    ws-opts:
+      path: /TelegramрЯЗ®рЯЗ≥ @WangCai2
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 590
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 91
+    server: 188.42.88.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    servername: Telegram-channel-WangCai2
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    delay: 538
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 92
+    server: 188.42.88.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 542
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 93
+    server: 188.42.89.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1595
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 94
+    server: 45.205.0.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 833
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 95
+    server: 5.10.245.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 638
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 96
+    server: 5.10.246.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 851
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 97
+    server: 45.149.12.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 622
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 98
+    server: 188.164.248.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 1895
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 99
+    server: 5.10.244.77
+    port: 8880
+    type: vless
+    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
+    tls: false
+    servername: Telegram-channel-WangCai2
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      headers:
+        Host: free.cfdns.online
+    udp: true
+    delay: 866
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+    server: 188.114.99.93
+    port: 443
+    type: vless
+    uuid: 72982133-27fb-46fc-9061-61113e77e201
     tls: true
     client-fingerprint: random
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: ennyfe.zipgd3vx91o.ddns-ip.net
+        Host: jack.jack-cq.click
     udp: true
-    servername: ennyfe.zipgd3vx91o.ddns-ip.net
-    delay: 2464
+    servername: jack.jack-cq.click
+    delay: 1367
