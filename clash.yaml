@@ -4,37 +4,20 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 上海 - Hangzhou Alibaba Advertising Co., Ltd. - 3
-    server: 47.116.166.178
-    type: vmess
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    servername: 47.116.166.178
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 613
   - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 5
     server: 47.92.152.169
     type: vmess
+    country: 🇨🇳CN
     port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
+    alterId: 64
     cipher: auto
+    network: tcp
+    servername: chunchuan.kejixiaoqi666.store
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 1512
-  - name: 中国 - 台湾 - Akile LTD - 8
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23102
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f9d1cb7b-ca3f-4e58-a46d-f508e95ed714
-    udp: true
-    delay: 1143
+    delay: 909
   - cipher: aes-256-cfb
     name: 中国 - 台湾 - Kaopu Cloud HK Limited - 6
     password: f8f7aCzcPKbsF8p3
@@ -42,7 +25,16 @@ proxies:
     server: 154.223.20.79
     type: ss
     udp: true
-    delay: 1046
+    delay: 4735
+  - name: 中国 - 台湾 - Radishcloud Technology LLC - 10
+    server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+    port: 23508
+    type: trojan
+    password: 84ebe306-5aa1-4160-9ab7-0f86e5ca6199
+    sni: cn.bing.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1432
   - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 4
     server: 112.132.215.12
     type: vmess
@@ -54,7 +46,7 @@ proxies:
     network: tcp
     http-opts: {}
     h2-opts: {}
-    delay: 579
+    delay: 560
   - name: 中国 - 广州市 - China Mobile - 2
     server: 183.236.51.36
     type: vmess
@@ -65,8 +57,8 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 399
-  - name: 中国 - 广州市 - China Mobile communications corporation - 1
+    delay: 971
+  - name: 中国 - 广州市 - China Mobile communications corporation - 3
     server: 120.210.205.59
     type: vmess
     country: 🇨🇳CN
@@ -78,411 +70,460 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 459
-  - name: 中国 - 香港 - Akile LTD - 11
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23504
-    type: trojan
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    sni: cn.bing.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1268
-  - name: 中国 - 香港 - ASYMPTOTE NETWORK, LLC - 10
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23300
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f8d99daf-99f2-4a98-ac16-8cf7da4d0fee
-    udp: true
-    delay: 449
-  - name: 中国 - 香港 - ASYMPTOTE NETWORK, LLC - 12
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23503
-    type: trojan
-    password: da233167-3fa6-4361-9aa2-35f7c9e5055d
-    sni: cn.bing.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1225
-  - name: 中国 - 香港 - ASYMPTOTE NETWORK, LLC - 14
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23100
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ca41554e-2a01-4ad5-93cc-6a70b7836c2c
-    udp: true
-    delay: 472
-  - name: 中国 - 香港 - DMIT Cloud Services - 7
-    server: v9.heduian.link
-    port: 30809
+    delay: 971
+  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 1
+    server: 120.26.55.225
     type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /oooo
-      headers:
-        Host: baidu.com
-    delay: 2772
-  - name: 中国 - 香港 - Velo Link, Inc. - 13
-    server: w72tapyb.slashdevslashnetslashtun.net
-    port: 15012
-    type: ss
-    cipher: aes-256-gcm
-    password: HDGL32FUUPZOA18G
-    udp: true
-    delay: 716
-  - name: 中国 - 香港 - Velo Link, Inc. - 9
-    server: qh62onjn.slashdevslashnetslashtun.net
-    port: 15015
-    type: ss
-    cipher: aes-256-gcm
-    password: UYSIVSW87GVHENKC
-    udp: true
-    delay: 296
-  - name: 伊拉克 - Erbil - OVH Australia PTY LTD - 2
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23125
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    udp: true
-    delay: 551
-  - name: 伊拉克 - Erbil - Regxa Company for Information Technology Ltd - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23137
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f9d1cb7b-ca3f-4e58-a46d-f508e95ed714
-    udp: true
-    delay: 1176
-  - name: 俄罗斯 - 莫斯科 - Melbikomas UAB - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23145
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    udp: true
-    delay: 1527
-  - name: 加拿大 - 多伦多 - HostPapa - 1
-    server: 104.21.3.189
-    type: vmess
-    country: 🏁ZZ
-    port: 2083
-    uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cc2d3.89060004.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: cc2d3.89060004.xyz
-    delay: 2203
-  - name: 加拿大 - 多伦多 - HostPapa - 2
-    server: 172.67.131.27
-    type: vmess
-    country: 🏁ZZ
-    port: 2083
-    uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cc2d3.89060004.xyz
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: cc2d3.89060004.xyz
-    delay: 2215
-  - name: 巴拉圭 - 亞松森 - IPXON Networks - 1
-    server: 38.165.233.93
-    type: ss
-    country: 🇺🇸 US
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 1302
-  - name: 巴西 - São Paulo - Oracle Corporation - 1
-    server: 162.159.137.178
-    port: 80
-    type: vmess
-    uuid: 88a25bf3-18af-486f-b194-d87e976c230b
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /s15.html
-      headers:
-        Host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
-    udp: true
-    delay: 2089
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
-    server: 3.124.76.127
-    type: trojan
-    country: 🇩🇪DE
-    port: 22222
-    password: telegram-id-privatevpns
-    skip-cert-verify: true
-    udp: true
-    delay: 1802
-  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
-    server: 3.124.76.127
-    type: trojan
-    country: 🇩🇪DE
-    port: 22223
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
-    udp: true
-    delay: 1331
-  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-    server: s1.dns4wards.com
-    type: vmess
-    country: 🇮🇷IR
-    port: 2087
-    uuid: 1969a26d-42c3-4788-5fb1-6c2de47e8d35
+    country: 🇨🇳CN
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
     network: tcp
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2336
-  - name: 德国 - 法兰克福 - dataforest GmbH - 5
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23334
+    delay: 1547
+  - name: 中国 - 香港 - Dalian Yichuan Industrial CO - 7
+    server: 103.149.183.154
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 34775242-64cb-4979-9a5c-2dad452e4753
-    udp: true
-    delay: 786
-  - name: 意大利 - 巴勒莫市 - Melbikomas UAB - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23143
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 34775242-64cb-4979-9a5c-2dad452e4753
-    udp: true
-    delay: 946
-  - name: 摩尔多瓦 - 基希讷乌 - EDIS - 1
-    server: 45.153.124.90
-    type: ss
-    port: 989
+    country: 🇭🇰HK
+    port: 8388
+    password: asd123456
+    cipher: chacha20-ietf
+    delay: 181
+  - cipher: aes-256-cfb
+    country: 🇷🇺 RU
+    name: 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
     password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-    delay: 932
-  - name: 新加坡 - 新加坡 - Akile LTD - 2
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23513
-    type: trojan
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    sni: cn.bing.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1246
-  - name: 新加坡 - 新加坡 - Akile LTD - 5
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23511
-    type: trojan
-    password: e42dfa71-1e12-4c1e-89ab-ee0232b3b698
-    sni: cn.bing.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1061
-  - name: 新加坡 - 新加坡 - Amazon.com, Inc. - 1
-    server: 54.169.5.180
+    port: 989
+    server: 185.153.197.5
+    type: ss
+    delay: 823
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+    server: 128.199.236.104
     type: ss
     country: 🇸🇬SG
+    port: 57384
+    password: wcI8DZe0eXSS3upop1QjVB
+    cipher: chacha20-ietf-poly1305
+    delay: 368
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 2
+    server: 167.172.89.195
+    type: ss
+    country: 🇸🇬SG
+    port: 8575
+    password: uewxc4bF87Gb2hJWtbMyt1
+    cipher: chacha20-ietf-poly1305
+    delay: 398
+  - name: 美国 - 北伯根 - DigitalOcean, LLC - 10
+    server: v24.heduian.link
+    type: vmess
+    country: 🇨🇳CN
+    port: 30824
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: ws
+    servername: v24.heduian.link
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        HOST: v24.heduian.link
+    delay: 2276
+  - name: 美国 - 圣克拉拉 - DigitalOcean, LLC - 11
+    server: v4.heduian.link
+    type: vmess
+    country: 🇨🇳CN
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: ws
+    servername: ocbc.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        HOST: ocbc.com
+    delay: 2244
+  - name: 美国 - 圣克拉拉 - PEG TECH INC - 6
+    server: 104.21.3.189
+    type: vmess
+    country: 🏁ZZ
+    port: 2096
+    uuid: 350e2b01-d410-44a6-90ba-6483f1062972
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: rak2d1.89060004.xyz
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: rak2d1.89060004.xyz
+    delay: 1833
+  - name: 美国 - 水牛城 - HostPapa - 1
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
     port: 443
-    password: qawszxc123
-    cipher: aes-256-cfb
-    delay: 1620
-  - name: 新加坡 - 新加坡 - SpeedyPage Ltd - 4
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23401
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ca41554e-2a01-4ad5-93cc-6a70b7836c2c
-    udp: true
-    delay: 383
-  - name: 新加坡 - 新加坡 - SpeedyPage Ltd - 8
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23510
-    type: trojan
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    sni: cn.bing.com
+    uuid: 06bf0030-5f18-4a0e-ae14-59d4abadda45
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
-    udp: true
-    delay: 705
-  - name: 新加坡 - 新加坡 - Velo Link, Inc. - 3
-    server: ti3hyra4.slashdevslashnetslashtun.net
-    port: 16002
-    type: ss
-    cipher: aes-256-gcm
-    password: B2TV1P61JBI6N0FQ
-    udp: true
-    delay: 509
-  - name: 新加坡 - 新加坡 - Velo Link, Inc. - 6
-    server: qh62onjn.slashdevslashnetslashtun.net
-    port: 16011
-    type: ss
-    cipher: aes-256-gcm
-    password: VR8WQ5VZMI3GSKGZ
-    udp: true
-    delay: 641
-  - name: 新加坡 - 新加坡 - Velo Link, Inc. - 9
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 16005
-    type: ss
-    cipher: aes-256-gcm
-    password: ZK7TGRWN2FJ5F5BT
-    udp: true
-    delay: 791
-  - name: 日本 - Chiyoda - Velo Link, Inc. - 3
-    server: w72tapyb.slashdevslashnetslashtun.net
-    port: 18016
-    type: ss
-    cipher: aes-256-gcm
-    password: 73JJGX3CEB7DGSWF
-    udp: true
-    delay: 920
-  - name: 日本 - 东京 - Akile LTD - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23104
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: f9d1cb7b-ca3f-4e58-a46d-f508e95ed714
-    udp: true
-    delay: 1008
-  - name: 日本 - 东京 - Akile LTD - 2
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23104
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: e42dfa71-1e12-4c1e-89ab-ee0232b3b698
-    udp: true
-    delay: 580
-  - name: 日本 - 东京 - Akile LTD - 4
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23514
-    type: trojan
-    password: ca41554e-2a01-4ad5-93cc-6a70b7836c2c
-    sni: cn.bing.com
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 2183
+  - name: 美国 - 水牛城 - HostPapa - 2
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: 1bb372d5-2f55-4226-be17-d3c9f4e73a6f
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
-    udp: true
-    delay: 855
-  - name: 美国 - 洛杉矶 - Akile LTD - 43
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23519
-    type: trojan
-    password: da233167-3fa6-4361-9aa2-35f7c9e5055d
-    sni: cn.bing.com
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 2203
+  - name: 美国 - 水牛城 - HostPapa - 3
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: 7617dfd5-a5a8-46fd-a8d6-987d7e2099df
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
-    udp: true
-    delay: 947
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
-    server: 103.116.7.100
-    port: 2087
-    type: trojan
-    password: Aimer
-    sni: epmk.ambercc.filegear-sg.me
-    alpn:
-      - h3
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 1119
+  - name: 美国 - 水牛城 - HostPapa - 4
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: 055efe35-c8fd-4e7a-a31b-23489d7699b5
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
     skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 1129
+  - name: 美国 - 水牛城 - HostPapa - 43
+    server: 1750158741.tencentapp.cn
+    port: 443
+    type: vmess
+    uuid: 98bbab4e-a1cb-49f3-bd56-2ddce2691afd
+    alterId: 0
+    cipher: auto
+    tls: true
     network: ws
     ws-opts:
-      path: /?ed=2560&proxyip=ts.hpc.tw
+      path: /
       headers:
-        Host: epmk.ambercc.filegear-sg.me
+        Host: free1.chiikawanetworkcfjiasucdn.us.kg
     udp: true
-    delay: 2171
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 52
-    server: www.udemy.com
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 1587
+  - name: 美国 - 水牛城 - HostPapa - 7
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
     port: 443
-    type: trojan
-    password: vip
-    sni: heihu880.pages.dev
-    skip-cert-verify: true
+    uuid: ba355ea2-f3aa-48b5-9079-42e8cd780ac3
+    alterId: 0
+    cipher: auto
     network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 2002
+  - name: 美国 - 水牛城 - HostPapa - 8
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: dc1a38a3-b8d6-4fd6-a6e2-d55ea637a6bd
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 1374
+  - name: 美国 - 水牛城 - HostPapa - 9
+    server: 1750158741.tencentapp.cn
+    type: vmess
+    country: 🏁ZZ
+    port: 443
+    uuid: 1824f1a3-93fa-472f-b75b-4020c3e47659
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: free1.chiikawanetworkcfjiasucdn.us.kg
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        HOST: free1.chiikawanetworkcfjiasucdn.us.kg
+    delay: 2192
+  - name: 美国 - 洛杉矶 - Leaseweb USA, Inc. - 5
+    server: csgo.com
+    type: vmess
+    country: 🇨🇾CY
+    port: 8880
+    uuid: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: cdn-node-oss-99.paofu.de
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /profile/telegram@ssrsub
+      headers:
+        HOST: cdn-node-oss-99.paofu.de
+    delay: 1528
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+    server: 91.193.58.0
+    type: trojan
+    country: 🇬🇧GB
+    port: 443
+    udp: true
+    password: trojan
+    sni: wahaha.yingyangkuaixian.dpdns.org
+    skip-cert-verify: true
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: heihu880.pages.dev
+        Host: wahaha.yingyangkuaixian.dpdns.org
+    network: ws
+    delay: 1949
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+    server: 103.160.204.40
+    type: trojan
+    country: 🇭🇰HK
+    port: 8443
     udp: true
-    delay: 1248
-  - cipher: chacha20-ietf-poly1305
-    country: 🇬🇧 GB
-    name: 英国 - City of London - Microsoft Corporation - 1
-    password: Bog0ELmMM9DSxDdQ
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    sni: vle.amclubdns.dpdns.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=trojan
+      headers:
+        Host: vle.amclubdns.dpdns.org
+    network: ws
+    delay: 962
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: 194.76.18.129
+    type: trojan
+    country: 🇰🇿KZ
     port: 443
-    server: 85.210.120.237
-    type: ss
-    delay: 1018
-  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
-    server: 45.158.171.143
-    type: ss
-    country: 🇫🇷FR
-    port: 8080
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-    delay: 1055
-  - name: 西班牙 - 马德里 - Melbikomas UAB - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23210
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ca41554e-2a01-4ad5-93cc-6a70b7836c2c
     udp: true
-    delay: 1256
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    network: ws
+    delay: 1715
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 45.67.215.95
+    type: trojan
+    country: 🇷🇺RU
+    port: 443
+    udp: true
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    network: ws
+    delay: 1826
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: 216.24.57.30
+    type: trojan
+    country: 🇺🇸US
+    port: 443
+    udp: true
+    password: tg-fq521free
+    sni: torjan.xn--xhq44j.eu.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: torjan.xn--xhq44j.eu.org
+    network: ws
+    delay: 2586
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 156.238.18.220
+    type: trojan
+    country: 🇺🇸US
+    port: 8443
+    udp: true
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    sni: vle.amclubdns.dpdns.org
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=trojan
+      headers:
+        Host: vle.amclubdns.dpdns.org
+    network: ws
+    delay: 2028
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 103.160.204.49
+    port: 2096
+    type: trojan
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    sni: vle.amclubsvip.dpdns.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=trojan
+      headers:
+        Host: vle.amclubsvip.dpdns.org
+    udp: true
+    delay: 1517
+  - name: 荷兰 - 阿姆斯特丹 - LeaseWeb Netherlands B.V. - 1
+    server: channel.dollardoon.com
+    type: vmess
+    country: 🇳🇱NL
+    port: 15709
+    uuid: 4ac39e8a-6d5c-48bb-b0d0-f633c829113e
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: fast.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 824
+  - name: 荷兰 - 阿姆斯特丹 - LeaseWeb Netherlands B.V. - 2
+    server: 83.149.84.145
+    type: vmess
+    country: 🇳🇱NL
+    port: 15709
+    uuid: 4ac39e8a-6d5c-48bb-b0d0-f633c829113e
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 485
   - cipher: aes-256-cfb
     name: 越南 - Hải Dương - FASTLY - 1
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.23
+    server: 103.186.155.18
     type: ss
-    delay: 1200
+    delay: 874
   - cipher: aes-256-cfb
     country: 🏁 ZZ
     name: 越南 - Hải Dương - FASTLY - 2
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.31
+    server: 103.186.154.37
     type: ss
-    delay: 1078
-  - name: 阿拉伯联合酋长国 - 富吉拉 - Melbikomas UAB - 1
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23157
+    delay: 843
+  - name: 越南 - Hải Dương - FASTLY - 3
+    server: 103.186.154.20
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 2ae11355-725b-420a-b097-184f30806b5f
-    udp: true
-    delay: 1127
-  - name: 韩国 - Paripark - Sejong Networks - 2
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 23110
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 34775242-64cb-4979-9a5c-2dad452e4753
-    udp: true
-    delay: 711
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 861
   - cipher: aes-256-cfb
-    country: 🇺🇸 US
-    name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 1
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 154.90.63.177
+    country: 🏁 ZZ
+    name: 越南 - Hải Dương - FASTLY - 4
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.35
     type: ss
-    delay: 2530
+    delay: 1139
+  - cipher: aes-256-cfb
+    country: 🏁 ZZ
+    name: 越南 - Hải Dương - FASTLY - 5
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.27
+    type: ss
+    delay: 843
+  - cipher: aes-256-cfb
+    country: 🏁 ZZ
+    name: 越南 - Hải Dương - FASTLY - 6
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.21
+    type: ss
+    delay: 1800
+  - name: 韩国 - 首尔特别市 - Sejong Networks - 1
+    server: kr2.qiangdong.xyz
+    type: ss
+    port: 1052
+    password: VXPipi29nxMO
+    cipher: aes-128-gcm
+    plugin: obfs
+    plugin-opts:
+      host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+      mode: http
+    delay: 662
