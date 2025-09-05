@@ -4,11 +4,21 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 上海 - Hangzhou Alibaba Advertising Co - 5
+  - name: 中国 - 上海 - Hangzhou Alibaba Advertising Co - 9
     server: 106.14.75.114
+    port: 50002
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 180
+  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 10
+    server: 39.107.155.11
     type: vmess
     country: 🇨🇳CN
-    port: 50002
+    port: 30302
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -16,69 +26,142 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 593
+    delay: 138
   - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 6
     server: 39.100.81.215
-    type: vmess
-    country: 🇨🇳CN
     port: 50002
+    type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
-    delay: 655
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 4
-    server: 125.229.191.103
+    delay: 151
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 16
+    server: 91c46d9c-7c91-5ce6-31e9-f7d6178fa92d.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 91c46d9c-7c91-5ce6-31e9-f7d6178fa92d.connection.rest
+    udp: true
+    delay: 1638
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 17
+    server: 91c46d9c-7c91-5ce6-31e9-f7d6178fa92d.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 91c46d9c-7c91-5ce6-31e9-f7d6178fa92d.connection.rest
+    udp: true
+    delay: 920
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 18
+    server: e48383c2-0003-2628-cf99-b7691e887ce2.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - e48383c2-0003-2628-cf99-b7691e887ce2.connection.rest
+    udp: true
+    delay: 2254
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 19
+    server: 114.33.53.213
+    port: 10037
     type: ss
-    country: 🇹🇼TW
-    port: 10023
-    password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
     cipher: chacha20-ietf-poly1305
-    delay: 2897
-  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 8
-    server: 112.132.215.12
+    password: ed7b6c5e-4658-426e-9764-13226b4256d8
+    udp: true
+    delay: 756
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 4
+    server: 59.126.32.59
+    type: ss
+    country: 🇨🇳 TW
+    port: 10066
+    password: 6b9e151f-10bb-4ef9-8607-fe3ad53f7dc1
+    cipher: chacha20-ietf-poly1305
+    delay: 170
+  - name: 中国 - 台湾 - Pittqiao Network Information Co., Ltd. - 11
+    server: awes35lesl.blhao0o.dpdns.org
+    port: 12006
+    type: ss
+    cipher: aes-128-gcm
+    password: 01721e43-5389-4f97-b21c-900abb2bda9e
+    delay: 1507
+  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 3
+    server: 112.132.215.34
     type: vmess
     country: 🇨🇳 CN
+    port: 50007
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 260
+  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 7
+    server: 112.132.215.12
     port: 50002
+    type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    network: tcp
+    tls: false
+    skip-cert-verify: true
     servername: ury-unit-c030ehei8.poget71138.workers.dev
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 815
-  - name: 中国 - 广州市 - China Mobile communications corporation - 2
+    delay: 173
+  - name: 中国 - 广州市 - China Mobile communications corporation - 1
     server: 120.210.205.59
-    type: vmess
-    country: 🇨🇳CN
     port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 405
-  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 7
-    server: 120.26.55.225
     type: vmess
-    country: 🇨🇳CN
-    port: 50112
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
-    delay: 371
-  - name: 中国 - 臺北市 - Global Communication Network Limited - 3
+    delay: 216
+  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 5
+    server: 120.26.55.225
+    port: 50112
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    delay: 188
+  - name: 中国 - 臺北市 - Global Communication Network Limited - 2
     server: 103.115.109.250
     type: vmess
     port: 40762
@@ -88,50 +171,418 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 688
-  - name: 中国 - 香港 - Vapeline Technology(HK)Co - 1
-    server: 154.219.96.212
+    delay: 538
+  - name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 8
+    server: 139.129.20.6
     type: vmess
-    port: 20109
-    uuid: 22b454dc-fd88-45fd-c335-916ff88c22d2
-    alterId: 0
+    country: 🇨🇳CN
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
-    network: none
+    network: tcp
     http-opts: {}
     h2-opts: {}
-    delay: 976
-  - name: 土耳其 - 伊斯坦布尔 - Global Connectivity Solutions LLP - 1
-    server: 77.83.245.50
-    type: ss
-    country: 🇵🇱PL
-    port: 443
-    password: WV7haGrJjRI7
-    cipher: chacha20-ietf-poly1305
-    delay: 1292
-  - name: 美国 - 华盛顿特区 - GTHost - 14
-    server: 38.107.226.160
-    type: ss
+    skip-cert-verify: true
+    delay: 462
+  - name: 中国 - 香港 - Akari Networks Limited - 12
+    server: okanc.iepl.cac.cab
+    type: trojan
     country: 🇺🇸US
+    port: 23001
+    udp: true
+    password: 82d0fb76-b9ff-41c2-ba15-2aec44f78e7c
+    sni: www.bilibili.com
+    skip-cert-verify: true
+    delay: 2102
+  - name: 中国 - 香港 - Hong Kong Broadband Network Ltd - 13
+    server: e754cc55-0361-7d16-3ad1-4087b7913690.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - e754cc55-0361-7d16-3ad1-4087b7913690.connection.rest
+    udp: true
+    delay: 470
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 14
+    server: 24c9fe5d-87da-a4ea-f49b-7b1ff579d5dc.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 24c9fe5d-87da-a4ea-f49b-7b1ff579d5dc.connection.rest
+    udp: true
+    delay: 726
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 15
+    server: 24c9fe5d-87da-a4ea-f49b-7b1ff579d5dc.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 24c9fe5d-87da-a4ea-f49b-7b1ff579d5dc.connection.rest
+    udp: true
+    delay: 1732
+  - name: 卢森堡 - Roost - FranTech Solutions - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20047
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 657
+  - name: 卢森堡 - Roost - FranTech Solutions - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20047
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 1751
+  - name: 土耳其 - 伊斯坦布尔 - Baxet Group Inc. - 1
+    server: tr-1.stunnel.cc
+    type: ss
+    country: 🇹🇷TR
+    port: 8444
+    password: tunnel-fbrof
+    cipher: chacha20-ietf-poly1305
+    delay: 837
+  - name: >-
+      土耳其 - 布尔萨 - Bogahost Bilisim ve Telekomunikasyon Hiz. San ve Tic. Ltd.
+      Sti. - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20027
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 1933
+  - name: >-
+      土耳其 - 布尔萨 - Bogahost Bilisim ve Telekomunikasyon Hiz. San ve Tic. Ltd.
+      Sti. - 3
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20027
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 963
+  - name: 德国 - Falkenstein - Hetzner Online GmbH - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20031
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 747
+  - name: 德国 - Falkenstein - Hetzner Online GmbH - 3
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20031
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 762
+  - name: 德国 - Frankfurt am Main - Amazon.com - 1
+    server: 63.176.195.141
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 838
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 1
+    server: 5c6319fc-e1c2-1f3f-29ae-e26606f74b19.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 5c6319fc-e1c2-1f3f-29ae-e26606f74b19.connection.rest
+    udp: true
+    delay: 817
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 2
+    server: 5c6319fc-e1c2-1f3f-29ae-e26606f74b19.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 5c6319fc-e1c2-1f3f-29ae-e26606f74b19.connection.rest
+    udp: true
+    delay: 818
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 3
+    server: 02c5befd-3194-578f-f2d0-df14f746c16b.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 02c5befd-3194-578f-f2d0-df14f746c16b.connection.rest
+    udp: true
+    delay: 558
+  - name: 新加坡 - 新加坡 - Amazon Technologies Inc. - 4
+    server: 02c5befd-3194-578f-f2d0-df14f746c16b.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 02c5befd-3194-578f-f2d0-df14f746c16b.connection.rest
+    udp: true
+    delay: 528
+  - name: 日本 - Shibuya City - Akile LTD - 1
+    server: cdntwa.xiaomispeed.com
+    type: trojan
+    country: 🇹🇼TW
+    port: 39769
+    password: 321dc037-d0c7-4e56-b868-4d2d17789f85
+    sni: cdntwa.xiaomispeed.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1399
+  - name: 日本 - 东京 - Amazon.com, Inc. - 2
+    server: a2b37a25-0716-0d20-afb9-3b4928cf4189.connection.rest
+    port: 80
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - a2b37a25-0716-0d20-afb9-3b4928cf4189.connection.rest
+    udp: true
+    delay: 638
+  - name: 日本 - 东京 - Amazon.com, Inc. - 3
+    server: a2b37a25-0716-0d20-afb9-3b4928cf4189.connection.rest
+    port: 80
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - a2b37a25-0716-0d20-afb9-3b4928cf4189.connection.rest
+    udp: true
+    delay: 795
+  - name: 法国 - 巴黎 - Online S.A.S. - 1
+    server: 2001:bc8:32d7:302::10
+    port: 44579
+    type: vmess
+    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+    delay: 857
+  - name: 泰国 - Nonthaburi - Siamdata Communication Co., ltd. - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20007
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 710
+  - name: 泰国 - Nonthaburi - Siamdata Communication Co., ltd. - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20007
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 527
+  - name: 美国 - 华盛顿特区 - GTHost - 10
+    server: 38.107.226.160
     port: 7307
-    password: FoOiGlkAA9yPEGP
+    type: ss
     cipher: aes-256-gcm
-    delay: 722
+    password: FoOiGlkAA9yPEGP
+    delay: 1312
   - name: 美国 - 圣克拉拉 - prgmr.com, Inc. - 1
     server: hackney-latest-strike.freesocks.work
-    type: ss
-    country: 🇺🇸US
     port: 443
-    password: XUMTygEM1jVYIvysXKqA5T
+    type: ss
     cipher: chacha20-ietf-poly1305
-    delay: 1288
+    password: XUMTygEM1jVYIvysXKqA5T
+    delay: 655
   - name: 美国 - 圣克拉拉 - prgmr.com, Inc. - 13
     server: hackney-latest-strike.freesocks.work
-    type: ss
-    country: 🇺🇸US
     port: 443
-    password: cWCt8FRw9qXHQaG59JrNLi
+    type: ss
     cipher: chacha20-ietf-poly1305
-    delay: 1452
+    password: cWCt8FRw9qXHQaG59JrNLi
+    delay: 692
   - name: 美国 - 圣克拉拉 - Shenzhen Tencent Computer Systems Company Limited - 9
     server: 43.162.114.137
     type: vmess
@@ -142,30 +593,179 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 631
-  - name: 美国 - 明克勒 - Alibaba Cloud LLC - 2
-    server: 47.254.125.234
+    delay: 386
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 48
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20013
     type: vmess
-    port: 37533
-    uuid: 08d55231-ddc8-454c-8fc6-0d9ca7a5a055
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
     alterId: 0
     cipher: auto
-    network: none
-    http-opts: {}
-    h2-opts: {}
-    delay: 1233
-  - name: 美国 - 洛杉矶 - Axedale - 3
-    server: 64.112.41.92
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 640
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 49
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20014
     type: vmess
-    port: 41185
-    uuid: 9ba1c290-2f90-4fe7-efab-390af3dfd498
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
     alterId: 0
     cipher: auto
-    network: none
-    http-opts: {}
-    h2-opts: {}
-    delay: 796
-  - name: 美国 - 洛杉矶 - Axedale - 4
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 654
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 50
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20014
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 634
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 51
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20015
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 681
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 52
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20015
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 664
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 53
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20016
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 737
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 54
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20016
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 626
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 55
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20017
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 604
+  - name: 美国 - 堪薩斯城 - Nocix, LLC - 56
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20017
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 624
+  - name: 美国 - 洛杉矶 - Axedale - 7
     server: 64.112.41.92
     type: vmess
     port: 10678
@@ -175,8 +775,19 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 787
-  - name: 美国 - 洛杉矶 - Cogent Communications - 8
+    delay: 693
+  - name: 美国 - 洛杉矶 - Axedale - 8
+    server: 64.112.41.92
+    type: vmess
+    port: 41185
+    uuid: 9ba1c290-2f90-4fe7-efab-390af3dfd498
+    alterId: 0
+    cipher: auto
+    network: none
+    http-opts: {}
+    h2-opts: {}
+    delay: 686
+  - name: 美国 - 洛杉矶 - Cogent Communications - 5
     server: 154.29.158.139
     type: vmess
     port: 12299
@@ -186,16 +797,26 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 718
-  - name: 美国 - 洛杉矶 - Dedicated.com - 15
+    delay: 1222
+  - name: 美国 - 洛杉矶 - Dedicated.com - 11
     server: 104.192.226.106
-    type: ss
-    country: 🇺🇸 US
     port: 989
-    password: f8f7aCzcPKbsF8p3
+    type: ss
     cipher: aes-256-cfb
-    delay: 1676
-  - name: 美国 - 洛杉矶 - NetLab Global - 7
+    password: f8f7aCzcPKbsF8p3
+    delay: 404
+  - name: 美国 - 洛杉矶 - HostPapa - 3
+    server: 66.63.163.131
+    type: vmess
+    port: 51946
+    uuid: b7a0fb47-f668-46a7-da04-2e7d60d4d107
+    alterId: 0
+    cipher: auto
+    network: none
+    http-opts: {}
+    h2-opts: {}
+    delay: 532
+  - name: 美国 - 洛杉矶 - NetLab Global - 4
     server: 154.64.240.38
     type: vmess
     port: 28201
@@ -205,8 +826,8 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 689
-  - name: 美国 - 洛杉矶 - NTT America, Inc. - 12
+    delay: 466
+  - name: 美国 - 洛杉矶 - NTT America, Inc. - 2
     server: 216.167.79.92
     type: vmess
     port: 10347
@@ -216,49 +837,643 @@ proxies:
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 1466
+    delay: 1610
   - name: 美国 - 洛杉矶 - NTT America, Inc. - 6
-    server: 216.167.89.158
-    type: vmess
-    port: 25854
-    uuid: a247ec2b-b296-42bb-8553-61a593d20092
-    alterId: 0
-    cipher: auto
-    network: none
-    http-opts: {}
-    h2-opts: {}
-    delay: 727
-  - name: 美国 - 紐約 - Aiyun (HK) Network Technology Limited - 5
-    server: 157.254.227.97
-    type: vmess
-    port: 54115
-    uuid: 4a9168eb-fc40-4675-c0f0-e5c585f32264
-    alterId: 0
-    cipher: auto
-    network: none
-    http-opts: {}
-    h2-opts: {}
-    delay: 1584
-  - name: 美国 - 纽约 - GTT Communications Inc - 11
-    server: 66.253.5.158
+    server: 216.167.79.92
     type: vmess
     country: 🇺🇸 US
-    port: 36299
-    uuid: 4ada72ac-46b4-4080-aa1e-c81999725ba5
+    port: 57373
+    uuid: 463b095b-2fde-4e21-ccaf-d8d7aa81e0f4
     alterId: 0
     cipher: auto
     network: none
     http-opts: {}
     h2-opts: {}
-    delay: 661
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
-    server: 107.172.5.52
+    delay: 518
+  - name: 美国 - 紐約 - NetAssist LLC - 12
+    server: 94.131.22.134
+    port: 40565
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: >-
+      2JK8CwhNFuy3uQo5yHwHvRuEXKLnnrKW7T3snXFQ25yt27PGLKoLXMFrSFFoVgB5SQMeAHx8ZaQXx9mAY55cYskUyVaP6Rum
+    delay: 1337
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: 188.244.122.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1799
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: 185.238.228.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: >-
+        Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1189
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: 185.18.250.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1756
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 17
+    server: 185.16.110.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 909
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: 212.183.88.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 917
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: 185.59.218.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1441
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+    server: 195.26.229.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1420
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+    server: 199.68.156.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1454
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+    server: 185.176.24.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1099
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    server: 185.221.160.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 957
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    server: 185.148.107.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1267
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+    server: 185.18.184.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: >-
+        Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1823
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+    server: 185.251.80.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 948
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+    server: 185.251.82.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1816
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 28
+    server: 185.7.240.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 2285
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 29
+    server: 194.36.55.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: >-
+        Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1117
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 30
+    server: 188.42.89.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1098
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 31
+    server: 188.164.248.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 879
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 32
+    server: 213.219.247.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1270
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 33
+    server: 188.42.145.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1104
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 34
+    server: 195.13.54.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1065
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 35
+    server: 195.13.55.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1092
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 36
+    server: 192.0.54.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 824
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 37
+    server: 185.148.104.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1458
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 38
+    server: 216.24.57.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: >-
+        Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1562
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 39
+    server: 185.148.106.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 789
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 40
+    server: 199.34.230.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1011
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 41
+    server: 193.124.224.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 1544
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 43
+    server: 209.94.90.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Telegram🇨🇳
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 2217
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 44
+    server: 209.46.30.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 812
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 45
+    server: 205.233.181.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    delay: 1028
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 46
+    server: 199.181.197.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 838
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 47
+    server: 198.62.62.195
+    port: 2096
+    type: trojan
+    password: slch2024
+    sni: ocost-dy.wmlefl.cc
+    network: ws
+    ws-opts:
+      path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+      headers:
+        Host: ocost-dy.wmlefl.cc
+    udp: true
+    delay: 828
+  - name: 美国 - 聖荷西 - Eons Data Communications Limited - 42
+    server: cdntwa.xiaomispeed.com
+    type: trojan
+    country: 🇹🇼TW
+    port: 33889
+    password: 321dc037-d0c7-4e56-b868-4d2d17789f85
+    sni: cdntwa.xiaomispeed.com
+    skip-cert-verify: true
+    udp: true
+    delay: 2739
+  - name: 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20037
     type: vmess
-    port: 35703
-    uuid: 420c92f0-16db-4306-8129-935bd942897e
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
     alterId: 0
     cipher: auto
-    network: none
-    http-opts: {}
-    h2-opts: {}
-    delay: 689
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 1087
+  - name: 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20037
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 711
+  - name: 英国 - 倫敦金融城 - HostWorld UK - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20033
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 732
+  - name: 英国 - 倫敦金融城 - HostWorld UK - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20033
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 745
+  - name: 荷兰 - 阿姆斯特丹 - Matteo Martelloni trading as DELUXHOST - 1
+    server: switcher-nick-croquet.freesocks.work
+    port: 443
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 9tqhMdIrTkgQ46PvhyAtMH
+    delay: 597
+  - name: 阿根廷 - 布宜诺斯艾利斯 - BrainStorm Network, Inc - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20057
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 863
+  - name: 阿根廷 - 布宜诺斯艾利斯 - BrainStorm Network, Inc - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20057
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 864
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 1
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20001
+    type: vmess
+    uuid: cdbf9bf0-1425-49d1-8d03-590e1f1f8e3c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 536
+  - name: 韩国 - 首尔特别市 - Amazon.com, Inc. - 2
+    server: 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    port: 20001
+    type: vmess
+    uuid: 7df6cadb-05d0-4153-b353-8df87202205d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - 96a91cfc-b2ac-8f0d-d380-8947553db08d.connection.rest
+    udp: true
+    delay: 523
