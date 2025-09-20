@@ -3,4 +3,54 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 3
+    server: 104.26.12.31
+    port: 2087
+    type: vless
+    uuid: 01996431-3e8b-e8ed-202a-baf93f8e8851
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets?ip=proxyip:port(443)&nat64=6to4
+      headers:
+        Host: >-
+          0000bldeqtt93cv2ia9d.9qhfz.0mdhvs60.d2dl09xr.isqhyop.inv1w8h.w8qr7n1t9pl.ornd3ui.t5clre6qc35.7bl5kpqtymz3.687d4r1yy2wmyc5.neib.cn
+    udp: true
+    servername: >-
+      0000bldeqtt93cv2ia9d.9qhfz.0mdhvs60.d2dl09xr.isqhyop.inv1w8h.w8qr7n1t9pl.ornd3ui.t5clre6qc35.7bl5kpqtymz3.687d4r1yy2wmyc5.neib.cn
+    delay: 2245
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 3
+    server: 141.101.120.132
+    type: vless
+    country: 🏁ZZ
+    port: 443
+    udp: true
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: 1750120447146.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+    tls: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: 1750120447146.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+    delay: 710
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
+    port: 8443
+    server: 108.165.152.82
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /Telegram@V2ray_Alpha/
+      headers:
+        Host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    client-fingerprint: chrome
+    servername: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+    delay: 1642
