@@ -4,51 +4,60 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 中国 - 上海 - Hangzhou Alibaba Advertising Co - 3
+    server: 106.14.75.114
+    type: vmess
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 336
   - name: 中国 - 佛山市 - China Mobile - 5
     server: 183.236.51.36
-    port: 59003
     type: vmess
+    country: 🇨🇳CN
+    port: 59003
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
-    tls: false
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
     skip-cert-verify: true
-    delay: 439
+    delay: 1158
   - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 4
     server: 39.107.155.11
+    type: vmess
     port: 30302
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
     udp: true
-    delay: 128
-  - name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 6
-    server: 39.100.81.215
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 330
-  - name: 中国 - 合肥 - China Unicom CHINA169 Anhui Province Network - 7
-    server: 112.132.215.34
-    port: 50007
-    type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
-    tls: false
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
     skip-cert-verify: true
-    delay: 364
+    delay: 294
   - name: 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 1
     server: 119.29.98.43
     type: vmess
-    country: 🇨🇳CN
+    port: 48536
+    uuid: 057caba1-2237-41e6-a54d-ec03509898a5
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /arki?ed=2048
+    delay: 225
+  - name: 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 2
+    server: 119.29.98.43
+    type: vmess
     port: 56532
     uuid: b20b5fcd-23f5-4f70-ba49-898d78296abf
     alterId: 0
@@ -56,1299 +65,492 @@ proxies:
     network: ws
     http-opts: {}
     h2-opts: {}
-    skip-cert-verify: true
     ws-opts:
       path: /arki?ed=2048
-    delay: 662
-  - name: 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 8
-    server: 119.29.98.43
+    delay: 1596
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 7
+    server: c251f6b5-sv2sg0-swjbgr-1kcpe.hk.p5pv.com
     type: vmess
-    country: 🇨🇳CN
-    port: 11399
-    uuid: 4d53cd6c-31f5-4b3b-bb11-fb012c8d9648
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /arki?ed=2048
-    delay: 401
-  - name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 3
-    server: 120.26.137.112
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    delay: 188
-  - name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 2
-    server: 139.129.20.6
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 179
-  - name: 中国 - 香港 - CommuniLink - 9
-    server: 43.252.167.94
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF3gU4OCz4Nenn5LFHP2DPPoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 247
-  - name: 中国 - 香港 - DataCamp Limited - 10
-    server: 169.150.222.197
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEEksqQ7EqfA2oD52PhxcBIoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2220
-  - name: 丹麦 - Hørsholm - ASERGO Scandinavia ApS - 1
-    server: 82.103.131.250
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqG5BDh6jSN3_K8l6vH82ysQoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 777
-  - name: 丹麦 - 巴勒魯普自治市 - M247 Europe - 2
-    server: 146.70.42.202
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGDTDv-EmOXSMIAhKABBJPMoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 941
-  - name: 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 3
-    server: 88.218.3.162
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHR7m_F-ImUQ4tm9Toav1GloXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 884
-  - name: 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 4
-    server: 89.45.7.250
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGAFEBRDyvelehGzXt0VseNoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1879
-  - name: 乌克兰 - Kyiv - Ivanov Vitaliy Sergeevich - 1
-    server: 176.103.54.71
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHzZeb57GrxNwcMRx8JhtFSoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1048
-  - name: 以色列 - 特拉维夫 - Yehoshua Vaknin Nahal Tzia 9/2 - 1
-    server: 182.54.236.194
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEcYkVuogD7lp1TIRWzbKSXoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 915
-  - name: 俄罗斯 - 莫斯科 - M247 Europe SRL - 1
-    server: 146.70.52.54
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGd_2_G2_YxaUHLM_kv_6t0oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1915
-  - name: 保加利亚 - 索菲亞 - M247 Europe SRL - 1
-    server: 37.120.152.186
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEgtKWy8wtnq79javCMUKftoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1488
-  - name: 加拿大 - 溫哥華 - Astute Hosting Inc. - 4
-    server: 135.84.180.228
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGq2607VBdg_cmqys5hCWrRoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1452
-  - name: 加拿大 - 蒙特利尔 - GloboTech Communications - 1
-    server: 173.209.63.146
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGgG7jxv6MysKHugplq3GvZxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2533
-  - name: 加拿大 - 蒙特利尔 - GloboTech Communications - 3
-    server: 173.209.51.250
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHvLBkl2zLHKGJW6NNOVzDkoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1099
-  - name: 加拿大 - 蒙特利尔 - GloboTech Communications - 5
-    server: 173.209.49.50
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFD4cLfNtv4ZeEBMeBQGrPgoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2114
-  - name: 加拿大 - 蒙特利尔 - OVH SAS - 2
-    server: 148.113.221.152
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGejpOQwj7V4XekX7YOHeD_xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1967
-  - name: 匈牙利 - 布达佩斯 - M247 Europe SRL - 1
-    server: 185.104.187.234
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFp0b5QkeZ-xT5waLxv7gEZoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 911
-  - name: 卢森堡 - Schieren - SERVERS-COM-LUX - 1
-    server: 23.109.136.154
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHRzTpXwIxSMMeK1590XAi9oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 929
-  - name: 卢森堡 - Schieren - SERVERS-COM-LUX - 2
-    server: 23.109.136.54
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqH4hwoCI8akcOY3Jpj3tLtloXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1924
-  - name: 印度 - 孟买 - OVH SAS - 1
-    server: 148.113.0.105
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFafTLRKj43_fRZrbg-7oTzoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1037
-  - name: 印度 - 孟买 - OVH SAS - 2
-    server: 148.113.47.86
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEOK4qSEHuT-MXAGQ0EwtKWoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 952
-  - name: 印度 - 孟买 - OVH SAS - 3
-    server: 148.113.0.104
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHPQNDdw1blCS_k48fD5Z65oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 876
-  - name: 印度 - 孟买 - OVH SAS - 4
-    server: 148.113.47.56
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFHnbmri9Qv1tcw3RnqTKeDoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 899
-  - name: 印度尼西亚 - 棉蘭 - PT. Media Antar Nusa - 1
-    server: 202.162.204.223
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFOvFcGhzHRaae9acj0od__oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 995
-  - name: 危地马拉 - Guatemala City - SONDATECH - 1
-    server: 170.80.111.119
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFQLDPI_mwkYFhKyljAS80ooXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2763
-  - name: 吉尔吉斯坦 - 比什凯克 - Optima Telecom Ltd. - 1
-    server: 91.213.233.111
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFC-UFzZ_FEBiGKCGr2JfH6oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1378
-  - name: 哈萨克斯坦 - Karaganda - PE Fedinyak Sergey Vyacheslavovich - 1
-    server: 185.120.77.104
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqELMIS5uX4uYWMzSDXblmFOoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1216
-  - name: 哥伦比亚 - 波哥大 - Latitude.sh - 1
-    server: 103.219.169.75
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEC7XXi3gm4NxKjCggoaBBvoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1294
-  - name: 哥斯达黎加 - 聖荷西 - Navegalo S.A. - 1
-    server: 138.59.135.94
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGRlWSH150AeDADLOqT5QRzoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1379
-  - name: 土耳其 - 伊斯坦布尔 - Baxet Group Inc. - 1
-    server: tr-1.stunnel.cc
-    port: 8444
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: tunnel-fbrof
-    delay: 722
-  - name: 塞浦路斯 - 尼科西亚 - Cyprus Telecommunications Authority - 1
-    server: 157.97.132.199
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGmzuLrSaiU3oez0Jv5XZk3oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1292
-  - name: 奥地利 - Egelsee - M247 Europe SRL - 1
-    server: 130.195.222.54
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHBog7QUCYfEJXVq4I3YMG5oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 883
-  - name: 巴西 - 圣保罗 - Maxihost LTDA - 2
-    server: 177.54.146.84
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHoHfpCAuxkC14ATQKjq3FSoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1154
-  - name: 巴西 - 圣保罗 - Psychz Networks - 1
-    server: 140.174.187.19
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE7wBZarCyicVREQ4EEuj3soXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2566
-  - name: 巴西 - 圣保罗 - Psychz Networks - 3
-    server: 140.174.187.13
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE6B9Qjgzb1Puoh6moNp4S_oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1532
-  - name: 巴西 - 圣保罗 - Psychz Networks - 4
-    server: 140.174.187.15
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE20UQlsk0rAdsN4mM5JGhooXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1559
-  - name: 巴西 - 圣保罗 - Psychz Networks - 5
-    server: 140.174.187.17
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEM4-UMy8op5bTnnK5Nag8doXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2844
-  - name: 希腊 - Agía Varvára - IpHost P.C. - 1
-    server: 93.174.121.131
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqERFBVWviPajbGz_VsuiOZCoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2740
-  - name: 德国 - Frankfurt - GTHost - 3
-    server: 193.108.116.234
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqG9LU5bVb2JqxWMmK7BKqh5xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1283
-  - name: 德国 - Frankfurt - GTHost - 5
-    server: 23.160.72.38
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHmwZH_HuWedq36tZYh2fSGxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1688
-  - name: 德国 - Frankfurt - GTHost - 6
-    server: 193.108.116.249
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGg5fH-bgembJcTwTOk74NWxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1814
-  - name: 德国 - Frankfurt - GTHost - 7
-    server: 23.160.72.197
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGBeKXF6_X6Dk4ABblEMUXVxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1277
-  - name: 德国 - Frankfurt - GTHost - 8
-    server: 23.160.72.216
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGOa57c_Fp7o3VO_rp8Yt4ixsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1282
-  - name: 德国 - Frankfurt - GTHost - 9
-    server: 193.108.116.214
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF-CHatKfT9PmsT1gFJioYdxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 823
-  - name: 德国 - 兰河畔林堡 - OVH SAS - 11
-    server: 51.38.116.134
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFqWFSzw8LSYd4zZxVb03KJxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1343
-  - name: 德国 - 兰河畔林堡 - OVH SAS - 12
-    server: 51.38.121.169
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE1n1fQSYUaKvtWMgtBTy4Wxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2028
-  - name: 德国 - 杜塞尔多夫 - MYLOC - 10
-    server: 5.104.107.104
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHgmwr6OaUIvfCWdpucG-Bwxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 683
-  - name: 德国 - 杜塞尔多夫 - WIIT AG - 4
-    server: 213.202.254.242
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGX_q4TRamcrf_gqHEojo4Vxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1009
-  - name: 德国 - 法兰克福 - Global Connectivity Solutions LLP - 2
-    server: 80.66.72.11
-    type: ss
-    port: 35291
-    password: A7tAaeQqcsxuDfiFyQmP5u
-    cipher: chacha20-ietf-poly1305
-    delay: 457
-  - name: 德国 - 纽伦堡 - Hetzner Online GmbH - 1
-    server: 116.203.89.88
-    type: vmess
-    country: 🇩🇪DE
-    port: 443
-    uuid: 6f41bfca-38b6-4a90-8309-75c3587b7056
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: googleb.net
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkws
-      headers:
-        HOST: googleb.net
-    delay: 737
-  - name: 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
-    server: 185.90.61.217
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGxaMkmpFVZ2fbVhoFSLneeoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 950
-  - name: 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
-    server: 185.153.197.5
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-    delay: 646
-  - name: 摩洛哥 - Fes - BrainStorm Network, Inc - 1
-    server: 188.214.157.58
-    port: 990
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    delay: 924
-  - name: 摩洛哥 - Fes - HOSTOWEB.COM - 2
-    server: 154.70.207.146
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEnIt7T-qxmvi4RO6UDhITIoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1992
-  - name: 斯洛伐克 - 布拉迪斯拉发 - M247 Europe SRL - 1
-    server: 185.245.85.126
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGjD7d5LvhOIZcMCeAokG8moXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 802
-  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
-    server: v4.heduian.link
-    port: 30804
-    type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    country: 🇭🇰HK
+    port: 80
+    uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
     alterId: 2
     cipher: auto
-    tls: false
-    skip-cert-verify: true
     network: ws
+    servername: broadcastlv.chat.bilibili.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
     ws-opts:
-      path: /oooo
+      path: /
       headers:
-        Host: ocbc.com
-    delay: 898
-  - name: 新加坡 - 新加坡 - EN Technologies Pte Ltd - 2
-    server: 103.253.27.6
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE23SD0PjrqDaRLR7tM0ZmtoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1594
-  - name: 新西兰 - 奧克蘭都會區 - Host Universal Pty Ltd Auckland Services - 1
-    server: 180.149.231.103
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGDp7NTN22hOHrPmTRiG623oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1173
-  - name: 日本 - 东京 - Host Universal Pty Ltd - 1
-    server: 103.108.230.50
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF1n3ssrmKDYg8TSO-HR1yFoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2222
-  - name: 日本 - 东京 - Host Universal Pty Ltd - 2
-    server: 180.149.230.169
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHIBtGYzBf7fN7xzDOXKwewoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 777
-  - name: 日本 - 东京 - Host Universal Pty Ltd - 3
-    server: 103.108.230.51
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFKGzse6yG6XBMiePlcU7X2oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 777
-  - name: 日本 - 东京 - Host Universal Pty Ltd - 4
-    server: 103.108.230.31
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEFsQmyvOcw058hhiNuXiS-oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1436
-  - name: 智利 - Buin - Latitude.sh - 1
-    server: 45.250.252.93
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFLFcIQHaeyM2ppzrkU70jzoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1341
-  - name: 比利时 - Bredene - M247 Europe SRL - 3
-    server: 37.120.236.26
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHl_nt6NDYgo6pewEvExhpSoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2068
-  - name: 比利时 - Nossegem - M247 Europe SRL - 1
-    server: 146.70.176.222
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHaI5ewVwxuJMVcpL3gGDeloXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1365
-  - name: 比利时 - 圣吉尔 - M247 Europe SRL - 2
-    server: 185.232.21.18
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEWwdCAA10F0nJsjHNEFX8PoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1730
-  - name: 法国 - 巴黎 - GTHost - 3
-    server: 139.64.167.194
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqET0QOwMj0sAR6YVRRarpPFxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 802
-  - name: 法国 - 巴黎 - Online S.A.S. - 1
-    server: 2001:bc8:32d7:302::10
-    port: 44579
+        HOST: broadcastlv.chat.bilibili.com
+    delay: 860
+  - name: 中国 - 香港 - HongKong Virtual Internal Server Company Limited - 6
+    server: 103.243.26.209
     type: vmess
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+    port: 10086
+    uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
     alterId: 0
     cipher: auto
-    tls: false
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 880
+  - name: 中国 - 香港 - Hytron Network Services Limited - 10
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21862
+    password: 5978419a-a183-419e-a88e-9185f1e974f1
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 734
+  - name: 中国 - 香港 - Hytron Network Services Limited - 11
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21862
+    password: 7789b504-24e9-4ff0-8cff-03a5c9005f1d
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1132
+  - name: 中国 - 香港 - Hytron Network Services Limited - 12
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21891
+    password: 86ef06e2-b675-4623-b5eb-cc06dbc39580
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1118
+  - name: 中国 - 香港 - Hytron Network Services Limited - 8
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21866
+    password: 7ae21af3-5c58-4656-872a-ca9c7607af07
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1007
+  - name: 中国 - 香港 - Hytron Network Services Limited - 9
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21866
+    password: 5978419a-a183-419e-a88e-9185f1e974f1
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1702
+  - name: 俄罗斯 - 多莫傑多沃 - Cloudflare, Inc. - 1
+    server: 5.42.220.253
+    type: vless
+    country: 🏁ZZ
+    port: 8443
+    udp: true
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    ws-opts:
+      path: telegram🇨🇳@wangcai2/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+    delay: 1156
+  - name: 加拿大 - 蒙特利尔 - BrainStorm Network, Inc - 1
+    server: 45.154.204.7
+    type: ss
+    country: 🇬🇧GB
+    port: 990
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    cipher: chacha20-ietf-poly1305
+    delay: 1607
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
+    server: 3.126.78.233
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1134
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 3
+    server: 3.126.78.233
+    type: trojan
+    country: 🇩🇪DE
+    port: 22223
+    udp: true
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    delay: 1112
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 4
+    server: 3.77.10.254
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1134
+  - name: 德国 - 法兰克福 - YottaSrc - 5
+    server: 155.254.35.214
+    type: vmess
+    country: 🇺🇸US
+    port: 51409
+    uuid: 703a1b6c-a01e-45f8-9040-c29cbb0235e1
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 677
+  - name: 德国 - 纽伦堡 - Hetzner Online GmbH - 1
+    server: 167.235.143.230
+    type: vmess
+    country: 🇩🇪DE
+    port: 40000
+    uuid: 2806fc58-3e6e-48c5-b643-08214ef58593
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 773
+  - name: 新加坡 - 新加坡 - PT Herza Digital Indonesia - 1
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21877
+    password: 5978419a-a183-419e-a88e-9185f1e974f1
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 810
+  - name: 新加坡 - 新加坡 - PT Herza Digital Indonesia - 2
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21877
+    password: 86ef06e2-b675-4623-b5eb-cc06dbc39580
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1540
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 1
+    server: jp02.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 19056
+    udp: true
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    sni: TG.WangCai2
+    skip-cert-verify: true
+    delay: 1539
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 2
+    server: jp02.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 19053
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    skip-cert-verify: true
+    udp: true
+    delay: 855
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 3
+    server: jp02.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 19001
+    udp: true
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    sni: TG.WangCai2
+    skip-cert-verify: true
+    delay: 1473
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 4
+    server: jp01.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 18045
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    skip-cert-verify: true
+    udp: true
+    delay: 1330
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 5
+    server: jp01.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 18025
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    sni: TG.WangCai2
+    skip-cert-verify: true
+    udp: true
+    delay: 1687
+  - name: 日本 - 东京 - Skyspark Hosting LLC - 6
+    server: jp01.weyaf9sdoh2h.space
+    type: trojan
+    country: 🇮🇷IR
+    port: 18013
+    password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+    skip-cert-verify: true
+    udp: true
+    delay: 795
+  - name: 日本 - 大阪市 - SAKURA Internet Inc. - 7
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21867
+    password: 86ef06e2-b675-4623-b5eb-cc06dbc39580
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 779
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
+    server: 15.236.216.210
+    type: trojan
+    country: 🇫🇷FR
+    port: 22223
+    udp: true
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    delay: 2183
+  - name: 美国 - Cedar Knolls - Akamai Technologies, Inc. - 7
+    server: 104.237.150.100
+    type: ss
+    country: 🇺🇸US
+    port: 58433
+    password: ruvYDi4Bm363wacUoEjOz9
+    cipher: chacha20-ietf-poly1305
+    delay: 995
+  - name: 美国 - 圣克拉拉 - prgmr.com, Inc. - 1
+    server: pupas-shirting-unsung.freesocks.work
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: p78naCf2EfOlRSLTX0wFVx
+    cipher: chacha20-ietf-poly1305
+    delay: 2131
+  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 8
+    server: 185.148.14.230
+    type: vmess
+    country: 🇺🇸US
+    port: 30000
+    uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: us.nbee.pp.ua
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /aa
+      headers:
+        HOST: us.nbee.pp.ua
+    delay: 2709
+  - name: 美国 - 紐約 - Datacamp Limited - 6
+    server: 104.17.147.22
+    type: vless
+    country: 🏁ZZ
+    port: 8880
+    udp: true
+    uuid: Parsashonam-Bot-33
     network: ws
     ws-opts:
       path: >-
-        /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-    delay: 932
-  - name: 法国 - 巴黎 - SCALEWAY - 2
-    server: 51.159.220.137
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEa1ja_C6_xGdy04stv2ekLoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2689
-  - name: 法国 - 巴黎 - SCALEWAY - 6
-    server: 51.159.194.50
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHc2sMQXDl6sriw2MVPR6iuoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1754
-  - name: 法国 - 巴黎 - SCALEWAY - 7
-    server: 51.158.54.41
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqH4Xt6HFTuOAeAUm3MXgeQ1xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2000
-  - name: 法国 - 斯特拉斯堡 - OVH SAS - 11
-    server: 51.77.190.70
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqES3hllieTd6EmEbYZPRpYcxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1285
-  - name: 法国 - 斯特拉斯堡 - OVH SAS - 8
-    server: 51.77.190.60
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFJTGrHWBai_Po5U-YUTE6Cxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2344
-  - name: 法国 - 斯特拉斯堡 - OVH SAS - 9
-    server: 51.77.190.29
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFYChIRM2Kj4kX-4cI513F5xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1279
-  - name: 法国 - 格拉沃利讷 - OVH SAS - 10
-    server: 51.68.240.51
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEztpZi2QmOGOg9noj2TAvExsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1565
-  - name: 法国 - 格拉沃利讷 - OVH SAS - 4
-    server: 37.187.194.214
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFbFqHqHBYw6MJ0vOerjCVRxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 678
-  - name: 法国 - 瓦特勒洛 - OVH SAS - 5
-    server: 79.137.101.250
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEq60nQy03cg3LBrw1-wt18xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 718
-  - name: 澳大利亚 - 悉尼 - Amazon.com, Inc. - 1
-    server: 54.252.154.208
-    port: 80
-    type: ss
-    cipher: aes-256-gcm
-    password: dada0801
-    udp: true
-    delay: 1731
-  - name: 澳大利亚 - 悉尼 - HostRoyale Technologies Pvt Ltd - 3
-    server: 45.125.247.13
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFxdZrr-bAk-hrHI5RkHSLzoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2075
-  - name: 澳大利亚 - 墨尔本 - HostRoyale Technologies Pvt Ltd - 2
-    server: 144.48.38.146
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHto_5PKzkjzRNUoNtw_h3lxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2034
-  - name: 爱尔兰 - 都柏林 - M247 Europe SRL - 1
-    server: 188.241.178.86
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHzUdsUNsBP08e2z59tURf3oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1070
-  - name: 爱沙尼亚 - 維爾揚迪 - TELE2/SWIPNET - 1
-    server: 95.153.31.102
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEUNPlJAJ5b97CcVcw7X3EroXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 857
-  - name: 瑞典 - Sköndal - M247 Europe SRL - 1
-    server: 146.70.122.66
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGG5gqSyS0Z0ucEnKR4vNK_oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1778
-  - name: 瑞士 - 苏黎世 - M247 Europe SRL - 1
-    server: 185.183.104.146
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFmzlHBjkhXYfyJeviPqZZOoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1031
-  - name: 白俄罗斯 - 明斯克市 - Support Chain LLC - 1
-    server: 178.172.217.19
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHQpOVbttBn0PzFPs4kCEiRoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1060
-  - name: 白俄罗斯 - 明斯克市 - Support Chain LLC - 2
-    server: 178.172.217.13
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGmU1E__RselIUSW6oqLQFToXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1098
-  - name: 科特迪瓦 - 亚穆苏克罗 - ST DIGITAL Datacenter services - 1
-    server: 102.220.17.118
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqErOLEr_dcCKMM8kJNiBk2RoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1749
-  - name: 立陶宛 - 希奥利艾 - Informacines sistemos ir technologijos, UAB - 1
-    server: 185.64.104.88
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqH5fAfJJkOCNdk4lvbE4aGaoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 944
-  - name: 立陶宛 - 希奥利艾 - Informacines sistemos ir technologijos, UAB - 2
-    server: 85.206.170.244
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqG-H0eKeL8JfTYc2ZHYQJIUoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 924
-  - name: 美国 - 切尼 - PureVoltage Hosting Inc. - 11
-    server: 169.197.85.173
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFfxl4dz4xhTl6YI5hdjwjVxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2884
-  - name: 美国 - 切尼 - PureVoltage Hosting Inc. - 13
-    server: 169.197.85.172
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHuCCIVKdD8dey55VsHis0dxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2836
-  - name: 美国 - 切尼 - PureVoltage Hosting Inc. - 5
-    server: 169.197.85.171
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqG3uIvuphwRt2Lc_dQV2HImxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1394
-  - name: 美国 - 切尼 - PureVoltage Hosting Inc. - 8
-    server: 162.249.172.18
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGJhn-5yQVgpp8Ja6iY892gxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1066
-  - name: 美国 - 圣克拉拉 - GTHost - 9
-    server: 169.197.142.208
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHXeMup4SYUzOXnm9KFk8Epxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1122
-  - name: 美国 - 圣克拉拉 - prgmr.com, Inc. - 1
-    server: pupas-shirting-unsung.freesocks.work
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: p78naCf2EfOlRSLTX0wFVx
-    delay: 406
-  - name: 美国 - 紐約 - Enzu Inc - 4
-    server: 5.180.44.194
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGrivcdrF6cK5mUcmxZoMVXoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1866
-  - name: 美国 - 紐約 - PureVoltage Hosting Inc. - 10
-    server: 169.197.86.50
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFu-CxFYUFnKudB7SOG6eu9xsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1057
-  - name: 美国 - 紐約 - PureVoltage Hosting Inc. - 12
-    server: 169.197.94.106
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqH8JA04DyieIEZdJCOnlnBKxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1056
-  - name: 美国 - 紐約 - PureVoltage Hosting Inc. - 7
-    server: 169.197.83.34
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqH1XiTqmoXcqJL-LYpg6M0Sxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1063
+        /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+      headers:
+        Host: Fi.Parsashonam.CfD.
+    delay: 2414
   - name: 美国 - 紐華克 - Cloudflare, Inc. - 2
-    server: 202.85.53.74
+    server: 27.100.189.152
+    type: vless
+    country: 🇰🇷KR
+    port: 50000
+    udp: true
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    ws-opts:
+      path: Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+    delay: 950
+  - name: 美国 - 紐華克 - Cloudflare, Inc. - 3
+    server: 118.91.78.76
+    type: vless
+    country: 🇰🇷KR
+    port: 50001
+    udp: true
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    ws-opts:
+      path: telegram@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+    delay: 1559
+  - name: 美国 - 紐華克 - Cloudflare, Inc. - 5
+    server: 47.76.218.163
     port: 443
     type: vless
     uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
     tls: true
-    servername: gaosir.unfeeling.sbs
     network: ws
     ws-opts:
-      path: /X@节点狂魔/
+      path: /freecodes/
       headers:
         Host: gaosir.unfeeling.sbs
-    delay: 2483
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 3
-    server: nop-55q.pages.dev
-    port: 2053
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: gaosir.unfeeling.sbs
+    delay: 2345
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
+    network: ws
+    port: 8080
+    server: 104.18.15.19
+    type: vless
+    udp: true
+    uuid: 252d7c6c-3f50-44fb-9a51-13963fc727e0
+    ws-opts:
+      headers:
+        Host: 0105.f5s8fbc2.workers.dev
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv)
+          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
+          Chrome/63.0.3239.111 Mobile Safari/537.36
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    delay: 524
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
+    server: 45.130.125.253
+    type: vless
+    country: 🇷🇸RS
+    port: 2096
+    udp: true
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    ws-opts:
+      path: /Telegram@freecodes/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+    delay: 1014
+  - name: 美国 - 西雅圖 - Zhejiang Aiyun Network Technology Co Ltd - 10
+    server: baigou1.kkieo555.cn
     type: trojan
-    password: T@_WvT8Ho@LW%w_,
-    sni: NOp-55q.pAgEs.dEv
-    skip-cert-verify: false
+    country: 🇨🇳CN
+    port: 21864
+    password: 7789b504-24e9-4ff0-8cff-03a5c9005f1d
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 999
+  - name: 美国 - 西雅圖 - Zhejiang Aiyun Network Technology Co Ltd - 9
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21865
+    password: 86ef06e2-b675-4623-b5eb-cc06dbc39580
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1066
+  - name: 芬兰 - 赫尔辛基 - Hetzner Online GmbH - 1
+    server: 104.17.147.22
+    type: vless
+    country: 🏁ZZ
+    port: 8080
+    udp: true
+    uuid: Parsashonam-Bot-33
     network: ws
     ws-opts:
-      path: /trGPZDfetEwuO25SAs
+      path: >-
+        /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
       headers:
-        Host: NOp-55q.pAgEs.dEv
+        Host: Fi.Parsashonam.CfD.
+    delay: 1050
+  - name: 荷兰 - 哈勒姆 - Online S.A.S. - 1
+    server: 51.159.226.1
+    port: 49003
+    type: hysteria
+    auth_str: dongtaiwang.com
+    auth-str: dongtaiwang.com
+    up: 11
+    down: 55
+    protocol: udp
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
     udp: true
-    delay: 928
-  - name: 美国 - 達拉斯 - GTHost - 6
-    server: 167.17.66.82
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqE0waC1rosshIhJ0GkcTPcexsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1208
-  - name: 芬兰 - 赫尔辛基 - Creanova - 2
-    server: 194.34.134.21
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF13zXFy84YN-hYAl1n7_FAoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1462
-  - name: 芬兰 - 赫尔辛基 - M247 Europe SRL - 1
-    server: 83.143.242.74
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF2uRlktZcNbNXngxy0Aek7oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 926
-  - name: 英国 - Erith - OVH SAS - 6
-    server: 51.89.173.123
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGjsXu_BrBzLubFgJ3btF9Oxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1974
-  - name: 英国 - Poplar - Clouvider Limited - 1
-    server: 185.145.201.31
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF6iarTVSURKUHVRWF4aV1mxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 2657
-  - name: 英国 - Poplar - Clouvider Limited - 4
-    server: 185.245.80.156
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGAyekx1lZEKVsTgjSBEhjOoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2304
-  - name: 英国 - Poplar - Clouvider Limited - 7
-    server: 5.180.211.94
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGRo7zsMtXt1EfHrFTiQzyFoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2268
-  - name: 英国 - Stretford - M247 Europe SRL - 8
-    server: 139.28.176.106
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEXItmIqRiU_2ql1yECCn-OoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2390
-  - name: 英国 - 伦敦 - OVH SAS - 10
-    server: 145.239.6.2
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGT_ia5hxWcIIu6hWQqGUnAoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1541
-  - name: 英国 - 倫敦金融城 - GTHost - 9
-    server: 172.99.190.183
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqES9fao3YnEJ1sH7QBBRT6qoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2036
-  - name: 英国 - 梅登黑德 - Dedicated Server Hosting - 2
-    server: 88.150.230.5
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEVw_W8LdIFxTKRQ3-RGp3PoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 822
-  - name: 英国 - 梅登黑德 - RapidSwitch Ltd - 5
-    server: 78.129.229.29
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHRxY44lrwClI6JUup8ytutxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1984
-  - name: 英国 - 诺丁汉 - Skymarket - 3
-    server: 212.84.160.58
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqECiftFD0TndjmpoU8y32GmoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 863
-  - name: 荷兰 - 哈勒姆 - Online SAS NL - 1
-    server: 51.15.16.66
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGbuTfPsg4GrDc5h57sJvAjoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 699
-  - name: 蒙古 - 乌兰巴托 - Intelligent Tools - 1
-    server: 43.231.113.84
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqHE4CVeYSBDlX5o08G77CpboXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2950
-  - name: 蒙古 - 乌兰巴托 - Intelligent Tools - 2
-    server: 43.231.114.178
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGv-FbzD6EbgjEebzvrdXByoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 924
-  - name: 西班牙 - 巴塞罗那 - Psychz Networks - 2
-    server: 108.181.121.42
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGqZ2opWEFnjA0Y_DPTpcyjoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 917
-  - name: 西班牙 - 马德里 - AXARNET COMUNICACIONES, S.L. - 1
-    server: 188.164.196.6
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGw1uY-PrY7ep_e2kOBbs1HoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1593
-  - name: 越南 - Bo - VNPT Corp - 5
-    server: arxfw2b78fi2q9hzylhn.freesocks.work
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Nk9asglDzHzjktVzTkvhaA
-    delay: 1419
+    delay: 1448
   - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.155.76
+    server: 103.186.154.141
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1313
-  - name: 越南 - Hải Dương - FASTLY - 10
-    server: 103.186.155.156
-    type: ss
-    country: 🏁ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 1446
-  - name: 越南 - Hải Dương - FASTLY - 11
-    server: 103.186.154.42
-    type: ss
-    country: 🏁ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 740
+    delay: 1051
   - name: 越南 - Hải Dương - FASTLY - 2
-    server: 103.186.155.129
+    server: 103.186.154.209
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 755
+    delay: 838
   - name: 越南 - Hải Dương - FASTLY - 3
-    server: 103.186.154.238
+    server: 103.186.154.247
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 676
+    delay: 2218
   - name: 越南 - Hải Dương - FASTLY - 4
-    server: 103.186.155.211
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1952
-  - name: 越南 - Hải Dương - FASTLY - 6
-    server: 103.186.154.190
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 720
-  - name: 越南 - Hải Dương - FASTLY - 7
-    server: 103.186.154.69
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 697
-  - name: 越南 - Hải Dương - FASTLY - 8
-    server: 103.186.154.212
+    server: 103.186.155.9
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 681
-  - name: 越南 - Hải Dương - FASTLY - 9
-    server: 103.186.154.152
+    delay: 1139
+  - name: 越南 - Hải Dương - FASTLY - 5
+    server: 103.186.154.236
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1795
-  - name: 阿拉伯联合酋长国 - 迪拜 - M247 Europe SRL - 1
-    server: 146.70.241.122
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqG3hwlMzbCtfa15xyjpJK9EoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1346
-  - name: 阿根廷 - Bella Vista - Latitude.sh - 4
-    server: 103.50.33.186
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFLf5K5ECAqhTd3t9ZyZg5goXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1081
-  - name: 阿根廷 - Chacarita - IPXON Networks - 1
-    server: 38.165.230.194
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF4KveXh6cTNBRB6noGKlAFoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1440
-  - name: 阿根廷 - Chacarita - IPXON Networks - 2
-    server: 38.165.230.218
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEOkdyS4bmuuEgBlmJ7B14BoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1624
-  - name: 阿根廷 - Chacarita - IPXON Networks - 3
-    server: 38.165.230.130
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqEigy_hXDlqjERgjw9JjZ4kxsnp5o63PElOVpFduiCmYA==
-    password: 1
-    tls: false
-    delay: 1674
-  - name: 阿根廷 - Chacarita - IPXON Networks - 5
-    server: 38.165.230.210
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGftm8ToEjqQJ70cnJTnPXuoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1659
-  - name: 韩国 - 首尔特别市 - M247 Europe SRL - 1
-    server: 79.110.55.34
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqFHZvvOj-oLfogBVwxBOlBMoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 931
-  - name: 韩国 - 首尔特别市 - Psychz Networks - 2
-    server: 140.174.179.129
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqGRS6ARgKhxdEs4KEndA0Q-oXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 2074
-  - name: 墨西哥 - 墨西哥城 - Servnet Mexico, S.A. de C.V. - 1
-    server: 201.150.33.188
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF2QwUVMXLZhKUGUDcIq9PGoXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 1404
-  - name: 墨西哥 - 墨西哥城 - Servnet Mexico, S.A. de C.V. - 2
-    server: 201.150.35.76
-    port: 8081
-    type: http
-    username: >-
-      afY491o7YfK00koaXQD9ka-Gp5qBWDcQMmL6KAZBiqF59IFBwhtqAGMOWpSE8xUooXw609MC0WdYefYZbCn32A==
-    password: 1
-    tls: false
-    delay: 950
+    delay: 1119
+  - name: 韩国 - 仁川广域市 - G-Core Labs S.A. - 1
+    server: baigou1.kkieo555.cn
+    type: trojan
+    country: 🇨🇳CN
+    port: 21871
+    password: 5978419a-a183-419e-a88e-9185f1e974f1
+    sni: douyin.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1336
