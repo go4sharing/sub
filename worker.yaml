@@ -4,46 +4,22 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
-    network: ws
-    password: d0298536-d670-4045-bbb1-ddd5ea68683e
-    port: 2087
-    server: 104.25.254.4
-    sni: azadnet-bdr.pages.dev
-    type: trojan
-    ws-opts:
-      headers:
-        Host: azadnet-bdr.pages.dev
-      path: /azadnet-bdr.pages.dev/?ed=2560&PROT_TYPE=trojan
-    delay: 1563
   - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 4
+    server: wto.org
     type: vmess
-    server: siris.090227.xyz
-    port: 2053
-    uuid: bc5e171b-fe66-47af-a600-b972104fe995
+    country: 🇺🇸US
+    port: 443
+    uuid: 97b5343c-f8bd-40f2-b32d-7c98e1c196d4
     alterId: 0
     cipher: auto
-    udp: true
-    tls: true
     network: ws
-    ws-opts:
-      path: /la1vmess
-      headers:
-        Host: la1.pavo.eu.org
-    servername: la1.pavo.eu.org
-    delay: 1609
-  - name: 美国 - 紐華克 - Cloudflare, Inc. - 2
-    server: 27.117.52.110
-    type: vless
-    country: 🇰🇷KR
-    port: 50001
-    udp: true
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    network: ws
-    servername: gaosir.unfeeling.sbs
+    servername: floral-vol-lexington-liverpool.trycloudflare.com
+    http-opts: {}
+    h2-opts: {}
     tls: true
+    skip-cert-verify: true
     ws-opts:
-      path: Telegram🇨🇳@WangCai2/?ed=2560
+      path: /97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm?ed=2048
       headers:
-        Host: gaosir.unfeeling.sbs
-    delay: 558
+        HOST: floral-vol-lexington-liverpool.trycloudflare.com
+    delay: 2201
