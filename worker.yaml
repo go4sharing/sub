@@ -3,4 +3,22 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
+    server: 104.17.208.73
+    port: 2053
+    type: vless
+    uuid: 685fce2d-cd0d-4b59-94f4-91c95c06257f
+    tls: true
+    tfo: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: mahb.edu.bolo.fyi
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: mahb.edu.bolo.fyi
+    delay: 2768
