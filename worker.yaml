@@ -3,4 +3,23 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 美国 - 紐華克 - Cloudflare, Inc. - 5
+    server: 154.38.116.8
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: hk.nbee.pp.ua
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /aa
+      headers:
+        HOST: hk.nbee.pp.ua
+    delay: 709
