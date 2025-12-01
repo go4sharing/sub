@@ -3,4 +3,34 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 拉脱维亚 - 里加 - Cloudflare, Inc. - 1
+    server: 31.56.117.73
+    type: vmess
+    port: 28573
+    uuid: aa521837-6bfb-47dd-c87c-ec730a974020
+    alterId: 0
+    cipher: auto
+    network: none
+    http-opts: {}
+    h2-opts: {}
+    delay: 800
+  - type: vless
+    name: 英国 - 豪恩斯洛 - Cloudflare, Inc. - 1
+    server: 167.99.86.115
+    port: 443
+    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: kuangbao.xiejiang.dpdns.org
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    tfo: false
+    fast-open: false
+    servername: kuangbao.xiejiang.dpdns.org
+    delay: 1099
