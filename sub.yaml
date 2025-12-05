@@ -4,6 +4,38 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 中国 - 广州市 - China Mobile - 2
+    server: 183.236.51.36
+    type: vmess
+    country: 🇨🇳CN
+    port: 59003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 158
+  - name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
+    server: 58.152.25.242
+    type: trojan
+    port: 443
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    delay: 2015
+  - name: 丹麦 - 哥本哈根 - OVH SAS - 1
+    type: vless
+    server: 141.227.172.96
+    port: 56089
+    uuid: 2d535288-d08e-4de4-b674-fd8cb3c6e4d3
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    delay: 1229
   - name: 俄罗斯 - 莫斯科 - Kaopu Cloud HK Limited - 1
     server: 38.60.223.8
     type: ss
@@ -11,7 +43,20 @@ proxies:
     port: 989
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 1157
+    delay: 708
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 1
+    server: www.visa.com.sg
+    type: vless
+    country: 🏁ZZ
+    port: 2052
+    udp: true
+    uuid: d0c1a844-40be-4717-accf-fd4f67980d4a
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vlesstest.nchen5022-797.workers.dev
+    delay: 587
   - name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
     server: 134.209.147.198
     type: ss
@@ -19,22 +64,73 @@ proxies:
     port: 989
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 1829
+    delay: 854
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+    server: 52.57.238.174
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 954
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 2
+    server: 52.57.238.174
+    type: trojan
+    country: 🇩🇪DE
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1753
   - name: 挪威 - 奥斯陆 - BrainStorm Network, Inc - 1
     type: ss
     server: 107.174.114.71
     port: 443
     password: 595HLF3fHUuw0McM51tpvPygSIB1uf4D
     cipher: chacha20-ietf-poly1305
-    delay: 1125
+    delay: 665
   - name: 摩尔多瓦 - 基希讷乌 - ''IT FRUIT'' S.R.L. - 1
     server: 185.153.197.5
     type: ss
-    country: 🇷🇺RU
     port: 989
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-    delay: 1105
+    delay: 1709
+  - name: 日本 - 东京 - Amazon Technologies Inc. - 1
+    server: 5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art
+    type: vmess
+    port: 28787
+    uuid: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
+    alterId: 1
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    delay: 1341
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
+    server: 13.36.44.112
+    type: trojan
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 2069
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 2
+    server: 15.188.133.222
+    type: trojan
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 2090
   - name: 爱尔兰 - 都柏林 - OVH SAS - 1
     type: vless
     server: 141.227.162.151
@@ -45,7 +141,7 @@ proxies:
     grpc-opts:
       grpc-service-name: >-
         ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-    delay: 1784
+    delay: 971
   - name: 立陶宛 - 维尔纽斯 - WorkTitans B.V. - 1
     server: 45.12.136.170
     type: ss
@@ -53,67 +149,203 @@ proxies:
     port: 443
     password: l668XHPejoSNNuD66BYzyehaCpZexiF7
     cipher: chacha20-ietf-poly1305
-    delay: 1552
-  - name: 美国 - 圣克拉拉 - prgmr.com, Inc. - 1
-    server: pupas-shirting-unsung.freesocks.work
+    delay: 522
+  - name: 美国 - 洛杉矶 - Dedicated.com - 1
+    server: 104.192.226.106
     type: ss
     country: 🇺🇸US
-    port: 443
-    password: p78naCf2EfOlRSLTX0wFVx
-    cipher: chacha20-ietf-poly1305
-    delay: 1218
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
+    delay: 418
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
+    type: vless
+    server: www.speedtest.net
+    port: 8443
+    uuid: c54a5878-ca9e-429b-856e-14c04f2dee91
+    tls: true
+    network: ws
+    ws-opts:
+      path: /r6my2qnblj2cbh5e/mzquodgunjmumtyw
+      headers:
+        Host: niki-a5g.pages.dev
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    servername: niki-a5g.pages.dev
+    delay: 810
   - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
-    server: 82.38.31.210
+    server: 82.38.31.218
     type: ss
     country: 🇬🇧GB
     port: 8080
     password: k1dBOmOB4oqi7Ump37a1bQ
     cipher: chacha20-ietf-poly1305
-    delay: 739
+    delay: 1088
   - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.155.70
+    server: 103.186.154.182
     type: ss
     country: 🇻🇳VN
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1175
-  - name: 越南 - Hải Dương - FASTLY - 2
-    server: 103.186.154.219
+    delay: 871
+  - name: 越南 - Hải Dương - FASTLY - 10
+    server: 103.186.155.52
     type: ss
     country: 🇻🇳VN
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1021
-  - name: 越南 - Hải Dương - FASTLY - 3
+    delay: 1306
+  - name: 越南 - Hải Dương - FASTLY - 11
+    server: 103.186.154.242
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 856
+  - name: 越南 - Hải Dương - FASTLY - 12
+    server: 103.186.155.142
+    type: ss
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 1110
+  - name: 越南 - Hải Dương - FASTLY - 13
+    server: 103.186.154.208
+    type: ss
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2878
+  - name: 越南 - Hải Dương - FASTLY - 14
     type: ss
     server: 103.186.155.143
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1106
-  - name: 越南 - Hải Dương - FASTLY - 4
+    delay: 1090
+  - name: 越南 - Hải Dương - FASTLY - 15
+    server: 103.186.155.138
+    type: ss
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 809
+  - name: 越南 - Hải Dương - FASTLY - 16
+    type: ss
+    server: 103.186.155.48
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 1281
+  - name: 越南 - Hải Dương - FASTLY - 17
     server: 103.186.155.133
     type: ss
     country: 🏁 ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 841
-  - name: 越南 - Hải Dương - FASTLY - 5
+    delay: 833
+  - name: 越南 - Hải Dương - FASTLY - 18
+    server: 103.186.155.20
+    type: ss
+    country: 🏁 ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2181
+  - name: 越南 - Hải Dương - FASTLY - 19
     server: 103.186.155.41
     type: ss
     country: 🏁ZZ
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1657
-  - name: 韩国 - Gwanak-gu - SK Broadband Co Ltd - 1
-    server: p141.panda001.net
+    delay: 854
+  - name: 越南 - Hải Dương - FASTLY - 2
+    server: 103.186.155.222
     type: ss
-    country: 🇰🇷 KR
-    port: 4652
-    password: qwerREWQ@@
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 870
+    delay: 864
+  - name: 越南 - Hải Dương - FASTLY - 20
+    server: 103.186.154.47
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 817
+  - name: 越南 - Hải Dương - FASTLY - 21
+    server: 103.186.154.141
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 1273
+  - name: 越南 - Hải Dương - FASTLY - 3
+    server: 103.186.155.103
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 846
+  - name: 越南 - Hải Dương - FASTLY - 4
+    type: ss
+    server: 103.186.154.215
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 825
+  - name: 越南 - Hải Dương - FASTLY - 5
+    server: 103.186.155.232
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 850
+  - name: 越南 - Hải Dương - FASTLY - 6
+    server: 103.186.154.244
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 853
+  - name: 越南 - Hải Dương - FASTLY - 7
+    server: 103.186.154.159
+    type: ss
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2160
+  - name: 越南 - Hải Dương - FASTLY - 8
+    server: 103.186.154.219
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 843
+  - name: 越南 - Hải Dương - FASTLY - 9
+    server: 103.186.155.183
+    type: ss
+    country: 🏁ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2031
