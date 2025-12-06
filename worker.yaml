@@ -3,35 +3,4 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies:
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 1
-    server: www.visa.com.sg
-    type: vless
-    country: 🏁ZZ
-    port: 2052
-    udp: true
-    uuid: d0c1a844-40be-4717-accf-fd4f67980d4a
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vlesstest.nchen5022-797.workers.dev
-    delay: 587
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
-    type: vless
-    server: www.speedtest.net
-    port: 8443
-    uuid: c54a5878-ca9e-429b-856e-14c04f2dee91
-    tls: true
-    network: ws
-    ws-opts:
-      path: /r6my2qnblj2cbh5e/mzquodgunjmumtyw
-      headers:
-        Host: niki-a5g.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    alpn:
-      - http/1.1
-    client-fingerprint: randomized
-    servername: niki-a5g.pages.dev
-    delay: 810
+proxies: []
