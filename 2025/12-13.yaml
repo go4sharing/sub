@@ -1,0 +1,360 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 2
+    server: twmoon1-cdn-route.couldflare-cdn.com
+    port: 1443
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+    password: exaxgqkKkd0TAMrCxeonWg==
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 579
+  - name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 1
+    server: 8.210.184.105
+    port: 40374
+    type: vmess
+    uuid: 36b76373-7a4f-4669-9113-7d247bcf2704
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    udp: true
+    delay: 1129
+  - name: 奥地利 - 維也納 - Orion Network Limited - 1
+    server: desrv.vmagnum.win
+    type: ss
+    country: 🇩🇪DE
+    port: 57456
+    password: 345dbf842bce4b66
+    cipher: chacha20-ietf-poly1305
+    delay: 2639
+  - name: 尼日利亚 - 阿布贾 - Trefoil Networks LTD - 1
+    server: 160.119.196.92
+    type: vmess
+    port: 36334
+    uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+    alterId: 0
+    cipher: auto
+    network: none
+    http-opts: {}
+    h2-opts: {}
+    delay: 2329
+  - name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
+    server: 3.126.180.133
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1715
+  - name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 2
+    server: 52.28.28.48
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 2543
+  - name: 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+    server: www.speedtest.net
+    type: vless
+    country: 🏁ZZ
+    port: 80
+    udp: true
+    uuid: a583997d-96c7-4f75-b12b-c2e9526c56f1
+    network: ws
+    ws-opts:
+      path: /ali
+      headers:
+        Host: www.speedtest.net.b.1.speedtest2029.com.v2logy.ir.
+    delay: 1570
+  - name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
+    server: 129.212.194.164
+    type: vmess
+    country: 🇺🇸US
+    port: 7443
+    uuid: 80941aa4-9308-41e7-8bfe-2299d77bc3b3
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1072
+  - name: 德国 - 法兰克福 - DigitalOcean, LLC - 4
+    server: 129.212.194.164
+    type: vmess
+    country: 🇺🇸US
+    port: 7443
+    uuid: 5c6d4107-464b-40f1-b356-de21ed1f0ced
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1054
+  - name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+    server: v12.hdacd.com
+    type: vmess
+    country: 🇨🇳CN
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    network: tcp
+    servername: v12.hdacd.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1771
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 1
+    server: 13.38.79.160
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 707
+  - name: 法国 - 巴黎 - Amazon Technologies Inc. - 2
+    server: 35.180.57.2
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 933
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 3
+    server: 35.181.248.18
+    type: trojan
+    country: 🇫🇷FR
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1027
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 4
+    server: 35.181.248.18
+    type: trojan
+    country: 🇫🇷FR
+    port: 22223
+    udp: true
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    delay: 1027
+  - name: 法国 - 巴黎 - Amazon.com, Inc. - 5
+    server: 51.44.178.195
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1977
+  - name: 爱尔兰 - 都柏林 - Amazon Technologies Inc. - 1
+    server: 52.50.200.2
+    type: ss
+    country: 🇮🇪IE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1391
+  - name: 立陶宛 - 维尔纽斯 - WorkTitans B.V. - 1
+    server: 45.12.136.170
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: l668XHPejoSNNuD66BYzyehaCpZexiF7
+    cipher: chacha20-ietf-poly1305
+    delay: 831
+  - name: 美国 - Ashburn - Amazon.com, Inc. - 1
+    server: 18.207.122.59
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 2153
+  - name: 越南 - Hải Dương - FASTLY - 1
+    server: 103.186.154.209
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1344
+  - name: 越南 - Hải Dương - FASTLY - 10
+    server: 103.186.155.111
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1746
+  - name: 越南 - Hải Dương - FASTLY - 11
+    server: 103.186.155.148
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1736
+  - name: 越南 - Hải Dương - FASTLY - 12
+    server: 103.186.155.102
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2142
+  - name: 越南 - Hải Dương - FASTLY - 13
+    server: 103.186.155.240
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1470
+  - name: 越南 - Hải Dương - FASTLY - 14
+    server: 103.186.155.52
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1839
+  - name: 越南 - Hải Dương - FASTLY - 15
+    server: 103.186.155.123
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1430
+  - name: 越南 - Hải Dương - FASTLY - 16
+    server: 103.186.154.9
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1425
+  - name: 越南 - Hải Dương - FASTLY - 17
+    server: 103.186.155.48
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2371
+  - name: 越南 - Hải Dương - FASTLY - 18
+    server: 103.186.155.75
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1899
+  - name: 越南 - Hải Dương - FASTLY - 19
+    server: 103.186.155.51
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2335
+  - name: 越南 - Hải Dương - FASTLY - 2
+    server: 103.186.154.199
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2325
+  - name: 越南 - Hải Dương - FASTLY - 20
+    server: 103.186.154.60
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2784
+  - name: 越南 - Hải Dương - FASTLY - 21
+    server: 103.186.154.55
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1867
+  - name: 越南 - Hải Dương - FASTLY - 3
+    server: 103.186.154.229
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1434
+  - name: 越南 - Hải Dương - FASTLY - 4
+    server: 103.186.154.71
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1283
+  - name: 越南 - Hải Dương - FASTLY - 5
+    server: 103.186.155.116
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1326
+  - name: 越南 - Hải Dương - FASTLY - 6
+    server: 103.186.155.117
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2678
+  - name: 越南 - Hải Dương - FASTLY - 7
+    server: 103.186.155.68
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2797
+  - name: 越南 - Hải Dương - FASTLY - 8
+    server: 103.186.155.85
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2644
+  - name: 越南 - Hải Dương - FASTLY - 9
+    server: 103.186.155.107
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1755
