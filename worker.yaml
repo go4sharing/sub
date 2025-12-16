@@ -3,4 +3,32 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 1
+    server: 172.66.44.230
+    port: 8443
+    type: trojan
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    network: ws
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+    udp: true
+    delay: 1381
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 1
+    server: cloudflare.tv
+    port: 2053
+    type: vless
+    uuid: 69413f01-c5ae-edb7-66e7-0a9e11caf2c9
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooo
+      headers:
+        Host: ss.saaas.de5.net
+    udp: true
+    servername: ss.saaas.de5.net
+    delay: 1319
