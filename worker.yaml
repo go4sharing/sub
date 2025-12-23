@@ -4,65 +4,28 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 中国 - 香港 - Cloudflare, Inc. - 4
+    server: 154.38.116.8
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: hk.nbee.pp.ua
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /aa
+      headers:
+        HOST: hk.nbee.pp.ua
+    delay: 300
   - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 10
-    server: 43.250.54.105
-    port: 8444
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1134
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 11
     type: vless
-    server: 104.19.173.145
-    port: 443
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: jp-99k.pages.dev
-    client-fingerprint: chrome
-    servername: jp-99k.pages.dev
-    delay: 1159
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 12
-    type: trojan
-    server: one.cf.cdn.hyli.xyz
-    port: 443
-    udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    delay: 1082
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 13
-    type: vless
-    server: china.embassy.gov.au
-    port: 2053
-    uuid: 6945f532-64d5-2d4e-43c1-b93633387534
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saas.netlib.ccwu.cc
-    client-fingerprint: chrome
-    servername: saas.netlib.ccwu.cc
-    delay: 1268
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 14
-    type: vless
-    server: 198.41.208.234
+    server: 104.19.49.192
     port: 443
     uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
     tls: true
@@ -71,80 +34,24 @@ proxies:
       path: /
       headers:
         Host: snippets.kkii.eu.org
-    client-fingerprint: chrome
     servername: snippets.kkii.eu.org
-    delay: 1341
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 15
-    type: vless
-    server: 172.64.53.226
-    port: 443
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    client-fingerprint: chrome
-    servername: snippets.kkii.eu.org
-    delay: 657
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 16
-    type: vless
-    server: 104.17.202.10
-    port: 443
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    client-fingerprint: chrome
-    servername: snippets.kkii.eu.org
-    delay: 1111
+    delay: 990
   - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 2
-    type: trojan
-    server: freeyx.cloudflare88.eu.org
-    port: 443
+    server: www.udemy.com
+    type: vless
+    country: 🏁ZZ
+    port: 2095
     udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
+    uuid: ''
     network: ws
+    skip-cert-verify: true
+    servername: fangbinxingnmsl.pusytroller.cf
     ws-opts:
       path: /
       headers:
-        Host: snippets.kkii.eu.org
-    delay: 1516
+        Host: fangbinxingnmsl.pusytroller.cf
+    delay: 882
   - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 3
-    type: trojan
-    server: 104.19.220.22
-    port: 443
-    udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    delay: 1602
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 4
-    type: trojan
-    server: cmcc.877774.xyz
-    port: 443
-    udp: true
-    password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    sni: cm2-bpg.filegear-sg.me
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /proxyip=210.61.97.241:81
-      headers:
-        Host: cm2-bpg.filegear-sg.me
-    delay: 1709
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 5
     type: trojan
     server: 104.19.55.205
     port: 443
@@ -155,181 +62,107 @@ proxies:
     network: ws
     ws-opts:
       path: /
-    delay: 1426
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 6
-    server: 128.241.251.81
-    port: 40001
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1107
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 8
-    server: 117.50.80.157
-    port: 1234
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1085
-  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 9
-    server: 104.168.87.155
-    port: 5432
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1058
-  - name: 加拿大 - 密西沙加 - Cloudflare, Inc. - 7
-    server: 192.227.153.124
-    port: 5901
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1649
-  - name: 土耳其 - Kocasinan - Cloudflare, Inc. - 1
-    server: 176.97.219.103
-    port: 9443
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1715
-  - name: 土耳其 - Kocasinan - Cloudflare, Inc. - 2
-    server: 91.216.104.76
-    port: 7080
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1645
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 15
-    server: singapore.com
+    delay: 962
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 4
+    server: cfxr.eu.org
     port: 2053
     type: vless
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+    uuid: 6949ea89-4825-1b47-3b03-113cede87254
     tls: true
     client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /proxyip=sjc.o00o.ooo
       headers:
-        Host: saasorg.saaas.ccwu.cc
+        Host: stall.saass.ccwu.cc
     udp: true
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1269
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 25
-    server: www.aapanel.com
-    port: 2053
+    servername: stall.saass.ccwu.cc
+    delay: 1483
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 5
     type: vless
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    udp: true
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1267
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 26
-    server: docker.1panel.live
-    port: 2053
-    type: vless
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    udp: true
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1292
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 3
-    server: 104.26.1.110
+    server: 104.16.31.105
     port: 443
-    type: trojan
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: bb-67r.pages.dev
+    client-fingerprint: chrome
+    servername: bb-67r.pages.dev
+    delay: 1612
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 6
+    type: vless
+    server: www.udemy.com
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: fangbinxingnmsl.pusytroller.cf
+    servername: fangbinxingnmsl.pusytroller.cf
+    delay: 1609
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 7
+    type: vless
+    server: 190.93.246.191
+    port: 2053
+    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+    tls: true
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooo
+      headers:
+        Host: saasorg.saaas.ccwu.cc
+    client-fingerprint: chrome
+    servername: saasorg.saaas.ccwu.cc
+    delay: 1383
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 8
+    type: vless
+    server: 104.17.69.244
+    port: 443
+    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+    tls: true
     network: ws
     ws-opts:
       path: /
       headers:
         Host: snippets.kkii.eu.org
-    udp: true
-    delay: 1043
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 30
-    server: docker.1panel.live
+    client-fingerprint: chrome
+    servername: snippets.kkii.eu.org
+    delay: 2358
+  - name: 加拿大 - 多伦多 - Cloudflare, Inc. - 9
+    type: vless
+    server: one.dash.cloudflare.com
+    port: 2053
+    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+    tls: true
+    network: ws
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooo
+      headers:
+        Host: saasorg.saaas.ccwu.cc
+    client-fingerprint: chrome
+    servername: saasorg.saaas.ccwu.cc
+    delay: 2860
+  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 2
+    server: notability.com
     port: 2053
     type: vless
-    uuid: 6945f532-64d5-2d4e-43c1-b93633387534
+    uuid: 6949ea89-4825-1b47-3b03-113cede87254
     tls: true
     client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /proxyip=sjc.o00o.ooo
       headers:
-        Host: saas.netlib.ccwu.cc
+        Host: stall.saass.ccwu.cc
     udp: true
-    servername: saas.netlib.ccwu.cc
+    servername: stall.saass.ccwu.cc
     delay: 1325
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 34
-    server: www.aapanel.com
-    port: 2053
-    type: vless
-    uuid: 6945f532-64d5-2d4e-43c1-b93633387534
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saas.netlib.ccwu.cc
-    udp: true
-    servername: saas.netlib.ccwu.cc
-    delay: 1083
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 36
+  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 5
     type: vless
     server: www.gco.gov.qa
     port: 2053
@@ -342,78 +175,7 @@ proxies:
         Host: saasorg.saaas.ccwu.cc
     client-fingerprint: chrome
     servername: saasorg.saaas.ccwu.cc
-    delay: 1193
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 40
-    server: 172.67.79.235
-    port: 443
-    type: vless
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    udp: true
-    servername: snippets.kkii.eu.org
-    delay: 1133
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 42
-    server: www.visa.cn
-    port: 2053
-    type: vless
-    uuid: 6945f532-64d5-2d4e-43c1-b93633387534
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saas.netlib.ccwu.cc
-    udp: true
-    servername: saas.netlib.ccwu.cc
-    delay: 1243
-  - name: 德国 - 德赖艾希 - Cloudflare, Inc. - 49
-    type: vless
-    server: notability.com
-    port: 2053
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    client-fingerprint: chrome
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1303
-  - name: 德国 - 杜塞尔多夫 - Cloudflare, Inc. - 4
-    server: 194.76.137.229
-    port: 2223
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1172
-  - name: 捷克 - 克拉德诺 - Cloudflare, Inc. - 1
-    server: 81.2.233.43
-    port: 8586
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1331
+    delay: 2479
   - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 2
     server: cf.877774.xyz
     port: 2087
@@ -427,36 +189,24 @@ proxies:
       headers:
         Host: cm2-bpg.filegear-sg.me
     udp: true
-    delay: 792
+    delay: 678
   - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 3
-    server: mfa.gov.ua
-    port: 2096
-    type: trojan
-    password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    sni: cm2-bpg.filegear-sg.me
-    skip-cert-verify: true
     network: ws
+    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+    port: 443
+    server: cf.zhetengsha.eu.org
+    skip-cert-verify: false
+    sni: _acme-challenge.2go.cloudns.be
+    type: trojan
     ws-opts:
-      path: /proxyip=210.61.97.241:81
       headers:
-        Host: cm2-bpg.filegear-sg.me
-    udp: true
-    delay: 1014
+        Host: _acme-challenge.2go.cloudns.be
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    delay: 551
   - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 4
-    server: 46.3.193.83
-    port: 25000
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 505
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 5
     type: vless
     server: nrtcfdns.zone.id
     port: 443
@@ -469,8 +219,8 @@ proxies:
         Host: snippets.kkii.eu.org
     client-fingerprint: randomized
     servername: snippets.kkii.eu.org
-    delay: 671
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 6
+    delay: 856
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 5
     type: vless
     server: 172.64.49.11
     port: 2087
@@ -485,8 +235,8 @@ proxies:
       max-early-data: 2560
     client-fingerprint: chrome
     servername: bb-67r.pages.dev
-    delay: 1451
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 7
+    delay: 2100
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 6
     type: vless
     server: 162.159.4.135
     port: 2087
@@ -499,50 +249,8 @@ proxies:
         Host: qqq-3t8.pages.dev
     client-fingerprint: chrome
     servername: qqq-3t8.pages.dev
-    delay: 572
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 4
-    type: trojan
-    server: 172.64.229.205
-    port: 443
-    udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    delay: 470
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 5
-    server: 202.182.96.235
-    port: 60001
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1083
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 6
-    server: 172.64.229.205
-    port: 443
-    type: vless
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    udp: true
-    servername: snippets.kkii.eu.org
-    delay: 512
-  - name: 日本 - 成田市 - Cloudflare, Inc. - 7
+    delay: 828
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 3
     type: vless
     server: 108.162.198.185
     port: 443
@@ -555,183 +263,10 @@ proxies:
         Host: snippets.kkii.eu.org
     client-fingerprint: randomized
     servername: snippets.kkii.eu.org
-    delay: 618
-  - name: 法国 - 奧奈叢林 - Cloudflare, Inc. - 3
-    server: 38.244.212.54
-    port: 8444
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1237
-  - name: 法国 - 奧奈叢林 - Cloudflare, Inc. - 4
-    server: 45.154.96.218
-    port: 999
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1222
-  - name: 瑞士 - 温特图尔 - Cloudflare, Inc. - 1
-    server: 104.244.79.140
-    port: 8444
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1517
-  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 16
-    server: 162.159.254.137
-    port: 2053
+    delay: 599
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 4
     type: vless
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    udp: true
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1066
-  - name: 美国 - 洛杉矶 - Cloudflare, Inc. - 9
-    type: vmess
-    server: 154.211.8.58
-    port: 443
-    cipher: auto
-    uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-    alterId: 0
-    tls: true
-    network: ws
-    ws-opts:
-      path: /aa
-      headers:
-        Host: us.nbee.pp.ua
-    client-fingerprint: ''
-    tfo: false
-    fast-open: false
-    servername: us.nbee.pp.ua
-    delay: 2021
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
-    type: trojan
-    server: 104.17.167.134
-    port: 443
-    udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    delay: 1362
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
-    type: vless
-    server: www.udemy.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: fangbinxingnmsl.pusytroller.cf
-    servername: fangbinxingnmsl.pusytroller.cf
-    delay: 929
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
-    type: vless
-    server: notion.site
-    port: 2053
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    client-fingerprint: chrome
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1192
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
-    type: vless
-    server: 104.16.31.105
-    port: 443
-    uuid: e258977b-e413-4718-a3af-02d75492c349
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: bb-67r.pages.dev
-    client-fingerprint: chrome
-    servername: bb-67r.pages.dev
-    delay: 1140
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
-    type: vless
-    server: 104.17.53.155
-    port: 2053
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    client-fingerprint: chrome
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1047
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
-    type: trojan
-    server: 104.17.162.3
-    port: 443
-    udp: true
-    password: 5a2c16f9
-    sni: snippets.kkii.eu.org
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    delay: 1361
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
-    server: convera.com
-    port: 2053
-    type: vless
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    udp: true
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1279
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
-    type: vless
-    server: 104.16.65.1
+    server: 172.64.53.226
     port: 443
     uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
     tls: true
@@ -740,23 +275,24 @@ proxies:
       path: /
       headers:
         Host: snippets.kkii.eu.org
+    client-fingerprint: chrome
     servername: snippets.kkii.eu.org
-    delay: 984
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+    delay: 968
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
     type: vless
-    server: 190.93.246.191
-    port: 2053
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+    server: 104.19.173.145
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
     tls: true
     network: ws
     ws-opts:
-      path: /proxyip=sjc.o00o.ooo
+      path: /
       headers:
-        Host: saasorg.saaas.ccwu.cc
+        Host: jp-99k.pages.dev
     client-fingerprint: chrome
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1403
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+    servername: jp-99k.pages.dev
+    delay: 2193
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
     type: vless
     server: shops.myshopify.com
     port: 443
@@ -769,51 +305,10 @@ proxies:
         Host: saasorg.saaas.ccwu.cc
     client-fingerprint: chrome
     servername: saasorg.saaas.ccwu.cc
-    delay: 1305
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
-    type: vless
-    server: one.dash.cloudflare.com
-    port: 2053
-    uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
-    tls: true
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: saasorg.saaas.ccwu.cc
-    client-fingerprint: chrome
-    servername: saasorg.saaas.ccwu.cc
-    delay: 1157
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
-    type: vless
-    server: 104.19.49.192
-    port: 443
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snippets.kkii.eu.org
-    servername: snippets.kkii.eu.org
-    delay: 1090
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 1
-    server: 172.67.134.185
-    port: 443
+    delay: 2343
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 6
     type: trojan
-    password: POORIARED
-    sni: reDfRee8.REDFree8.ir
-    network: ws
-    ws-opts:
-      path: >-
-        /eyJqdW5rIjoiVUl6eXhLZkkwUTJ3ZzkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed
-      headers:
-        Host: reDfRee8.REDFree8.ir
-    udp: true
-    delay: 1156
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
-    type: trojan
-    server: cf.130519.xyz
+    server: freeyx.cloudflare88.eu.org
     port: 443
     udp: true
     password: 5a2c16f9
@@ -824,47 +319,32 @@ proxies:
       path: /
       headers:
         Host: snippets.kkii.eu.org
-    delay: 1261
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
-    server: 45.82.13.64
-    port: 9090
+    delay: 1128
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
     type: trojan
-    password: trojan
-    sni: fofang.pages.dev
+    server: 104.19.220.22
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
     skip-cert-verify: true
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1373
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 4
+        Host: snippets.kkii.eu.org
+    delay: 1199
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
     server: 172.67.180.227
     port: 443
     type: trojan
     password: bpb-trojan
     sni: mashdt.pages.dev
-    alpn:
-      - h3
+    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /tr
       headers:
         Host: mashdt.pages.dev
     udp: true
-    delay: 1262
-  - name: 西班牙 - 查馬丁區 - Cloudflare, Inc. - 2
-    server: 83.149.105.45
-    port: 7777
-    type: trojan
-    password: trojan
-    sni: fofang.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: fofang.pages.dev
-    udp: true
-    delay: 1416
+    delay: 1387
