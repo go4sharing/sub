@@ -1,0 +1,382 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 芬兰 - 赫尔辛基 - Scalaxy B.V. - 1
+    server: 38.244.209.215
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: 17295b92-4e50-425c-af95-ee44c42bc03e
+    cipher: aes-256-gcm
+    delay: 2210
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 2
+    server: cf.130519.xyz
+    port: 443
+    type: trojan
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    udp: true
+    delay: 1198
+  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
+    server: 82.38.31.184
+    port: 8080
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    udp: true
+    delay: 1381
+  - name: 美国 - 圣克拉拉 - HostPapa - 1
+    server: 104.168.94.41
+    type: vmess
+    port: 32301
+    uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 1212
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
+    type: trojan
+    server: 104.19.220.22
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    delay: 2164
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 3
+    type: trojan
+    server: 104.19.55.205
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    delay: 2238
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 1
+    type: trojan
+    server: 172.64.229.65
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    delay: 1506
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 2
+    type: trojan
+    server: 172.64.229.6
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    delay: 1383
+  - name: 日本 - 成田市 - Cloudflare, Inc. - 3
+    server: 172.64.229.86
+    port: 443
+    type: trojan
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: '%2F'
+      headers:
+        Host: snippets.kkii.eu.org
+    udp: true
+    delay: 1513
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 1
+    type: trojan
+    server: 162.159.24.131
+    port: 443
+    udp: true
+    password: 5a2c16f9
+    sni: snippets.kkii.eu.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.kkii.eu.org
+    delay: 954
+  - name: 越南 - Hải Dương - FASTLY - 1
+    server: 103.186.155.126
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 929
+  - name: 越南 - Hải Dương - FASTLY - 10
+    server: 103.186.154.12
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1391
+  - name: 越南 - Hải Dương - FASTLY - 11
+    server: 103.186.154.75
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 841
+  - name: 越南 - Hải Dương - FASTLY - 12
+    server: 103.186.155.113
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 907
+  - name: 越南 - Hải Dương - FASTLY - 13
+    server: 103.186.154.189
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2824
+  - name: 越南 - Hải Dương - FASTLY - 14
+    server: 103.186.155.206
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1591
+  - name: 越南 - Hải Dương - FASTLY - 15
+    server: 103.186.154.213
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 783
+  - name: 越南 - Hải Dương - FASTLY - 16
+    server: 103.186.154.180
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 955
+  - name: 越南 - Hải Dương - FASTLY - 17
+    server: 103.186.155.21
+    type: ss
+    country: 🏁 ZZ
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 750
+  - name: 越南 - Hải Dương - FASTLY - 18
+    server: 103.186.154.162
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2897
+  - name: 越南 - Hải Dương - FASTLY - 19
+    server: 103.186.155.40
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 764
+  - name: 越南 - Hải Dương - FASTLY - 2
+    server: 103.186.155.82
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 1401
+  - name: 越南 - Hải Dương - FASTLY - 20
+    server: 103.186.155.120
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 1804
+  - name: 越南 - Hải Dương - FASTLY - 21
+    server: 103.186.154.67
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 803
+  - name: 越南 - Hải Dương - FASTLY - 22
+    server: 103.186.155.213
+    type: ss
+    country: 🇻🇳VN
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 2044
+  - name: 越南 - Hải Dương - FASTLY - 23
+    server: 103.186.155.35
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2135
+  - name: 越南 - Hải Dương - FASTLY - 24
+    server: 103.186.155.224
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1895
+  - name: 越南 - Hải Dương - FASTLY - 25
+    server: 103.186.155.227
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 829
+  - name: 越南 - Hải Dương - FASTLY - 26
+    server: 103.186.155.28
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1338
+  - name: 越南 - Hải Dương - FASTLY - 27
+    server: 103.186.154.251
+    type: ss
+    port: 38388
+    udp: true
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+    delay: 757
+  - name: 越南 - Hải Dương - FASTLY - 3
+    server: 103.186.155.105
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 820
+  - name: 越南 - Hải Dương - FASTLY - 4
+    server: 103.186.154.53
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 742
+  - name: 越南 - Hải Dương - FASTLY - 5
+    server: 103.186.154.79
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 808
+  - name: 越南 - Hải Dương - FASTLY - 6
+    server: 103.186.155.43
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 801
+  - name: 越南 - Hải Dương - FASTLY - 7
+    server: 103.186.155.64
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 778
+  - name: 越南 - Hải Dương - FASTLY - 8
+    server: 103.186.154.190
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1018
+  - name: 越南 - Hải Dương - FASTLY - 9
+    server: 103.186.154.253
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 808
+  - name: 中国 - 香港 - Dalian Yichuan Industrial CO - 2
+    server: 103.149.183.154
+    type: ss
+    country: 🇭🇰HK
+    port: 8388
+    password: asd123456
+    cipher: chacha20-ietf
+    delay: 501
+  - name: 中国 - 香港 - Hong Kong Broadband Network Ltd - 3
+    server: hkrelink-g.stand3pro.org
+    type: ss
+    country: 🇨🇳CN
+    port: 566
+    password: d5db18ea-65d7-4df5-ba13-02e949bd06bc
+    cipher: aes-128-gcm
+    delay: 541
+  - name: 中国 - 香港 - Hong Kong Cable Television Limited - 4
+    server: crehk.pro1stand.com
+    type: ss
+    country: 🇨🇳CN
+    port: 564
+    password: d5db18ea-65d7-4df5-ba13-02e949bd06bc
+    cipher: aes-128-gcm
+    delay: 769
+  - name: 中国 - 香港 - Ipxo LLC - 1
+    server: green2.cdntencentmusic.com
+    type: trojan
+    port: 31101
+    password: d0ef8c56-712c-4d95-bb21-11369165d684
+    sni: green2.cdntencentmusic.com
+    udp: true
+    delay: 1154
