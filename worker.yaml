@@ -4,22 +4,180 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 4
-    server: 188.253.27.190
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+    server: cdnjs.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 1181
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 17
+    server: blog.cloudflare.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 1102
+  - type: vless
+    name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 5
+    server: 104.21.224.5
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: l.ayovo.netlib.re
+    delay: 950
+  - name: 美国 - 东洛杉矶 - Cloudflare, Inc. - 7
+    server: vip2.kaixincloud.top
     port: 443
     type: vless
-    uuid: e258977b-e413-4718-a3af-02d75492c349
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
     tls: true
     client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: ww3.xaniujp1.qzz.io
+        Host: sni.meibidi.pp.ua
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     udp: true
-    servername: ww3.xaniujp1.qzz.io
-    delay: 2713
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
+    servername: sni.meibidi.pp.ua
+    delay: 2883
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+    server: www.temu.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 1130
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+    server: docs.cloudflare.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 1107
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+    server: www.fbi.gov
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 2079
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 16
+    server: support.cloudflare.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 2074
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+    server: www.npmjs.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 1854
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+    server: www.udemy.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 2885
+  - type: vless
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 2
+    server: cloudflare.182682.xyz
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: l.ayovo.netlib.re
+    delay: 1384
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 3
     type: vless
     server: 25.129.197.138
     port: 2053
@@ -37,13 +195,50 @@ proxies:
         Host: khamenei.dpdns.org
     client-fingerprint: chrome
     servername: khamenei.dpdns.org
-    delay: 1363
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 6
-    server: v2.dabache.top
+    delay: 2399
+  - type: vless
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
+    server: 104.18.185.26
     port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: l.ayovo.netlib.re
+    delay: 1610
+  - type: vless
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 6
+    server: 104.17.102.95
+    port: 2096
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: sni.meibidi.pp.ua
+    delay: 1953
+  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
+    server: vip1.kaixincloud.top
+    port: 2096
     type: vless
     uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
     tls: true
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /
@@ -52,66 +247,260 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     udp: true
+    servername: sni.meibidi.pp.ua
+    delay: 1997
+  - type: vless
+    name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
+    server: cf.3666888.xyz
+    port: 2096
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
     client-fingerprint: chrome
     servername: sni.meibidi.pp.ua
-    delay: 1439
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
-    server: china.embassy.gov.au
-    port: 2053
-    type: vless
-    uuid: 696ae5e0-9890-b024-13bc-45e960d4f835
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: sssorg.nycmn.camdvr.org
-    udp: true
-    servername: sssorg.nycmn.camdvr.org
-    delay: 1982
-  - name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
-    server: 104.16.2.59
-    port: 8080
-    type: vless
-    uuid: 964891e6-d09e-480c-b041-c7f3207953d3
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: >-
-        /eyJqdW5rIjoibzE1WnlVYklpUVdtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
-      headers:
-        Host: weathered-firefly-8a0f.41c3bce2b6.workers.dev
-    udp: true
-    delay: 2308
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 2
-    server: www.wto.org
-    type: vless
-    country: 🏁ZZ
-    port: 2095
-    udp: true
-    uuid: ''
-    network: ws
-    skip-cert-verify: true
-    servername: xijinpingnmsl.s4ar.workers.dev
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: xijinpingnmsl.s4ar.workers.dev
-    delay: 634
-  - name: 中国 - 香港 - Cloudflare, Inc. - 72
-    server: 43.161.254.121
+    delay: 2452
+  - type: vless
+    name: 日本 - 成田市 - Cloudflare, Inc. - 1
+    server: 162.159.44.142
     port: 443
-    type: vless
-    uuid: e258977b-e413-4718-a3af-02d75492c349
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    client-fingerprint: chrome
+    servername: l.ayovo.netlib.re
+    delay: 430
+  - type: vless
+    name: 日本 - 成田市 - Cloudflare, Inc. - 2
+    server: 162.159.45.232
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    client-fingerprint: chrome
+    servername: l.ayovo.netlib.re
+    delay: 536
+  - type: vless
+    name: 日本 - 成田市 - Cloudflare, Inc. - 3
+    server: 172.64.229.220
+    port: 2096
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
     tls: true
     client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: sni.meibidi.pp.ua
+    delay: 532
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 1
+    server: 162.159.16.63
+    port: 443
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: l.ayovo.netlib.re
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: l.ayovo.netlib.re
+    delay: 420
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 10
+    server: www.wto.org
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: ww3.xaniujp1.qzz.io
-    udp: true
-    servername: ww3.xaniujp1.qzz.io
-    delay: 1749
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 685
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 11
+    server: ns.cloudflare.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 775
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 12
+    server: openai.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 683
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 2
+    server: 217.142.185.111
+    port: 443
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    client-fingerprint: chrome
+    servername: sni.meibidi.pp.ua
+    delay: 1980
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 3
+    server: staticdelivery.nexusmods.com
+    port: 443
+    uuid: b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: kb.as129394.me
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    client-fingerprint: chrome
+    servername: kb.as129394.me
+    delay: 438
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 4
+    server: 104.18.45.223
+    port: 443
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: sni.meibidi.pp.ua
+    delay: 699
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 5
+    server: saas.sin.fan
+    port: 2096
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: sni.meibidi.pp.ua
+    delay: 537
+  - type: vless
+    name: 新加坡 - 新加坡 - Cloudflare, Inc. - 6
+    server: vip3.kaixincloud.top
+    port: 2096
+    uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: sni.meibidi.pp.ua
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: sni.meibidi.pp.ua
+    delay: 691
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 8
+    server: cf.090227.xyz
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 678
+  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 9
+    server: www.shopify.com
+    port: 2095
+    client-fingerprint: randomized
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
+    delay: 782
