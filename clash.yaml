@@ -4,15 +4,15 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 荷兰 - 阿姆斯特丹 - Timeweb, LLP - 1
-    server: 5.129.219.21
-    type: ss
-    country: 🇷🇺 RU
+  - name: 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
+    server: 45.87.175.200
     port: 8080
-    password: tKko+YIAuuZ3d0hsPX2+D3NqepytG1Ha0VRLwBrf0Ak=
-    cipher: aes-128-gcm
-    delay: 2194
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 4
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: cvII85TrW6n0OGyfpHVS1u
+    udp: true
+    delay: 1221
+  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 8
     server: 69.63.210.35
     port: 24943
     type: vmess
@@ -27,16 +27,37 @@ proxies:
         Host: www.bing.com
     udp: true
     client-fingerprint: chrome
-    delay: 1236
-  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 5
+    delay: 794
+  - name: 美国 - 洛杉矶 - DMIT Cloud Services - 9
     server: 69.63.210.35
     port: 29835
     type: ss
     cipher: 2022-blake3-aes-128-gcm
     password: YfafawbTOuyibSDCVvGiag==
     udp: true
-    delay: 1022
+    delay: 597
+  - name: 美国 - 芝加哥 - Datacamp Limited - 1
+    server: 138.199.42.68
+    port: 8080
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+    delay: 1668
   - name: 日本 - 东京 - Akile LTD - 1
+    server: tunnel2.qqa678.com
+    port: 47083
+    type: vmess
+    uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+    network: tcp
+    client-fingerprint: chrome
+    delay: 751
+  - name: 日本 - 东京 - Akile LTD - 2
     server: tunnel1.qqa678.com
     port: 47083
     type: vmess
@@ -48,15 +69,7 @@ proxies:
     udp: true
     network: tcp
     client-fingerprint: chrome
-    delay: 2883
-  - name: 日本 - 東京都 - xTom Japan Corporation - 2
-    server: 103.236.66.70
-    port: 18831
-    type: ss
-    cipher: aes-128-gcm
-    password: fa593414-7a76-4975-909b-7a7c46be123b
-    udp: true
-    delay: 873
+    delay: 1917
   - name: 新加坡 - 新加坡 - Alibaba (US) Technology Co., Ltd. - 2
     server: 103.236.66.70
     port: 18832
@@ -64,7 +77,7 @@ proxies:
     cipher: aes-128-gcm
     password: fa593414-7a76-4975-909b-7a7c46be123b
     udp: true
-    delay: 868
+    delay: 278
   - name: 新加坡 - 新加坡 - Cogent Communications - 1
     server: 103.236.66.70
     port: 18830
@@ -72,109 +85,127 @@ proxies:
     cipher: aes-128-gcm
     password: fa593414-7a76-4975-909b-7a7c46be123b
     udp: true
-    delay: 835
+    delay: 179
   - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.154.253
+    server: 103.186.155.53
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 2243
+    delay: 1147
   - name: 越南 - Hải Dương - FASTLY - 10
-    server: 103.186.155.127
+    server: 103.186.155.203
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1101
+    delay: 1925
+  - name: 越南 - Hải Dương - FASTLY - 11
+    server: 103.186.155.49
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1894
+  - name: 越南 - Hải Dương - FASTLY - 12
+    server: 103.186.155.28
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2722
+  - name: 越南 - Hải Dương - FASTLY - 13
+    server: 103.186.154.72
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2334
+  - name: 越南 - Hải Dương - FASTLY - 14
+    server: 103.186.154.160
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1733
+  - name: 越南 - Hải Dương - FASTLY - 15
+    server: 103.186.154.58
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2424
   - name: 越南 - Hải Dương - FASTLY - 2
-    server: 103.186.155.77
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 2476
-  - name: 越南 - Hải Dương - FASTLY - 3
     server: 103.186.155.44
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1813
-  - name: 越南 - Hải Dương - FASTLY - 4
-    server: 103.186.154.148
+    delay: 1800
+  - name: 越南 - Hải Dương - FASTLY - 3
+    server: 103.186.155.144
     port: 38388
     type: ss
-    country: 🏁 ZZ
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-    delay: 1781
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1279
+  - name: 越南 - Hải Dương - FASTLY - 4
+    server: 103.186.154.241
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1752
   - name: 越南 - Hải Dương - FASTLY - 5
+    server: 103.186.155.50
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1485
+  - name: 越南 - Hải Dương - FASTLY - 6
+    server: 103.186.154.180
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1711
+  - name: 越南 - Hải Dương - FASTLY - 7
+    server: 103.186.155.47
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1580
+  - name: 越南 - Hải Dương - FASTLY - 8
     server: 103.186.155.237
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 870
-  - name: 越南 - Hải Dương - FASTLY - 6
-    server: 103.186.154.181
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 2084
-  - name: 越南 - Hải Dương - FASTLY - 7
-    server: 103.186.154.164
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1236
-  - name: 越南 - Hải Dương - FASTLY - 8
+    delay: 2196
+  - name: 越南 - Hải Dương - FASTLY - 9
     server: 103.186.155.12
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 825
-  - name: 越南 - Hải Dương - FASTLY - 9
-    server: 103.186.154.235
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1975
-  - name: 中国 - 台湾 - Akile LTD - 3
-    server: cdnfire.xiaomispeed.com
-    port: 22231
-    type: trojan
-    password: 85525f21-1376-41df-9f2e-0e507e2d62de
-    sni: cdnfire.xiaomispeed.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 965
-  - name: 中国 - 香港 - Akile LTD - 2
-    server: cdnfire.xiaomispeed.com
-    port: 21115
-    type: trojan
-    password: 85525f21-1376-41df-9f2e-0e507e2d62de
-    sni: cdnfire.xiaomispeed.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-    delay: 1558
+    delay: 2668
   - name: 中国 - 香港 - HaloCloud Network Limited - 1
     server: 103.236.66.70
     port: 18834
@@ -182,4 +213,4 @@ proxies:
     cipher: aes-128-gcm
     password: fa593414-7a76-4975-909b-7a7c46be123b
     udp: true
-    delay: 833
+    delay: 180
