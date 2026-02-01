@@ -3,4 +3,19 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies: []
+proxies:
+  - name: 荷兰 - 阿姆斯特丹 - Cloudflare, Inc. - 3
+    server: 172.67.194.187
+    port: 443
+    type: vless
+    uuid: 21f9985c-d363-4eee-957f-720e9e9f9b8d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: teams.live.com.afrcloud1.c01.kr
+    udp: true
+    client-fingerprint: chrome
+    servername: teams.live.com.afrcloud1.c01.kr
+    delay: 2622
