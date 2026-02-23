@@ -3,25 +3,4 @@ allow-lan: true
 mode: Global
 log-level: info
 external-controller: ':9090'
-proxies:
-  - name: 新加坡 - 新加坡 - Cloudflare, Inc. - 8
-    server: 198.41.211.211
-    port: 443
-    type: vless
-    uuid: a8ea783c-dc54-4b17-96e4-144d1af2cb75
-    tls: true
-    alpn:
-      - h3
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: sa.anjue39.qzz.io
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    udp: true
-    servername: sa.anjue39.qzz.io
-    delay: 473
+proxies: []
