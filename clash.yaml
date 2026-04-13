@@ -4,32 +4,154 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 爱尔兰 - 都柏林 - 1
-    server: 46.137.38.144
-    port: 443
+  - name: 巴拉圭 - 亞松森 - 1
+    server: 38.165.233.93
+    port: 989
     type: ss
-    country: 🇮🇪 IE
-    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 591
-  - name: 荷兰 - Meppel - 1
-    server: 94.131.105.125
-    port: 4443
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 930
+  - name: 波兰 - 华沙 - 1
+    server: 51.15.23.63
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 1635
+  - name: 俄罗斯 - 莫斯科 - 1
+    server: 38.60.223.8
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 703
+  - name: 法国 - 巴黎 - 1
+    server: 15.224.47.47
     type: trojan
-    password: strong-secret-pass-777
-    sni: 94.131.105.125
+    country: 🇺🇸US
+    port: 22222
+    password: telegram-id-privatevpns
     skip-cert-verify: true
     udp: true
-    delay: 1314
-  - name: 卢森堡 - Roost - 1
-    server: gw.lydwan.com
-    type: ss
+    delay: 668
+  - name: 法国 - 巴黎 - 2
+    server: 15.224.47.47
+    type: trojan
     country: 🇺🇸US
-    port: 35607
-    password: b421832d-9964-4519-b4b3-e52a7be8b31b
+    port: 22223
+    password: telegram-id-directvpn
+    skip-cert-verify: true
+    udp: true
+    delay: 662
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: 194.87.186.134
+    type: ss
+    port: 6354
+    password: 4DrioHAbACj61Wq8yZ0wuq
     cipher: chacha20-ietf-poly1305
-    delay: 787
-  - name: 美国 - 华盛顿特区 - 9
+    delay: 541
+  - name: 荷兰 - 阿姆斯特丹 - 2
+    server: 152.53.200.167
+    port: 8444
+    type: trojan
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: '%2F'
+      headers:
+        Host: jflsjlaf.pages.dev
+    udp: true
+    delay: 1495
+  - name: 荷兰 - 阿姆斯特丹 - 3
+    server: 89.169.8.223
+    port: 443
+    type: ss
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
+      tls: true
+      mux: false
+      skip-cert-verify: true
+    udp: true
+    delay: 802
+  - name: 马其顿 - 斯科普里 - 1
+    server: 46.183.185.37
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 812
+  - name: 美国 - 達拉斯 - 10
+    server: 66.181.36.174
+    type: vmess
+    port: 52914
+    uuid: 8ae1c2f0-3127-49ac-acad-def55b04c231
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /ABCDE
+    h2-opts: {}
+    delay: 533
+  - name: 美国 - 達拉斯 - 14
+    server: v8.hdacd.com
+    type: vmess
+    country: 🇨🇳CN
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    servername: v8.hdacd.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1108
+  - name: 美国 - 东洛杉矶 - 15
+    server: 198.12.144.16
+    port: 443
+    type: ss
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
+      tls: true
+      mux: false
+      skip-cert-verify: true
+    udp: true
+    delay: 723
+  - name: 美国 - 东洛杉矶 - 16
+    server: 199.181.197.38
+    port: 443
+    type: ss
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+      tls: true
+      mux: false
+      skip-cert-verify: true
+    udp: true
+    delay: 705
+  - name: 美国 - 华盛顿特区 - 11
     server: v4.hdacd.com
     type: vmess
     country: 🇭🇰 HK
@@ -42,60 +164,44 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 1889
+    delay: 1081
+  - name: 美国 - 旧金山 - 13
+    server: 6154ff9.d3.gladns.net
+    type: ss
+    country: 🇯🇵JP
+    port: 2377
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.ee:135146
+      mode: tls
+    delay: 656
+  - name: 美国 - 旧金山 - 5
+    server: 6154ff9.d5.gladns.net
+    type: ss
+    port: 2377
+    udp: true
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.ch:135146
+      mode: tls
+    delay: 661
+  - name: 美国 - 旧金山 - 6
+    server: 6154ff9.f1.gladns.net
+    type: ss
+    port: 2377
+    udp: true
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.ch:135146
+      mode: tls
+    delay: 929
   - name: 美国 - 洛杉矶 - 1
-    server: 82.198.246.250
-    port: 180
-    type: vmess
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 1052
-  - name: 美国 - 洛杉矶 - 2
-    server: gw.lydwan.com
-    type: ss
-    port: 35604
-    udp: true
-    password: b421832d-9964-4519-b4b3-e52a7be8b31b
-    cipher: chacha20-ietf-poly1305
-    delay: 500
-  - name: 美国 - 洛杉矶 - 4
-    server: 38.95.121.189
-    type: ss
-    port: 30011
-    password: somebody
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: 20xteamxa9-usa3-a7xr.update.microsoft.com
-      mode: http
-    delay: 596
-  - name: 美国 - 洛杉矶 - 5
-    server: 68.168.20.112
-    type: ss
-    port: 30011
-    password: somebody
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: 20xteamxa9-usc2-a7xr.update.microsoft.com
-      mode: http
-    delay: 1470
-  - name: 美国 - 洛杉矶 - 6
-    server: 82.198.246.46
-    port: 180
-    type: vmess
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 437
-  - name: 美国 - 洛杉矶 - 7
     server: 82.198.246.97
     port: 180
     type: vmess
@@ -105,28 +211,79 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-    delay: 1389
-  - name: 美国 - 圣克拉拉 - 10
-    server: 104.168.94.41
+    delay: 1452
+  - name: 美国 - 洛杉矶 - 2
+    server: 82.198.246.46
+    port: 180
     type: vmess
-    country: 🇺🇸US
-    port: 32301
-    uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
     cipher: auto
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    h2-opts: {}
+    tls: false
     skip-cert-verify: true
-    delay: 2683
-  - name: 美国 - 圣路易斯 - 8
-    server: v46.hdacd.com
-    port: 30846
+    udp: true
+    delay: 582
+  - name: 美国 - 洛杉矶 - 3
+    server: 104.192.226.106
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    delay: 498
+  - name: 美国 - 洛杉矶 - 4
+    server: 38.244.47.161
+    type: ss
+    country: 🇺🇸US
+    port: 30011
+    password: somebody
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 20xteamxa9-diy02-a7xr.update.microsoft.com
+      mode: http
+    delay: 732
+  - name: 美国 - 聖荷西 - 12
+    server: 6154ff9.da.gladns.net
+    type: ss
+    country: 🇯🇵JP
+    port: 2377
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.io:135146
+      mode: tls
+    delay: 670
+  - name: 美国 - 聖荷西 - 7
+    server: 6154ff9.u7.gladns.net
+    type: ss
+    port: 2377
+    udp: true
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.ge:135146
+      mode: tls
+    delay: 649
+  - name: 美国 - 聖荷西 - 8
+    server: 6154ff9.e7.gladns.net
+    type: ss
+    country: 🇯🇵JP
+    port: 2377
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.de:135146
+      mode: tls
+    delay: 1457
+  - name: 美国 - 水牛城 - 9
+    server: v29.hdacd.com
+    port: 30829
     type: vmess
-    country: 🏁 ZZ
+    country: 🇮🇷 IR
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
@@ -134,42 +291,92 @@ proxies:
     http-opts: {}
     ws-path: /
     skip-cert-verify: true
-    delay: 1778
-  - name: 美国 - 芝加哥 - 3
-    server: gw.lydwan.com
+    delay: 1591
+  - name: 日本 - 东京 - 2
+    server: tokyo01.zgjok.com
+    port: 443
+    type: vmess
+    country: 🏁 ZZ
+    uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    http-opts: {}
+    ws-path: /
+    ws-headers:
+      HOST: tokyo01.zgjok.com
+    skip-cert-verify: true
+    servername: tokyo01.zgjok.com
+    delay: 688
+  - name: 日本 - Akiruno - 1
+    server: 178.239.124.195
     type: ss
-    port: 35601
-    udp: true
-    password: b421832d-9964-4519-b4b3-e52a7be8b31b
+    port: 30011
+    password: somebody
     cipher: chacha20-ietf-poly1305
-    delay: 378
-  - name: 日本 - 东京 - 1
-    server: >-
-      v1.jpus.internal.jpus-db.api.bk-jpus.node.s1.jpus-master.fastcokeasdasd.com
+    plugin: obfs
+    plugin-opts:
+      host: 20xteamxa9-jp5-a7xr.update.microsoft.com
+      mode: http
+    delay: 893
+  - name: 土耳其 - 伊斯坦布尔 - 1
+    server: tr-1.stunnel.cc
+    port: 8441
+    type: trojan
+    country: 🏁 ZZ
+    password: tunnel-ljlcf
+    skip-cert-verify: true
+    udp: true
+    delay: 2404
+  - name: 土耳其 - 伊斯坦布尔 - 2
+    server: tr-1.stunnel.cc
+    type: trojan
+    country: 🇨🇿CZ
+    port: 8441
+    password: tunnel-jdybi
+    sni: creativecommons.org
+    skip-cert-verify: true
+    udp: true
+    delay: 881
+  - name: 西班牙 - 马德里 - 1
+    server: 5.188.181.201
+    port: 9005
     type: ss
-    port: 13215
-    udp: true
-    password: a5da870c-37df-4012-8c6f-f978217aa7c4
-    cipher: chacha20-ietf-poly1305
-    delay: 601
-  - name: 日本 - 东京 - 3
-    server: >-
-      v1.jpus.internal.jpus-db.api.bk-jpus.node.s1.jpus-master.fastcokeasdasd.com
+    country: 🇪🇸 ES
+    password: ZET59LF6DvCC8KVt
+    cipher: aes-256-cfb
+    delay: 623
+  - name: 西班牙 - 马德里 - 2
+    server: 5.188.181.201
+    port: 9054
     type: ss
-    port: 43292
+    cipher: aes-256-cfb
+    password: VcFuyXvND2yQWSFY
     udp: true
-    password: a5da870c-37df-4012-8c6f-f978217aa7c4
-    cipher: chacha20-ietf-poly1305
-    delay: 1877
-  - name: 日本 - 東京都 - 2
-    server: gw.lydwan.com
-    type: ss
-    port: 35603
-    udp: true
-    password: b421832d-9964-4519-b4b3-e52a7be8b31b
-    cipher: chacha20-ietf-poly1305
-    delay: 277
+    delay: 610
   - name: 新加坡 - 新加坡 - 1
+    server: 151.242.180.19
+    type: vmess
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    delay: 597
+  - name: 新加坡 - 新加坡 - 2
+    server: v12026.lalakw.com
+    type: trojan
+    country: 🇭🇰HK
+    port: 50032
+    password: b97032af-7aac-4a67-913c-11c5b6d2657d
+    sni: v12026.lalakw.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1637
+  - name: 新加坡 - 新加坡 - 3
     server: v12.hdacd.com
     port: 30812
     type: vmess
@@ -179,37 +386,8 @@ proxies:
     tls: false
     skip-cert-verify: true
     udp: true
-    delay: 423
-  - name: 新加坡 - 新加坡 - 2
-    server: gw.lydwan.com
-    type: ss
-    port: 35608
-    udp: true
-    password: b421832d-9964-4519-b4b3-e52a7be8b31b
-    cipher: chacha20-ietf-poly1305
-    delay: 533
-  - name: 新加坡 - 新加坡 - 3
-    server: 195.85.19.146
-    type: ss
-    port: 30011
-    password: somebody
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: 20xteamxa9-sg2-a7xr.update.microsoft.com
-      mode: http
-    delay: 523
+    delay: 983
   - name: 新加坡 - 新加坡 - 4
-    server: 85.211.192.237
-    type: trojan
-    country: 🇬🇧GB
-    port: 9600
-    password: 413fdb10-a596-4e7c-b081-54243d252894
-    sni: www.baidu.com
-    skip-cert-verify: true
-    udp: true
-    delay: 345
-  - name: 新加坡 - 新加坡 - 5
     server: store.ubi.com
     port: 443
     type: ss
@@ -224,190 +402,624 @@ proxies:
       mux: false
       skip-cert-verify: true
     udp: true
-    delay: 2477
-  - name: 印度尼西亚 - 雅加达 - 1
-    server: qfdfsg.wsone.icu
-    type: trojan
-    country: 🇮🇩ID
-    port: 443
-    password: M7v%w11Se*
-    sni: qfdfsg.wsone.icu
-    skip-cert-verify: true
-    udp: true
-    delay: 1238
-  - name: 英国 - City of London - 1
-    server: series-a2.samanehha.co
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: W74XFALLLuw6m5IA
-    udp: true
-    delay: 1506
-  - name: 英国 - City of London - 2
-    server: admin.c1.webramz.co
-    port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: W74XFALLLuw6m5IA
-    udp: true
-    delay: 1654
+    delay: 1131
   - name: 越南 - Hải Dương - 1
-    server: 103.186.154.244
+    server: 103.186.155.149
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 511
+    delay: 499
   - name: 越南 - Hải Dương - 10
-    server: 103.186.154.162
+    server: 103.186.154.58
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1192
+    delay: 1107
   - name: 越南 - Hải Dương - 11
-    server: 103.186.154.147
+    server: 103.186.155.37
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1484
+    delay: 501
   - name: 越南 - Hải Dương - 12
-    server: 103.186.154.141
+    server: 103.186.154.65
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1389
+    delay: 518
   - name: 越南 - Hải Dương - 13
-    server: 103.186.154.152
+    server: 103.186.155.103
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1391
+    delay: 463
   - name: 越南 - Hải Dương - 14
-    server: 103.186.154.165
+    server: 103.186.154.41
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1357
+    delay: 531
   - name: 越南 - Hải Dương - 15
-    server: 103.186.154.143
+    server: 103.186.155.55
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1316
+    delay: 520
   - name: 越南 - Hải Dương - 16
-    server: 103.186.154.163
+    server: 103.186.154.36
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1834
+    delay: 496
+  - name: 越南 - Hải Dương - 17
+    server: 103.186.154.234
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 496
+  - name: 越南 - Hải Dương - 18
+    server: 103.186.155.30
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 590
+  - name: 越南 - Hải Dương - 19
+    server: 103.186.154.153
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1147
   - name: 越南 - Hải Dương - 2
-    server: 103.186.154.20
+    server: 103.186.154.75
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1191
-  - name: 越南 - Hải Dương - 3
-    server: 103.186.154.252
+    delay: 1543
+  - name: 越南 - Hải Dương - 20
+    server: 103.186.155.46
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 449
-  - name: 越南 - Hải Dương - 4
-    server: 103.186.155.115
+    delay: 524
+  - name: 越南 - Hải Dương - 21
+    server: 103.186.155.5
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1500
-  - name: 越南 - Hải Dương - 5
-    server: 103.186.155.70
+    delay: 546
+  - name: 越南 - Hải Dương - 22
+    server: 103.186.154.221
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 1500
-  - name: 越南 - Hải Dương - 6
-    server: 103.186.154.179
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1171
-  - name: 越南 - Hải Dương - 7
-    server: 103.186.155.58
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    delay: 1503
-  - name: 越南 - Hải Dương - 8
-    server: 103.186.155.143
+    delay: 1075
+  - name: 越南 - Hải Dương - 23
+    server: 103.186.155.204
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     delay: 508
-  - name: 越南 - Hải Dương - 9
-    server: 103.186.154.164
-    type: ss
-    country: 🏁 ZZ
+  - name: 越南 - Hải Dương - 24
+    server: 103.186.154.39
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    type: ss
     cipher: aes-256-cfb
-    delay: 1439
-  - name: 中国 - 香港 - 1
-    server: 58.152.25.253
-    port: 443
-    type: trojan
-    password: BxceQaOe
-    skip-cert-verify: true
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    delay: 676
-  - name: 中国 - 香港 - 2
-    server: sv3.wy888.us
+    delay: 494
+  - name: 越南 - Hải Dương - 25
+    server: 103.186.154.181
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 459
+  - name: 越南 - Hải Dương - 26
+    server: 103.186.154.18
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 508
+  - name: 越南 - Hải Dương - 27
+    server: 103.186.155.128
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 494
+  - name: 越南 - Hải Dương - 28
+    server: 103.186.155.227
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 476
+  - name: 越南 - Hải Dương - 29
+    server: 103.186.154.202
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2475
+  - name: 越南 - Hải Dương - 3
+    server: 103.186.155.126
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 502
+  - name: 越南 - Hải Dương - 30
+    server: 103.186.155.142
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 531
+  - name: 越南 - Hải Dương - 31
+    server: 103.186.155.20
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 523
+  - name: 越南 - Hải Dương - 32
+    server: 103.186.155.69
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 513
+  - name: 越南 - Hải Dương - 33
+    server: 103.186.154.59
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 455
+  - name: 越南 - Hải Dương - 34
+    server: 103.186.154.243
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1172
+  - name: 越南 - Hải Dương - 35
+    server: 103.186.154.29
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2131
+  - name: 越南 - Hải Dương - 36
+    server: 103.186.155.114
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1473
+  - name: 越南 - Hải Dương - 37
+    server: 103.186.154.22
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 498
+  - name: 越南 - Hải Dương - 38
+    server: 103.186.154.32
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 505
+  - name: 越南 - Hải Dương - 39
+    server: 103.186.155.33
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1473
+  - name: 越南 - Hải Dương - 4
+    server: 103.186.155.229
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 493
+  - name: 越南 - Hải Dương - 40
+    server: 103.186.155.35
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 464
+  - name: 越南 - Hải Dương - 41
+    server: 103.186.155.50
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 478
+  - name: 越南 - Hải Dương - 42
+    server: 103.186.155.223
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1487
+  - name: 越南 - Hải Dương - 43
+    server: 103.186.155.15
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 480
+  - name: 越南 - Hải Dương - 44
+    server: 103.186.154.77
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1854
+  - name: 越南 - Hải Dương - 45
+    server: 103.186.154.76
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 554
+  - name: 越南 - Hải Dương - 46
+    server: 103.186.155.224
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1785
+  - name: 越南 - Hải Dương - 47
+    server: 103.186.154.201
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 520
+  - name: 越南 - Hải Dương - 48
+    server: 103.186.154.210
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 450
+  - name: 越南 - Hải Dương - 49
+    server: 103.186.155.108
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1498
+  - name: 越南 - Hải Dương - 5
+    server: 103.186.154.166
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 554
+  - name: 越南 - Hải Dương - 50
+    server: 103.186.155.62
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 546
+  - name: 越南 - Hải Dương - 51
+    server: 103.186.155.83
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1133
+  - name: 越南 - Hải Dương - 52
+    server: 103.186.154.242
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 637
+  - name: 越南 - Hải Dương - 53
+    server: 103.186.154.66
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1602
+  - name: 越南 - Hải Dương - 54
+    server: 103.186.154.72
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1583
+  - name: 越南 - Hải Dương - 55
+    server: 103.186.154.183
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 490
+  - name: 越南 - Hải Dương - 56
+    server: 103.186.154.50
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 2143
+  - name: 越南 - Hải Dương - 57
+    server: 103.186.154.173
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 471
+  - name: 越南 - Hải Dương - 58
+    server: 103.186.155.106
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 483
+  - name: 越南 - Hải Dương - 59
+    server: 103.186.154.67
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 571
+  - name: 越南 - Hải Dương - 6
+    server: 103.186.154.178
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 491
+  - name: 越南 - Hải Dương - 60
+    server: 103.186.155.232
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1218
+  - name: 越南 - Hải Dương - 61
+    server: 103.186.155.84
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 564
+  - name: 越南 - Hải Dương - 62
+    server: 103.186.155.122
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 1136
+  - name: 越南 - Hải Dương - 63
+    server: 103.186.155.17
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 473
+  - name: 越南 - Hải Dương - 7
+    server: 103.186.155.127
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 526
+  - name: 越南 - Hải Dương - 8
+    server: 103.186.155.67
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 548
+  - name: 越南 - Hải Dương - 9
+    server: 103.186.155.102
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    delay: 469
+  - name: 中国 - 台湾 - 1
+    server: r3mrcg001287h3p.cybervena.com
+    port: 50099
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+    udp: true
+    delay: 347
+  - name: 中国 - 台湾 - 2
+    server: 36.224.128.224
+    type: ss
+    port: 50099
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+    cipher: chacha20-ietf-poly1305
+    delay: 286
+  - name: 中国 - 台湾 - 7
+    server: 6154ff9.t1.gladns.net
+    type: ss
+    country: 🇯🇵 JP
+    port: 2377
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: 6154ff9.default.microsoft.es:135146
+      mode: tls
+    delay: 1715
+  - name: 中国 - 香港 - 3
+    server: 154.37.223.19
     type: vmess
-    country: 🇭🇰HK
-    port: 44302
-    uuid: 703fe06c-9f00-4308-8fe3-1e2f27da316b
+    port: 52080
+    uuid: 16deda2c-b18b-4689-b83d-b333d92595b2
     alterId: 0
     cipher: auto
-    network: tcp
-    servername: sv3.wy888.us
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /QQqun-737805443
+    h2-opts: {}
+    delay: 802
+  - name: 中国 - 香港 - 4
+    server: 154.37.223.19
+    type: vmess
+    port: 27780
+    uuid: 486a4635-4b72-4636-9f6d-6cc5e01c5081
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 812
+  - name: 中国 - 香港 - 5
+    server: 154.37.223.19
+    type: vmess
+    port: 16622
+    uuid: 97debe0d-039f-48a5-946a-869538e7f107
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 146
+  - name: 中国 - 香港 - 6
+    server: 154.37.223.19
+    type: vmess
+    port: 56972
+    uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+    alterId: 0
+    cipher: auto
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    h2-opts: {}
+    delay: 140
+  - name: 中国 - 香港 - 8
+    server: 103.143.238.196
+    type: vmess
+    country: 🇭🇰HK
+    port: 21879
+    uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: www.cloudflare.com
     http-opts: {}
     h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 484
-  - name: 中国 - 香港 - 3
-    server: khk9527.vision.jp.eu.org
+    ws-opts:
+      path: /vmesswss
+      headers:
+        HOST: www.cloudflare.com
+    delay: 1524
+  - name: 中国 - 香港 - 9
+    server: 54.46.72.234
+    port: 8025
     type: trojan
-    country: 🇭🇰HK
-    port: 99
-    password: 6d00fde742644d11
+    password: trojan
+    sni: jflsjlaf.pages.dev
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
     udp: true
-    delay: 720
+    delay: 1820
