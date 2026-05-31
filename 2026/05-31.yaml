@@ -1,0 +1,334 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 阿塞拜疆 - 巴库 - 1
+    server: 94.20.58.241
+    type: ss
+    country: 🇦🇿AZ
+    port: 8443
+    password: OM1GMQrN0mRcy3bfHKo49F
+    cipher: chacha20-ietf-poly1305
+    delay: 983
+  - name: 爱尔兰 - 都柏林 - 1
+    server: v8.hdacd.com
+    port: 30808
+    type: vmess
+    country: 🏁 ZZ
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    ws-path: /
+    skip-cert-verify: true
+    delay: 773
+  - name: 德国 - 法兰克福 - 1
+    server: v33.hdacd.com
+    type: vmess
+    country: 🇬🇧GB
+    port: 30833
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 834
+  - name: 德国 - Frankfurt - 2
+    server: dggg.wsone.icu
+    type: trojan
+    port: 443
+    password: M7v%w11Se*
+    sni: dggg.wsone.icu
+    skip-cert-verify: true
+    udp: true
+    delay: 1064
+  - name: 德国 - Frankfurt am Main - 3
+    server: 35.158.230.241
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    skip-cert-verify: true
+    udp: true
+    delay: 1964
+  - name: 德国 - Frankfurt am Main - 4
+    server: 35.158.230.241
+    type: trojan
+    country: 🇩🇪DE
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1213
+  - name: 德国 - Frankfurt am Main - 5
+    server: 63.184.244.52
+    type: trojan
+    country: 🇺🇸US
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 717
+  - name: 德国 - Frankfurt am Main - 6
+    server: 63.184.244.52
+    type: trojan
+    country: 🇺🇸US
+    port: 22222
+    password: telegram-id-privatevpns
+    skip-cert-verify: true
+    udp: true
+    delay: 785
+  - name: 俄罗斯 - 莫斯科 - 1
+    server: 89.23.98.196
+    type: ss
+    country: 🇷🇺RU
+    port: 8388
+    password: R5XooLPrwK-KvWX2_kCDlQ
+    cipher: chacha20-ietf-poly1305
+    delay: 638
+  - name: 法国 - 巴黎 - 1
+    server: 13.36.249.118
+    type: trojan
+    country: 🇫🇷FR
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1223
+  - name: 芬兰 - 赫尔辛基 - 1
+    server: 195.133.2.2
+    type: ss
+    country: 🇷🇺RU
+    port: 34898
+    password: v2LIewZzNUsIrqODr22FVc
+    cipher: chacha20-ietf-poly1305
+    delay: 1553
+  - name: 芬兰 - 赫尔辛基 - 2
+    server: 109.107.182.229
+    type: ss
+    country: 🇷🇺RU
+    port: 51544
+    password: MZeSTvpl2uoey1R0frhPyJ
+    cipher: chacha20-ietf-poly1305
+    delay: 1567
+  - name: 韩国 - 水原市 - 1
+    server: 121.169.46.116
+    port: 1090
+    type: socks5
+    skip-cert-verify: true
+    udp: true
+    delay: 554
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: renderer-stream-1-411.mirra.now
+    type: vmess
+    country: 🇷🇺RU
+    port: 443
+    uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: renderer-stream-1-411.mirra.now
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /api/v1/gpu-stream/socket
+      headers:
+        HOST: renderer-stream-1-411.mirra.now
+    delay: 1715
+  - name: 荷兰 - Dronten - 2
+    server: 5.255.99.75
+    port: 1080
+    type: socks5
+    skip-cert-verify: true
+    udp: true
+    delay: 965
+  - name: 加拿大 - 多伦多 - 1
+    server: 35.182.57.53
+    type: ss
+    country: 🇨🇦CA
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 537
+  - name: 加拿大 - 多伦多 - 2
+    server: 15.223.186.62
+    type: ss
+    country: 🇨🇦CA
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 509
+  - name: 加拿大 - 蒙特利尔 - 3
+    server: 148.113.208.228
+    type: trojan
+    country: 🇨🇦CA
+    port: 443
+    password: 3ac6a6ca99f74941b1eaf892818e2ddb
+    skip-cert-verify: true
+    udp: true
+    delay: 930
+  - name: 罗马尼亚 - Voluntari - 1
+    server: 84.239.14.158
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1372
+  - name: 罗马尼亚 - Voluntari - 2
+    server: 84.239.49.201
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1755
+  - name: 美国 - 洛杉矶 - 2
+    server: 82.198.246.250
+    port: 180
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    delay: 1852
+  - name: 美国 - 洛杉矶 - 3
+    server: 82.198.246.214
+    port: 180
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    delay: 442
+  - name: 美国 - Boydton - 1
+    server: 57.151.100.27
+    type: vmess
+    country: 🇧🇪BE
+    port: 10086
+    uuid: 550e8400-e29b-41d4-a716-446655440000
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 592
+  - name: 南非 - 约翰内斯堡 - 1
+    server: 20.164.221.1
+    port: 443
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: WUpTYsnFmIND14vx
+    udp: true
+    delay: 512
+  - name: 南非 - 约翰内斯堡 - 2
+    server: 20.164.221.1
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: Mewj3HbjMJ89hPQr
+    cipher: chacha20-ietf-poly1305
+    delay: 516
+  - name: 南非 - 约翰内斯堡 - 3
+    server: 20.164.221.1
+    port: 443
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: dhUfc0noSQDTLOAR
+    udp: true
+    delay: 531
+  - name: 日本 - 东京 - 1
+    server: 43.199.160.155
+    port: 3135
+    type: trojan
+    password: f6d3aa07a52dbcedcb4731029e2fb6ae
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    udp: true
+    delay: 770
+  - name: 日本 - 東京都 - 2
+    server: 103.127.243.54
+    port: 53229
+    type: vmess
+    uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /ABCDE
+    udp: true
+    delay: 661
+  - name: 土耳其 - 伊兹密尔 - 1
+    server: 62.3.12.140
+    port: 2087
+    type: vmess
+    uuid: 90a7a201-de71-4696-be44-f2c04aa36348
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    udp: true
+    delay: 581
+  - name: 新加坡 - 新加坡 - 1
+    server: 54.178.81.79
+    port: 3842
+    type: trojan
+    password: f6d3aa07a52dbcedcb4731029e2fb6ae
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    udp: true
+    delay: 701
+  - name: 新加坡 - 新加坡 - 2
+    server: 5.34.177.228
+    type: ss
+    country: 🇸🇬SG
+    port: 41348
+    password: vJ4LrBqkqCYgGMO08YmmsMjQ3ZMtJ7Ey6Sxfpe
+    cipher: chacha20-ietf-poly1305
+    delay: 776
+  - name: 新加坡 - 新加坡 - 3
+    server: 140.235.140.105
+    port: 443
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%252Fripaojiedian
+    skip-cert-verify: true
+    udp: true
+    delay: 2721
+  - name: 中国 - 上海 - 1
+    server: 61.171.92.202
+    type: ss
+    port: 1001
+    password: '123'
+    cipher: aes-256-gcm
+    delay: 315
+  - name: 中国 - 香港 - 2
+    server: li.feng3d.com
+    type: ss
+    country: 🇺🇸US
+    port: 8388
+    password: feng3d@ss2025
+    cipher: aes-256-gcm
+    delay: 444
