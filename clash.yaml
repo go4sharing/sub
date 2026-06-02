@@ -4,306 +4,116 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 澳大利亚 - 悉尼 - 1
-    server: au-3.tr202605.com
+  - name: 阿塞拜疆 - 巴库 - 1
+    server: 155.117.198.87
     type: trojan
-    country: 🇭🇰HK
-    port: 443
-    udp: true
-    password: owreRY1bmquS1WcYN2
-    delay: 757
-  - name: 德国 - 法兰克福 - 2
-    server: v33.hdacd.com
-    port: 30833
-    type: vmess
-    country: 🇺🇸 US
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: az.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 1009
-  - name: 德国 - Frankfurt am Main - 1
-    server: 52.57.7.168
+    delay: 1023
+  - name: 德国 - 陶努斯山麓巴德索登 - 1
+    server: 185.129.84.12
+    type: ss
+    country: 🇩🇪DE
+    port: 443
+    password: DQHK4mtugy7xMNChJjB9Jm
+    cipher: chacha20-ietf-poly1305
+    delay: 1509
+  - name: 德国 - Frankfurt am Main - 2
+    server: 3.126.169.98
     type: trojan
     country: 🇩🇪DE
-    port: 22222
-    password: telegram-id-privatevpns
-    skip-cert-verify: true
-    udp: true
-    delay: 1130
-  - name: 法国 - 巴黎 - 1
-    server: 13.39.205.209
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    skip-cert-verify: true
-    udp: true
-    delay: 712
-  - name: 法国 - 巴黎 - 2
-    server: 52.47.172.108
-    type: trojan
-    country: 🇫🇷FR
     port: 22223
     udp: true
     password: telegram-id-directvpn
     skip-cert-verify: true
-    delay: 1685
-  - name: 列支敦士登 - 瓦都茲 - 1
-    server: 45.15.167.20
+    delay: 735
+  - name: 法国 - 巴黎 - 1
+    server: 155.117.198.87
     type: trojan
-    country: 🏁ZZ
-    port: 443
-    udp: true
-    password: 3ac6a6ca99f74941b1eaf892818e2ddb
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 707
+    udp: true
+    delay: 2049
+  - name: 法国 - 巴黎 - 2
+    server: 15.236.251.60
+    type: trojan
+    country: 🇫🇷FR
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1717
+  - name: 加纳 - 阿克拉 - 1
+    server: 155.117.198.86
+    type: trojan
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1042
+  - name: 加纳 - 阿克拉 - 2
+    server: 155.117.198.87
+    type: trojan
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1029
+  - name: 加纳 - 阿克拉 - 3
+    server: 155.117.198.83
+    type: trojan
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    alpn:
+      - http/1.1
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1080
+  - name: 美国 - 達拉斯 - 2
+    server: 107.175.91.118
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: 1bb1f95f-7425-4442-93f7-8fc1bd1a2001
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /v2ray-wisp
+    delay: 965
   - name: 美国 - 洛杉矶 - 1
-    server: 82.198.246.37
-    port: 180
-    type: vmess
-    country: 🇬🇧 GB
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 413
-  - name: 美国 - 洛杉矶 - 2
-    server: cg1c06.waimaojd.com
-    type: vmess
-    port: 443
-    uuid: a60f3900-bfc6-4e99-a221-239f9692d59e
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cg1c06.waimaojd.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /api/v1/graphql
-      headers:
-        Host: cg1c06.waimaojd.com
-    delay: 1033
-  - name: 美国 - 洛杉矶 - 3
-    server: cg1c03.waimaojd.com
-    type: vmess
-    port: 443
-    uuid: a60f3900-bfc6-4e99-a221-239f9692d59e
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cg1c03.waimaojd.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /api/v1/graphql
-      headers:
-        Host: cg1c03.waimaojd.com
-    delay: 1000
-  - name: 美国 - 洛杉矶 - 4
-    server: cg1c02.waimaojd.com
-    type: vmess
-    port: 443
-    uuid: a60f3900-bfc6-4e99-a221-239f9692d59e
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cg1c02.waimaojd.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /api/v1/graphql
-      headers:
-        Host: cg1c02.waimaojd.com
-    delay: 1028
-  - name: 美国 - 洛杉矶 - 5
-    server: cg1c02.waimaojd.com
-    type: vmess
-    country: 🇺🇸US
-    port: 443
-    uuid: 332774e5-9371-48bb-b518-1fe56c7268da
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cg1c02.waimaojd.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /api/v1/graphql
-      headers:
-        HOST: cg1c02.waimaojd.com
-    delay: 1801
-  - name: 美国 - 洛杉矶 - 6
-    server: cg1c05.waimaojd.com
-    type: vmess
-    port: 443
-    uuid: 332774e5-9371-48bb-b518-1fe56c7268da
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: cg1c05.waimaojd.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    ws-opts:
-      path: /api/v1/graphql
-      headers:
-        Host: cg1c05.waimaojd.com
-    delay: 2293
-  - name: 美国 - 洛杉矶 - 7
-    server: 82.198.246.214
-    port: 180
-    type: vmess
-    country: 🇬🇧 GB
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 608
-  - name: 美国 - 洛杉矶 - 8
-    server: select-us.ddnskunlun.com
-    type: vmess
-    country: 🏁ZZ
-    port: 9027
-    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-    alterId: 0
-    cipher: auto
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 513
-  - name: 南非 - 约翰内斯堡 - 1
-    server: 169.239.128.39
+    server: 95.40.4.37
+    port: 2520
     type: trojan
-    country: 🇿🇦ZA
-    port: 443
-    udp: true
-    password: 3ac6a6ca99f74941b1eaf892818e2ddb
-    skip-cert-verify: true
-    delay: 2097
-  - name: 日本 - 大阪市 - 2
-    server: v6.hdacd.com
-    port: 30806
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 2285
-  - name: 日本 - 东京 - 1
-    server: 43.199.61.178
-    type: trojan
-    country: 🇺🇸US
-    port: 47655
     password: BxceQaOe
-    sni: t.me/ripaojiedian
+    sni: t.me%2Fripaojiedian
     skip-cert-verify: true
     udp: true
-    delay: 960
-  - name: 中国 - 上海 - 5
+    delay: 2839
+  - name: 土耳其 - 伊斯坦布尔 - 1
+    server: tr-1.stunnel.cc
+    type: trojan
+    country: 🇨🇿CZ
+    port: 8441
+    password: tunnel-jdybi
+    sni: creativecommons.org
+    skip-cert-verify: true
+    udp: true
+    delay: 1797
+  - name: 中国 - 上海 - 1
     server: 61.171.92.202
     type: ss
     port: 1001
     password: '123'
     cipher: aes-256-gcm
-    delay: 284
-  - name: 中国 - 台湾 - 4
-    server: r3mrcg001269pz2.cybervena.com
-    port: 50099
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-    udp: true
-    delay: 1483
-  - name: 中国 - 台湾 - 6
-    server: 59.125.62.188
-    type: ss
-    country: 🇹🇼TW
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: (Telegram🇨🇳 @WangCai2)7eb777f:123571
-      mode: tls
-    delay: 1282
-  - name: 中国 - 台湾 - 7
-    server: world.t.51guangtaobao.com
-    type: vmess
-    country: 🇭🇰HK
-    port: 2512
-    uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 783
-  - name: 中国 - 台湾 - 8
-    server: yd3.ainivp.com
-    type: vmess
-    country: 🏁ZZ
-    port: 33404
-    uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: yd3.ainivp.com
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /ray
-      headers:
-        HOST: yd3.ainivp.com
-    delay: 831
-  - name: 中国 - 香港 - 1
-    server: a.twodnwnpoe.xyz
-    type: trojan
-    country: 🇬🇧GB
-    port: 40015
-    password: da292191-b895-3264-b41c-200512b8f965
-    sni: 1.lossyesterday.xyz
-    skip-cert-verify: true
-    udp: true
-    delay: 539
-  - name: 中国 - 香港 - 2
-    server: a.twodnwnpoe.xyz
-    type: trojan
-    country: 🇬🇧GB
-    port: 52225
-    password: da292191-b895-3264-b41c-200512b8f965
-    sni: i.comfortableyou.top
-    skip-cert-verify: true
-    udp: true
-    delay: 528
-  - name: 中国 - 香港 - 3
-    server: a.twodnwnpoe.xyz
-    type: trojan
-    country: 🇬🇧GB
-    port: 40017
-    password: da292191-b895-3264-b41c-200512b8f965
-    sni: water.waittomorrow.top
-    skip-cert-verify: true
-    udp: true
-    delay: 567
+    delay: 127
