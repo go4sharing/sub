@@ -4,32 +4,101 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 阿塞拜疆 - 巴库 - 1
+  - name: 冰岛 - 雷克亞維克 - 1
     server: 155.117.198.87
     type: trojan
-    port: 41943
+    port: 47909
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: az.01.naiun.bilibili.com
+    sni: is.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 1023
-  - name: 德国 - 陶努斯山麓巴德索登 - 1
+    delay: 1035
+  - name: 德国 - 法兰克福 - 1
+    server: 155.117.198.86
+    type: trojan
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: de.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1047
+  - name: 德国 - 法兰克福 - 2
+    server: 155.117.198.83
+    type: trojan
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: de.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1049
+  - name: 德国 - 法兰克福 - 3
+    server: 155.117.198.82
+    type: trojan
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: de.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1060
+  - name: 德国 - 兰河畔林堡 - 6
+    server: 51.195.91.135
+    type: vmess
+    country: 🇫🇷FR
+    port: 10000
+    uuid: 533ae32c-5dda-11f1-a6eb-23a176880b5a
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /vpnjantit
+    delay: 1566
+  - name: 德国 - 陶努斯山麓巴德索登 - 4
     server: 185.129.84.12
     type: ss
     country: 🇩🇪DE
     port: 443
     password: DQHK4mtugy7xMNChJjB9Jm
     cipher: chacha20-ietf-poly1305
-    delay: 1509
-  - name: 德国 - Frankfurt am Main - 2
-    server: 3.126.169.98
+    delay: 490
+  - name: 德国 - Frankfurt am Main - 5
+    server: 3.66.185.190
     type: trojan
     country: 🇩🇪DE
     port: 22223
-    udp: true
     password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
     skip-cert-verify: true
-    delay: 735
+    udp: true
+    delay: 746
   - name: 法国 - 巴黎 - 1
+    server: 90081bb25c.node.tro.cac.cab
+    type: trojan
+    country: 🇺🇸US
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1337
+  - name: 法国 - 巴黎 - 2
+    server: 155.117.198.86
+    type: trojan
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1002
+  - name: 法国 - 巴黎 - 3
+    server: 155.117.198.83
+    type: trojan
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    alpn:
+      - http/1.1
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1055
+  - name: 法国 - 巴黎 - 4
     server: 155.117.198.87
     type: trojan
     port: 45619
@@ -37,26 +106,42 @@ proxies:
     sni: fr.01.naiun.bilibili.com
     skip-cert-verify: true
     udp: true
-    delay: 2049
-  - name: 法国 - 巴黎 - 2
-    server: 15.236.251.60
+    delay: 1013
+  - name: 法国 - 巴黎 - 5
+    server: 15.237.22.206
     type: trojan
     country: 🇫🇷FR
     port: 22223
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    skip-cert-verify: true
     udp: true
-    delay: 1717
+    password: telegram-id-directvpn
+    skip-cert-verify: true
+    delay: 805
+  - name: 法国 - 巴黎 - 6
+    server: 45.92.218.56
+    type: ss
+    country: 🇺🇸US
+    port: 1080
+    password: RjG_Pd534ZVJRMdODjCNMA
+    cipher: chacha20-ietf-poly1305
+    delay: 2845
+  - name: 芬兰 - 赫尔辛基 - 1
+    server: 109.107.182.229
+    type: ss
+    country: 🇷🇺RU
+    port: 51544
+    password: NMao3laQtxBnEgzbuJ0khb
+    cipher: chacha20-ietf-poly1305
+    delay: 2317
   - name: 加纳 - 阿克拉 - 1
-    server: 155.117.198.86
+    server: 90081bb25c.node.tro.cac.cab
     type: trojan
+    country: 🏁ZZ
     port: 48697
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     sni: gh.01.naiun.bilibili.com
     skip-cert-verify: true
     udp: true
-    delay: 1042
+    delay: 1338
   - name: 加纳 - 阿克拉 - 2
     server: 155.117.198.87
     type: trojan
@@ -64,7 +149,7 @@ proxies:
     password: 4f4d1167-ef14-4304-9bce-0740472503ef
     sni: gh.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 1029
+    delay: 1036
   - name: 加纳 - 阿克拉 - 3
     server: 155.117.198.83
     type: trojan
@@ -74,8 +159,26 @@ proxies:
       - http/1.1
     sni: gh.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 1080
-  - name: 美国 - 達拉斯 - 2
+    delay: 1079
+  - name: 加纳 - 阿克拉 - 4
+    server: 155.117.198.86
+    type: trojan
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1022
+  - name: 加纳 - 阿克拉 - 5
+    server: 155.117.198.82
+    type: trojan
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1042
+  - name: 美国 - 達拉斯 - 4
     server: 107.175.91.118
     type: vmess
     country: 🇺🇸US
@@ -90,8 +193,19 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /v2ray-wisp
-    delay: 965
+    delay: 1012
   - name: 美国 - 洛杉矶 - 1
+    server: 82.198.246.37
+    port: 180
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    delay: 1038
+  - name: 美国 - 洛杉矶 - 2
     server: 95.40.4.37
     port: 2520
     type: trojan
@@ -99,7 +213,53 @@ proxies:
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
     udp: true
-    delay: 2839
+    delay: 2016
+  - name: 美国 - 洛杉矶 - 5
+    server: select-us.ddnskunlun.com
+    type: vmess
+    country: 🏁ZZ
+    port: 9028
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+    alterId: 0
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 513
+  - name: 美国 - 坦帕 - 3
+    server: 95.40.68.192
+    port: 17801
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    udp: true
+    delay: 2456
+  - name: 日本 - 东京 - 1
+    server: ss.021.node-for-bigairport.win
+    type: ss
+    country: 🇯🇵JP
+    port: 19287
+    password: 6c4bd474-ac23-47fc-8742-c8f990357836
+    cipher: aes-256-gcm
+    delay: 623
+  - name: 瑞士 - 苏黎世 - 1
+    server: 155.117.198.83
+    type: trojan
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: ch.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1074
+  - name: 瑞士 - 苏黎世 - 2
+    server: 155.117.198.87
+    type: trojan
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: ch.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1011
   - name: 土耳其 - 伊斯坦布尔 - 1
     server: tr-1.stunnel.cc
     type: trojan
@@ -109,11 +269,28 @@ proxies:
     sni: creativecommons.org
     skip-cert-verify: true
     udp: true
-    delay: 1797
-  - name: 中国 - 上海 - 1
+    delay: 2854
+  - name: 西班牙 - 马德里 - 1
+    server: 5.188.181.201
+    type: ss
+    country: 🇪🇸ES
+    port: 9025
+    password: XPtzA9sCug3SPR4c
+    cipher: aes-256-cfb
+    delay: 694
+  - name: 中国 - 上海 - 2
     server: 61.171.92.202
     type: ss
     port: 1001
     password: '123'
     cipher: aes-256-gcm
-    delay: 127
+    delay: 149
+  - name: 中国 - 香港 - 1
+    server: 18.183.163.141
+    port: 50712
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    udp: true
+    delay: 862
