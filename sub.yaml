@@ -4,35 +4,70 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 爱尔兰 - 都柏林 - 1
+    server: 146.70.90.195
+    type: trojan
+    country: 🇷🇴RO
+    port: 57452
+    udp: true
+    password: t1k169n5zmvvwn96r9ft
+    sni: api-yandex.maps.ru
+    skip-cert-verify: true
+    delay: 754
+  - name: 爱尔兰 - 都柏林 - 2
+    server: 146.70.90.198
+    type: trojan
+    country: 🇷🇴RO
+    port: 57452
+    udp: true
+    password: t1k169n5zmvvwn96r9ft
+    skip-cert-verify: true
+    delay: 2440
+  - name: 爱尔兰 - 都柏林 - 3
+    server: 146.70.90.197
+    type: trojan
+    country: 🇷🇴RO
+    port: 57452
+    udp: true
+    password: t1k169n5zmvvwn96r9ft
+    skip-cert-verify: true
+    delay: 855
+  - name: 德国 - Frankfurt am Main - 1
+    server: 18.159.210.129
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 578
+  - name: 德国 - Frankfurt am Main - 2
+    server: 3.79.104.163
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 468
+  - name: 德国 - Frankfurt am Main - 3
+    server: 63.176.37.226
+    type: trojan
+    country: 🇺🇸US
+    port: 22223
+    udp: true
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    delay: 962
   - name: 法国 - 巴黎 - 1
-    server: 155.117.198.87
-    type: trojan
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: fr.01.naiun.bilibili.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1023
-  - name: 法国 - 巴黎 - 2
-    server: 155.117.198.82
-    type: trojan
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: fr.01.naiun.bilibili.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1042
-  - name: 法国 - 巴黎 - 3
-    server: 13.39.41.250
+    server: 15.237.235.31
     type: trojan
     country: 🇫🇷FR
     port: 22222
     password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1559
-  - name: 法国 - 巴黎 - 4
-    server: 35.181.245.85
+    delay: 691
+  - name: 法国 - 巴黎 - 2
+    server: 35.181.89.207
     type: trojan
     country: 🇫🇷FR
     port: 22223
@@ -40,41 +75,31 @@ proxies:
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1469
-  - name: 法国 - 巴黎 - 5
-    server: 13.39.41.250
-    type: trojan
-    country: 🇫🇷FR
-    port: 22223
-    password: telegram-id-directvpn
-    skip-cert-verify: true
-    udp: true
-    delay: 791
-  - name: 法国 - 巴黎 - 6
-    server: 35.181.245.85
-    type: trojan
-    country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
-    skip-cert-verify: true
-    udp: true
-    delay: 915
-  - name: 法国 - 巴黎 - 7
-    server: 45.92.218.56
+    delay: 759
+  - name: 芬兰 - 赫尔辛基 - 1
+    server: 185.103.110.68
     type: ss
-    country: 🇺🇸US
-    port: 1080
-    password: RjG_Pd534ZVJRMdODjCNMA
-    cipher: chacha20-ietf-poly1305
-    delay: 1498
+    country: 🇫🇮FI
+    port: 18283
+    password: y3o3ra6edy5nfc6hyb2n
+    cipher: aes-128-gcm
+    delay: 585
+  - name: 芬兰 - 赫尔辛基 - 2
+    server: 77.83.247.206
+    port: 18284
+    type: ss
+    country: 🇷🇺 RU
+    password: tijsjk3iwzc6b10azb0y
+    cipher: aes-128-gcm
+    delay: 603
   - name: 韩国 - 水原市 - 2
     server: 121.169.46.116
     port: 1090
     type: socks5
-    username: Og%3D%3D
+    username: T2clM0QlM0Q6
     skip-cert-verify: true
     udp: true
-    delay: 428
+    delay: 513
   - name: 韩国 - Gasan-dong - 1
     server: 27.255.82.135
     type: ss
@@ -82,26 +107,80 @@ proxies:
     port: 10727
     password: qwerREWQ@@
     cipher: aes-256-cfb
-    delay: 1826
+    delay: 589
   - name: 荷兰 - 阿姆斯特丹 - 1
-    server: 82.38.31.15
+    server: 188.114.97.6
+    port: 443
+    type: trojan
+    password: mitivpn
+    sni: www.mitivpn.in.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: www.mitivpn.in.net
+    udp: true
+    delay: 1097
+  - name: 加拿大 - 多伦多 - 1
+    server: 3.96.152.83
     type: ss
     port: 443
-    udp: true
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    cipher: chacha20-ietf-poly1305
-    delay: 802
-  - name: 荷兰 - 阿姆斯特丹 - 2
-    server: ssr2.762988.xyz
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 543
+  - name: 加拿大 - 多伦多 - 2
+    server: 15.223.63.40
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 552
+  - name: 加拿大 - 多伦多 - 3
+    server: 35.183.93.91
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 579
+  - name: 加拿大 - 多伦多 - 4
+    server: 52.60.99.199
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 566
+  - name: 加拿大 - 蒙特利尔 - 5
+    server: ssca.irundns.net
+    port: 443
     type: ssr
-    country: 🇬🇧GB
-    port: 33336
-    password: dongtaiwang.com
-    cipher: chacha20-ietf
-    protocol: auth_chain_a
-    obfs: tls1.2_ticket_auth
-    delay: 1322
+    cipher: aes-128-cfb
+    password: $$Turb0VPN$$
+    protocol: auth_aes128_md5
+    obfs: http_post
+    protocol-param: ''
+    obfs-param: ''
+    udp: true
+    delay: 702
   - name: 加纳 - 阿克拉 - 1
+    server: 90081bb25c.node.tro.cac.cab
+    port: 48697
+    type: trojan
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1088
+  - name: 加纳 - 阿克拉 - 2
+    server: 155.117.198.83
+    port: 48697
+    type: trojan
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1112
+  - name: 加纳 - 阿克拉 - 3
     server: 155.117.198.82
     type: trojan
     port: 48697
@@ -109,194 +188,172 @@ proxies:
     sni: gh.01.naiun.bilibili.com
     skip-cert-verify: true
     udp: true
-    delay: 974
-  - name: 罗马尼亚 - 布加勒斯特 - 1
-    server: 193.176.84.36
+    delay: 1235
+  - name: 罗马尼亚 - Voluntari - 1
+    server: 84.239.14.158
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1101
+    delay: 2437
   - name: 罗马尼亚 - Voluntari - 2
-    server: 84.239.49.201
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 1121
-  - name: 罗马尼亚 - Voluntari - 3
     server: 84.239.49.239
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1987
-  - name: 罗马尼亚 - Voluntari - 4
+    delay: 1244
+  - name: 罗马尼亚 - Voluntari - 3
     server: 84.239.49.185
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1160
+    delay: 1690
+  - name: 罗马尼亚 - Voluntari - 4
+    server: 84.239.14.146
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1697
   - name: 罗马尼亚 - Voluntari - 5
-    server: 84.239.49.211
+    server: 84.239.49.175
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1120
-  - name: 罗马尼亚 - Voluntari - 6
-    server: 84.239.49.154
-    port: 9002
+    delay: 2183
+  - name: 马来西亚 - 吉隆坡 - 1
+    server: c54d0241-t9zts0-tnfe2z-1s4hc.my.oshuawei.com
+    port: 31233
     type: http
+    username: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+    password: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1101
-  - name: 美国 - 達拉斯 - 4
-    server: 107.175.91.118
-    type: vmess
-    country: 🇺🇸US
-    port: 443
-    uuid: 1bb1f95f-7425-4442-93f7-8fc1bd1a2001
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    delay: 1199
+  - name: 马来西亚 - 吉隆坡 - 2
+    server: 41bb1fa0-t9zts0-tcr22d-1rsuw.my.oshuawei.com
+    port: 31233
+    type: http
+    username: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
+    password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
     tls: true
     skip-cert-verify: true
-    ws-opts:
-      path: /v2ray-wisp
-    delay: 1907
-  - name: 美国 - 洛杉矶 - 2
-    server: 95.40.4.37
-    port: 2520
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
+    udp: true
+    delay: 800
+  - name: 马来西亚 - 吉隆坡 - 3
+    server: 43c68e5c-ta1og0-tnqudu-1mim2.my.oshuawei.com
+    port: 31233
+    type: http
+    username: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+    password: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+    tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2797
-  - name: 美国 - 洛杉矶 - 5
-    server: 64.83.17.92
+    delay: 716
+  - name: 美国 - 洛杉矶 - 1
+    server: 82.198.246.37
+    port: 180
     type: vmess
-    country: 🇺🇸US
-    port: 80
-    uuid: rootface
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
     alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /𒉭𓆩@rootface𒆜𒉭 TELEGRAM
-    delay: 601
-  - name: 美国 - 坦帕 - 3
-    server: 95.40.68.192
-    port: 17801
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 2753
-  - name: 美国 - 芝加哥 - 1
-    server: 95.40.68.150
-    port: 2702
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-    delay: 1407
-  - name: 南非 - 约翰内斯堡 - 1
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: zlTmn5qriTtBtDvc
-    cipher: chacha20-ietf-poly1305
-    delay: 1604
-  - name: 南非 - 约翰内斯堡 - 2
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: sLQz8jOUtbEXVJ1q
-    cipher: chacha20-ietf-poly1305
-    delay: 509
-  - name: 南非 - 约翰内斯堡 - 3
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: YpGZzY8hNdFO5GXc
-    cipher: chacha20-ietf-poly1305
-    delay: 522
-  - name: 南非 - 约翰内斯堡 - 4
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: Vl6s5wPQXzW2zALH
-    cipher: chacha20-ietf-poly1305
-    delay: 1503
-  - name: 南非 - 约翰内斯堡 - 5
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: ODdIFgLpwyDp4tZj
-    cipher: chacha20-ietf-poly1305
-    delay: 2537
-  - name: 南非 - 约翰内斯堡 - 6
-    server: 20.164.211.148
-    type: ss
-    country: 🇺🇸US
-    port: 443
-    password: BiwwN4MmavSFXiGg
-    cipher: chacha20-ietf-poly1305
-    delay: 522
-  - name: 日本 - 东京 - 1
-    server: ss.026.node-for-bigairport.win
-    type: ss
-    country: 🇯🇵JP
-    port: 36099
-    password: 6c4bd474-ac23-47fc-8742-c8f990357836
-    cipher: aes-256-gcm
-    delay: 770
-  - name: 日本 - 东京 - 2
-    server: bgroup.node1.v.nodelist-airport.com
-    type: vmess
-    country: 🇺🇸US
-    port: 29712
-    uuid: 504cb0be-b285-4ec5-9561-bc289aea0d46
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 2578
-  - name: 日本 - Chiyoda City - 3
-    server: 103.181.164.145
-    port: 54022
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
     cipher: auto
     tls: false
     skip-cert-verify: true
     udp: true
-    delay: 2918
+    delay: 2448
+  - name: 美国 - Secaucus - 2
+    server: 174.138.187.118
+    type: ss
+    country: 🇺🇸US
+    port: 10875
+    password: lioxj6qx5wj7hz4m9pom
+    cipher: aes-128-gcm
+    delay: 1502
+  - name: 美国 - Secaucus - 3
+    server: 69.164.240.83
+    port: 10878
+    type: ss
+    country: 🇺🇸 US
+    password: t6d26id0pjzdo3x5wtlf
+    cipher: aes-128-gcm
+    delay: 1544
+  - name: 美国 - Secaucus - 4
+    server: 69.164.240.86
+    type: ss
+    country: 🇺🇸US
+    port: 10880
+    password: 3px0wmx0e81145g568ga
+    cipher: aes-128-gcm
+    delay: 533
+  - name: 南非 - 约翰内斯堡 - 1
+    server: 20.164.45.116
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: loA6saIct2REv8w5
+    cipher: chacha20-ietf-poly1305
+    delay: 536
+  - name: 南非 - 约翰内斯堡 - 2
+    server: 20.164.45.116
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: 7Gm1sdCSRWB46CrO
+    cipher: chacha20-ietf-poly1305
+    delay: 537
+  - name: 日本 - 东京 - 1
+    server: 3c3915de-t9zts0-ta5i1s-1j61y.jp.oshuawei.com
+    port: 443
+    type: http
+    username: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+    password: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1556
+  - name: 瑞士 - 苏黎世 - 1
+    server: 86.106.84.198
+    type: ss
+    country: 🇷🇴RO
+    port: 13265
+    password: phizo046s4oqsm33sfvm
+    cipher: aes-128-gcm
+    delay: 485
+  - name: 瑞士 - 苏黎世 - 2
+    server: 86.106.84.195
+    port: 13262
+    type: ss
+    country: 🇷🇴 RO
+    password: kfuzkwdg4oynv495aywc
+    cipher: aes-128-gcm
+    delay: 481
+  - name: 西班牙 - 圣塞瓦斯提安 - 1
+    server: 193.148.19.210
+    type: trojan
+    country: 🇪🇸ES
+    port: 52794
+    udp: true
+    password: 2eutknankxtbgkwcajzt
+    skip-cert-verify: true
+    delay: 879
   - name: 新加坡 - 新加坡 - 1
+    server: bgroup.node3.s2.nodelist-airport.com
+    type: ss
+    country: 🇺🇸US
+    port: 54612
+    password: 504cb0be-b285-4ec5-9561-bc289aea0d46
+    cipher: aes-256-gcm
+    delay: 621
+  - name: 新加坡 - 新加坡 - 2
     server: 4b41083b-tea5c0-tequ5b-dnss.fourtwo.cdnbytescm.com
     port: 3233
     type: http
@@ -305,53 +362,161 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1966
-  - name: 中国 - 上海 - 2
+    delay: 1459
+  - name: 新加坡 - 新加坡 - 3
+    server: b5eb2edf-te8ao0-tfnl0i-au6.fourtwo.cdnbytescm.com
+    port: 3233
+    type: http
+    username: 1b609740-eec2-11ef-8543-f23c93136cb3
+    password: 1b609740-eec2-11ef-8543-f23c93136cb3
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1162
+  - name: 印度尼西亚 - 雅加达 - 1
+    server: a12b6942-ta1og0-taxf6m-ieln.id.oshuawei.com
+    port: 32233
+    type: http
+    username: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+    password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 730
+  - name: 印度尼西亚 - 雅加达 - 2
+    server: 85af7e0c-t9zts0-ta7ccz-1j0a4.id.oshuawei.com
+    port: 32233
+    type: http
+    username: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+    password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 747
+  - name: 印度尼西亚 - 雅加达 - 3
+    server: d33fa2df-t9zts0-trg4wh-z65w.id.oshuawei.com
+    port: 32233
+    type: http
+    username: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+    password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 839
+  - name: 印度尼西亚 - 雅加达 - 4
+    server: 9541dbe9-t9zts0-tcinla-hrtf.id.oshuawei.com
+    port: 32233
+    type: http
+    username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+    password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 910
+  - name: 印度尼西亚 - 雅加达 - 5
+    server: c711fb09-t9zts0-tq9o8d-1d3bw.id.oshuawei.com
+    port: 32233
+    type: http
+    username: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
+    password: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 2290
+  - name: 中国 - 上海 - 1
     server: 61.171.92.202
     type: ss
     port: 1001
     password: '123'
     cipher: aes-256-gcm
-    delay: 2133
-  - name: 中国 - 台湾 - 3
-    server: v11.zgtfqs.click
-    port: 30811
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 490
-  - name: 中国 - 香港 - 1
-    server: 18.181.199.223
-    port: 53018
-    type: trojan
-    password: d84665c37878196ecf983cf6910e3b44
-    sni: www.nintendogames.net
+    delay: 240
+  - name: 中国 - 香港 - 10
+    server: c4c796bb-t9zts0-tlpfci-1jdha.cm4.oshuawei.com
+    port: 5228
+    type: http
+    username: de629d50-1711-11ed-bd7c-f23c913c8d2b
+    password: de629d50-1711-11ed-bd7c-f23c913c8d2b
+    tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1628
+    delay: 664
+  - name: 中国 - 香港 - 2
+    server: 88456c11-ta1og0-tnqudu-1mim2.hkt.cdnhuawei.com
+    port: 8443
+    type: http
+    username: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+    password: <password>
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1549
+  - name: 中国 - 香港 - 3
+    server: 90d955b3-t9zts0-trg4wh-z65w.hkt.cdnhuawei.com
+    port: 8443
+    type: http
+    username: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+    password: <password>
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1679
   - name: 中国 - 香港 - 4
-    server: df142108-t9zts0-tee612-2r82.cm4.oshuawei.com
+    server: 9ae34110-t9zts0-tb592v-4lg6.cm4.oshuawei.com
     port: 5228
     type: http
-    username: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-    password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+    username: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+    password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 754
+    delay: 2008
   - name: 中国 - 香港 - 5
-    server: 8ff74373-t9zts0-tkhmfr-1jm8i.cm4.oshuawei.com
+    server: 19b7ea9d-t9zts0-tbnk1n-ueq.cm4.oshuawei.com
     port: 5228
     type: http
-    username: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-    password: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+    username: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+    password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2226
+    delay: 1672
+  - name: 中国 - 香港 - 6
+    server: b21cad55-t9zts0-tiaexf-ufc0.cm4.oshuawei.com
+    port: 5228
+    type: http
+    username: 22308988-8548-11ea-a22e-f23c91cfbbc9
+    password: 22308988-8548-11ea-a22e-f23c91cfbbc9
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1891
+  - name: 中国 - 香港 - 7
+    server: 1d603f3e-t9zts0-tc9wl2-py5w.cm4.oshuawei.com
+    port: 5228
+    type: http
+    username: ae5338ae-9a70-58c9-3d47-7d54a5675715
+    password: ae5338ae-9a70-58c9-3d47-7d54a5675715
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 812
+  - name: 中国 - 香港 - 8
+    server: 64a99740-t9zts0-tipjoa-1slop.cm4.oshuawei.com
+    port: 5228
+    type: http
+    username: 520b9126-9870-11ef-81b0-f23c9164ca5d
+    password: 520b9126-9870-11ef-81b0-f23c9164ca5d
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 2152
+  - name: 中国 - 香港 - 9
+    server: a18418b5-t9zts0-tsjk4v-1atkp.cm4.oshuawei.com
+    port: 5228
+    type: http
+    username: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
+    password: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 737
