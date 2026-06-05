@@ -1,0 +1,214 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 阿塞拜疆 - 巴库 - 1
+    server: 90081bb25c.node.tro.cac.cab
+    type: trojan
+    country: 🇺🇸US
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: az.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1907
+  - name: 阿塞拜疆 - 巴库 - 2
+    server: 155.117.198.87
+    type: trojan
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: az.01.naiun.bilibili.com
+    skip-cert-verify: true
+    delay: 1011
+  - name: 德国 - 法兰克福 - 2
+    server: 103.244.145.247
+    type: ss
+    country: 🇦🇫AF
+    port: 28893
+    password: V6_RXT2UlL5ONSD3Fmvd9XqBGNmespBu
+    cipher: chacha20-ietf-poly1305
+    delay: 739
+  - name: 德国 - 兰河畔林堡 - 1
+    server: de5.niekotin.de
+    type: vmess
+    port: 80
+    uuid: 85bf5801-4658-441c-a2e5-842c6c71a521
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: de5.niekotin.de
+    delay: 794
+  - name: 德国 - Frankfurt am Main - 3
+    server: 63.185.124.176
+    type: trojan
+    country: 🇺🇸US
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 684
+  - name: 德国 - Frankfurt am Main - 4
+    server: 63.185.124.176
+    type: trojan
+    country: 🇺🇸US
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    udp: true
+    delay: 1362
+  - name: 俄罗斯 - 莫斯科 - 3
+    server: 45.140.169.244
+    type: ss
+    country: 🇷🇺RU
+    port: 20981
+    password: cfe685726eea2c4b
+    cipher: aes-256-gcm
+    delay: 652
+  - name: 俄罗斯 - 圣彼得堡 - 1
+    server: 195.58.49.104
+    type: ss
+    country: 🇨🇿CZ
+    port: 20129
+    password: fbaf33bcffe53cf9
+    cipher: aes-256-gcm
+    delay: 585
+  - name: 俄罗斯 - 圣彼得堡 - 2
+    server: 195.58.49.162
+    type: ss
+    country: 🇨🇿CZ
+    port: 60120
+    password: 9f3d1a6d31468599
+    cipher: aes-256-gcm
+    delay: 552
+  - name: 法国 - 巴黎 - 1
+    server: 90081bb25c.node.tro.cac.cab
+    type: trojan
+    country: 🇺🇸US
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1808
+  - name: 法国 - 巴黎 - 2
+    server: 155.117.198.83
+    type: trojan
+    country: 🇺🇸US
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1047
+  - name: 法国 - 巴黎 - 3
+    server: 155.117.198.86
+    type: trojan
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1012
+  - name: 韩国 - Geumcheon-gu - 1
+    server: 221.150.109.19
+    type: ss
+    country: 🇰🇷KR
+    port: 3417
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 1312
+  - name: 韩国 - Geumcheon-gu - 2
+    server: 221.150.109.20
+    type: ss
+    country: 🇰🇷KR
+    port: 55104
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 589
+  - name: 韩国 - Guro-gu - 3
+    server: 218.50.149.114
+    type: ss
+    country: 🇰🇷KR
+    port: 43034
+    password: qwerREWQ@@
+    cipher: aes-256-cfb
+    delay: 548
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: 82.38.31.192
+    type: ss
+    country: 🇬🇧GB
+    port: 8080
+    password: k1dBOmOB4oqi7Ump37a1bQ
+    cipher: chacha20-ietf-poly1305
+    delay: 1113
+  - name: 荷兰 - 阿姆斯特丹 - 2
+    server: 95.179.187.188
+    type: vmess
+    country: 🇳🇱NL
+    port: 57220
+    uuid: 13a400f3-e4d6-4cc6-840e-8cc9c52e9c25
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1876
+  - name: 加拿大 - 多伦多 - 1
+    server: 52.60.99.199
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 543
+  - name: 加拿大 - 多伦多 - 2
+    server: 3.96.152.83
+    type: ss
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 557
+  - name: 南非 - 约翰内斯堡 - 1
+    server: 20.87.212.31
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: 0FXkHNQO6q1s9KQX
+    cipher: chacha20-ietf-poly1305
+    delay: 529
+  - name: 新加坡 - 新加坡 - 1
+    server: ss.050.node-for-bigairport.win
+    type: ss
+    port: 19001
+    password: 792e0bdb-01db-450c-94c4-925151eb396e
+    cipher: chacha20-ietf-poly1305
+    delay: 957
+  - name: 中国 - 台湾 - 1
+    server: v29.hdacd.com
+    type: vmess
+    port: 30829
+    udp: true
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    delay: 1755
+  - name: 中国 - 香港 - 2
+    server: 212.192.12.98
+    type: ss
+    country: 🇪🇸ES
+    port: 20129
+    password: 7e1dd4c55bf85da5
+    cipher: aes-256-gcm
+    delay: 784
