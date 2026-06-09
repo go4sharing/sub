@@ -4,46 +4,42 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 爱尔兰 - 都柏林 - 1
-    server: v8.hdacd.com
-    port: 30808
-    type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
+  - name: 德国 - 纽伦堡 - 2
+    server: 103.130.147.40
+    type: ss
+    country: 🇹🇷TR
+    port: 1122
+    password: wc/eqRPrYjnxfAJ2JKnio7cG2Ko9K9DiMwzonRjU3LI=
+    cipher: aes-256-gcm
+    delay: 883
+  - name: 德国 - Frankfurt am Main - 1
+    server: 52.29.67.193
+    type: trojan
+    country: 🇩🇪DE
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 1819
-  - name: 德国 - 法兰克福 - 1
-    server: 51.75.69.164
-    type: vmess
-    country: 🇩🇪DE
-    port: 2053
-    uuid: bf2c1d9b-864c-4503-8133-648487ac3bc9
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    delay: 1443
-  - name: 德国 - 法兰克福 - 2
-    server: v33.hdacd.com
-    port: 30833
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 823
+    delay: 1183
+  - name: 俄罗斯 - 莫斯科 - 2
+    server: 45.140.169.244
+    type: ss
+    country: 🇷🇺RU
+    port: 50129
+    password: cfe685726eea2c4b
+    cipher: aes-256-gcm
+    delay: 625
+  - name: 俄罗斯 - 圣彼得堡 - 1
+    server: 195.58.49.162
+    type: ss
+    country: 🇨🇿CZ
+    port: 8012
+    password: 9f3d1a6d31468599
+    cipher: aes-256-gcm
+    delay: 603
   - name: 法国 - 巴黎 - 1
-    server: 15.236.237.21
+    server: 15.236.101.176
     type: trojan
     country: 🇫🇷FR
     port: 22223
@@ -51,30 +47,37 @@ proxies:
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 731
+    delay: 1635
   - name: 法国 - 巴黎 - 2
-    server: 15.236.237.21
+    server: 13.37.141.219
     type: trojan
     country: 🇫🇷FR
-    port: 22222
-    password: telegram-id-privatevpns
+    port: 22223
+    password: telegram-id-directvpn
     sni: trojan.burgerip.co.uk
     skip-cert-verify: true
     udp: true
-    delay: 726
-  - name: 法国 - 斯特拉斯堡 - 3
-    server: v35.hdacd.com
-    port: 30835
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
+    delay: 878
+  - name: 法国 - 巴黎 - 3
+    server: 188.253.12.98
+    type: trojan
+    country: 🇮🇷IR
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
     skip-cert-verify: true
-    delay: 1153
+    udp: true
+    delay: 1929
+  - name: 法国 - 巴黎 - 4
+    server: 155.117.198.85
+    type: trojan
+    country: 🇺🇸US
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    udp: true
+    delay: 1488
   - name: 韩国 - Guro-gu - 1
     server: 218.50.149.114
     type: ss
@@ -82,136 +85,67 @@ proxies:
     port: 43034
     password: qwerREWQ@@
     cipher: aes-256-cfb
-    delay: 1183
-  - name: 加纳 - 阿克拉 - 1
-    server: 155.117.198.82
-    type: trojan
-    port: 48697
-    udp: true
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: gh.01.naiun.bilibili.com
-    skip-cert-verify: true
-    delay: 1073
-  - name: 加纳 - 阿克拉 - 2
-    server: 155.117.198.87
-    type: trojan
-    country: 🇺🇸US
-    port: 48697
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    sni: gh.01.naiun.bilibili.com
-    skip-cert-verify: true
-    udp: true
-    delay: 1039
-  - name: 美国 - 達拉斯 - 3
-    server: v4.hdacd.com
-    port: 30804
+    delay: 1487
+  - name: 加拿大 - 多伦多 - 1
+    server: board-02.ddnskunlun.com
     type: vmess
-    country: 🇦🇺 AU
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 1463
-  - name: 美国 - 洛杉矶 - 1
-    server: 82.198.246.250
-    port: 180
-    type: vmess
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    country: 🏁ZZ
+    port: 11985
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
     alterId: 0
     cipher: auto
-    tls: false
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 955
+  - name: 美国 - 洛杉矶 - 2
+    server: 156.239.47.83
+    type: vmess
+    country: 🇺🇸US
+    port: 13666
+    uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    ws-opts:
+      path: /graphql
+    delay: 612
+  - name: 美国 - 夏洛特 - 1
+    server: 77.110.126.179
+    type: trojan
+    country: 🇱🇧LB
+    port: 35311
+    password: SoftNetConnect
+    sni: www.speedtest.net
     skip-cert-verify: true
     udp: true
-    delay: 777
-  - name: 美国 - 水牛城 - 4
-    server: v24.hdacd.com
-    port: 30824
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 1455
-  - name: 日本 - 大阪市 - 1
-    server: v6.hdacd.com
-    port: 30806
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 869
-  - name: 新加坡 - 新加坡 - 1
-    server: v45.hdacd.com
-    port: 30845
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 519
-  - name: 英国 - Slough - 1
-    server: v36.hdacd.com
-    port: 30836
-    type: vmess
-    country: 🏁 ZZ
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    ws-path: /
-    skip-cert-verify: true
-    delay: 851
+    delay: 1586
+  - name: 日本 - 东京 - 1
+    server: ss.042.node-for-bigairport.win
+    type: ss
+    port: 19000
+    password: 792e0bdb-01db-450c-94c4-925151eb396e
+    cipher: chacha20-ietf-poly1305
+    delay: 974
   - name: 中国 - 上海 - 1
     server: 61.171.92.202
     type: ss
     port: 1001
     password: '123'
     cipher: aes-256-gcm
-    delay: 429
+    delay: 407
   - name: 中国 - 台湾 - 2
-    server: namrcg001640lrm.cybervena.com
-    type: ss
-    port: 50099
-    udp: true
-    password: a9a0d092-6f0e-4701-81ee-454643d6d506
-    cipher: chacha20-ietf-poly1305
-    delay: 694
-  - name: 中国 - 台湾 - 3
     server: namrcg001640lrm.cybervena.com
     type: ss
     country: 🇹🇼TW
     port: 50099
     password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
     cipher: chacha20-ietf-poly1305
-    delay: 508
-  - name: 中国 - 台湾 - 4
-    server: adak.sonofthewinds.com
-    type: trojan
-    country: 🇺🇸US
-    port: 34450
-    udp: true
-    password: 825929f4-c702-35ce-9124-00d3f95b8c32
-    sni: tt1.sonofthewinds.com
-    skip-cert-verify: true
-    delay: 1808
-  - name: 中国 - 香港 - 5
+    delay: 2761
+  - name: 中国 - 香港 - 3
     server: 154.37.223.19
     type: vmess
     country: 🇺🇸US
@@ -226,4 +160,11 @@ proxies:
         - /
     h2-opts: {}
     skip-cert-verify: true
-    delay: 681
+    delay: 2591
+  - name: 中国 - 香港 - 4
+    server: ss.045.node-for-bigairport.win
+    type: ss
+    port: 19000
+    password: 792e0bdb-01db-450c-94c4-925151eb396e
+    cipher: chacha20-ietf-poly1305
+    delay: 580
