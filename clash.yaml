@@ -4,21 +4,102 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 上海 - 1
-    server: 61.171.92.202
-    type: ss
-    country: 🇨🇳CN
-    port: 1001
-    password: '123'
-    cipher: aes-256-gcm
-    delay: 113
-  - name: 中国 - 香港 - 2
-    server: 16.162.118.81
+  - name: 德国 - 法兰克福 - 1
+    server: 213.108.20.209
     type: trojan
-    country: 🇭🇰HK
-    port: 9211
-    password: BxceQaOe
-    sni: t.me/ripaojiedian
+    country: 🇷🇺RU
+    port: 42549
+    password: SoftNetConnect
+    sni: www.speedtest.net
     skip-cert-verify: true
     udp: true
-    delay: 730
+    delay: 856
+  - name: 法国 - 巴黎 - 1
+    server: 15.237.74.149
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 486
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: select-hk.ddnskunlun.com
+    type: vmess
+    country: 🏁ZZ
+    port: 9006
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 315
+  - name: 美国 - 德雷珀 - 1
+    server: 18.162.53.72
+    port: 34638
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    udp: true
+    delay: 966
+  - name: 美国 - Dublin - 2
+    server: 3.133.132.79
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 515
+  - name: 日本 - 大阪市 - 2
+    server: v6.hdacd.com
+    type: vmess
+    country: 🏁ZZ
+    port: 30806
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    servername: v6.hdacd.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 767
+  - name: 日本 - 东京 - 1
+    server: ss.042.node-for-bigairport.win
+    type: ss
+    port: 19000
+    password: 792e0bdb-01db-450c-94c4-925151eb396e
+    cipher: chacha20-ietf-poly1305
+    delay: 274
+  - name: 土耳其 - 伊斯坦布尔 - 1
+    server: auto.mhjstudio.ir
+    port: 443
+    type: trojan
+    password: dfdse334053vuohm
+    sni: alternative.mhjstudio.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: alternative.mhjstudio.ir
+    udp: true
+    delay: 2258
+  - name: 英国 - Erith - 1
+    server: 104.17.124.179
+    port: 80
+    type: vmess
+    uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+    udp: true
+    delay: 1012
