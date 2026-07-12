@@ -11,7 +11,7 @@ proxies:
     port: 2053
     password: KpikV0WcN54ul7ytP0QOGW7njSS9xqqy/Ji85PM4KQQ=
     cipher: chacha20-ietf-poly1305
-    delay: 748
+    delay: 676
   - name: 俄罗斯 - 莫斯科 - 1
     server: 46.17.40.13
     type: ss
@@ -19,8 +19,17 @@ proxies:
     port: 10129
     password: b24a80e79cee1d1f
     cipher: aes-256-gcm
-    delay: 941
-  - name: 美国 - 圣克拉拉 - 1
+    delay: 680
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: 114.80.8.128
+    port: 39001
+    type: trojan
+    password: 1df3ece1218bedba28c6c6ac726a07bb
+    sni: 114.80.8.128
+    skip-cert-verify: true
+    udp: true
+    delay: 226
+  - name: 美国 - 圣克拉拉 - 2
     server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
     port: 443
     type: trojan
@@ -28,15 +37,47 @@ proxies:
     sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
     skip-cert-verify: true
     udp: true
-    delay: 612
+    delay: 640
+  - name: 美国 - Dublin - 1
+    server: 3.145.57.90
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 534
   - name: 日本 - 东京 - 1
+    server: 18.183.180.62
+    type: ss
+    country: 🇯🇵JP
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 1229
+  - name: 日本 - 东京 - 3
     server: 52.195.12.64
     type: ss
     country: 🇯🇵JP
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 181
+    delay: 187
+  - name: 日本 - 東京都 - 2
+    server: vps123.kbxa.top
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: cd07d6e6-f631-4757-a03c-b8727c568c85
+    alterId: 0
+    cipher: auto
+    network: ws
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /123
+    delay: 2896
   - name: 新加坡 - 新加坡 - 1
     server: aw-sg.vndmall.pro
     port: 8888
@@ -44,8 +85,32 @@ proxies:
     cipher: aes-256-gcm
     password: a338A9
     udp: true
-    delay: 235
-  - name: 中国 - 香港 - 1
+    delay: 210
+  - name: 新加坡 - 新加坡 - 2
+    server: ss.049.node-for-bigairport.win
+    type: ss
+    country: 🇸🇬SG
+    port: 19000
+    password: 792e0bdb-01db-450c-94c4-925151eb396e
+    cipher: chacha20-ietf-poly1305
+    delay: 160
+  - name: 中国 - 台湾 - 1
+    server: namrcg001640lrm.cybervena.com
+    type: ss
+    country: 🇹🇼TW
+    port: 50099
+    password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+    cipher: chacha20-ietf-poly1305
+    delay: 588
+  - name: 中国 - 台湾 - 2
+    server: namrcg001640lrm.cybervena.com
+    type: ss
+    country: 🇹🇼TW
+    port: 50099
+    password: a9a0d092-6f0e-4701-81ee-454643d6d506
+    cipher: chacha20-ietf-poly1305
+    delay: 576
+  - name: 中国 - 香港 - 3
     server: 396068668893076.yf.r.hy2use.net
     port: 45048
     type: trojan
@@ -53,4 +118,4 @@ proxies:
     sni: 11333yf.r.bilibili.com
     skip-cert-verify: true
     udp: true
-    delay: 1008
+    delay: 987
