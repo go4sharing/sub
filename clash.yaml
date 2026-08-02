@@ -4,23 +4,49 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 中国 - 香港 - 1
-    server: v9.hdacd.com
+  - name: 美国 - 洛杉矶 - 12
+    server: 88.210.36.106
+    port: 2377
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: (TG @VPNine1)7eb777f:123571
+    udp: true
+    delay: 759
+  - name: 美国 - 洛杉矶 - 2
+    server: 142.171.48.179
     type: vmess
-    country: 🇨🇳CN
-    port: 30809
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
+    country: 🇨🇦CA
+    port: 28167
+    uuid: a75d95d5-ae5b-4207-a6a3-ada2943776b9
+    alterId: 0
     cipher: auto
+    network: ws
+    servername: gw.alicdn.com
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 821
-  - name: 中国 - 香港 - 2
-    server: ss.046.node-for-bigairport.win
+    ws-opts:
+      path: /
+      headers:
+        HOST: gw.alicdn.com
+    delay: 1861
+  - name: 美国 - Ashburn - 1
+    server: 54.196.207.151
+    port: 443
     type: ss
-    country: 🇭🇰HK
-    port: 19000
-    password: 792e0bdb-01db-450c-94c4-925151eb396e
-    cipher: chacha20-ietf-poly1305
-    delay: 273
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 908
+  - name: 中国 - 上海 - 1
+    server: 61.171.92.202
+    type: ss
+    country: 🇨🇳CN
+    port: 1001
+    password: '123'
+    cipher: aes-256-gcm
+    delay: 175
