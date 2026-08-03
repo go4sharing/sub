@@ -4,49 +4,122 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - 洛杉矶 - 12
-    server: 88.210.36.106
-    port: 2377
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: (TG @VPNine1)7eb777f:123571
+  - name: 波兰 - 华沙 - 1
+    server: discrete-basilisk.rooster465.autos
+    type: trojan
+    country: 🇮🇳IN
+    port: 443
+    password: ND91608427
+    sni: discrete-basilisk.rooster465.autos
+    skip-cert-verify: true
     udp: true
-    delay: 759
-  - name: 美国 - 洛杉矶 - 2
-    server: 142.171.48.179
+    delay: 2997
+  - name: 俄罗斯 - 莫斯科 - 1
+    server: 195.133.5.207
+    port: 20188
+    type: ss
+    cipher: aes-256-gcm
+    password: bdb313adf74c2ede
+    udp: true
+    delay: 715
+  - name: 韩国 - 首尔特别市 - 1
+    server: moved-meerkat.rooster465.autos
+    port: 443
+    type: trojan
+    password: ND91608427
+    sni: moved-meerkat.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+    delay: 1048
+  - name: 韩国 - 首尔特别市 - 2
+    server: definite-malamute.rooster465.autos
+    port: 443
+    type: trojan
+    password: ND91608427
+    sni: definite-malamute.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+    delay: 628
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: nl-4.tr202604.com
+    type: trojan
+    country: 🇳🇱NL
+    port: 443
+    password: RJbtIstwtcU5buDY3r
+    skip-cert-verify: true
+    udp: true
+    delay: 1607
+  - name: 荷兰 - 阿姆斯特丹 - 2
+    server: nl-1.tr202604.com
+    type: trojan
+    country: 🇳🇱NL
+    port: 443
+    password: RJbtIstwtcU5buDY3r
+    skip-cert-verify: true
+    udp: true
+    delay: 1590
+  - name: 日本 - 东京 - 1
+    server: upright-impala.rooster465.autos
+    port: 443
+    type: trojan
+    password: ND91608427
+    sni: upright-impala.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+    delay: 964
+  - name: 日本 - 东京 - 2
+    server: 47.74.43.250
     type: vmess
-    country: 🇨🇦CA
-    port: 28167
-    uuid: a75d95d5-ae5b-4207-a6a3-ada2943776b9
+    country: 🇯🇵JP
+    port: 53268
+    uuid: 16364b13-0e00-4f2e-82f0-37a721088953
     alterId: 0
     cipher: auto
-    network: ws
-    servername: gw.alicdn.com
-    http-opts: {}
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
     h2-opts: {}
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        HOST: gw.alicdn.com
-    delay: 1861
-  - name: 美国 - Ashburn - 1
-    server: 54.196.207.151
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    delay: 2521
+  - name: 新加坡 - 新加坡 - 1
+    server: 16.162.22.218
+    port: 9149
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%252Fripaojiedian
+    skip-cert-verify: true
     udp: true
-    delay: 908
-  - name: 中国 - 上海 - 1
-    server: 61.171.92.202
+    delay: 612
+  - name: 印度 - 班加羅爾 - 1
+    server: board-04.ddnskunlun.com
+    port: 11973
+    type: vmess
+    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    delay: 1851
+  - name: 中国 - 台湾 - 1
+    server: ncmrcg000116egb.cybervena.com
     type: ss
-    country: 🇨🇳CN
-    port: 1001
-    password: '123'
-    cipher: aes-256-gcm
-    delay: 175
+    port: 50099
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+    cipher: chacha20-ietf-poly1305
+    delay: 536
+  - name: 中国 - 香港 - 2
+    server: v9.hdacd.com
+    port: 30809
+    type: vmess
+    country: 🇨🇳 CN
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    ws-path: /
+    skip-cert-verify: true
+    delay: 1214
