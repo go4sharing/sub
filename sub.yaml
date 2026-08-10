@@ -5,13 +5,41 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 德国 - Frankfurt am Main - 1
-    server: 130.61.86.101
-    type: ss
+    server: 130.61.147.181
     port: 59924
-    udp: true
-    password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+    type: ss
     cipher: chacha20-ietf-poly1305
-    delay: 480
+    password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
+    udp: true
+    delay: 434
+  - name: 芬兰 - Helsinki - 1
+    server: autodiscover.fuzzyaytor.cyou
+    type: ss
+    country: 🇬🇧GB
+    port: 42982
+    password: >-
+      yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+    cipher: chacha20-ietf-poly1305
+    delay: 2620
+  - name: 韩国 - Incheon - 1
+    server: 52.78.13.238
+    port: 443
+    type: trojan
+    password: ND91608427
+    sni: upward-puma.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+    delay: 775
+  - name: 韩国 - Incheon - 2
+    server: upward-puma.rooster465.autos
+    type: trojan
+    country: 🇰🇷KR
+    port: 443
+    password: ND91608427
+    sni: upward-puma.rooster465.autos
+    skip-cert-verify: true
+    udp: true
+    delay: 1696
   - name: 荷兰 - Amsterdam - 1
     server: 84.17.47.125
     port: 9002
@@ -19,7 +47,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1253
+    delay: 1107
   - name: 荷兰 - Amsterdam - 2
     server: 84.17.47.146
     port: 9002
@@ -27,7 +55,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1258
+    delay: 2441
   - name: 荷兰 - Amsterdam - 3
     server: 84.17.47.150
     port: 9002
@@ -35,64 +63,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2590
-  - name: 荷兰 - Amsterdam - 4
-    server: 104.21.5.155
-    port: 443
-    type: trojan
-    password: MITIVPN
-    sni: >-
-      de1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: >-
-        /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-      headers:
-        Host: >-
-          de1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
-    udp: true
-    delay: 2043
+    delay: 2924
   - name: 罗马尼亚 - Bucharest - 1
-    server: 84.239.14.151
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 2667
-  - name: 罗马尼亚 - Bucharest - 2
     server: 84.239.49.49
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1265
-  - name: 罗马尼亚 - Bucharest - 3
+    delay: 1840
+  - name: 罗马尼亚 - Bucharest - 2
     server: 84.239.49.180
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1191
-  - name: 罗马尼亚 - Bucharest - 4
-    server: 193.176.84.35
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 1567
-  - name: 罗马尼亚 - Bucharest - 5
-    server: 84.239.49.244
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 2115
+    delay: 1300
   - name: 美国 - Los Angeles - 1
     server: 138.199.35.214
     port: 9002
@@ -100,7 +87,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1567
+    delay: 1455
   - name: 美国 - Los Angeles - 2
     server: 138.199.35.207
     port: 9002
@@ -108,4 +95,16 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1806
+    delay: 1860
+  - name: 中国 - Kwai Chung - 1
+    server: v9.hdacd.com
+    type: vmess
+    country: 🇸🇬SG
+    port: 30809
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1199
