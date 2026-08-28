@@ -5,96 +5,88 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 爱尔兰 - Dublin - 1
-    server: 34.250.4.112
-    type: ss
+    server: 3.250.223.202
     port: 443
-    udp: true
+    type: ss
+    country: 🇮🇪 IE
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 615
-  - name: 巴西 - São Paulo - 1
-    server: 163.176.213.34
-    port: 59319
+    delay: 1174
+  - name: 爱尔兰 - Dublin - 2
+    server: 3.250.80.208
+    port: 443
     type: ss
-    cipher: 2022-blake3-chacha20-poly1305
-    password: sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ=
-    udp: true
-    delay: 2932
-  - name: 巴西 - São Paulo - 2
-    server: 150.230.77.159
-    port: 59319
+    country: 🇮🇪 IE
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 468
+  - name: 爱尔兰 - Dublin - 3
+    server: 54.247.216.201
     type: ss
-    cipher: 2022-blake3-chacha20-poly1305
-    password: fQD3R706R6XGUCXh5XwMDv6IbqQO+g4iVYx5OnT/Cqs=
-    udp: true
-    delay: 1751
+    country: 🇮🇪IE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 532
+  - name: 爱尔兰 - Dublin - 4
+    server: 34.241.245.82
+    type: ss
+    country: 🇮🇪IE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 531
   - name: 法国 - Paris - 1
     server: 95.170.13.47
-    type: ss
-    country: 🇫🇷FR
     port: 65443
+    type: ss
+    country: 🇫🇷 FR
     password: 7eadc6dbe2ae
     cipher: aes-256-cfb
-    delay: 1553
+    delay: 556
+  - name: 韩国 - Seoul - 1
+    server: 121.46.230.138
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 1102
   - name: 马来西亚 - Cyberjaya - 1
     server: 118.107.222.231
-    type: ss
-    country: 🇲🇾MY
     port: 65443
+    type: ss
+    country: 🇲🇾 MY
     password: 7eadc6dbe2ae
     cipher: aes-256-cfb
-    delay: 1307
-  - name: 美国 - San Gabriel - 1
-    server: 103.179.142.158
-    port: 50269
+    delay: 299
+  - name: 美国 - Buffalo - 3
+    server: v4.hdacd.com
     type: vmess
-    uuid: 84f238f6-28eb-48df-a7bc-a9bd9cf4abba
-    alterId: 0
+    country: 🇭🇰HK
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
     cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    udp: true
-    delay: 469
-  - name: 英国 - London - 1
-    server: 18.171.235.36
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-    delay: 628
-  - name: 中国 - Hefei - 1
-    server: 112.132.215.108
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 623
-  - name: 中国 - Hong Kong - 2
-    server: www.shopify.com
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: a7fba54d-1031-4b23-b8b6-dbf8ce6ad3b3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: included-shaw-lean-believe.trycloudflare.com
+    network: tcp
+    ws-path: /
     http-opts: {}
     h2-opts: {}
-    tls: true
     skip-cert-verify: true
-    ws-opts:
-      path: /a7fba54d-1031-4b23-b8b6-dbf8ce6ad3b3-vm
-      headers:
-        HOST: included-shaw-lean-believe.trycloudflare.com
-    delay: 1785
+    delay: 1330
+  - name: 美国 - Los Angeles - 1
+    server: 121.46.230.232
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 1500
+  - name: 美国 - Los Angeles - 2
+    server: 121.46.230.233
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 435
