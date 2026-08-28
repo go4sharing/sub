@@ -5,37 +5,53 @@ log-level: info
 external-controller: ':9090'
 proxies:
   - name: 爱尔兰 - Dublin - 1
-    server: 34.250.4.112
-    type: ss
+    server: 3.250.223.202
     port: 443
-    udp: true
+    type: ss
+    country: 🇮🇪 IE
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 615
-  - name: 巴西 - São Paulo - 1
-    server: 163.176.213.34
-    port: 59319
+    delay: 1174
+  - name: 爱尔兰 - Dublin - 2
+    server: 3.250.80.208
+    port: 443
     type: ss
-    cipher: 2022-blake3-chacha20-poly1305
-    password: sGdbihOb/q/EbANW26ODkZvW+bFxtL5OISohA64vCqQ=
-    udp: true
-    delay: 2932
-  - name: 巴西 - São Paulo - 2
-    server: 150.230.77.159
-    port: 59319
+    country: 🇮🇪 IE
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 468
+  - name: 爱尔兰 - Dublin - 3
+    server: 54.247.216.201
     type: ss
-    cipher: 2022-blake3-chacha20-poly1305
-    password: fQD3R706R6XGUCXh5XwMDv6IbqQO+g4iVYx5OnT/Cqs=
-    udp: true
-    delay: 1751
+    country: 🇮🇪IE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 532
+  - name: 爱尔兰 - Dublin - 4
+    server: 34.241.245.82
+    type: ss
+    country: 🇮🇪IE
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 531
   - name: 法国 - Paris - 1
     server: 95.170.13.47
-    type: ss
-    country: 🇫🇷FR
     port: 65443
+    type: ss
+    country: 🇫🇷 FR
     password: 7eadc6dbe2ae
     cipher: aes-256-cfb
-    delay: 1553
+    delay: 556
+  - name: 韩国 - Seoul - 1
+    server: 121.46.230.138
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 1102
   - name: 荷兰 - Amsterdam - 1
     server: 84.17.47.125
     port: 9002
@@ -43,15 +59,16 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1792
+    delay: 1535
   - name: 荷兰 - Amsterdam - 2
-    server: 84.17.47.150
+    server: 84.17.47.125
     port: 9002
     type: http
+    password: None
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1452
+    delay: 991
   - name: 荷兰 - Amsterdam - 3
     server: 84.17.47.148
     port: 9002
@@ -59,7 +76,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2615
+    delay: 1132
   - name: 荷兰 - Amsterdam - 4
     server: 84.17.47.148
     port: 9002
@@ -68,7 +85,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1037
+    delay: 1256
   - name: 荷兰 - Amsterdam - 5
     server: 84.17.47.146
     port: 9002
@@ -76,7 +93,7 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1657
+    delay: 2800
   - name: 荷兰 - Amsterdam - 6
     server: 84.17.47.149
     port: 9002
@@ -84,23 +101,23 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1345
+    delay: 1016
   - name: 罗马尼亚 - Bucharest - 1
+    server: 193.176.84.33
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 2982
+  - name: 罗马尼亚 - Bucharest - 2
     server: 193.176.84.30
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1242
-  - name: 罗马尼亚 - Bucharest - 2
-    server: 193.176.84.35
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 1046
+    delay: 1393
   - name: 罗马尼亚 - Bucharest - 3
     server: 193.176.84.24
     port: 9002
@@ -108,8 +125,33 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2968
+    delay: 1438
   - name: 罗马尼亚 - Bucharest - 4
+    server: 193.176.84.25
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1138
+  - name: 罗马尼亚 - Bucharest - 5
+    server: 193.176.84.20
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 2524
+  - name: 罗马尼亚 - Bucharest - 6
+    server: 193.176.84.31
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1438
+  - name: 罗马尼亚 - Bucharest - 7
     server: 193.176.84.23
     port: 9002
     type: http
@@ -117,32 +159,71 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2574
-  - name: 罗马尼亚 - Bucharest - 5
-    server: 193.176.84.27
+    delay: 2164
+  - name: 罗马尼亚 - Bucharest - 8
+    server: 193.176.84.39
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1695
-  - name: 罗马尼亚 - Bucharest - 6
-    server: 193.176.84.32
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    udp: true
-    delay: 1337
+    delay: 1644
   - name: 马来西亚 - Cyberjaya - 1
     server: 118.107.222.231
-    type: ss
-    country: 🇲🇾MY
     port: 65443
+    type: ss
+    country: 🇲🇾 MY
     password: 7eadc6dbe2ae
     cipher: aes-256-cfb
-    delay: 1307
+    delay: 299
+  - name: 美国 - Buffalo - 3
+    server: v4.hdacd.com
+    type: vmess
+    country: 🇭🇰HK
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    ws-path: /
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1330
+  - name: 美国 - Fremont - 6
+    server: voteshirleysew.club
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1015
+  - name: 美国 - Fremont - 7
+    server: purposebydesig.club
+    port: 443
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 2073
+  - name: 美国 - Los Angeles - 1
+    server: 121.46.230.232
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 1500
   - name: 美国 - Los Angeles - 2
+    server: 121.46.230.233
+    port: 65443
+    type: ss
+    country: 🇨🇳 CN
+    password: 7eadc6dbe2ae
+    cipher: aes-256-cfb
+    delay: 435
+  - name: 美国 - Los Angeles - 4
     server: 138.199.35.216
     port: 9002
     type: http
@@ -151,74 +232,28 @@ proxies:
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 2242
-  - name: 美国 - Los Angeles - 3
+    delay: 2696
+  - name: 美国 - Los Angeles - 8
     server: 38.28.193.188
     port: 443
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 922
-  - name: 美国 - Los Angeles - 4
+    delay: 1020
+  - name: 美国 - Los Angeles - 9
     server: 138.199.35.198
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
     udp: true
-    delay: 1006
-  - name: 美国 - San Gabriel - 1
-    server: 103.179.142.158
-    port: 50269
-    type: vmess
-    uuid: 84f238f6-28eb-48df-a7bc-a9bd9cf4abba
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-    udp: true
-    delay: 469
-  - name: 英国 - London - 1
-    server: 18.171.235.36
+    delay: 1549
+  - name: 美国 - San Jose - 5
+    server: fan.365747.xyz
     port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-    delay: 628
-  - name: 中国 - Hefei - 1
-    server: 112.132.215.108
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-    delay: 623
-  - name: 中国 - Hong Kong - 2
-    server: www.shopify.com
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: a7fba54d-1031-4b23-b8b6-dbf8ce6ad3b3
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: included-shaw-lean-believe.trycloudflare.com
-    http-opts: {}
-    h2-opts: {}
+    type: http
     tls: true
     skip-cert-verify: true
-    ws-opts:
-      path: /a7fba54d-1031-4b23-b8b6-dbf8ce6ad3b3-vm
-      headers:
-        HOST: included-shaw-lean-believe.trycloudflare.com
-    delay: 1785
+    udp: true
+    delay: 926
