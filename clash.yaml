@@ -4,6 +4,20 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 德国 - Frankfurt am Main - 1
+    server: v33.hdacd.com
+    type: vmess
+    country: 🇨🇳CN
+    port: 30833
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    network: tcp
+    servername: v33.hdacd.com
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 2799
   - name: 法国 - Paris - 1
     server: 95.170.13.47
     port: 65443
@@ -11,7 +25,7 @@ proxies:
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-    delay: 1196
+    delay: 2461
   - name: 马来西亚 - Cyberjaya - 1
     server: 118.107.222.231
     port: 65443
@@ -19,15 +33,15 @@ proxies:
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-    delay: 624
-  - name: 美国 - Los Angeles - 1
+    delay: 402
+  - name: 美国 - Los Angeles - 5
     server: 121.46.230.232
     port: 65443
     type: ss
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-    delay: 707
+    delay: 352
   - name: 中国 - Hefei - 1
     server: 112.132.215.108
     type: vmess
@@ -41,17 +55,4 @@ proxies:
     http-opts: {}
     h2-opts: {}
     skip-cert-verify: true
-    delay: 2990
-  - name: 中国 - Kunming - 2
-    server: 150.242.244.116
-    type: vmess
-    country: 🇨🇳CN
-    port: 2648
-    uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-    alterId: 0
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 111
+    delay: 2180
