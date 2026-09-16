@@ -11,7 +11,7 @@ proxies:
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 763
+    delay: 480
   - name: 法国 - 巴黎 - 2
     server: 15.237.137.134
     type: ss
@@ -19,29 +19,7 @@ proxies:
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 479
-  - name: 法国 - 巴黎 - 3
-    server: 15.188.246.220
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-    delay: 2951
-  - name: 法国 - 巴黎 - 4
-    server: 172.64.152.23
-    port: 443
-    type: trojan
-    password: humanity
-    sni: www.calmlunch.com
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        Host: www.calmlunch.com
-    udp: true
-    delay: 833
+    delay: 1159
   - name: 美国 - 哥伦布 - 1
     server: 3.144.113.215
     type: ss
@@ -49,12 +27,34 @@ proxies:
     port: 443
     password: amazonskr05
     cipher: aes-256-cfb
-    delay: 608
+    delay: 650
   - name: 美国 - 哥伦布 - 2
+    server: 18.191.174.144
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 624
+  - name: 美国 - 哥伦布 - 8
     server: 3.149.6.228
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-    delay: 530
+    delay: 559
+  - name: 中国 - 合肥 - 1
+    server: 112.132.215.108
+    type: vmess
+    country: 🇨🇳CN
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    servername: 112.132.215.108
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 138
