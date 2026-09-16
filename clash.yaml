@@ -4,32 +4,57 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 马来西亚 - Cyberjaya - 1
-    server: 118.107.222.231
-    port: 65443
+  - name: 法国 - 巴黎 - 1
+    server: 13.38.76.125
     type: ss
-    country: 🇲🇾 MY
-    password: 7eadc6dbe2ae
+    country: 🇫🇷FR
+    port: 443
+    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 1007
-  - name: 美国 - Chicago - 1
-    server: v24.hdacd.com
-    type: vmess
-    country: 🏁ZZ
-    port: 30824
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
+    delay: 763
+  - name: 法国 - 巴黎 - 2
+    server: 15.237.137.134
+    type: ss
+    country: 🇫🇷FR
+    port: 443
+    password: amazonskr05
+    cipher: aes-256-cfb
+    delay: 479
+  - name: 法国 - 巴黎 - 3
+    server: 15.188.246.220
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 2951
+  - name: 法国 - 巴黎 - 4
+    server: 172.64.152.23
+    port: 443
+    type: trojan
+    password: humanity
+    sni: www.calmlunch.com
     skip-cert-verify: true
-    delay: 2223
-  - name: 日本 - Tokyo - 1
-    server: 121.46.230.137
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+    udp: true
+    delay: 833
+  - name: 美国 - 哥伦布 - 1
+    server: 3.144.113.215
     type: ss
-    country: 🇨🇳CN
-    port: 65443
-    password: 7eadc6dbe2ae
+    country: 🇺🇸US
+    port: 443
+    password: amazonskr05
     cipher: aes-256-cfb
-    delay: 1590
+    delay: 608
+  - name: 美国 - 哥伦布 - 2
+    server: 3.149.6.228
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+    delay: 530
