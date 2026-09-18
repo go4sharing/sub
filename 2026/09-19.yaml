@@ -1,0 +1,122 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 德国 - 法兰克福 - 1
+    server: 103.237.102.191
+    port: 11111
+    type: http
+    password: None
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    delay: 1917
+  - name: 芬兰 - 赫尔辛基 - 1
+    server: 83.147.216.208
+    port: 1080
+    type: socks5
+    skip-cert-verify: true
+    udp: true
+    delay: 1621
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: 84.17.47.125
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1952
+  - name: 荷兰 - 阿姆斯特丹 - 2
+    server: 84.17.47.150
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1098
+  - name: 罗马尼亚 - 布加勒斯特 - 1
+    server: 193.176.84.30
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1562
+  - name: 美国 - 費利蒙 - 3
+    server: crosscards.site
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 907
+  - name: 美国 - 費利蒙 - 5
+    server: mmgr.club
+    port: 443
+    type: http
+    username: 'null'
+    password: 'null'
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1582
+  - name: 美国 - 洛杉矶 - 1
+    server: 138.199.35.198
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1405
+  - name: 美国 - 圣克拉拉 - 2
+    server: 43.173.90.202
+    port: 443
+    type: trojan
+    password: sg-trojan-2026
+    sni: sg-proxy.local
+    skip-cert-verify: true
+    udp: true
+    delay: 1146
+  - name: 美国 - 圣克拉拉 - 6
+    server: 107.174.88.128
+    type: ss
+    country: 🇺🇸US
+    port: 443
+    password: 063aee2ed1124285b5d8a8b049e24cba
+    cipher: chacha20-ietf-poly1305
+    delay: 437
+  - name: 美国 - 夏延 - 4
+    server: mmgr.club
+    port: 443
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    udp: true
+    delay: 1522
+  - name: 中国 - 广州市 - 2
+    server: 103.210.161.8
+    port: 1080
+    type: socks5
+    username: Og==
+    password: Og==
+    skip-cert-verify: true
+    udp: true
+    delay: 2460
+  - name: 中国 - 合肥 - 1
+    server: 112.132.215.108
+    type: vmess
+    country: 🇨🇳CN
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    network: tcp
+    servername: 112.132.215.108
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 138
