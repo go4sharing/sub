@@ -4,6 +4,14 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - cipher: aes-256-gcm
+    name: 俄罗斯 - 莫斯科 - 1
+    password: 6b39ae3234dfd68b
+    port: 20221
+    server: 46.29.166.27
+    type: ss
+    udp: true
+    delay: 752
   - name: 菲律宾 - 马尼拉 - 1
     server: silversbgfgov.vip44.wogbcnmnagfwgov.com
     port: 11244
@@ -16,19 +24,21 @@ proxies:
     http-opts: {}
     ws-path: /
     skip-cert-verify: true
-    delay: 271
-  - name: 中国 - 北京 - 1
-    server: 120.48.133.162
+    delay: 455
+  - cipher: aes-256-cfb
+    name: 英国 - 倫敦 - 1
+    password: amazonskr05
+    port: 443
+    server: 13.40.25.145
+    type: ss
+    udp: true
+    delay: 464
+  - name: 中国 - 合肥 - 1
+    server: 112.132.215.108
+    port: 50002
     type: vmess
-    country: 🇨🇳CN
-    port: 10086
-    uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 0
     cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 192
+    tls: false
+    delay: 301
