@@ -4,32 +4,33 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 美国 - 锡拉丘兹 - 1
-    server: 134.195.101.231
-    type: ss
-    country: 🏁ZZ
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: 403880e.default.microsoft.is:164892
-      mode: tls
-    delay: 1405
-  - name: 日本 - 东京 - 1
-    server: v6.hdacd.com
-    type: vmess
-    country: 🇨🇳CN
-    port: 30806
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    servername: v6.hdacd.com
-    http-opts: {}
-    h2-opts: {}
+  - name: 美国 - 洛杉矶 - 1
+    password: 1f8dc24373d4add7767beac448e32397
+    port: 8443
+    server: 38.150.35.208
     skip-cert-verify: true
-    delay: 2922
+    sni: www.apple.com
+    type: trojan
+    udp: true
+    delay: 631
+  - name: 日本 - 东京 - 1
+    password: bad06c3525a6eaee1757b34776b83892
+    port: 12019
+    server: 4c2d5151.266nets.com
+    skip-cert-verify: true
+    sni: ixigua.com
+    type: trojan
+    udp: true
+    delay: 469
+  - name: 新加坡 - 新加坡 - 1
+    password: bad06c3525a6eaee1757b34776b83892
+    port: 12013
+    server: 4c2d5151.266nets.com
+    skip-cert-verify: true
+    sni: ixigua.com
+    type: trojan
+    udp: true
+    delay: 683
   - name: 中国 - 合肥 - 1
     server: 112.132.215.108
     port: 50002
@@ -38,4 +39,13 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
-    delay: 157
+    delay: 259
+  - name: 中国 - 香港 - 2
+    password: bad06c3525a6eaee1757b34776b83892
+    port: 12001
+    server: 4c2d5151.266nets.com
+    skip-cert-verify: true
+    sni: ixigua.com
+    type: trojan
+    udp: true
+    delay: 622
