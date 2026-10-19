@@ -1,0 +1,187 @@
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+external-controller: ':9090'
+proxies:
+  - name: 德国 - 法兰克福 - 1
+    server: 158.173.154.3
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2991
+  - name: 德国 - 法兰克福 - 2
+    server: 158.173.154.2
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1081
+  - name: 法国 - 巴黎 - 1
+    server: 82.65.162.76
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1709
+  - name: 荷兰 - 阿姆斯特丹 - 1
+    server: 84.17.47.149
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2001
+  - name: 荷兰 - 阿姆斯特丹 - 2
+    server: 84.17.47.146
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2056
+  - name: 荷兰 - 阿姆斯特丹 - 3
+    server: 84.17.47.147
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2408
+  - name: 荷兰 - 阿姆斯特丹 - 4
+    server: 84.17.47.150
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1726
+  - name: 罗马尼亚 - 布加勒斯特 - 1
+    server: 193.176.84.27
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2164
+  - name: 罗马尼亚 - 布加勒斯特 - 2
+    server: 193.176.84.26
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    delay: 2138
+  - name: 罗马尼亚 - 布加勒斯特 - 3
+    server: 193.176.84.38
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2039
+  - name: 马来西亚 - 吉隆坡 - 1
+    password: 5931134d1cde66bf83a54acdfebe7ab2
+    port: 443
+    server: 47.250.84.25
+    skip-cert-verify: true
+    sni: 47.250.84.25
+    type: trojan
+    udp: true
+    delay: 1402
+  - name: 美国 - 洛杉矶 - 1
+    server: 138.199.35.209
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    delay: 2117
+  - cipher: rc4-md5
+    name: 美国 - 紐約 - 3
+    password: 14fFPrbezE3HDZzsMOr6
+    port: 8080
+    server: 98.98.79.198
+    type: ss
+    udp: true
+    delay: 1028
+  - name: 美国 - 水牛城 - 2
+    server: 192.227.176.234
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2087
+  - cipher: aes-256-gcm
+    name: 日本 - 东京 - 1
+    password: BeaUf9c0AEWH40Pu
+    port: 8388
+    server: 154.36.158.197
+    type: ss
+    udp: true
+    delay: 1342
+  - name: 瑞典 - Huskvarna - 1
+    server: 217.210.129.243
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1384
+  - cipher: rc4-md5
+    name: 新加坡 - 新加坡 - 1
+    password: 14fFPrbezE3HDZzsMOr6
+    port: 8080
+    server: 128.1.186.73
+    type: ss
+    udp: true
+    delay: 1413
+  - cipher: rc4-md5
+    name: 新加坡 - 新加坡 - 2
+    password: 14fFPrbezE3HDZzsMOr6
+    port: 8080
+    server: 128.1.186.132
+    type: ss
+    udp: true
+    delay: 1172
+  - name: 英国 - Bexley - 1
+    network: tcp
+    port: 10002
+    server: connect.hondamotor.site
+    type: vless
+    udp: true
+    uuid: c6362720-0931-4b91-b187-d8ecf3149734
+    delay: 948
+  - cipher: rc4-md5
+    name: 英国 - Stretford - 2
+    password: 14fFPrbezE3HDZzsMOr6
+    port: 8080
+    server: 146.70.46.214
+    type: ss
+    udp: true
+    delay: 1032
+  - alterId: 0
+    cipher: auto
+    name: 中国 - 北京 - 2
+    network: ws
+    port: 10086
+    server: 120.48.133.162
+    type: vmess
+    udp: true
+    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
+    delay: 206
+  - name: 中国 - 合肥 - 3
+    server: 112.132.215.108
+    port: 50002
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    delay: 558
+  - name: 中国 - 台湾 - 1
+    server: 60.249.14.95
+    type: ss
+    country: 🇹🇼TW
+    port: 2377
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    cipher: chacha20-ietf-poly1305
+    plugin: obfs
+    plugin-opts:
+      host: (Telegram🇨🇳 @WangCai2)5337fad:11915
+      mode: tls
+    delay: 610
