@@ -4,6 +4,14 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
+  - name: 俄罗斯 - 莫斯科 - 1
+    server: 46.17.43.227
+    type: ss
+    country: 🇷🇺RU
+    port: 18443
+    password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+    cipher: aes-256-gcm
+    delay: 1831
   - name: 马来西亚 - 吉隆坡 - 1
     server: 47.250.84.25
     port: 443
@@ -12,101 +20,23 @@ proxies:
     password: 5931134d1cde66bf83a54acdfebe7ab2
     skip-cert-verify: true
     udp: true
-    delay: 1449
+    delay: 725
   - cipher: aes-256-gcm
-    name: 美国 - 鳳凰城 - 2
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 95.215.201.18
-    type: ss
-    udp: true
-    delay: 457
-  - cipher: aes-256-gcm
-    name: 美国 - 华盛顿特区 - 3
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 185.230.230.18
-    type: ss
-    udp: true
-    delay: 556
-  - cipher: aes-256-gcm
-    name: 美国 - 迈阿密 - 4
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 193.151.160.9
-    type: ss
-    udp: true
-    delay: 566
-  - cipher: aes-256-gcm
-    name: 美国 - 紐華克 - 5
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 193.151.163.18
-    type: ss
-    udp: true
-    delay: 532
-  - name: 美国 - 水牛城 - 1
-    server: v24.hdacd.com
-    type: vmess
-    country: 🏁ZZ
-    port: 30824
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    network: tcp
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    delay: 1138
-  - cipher: aes-256-gcm
-    name: 美国 - 亚特兰大 - 6
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 185.215.132.9
-    type: ss
-    udp: true
-    delay: 512
-  - cipher: aes-256-gcm
-    name: 美国 - 亚特兰大 - 7
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 185.215.132.18
-    type: ss
-    udp: true
-    delay: 511
-  - cipher: aes-256-gcm
-    name: 美国 - Ashburn - 8
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 45.86.51.18
-    type: ss
-    udp: true
-    delay: 548
-  - cipher: aes-256-gcm
-    name: 日本 - 东京 - 2
+    name: 日本 - 东京 - 1
     password: BeaUf9c0AEWH40Pu
     port: 8388
     server: 154.36.158.197
     type: ss
     udp: true
-    delay: 1613
-  - name: 日本 - Minamishinagawa - 1
-    password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-    port: 8886
-    server: 45.32.52.173
-    skip-cert-verify: true
-    sni: 45.32.52.173
-    type: trojan
-    udp: true
-    delay: 1643
+    delay: 161
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 1
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
-    server: 202.50.253.45
+    server: 202.50.253.18
     type: ss
     udp: true
-    delay: 630
+    delay: 1631
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 2
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -114,33 +44,75 @@ proxies:
     server: 202.50.253.27
     type: ss
     udp: true
-    delay: 2978
-  - name: 中国 - 北京 - 2
-    server: 120.48.133.162
-    type: vmess
-    country: 🇨🇳CN
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
+    delay: 1275
+  - cipher: aes-256-gcm
+    name: 意大利 - Milan - 3
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.36
+    type: ss
+    udp: true
+    delay: 1502
+  - name: 印度 - 班加羅爾 - 1
+    server: in.tronsg.com
+    port: 443
+    type: trojan
+    country: 🇺🇸 US
+    password: Trojan@82164024
     skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 1416
-  - name: 中国 - 合肥 - 1
-    server: 112.132.215.108
-    type: vmess
-    country: 🇨🇳CN
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    network: tcp
-    servername: 112.132.215.108
-    http-opts: {}
-    h2-opts: {}
+    udp: true
+    delay: 2415
+  - name: 中国 - 台湾 - 1
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjtw.m2k699.com
+    skip-cert-verify: false
+    sni: tjtw.m2k699.com
+    type: trojan
+    udp: true
+    delay: 2292
+  - name: 中国 - 香港 - 2
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjxg.m2k699.com
     skip-cert-verify: true
-    delay: 1119
+    sni: www.itunes.com
+    type: trojan
+    udp: true
+    delay: 2759
+  - name: 中国 - 香港 - 3
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjadly.m2k699.com
+    skip-cert-verify: true
+    sni: www.itunes.com
+    type: trojan
+    udp: true
+    delay: 1305
+  - name: 中国 - 香港 - 4
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjmlxy.m2k699.com
+    skip-cert-verify: true
+    sni: www.itunes.com
+    type: trojan
+    udp: true
+    delay: 1313
+  - name: 中国 - 香港 - 5
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjyg.m2k699.com
+    skip-cert-verify: true
+    sni: www.itunes.com
+    type: trojan
+    udp: true
+    delay: 1381
+  - name: 中国 - 香港 - 6
+    password: 29086912-33e4-4e06-ba2b-60f1a195864f
+    port: 24999
+    server: tjterq.m2k699.com
+    skip-cert-verify: true
+    sni: www.itunes.com
+    type: trojan
+    udp: true
+    delay: 2072
