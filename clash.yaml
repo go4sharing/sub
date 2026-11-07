@@ -13,7 +13,20 @@ proxies:
     sni: au.tronsg.com
     skip-cert-verify: true
     udp: true
-    delay: 1026
+    delay: 1062
+  - name: 德国 - 法兰克福 - 1
+    server: 109.70.74.218
+    type: vmess
+    country: 🇮🇹IT
+    port: 54673
+    uuid: b66d05c6-5c70-44a5-bb27-f672cabdb1c3
+    alterId: 0
+    cipher: auto
+    network: tcp
+    http-opts: {}
+    h2-opts: {}
+    skip-cert-verify: true
+    delay: 1525
   - name: 俄罗斯 - 莫斯科 - 1
     server: 46.17.47.58
     port: 18443
@@ -21,15 +34,15 @@ proxies:
     cipher: aes-256-gcm
     password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
     udp: true
-    delay: 647
-  - name: 美国 - 芝加哥 - 1
-    server: 88.216.254.18
-    port: 1080
+    delay: 683
+  - name: 美国 - 達拉斯 - 1
+    server: 66.23.203.19
     type: ss
-    country: 🇱🇹 LT
-    password: V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA
-    cipher: chacha20-ietf-poly1305
-    delay: 1026
+    country: 🇺🇸US
+    port: 19690
+    password: 4e501338a6c03d7626f2fa0e09ed66d6
+    cipher: aes-128-gcm
+    delay: 527
   - name: 日本 - 东京 - 1
     server: 160.21.74.183
     type: trojan
@@ -39,7 +52,7 @@ proxies:
     sni: 160.21.74.183
     skip-cert-verify: true
     udp: true
-    delay: 382
+    delay: 413
   - name: 意大利 - Milan - 1
     server: 202.50.253.36
     port: 19999
@@ -47,70 +60,55 @@ proxies:
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-    delay: 634
-  - cipher: aes-256-gcm
-    name: 意大利 - Milan - 2
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    delay: 1417
+  - name: 意大利 - Milan - 2
+    server: 202.50.253.81
     port: 19999
-    server: 202.50.253.27
     type: ss
-    udp: true
-    delay: 1875
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    tfo: false
+    delay: 2276
+  - name: 意大利 - Milan - 3
+    server: 202.50.253.99
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    tfo: false
+    delay: 2164
   - cipher: aes-256-gcm
-    name: 意大利 - Milan - 3
+    name: 意大利 - Milan - 4
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.63
     type: ss
     udp: true
-    delay: 2136
-  - name: 意大利 - Milan - 4
+    delay: 1473
+  - name: 意大利 - Milan - 5
     server: 202.50.253.18
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-    delay: 1567
-  - name: 意大利 - Milan - 5
-    server: 202.50.253.45
-    port: 19999
-    type: ss
-    country: 🇳🇿 NZ
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    cipher: aes-256-gcm
-    delay: 586
+    delay: 589
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 6
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.54
+    type: ss
+    udp: true
+    delay: 599
+  - cipher: aes-256-gcm
+    name: 意大利 - Milan - 7
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.90
     type: ss
     udp: true
-    delay: 1424
-  - cipher: aes-256-gcm
-    name: 意大利 - Milan - 7
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    port: 19999
-    server: 202.50.253.72
-    type: ss
-    udp: true
-    delay: 560
-  - name: 中国 - 北京 - 2
-    server: 120.48.133.162
-    type: vmess
-    country: 🇨🇳CN
-    port: 10086
-    uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
-    alterId: 0
-    cipher: auto
-    network: ws
-    http-opts: {}
-    h2-opts: {}
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    delay: 176
+    delay: 601
   - name: 中国 - 香港 - 1
     server: 104.25.134.76
     type: vmess
@@ -129,4 +127,4 @@ proxies:
       path: /ryinsocksv2board
       headers:
         HOST: hk-v2ray.ryin.vip
-    delay: 1713
+    delay: 1710
