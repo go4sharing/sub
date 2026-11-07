@@ -4,14 +4,6 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 俄罗斯 - 莫斯科 - 1
-    server: 46.17.47.58
-    port: 18443
-    type: ss
-    cipher: aes-256-gcm
-    password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-    udp: true
-    delay: 661
   - name: 美国 - 達拉斯 - 2
     server: 66.23.203.19
     type: ss
@@ -19,7 +11,7 @@ proxies:
     port: 19690
     password: 4e501338a6c03d7626f2fa0e09ed66d6
     cipher: aes-128-gcm
-    delay: 550
+    delay: 564
   - name: 美国 - 芝加哥 - 1
     server: 88.216.254.18
     port: 1080
@@ -27,35 +19,8 @@ proxies:
     country: 🇱🇹 LT
     password: V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA
     cipher: chacha20-ietf-poly1305
-    delay: 622
-  - name: 美国 - Piscataway - 3
-    server: 162.159.128.17
-    type: vmess
-    country: 🏁ZZ
-    port: 443
-    uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
-    alterId: 0
-    cipher: auto
-    network: ws
-    servername: ny-v2ray.ryin.vip
-    http-opts: {}
-    h2-opts: {}
-    tls: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /ryinsocksv2board
-      headers:
-        HOST: ny-v2ray.ryin.vip
-    delay: 1646
+    delay: 693
   - name: 日本 - 东京 - 1
-    server: 154.36.158.197
-    port: 8388
-    type: ss
-    country: 🇺🇸 US
-    password: BeaUf9c0AEWH40Pu
-    cipher: aes-256-gcm
-    delay: 251
-  - name: 日本 - 东京 - 2
     server: 160.21.74.183
     type: trojan
     country: 🇯🇵JP
@@ -64,7 +29,7 @@ proxies:
     sni: 160.21.74.183
     skip-cert-verify: true
     udp: true
-    delay: 886
+    delay: 441
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 1
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -72,36 +37,37 @@ proxies:
     server: 202.50.253.63
     type: ss
     udp: true
-    delay: 619
+    delay: 720
   - name: 意大利 - Milan - 2
     server: 202.50.253.18
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    delay: 1770
+    delay: 621
   - name: 意大利 - Milan - 3
     server: 202.50.253.36
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    delay: 619
+    delay: 600
+  - name: 意大利 - Milan - 4
+    server: 202.50.253.81
+    port: 19999
+    type: ss
+    country: 🇳🇿 NZ
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    delay: 2037
   - cipher: aes-256-gcm
-    name: 意大利 - Milan - 4
+    name: 意大利 - Milan - 5
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.54
     type: ss
     udp: true
-    delay: 2028
-  - name: 意大利 - Milan - 5
-    server: 202.50.253.99
-    port: 19999
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    delay: 2356
+    delay: 1129
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 6
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -109,15 +75,15 @@ proxies:
     server: 202.50.253.90
     type: ss
     udp: true
-    delay: 590
+    delay: 606
   - name: 意大利 - Milan - 7
     server: 202.50.253.45
     port: 19999
     type: ss
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    delay: 596
-  - name: 中国 - 北京 - 1
+    delay: 593
+  - name: 中国 - 北京 - 3
     server: 120.48.133.162
     type: vmess
     country: 🇨🇳CN
@@ -131,4 +97,32 @@ proxies:
     skip-cert-verify: true
     ws-opts:
       path: /
-    delay: 225
+    delay: 179
+  - name: 中国 - 香港 - 1
+    server: 104.25.134.76
+    type: vmess
+    country: 🇺🇸US
+    port: 443
+    uuid: c8b455ad-fff1-43e9-9af9-d97585c4534a
+    alterId: 0
+    cipher: auto
+    network: ws
+    servername: hk-v2ray.ryin.vip
+    http-opts: {}
+    h2-opts: {}
+    tls: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /ryinsocksv2board
+      headers:
+        HOST: hk-v2ray.ryin.vip
+    delay: 1734
+  - name: 中国 - 香港 - 2
+    server: 152.175.6.229
+    type: vless
+    port: 31884
+    udp: true
+    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+    tls: true
+    servername: hk010.zestapp778.com
+    delay: 1135
