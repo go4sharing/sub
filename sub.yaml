@@ -4,67 +4,37 @@ mode: Global
 log-level: info
 external-controller: ':9090'
 proxies:
-  - name: 爱尔兰 - 都柏林 - 1
-    server: 34.249.214.108
-    port: 443
-    type: http
-    tls: true
-    skip-cert-verify: true
-    delay: 1019
-  - name: 爱尔兰 - 都柏林 - 2
-    server: 18.200.158.139
-    port: 443
-    type: http
-    tls: true
-    skip-cert-verify: true
-    delay: 2800
-  - name: 比利时 - 扎芬特姆 - 1
-    server: 146.70.123.98
-    port: 443
-    type: http
-    tls: true
-    skip-cert-verify: true
-    delay: 1018
   - name: 德国 - 法兰克福 - 1
     server: 158.173.154.5
     port: 9002
     type: http
     tls: true
     skip-cert-verify: true
-    delay: 978
+    delay: 2269
   - name: 法国 - 格拉沃利讷 - 1
     server: 87.98.174.157
     port: 6103
     type: http
     tls: true
     skip-cert-verify: true
-    delay: 1295
+    delay: 2301
   - name: 荷兰 - 阿姆斯特丹 - 1
-    server: 84.17.47.148
+    server: 84.17.47.125
     port: 9002
     type: http
     username: 'null'
     password: 'null'
     tls: true
     skip-cert-verify: true
-    delay: 2002
+    delay: 2262
   - name: 荷兰 - 阿姆斯特丹 - 2
     server: 84.17.47.125
     port: 9002
     type: http
-    username: 'null'
-    password: 'null'
     tls: true
     skip-cert-verify: true
-    delay: 909
+    delay: 2269
   - name: 荷兰 - 阿姆斯特丹 - 3
-    server: 84.17.47.125
-    port: 9002
-    type: http
-    tls: true
-    skip-cert-verify: true
-    delay: 1023
-  - name: 荷兰 - 阿姆斯特丹 - 4
     server: 84.17.47.147
     port: 9002
     type: http
@@ -72,105 +42,98 @@ proxies:
     password: 'null'
     tls: true
     skip-cert-verify: true
-    delay: 2683
-  - name: 荷兰 - 阿姆斯特丹 - 5
+    delay: 2302
+  - name: 荷兰 - 阿姆斯特丹 - 4
     server: 84.17.47.148
     port: 9002
     type: http
     password: None
     tls: true
     skip-cert-verify: true
-    delay: 1048
-  - name: 荷兰 - 阿姆斯特丹 - 6
-    server: 84.17.47.124
-    port: 9002
-    type: http
+    delay: 2221
+  - name: 日本 - 東京都 - 1
+    server: mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art
+    type: vmess
+    country: 🇧🇪BE
+    port: 21581
+    uuid: 91710d35-76ad-3513-bb14-4caddae68539
+    alterId: 1
+    cipher: auto
+    network: tcp
+    servername: mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art
+    http-opts: {}
+    h2-opts: {}
     tls: true
     skip-cert-verify: true
-    delay: 1780
-  - name: 捷克 - 布拉格 - 1
-    server: 152.233.16.174
-    port: 9443
-    type: http
-    password: None
-    tls: true
-    skip-cert-verify: true
-    delay: 1014
-  - name: 罗马尼亚 - 布加勒斯特 - 1
-    server: 193.176.84.24
-    port: 9002
-    type: http
-    password: None
-    tls: true
-    skip-cert-verify: true
-    delay: 2402
-  - name: 美国 - 聖荷西 - 1
-    server: ssr2.762988.xyz
-    port: 33336
-    type: ssr
-    country: 🇺🇸 US
-    password: dongtaiwang.com
-    cipher: chacha20-ietf
-    protocol: auth_chain_a
-    obfs: tls1.2_ticket_auth
-    delay: 2226
-  - name: 尼日利亚 - 拉哥斯 - 1
-    server: sclass-00.catcat321.com
-    port: 20103
-    type: trojan
-    country: 🇨🇳 CN
-    password: d9064589-74af-432a-9390-5d8a9da281bf
-    skip-cert-verify: true
-    udp: true
-    delay: 1737
+    delay: 264
+  - name: 土耳其 - 伊斯坦布尔 - 1
+    server: 38.180.104.37
+    type: ss
+    country: 🇺🇸US
+    port: 19084
+    password: ff4d354078394558933d699be149ad69
+    cipher: aes-128-gcm
+    delay: 773
   - name: 意大利 - Milan - 1
-    server: 202.50.253.18
+    server: 202.50.253.45
     port: 19999
     type: ss
-    country: 🇳🇿 NZ
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     cipher: aes-256-gcm
-    delay: 2736
-  - name: 意大利 - Milan - 2
-    server: 202.50.253.36
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    delay: 1049
+  - cipher: aes-256-gcm
+    name: 意大利 - Milan - 2
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
+    server: 202.50.253.27
     type: ss
-    country: 🇳🇿 NZ
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    cipher: aes-256-gcm
-    delay: 670
+    udp: true
+    delay: 788
   - cipher: aes-256-gcm
     name: 意大利 - Milan - 3
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
-    server: 202.50.253.54
+    server: 202.50.253.90
     type: ss
     udp: true
-    delay: 981
-  - name: 意大利 - Milan - 4
-    server: 202.50.253.81
-    port: 19999
-    type: ss
-    country: 🇳🇿 NZ
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    cipher: aes-256-gcm
-    delay: 1379
-  - name: 意大利 - Milan - 5
-    server: 202.50.253.99
-    port: 19999
-    type: ss
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-    delay: 1424
+    delay: 1049
   - cipher: aes-256-gcm
-    name: 意大利 - Milan - 6
+    name: 意大利 - Milan - 4
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    port: 19999
+    server: 202.50.253.72
+    type: ss
+    udp: true
+    delay: 1049
+  - cipher: aes-256-gcm
+    name: 意大利 - Milan - 5
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     port: 19999
     server: 202.50.253.63
     type: ss
     udp: true
-    delay: 1887
+    delay: 752
+  - name: 意大利 - Milan - 6
+    server: 202.50.253.81
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    delay: 752
+  - name: 意大利 - Milan - 7
+    server: 202.50.253.99
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    delay: 548
+  - name: 意大利 - Milan - 8
+    server: 202.50.253.18
+    port: 19999
+    type: ss
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    delay: 582
   - name: undefined - undefined - 1
     server: ja304.magiclampcloud.cn
     type: trojan
@@ -179,4 +142,4 @@ proxies:
     password: 06cf12a7fab279375e55e2f0cfdef381
     skip-cert-verify: true
     udp: true
-    delay: 973
+    delay: 274
